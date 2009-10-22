@@ -2,7 +2,7 @@ clear;
 clc;
 close all;
 
-Data = textread ('..\Expression Data\Sreekar21_10_09_12_26_16.txt');
+Data = textread ('..\Expression Data\Mohammad22_10_09_14_37_11.txt');
 
 ExpressionAnger = uint32(Data(Data(:,1) == 0,:));
 ExpressionDisgust = uint32(Data(Data(:,1) == 1,:));
