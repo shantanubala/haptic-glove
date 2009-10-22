@@ -55,6 +55,8 @@ namespace Haptic_Expressions
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SubjectNameTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.StopButton = new System.Windows.Forms.Button();
@@ -66,8 +68,7 @@ namespace Haptic_Expressions
             this.label10 = new System.Windows.Forms.Label();
             this.NoOfCyclesTextBox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.TrialCountBox = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -323,6 +324,7 @@ namespace Haptic_Expressions
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.TrialCountBox);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.SubjectNameTextBox);
@@ -341,6 +343,26 @@ namespace Haptic_Expressions
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randomize and Deliver Expressions with Response Recording";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(199, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "End Sound";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(198, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Start Sound";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SubjectNameTextBox
             // 
@@ -388,7 +410,7 @@ namespace Haptic_Expressions
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(521, 25);
+            this.label11.Location = new System.Drawing.Point(521, 31);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 13);
             this.label11.TabIndex = 4;
@@ -397,7 +419,7 @@ namespace Haptic_Expressions
             // progressBar1
             // 
             this.progressBar1.Enabled = false;
-            this.progressBar1.Location = new System.Drawing.Point(524, 41);
+            this.progressBar1.Location = new System.Drawing.Point(524, 51);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(152, 23);
             this.progressBar1.TabIndex = 3;
@@ -434,25 +456,14 @@ namespace Haptic_Expressions
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
+            // TrialCountBox
             // 
-            this.button1.Location = new System.Drawing.Point(198, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Start Sound";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(199, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "End Sound";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.TrialCountBox.AutoSize = true;
+            this.TrialCountBox.Location = new System.Drawing.Point(635, 31);
+            this.TrialCountBox.Name = "TrialCountBox";
+            this.TrialCountBox.Size = new System.Drawing.Size(34, 13);
+            this.TrialCountBox.TabIndex = 12;
+            this.TrialCountBox.Text = "0 Left";
             // 
             // Form1
             // 
@@ -519,6 +530,7 @@ namespace Haptic_Expressions
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label TrialCountBox;
     }
 }
 

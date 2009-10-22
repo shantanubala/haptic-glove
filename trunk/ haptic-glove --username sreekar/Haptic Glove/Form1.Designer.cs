@@ -76,17 +76,19 @@ namespace Haptic_Glove
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.StartRandButton = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.TrialCountBox = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.ProgressLbl = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.StartRandButton = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -559,6 +561,8 @@ namespace Haptic_Glove
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.TrialCountBox);
+            this.groupBox3.Controls.Add(this.label24);
             this.groupBox3.Controls.Add(this.ProgressLbl);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.textBox7);
@@ -577,13 +581,103 @@ namespace Haptic_Glove
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randomize";
             // 
-            // textBox4
+            // TrialCountBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(92, 26);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(29, 20);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.Text = "6";
+            this.TrialCountBox.AutoSize = true;
+            this.TrialCountBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.TrialCountBox.Location = new System.Drawing.Point(56, 132);
+            this.TrialCountBox.Name = "TrialCountBox";
+            this.TrialCountBox.Size = new System.Drawing.Size(27, 29);
+            this.TrialCountBox.TabIndex = 12;
+            this.TrialCountBox.Text = "0";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 119);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(56, 13);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Trials Left:";
+            // 
+            // ProgressLbl
+            // 
+            this.ProgressLbl.AutoSize = true;
+            this.ProgressLbl.Location = new System.Drawing.Point(62, 189);
+            this.ProgressLbl.Name = "ProgressLbl";
+            this.ProgressLbl.Size = new System.Drawing.Size(0, 13);
+            this.ProgressLbl.TabIndex = 10;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 50);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 13);
+            this.label23.TabIndex = 9;
+            this.label23.Text = "Subject Name:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(50, 67);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(73, 20);
+            this.textBox7.TabIndex = 8;
+            // 
+            // NextButton
+            // 
+            this.NextButton.Enabled = false;
+            this.NextButton.Location = new System.Drawing.Point(21, 263);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(100, 23);
+            this.NextButton.TabIndex = 7;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // StartRandButton
+            // 
+            this.StartRandButton.Location = new System.Drawing.Point(50, 93);
+            this.StartRandButton.Name = "StartRandButton";
+            this.StartRandButton.Size = new System.Drawing.Size(75, 23);
+            this.StartRandButton.TabIndex = 6;
+            this.StartRandButton.Text = "Start";
+            this.StartRandButton.UseVisualStyleBackColor = true;
+            this.StartRandButton.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(21, 227);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 5;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 211);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(80, 13);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "User Response";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 170);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(95, 13);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Current Stimulation";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(21, 186);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 2;
             // 
             // label20
             // 
@@ -594,84 +688,13 @@ namespace Haptic_Glove
             this.label20.TabIndex = 1;
             this.label20.Text = "Number of Sets:";
             // 
-            // textBox5
+            // textBox4
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(21, 186);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(30, 20);
-            this.textBox5.TabIndex = 2;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(18, 170);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 13);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Current Stimulation";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(25, 211);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(80, 13);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "User Response";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(50, 227);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(30, 20);
-            this.textBox6.TabIndex = 5;
-            // 
-            // StartRandButton
-            // 
-            this.StartRandButton.Location = new System.Drawing.Point(29, 109);
-            this.StartRandButton.Name = "StartRandButton";
-            this.StartRandButton.Size = new System.Drawing.Size(75, 23);
-            this.StartRandButton.TabIndex = 6;
-            this.StartRandButton.Text = "Start";
-            this.StartRandButton.UseVisualStyleBackColor = true;
-            this.StartRandButton.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // NextButton
-            // 
-            this.NextButton.Enabled = false;
-            this.NextButton.Location = new System.Drawing.Point(28, 263);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(75, 23);
-            this.NextButton.TabIndex = 7;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(30, 84);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(73, 20);
-            this.textBox7.TabIndex = 8;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(28, 67);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(77, 13);
-            this.label23.TabIndex = 9;
-            this.label23.Text = "Subject Name:";
-            // 
-            // ProgressLbl
-            // 
-            this.ProgressLbl.AutoSize = true;
-            this.ProgressLbl.Location = new System.Drawing.Point(62, 189);
-            this.ProgressLbl.Name = "ProgressLbl";
-            this.ProgressLbl.Size = new System.Drawing.Size(0, 13);
-            this.ProgressLbl.TabIndex = 10;
+            this.textBox4.Location = new System.Drawing.Point(92, 26);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(29, 20);
+            this.textBox4.TabIndex = 0;
+            this.textBox4.Text = "6";
             // 
             // Form1
             // 
@@ -789,6 +812,8 @@ namespace Haptic_Glove
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button StartRandButton;
         private System.Windows.Forms.Label ProgressLbl;
+        private System.Windows.Forms.Label TrialCountBox;
+        private System.Windows.Forms.Label label24;
     }
 }
 
