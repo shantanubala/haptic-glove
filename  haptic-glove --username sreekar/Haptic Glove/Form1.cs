@@ -45,7 +45,7 @@ namespace Haptic_Glove
 
         // Randomized input
         Random R;
-        int TrailCounter;
+        int TrialCounter;
 
         // Time capture
         DateTime StartTime, EndTime;
@@ -498,7 +498,8 @@ namespace Haptic_Glove
             textBox6.Enabled = true;
             NextButton.Enabled = true;
 
-            TrailCounter = Convert.ToInt16(textBox4.Text) * 14 - 1;
+            TrialCounter = Convert.ToInt16(textBox4.Text) * 14 - 1;
+            TrialCountBox.Text = TrialCounter.ToString();
             VibrateRandomMotor();            
 
         }
@@ -527,11 +528,12 @@ namespace Haptic_Glove
             double Duration = Convert.ToDouble(TS.Duration().Ticks) / 10000;            
             SW.WriteLine(textBox6.Text + " " + Duration.ToString());
             SW.Flush();
-            if (TrailCounter > 0)
+            if (TrialCounter > 0)
             {
                 textBox6.Text = "";
                 VibrateRandomMotor();
-                TrailCounter--;
+                TrialCounter--;
+                TrialCountBox.Text = TrialCounter.ToString();
             }
             else
             {

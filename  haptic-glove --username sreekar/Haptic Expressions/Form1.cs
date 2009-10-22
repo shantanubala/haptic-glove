@@ -300,6 +300,7 @@ namespace Haptic_Expressions
 
             // Total trials = number of expressions * Number of times to try them
             TotalTrials = 7 * Convert.ToInt32(NoOfCyclesTextBox.Text) - 1;
+            TrialCountBox.Text = TotalTrials.ToString() + " Left";
 
             // Enable Key board capture
             this.KeyPreview = true;
@@ -649,6 +650,7 @@ namespace Haptic_Expressions
                 // Decrement the trial count
                 TotalTrials--;
                 progressBar1.PerformStep();
+                TrialCountBox.Text = TotalTrials.ToString() + " Left";
 
                 // Start the next vibration
                 ToneNotification();
