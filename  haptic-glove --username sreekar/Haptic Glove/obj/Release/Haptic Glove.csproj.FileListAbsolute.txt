@@ -7,3 +7,12 @@ C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Hapt
 C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Release\Haptic Glove.csproj.GenerateResource.Cache
 C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Release\Haptic Glove.exe
 C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Release\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\bin\Release\Haptic Glove.exe.config
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\bin\Release\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\bin\Release\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic_Glove.Form1.resources
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic_Glove.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic Glove.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic Glove.pdb

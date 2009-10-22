@@ -6,3 +6,11 @@ C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Hapt
 C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Release\Haptic Expressions.csproj.GenerateResource.Cache
 C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Release\Haptic Expressions.exe
 C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Release\Haptic Expressions.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Release\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Release\Haptic Expressions.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\bin\Release\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\bin\Release\Haptic Expressions.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Release\Haptic_Expressions.Form1.resources
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Release\Haptic_Expressions.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Release\Haptic Expressions.csproj.GenerateResource.Cache
