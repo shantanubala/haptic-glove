@@ -47,11 +47,16 @@ namespace Haptic_Glove
         Random R;
         int TrailCounter;
 
+        // Time capture
+        DateTime StartTime, EndTime;
+
         #endregion
 
         public Form1()
         {
             R = new Random();
+            StartTime = new DateTime();
+            EndTime = new DateTime();
             InitializeComponent();
         }
 
@@ -502,7 +507,8 @@ namespace Haptic_Glove
         private void VibrateRandomMotor()
         {
             int MotorNo = R.Next(14);
-            Data[0] = (char)(MotorNo + 65);
+            StartTime = DateTime.Now;
+            Data[0] = (char)(MotorNo + 65);            
             textBox5.Text = Data[0].ToString();
             SW.Write(Data[0].ToString() + " ");
             SW.Flush();
@@ -516,7 +522,10 @@ namespace Haptic_Glove
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            SW.WriteLine(textBox6.Text + " ");
+            EndTime = DateTime.Now;
+            TimeSpan TS = EndTime - StartTime;
+            double Duration = Convert.ToDouble(TS.Duration().Ticks) / 10000;            
+            SW.WriteLine(textBox6.Text + " " + Duration.ToString());
             SW.Flush();
             if (TrailCounter > 0)
             {
