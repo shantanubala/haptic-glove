@@ -1,0 +1,24 @@
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\bin\Debug\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\bin\Debug\Haptic Expressions.pdb
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\obj\Debug\Haptic_Expressions.Form1.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\obj\Debug\Haptic_Expressions.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.pdb
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.exe
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.pdb
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\bin\Debug\Haptic Expressions.exe
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\bin\Debug\Haptic Expressions.pdb
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\obj\Debug\ResolveAssemblyReference.cache
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\obj\Debug\Haptic_Expressions.Form1.resources
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\obj\Debug\Haptic_Expressions.Properties.Resources.resources
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.pdb
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\bin\Debug\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\bin\Debug\Haptic Expressions.pdb
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic_Expressions.Form1.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic_Expressions.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.csproj.GenerateResource.Cache

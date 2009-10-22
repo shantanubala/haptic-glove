@@ -1,0 +1,2 @@
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.pdb

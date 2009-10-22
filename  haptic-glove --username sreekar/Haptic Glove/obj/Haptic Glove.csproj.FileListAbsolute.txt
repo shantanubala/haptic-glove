@@ -1,0 +1,54 @@
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Form1.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
+G:\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+G:\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
+G:\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe
+G:\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.pdb
+G:\Haptic Glove\Haptic Glove\obj\Debug\ResolveAssemblyReference.cache
+G:\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Form1.resources
+G:\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Properties.Resources.resources
+G:\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.csproj.GenerateResource.Cache
+G:\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Form1.resources
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Properties.Resources.resources
+C:\Documents and Settings\Shantanu\Desktop\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Form1.resources
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.pdb
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\obj\Debug\ResolveAssemblyReference.cache
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Form1.resources
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Properties.Resources.resources
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.csproj.GenerateResource.Cache
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+K:\Visual Studio 2005\Projects\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Form1.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Debug\Haptic_Glove.Properties.Resources.resources
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.csproj.GenerateResource.Cache
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+C:\Documents and Settings\Face Processing\Desktop\Haptic Glove\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
