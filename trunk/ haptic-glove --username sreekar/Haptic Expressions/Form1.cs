@@ -264,6 +264,7 @@ namespace Haptic_Expressions
             {
                 SW.Write(((int)Expressions.NEUTRAL).ToString()+ " ");
             }
+
             
             //Write the time taken for the response
             double DurationMilli = Convert.ToDouble(ResponseTime.Duration().Ticks)/10000;
