@@ -37,7 +37,7 @@ namespace Haptic_Expressions
         RegistryKey RegKey;
 
         // Capture Response Time
-        DateTime StartTime, StartT;
+        DateTime StartTime;
         DateTime EndTime;
 
         // Enumeration of expressions
@@ -251,6 +251,7 @@ namespace Haptic_Expressions
             else if ((e.KeyValue == 100) || (e.KeyValue == 37))
             {
                 SW.Write(((int)Expressions.HAPPY).ToString()+ " ");
+
             }
             else if ((e.KeyValue == 101) || (e.KeyValue == 12))
             {
@@ -576,6 +577,7 @@ namespace Haptic_Expressions
             
             if (ChosenExp == (int)Expressions.ANGRY)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "ANGRY";
                 List<string> SubMotorList = BreakDownMotorList(AngryMotors);
                 VibrateMotors(SubMotorList, AngryTimes, AngryIntensity);
@@ -584,6 +586,7 @@ namespace Haptic_Expressions
             }
             else if (ChosenExp == (int)Expressions.FEAR)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "FEAR";
                 List<string> SubMotorList = BreakDownMotorList(FearMotors);
                 VibrateMotors(SubMotorList, FearTimes, FearIntensity);
@@ -592,6 +595,7 @@ namespace Haptic_Expressions
             }
             else if (ChosenExp == (int)Expressions.HAPPY)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "HAPPY";
                 List<string> SubMotorList = BreakDownMotorList(HappyMotors);
                 VibrateMotors(SubMotorList, HappyTimes, HappyIntensity);
@@ -600,6 +604,7 @@ namespace Haptic_Expressions
             }
             else if (ChosenExp == (int)Expressions.NEUTRAL)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "NEUTRAL";
                 List<string> SubMotorList = BreakDownMotorList(NeutralMotors);
                 VibrateMotors(SubMotorList, NeutralTimes, NeutralIntensity);
@@ -608,6 +613,7 @@ namespace Haptic_Expressions
             }
             else if (ChosenExp == (int)Expressions.DISGUST)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "DISGUST";
                 List<string> SubMotorList = BreakDownMotorList(DisgustMotors);
                 VibrateMotors(SubMotorList, DisgustTimes, DisgustIntensity);
@@ -616,6 +622,7 @@ namespace Haptic_Expressions
             }
             else if (ChosenExp == (int)Expressions.SAD)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "SAD";
                 List<string> SubMotorList = BreakDownMotorList(SadMotors);
                 VibrateMotors(SubMotorList, SadTimes, SadIntensity);
@@ -624,6 +631,7 @@ namespace Haptic_Expressions
             }
             else if (ChosenExp == (int)Expressions.SURPRISE)
             {
+                CurrExpTextBox.BackColor = Color.White;
                 CurrExpTextBox.Text = "SURPRISE";
                 List<string> SubMotorList = BreakDownMotorList(SurpriseMotors);
                 VibrateMotors(SubMotorList, SurpriseTimes, SurpriseIntensity);
@@ -632,6 +640,7 @@ namespace Haptic_Expressions
             }
             else
             {
+                CurrExpTextBox.BackColor = Color.White;
                 MessageBox.Show("Illegal Expression Chosen for Random Display");
             }
             
@@ -662,6 +671,9 @@ namespace Haptic_Expressions
                 }
                 expression_tally[expression] += 1;
                 VibrateChosenMotor(expression);
+
+
+
                 timer1.Start();
             }
             else
