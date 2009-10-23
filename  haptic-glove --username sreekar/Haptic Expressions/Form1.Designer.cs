@@ -55,6 +55,7 @@ namespace Haptic_Expressions
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.TrialCountBox = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SubjectNameTextBox = new System.Windows.Forms.TextBox();
@@ -68,7 +69,6 @@ namespace Haptic_Expressions
             this.label10 = new System.Windows.Forms.Label();
             this.NoOfCyclesTextBox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.TrialCountBox = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -344,6 +344,15 @@ namespace Haptic_Expressions
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randomize and Deliver Expressions with Response Recording";
             // 
+            // TrialCountBox
+            // 
+            this.TrialCountBox.AutoSize = true;
+            this.TrialCountBox.Location = new System.Drawing.Point(635, 31);
+            this.TrialCountBox.Name = "TrialCountBox";
+            this.TrialCountBox.Size = new System.Drawing.Size(34, 13);
+            this.TrialCountBox.TabIndex = 12;
+            this.TrialCountBox.Text = "0 Left";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(199, 64);
@@ -401,7 +410,7 @@ namespace Haptic_Expressions
             // 
             // CurrExpTextBox
             // 
-            this.CurrExpTextBox.Enabled = false;
+            this.CurrExpTextBox.BackColor = System.Drawing.Color.White;
             this.CurrExpTextBox.Location = new System.Drawing.Point(402, 28);
             this.CurrExpTextBox.Name = "CurrExpTextBox";
             this.CurrExpTextBox.Size = new System.Drawing.Size(100, 20);
@@ -455,15 +464,6 @@ namespace Haptic_Expressions
             // 
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // TrialCountBox
-            // 
-            this.TrialCountBox.AutoSize = true;
-            this.TrialCountBox.Location = new System.Drawing.Point(635, 31);
-            this.TrialCountBox.Name = "TrialCountBox";
-            this.TrialCountBox.Size = new System.Drawing.Size(34, 13);
-            this.TrialCountBox.TabIndex = 12;
-            this.TrialCountBox.Text = "0 Left";
             // 
             // Form1
             // 
