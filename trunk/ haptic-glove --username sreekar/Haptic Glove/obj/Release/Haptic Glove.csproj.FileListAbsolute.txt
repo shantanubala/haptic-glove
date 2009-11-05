@@ -16,3 +16,4 @@ C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCod
 C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic Glove.csproj.GenerateResource.Cache
 C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic Glove.exe
 C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\obj\Release\Haptic Glove.pdb
+C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Glove\bin\Release\zstarlib.dll

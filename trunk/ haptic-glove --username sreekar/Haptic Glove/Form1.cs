@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Threading;
 using Microsoft.Win32;
 using System.IO;
+using Freescale.ZStarLib;
 
 namespace Haptic_Glove
 {
@@ -50,6 +51,18 @@ namespace Haptic_Glove
         // Time capture
         DateTime StartTime, EndTime;
 
+        // Accelerometer
+        private ZStar3 theZStar = new ZStar3();     
+        private ZStarSensor theSensor = null;
+        bool ShouldBeRecordingData;
+        string AcclDataDir = @"..\..\..\Accelerometer Data\";
+        FileStream FS1;
+        StreamWriter SW1;
+        int AcclCounter;
+        DateTime ConnectionTime, StartTimeStamp;
+        string DirWithLblOnPhlange;
+        List<string> ListOfStrings;
+
         #endregion
 
         public Form1()
@@ -57,7 +70,25 @@ namespace Haptic_Glove
             R = new Random();
             StartTime = new DateTime();
             EndTime = new DateTime();
+
+            // Initialize one sensor
+            theSensor = theZStar.GetSensor(0);      // 4. step: Assign right sensor that you want to use (or all for array of 16 elements)
+
             InitializeComponent();
+
+            // Flag to notify when the vibrators are buzzing
+            ShouldBeRecordingData = false;
+
+            // Event when new burst data was received
+            theZStar.OnBurstDataReceived += new ZStar3.OnBurstDataReceivedHandler(theZStar_OnBurstDataReceived);
+            // Event that occur when list of Active sensor was changed
+            theZStar.OnActiveSensorsChanged += new ZStar3.OnActiveSensorsChangedHandler(theZStar_OnActiveSensorsChanged);
+            // Event that occur if ZStarLib lost Connection on Comport
+            theZStar.OnConnectionLost += new ZStar3.OnConnectionLostHandler(theZStar_OnConnectionLost);
+
+            // Initiate Counter to 0
+            AcclCounter = 0;
+            ListOfStrings = new List<string>();
         }
 
         // One form load, open serial port
@@ -100,13 +131,29 @@ namespace Haptic_Glove
                 else
                 {
                     MessageBox.Show("No Virtual Serial Port found");
-                    this.Close();
+                    checkBox1.Enabled = false;
+                    checkBox2.Enabled = false;
+                    checkBox3.Enabled = false;
+                    checkBox4.Enabled = false;
+                    checkBox5.Enabled = false;
+                    checkBox6.Enabled = false;
+                    checkBox7.Enabled = false;
+                    checkBox8.Enabled = false;
+                    checkBox9.Enabled = false;
+                    checkBox10.Enabled = false;
+                    checkBox11.Enabled = false;
+                    checkBox12.Enabled = false;
+                    checkBox13.Enabled = false;
+                    checkBox14.Enabled = false;
+                    groupBox1.Enabled = false;
+                    groupBox2.Enabled = false;
+                    groupBox3.Enabled = false;
                 }
             }
             catch (Exception exp)
             {
                 MessageBox.Show("Error Opening Serial Port: " + exp.Message);
-            }
+            }            
         }
 
         // Try writing to the serial port and throw exception if not
@@ -139,6 +186,9 @@ namespace Haptic_Glove
             {
                 MessageBox.Show("Error closing serial port: " + exp.Message);
             }
+
+            // Perform Close POrt button
+            this.CloseButton.PerformClick();
         }
 
         #region Vibrator Actuations
@@ -547,5 +597,314 @@ namespace Haptic_Glove
             }
         }
 
+        #region ZStar Event Handlers
+        // List Of Active sensor was changed
+        void theZStar_OnActiveSensorsChanged(object sender, byte sensor)
+        {
+            // Is first sensor present???
+            if ((theZStar.ActiveSensorsMask & 0x0001) == 0x0001)
+            {
+                // Enable  Burst Data Receive for this sensor 
+                theSensor.BurstDataReceiveEnable = true;
+                // Enable global Burst mode 
+                theZStar.BurstModeEnabled = true;
+
+                // Record the time of connection
+                ConnectionTime = DateTime.Now;
+
+                if (!theSensor.DataRateSet(ZStar3.DataRate.DataRate_120Hz))
+                  MessageBox.Show("Could not set speed to 120Hz");
+
+                Statuslabel.Text = "Status: Connected";
+            }
+            else // Sensor index 0 is not connected            
+            {
+                // Disable  Burst Data Receive for this sensor
+                theSensor.BurstDataReceiveEnable = false;
+                // Disable global Burst mode
+                theZStar.BurstModeEnabled = false;
+                Statuslabel.Text = "Status: Disconnected";
+            }
+        }
+
+        // ZStarLib lost connection with ZStar hardware
+        void theZStar_OnConnectionLost(object sender)
+        {
+            // Perform Close port button
+            this.CloseButton.PerformClick();
+            // Show Error Message
+            MessageBox.Show("ComPort connection lost!", "ZStarLib connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        // New Burst data was received
+        void theZStar_OnBurstDataReceived(object sender, byte sensor)
+        {
+            // Are these data from our sensor 0
+            if (sensor == 0 && running)
+            {
+                while (theSensor.GetBurstData()) // Get all pending data in Burst Data FIFO Buffer
+                {
+
+                    // Record to the file
+                    string WriteStr = theSensor.BurstTimeText+ " " + Convert.ToString(theSensor.RealX) + " " +
+                        Convert.ToString(theSensor.RealY) + " " +
+                        Convert.ToString(theSensor.RealZ);
+                    ListOfStrings.Add(WriteStr);
+                }
+
+            }
+            else if (sensor == 0 && !running)
+            {
+                while (theSensor.GetBurstData()) // Get all pending data in Burst Data FIFO Buffer
+                {
+                    // Record to the file
+                    string WriteStr = theSensor.BurstTimeText + " " + Convert.ToString(theSensor.RealX) + " " +
+                        Convert.ToString(theSensor.RealY) + " " +
+                        Convert.ToString(theSensor.RealZ);
+                }
+            }
+        }
+
+ 
+        #endregion
+
+        private void Refreshbutton_Click(object sender, EventArgs e)
+        {
+            // Get all ComPorts in PC
+            ComPortInfo[] ports = ZStar3.GetComPorts();
+
+            // Clear ListBox of Comports
+            comboBox.Items.Clear();
+
+            // walk through all Comports
+            foreach (ComPortInfo p in ports)
+            {
+                // Add each to Comport list
+                int ix = comboBox.Items.Add(p);
+
+                // Check name and look for ZSTAR device
+                if (p.FriendlyName.Contains("ZSTAR"))
+                {
+                    // remember last index of ZSTAR port
+                    comboBox.SelectedIndex = ix;
+                }
+            }
+
+            // If ZSTAR ComPort wasn't found 
+            if (comboBox.SelectedIndex == -1)
+            {
+                // Select first in List
+                comboBox.SelectedIndex = 0;
+            }
+
+        }
+
+        private void OpenButton_Click(object sender, EventArgs e)
+        {
+            // Check ZStarLib ComPort status and selected item in List box
+            if (!theZStar.IsPortOpen && comboBox.SelectedItem != null)
+            {
+                // If ComPort exist and ZStarLib has closed port
+                // Try to open selected port
+                if (!theZStar.OpenPort(((ComPortInfo)comboBox.SelectedItem).PortNum))
+                {
+                    // If Failed, show Error message 
+                    MessageBox.Show("OpenPort failed!", "ZStarLib connection", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    // And go out
+                    return;
+                }
+
+                // Check USB_Stick type (has to be known!!)
+                if (theZStar.ZStarUsbStickType == ZStar3.UsbStickType.Unknown)
+                {
+                    // Unknown USB Stick type
+                    // Close opened port
+                    theZStar.ClosePort();
+                    // And show Error Message
+                    MessageBox.Show("This is not ZStar3 Device!!!");
+                    return;
+                }
+
+                // Disable / Enable all depends objects
+
+                // SetUp Enable of all controls on form
+                comboBox.Enabled = false;
+                this.Refreshbutton.Enabled = false;                 
+                OpenButton.Enabled = false;
+                this.CloseButton.Enabled = true;
+
+                // Disable for all sensor burst data
+                theZStar.BurstDataReceiveEnableMask = 0x0000;
+
+                // Set the sensor speed to max
+                if (theSensor.DataRate == ZStar3.DataRate.DataRate_30Hz)
+                    MessageBox.Show("30Hz");
+                else if (theSensor.DataRate == ZStar3.DataRate.DataRate_60Hz)
+                    MessageBox.Show("60Hz");
+                else if (theSensor.DataRate == ZStar3.DataRate.DataRate_120Hz)
+                    MessageBox.Show("120Hz");
+
+               
+
+                // Keep new sensors(without power switch) sensor awake up when ZStarLib runs
+                theZStar.SleepDisabled = true;
+            }
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            // Switch of sleepDisabled Sensor capatibilities
+            theZStar.SleepDisabled = false;
+            // Switch of Burst mode of ZStar 
+            theZStar.BurstDataReceiveEnableMask = 0x0000;
+            theZStar.BurstModeEnabled = false;
+
+            // Close Port
+            theZStar.ClosePort();
+
+            // SetUp Form
+            Statuslabel.Text = "Status: Disconnected";
+            this.comboBox.Enabled = true;
+            this.Refreshbutton.Enabled = true;
+            OpenButton.Enabled = true;
+            this.CloseButton.Enabled = false;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            StartTimeStamp = DateTime.Now;           
+            // Make sure the Directory is labelled
+            if (textBox9.Text == "" || textBox8.Text == "")
+                MessageBox.Show("Please Enter a Dir Label");
+            else
+            {
+                // Create the Top directory if it doesnot exist
+                string DirWithLbl = AcclDataDir + textBox9.Text;
+                if (!Directory.Exists(DirWithLbl))
+                    Directory.CreateDirectory(DirWithLbl);
+
+                // Create the lower directory for the location of the accelerometer
+                DirWithLblOnPhlange = DirWithLbl + "\\" + textBox8.Text;
+                Directory.CreateDirectory(DirWithLblOnPhlange);
+
+                // Create a file to write the acceleration data
+                FS1 = new FileStream(DirWithLblOnPhlange + "\\" + "Data.txt", FileMode.CreateNew, FileAccess.Write);
+                SW1 = new StreamWriter(FS1);
+
+                // Disable the start button                
+                this.button1.Enabled = false;
+                string TimeStr = ConnectionTime.TimeOfDay.Hours.ToString() + " "+
+                    ConnectionTime.TimeOfDay.Minutes.ToString() + " " +
+                    ConnectionTime.TimeOfDay.Seconds.ToString() + " " +
+                    ConnectionTime.TimeOfDay.Milliseconds.ToString();
+                SW1.WriteLine(TimeStr);
+                TimeStr = StartTimeStamp.Hour.ToString() + " " +
+                    StartTimeStamp.Minute.ToString() + " " +
+                    StartTimeStamp.Second.ToString() + " " +
+                    StartTimeStamp.Millisecond.ToString();
+                SW1.WriteLine(TimeStr);
+                SW1.Flush();
+                running = true;
+                NextAcclMotor();
+            }
+        }
+
+        private void NextAcclMotor ()
+        {
+            if (AcclCounter == 14)
+            {
+                // Close the file
+                SW1.Close();
+                FS1.Close();
+
+                button1.Enabled = true;
+                return;
+            }
+
+            
+
+            switch (AcclCounter)
+            {
+                case 0:
+                    checkBox1.Checked = true;
+                    break;
+                case 1:
+                    checkBox2.Checked = true;
+                    break;
+                case 2:
+                    checkBox3.Checked = true;
+                    break;
+                case 3:
+                    checkBox4.Checked = true;
+                    break;
+                case 4:
+                    checkBox5.Checked = true;
+                    break;
+                case 5:
+                    checkBox6.Checked = true;
+                    break;
+                case 6:
+                    checkBox7.Checked = true;
+                    break;
+                case 7:
+                    checkBox8.Checked = true;
+                    break;
+                case 8:
+                    checkBox9.Checked = true;
+                    break;
+                case 9:
+                    checkBox10.Checked = true;
+                    break;
+                case 10:
+                    checkBox11.Checked = true;
+                    break;
+                case 11:
+                    checkBox12.Checked = true;
+                    break;
+                case 12:
+                    checkBox13.Checked = true;
+                    break;
+                case 13:
+                    checkBox14.Checked = true;
+                    break;
+            }
+
+            // Start the motors for 5s
+            //running = true;
+            Data[0] = (char)(AcclCounter + 65);
+            serialWrite();
+            this.timer2.Interval = 5000;
+            this.timer2.Enabled = true;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timer2.Enabled = false;
+            this.StopAllMotors();
+            //running = false;
+            AcclCounter++;
+
+            for (int i=0; i<ListOfStrings.Count; i++)
+                SW1.WriteLine(ListOfStrings[i]);
+            SW1.WriteLine();
+
+            SW1.Flush();
+
+            // Clear all selections
+            clear_all();
+            ListOfStrings.Clear();
+
+            // Set the timer 3 for a 2 second countdown
+            timer3.Interval = 2000;
+            timer3.Enabled = true;
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            timer3.Enabled = false;
+
+            // Go to the next motor vibration
+            NextAcclMotor();
+        }
     }
 }
