@@ -86,6 +86,8 @@ namespace Haptic_Glove
             // Event that occur if ZStarLib lost Connection on Comport
             theZStar.OnConnectionLost += new ZStar3.OnConnectionLostHandler(theZStar_OnConnectionLost);
 
+
+
             // Initiate Counter to 0
             AcclCounter = 0;
             ListOfStrings = new List<string>();
@@ -612,8 +614,7 @@ namespace Haptic_Glove
                 // Record the time of connection
                 ConnectionTime = DateTime.Now;
 
-                if (!theSensor.DataRateSet(ZStar3.DataRate.DataRate_120Hz))
-                  MessageBox.Show("Could not set speed to 120Hz");
+                
 
                 Statuslabel.Text = "Status: Connected";
             }
@@ -736,6 +737,9 @@ namespace Haptic_Glove
                 // Disable for all sensor burst data
                 theZStar.BurstDataReceiveEnableMask = 0x0000;
 
+                if (!theZStar.DataRateSetAll(ZStar3.DataRate.DataRate_120Hz))
+                    MessageBox.Show("Could not set speed to 120Hz");
+
                 // Set the sensor speed to max
                 if (theSensor.DataRate == ZStar3.DataRate.DataRate_30Hz)
                     MessageBox.Show("30Hz");
@@ -803,6 +807,7 @@ namespace Haptic_Glove
                     StartTimeStamp.Second.ToString() + " " +
                     StartTimeStamp.Millisecond.ToString();
                 SW1.WriteLine(TimeStr);
+                SW1.WriteLine();
                 SW1.Flush();
                 running = true;
                 NextAcclMotor();
@@ -883,11 +888,23 @@ namespace Haptic_Glove
             this.StopAllMotors();
             //running = false;
             AcclCounter++;
+            string[] processedStrings = new string[3];
+            int minute;
+            double second;
 
-            for (int i=0; i<ListOfStrings.Count; i++)
-                SW1.WriteLine(ListOfStrings[i]);
-            SW1.WriteLine();
+            for (int i = 0; i < ListOfStrings.Count; i++)
+            {
+                if (ListOfStrings[i].IndexOf("m, ") < 0)
+                {
+                    ListOfStrings[i] = "0m, " + ListOfStrings[i];
+                }
+                processedStrings = ListOfStrings[i].Split(new Char[]{' '}, 3);
+                minute = int.Parse(processedStrings[0].Replace("m,", "")) * 60;
+                second = double.Parse(processedStrings[1].Replace("s", ""));
 
+                SW1.WriteLine((minute + second).ToString() + " " + processedStrings[2]);
+            }
+ 
             SW1.Flush();
 
             // Clear all selections
