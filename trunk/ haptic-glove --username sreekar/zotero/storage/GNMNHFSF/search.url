@@ -1,0 +1,1 @@
+scopus.receive({"ERROR":{"Errors":["The maximum number of user queries per 1 minute(s) has been exceeded.\nYou are allowed to make 10 queries per 1 minute(s)."]}})

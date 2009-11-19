@@ -1,0 +1,78 @@
+
+/* ::::: http://www.nature.com/sj/sj-style/style_content.css ::::: */
+
+body { background-color: white; }
+.MENU { font-size: 11px; vertical-align: top; color: black; font-family: verdana,helvetica,arial,sans-serif; }
+.issn { font-weight: bold; font-size: 11px; vertical-align: top; color: black; font-family: verdana,helvetica,arial,sans-serif; }
+.si { font-weight: bold; font-size: 15px; vertical-align: top; font-family: verdana,helvetica,arial,sans-serif; text-decoration: none; }
+.footnote { font-size: 11px; vertical-align: top; color: black; font-family: verdana,helvetica,arial,sans-serif; }
+.subtitle { font-size: 19px; vertical-align: top; color: red; font-family: verdana,helvetica,arial,sans-serif; }
+.view { font-weight: bold; font-size: 15px; vertical-align: top; font-family: verdana,helvetica,arial,sans-serif; text-decoration: underline; }
+.scope { font-size: 12px; vertical-align: top; color: black; font-family: verdana,helvetica,arial,sans-serif; }
+.bluetext { font-weight: bold; font-size: 13px; color: rgb(102, 153, 204); font-family: verdana,helvetica,arial,sans-serif; }
+.home { font-weight: bold; font-size: 11px; vertical-align: top; color: black; font-family: verdana,helvetica,arial,sans-serif; }
+.text { font-size: 14px; color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; }
+.normal { font-size: 13px; color: black; font-family: verdana,helvetica,arial,sans-serif; }
+a:link { color: red; text-decoration: none; }
+a:active { color: green; text-decoration: none; }
+a:visited { color: purple; text-decoration: none; }
+a:hover { color: green; text-decoration: none; }
+a.privacy:link { font-size: 10px; color: rgb(102, 102, 102); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.privacy:visited { font-size: 10px; color: rgb(102, 102, 102); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.privacy:hover { font-size: 10px; color: rgb(204, 51, 51); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.white:link { font-weight: bold; font-size: 11px; color: rgb(255, 255, 255); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.white:visited { font-weight: bold; font-size: 11px; color: rgb(255, 255, 255); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.white:hover { font-size: 11px; color: rgb(255, 255, 255); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.whtextb { font-weight: bold; font-size: 11px; color: rgb(255, 255, 255); font-family: Verdana,Arial,Helvetica,sans-serif; }
+.dktext { font-weight: bold; font-size: 11px; color: rgb(102, 102, 102); font-family: Verdana,Arial,Helvetica,sans-serif; }
+a.localnav:link { font-size: 11px; color: rgb(102, 102, 102); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnav:visited { font-size: 11px; color: rgb(102, 102, 102); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnav:hover { font-size: 11px; color: rgb(204, 51, 51); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnavred:link { font-weight: bold; font-size: 11px; color: rgb(204, 51, 0); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnavred:visited { font-weight: bold; font-size: 11px; color: rgb(204, 51, 0); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnavred:hover { font-size: 11px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.localnavb { font-weight: bold; font-size: 11px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnavb:link { font-weight: bold; font-size: 11px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnavb:visited { font-weight: bold; font-size: 11px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.localnavb:hover { font-weight: bold; font-size: 11px; color: rgb(204, 51, 51); font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+a.communities:link { color: rgb(0, 0, 0); }
+a.communities:visited { color: rgb(0, 0, 0); }
+a.communities:hover { color: rgb(204, 51, 51); }
+.aop { font-weight: bold; font-size: 16px; color: rgb(204, 51, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.arthead { font-weight: bold; font-size: 13px; color: rgb(102, 153, 204); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.aoppub { font-weight: bold; font-size: 11px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.atl { font-weight: bold; font-size: 13px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.author { font-weight: normal; font-size: 12px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.doi { font-weight: normal; font-size: 11px; color: rgb(0, 0, 0); line-height: normal; font-style: normal; font-family: Verdana,Arial,Helvetica,sans-serif; text-decoration: none; }
+.h1red { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: small; color: rgb(204, 51, 0); font-weight: bold; text-decoration: none; }
+tr.redbrown { background-color: rgb(204, 51, 0); }
+td.redbrown { background-color: rgb(204, 51, 0); }
+tr.grey { background-color: rgb(187, 186, 186); }
+td.grey { background-color: rgb(187, 186, 186); }
+tr.ltgrey { background-color: rgb(234, 234, 234); }
+td.ltgrey { background-color: rgb(234, 234, 234); }
+.whitebold { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; color: rgb(255, 255, 255); font-weight: bold; }
+.black { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(0, 0, 0); font-weight: normal; }
+a.black { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; }
+a.black:visited { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; }
+a.black:hover { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(204, 51, 51); text-decoration: none; }
+a.smlbluebold { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(0, 102, 153); font-weight: bold; text-decoration: none; }
+a.smlbluebold:visited { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(0, 102, 153); font-weight: bold; text-decoration: none; }
+a.smlbluebold:hover { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; color: rgb(204, 51, 51); font-weight: bold; text-decoration: none; }
+a.topnav, a.topnav:visited, a.topnav:hover { font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; color: rgb(0, 0, 0); text-decoration: none; }
+a.topnavsml, a.topnavsml:visited, a.topnavsml:hover { font-family: Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; color: rgb(0, 0, 0); text-decoration: underline; }
+.hidden { overflow: hidden; position: absolute; left: 0px; top: -500px; width: 1px; height: 1px; }
+#header .login-wrap { border-bottom: 1px solid rgb(0, 0, 0); background-color: rgb(234, 234, 234); float: left; width: 648px; }
+#header .login a.nature-link { font-family: Garamond,serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 100%; font-size-adjust: none; font-stretch: normal; -x-system-font: none; color: rgb(177, 6, 46); text-decoration: none; float: left; margin-right: 20px; width: 4.9em; text-align: left; line-height: 80%; }
+* html #header .login a.nature-link:hover { background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#header .ogin a.nature-link:hover { background: transparent url('nature.com.underline.gif') no-repeat scroll left bottom; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#header div.logon { font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 70%; text-align: right; }
+#header .logon .onlyformacie { font-size: 3px; }
+#header .logon .onlyformacie { display: none; }
+#header .logon a.login { padding: 0pt 15px 0pt 0pt; background: transparent url('logon.gif') no-repeat scroll right center; font-weight: bold; color: rgb(177, 6, 46); text-decoration: none; text-transform: uppercase; letter-spacing: -0.1em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#header .logon a.login:hover { background: transparent url('logon_over.gif') no-repeat scroll right center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: underline; }
+#header .logon a.login:active { background: transparent url('logon.gif') no-repeat scroll right center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#header .logon a.logoff { padding: 0pt 15px; background: transparent url('logoff.gif') no-repeat scroll right center; font-weight: bold; color: rgb(177, 6, 46); text-decoration: none; text-transform: uppercase; letter-spacing: -0.1em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#header .logon p { margin: 0pt; }
+#header .logon .user, #header .logon .inst { font-weight: bold; }
+span.free { color: rgb(204, 0, 51); text-decoration: none; }
