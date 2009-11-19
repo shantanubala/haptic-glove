@@ -1,0 +1,381 @@
+
+/* ::::: http://www.ingentaconnect.com.ezproxy1.lib.asu.edu/css/connect/non_akamai.css ::::: */
+
+#my-ingenta .down-arrow a, #sign-in .rightnavhead a { background: transparent url('rightmenu_arrow_down.gif') no-repeat scroll 0pt 2px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#my-ingenta .right-arrow a, #sign-in .rightnavhead .right-arrow a { background: transparent url('rightmenu_arrow_right.gif') no-repeat scroll 0pt 2px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#rightnav { background: transparent url('leftnav-topbg.gif') no-repeat scroll 0pt 0px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#page-help a { background: transparent url('helpbutton.gif') no-repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+li.menu-top { background: transparent url('gnav1_arrow_002.gif') no-repeat scroll 2px 2px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#tabbar li { background: transparent url('inactive_tab_left.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#tabbar #disabled { background: transparent url('disabled_tab_left.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#tabbar a { background: transparent url('inactive_tab_right.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#tabbar #inactive { background: transparent url('disabled_tab_right.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#tabbar #active { background: transparent url('active_tab_right.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#tabbar #current { background-image: url('active_tab_left.gif'); }
+#logo { background-image: url('topdecor.jpg'); }
+html { background: rgb(255, 255, 255) url('mainpage-bg.gif') repeat-y scroll right top; min-width: 970px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+body { position: relative; min-width: 971px; }
+#gnav-upper { background: transparent url('topnav-bg.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#main-content-container { background: transparent url('bodybg.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+h1.welcome { background: transparent url('welcometext.gif') repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#top-ad-alignment { background: transparent url('top_ad_bg.gif') repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.claims-table th.header .arrow, .claims-table-4 th.header .arrow, .claims-table-5 th.header .arrow, .claims-table-6 th.header .arrow { background: rgb(238, 242, 244) url('small_sort_arrow.gif') no-repeat scroll right center; padding-right: 11px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.claims-table th.headerSortUp .arrow, .claims-table-4 th.headerSortUp .arrow, .claims-table-5 th.headerSortUp .arrow, .claims-table-6 th.headerSortUp .arrow { background: rgb(238, 242, 244) url('small_up_arrow.gif') no-repeat scroll right center; padding-right: 11px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.claims-table th.headerSortDown .arrow, .claims-table-4 th.headerSortDown .arrow, .claims-table-5 th.headerSortDown .arrow, .claims-table-6 th.headerSortDown .arrow { background: rgb(238, 242, 244) url('small_down_arrow.gif') no-repeat scroll right center; padding-right: 11px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#subs-details span.subscribed { background: transparent url('icon_s_square_002.gif') no-repeat scroll 0pt 3px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/template_layout.css ::::: */
+
+#main-content-container { margin: 0px 229px 10px 0pt; padding: 25px 25px 10px 10px; position: relative; }
+#left-side-mosaic { display: none; position: absolute; right: 0pt; top: 66px; z-index: 10; }
+#footer { border-style: dotted; border-color: rgb(153, 193, 202); border-width: 1px 0pt; margin: 20px 0pt 100px; padding: 10px 0pt; overflow: hidden; position: relative; width: 100%; font-size: 10px; vertical-align: middle; clear: left; }
+#footer-text { margin-left: 20px; }
+#footer li { margin: 0pt; padding: 0pt; }
+#footer li#ingentastatement { margin-right: 4px; }
+#footer li.border { border-right: 1px solid rgb(0, 0, 0); padding-right: 4px; margin-right: 4px; }
+#logo { margin: 0pt; padding: 0pt; display: block; height: 66px; background-position: right center; background-repeat: no-repeat; }
+#logo a { padding: 15px 0px 0px 24px; display: block; }
+#gnav-upper { color: rgb(102, 150, 177); background-color: rgb(153, 193, 202); width: 100%; z-index: 8; height: 35px; margin-bottom: 1px; }
+#gnav-upper a:link { color: rgb(0, 51, 102); text-decoration: none; }
+#gnav-upper a:visited { color: rgb(0, 51, 102); text-decoration: none; }
+#gnav-upper a:active { color: rgb(0, 51, 102); text-decoration: none; }
+#gnav-upper a:hover { color: rgb(0, 51, 102); text-decoration: underline; }
+body { margin: 0pt; padding: 0pt; font-family: Verdana,Arial,Helvetica,sans-serif; color: rgb(57, 57, 42); font-size: 10pt; }
+#gnav-upper-left { margin: 0pt; padding: 0pt; position: absolute; top: 76px; left: 30px; z-index: 100; font-size: 12px; }
+#gnav-upper-left a { margin: 0pt 1px; }
+#gnav-upper a:link { color: rgb(255, 255, 255); text-decoration: none; }
+#gnav-upper a:visited { color: rgb(255, 255, 255); text-decoration: none; }
+#gnav-upper a:active { color: rgb(255, 255, 255); text-decoration: none; }
+#gnav-upper a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+#doigeneratorframe { border: 0px none ; width: 95%; height: 560px; margin-left: 20px; }
+#codexframe { border: 0px none ; width: 95%; margin-left: 20px; }
+body > iframe:first-child { position: absolute; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/menus.css ::::: */
+
+#gnav-drop-downs { margin: 0pt; padding: 0pt 0px 0pt 0pt; position: absolute; top: 76px; right: 190px; z-index: 99; }
+li.menu-top { margin: 0pt 20px 0pt 0pt; padding: 0pt 0pt 0pt 18px; font-size: 11px; float: left; display: block; }
+li.menu-top img { display: none; }
+#gnav-upper ul { margin: 0pt; padding: 0pt; }
+#gnav-drop-downs ul { margin: auto; }
+#nav ul { margin: auto; padding: 0pt; list-style-type: none; list-style-image: none; list-style-position: outside; text-align: left; font-size: 10px; }
+#nav li { list-style-type: none; list-style-image: none; list-style-position: outside; position: relative; color: rgb(255, 255, 255); }
+#nav li ul { border: 1px solid rgb(117, 116, 94); margin: 0pt; padding: 5px 0px; background: rgb(136, 134, 106) none repeat scroll 0% 0%; display: none; position: absolute; top: 13px; left: 5px; width: 240px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#nav li:hover ul { display: block; }
+#nav li ul li a { margin: 0pt; padding: 3px 0px; display: block; font-size: 10px; color: rgb(238, 236, 224); float: none; text-decoration: none; text-indent: 8px; width: 240px; }
+#nav li ul li a:hover { background: rgb(161, 157, 121) none repeat scroll 0% 0%; color: rgb(255, 255, 255); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#nav li a:link, #nav li a:active, #nav li a:visited { display: block; color: rgb(238, 236, 224); text-decoration: none; text-align: left; }
+#nav li a:hover { display: block; }
+#nav li.space { padding: 0pt 0pt 10px; }
+#nav li.top { padding: 2px 0pt 0pt; }
+ul#help-menu .help-link { font-weight: bold; }
+ul#help-menu li.help-link { margin: 4px 8px; font-weight: normal; color: rgb(219, 214, 187); font-size: 10px; }
+ul#help-menu { margin: 0pt; display: block; list-style-type: none; list-style-image: none; list-style-position: outside; padding-left: 0pt; font-size: 11px; }
+ul#help-menu li { position: relative; width: auto; float: left; margin-right: 8px; }
+ul#help-menu .rightborder { border-right: 1px solid rgb(209, 204, 164); padding-right: 8px; }
+ul#help-menu li ul { border: 1px solid rgb(117, 116, 94); margin: 0pt; padding: 5px 0px; background: rgb(136, 134, 106) none repeat scroll 0% 0%; display: none; position: absolute; top: 13px; left: -6px; width: 170px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+ul#help-menu li a:link, #help-menu li a:active, #help-menu li a:visited { color: rgb(255, 255, 255); }
+ul#help-menu li a { text-decoration: none; }
+ul#help-menu li:hover ul { display: block; }
+ul#help-menu li ul li { margin: 0pt; padding: 0pt; list-style-type: none; list-style-image: none; list-style-position: outside; }
+ul#help-menu li ul li a { margin: 0pt; padding: 3px 0px; display: block; font-size: 10px; color: rgb(238, 236, 224); float: none; text-decoration: none; text-indent: 8px; width: 170px; }
+ul#help-menu li ul li a:hover { background: rgb(161, 157, 121) none repeat scroll 0% 0%; color: rgb(255, 255, 255); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/main_content_container.css ::::: */
+
+input[type="text"], textarea, input[type="password"], input[type="checkbox"] { background-color: rgb(255, 255, 255); }
+input.form-input-text, textarea.form-input-text { margin: 2px 0pt 5px; padding: 0pt 0pt 0pt 2px; width: 150px; color: rgb(51, 102, 153); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; }
+select.form-input-text { margin: 2px 0pt 5px; padding: 0pt 0pt 0pt 2px; width: 150px; color: rgb(51, 102, 153); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; }
+#main-content-container .form-input-text { width: 175px; }
+#main-content-container .subsection input.form-input-text { width: 160px; }
+#main-content-container select.form-input-text { width: 165px; }
+#sign-in-form { margin: 2px 0pt 0pt; padding: 0pt; }
+#quick-search-form { margin: 2px 0pt 0pt; padding: 0pt; }
+input.right-nav-radio { margin: 0pt; padding: 0pt; vertical-align: middle; }
+.go-button { margin: 5px 0pt 10px; padding: 0pt; vertical-align: middle; }
+p .go-button { margin: 0pt; }
+h1 { margin: 0pt 0pt 10px 20px; font-size: 1.6em; font-weight: normal; color: rgb(1, 136, 211) ! important; letter-spacing: -1px; }
+h1.abstract-heading { font-size: 1.6em; font-weight: normal; }
+h2 { margin: 0pt 0pt 5px 20px; }
+h1.welcome {  }
+h3 { margin: 0pt 0pt 0pt 20px; }
+h3.content { margin: 0pt; padding: 0pt 0pt 5px 20px; color: rgb(0, 0, 0); font-weight: bold; }
+p { margin: 0pt 0pt 0pt 20px; padding: 0.6em 0pt; clear: both; }
+.small-print { font-size: 0.8em; }
+img.content-pad { padding: 0pt 10px 0pt 20px; }
+.hidden { margin: 0pt; padding: 0pt; line-height: 0pt; clear: both; }
+.heading, .headingp, .heading-macfix { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(205, 221, 232); margin: 10px 0pt; padding: 0.5em 20px; position: relative; background-color: rgb(238, 242, 244); }
+.heading-inner { width: 75%; }
+.heading p, .headingp p, .heading-macfix p { padding-left: 0pt; margin-left: 0pt; clear: right; }
+.heading .left-col, .heading-macfix .left-col { position: relative; float: left; width: 49%; }
+.heading .right-col, .heading-macfix .right-col { position: relative; float: right; width: 45%; text-align: right; font-weight: bold; }
+.heading-macfix .left-col-download { position: relative; float: left; width: 7em; }
+.heading-macfix .right-col-download { margin: 0pt 0pt 0pt 8em; position: relative; }
+.heading-macfix .left-col-small { position: relative; float: left; width: 20%; }
+.heading-macfix .right-col-large { position: relative; float: right; width: 70%; text-align: right; font-weight: bold; }
+#main-content-container .icon-key { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(205, 221, 232); margin: 10px 0pt; padding: 0.5em 20px; background-color: rgb(238, 242, 244); clear: left; }
+#main-content-container .icon { display: inline; }
+#main-content-container .heading .icon-key, #main-content-container .headingp .icon-key, #main-content-container .heading-macfix .icon-key, #main-content-container .fax-icon-key .icon-key, #main-content-container .fax-headingp .icon-key, #main-content-container .fax-heading-macfix .icon-key { border: medium none ; margin: 0pt; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.fax-heading, .fax-heading-macfix, .fax-headingp { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(205, 221, 232); margin: 10px 0pt; padding: 0.5em 20px; position: relative; background-color: rgb(249, 249, 230); }
+#main-content-container .fax-heading .icon-key { border: medium none ; margin: 0pt; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.fax-heading p, .fax-heading-macfix p, .fax-headingp p { padding-left: 0pt; margin-left: 0pt; clear: left; }
+.fax-heading .left-col, .fax-heading-macfix .left-col { position: relative; float: left; width: 45%; font-weight: bold; }
+.fax-heading .right-col, .fax-heading-macfix .right-col { position: relative; float: right; width: 45%; text-align: right; font-weight: bold; }
+.other-heading, .other-heading-macfix { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(205, 221, 232); margin: 10px 0pt; padding: 0.5em 20px; background-color: rgb(240, 225, 217); }
+.other-heading p, .other-heading-macfix p { padding-left: 0pt; margin-left: 0pt; }
+.pager { position: relative; float: left; width: auto; }
+.dk-rule { border-top: 1px dashed rgb(153, 193, 202); position: relative; }
+form { margin: 0pt; padding: 0pt; }
+.indent { padding-left: 12px; }
+.indent-20 { padding-left: 20px; }
+.control-indent, #right-nav .show { position: relative; width: auto; top: 0pt; margin-left: 35px; padding-left: 10px; }
+.control-cont { margin: 0pt; padding: 0pt; position: absolute; left: -20px; width: 20px; }
+table { margin-left: 20px; }
+img { border: 0pt none ; margin: 0pt; padding: 0pt; }
+a:link { color: rgb(51, 102, 153); text-decoration: none; }
+a:visited { color: rgb(51, 102, 153); text-decoration: none; }
+a:active { color: rgb(51, 102, 153); text-decoration: none; }
+a:hover { color: rgb(51, 102, 153); text-decoration: underline; }
+a.plain { color: rgb(114, 114, 132); }
+.bold { font-weight: bold; }
+.rust { color: rgb(153, 51, 0); font-weight: bold; }
+.rust-lite { color: rgb(153, 51, 0); }
+.error { margin: 2px 0pt 0pt; position: relative; display: block; color: rgb(153, 51, 0); font-weight: bold; }
+#main-content-container .error { padding: 0.6em 0pt 0.6em 20px; }
+#main-content-container p.error { padding: 0.6em 0pt 0.6em 20px; }
+#main-content-container .heading .error { padding-left: 0pt; }
+#main-content-container p span.error { padding: 0pt; }
+#rightnav .error { padding: 0pt 0pt 0pt 20px; }
+#main-content-container .right-col .error { padding: 0pt; font-weight: normal; }
+.hide { display: none; }
+p#pager, p.grey, p.pink, p.yellow { clear: none; }
+#top-ad-alignment { margin: 0px 230px 0px 0px; padding: 5px; }
+#right-ad-alignment { margin: 0px 0px 0px 54px; padding: 0px; }
+#top-ad { position: relative; text-align: center; }
+#ad { background: rgb(255, 255, 255) none repeat scroll 0% 0%; float: right; position: relative; width: 170px; z-index: 666; clear: both; margin-top: -1px; text-align: center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.small-banner { text-align: center; }
+.inputbox { float: left; padding-right: 5px; }
+.leftbreak { clear: left; }
+.checkbox input { vertical-align: middle; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/size_switcher.css ::::: */
+
+#text-size-control { border-style: none none dotted; border-color: rgb(57, 57, 42); border-width: 0pt 0pt 1px; margin: 0pt; padding: 10px 0pt 10px 20px; background-color: rgb(230, 227, 210); vertical-align: middle; font-family: Verdana,sans-serif; font-size: 12px; color: rgb(172, 172, 154); }
+#text-size-control a:active { margin: 0pt; padding: 0pt 5px 0pt 0pt; color: rgb(51, 102, 153); font-family: verdana,sans-serif; text-decoration: none; }
+#text-size-control a:visited { margin: 0pt; padding: 0pt 5px 0pt 0pt; color: rgb(51, 102, 153); font-family: verdana,sans-serif; text-decoration: none; }
+#text-size-control a:hover { margin: 0pt; padding: 0pt 5px 0pt 0pt; color: rgb(51, 102, 153); font-family: verdana,sans-serif; text-decoration: underline; }
+#text-size-control a:link { margin: 0pt; padding: 0pt 5px 0pt 0pt; color: rgb(51, 102, 153); font-family: Verdana,sans-serif; text-decoration: none; }
+.small { font-size: 1.1em; }
+.med { font-size: 1.2em; }
+.large { font-size: 1.3em; }
+.xlarge { font-size: 1.4em; }
+.black { color: rgb(0, 0, 0); }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/right_menu.css ::::: */
+
+#rightnav { margin: 0pt; padding: 0pt; position: absolute; top: 101px; right: 0px; width: 228px; height: auto; color: rgb(57, 57, 42); font-size: 10px; z-index: 5; }
+#rightnav a { color: rgb(166, 112, 35); }
+#rightnav .rightnavhead a { color: rgb(126, 104, 74); }
+#rightnav .rightnavhead { color: rgb(126, 104, 74); }
+#rightnav .rightnavvjhead a { color: rgb(126, 104, 74); }
+#rightnav .rightnavvjhead { color: rgb(126, 104, 74); }
+.rightnavhead, #my-ingenta-twist { font-weight: bold; font-size: 12px; }
+#page-help { padding: 15px 0px 0px 11px; }
+#page-help a { overflow: hidden; text-decoration: none; font-weight: bold; color: rgb(126, 104, 74); width: 209px; height: 46px; display: block; text-indent: -500px; }
+#page-help img { vertical-align: middle; display: none; }
+#secure { margin: 0pt; padding: 3px 0pt 3px 20px; background-color: rgb(100, 87, 74); color: rgb(255, 255, 255); font-weight: bold; text-transform: uppercase; }
+#secure img { vertical-align: middle; }
+#quick-search { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181) ! important; margin: 10px 0pt 0pt; padding: 5px 0pt 10px 20px; }
+#cart-navbar { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 6px 0pt 6px 22px; }
+#quick-search .go-button { display: block; }
+#sign-in { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 6px 0pt 6px 22px; font-family: Verdana,sans-serif; font-size: 10px; }
+#signed-in-as { margin: 0pt; padding: 0pt 0pt 10px 20px; font-family: Verdana,sans-serif; font-size: 12px; }
+#trad { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); }
+#trad #indent { border-top: medium none; }
+.signed-in-user { margin: 0pt; padding: 0pt 0pt 0pt 10px; color: rgb(153, 51, 0); font-weight: bold; font-family: Verdana,sans-serif; font-size: 11px; }
+.plus { position: absolute; left: 20px; }
+#additional-sign-in { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 10px 0pt 10px 20px; font-size: 12px; background-color: rgb(230, 227, 210); }
+#rightadvertline { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: -10px 0pt 0pt; padding: 0pt; }
+#rightnav #vertical-ad { padding: 5px 0pt; text-align: center; }
+#rightnav #ad { background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-top: 0pt; margin-right: 20px; }
+#rightnav #text-size-control { clear: right; }
+.my-ingenta-rule { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 5px 0pt; height: 1px; }
+#premium-contact { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); padding: 6px 0pt 6px 22px; }
+.icon-key { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 0pt 0pt 10px 20px; }
+.icon { margin: 2px 0pt; }
+.icon-key-premium { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 10px 0pt 0pt; padding: 6px 0pt 6px 22px; }
+.error { margin: 2px 0pt 0pt; position: relative; display: block; color: rgb(153, 51, 0); font-weight: bold; }
+#sign-in .error { padding-left: 0pt; }
+#need-to-register { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt 0pt 0px; padding: 10px 0pt 10px 20px; background-color: rgb(230, 230, 213); font-size: 1.2em; }
+.med-bg-top-and-bottom-border { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); padding: 10px 0pt 10px 20px; background-color: rgb(230, 230, 213); font-size: 1.2em; }
+#email-this-page { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 10px 0pt 10px 20px; vertical-align: middle; font-family: Verdana,sans-serif; font-size: 12px; }
+.athens-sign-in { font-size: 12px; }
+#google-ads-skyscraper { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 4px 0pt 0pt 49px; }
+#rightnav #search-options .quick-search-option { margin: 0pt; padding: 0pt; display: block; }
+#write-signed-in-as { margin: 2px 0pt; padding: 0pt 0pt 4px 20px; display: block; text-align: left; font-weight: bold; font-size: 12px; }
+#trad #write-signed-in-as { margin-left: -20px; }
+#trad .signed-in-user { margin-left: -20px; }
+.show { display: block; }
+.hide { display: none; }
+#ident { border-top: 1px solid rgb(255, 255, 255); padding: 6px 0pt 6px 22px; margin-top: 0pt; }
+#trad > #ident { border-top: medium none; padding-left: 0pt; margin-left: 20px; }
+#text-size-control { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); }
+#tools, #quick-search { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 6px 0pt 6px 22px; }
+#navbar-browse { border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 14px 0pt 6px 22px; }
+#my-ingenta { border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(215, 209, 181); margin: 0pt; padding: 6px 0pt 6px 22px; }
+#my-ingenta-content { margin: 4px 0pt 0pt 2px; }
+#tools ul, #quick-search ul { margin: 0pt; list-style-type: none; list-style-image: none; list-style-position: outside; padding-left: 0pt; }
+#tools #export-formats, #tools #rss-links, #tools #bookmark-links, #tools #subscribe-links, #tools #linksoptions, #quick-search #search-history-results { margin: 3px 0pt; padding: 2px 0pt 2px 5px; }
+#tools li { margin: 7px 0px; }
+#tools li ul li { margin: 0px; }
+#subscribe, #links-text, #rss-feeds, #bookmark, #print-link, #export, #avail, #search-history-link { font-weight: bold; }
+.alerts a { font-weight: bold; }
+#quick-search { border-bottom: medium none; }
+#rightnav #search-options { position: relative; width: 135px; float: left; margin-bottom: 5px; }
+#rightnav #search-options .quick-search-option { margin: 0pt; padding: 0pt; display: block; }
+#rightnav .quick-search-option input { margin: -3px -1px -3px 0pt; padding: 0pt; }
+#moreIds { margin-left: -10px; }
+a .twister-arrow { margin: 1px 2px 0pt 0pt; }
+a:hover .twister-arrow { text-decoration: none; }
+#my-ingenta .down-arrow a, #sign-in .rightnavhead a { display: block; width: 160px; padding-left: 14px; }
+#my-ingenta .right-arrow a, #sign-in .rightnavhead .right-arrow a { display: block; width: 160px; padding-left: 14px; }
+.rightnavvjhead { color: rgb(126, 104, 74); font-weight: bold; font-size: 10px; }
+#journallinks { display: block; padding-left: 14px; }
+#journallinks .rightnavvjhead { padding-top: 10px; }
+#journallinks .rightnavvjhead a { color: rgb(126, 104, 74); }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/bobby.css ::::: */
+
+ul.bobby { margin: 0pt; list-style-type: none; list-style-image: none; list-style-position: outside; padding-left: 0pt; }
+#main-content-container ul.bobby { margin-left: 20px; }
+ul.bobby-float { margin: 0pt; display: block; list-style-type: none; list-style-image: none; list-style-position: outside; padding-left: 0pt; }
+.bobby-float li { position: relative; width: auto; float: left; margin-right: 2px; }
+.bobby-float .rightborder { border-right: 1px solid rgb(102, 150, 177); padding-right: 2px; }
+.low-lead p, #low-lead p { padding: 0.1em 0pt; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/jquery.bookmark.css ::::: */
+
+.bookmark_popup_text img { border: medium none ; vertical-align: bottom; }
+.bookmark_popup { display: none; position: absolute; z-index: 100; }
+.bookmark_popup ul { border: 1px solid rgb(170, 170, 170); float: left; width: 320px; }
+.bookmark_list { margin: 0px; padding: 0px; display: inline-block; float: left; list-style-type: none; font-size: 80%; }
+html:first-child .bookmark_list { font-size: 80%; }
+.bookmark_list li { margin: 0px 1px; padding: 1px; float: left; width: 23%; }
+.bookmark_compact {  }
+.bookmark_compact li { border: medium none ; margin: 0px; padding: 2px; width: 16px; height: 16px; background-color: transparent; }
+.bookmark_list a { width: 100%; text-decoration: none; cursor: pointer; }
+.bookmark_list span { display: inline-block; width: 16px; height: 16px; }
+.bookmark_list span.bookmark_icons { background: transparent url('bookmarks.png') no-repeat scroll center center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.bookmark_list img { border: medium none ; }
+#bookmarks-container { border: 1px solid rgb(234, 239, 243); padding: 10px 20px; background: transparent url('bookmarks_bg.png') repeat-x scroll 0pt 0pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-size: 11px; margin-top: 1.5em; margin-bottom: 1.5em; height: 46px; }
+#selectBookmark { display: block; height: 20px; margin-top: 10px; }
+#bookmarks-container span.para { padding-left: 0px; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/search.css ::::: */
+
+#search-form .left-col { margin: 5px 0pt 0pt; padding: 0pt 0pt 0pt 20px; position: relative; width: 120px; float: left; }
+#search-form .right-col { margin: 5px 0pt 0pt 140px; }
+#email-form .left-col { margin: 0pt 0pt 5px; padding: 0pt 0pt 5px 20px; position: relative; width: 150px; float: left; }
+.subsection { border-bottom: 1px dashed rgb(153, 193, 202); margin: 0pt; padding: 0pt 0pt 5px; position: relative; background-color: rgb(255, 255, 255); }
+#title { border-bottom: 1px dashed rgb(153, 193, 202); margin: 0pt; padding: 0pt 0pt 1em; position: relative; background-color: rgb(255, 255, 255); }
+#title .left { position: relative; width: auto; text-align: left; padding-left: 0pt; margin-right: 60px; }
+#title .left-track { position: relative; width: auto; text-align: left; padding-left: 0pt; margin-right: 200px; }
+#title .right { position: relative; width: 50px; float: right; }
+#title .right-track { position: relative; width: 200px; float: right; }
+#title .left h2 { text-indent: 0pt; }
+#article-journal-logo { position: relative; float: right; margin-right: 10px; }
+#top-of-page { overflow: visible; }
+#title p { padding: 0.1em 0pt; }
+#abstract { margin: 10px 10px 10px 0pt; position: relative; padding-left: 20px; }
+#abstract, #info { position: relative; }
+#abstract p { margin-left: 0pt; }
+#abstract p, #info p { clear: none; }
+#info { margin: 10px 10px 10px 0pt; position: relative; }
+#info p { padding: 0.1em 0px 0.1em 0pt; }
+.align-center { text-align: center; }
+.align-middle { vertical-align: middle; }
+#journal-info { margin: 0pt; padding: 0pt; }
+#journal-info .left { margin: 0pt 0pt 0pt 10px; position: relative; width: 80px; float: left; clear: right; }
+#journal-info .right { margin: 0pt 0pt 0pt 120px; padding: 0pt 0pt 0pt 10px; position: relative; width: 425px; }
+#search-heading .left-col { position: relative; float: left; width: 48%; }
+#search-heading .right-col { position: relative; text-align: right; }
+p.spacer { margin: 0pt 0pt 10px; padding: 0pt; line-height: 0pt; }
+#author-off { position: relative; padding-left: 20px; }
+#author-off p { margin-left: 0pt; }
+#author-off .left-col { position: relative; width: 15em; float: left; font-weight: bold; }
+#author-off .right-col { position: relative; width: auto; margin-left: 180px; }
+input.large-input-text { margin: 2px 0pt 5px; padding: 0pt 0pt 0pt 2px; width: 250px; color: rgb(51, 102, 153); font-family: verdana,sans-serif; font-size: 12px; }
+textarea.big-textarea { margin: 2px 0pt 5px; padding: 0pt 0pt 0pt 2px; color: rgb(51, 102, 153); font-family: verdana,sans-serif; font-size: 12px; }
+.page-heading { margin: 0pt; padding: 0pt 0pt 0pt 20px; position: relative; width: auto; }
+.page-heading .heading-text { position: relative; width: auto; }
+.heading-text h1, .heading-text p { margin: 0pt; }
+.page-heading .access-icon { margin: 0pt 4px 0pt 0pt; position: relative; width: auto; float: left; z-index: 99; }
+.heading .right-col, .fax-heading .right-col { width: 35%; }
+.heading .left-col, fax-heading .left-col { width: 50%; }
+.heading-macfix p.hidden { clear: left; }
+.heading-macfix p, #links p, #info p { clear: none; }
+.linkserver { overflow: visible; position: relative; margin-left: 20px; }
+.linkserver img.float { margin: 0pt 10px 10px 0pt; position: relative; width: auto; float: left; }
+.linkserver p { margin: 0pt; padding: 0pt; clear: none; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/search_pager.css ::::: */
+
+.pager-bar, .pager-barp, .marked-list-pager, .article-pager { margin: 10px 0pt 0pt; padding: 0pt 10px 10px 20px; overflow: hidden; position: relative; width: auto; }
+.pager-bar .left-colp { position: relative; float: left; width: 69%; z-index: 99; }
+.pager-bar .right-col { position: relative; top: -2px; text-align: right; margin-left: 20px; }
+.marked-list-pager .left-col { position: relative; width: 20%; float: left; margin-top: 11px; }
+.marked-list-pager .right-col { position: relative; width: 78%; float: right; }
+.article-pager li.spacer { margin: 0pt 5px; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/registration.css ::::: */
+
+.subsection { border-bottom: 1px dashed rgb(153, 193, 202); margin: 0pt; padding: 0pt 0pt 10px 20px; position: relative; background-color: rgb(255, 255, 255); }
+.subsection-no-border { margin: 0pt; padding: 0pt 0pt 10px 20px; position: relative; }
+.subsection-on { border-top: 1px dashed rgb(153, 193, 202); border-bottom: 1px dashed rgb(153, 193, 202); padding: 0pt 0pt 10px 20px; position: relative; background-color: rgb(238, 238, 255); }
+.subsection-off { border-top: 1px dashed rgb(153, 193, 202); border-bottom: 1px dashed rgb(153, 193, 202); padding: 0pt 0pt 10px 20px; position: relative; background-color: rgb(238, 238, 238); }
+.subsection h3, .subsection-on h3, .subsection-off h3 { padding: 0.8em 0pt 0.9em; margin-left: 0pt; }
+.subsection p, .subsection-on p, .subsection-off p, .subsection-no-border p { margin-left: 0pt; }
+.subsection .left-col, .subsection-on .left-col, .subsection-off .left-col, .subsection-no-border .left-col { position: relative; width: 9em; float: left; font-weight: bold; }
+.subsection .right-col, .subsection-on .right-col, .subsection-off .right-col, .subsection .right-colp, .subsection-no-border .right-col { position: relative; margin-left: 140px; }
+.right-col textarea, right-colp textarea { margin: 0pt; }
+.checkbox-left-text { margin: 0pt 0pt 0.1em 30px; overflow: visible; }
+.checkbox-left-text p { margin-left: 0pt; padding-top: 0pt; }
+.checkbox-left { position: absolute; margin-left: -30px; }
+.heading h2.rust { padding-left: 0px; }
+.right-col table, .right-colp table { margin: 0pt 0pt 10px; }
+.left-col .currency-symbol { margin: 0pt; padding: 0pt; position: relative; right: -10px; top: 3px; width: 20px; float: right; font-weight: normal; }
+.nopad table { margin-left: 0pt; }
+.right-col .left-colp { position: relative; width: 150px; float: left; font-weight: bold; }
+.right-col .right-col { position: relative; width: auto; margin-left: 150px; }
+table { margin: 0pt 0pt 10px; padding: 0pt; }
+.checkboxes { position: relative; padding-left: 20px; }
+.checkboxes .row { overflow: visible; position: relative; clear: both; }
+.checkboxes .checkbox-item { position: relative; width: 30px; float: left; }
+.checkboxes .checkbox-lable { position: relative; margin-left: 40px; }
+.which-trial table { margin: 0pt 0pt 10px 20px; display: block; }
+.indent-20 table { padding: 0pt; margin-left: -5px; }
+form h3.rust { margin: 10px 0pt 10px 20px; }
+#main-content-container > .table-center { padding-left: 20px; }
+p.pad { margin: 0pt 0pt 5px; padding: 0pt; clear: both; font-size: 1px; }
+#offer-buttons { margin-bottom: 10px; }
+#library-button-spacer { margin-right: 10px; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/baynote.css ::::: */
+
+#baynote-recommendations { background: rgb(221, 216, 190) none repeat scroll 0% 50%; overflow: hidden; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html #baynote-recommendations { overflow: visible; }
+#baynote-recommendations * { clear: left; }
+#baynote-recommendations p { margin-bottom: -5px; padding-bottom: 0pt; }
+#baynote-recommendations li { margin-top: 0pt; padding-top: 0pt; }
+#bn_beta_message { border-bottom: 1px solid rgb(187, 187, 187); padding: 10px 20px; font-size: 0.9em; display: none; }
+.bn_g_footer { float: right; padding-right: 20px; }
+
+/* ::::: http://a465.g.akamai.net/f/465/1984/1d/www.ingentaconnect.com/css/connect/baynote-guide.css ::::: */
+
+.bn_g_container { border: 1px solid rgb(170, 170, 170); padding: 15px 0px 25px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; }
+.bn_g_container a { color: rgb(51, 102, 153); text-decoration: none; }
+.bn_g_container a:hover { color: rgb(51, 102, 153); text-decoration: underline; }
+.bn_g_welcome { margin: 0pt 0pt 0pt 20px; padding: 0.6em 0pt; color: rgb(153, 51, 0); font-weight: bold; }
+.bn_g_results_list { margin: 0px; padding-left: 40px; }
+.bn_g_result_terms { display: none; }
+.bn_g_details { display: none; }

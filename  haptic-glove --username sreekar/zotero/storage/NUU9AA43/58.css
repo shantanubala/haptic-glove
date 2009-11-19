@@ -1,0 +1,256 @@
+
+/* ::::: null ::::: */
+
+font.openaccess { font-weight: bold; padding-left: 3px; padding-right: 3px; background-color: rgb(255, 255, 255); }
+font.openaccess_open { color: rgb(0, 0, 0); }
+font.openaccess_access { color: rgb(204, 0, 0); }
+font.openaccess_oa {  }
+.content_box_openaccess_title { text-align: center; white-space: nowrap; background-color: rgb(186, 186, 186); }
+div.referrer-based-search-line { margin: 0px 4px 5px 0px; padding: 3px 25px; font-family: arial,sans-serif; font-size: 0.75em; background-color: rgb(0, 153, 24); }
+div.referrer-based-search-line .search-terms { font-weight: bold; }
+div.referrer-based-search-line .collection-name { font-style: italic; }
+@media screen, print, handheld {
+  .notonscreen { display: none; }
+}
+
+/* ::::: null ::::: */
+
+@media screen, print, handheld {
+  .notonscreen { display: none; }
+}
+
+/* ::::: http://fcs.sagepub.com/css/default.css ::::: */
+
+body { margin: 0pt; padding: 15px; background-color: rgb(226, 226, 226); font-family: arial; font-size: 11px; }
+a { color: rgb(48, 84, 132); }
+#bigwrapper { margin: 0pt; padding: 0pt; font-family: arial; font-size: 11px; }
+#mastheadarea { background-image: url('masthead.jpg'); min-width: 770px; position: relative; }
+#utilitynav { padding: 2px; color: rgb(0, 0, 0); font-size: 9px; position: absolute; }
+#utilitynav a { border-right: 1px solid rgb(0, 0, 0); padding: 0pt 5px; color: rgb(2, 40, 76); text-decoration: none; }
+#universityarea { padding: 5px 10px 5px 40px; background: transparent url('universityarea.gif') no-repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(0, 0, 0); text-decoration: none; font-family: times; font-size: 11px; text-align: right; position: absolute; top: auto; right: 0pt; }
+#universityarea img { margin-left: 20px; }
+#tablewrapper { padding: 0px 0pt 0pt; width: 100%; clear: both; }
+td#sjobrand { padding: 5px; text-align: left; }
+td#topbannerad { text-align: center; width: 42%; }
+td#quicksearch { padding: 5px; text-align: right; white-space: nowrap; vertical-align: bottom; }
+.find input { vertical-align: middle; height: 22px; }
+.form1 input, .form1 select { font-family: arial; font-size: 10px; }
+.contentarea .leftcol .find a.formbutton { line-height: 10px; margin-left: 5px; }
+#navbar { padding: 4px; text-align: center; }
+#navbar a { padding: 4px 11px; font-size: 11px; color: rgb(255, 255, 255); text-decoration: none; }
+#reprint_navbar { padding: 5px; text-align: center; }
+#reprint_navbar a { padding: 5px; font-size: 8px; color: rgb(255, 255, 255); text-decoration: none; }
+#button1 { background-image: url('button1.gif'); }
+#button2 { background-image: url('button2.gif'); }
+#button3 { background-image: url('button3.gif'); }
+#button4 { background-image: url('button4.gif'); }
+#button5 { background-image: url('button5.gif'); }
+#button6 { background: transparent url('button6.gif') repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#subnavbar { padding: 3px 6px 0pt; background-color: rgb(86, 116, 142); color: rgb(255, 255, 255); line-height: 20px; height: 20px; }
+#subnavbar a { padding: 4px 6px; font-size: 10px; color: rgb(255, 255, 255); text-decoration: none; }
+#subnavbar a.cursor { padding: 4px 6px 6px; color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(154, 161, 154); }
+#authenticationstring { padding: 6px 10px; background-color: rgb(154, 161, 154); text-align: center; color: rgb(0, 0, 0); }
+#authenticationstring a { color: rgb(2, 40, 76); }
+#contentborder { padding: 0pt 10px; background-color: rgb(154, 161, 154); min-width: 750px; }
+#maincontent { padding: 20px; background-color: rgb(255, 255, 255); }
+#footer { padding: 4px; font-size: 10px; background-color: rgb(154, 161, 154); }
+#footer a { color: rgb(2, 40, 76); font-size: 10px; }
+body {  }
+body.frameleft { background-color: rgb(255, 255, 255); }
+.contentarea table tr td, .contentarea { font-family: Arial,Helvetica,sans-serif; font-size: 75%; }
+h2.rubric { border-top: 1px solid rgb(170, 170, 170); padding-top: 2px; font-size: 15px; color: rgb(68, 68, 68); }
+h2.rubric .jump { font-size: 9px; font-weight: bold; text-decoration: none; margin-bottom: 0px; padding-top: 2px; padding-bottom: 3px; }
+h2.rubric-noborder { font-size: 15px; color: rgb(68, 68, 68); }
+h3 { font-size: 9px; font-weight: normal; }
+h3.jrubric { border-top: 1px solid rgb(153, 153, 153); font-size: 9px; font-weight: bold; text-decoration: none; margin-bottom: 0px; padding-top: 2px; padding-bottom: 3px; }
+.refine h3 { font-size: 11px; font-weight: normal; }
+.refine .right { margin: 2px 2px 5px; padding: 0pt; }
+.frameleft .contentarea h3.jrubric { font-size: 10px; }
+.frameleft { padding: 0px 5px 5px 20px; }
+.contentarea { padding: 15px; background-color: rgb(255, 255, 255); }
+.contentarea table { border-collapse: collapse; }
+.contentarea table tr td { padding: 10px; vertical-align: top; }
+.contentarea .leftcol { padding-right: 20px; width: 100%; }
+.contentarea .rightcol { width: 240px; }
+.contentarea .clear { margin: 0pt; padding: 0pt; clear: both; font-size: 0px; height: 1px; }
+.contentarea .collectionstable { margin-left: 40px; }
+.contentarea .collectionstable table { border-collapse: collapse; }
+.contentarea .collectionstable table tr td { padding: 0pt 10px 5px 0pt; }
+.contentarea .collectionstable {  }
+.contentarea .leftcol .form1 input, .contentarea .leftcol .form1 select { font-size: 10px; }
+.contentarea .leftcol .form1 .formbutton { padding: 5px; background-color: rgb(119, 119, 119); font-size: 9px; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); }
+.contentarea .rightcallout { border: 1px solid rgb(102, 102, 102); margin: 4px 0px 4px auto; padding: 5px; width: 240px; }
+.contentarea .modify { background-color: rgb(255, 255, 255); }
+.contentarea .refine { border: 1px solid rgb(51, 51, 51); padding: 10px; background-color: rgb(219, 225, 230); }
+.contentarea ul.none { list-style-type: none; }
+.contentarea li.none { list-style-type: none; }
+.contentarea .leftcol .browsetable { border: 1px solid rgb(204, 204, 204); background-color: rgb(219, 225, 230); width: 510px; }
+.contentarea .leftcol .browsetable table { margin: 10px; border-collapse: collapse; }
+.contentarea .leftcol .browsetable td { padding: 3px 5px; }
+.contentarea .leftcol .browsetable .nav { border-top: 1px solid rgb(102, 102, 102); padding: 10px; }
+.contentarea .email { margin: 10px; border-collapse: collapse; }
+.contentarea .email td { padding: 3px 5px; vertical-align: middle; }
+.advsearch { font-family: Arial,Helvetica,sans-serif; font-size: 10px; }
+.alert strong { color: rgb(167, 7, 22); }
+.attention { border: 1px solid rgb(51, 51, 51); padding: 5px; background-color: rgb(230, 238, 228); font-size: 10px; }
+.attention p { margin: 0pt; }
+.advsearch .right { text-align: right; }
+.contentarea .modify a.primarynav { padding: 5px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; text-decoration: none; }
+.contentarea .rightcol .rightcallout a.primarynav { background-color: rgb(119, 119, 119); }
+.primarynav { background-color: rgb(119, 119, 119); }
+.contentarea .modify a.primarynav { background-color: rgb(0, 0, 0); }
+.disabled { padding: 5px; color: rgb(204, 204, 204); font-size: 9px; font-weight: bold; text-decoration: none; height: 15px; background-color: rgb(119, 119, 119); background-image: none; }
+.advsearch .right .primarynav.search { background-color: rgb(91, 0, 9); }
+.advsearch .fielded table { border-collapse: collapse; }
+.advsearch .fielded table tr td { padding: 2px; vertical-align: middle; }
+.advsearch input, .advsearch select { font-family: arial; font-size: 10px; }
+.primarynav { text-decoration: none; }
+.advsearch a.button2 { border: 1px solid rgb(51, 51, 51); padding: 1px 8px; color: rgb(255, 255, 255); background-color: rgb(136, 136, 136); font-size: 9px; text-decoration: none; }
+.advsearch .add { margin-left: 62px; margin-top: 2px; }
+.advsearch .radialcol {  }
+.advsearch .radialcol ul {  }
+.advsearch .radialcol tr td { border: 1px solid rgb(204, 204, 204); padding: 5px 0pt 0pt; background-color: rgb(219, 225, 230); }
+.advsearch .radialcol td table tr td { border: medium none ; }
+.advsearch .radialcol .completelist { overflow: auto; height: 200px; width: 400px; }
+.advsearch .radialcol {  }
+.advsearch .daterange {  }
+.advsearch .daterange {  }
+.advsearch .daterange {  }
+.advsearch .daterange {  }
+.advsearch .resultformat {  }
+.advsearch .resultformat {  }
+.advsearch .resultformat {  }
+.advsearch .resultformat {  }
+.advanced2 { width: 600px; }
+.advanced2 .prev { float: left; }
+.advanced2 .next { float: right; }
+.hit { background: rgb(193, 253, 180) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-weight: bold; }
+.contentarea .leftcol.history .item { padding: 4px; background-color: rgb(255, 255, 255); margin-bottom: 1em; }
+.contentarea .leftcol.history .item input { vertical-align: middle; }
+.contentarea .leftcol.history .item p { margin: 0.2em; }
+.contentarea .leftcol.history .item .nav { font-size: 90%; }
+.contentarea .leftcol.history .item {  }
+.contentarea .leftcol.history .item {  }
+.saveto, .saveto input { vertical-align: bottom; }
+.marked { font-size: 1.2em; }
+.marked h1 { font-size: 1em; }
+.markeditem { border-bottom: 1px solid rgb(153, 153, 153); padding: 5px 20px; background-color: rgb(255, 255, 255); margin-bottom: 5px; }
+.markeditem .itemcopy {  }
+.markeditem .itemcopy h2 { margin: 0pt 0pt 10px; font-size: 1em; font-weight: normal; text-decoration: underline; }
+.markeditem .itemcopy h3 { margin: 0pt; font-size: 1em; font-weight: bold; }
+.markeditem .itemcopy p { margin: 0pt 0pt 5px; }
+.markeditem .itemcopy .tools {  }
+.markeditem .itemcopy .tools a { font-weight: bold; vertical-align: middle; }
+.markeditem .itemcopy .tools input { font-weight: bold; vertical-align: middle; }
+.markeditem .abstract_off { display: block; margin-top: 20px; }
+.markeditem .abstract_off h2 { margin: 5px 0px 0px; }
+.markeditem .abstract_off .keywords { font-size: 0.9em; }
+.rightcol .rightcallout .abslink { color: rgb(153, 153, 153); }
+.contentarea .results h1 { font-size: 1em; }
+.contentarea .results .cover { padding: 0pt 5px; width: 75px; float: left; }
+.contentarea .results .cover img { margin-bottom: 10px; }
+.contentarea .results .cover .type { border: 1px solid gray; padding: 3px; text-align: center; width: 50px; }
+.contentarea .resultsitem { border-bottom: 1px solid rgb(153, 153, 153); padding: 5px 20px 5px 0px; background-color: rgb(255, 255, 255); margin-bottom: 5px; }
+.contentarea .resultsitem .itemcopy { margin-left: 90px; }
+.contentarea .resultsitem .itemcopy h2 { margin: 0pt 0pt 10px; font-size: 1em; font-weight: normal; text-decoration: underline; }
+.contentarea .resultsitem .itemcopy h3 { margin: 0pt; font-size: 1em; font-weight: bold; }
+.contentarea .resultsitem .itemcopy p { margin: 0pt 0pt 5px; }
+.contentarea .resultsitem .itemcopy .tools {  }
+.contentarea .resultsitem .itemcopy .tools a { font-weight: bold; vertical-align: middle; }
+.contentarea .resultsitem .itemcopy .tools input { font-weight: bold; vertical-align: middle; }
+.contentarea .resultsitem .itemcopy .descriptors { margin: 1em 0pt; border-collapse: collapse; font-size: 1.2em; }
+.contentarea .resultsitem .itemcopy .descriptors td { padding: 0pt 0pt 0.5em; }
+.journalhome .leftnav { padding: 10px; background-color: rgb(255, 255, 255); float: left; margin-right: 20px; }
+.journalhome .leftnav ul.none { margin: 0pt 0pt 10px; padding: 0pt; width: 150px; }
+.journalhome .issue { float: left; }
+.journalhome .issue table { border-collapse: collapse; }
+.journalhome .issue td { padding: 0pt; }
+.journalhome .issue td h2 { margin: 0pt; font-size: 1.2em; }
+.journalhome .issue td p { margin-top: 0pt; }
+.journalhome .issue td img { margin: 5px 0pt; }
+.contentarea .toc .leftcol { padding: 10px; width: 170px; display: block; background-color: rgb(204, 204, 204); }
+.frameleft { width: 182px; }
+.frameleft .contentarea form { margin: 0pt; }
+.frameleft .contentarea p, .contentarea .toc .leftcol p { margin: 0pt; font-size: 10px; }
+h2.jbrand { margin: 0px; padding: 3px; background-color: rgb(26, 58, 115); color: white; font-family: times; font-weight: normal; font-size: 12px; }
+h2.jbrand a { text-decoration: none; color: white; }
+.jnav { border-top: 1px solid rgb(153, 153, 153); }
+.jnav a, .jnavcursor a { margin: 0pt; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none; display: block; }
+.jnav a, h3.jnav { border-top: 1px solid rgb(153, 153, 153); padding: 3px 5px; background-color: rgb(86, 116, 142); }
+.jnavcursor a { border-top: 1px solid rgb(153, 153, 153); padding: 5px; background-color: rgb(91, 0, 9); }
+.contentarea .toc .rightcol { background-color: rgb(255, 255, 255); width: auto; }
+.contentarea .toc .rightcol form { margin: 0pt; }
+.contentarea .toc .rightcol .header h1 { display: inline; }
+.contentarea .toc .rightcol .header h1 span { font-size: 75%; }
+.contentarea .toc .rightcol .header .tools, .contentarea .toc .rightcol .header .tools p { display: inline; margin-left: 5px; }
+.contentarea .toc .rightcol .header .tools span { margin-right: 15px; }
+.contentarea .toc .rightcol td.search { padding: 0pt; background-color: rgb(206, 206, 206); text-align: center; }
+.contentarea .toc .rightcol dl {  }
+.contentarea .toc .rightcol dl dt {  }
+.contentarea .toc .rightcol dl dd { margin-bottom: 10px; }
+.cit-blurb { font-style: italic; font-weight: normal; white-space: normal; color: rgb(0, 0, 153); }
+.contentarea .rightcol .modify table { border-collapse: collapse; }
+.contentarea .rightcol .modify table td { padding: 0pt 5px 5px 0pt; }
+.frameleft .contentarea { padding: 5px; background-color: rgb(204, 204, 204); width: auto; }
+.frameleft .contentarea p.problems { margin-top: 20px; font-size: 10px; }
+.contentarea .toc .leftcol { width: 170px; display: block; }
+.contentarea .gray { background-color: rgb(219, 225, 230); }
+.primarynav { padding: 5px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; text-decoration: none; height: 15px; background-color: rgb(91, 0, 9); background-image: url('buttonback.gif'); }
+.primarynavred { padding: 5px; color: rgb(255, 255, 255); font-size: 9px; font-weight: bold; text-decoration: none; height: 15px; background-color: rgb(91, 0, 9); background-image: url('buttonback.gif'); }
+.formbutton { border: 0pt none ; padding: 3px; color: rgb(255, 255, 255); font-size: 10px; text-decoration: none; background-color: rgb(91, 0, 9); font-weight: bold; background-image: url('buttonback.gif'); }
+.ruled { border-top: 1px solid rgb(153, 153, 153); padding: 5px 0pt; }
+.journalarea { background-color: red; }
+.help { border: 0px none ; padding: 0pt 0pt 0pt 2px; }
+#grayedout { color: rgb(156, 156, 156); }
+.folderitem { border-bottom: 1px solid rgb(153, 153, 153); padding: 5px 20px; background-color: rgb(255, 255, 255); margin-bottom: 5px; }
+.folderitem h2 { margin: 0pt 0pt 10px; font-size: 1em; font-weight: normal; text-decoration: underline; }
+.folderitem h3 { margin: 0pt; font-size: 1em; font-weight: bold; }
+.folderitem p { margin: 0pt 0pt 5px; }
+.folderitem .tools {  }
+.folderitem .tools a { font-weight: bold; vertical-align: middle; }
+.folderitem .tools input { font-weight: bold; vertical-align: middle; }
+input.textlink { border: 0px solid ; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; font-family: arial; font-size: 12px; color: rgb(48, 84, 132); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: left; text-decoration: underline; cursor: pointer; line-height: 1em; height: 1%; display: inline; }
+input.textlink2 { border: 0px solid ; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; font-family: arial; font-size: 15px; font-weight: bold; color: rgb(48, 84, 132); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: left; text-decoration: underline; cursor: pointer; line-height: 1em; height: 1%; }
+.inline_form form.form1 { display: inline; font-family: arial; font-size: 10px; }
+.inline_form input, .inline_form select { font-family: arial; font-size: 10px; display: inline; }
+div.right p { margin: 0pt 0pt 5px; padding: 0pt 0pt 0pt 125px; }
+.thislogo img { border: medium none ; display: block; }
+#navbarx { padding: 0px; text-align: left; margin-bottom: 5px; }
+#navbarx a { margin: 1px 1px 0px 0px; padding: 0px 4px; color: rgb(255, 255, 255); font-size: 10px; line-height: 18px; text-decoration: none; white-space: nowrap; display: inline; float: left; }
+a#xbutton1 { background-image: url('button1.gif'); }
+a#xbutton2 { background-image: url('button2.gif'); }
+a#xbutton3 { background-image: url('button3.gif'); }
+a#xbutton4 { background-image: url('button4.gif'); }
+a#xbutton5 { background-image: url('button5.gif'); }
+a#xbutton6 { background: transparent url('button6-alt.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; padding-right: 8px; }
+
+/* ::::: http://fcs.sagepub.com/css/highwire.css ::::: */
+
+#tablewrapper td { height: 50px; }
+.disabled_text { color: rgb(105, 105, 105); }
+.formbutton_disabled { border: 0pt none ; padding: 3px; color: rgb(255, 255, 255); font-size: 10px; text-decoration: none; font-weight: bold; background-color: rgb(119, 119, 119); }
+.formbutton_hidden { display: none ! important; }
+.contentarea .leftcol .browsetable { width: 600px; }
+.jnlbrowse input, .jnlbrowse select { font-family: arial; font-size: 10px; width: auto; }
+.contentarea .rightcallout { width: 250px; }
+td#sjobrand img { border: medium none ; text-decoration: none; }
+#universityarea img { border: medium none ; text-decoration: none; }
+a.no_underline { text-decoration: none; color: inherit; }
+a.no_underline:link { text-decoration: none; color: inherit; }
+a.no_underline:visited { text-decoration: none; color: inherit; }
+a.no_underline:hover { text-decoration: none; color: inherit; }
+a.no_underline:active { text-decoration: none; color: inherit; }
+#folders_frame { width: 800px; }
+
+/* ::::: http://fcs.sagepub.com/css/content_box.css ::::: */
+
+.contentarea table.content_box_inner_table tr td { padding: 3px 5px 3px 8px; }
+table.content_box_outer_table { padding: 0pt; width: 25%; margin-top: -20px; }
+table.content_box_inner_table { margin: 0pt; padding: 0pt; background-color: rgb(240, 240, 240); font-family: Verdana,Arial,Helvetica,sans-serif; }
+td.content_box_title_highlight { font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: italic; color: rgb(255, 255, 255); background-color: rgb(0, 0, 153); font-size: 120%; font-weight: bold; text-align: center; vertical-align: middle; }
+td.content_box_title { font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: italic; color: rgb(255, 255, 255); background-color: rgb(0, 0, 153); font-size: 120%; font-weight: bold; text-align: center; vertical-align: middle; }
+td.content_box_arrow { text-align: right; }
+td.content_box_item { text-align: left; vertical-align: top; }
+td.content_box_item ul { margin-top: 3px; }
+td.content_box_item ul { padding-left: 0px; margin-left: 15px; }
+.contentbox_thesaurus_terms li { font-size: 10px; }

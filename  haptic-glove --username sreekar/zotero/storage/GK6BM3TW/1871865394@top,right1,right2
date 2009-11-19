@@ -1,0 +1,16 @@
+function OAS_RICH(position) {
+if (position == 'Top') {
+document.write ('<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=sb&c=17&pli=1119743&PluID=0&w=728&h=90&ncu=$$http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/abstract/sci/L18/434713128/Top/AAAS/SOL-BioRad-SignifTrgLdr-11.12.09/BioRad-Significant.html/5241504630307343516b4d4143696448?$$&ord=434713128"></script>\n');
+document.write ('<noscript>\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/abstract/sci/L18/434713128/Top/AAAS/SOL-BioRad-SignifTrgLdr-11.12.09/BioRad-Significant.html/5241504630307343516b4d4143696448?http%3A//bs.serving-sys.com/BurstingPipe/BannerRedirect.asp%3FFlightID%3D1119743%26Page%3D%26PluID%3D0%26Pos%3D7745" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/BannerSource.asp?FlightID=1119743&Page=&PluID=0&Pos=7745" border=0 width=728 height=90></a>\n');
+document.write ('</noscript>\n');
+}
+if (position == 'Right1') {
+document.write ('<div class="ad"><div STYLE="color: #52819B; font-size: 10px; text-align: center;" >ADVERTISEMENT</div><br />\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/abstract/sci/L18/157751173/Right1/AAAS/SOL-SIG-CAR-HseIntroSTM-091008/STM-Launch-160x150_091005.HTML.html/5241504630307343516b4d4143696448?157751173" target="_blank"><img src="http://imagec14.247realmedia.com/RealMedia/ads/Creatives/AAAS/SOL-SIG-CAR-HseIntroSTM-091008/STM-Launch-160x150_091005.gif" BORDER=0 WIDTH=160 HEIGHT=150 alt="Advertisement"></a></div>\n');
+}
+if (position == 'Right2') {
+document.write ('<div class="ad"><div STYLE="color: #52819B; font-size: 10px; text-align: center;" >ADVERTISEMENT</div><br />\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/abstract/sci/L18/1489391789/Right2/AAAS/SOL-SIG-CAR-WebROSLdrTwr-4.30.09/LabStaff_Europe_tower_post_15Sept09.HTML.html/5241504630307343516b4d4143696448?1489391789" target="_blank"><img src="http://imagec14.247realmedia.com/RealMedia/ads/Creatives/AAAS/SOL-SIG-CAR-WebROSLdrTwr-4.30.09/LabStaff_Europe_tower_post_15Sept09.gif" BORDER=0 WIDTH=160 HEIGHT=600 alt="Advertisement"></a></div>\n');
+}
+}

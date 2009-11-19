@@ -1,0 +1,364 @@
+
+/* ::::: null ::::: */
+
+@media screen, print, handheld {
+  .notonscreen { display: none; }
+}
+
+/* ::::: http://jama.ama-assn.org/css/site2.css ::::: */
+
+a:link { color: rgb(51, 51, 204); text-decoration: none; }
+a:active { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a.contentbox:link { color: rgb(51, 51, 204); text-decoration: none; }
+a.contentbox:active { text-decoration: none; }
+a.contentbox:visited { text-decoration: none; }
+a.contentbox:hover { text-decoration: underline; }
+a.navbox:link { color: rgb(51, 51, 204); text-decoration: none; }
+a.navbox:active { text-decoration: none; }
+a.navbox:visited { text-decoration: none; }
+a.navbox:hover { text-decoration: underline; }
+a.homebox:link { color: rgb(51, 51, 204); text-decoration: none; }
+a.homebox:active { text-decoration: none; }
+a.homebox:visited { text-decoration: none; }
+a.homebox:hover { text-decoration: underline; }
+a.footer:link { color: rgb(51, 51, 204); text-decoration: none; }
+a.footer:active { text-decoration: none; }
+a.footer:visited { color: rgb(51, 51, 204); text-decoration: none; }
+a.footer:hover { text-decoration: underline; }
+a.authstring:link { color: rgb(51, 51, 204); text-decoration: none; }
+a.authstring:active { text-decoration: none; }
+a.authstring:visited { color: rgb(51, 51, 204); text-decoration: none; }
+a.authstring:hover { text-decoration: underline; }
+a.blacktext:link { text-decoration: none; color: rgb(0, 0, 0); }
+a.blacktext:active { text-decoration: none; color: rgb(0, 0, 0); }
+a.blacktext:visited { text-decoration: none; color: rgb(0, 0, 0); }
+a.blacktext:hover { text-decoration: underline; color: rgb(0, 0, 0); }
+.ama_header_text_box_foursides { border: 1px solid rgb(157, 182, 199); padding: 5px 10px; width: 96%; margin-top: 20px; min-width: 50px; }
+.ama_content_text_box_leftside { border-width: 1px; border-left: 1px solid rgb(157, 182, 199); padding: 1px 10px; }
+.alerts_page_title_area h1 { font-size: 12px; font-weight: bold; color: rgb(0, 51, 102); }
+.alerts_summary_page_alerts_area h2 { padding: 2px; font-size: 12px; font-weight: bold; text-align: left; }
+.alerts_summary_page_alerts_area h4 { margin: 1px; padding: 1px; text-align: left; }
+.ct_alert_information th { font-size: 11px; }
+.alert_criteria_display dt { font-style: normal; }
+.alerts_summary_page_prefs_area h2 { font-size: 12px; font-style: normal; }
+.alerts_summary_page_prefs_area h4 { font-size: 10px; font-style: normal; }
+
+/* ::::: http://jama.ama-assn.org/css/site.css ::::: */
+
+body { margin: 0pt; padding: 0pt; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { display: none; }
+.HorizList { margin: 0pt; padding: 0pt; }
+.HorizList li { float: left; list-style-type: none; display: block; }
+.HorizList li a { display: block; }
+ul.DotBullet { margin: 0pt 0pt 0.5em; padding: 0pt 0pt 0pt 10px; }
+ul.DotBullet li { background: transparent url('dot.79a8be.gif') no-repeat scroll 0pt 0.5em; list-style-type: none; list-style-image: none; list-style-position: outside; padding-left: 6px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 0.5em; }
+ul.NoBullet { margin: 0pt 0pt 0.5em; padding: 0pt 0pt 0pt 10px; }
+ul.NoBullet li { list-style-type: none; list-style-image: none; list-style-position: outside; margin-bottom: 0.5em; }
+.Icon, .Button { vertical-align: middle; }
+.Photo {  }
+.Invisible { display: none; }
+.LinkAction {  }
+.LinkMore {  }
+.ClearFix { height: 0pt; clear: both; font-size: 0pt; }
+.BoxFix {  }
+.Col {  }
+.Left {  }
+.Center {  }
+.Right {  }
+#LayoutWrapper {  }
+#HeaderWrapper { min-width: 869px; }
+#BodyWrapper { margin: 20px; position: relative; max-width: 1165px; min-width: 740px; clear: left; }
+#MainColumn { margin-right: 140px; }
+#SideColumn { width: 120px; position: absolute; top: 0pt; right: 0pt; }
+* html #PageWrapper {  }
+* html #HeaderWrapper {  }
+* html #SideColumn { right: 20px; }
+#AccessibilityLinks { position: absolute; left: -1000px; top: -1000px; }
+#BrowserWarning { display: none; }
+#FooterWrapper { margin: 2em 0pt; clear: both; text-align: center; min-width: 740px; }
+#FooterWrapper a { color: rgb(51, 51, 204); }
+#FooterWrapper p { margin-bottom: 0.5em; }
+#FooterWrapper p span { border-bottom: 1px solid rgb(0, 0, 0); padding-bottom: 3px; }
+* html #FooterWrapper p span { padding-bottom: 2px; }
+:first-child + html #FooterWrapper p span { padding-bottom: 2px; }
+#FooterNav a { text-transform: uppercase; }
+#Copyright { margin-top: 2em; }
+.AdWrapper { text-align: center; }
+.AdLabel { color: rgb(102, 102, 102); }
+#AdLeaderboard { margin: 5px 0pt; min-width: 810px; }
+#AdLeaderboard a img { vertical-align: middle; }
+#SideColumn .AdWrapper { margin-bottom: 20px; }
+#SideColumn .AdWrapper div { margin-top: 3px; }
+#Ad120x600 {  }
+#Ad120x240 {  }
+#HeaderWrapper { border-top: 2px solid rgb(140, 48, 61); background: transparent url('bg.header.gif') repeat-x scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#jama-logo { margin: 25px 0pt 0pt 10px; float: left; display: inline; }
+#LayoutWrapper.JAMAManuscript #jama-logo { margin: 21px 0pt 13px 10px; float: left; display: inline; }
+#ArchivesNav { min-height: 39px; }
+#ArchivesNav label img { vertical-align: middle; }
+#ArchivesNav form { padding: 10px 15px 9px 12px; background: rgb(212, 212, 212) url('bg.header.curve.bot.gif') no-repeat scroll left bottom; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; float: right; min-height: 20px; max-width: 575px; position: relative; }
+#ArchivesNav form span { background: rgb(255, 255, 255) url('bg.header.curve.top.gif') no-repeat scroll left top; position: absolute; top: 11px; left: -11px; display: block; width: 11px; height: 11px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#ArchivesNav .LinkMore { font-weight: bold; text-transform: uppercase; color: rgb(83, 133, 159); margin-left: 8px; }
+* html #ArchivesNav { height: 39px; }
+* html #ArchivesNav form { padding-top: 8px; height: 20px; }
+:first-child + html #ArchivesNav form { padding-top: 8px; }
+#SiteSearch { margin-top: 25px; float: right; clear: right; }
+#SiteSearch form { padding: 0pt 15px 0pt 0pt; }
+#SiteSearch label { color: rgb(182, 16, 16); font-weight: bold; text-transform: uppercase; }
+#SiteSearch .TextInput { width: 150px; }
+#SiteSearch .LinkMore { color: rgb(83, 133, 159); margin-left: 8px; }
+#UserToolbar { margin: 0pt 15px 4px 0pt; clear: both; text-align: right; }
+#UserToolbar a { color: rgb(51, 51, 204); }
+#MainNav { background: rgb(157, 182, 199) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; position: relative; }
+#MainNav ul {  }
+#MainNav ul li { border-right: 1px solid rgb(255, 255, 255); font-size: 91%; text-transform: uppercase; }
+#MainNav ul li a { padding: 0.85em 5px; color: rgb(255, 255, 255); background-color: rgb(157, 182, 199); background-position: 50% 50%; background-repeat: no-repeat; height: 1em; }
+#MainNav ul li a:hover { background-color: rgb(26, 87, 126); text-decoration: none; }
+#MainNav ul li.Active a { background-color: rgb(26, 87, 126); }
+#MainNav ul li.Active a:hover { text-decoration: none; }
+#MainNav ul li a span { position: absolute; top: -1000px; left: -1000px; font-size: 0pt; }
+#MainNav form { position: absolute; top: 0.45em; right: 15px; margin-left: 550px; }
+#MainNav label { font-size: 91%; color: rgb(182, 16, 16); font-weight: bold; text-transform: uppercase; margin-left: 10px; vertical-align: middle; }
+* html #MainNav { overflow: hidden; height: 2.4em; }
+* html #MainNav label { vertical-align: middle; }
+* html #MainNav form { top: 0.32em; }
+:first-child + html #MainNav form { top: 0.32em; }
+:first-child + html #MainNav ul { min-height: 1.625em; }
+#nav_home a { width: 40px; background-image: url('home.0.gif'); }
+#nav_current-issue a { width: 88px; background-image: url('current-issue.0.gif'); }
+#nav_past-issues a { width: 74px; background-image: url('past-issues.0.gif'); }
+#nav_collections a { width: 118px; background-image: url('collections.0.gif'); }
+#nav_cme a { width: 22px; background-image: url('cme.0.gif'); }
+#nav_submit a { width: 42px; background-image: url('submit.0.gif'); }
+#nav_subscribe a { width: 65px; background-image: url('subscribe.0.gif'); }
+#nav_help a { width: 29px; background-image: url('help.0.gif'); }
+#nav_home.Active a, #nav_home a:hover { background-image: url('home.1.gif'); }
+#nav_current-issue.Active a, #nav_current-issue a:hover { background-image: url('current-issue.1.gif'); }
+#nav_past-issues.Active a, #nav_past-issues a:hover { background-image: url('past-issues.1.gif'); }
+#nav_collections.Active a, #nav_collections a:hover { background-image: url('collections.1.gif'); }
+#nav_cme.Active a, #nav_cme a:hover { background-image: url('cme.1.gif'); }
+#nav_submit.Active a, #nav_submit a:hover { background-image: url('submit.1.gif'); }
+#nav_subscribe.Active a, #nav_subscribe a:hover { background-image: url('subscribe.1.gif'); }
+#nav_help.Active a, #nav_help a:hover { background-image: url('help.1.gif'); }
+#nav_manuscript-home a { width: 105px; background-image: url('nav.manuscript-home.0.gif'); }
+#nav_author-instructions a { width: 132px; background-image: url('nav.author-instructions.0.gif'); }
+#nav_reviewer-instructions a { width: 145px; background-image: url('nav.reviewer-instructions.0.gif'); }
+#nav_help a { width: 29px; background-image: url('nav.help.0.gif'); }
+#nav_tips a { width: 27px; background-image: url('nav.tips.0.gif'); }
+#nav_logout a { width: 44px; background-image: url('nav.logout.0.gif'); }
+#nav_journal-home a { width: 85px; background-image: url('nav.journal-home.0.gif'); }
+#nav_manuscript-home.Active a, #nav_manuscript-home a:hover { background-image: url('nav.manuscript-home.1.gif'); }
+#nav_author-instructions.Active a, #nav_author-instructions a:hover { background-image: url('nav.author-instructions.1.gif'); }
+#nav_reviewer-instructions.Active a, #nav_reviewer-instructions a:hover { background-image: url('nav.reviewer-instructions.1.gif'); }
+#nav_help.Active a, #nav_help a:hover { background-image: url('nav.help.1.gif'); }
+#nav_tips.Active a, #nav_tips a:hover { background-image: url('nav.tips.1.gif'); }
+#nav_logout.Active a, #nav_logout a:hover { background-image: url('nav.logout.1.gif'); }
+#nav_journal-home.Active a, #nav_journal-home a:hover { background-image: url('nav.journal-home.1.gif'); }
+.JAMAHome h1 { text-transform: uppercase; }
+.JAMAHome h1 span { text-transform: none; font-weight: normal; }
+.JAMAHome #current-issue { background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin-bottom: 15px; position: relative; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.JAMAHome #current-issue h1 { color: rgb(182, 16, 16); }
+.JAMAHome #current-issue h1 span { color: rgb(0, 0, 0); }
+.JAMAHome h3.special { font-size: 128%; color: rgb(0, 0, 0); line-height: 150%; }
+.JAMAHome #cover-image { border: 1px solid rgb(157, 182, 199); position: absolute; right: 10px; margin-left: 40px; }
+.JAMAHome #in-this-issue { padding: 10px; background: rgb(236, 242, 252) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; min-height: 245px; }
+.JAMAHome #in-this-issue h3 { margin-right: 216px; font-weight: normal; line-height: 125%; }
+.JAMAHome #in-this-issue h3 span { font-weight: normal; font-style: normal; }
+.JAMAHome #in-this-issue ul.mainList { margin: 0pt 0pt 0.5em; padding: 0pt 0pt 0pt 10px; }
+.JAMAHome #in-this-issue ul.mainList li { background: transparent url('dot.79a8be.gif') no-repeat scroll 0pt 0.5em; list-style-type: none; list-style-image: none; list-style-position: outside; padding-left: 6px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 0.5em; margin-right: 216px; font-size: 120%; line-height: 112%; }
+.JAMAHome #in-this-issue li a { color: rgb(0, 47, 103); font-weight: normal; }
+* html .JAMAHome #cover-image { right: 170px; top: 33px; }
+* html .JAMAHome #in-this-issue { height: 245px; }
+.exploreboxtitle { margin: 0pt 0pt 0.5em; padding: 5px 0pt 0pt; font-size: 128%; text-transform: uppercase; font-weight: bold; }
+.topboxtitle { margin: 0pt; padding: 5px 0pt 4px 10px; font-size: 128%; text-transform: uppercase; font-weight: bold; }
+.toplinks { text-transform: uppercase; font-size: 11px; }
+.JAMAHome #ertitle { padding-top: 5px; padding-left: 0pt; margin-left: 12px; padding-bottom: 8px; text-align: left; }
+.JAMAHome #ertitle span { font-weight: bold; font-size: 128%; color: rgb(0, 47, 103); }
+.JAMAHome #early-release-box { border: 1px solid rgb(58, 94, 138); background: rgb(252, 246, 219) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; margin-bottom: 10px; margin-top: 0pt; }
+.JAMAHome #early-release-box li { line-height: 125%; }
+.JAMAHome #early-release-box li a { color: rgb(0, 47, 103); font-size: 120%; }
+.express { font-family: verdana,arial,helvetica,sans-serif; color: rgb(204, 0, 0); font-size: 9px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.005em; padding-left: 6px; display: inline; }
+.theme { color: rgb(182, 16, 16); display: inline; }
+.JAMAHome #explore-interact { padding-top: 5px; margin-bottom: 15px; margin-right: 40%; }
+.JAMAHome #explore-interact .Item { float: left; width: 50%; }
+.JAMAHome #explore-interact .Item .BoxFix { border: 1px solid rgb(233, 214, 217); margin: 0pt 3px 15px 0pt; padding: 5px; }
+.JAMAHome #explore-interact .Item a { color: rgb(98, 144, 186); }
+.JAMAHome #explore-interact .Item h2 { text-transform: uppercase; padding-left: 30px; min-height: 25px; background-repeat: no-repeat; background-position: 0pt 0pt; }
+.JAMAHome #explore-interact .Item h2 a { color: rgb(0, 51, 102); height: 25px; display: table-cell; vertical-align: middle; }
+.JAMAHome #explore-interact .Item h3 { margin: 0pt 10px 0.5em; }
+.JAMAHome #explore-interact .Item p { margin: 0pt 10px 1em; }
+.JAMAHome #explore-interact .Item .LinkAction { font-weight: bold; text-align: right; font-size: 82%; text-transform: uppercase; margin-left: 10px; }
+* html .JAMAHome #explore-interact { display: inline; margin-right: 0pt; }
+* html .JAMAHome #explore-interact .Item { width: 49.9%; }
+* html .JAMAHome #explore-interact h1 { padding-top: 5px; }
+* html .JAMAHome #explore-interact .Item h2 { height: 25px; }
+:first-child + html .JAMAHome #explore-interact { margin-right: 0pt; }
+:first-child + html .JAMAHome #explore-interact .Item { width: 49.9%; }
+.JAMAHome #explore-interact .RowWrapper { border-left: 1px solid rgb(233, 214, 217); border-right: 1px solid rgb(233, 214, 217); background: transparent url('bg.row-wrapper.e9d6d9.gif') no-repeat scroll 50% 100%; clear: left; margin-bottom: 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 6px; }
+.JAMAHome #explore-interact .RowWrapper .Item .BoxFix { border-style: solid; border-color: rgb(233, 214, 217) transparent transparent; border-width: 1px; margin-bottom: 0pt; }
+.JAMAHome #explore-interact .RowWrapper .Left .BoxFix { margin-right: 0pt ! important; }
+.JAMAHome #explore-interact .RowWrapper .Right .BoxFix { margin-right: 0pt ! important; margin-left: 6px; }
+.JAMAHome #explore-interact .RowWrapper .ClearFix { clear: left; }
+* html .JAMAHome #explore-interact .RowWrapper { margin-right: 3px; }
+* html .JAMAHome #explore-interact .RowWrapper .Item .BoxFix { border-style: solid none none; border-color: rgb(233, 214, 217) -moz-use-text-color -moz-use-text-color; border-width: 1px medium medium; }
+.JAMAHome #explore-interact #clinician-corner.Item h2 { background-image: url('clinician-corner.gif'); }
+.JAMAHome #explore-interact #podcast.Item h2 { background-image: url('podcast.gif'); }
+.JAMAHome #explore-interact #author-in-the-room.Item h2 { background-image: url('author-in-the-room.gif'); }
+.JAMAHome #explore-interact #patient-page.Item h2 { background-image: url('patient-page.gif'); position: relative; }
+.JAMAHome #explore-interact #patient-page.Item h2 .Icon { position: absolute; top: 0pt; right: 0pt; }
+.JAMAHome #explore-interact #patient-page.Item p { margin-bottom: 0.5em; }
+.JAMAHome #explore-interact #patient-page.Item .Photo { margin: 1px; }
+.JAMAHome #explore-interact #patient-page.Item .LinkAction { text-align: left; text-transform: none; margin-bottom: 0.5em; position: static; }
+* html .JAMAHome #explore-interact #patient-page.Item h2 { position: static; }
+* html .JAMAHome #explore-interact #patient-page.Item h2 .Icon { right: 5px; }
+:first-child + html .JAMAHome #explore-interact #patient-page.Item h2 { position: static; }
+:first-child + html .JAMAHome #explore-interact #patient-page.Item h2 .Icon { display: none; }
+.JAMAHome #explore-interact #video-news-release.Item h2 { background-image: url('video-news-release.gif'); }
+.JAMAHome #explore-interact #video-news-release.Item .LinkAction { text-transform: none; }
+.JAMAHome #explore-interact #video-news-release.Item .LinkAction .Icon { border-right: 4px solid rgb(255, 255, 255); }
+.JAMAHome #explore-interact #video-news-release.Item .LinkAction a { white-space: nowrap; }
+.JAMAHome #explore-interact #art-and-images-in-psychiatry.Item h2 { background-image: url('art-and-images-in-psychiatry.gif'); }
+.JAMAHome #explore-interact #articles-for-residents.Item h2 { background-image: url('articles-for-residents.gif'); }
+.JAMAHome #explore-interact #cover-art-pediatrics.Item h2 { background-image: url('cover-art-pediatrics.gif'); }
+.JAMAHome #explore-interact #early-release.Item h2 { background-image: url('early-release.gif'); }
+.JAMAHome #explore-interact #email-alert.Item h2 { background-image: url('email-alert.gif'); }
+.JAMAHome #explore-interact #evidence-based-dermatology.Item h2 { background-image: url('evidence-based-dermatology.gif'); }
+.JAMAHome #explore-interact #evidence-based-pediatrics.Item h2 { background-image: url('evidence-based-pediatrics.gif'); }
+.JAMAHome #explore-interact #mag_eye.Item h2 { background-image: url('mag_eye.gif'); }
+.JAMAHome #explore-interact #my-folder.Item h2 { background-image: url('my-folder.gif'); }
+.JAMAHome #explore-interact #on-my-mind.Item h2 { background-image: url('on-my-mind.gif'); }
+.JAMAHome #explore-interact #powerpoint.Item h2 { background-image: url('powerpoint.gif'); }
+.JAMAHome #explore-interact #rss.Item h2 { background-image: url('rss.gif'); }
+.JAMAHome #explore-interact #you-make-the-diagnosis.Item h2 { background-image: url('you-make-the-diagnosis.gif'); }
+.JAMAHome #explore-interact #jama-cme-btn.Item h2 { background-image: url('jama_cme_btn.gif'); }
+.JAMAHome #explore-interact #jama-early-release-btn.Item h2 { background-image: url('jama_early_release_btn.jpg'); }
+.JAMAHome #explore-interact #jama-express-btn.Item h2 { background-image: url('jama_express_btn.jpg'); }
+.JAMAHome #explore-interact #jama-video-btn.Item h2 { background-image: url('jama_video_btn.jpg'); }
+.JAMAHome #explore-interact #icon-ct-scan.Item h2 { background-image: url('icon.ct_scan.gif'); }
+.JAMAHome #explore-interact #icon-send-friend.Item h2 { background-image: url('icon.send_friend.gif'); }
+.JAMAHome #explore-interact #icon-topics.Item h2 { background-image: url('icon.topics.gif'); }
+.JAMAHome #explore-interact #icon-microscope.Item h2 { background-image: url('microscope.gif'); }
+.JAMAHome #explore-interact #icon-calendar-events.Item h2 { background-image: url('icon.calendar-events.gif'); }
+.JAMAHome #explore-interact .Item .BoxFix { min-height: 12em ! important; }
+* html .JAMAHome #explore-interact .Item .BoxFix { height: 12em ! important; }
+.JAMAHome #top-content { float: right; margin-bottom: 15px; width: 40%; }
+.JAMAHome #top-content .BoxFix { border: 1px solid rgb(233, 214, 217); padding-bottom: 2px; }
+.JAMAHome #top-content h1 { margin: 0pt; padding: 5px 0pt 4px 10px; }
+.JAMAHome #top-content .Item { border-top: 1px solid rgb(233, 214, 217); margin-top: 2px; }
+.JAMAHome #top-content .Active { min-height: 33em; }
+.JAMAHome #top-content h2 { margin: 2px 0pt 0pt; background: rgb(245, 245, 245) url('arrow.254970.rt.gif') no-repeat scroll 8px 0.65em; text-transform: uppercase; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.JAMAHome #top-content h2 a { padding: 5px 0pt 7px 20px; display: block; }
+.JAMAHome #top-content ul { padding-left: 20px; padding-right: 10px; }
+.JAMAHome #top-content li a { color: rgb(78, 105, 124); }
+* html .JAMAHome #top-content .BoxFix {  }
+:first-child + html .JAMAHome #top-content .BoxFix {  }
+* html .JAMAHome #top-content h2 { background-position: 8px 0.75em; }
+:first-child + html .JAMAHome #top-content h2 { background-position: 8px 0.75em; }
+* html .JAMAHome #top-content .Active { height: 33em; }
+.JAMAHome #related-sites { border: 1px solid rgb(233, 214, 217); margin: 15px 0pt; padding: 5px 10px; clear: both; }
+.JAMAHome #related-sites h3 { text-transform: uppercase; }
+.JAMAHome #related-sites .Col { float: left; }
+.JAMAHome #related-sites .Left { width: 30%; }
+.JAMAHome #related-sites .Center { width: 40%; }
+.JAMAHome #related-sites .Right { width: 30%; }
+.JAMAHome #related-sites li a { color: rgb(98, 144, 186); font-weight: bold; }
+.JAMAHome #stay-connected { float: left; width: 50%; }
+.JAMAHome #stay-connected .BoxFix { padding: 15px 15px 15px 90px; background: transparent url('stay-connected.gif') no-repeat scroll 15px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 5px; }
+.JAMAHome #stay-connected h2 { text-transform: uppercase; }
+.JAMAHome #stay-connected ul { margin-bottom: 0pt; }
+.JAMAHome #stay-connected li a { color: rgb(59, 116, 169); }
+.JAMAHome #call-for-papers { float: left; width: 50%; }
+.JAMAHome #call-for-papers .BoxFix { padding: 15px 15px 15px 90px; background: transparent url('call-for-papers.gif') no-repeat scroll 15px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 5px; }
+.JAMAHome #call-for-papers h2 { text-transform: uppercase; }
+.JAMAHome #call-for-papers p { margin: 0pt; }
+#hwForm_search_sectiononly { width: 360px; }
+#hwForm_collection { width: 360px; }
+* html .JAMAHome #stay-connected, * html .JAMAHome #call-for-papers { width: 49.9%; }
+:first-child + html .JAMAHome #stay-connected, :first-child + html .JAMAHome #call-for-papers { width: 49.9%; }
+.JAMAHome #explore-interact .NoIcon h2 { background-image: none ! important; padding-left: 10px; }
+.JAMAHome #bottom-boxes { background: transparent url('bg.row-wrapper.f5f5f5.gif') repeat-y scroll 50% 0pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html .JAMAHome #bottom-boxes {  }
+:first-child + html .JAMAHome #bottom-boxes {  }
+.JAMASecondLevel img, .JAMASecondLevel a img { border: medium none ; }
+.JAMASecondLevel h1, .JAMASecondLevel h2, .JAMASecondLevel h3, .JAMASecondLevel h4, .JAMASecondLevel h5, .JAMASecondLevel h6 { margin: 0pt 0pt 0.5em; padding: 0pt; }
+.JAMASecondLevel h1 { font-size: 128%; }
+.JAMASecondLevel h2 { font-size: 100%; }
+.JAMASecondLevel h3 { font-size: 100%; }
+.JAMASecondLevel p { margin-top: 0pt; }
+.JAMASecondLevel ul, .JAMASecondLevel ol { margin-top: 0pt; margin-bottom: 1em; }
+* html .JAMASecondLevel #MainNav ul li a { height: 2.6em; }
+* html .JAMASecondLevel #nav_home a { width: 50px; }
+* html .JAMASecondLevel #nav_current-issue a { width: 98px; }
+* html .JAMASecondLevel #nav_past-issues a { width: 84px; }
+* html .JAMASecondLevel #nav_collections a { width: 128px; }
+* html .JAMASecondLevel #nav_cme a { width: 32px; }
+* html .JAMASecondLevel #nav_submit a { width: 52px; }
+* html .JAMASecondLevel #nav_subscribe a { width: 75px; }
+* html .JAMASecondLevel #nav_help a { width: 39px; }
+.JAMASecondLevel form { margin: 0pt; padding: 0pt; }
+.JAMASecondLevel input, .JAMASecondLevel select { vertical-align: middle; }
+.JAMASecondLevel select { font-size: 100%; }
+#LayoutWrapper.JAMASecondLevel { font-family: 'Lucida Grande',arial,helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 68.75%; }
+.JAMAManuscript #HeaderWrapper { min-width: 975px; }
+* html .JAMAManuscript #PageWrapper {  }
+* html .JAMAManuscript #HeaderWrapper {  }
+#LayoutWrapper.JAMAManuscript { font-family: 'Lucida Grande',arial,helvetica,sans-serif; color: rgb(0, 0, 0); }
+.JAMAManuscript #ArchivesNav label { margin-top: 3px; display: block; }
+.JAMAManuscript img, .JAMAManuscript a img { border: medium none ; }
+.JAMAManuscript h1, .JAMAManuscript h2, .JAMAManuscript h3, .JAMAManuscript h4, .JAMAManuscript h5, .JAMAManuscript h6 { margin: 0pt 0pt 0.5em; padding: 0pt; }
+.JAMAManuscript p { margin-top: 0pt; }
+.JAMAManuscript ul, .JAMAManuscript ol { margin-top: 0pt; margin-bottom: 1em; }
+.JAMAManuscript form { margin: 0pt; padding: 0pt; }
+.JAMAManuscript input, .JAMAManuscript select { vertical-align: middle; }
+.JAMAManuscript select { font-size: 91%; }
+@media print {
+  .AdWrapper, #MainNav, #ArchivesNav, #SiteSearch, #FooterNav, #UserToolbar { display: none; }
+  #HeaderWrapper, #BodyWrapper { margin: 0pt; width: auto; max-width: 100%; min-width: 0pt; }
+  #MainColumn { margin: 0pt; width: auto; }
+  #jama-logo { margin: 0pt; float: none; display: block; }
+  #HeaderWrapper { border-top: medium none; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 1em; }
+  * html .JAMAHome #cover-image { right: 0pt; }
+  * html .JAMAHome #in-this-issue li {  }
+  .JAMAHome #top-content .Active { min-height: 0pt; }
+  .JAMAHome #stay-connected .BoxFix, .JAMAHome #call-for-papers .BoxFix { padding: 15px; }
+  .JAMAHome #explore-interact .Item h2 { padding: 0pt; }
+  .JAMAHome #explore-interact .Item h2 a { display: block; height: auto; }
+}
+#guestr_wrapper { text-align: center; width: 100%; }
+#Guest_registration { margin: 40px auto 50px; font-family: verdana,Arial,Helvetica,sans-serif; font-size: 12px; line-height: 15px; width: 760px; text-align: left; }
+#Guest_registration a:link, #Guest_registration a:visited { color: rgb(204, 49, 51); text-decoration: none; }
+#Guest_registration a:hover { text-decoration: underline; }
+#Guest_registration ul { margin: 0pt 0pt 30px 12px; padding: 0pt 0pt 0pt 5px; }
+#guestr_special_offer { width: 475px; }
+#guestr_archives_image { position: relative; float: right; z-index: 50; width: 279px; display: inline; }
+#guestr_subscribe_buttons { clear: both; }
+#guestr_journal_list li { list-style-type: none; margin-left: -15px; }
+.guestr_footnote { font-size: 11px; font-style: italic; }
+.JAMAHome #cover-image2 { border: 1px solid rgb(157, 182, 199); background: transparent url('jamaclassics_homepagebtn.gif') repeat scroll 0pt 0pt; position: absolute; right: 10px; top: 287px; margin-left: 40px; width: 184px; height: 41px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.JAMAHome #cover-image2 a { background: transparent url('jamaclassics_homepagebtn.gif') repeat scroll 0pt 0pt; position: absolute; width: 184px; height: 41px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.JAMAHome #cover-image2 a:hover { background-position: 0pt -41px; }
+* html .JAMAHome #cover-image2 { right: 170px; top: 287px; }
+.JAMAHome #cover-image3 { border: 1px solid rgb(157, 182, 199); background: transparent url('podcast_icon.gif') repeat scroll 0pt 0pt; position: absolute; right: 10px; top: 287px; margin-left: 40px; width: 184px; height: 40px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.JAMAHome #cover-image3 a { background: transparent url('podcast_icon.gif') repeat scroll 0pt 0pt; position: absolute; width: 184px; height: 40px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html .JAMAHome #cover-image3 { right: 170px; top: 287px; }
+.JAMAHome #podcast-text { border: medium none ; position: absolute; right: 10px; top: 340px; margin-left: 40px; width: 184px; height: 100px; font-size: 10px; }
+* html .JAMAHome #podcast-text { right: 170px; top: 340px; }
+.help_padding { padding: 15px 10px; }
+.container { margin: 0px; padding: 0px; }
+h1.heading { border: 1px solid rgb(157, 182, 199); font-family: verdana,arial,helvetica,sans-serif; color: rgb(0, 51, 102); font-size: 18px; font-weight: bold; padding-left: 12px; padding-bottom: 4px; padding-top: 4px; margin-bottom: 0pt; margin-top: 0pt; }
+.content { border-left: 1px solid rgb(157, 182, 199); padding: 12px; font-family: verdana,arial,helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 13px; float: left; }
+.leftmargin { margin-left: 10px; }
+div.ifora .listcols { float: left; width: 32%; }
+div.ifora ul { list-style-type: none; }
+div.ifora li.level2 { font-weight: bold; }
+div.ifora li.level3 { margin-left: 1em; }
+div.ifora li.level4 { margin-left: 2em; }
+div.ifora h2 { clear: left; color: rgb(0, 51, 102); font-size: 1em; }
+div.ifora { font-size: 13px; font-family: verdana,arial,helvetica,sans-serif; }
+div.ifora p.toplink { font-size: 0.7em; }
+div.ifora .medline a { font-size: 0.7em; text-transform: uppercase; margin-left: 5px; }
+div.ifora hr { border: medium none ; background-color: rgb(157, 182, 199); clear: left; color: rgb(157, 182, 199); display: block; height: 1px; width: 90%; }
