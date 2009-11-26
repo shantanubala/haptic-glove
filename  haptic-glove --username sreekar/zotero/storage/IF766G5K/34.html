@@ -1,0 +1,1014 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://www.computer.org/portal/web/csdl/doi/10.1109/34.982883">
+<meta name="wpd_url" content="http://www.computer.org/portal/web/csdl/doi/10.1109/34.982883">
+<meta name="wpd_date" content="2009-10-26T12:18Z">
+
+
+
+<title>Detecting Faces in Images: A Survey</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.Description" content="&lt;p&gt;Images containing faces are essential to intelligent vision-based human computer interaction, and research efforts in face processing include face recognition, face tracking, pose estimation, and expression recognition. However, many reported methods assume that the faces in an image or an image sequence have been identified and localized. To build fully automated systems that analyze the information contained in face images, robust and efficient face detection algorithms are required. Given a single image, the goal of face detection is to identify all image regions which contain a face regardless of its three-dimensional position, orientation, and lighting conditions. Such a problem is challenging because faces are nonrigid and have a high degree of variability in size, shape, color, and texture. Numerous techniques have been developed to detect faces in a single image, and the purpose of this paper is to categorize and evaluate these algorithms. We also discuss relevant issues such as data collection, evaluation metrics, and benchmarking. After analyzing these algorithms and identifying their limitations, we conclude with several promising directions for future research.&lt;/p&gt;">
+<meta scheme="acronym" name="DC.Identifier" content="tp">
+<meta name="keywords" content="Face detection, face recognition, object recognition, view-based recognition, statistical pattern recognition, machine learning.">
+<meta name="DC.Title" content="Detecting Faces in Images: A Survey">
+<meta name="DC.Publisher" content="Published by the IEEE Computer Society">
+<meta name="DC.Format" content="text/html">
+<meta scheme="ISSN" name="DC.Identifier" content="0162-8828">
+<meta scheme="DOI" name="DC.Identifier" content="10.1109/34.982883">
+<meta name="DC.Date" content="2002-01-01">
+<meta name="pages" content="34-58">
+<meta name="DC.Type" content="text">
+<meta name="DC.Relation.Ispartof" content="IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE">
+<meta name="description" content="&lt;p&gt;Images containing faces are essential to intelligent vision-based human computer interaction, and research efforts in face processing include face recognition, face tracking, pose estimation, and expression recognition. However, many reported methods assume that the faces in an image or an image sequence have been identified and localized. To build fully automated systems that analyze the information contained in face images, robust and efficient face detection algorithms are required. Given a single image, the goal of face detection is to identify all image regions which contain a face regardless of its three-dimensional position, orientation, and lighting conditions. Such a problem is challenging because faces are nonrigid and have a high degree of variability in size, shape, color, and texture. Numerous techniques have been developed to detect faces in a single image, and the purpose of this paper is to categorize and evaluate these algorithms. We also discuss relevant issues such as data collection, evaluation metrics, and benchmarking. After analyzing these algorithms and identifying their limitations, we conclude with several promising directions for future research.&lt;/p&gt;">
+<meta name="DC.Creator" content="Ming-Hsuan Yang, David J. Kriegman, Narendra Ahuja">
+        
+
+    
+
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<link rel="Shortcut Icon" href="about:blank?liferay.ico">
+
+
+
+
+
+<script type="text/javascript">
+
+// <![CDATA
+var themeDisplay = {
+getCompanyId: function() {
+return "10092";
+},
+getDoAsUserIdEncoded: function() {
+return "";
+},
+getPlid: function() {
+return "1998378";
+},
+getGroupId: function() {
+return "44032";
+},
+getUserId: function() {
+return "10094";
+},
+getLayoutId: function() {
+return "101";
+},
+getLayoutURL: function() {
+return "/portal/web/csdl/doi";
+},
+isPrivateLayout: function() {
+return "false";
+},
+getParentLayoutId: function() {
+return "0";
+},
+getLanguageId: function() {
+return "en_US";
+},
+isFreeformLayout: function() {
+return false;
+},
+isSignedIn: function() {
+return false;
+},
+isStateExclusive: function() {
+return false;
+},
+isStateMaximized: function() {
+return false;
+},
+isStatePopUp: function() {
+return false;
+},
+getPathContext: function() {
+return "/portal";
+},
+getPathImage: function() {
+return "/portal/image";
+},
+getPathMain: function() {
+return "/portal/c";
+},
+getPathThemeImages: function() {
+return "/ieeecs-csdl-abstract-theme/images";
+},
+getPathThemeRoot: function() {
+return "/ieeecs-csdl-abstract-theme/";
+},
+getURLHome: function() {
+return "http://www.computer.org/portal";
+},
+getSessionId: function() {
+return "E1104A682A869A0DB272AE40B660C8E0";
+}
+};
+// ]]>
+</script>
+<script src="barebone_packed.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+// <![CDATA
+Liferay.currentURL = '/portal/web/csdl/doi?doc=doi/10.1109/34.982883';
+Liferay.currentURLEncoded = '%2Fportal%2Fweb%2Fcsdl%2Fdoi%3Fdoc%3Ddoi%2F10.1109%2F34.982883';
+jQuery(
+function() {
+Liferay.Util.addInputType();
+Liferay.Util.addInputFocus();
+}
+);
+Liferay.Portlet.ready(
+function(portletId, jQueryObj) {
+Liferay.Util.addInputType(portletId, jQueryObj);
+if (Liferay.Menu) {
+new Liferay.Menu(
+{
+button: '.lfr-actions',
+context: jQueryObj[0],
+trigger: '.lfr-trigger'
+}
+);
+}
+}
+);
+Liferay.Portlet.list = ['56_INSTANCE_zXo7','digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4','56_INSTANCE_SpOl','56_INSTANCE_a6u0'];
+if (jQuery.ui && jQuery.ui.tabs) {
+jQuery.extend(
+jQuery.ui.tabs.defaults,
+{
+navClass: 'ui-tabs tabs',
+selectedClass: 'current'
+}
+);
+}
+jQuery(
+function() {
+if (Liferay.Dock) {
+Liferay.Dock.init();
+}
+if (Liferay.Menu) {
+new Liferay.Menu(
+{
+trigger: '.lfr-trigger',
+button: '.lfr-actions'
+}
+);
+}
+if (Liferay.Notice) {
+Liferay.Notice.prototype.setClosing();
+}
+}
+);
+// ]]>
+</script>
+<script class="lfr-script-file" id="mainLiferayThemeJavaScript" src="javascript.js" type="text/javascript"></script>
+<script class="lfr-script-file" id="" src="milonic_menu_code.js" type="text/javascript"></script>
+<script class="lfr-script-file" id="" src="getemail2.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+<!--
+// Declare user info variables
+var firstName = "";
+var lastName = "";
+var email = "";
+var loggedIn = false;
+function openCustomHomePage() {
+document.location = "";
+}
+// Prevent image flicker on IE
+try {
+document.exeCommand("BackgroundImageCache", false, true);
+} catch (e) {}
+//		jQuery(window).load(function() {
+//				var loading = document.getElementById('loading');
+//				var content = document.getElementById('content-area');
+//				var footer = document.getElementById('footer');
+//				loading.style.display = 'none';
+//				content.style.display = 'block';
+//				footer.style.display = 'block';
+//			}
+//		);
+//-->
+</script>
+<script src="urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+_uacct = "UA-381255-5";
+urchinTracker();
+</script>
+<script id="JscriptId1" src="getemail-version_2.0.js" charset="utf-8" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="34.css" media="all">
+</head>
+<body class="controls-visible">
+<!-- anchor for html articles -->
+<a name="top"></a> 
+<!-- anchors for tabs -->
+<a name="1"></a><a name="2"></a><a name="3"></a><a name="4"></a><a name="5"></a><a name="6"></a><a name="7"></a><a name="8"></a>
+<div id="wrapper">
+<div id="banner">
+<div class="logo" onclick="document.location='/portal/web/guest/home'">
+&nbsp;
+</div>
+<script type="text/javascript">
+
+<!--
+function enterSearch(e) {
+if(!e) {
+e = window.event;
+}
+if(e.type == 'keypress' && e.keyCode != '13') {
+// enter-key executes search
+return;
+}
+checkSearch();
+}
+function checkSearch() {
+document.getElementById("searchButton").style.display = "none";
+document.getElementById("searching").style.display = "block";
+document.searchForm.submit();	
+}
+function getSearchFocus() {
+document.searchForm.queryText1.onkeypress = enterSearch;
+}
+function looseSearchFocus() {
+document.searchForm.queryText1.onkeypress = null;
+}
+//-->
+</script>
+<div id="searchbarhead">
+<form name="searchForm" method="post" action="http://www.computer.org/search/results">
+<table align="right">
+<tbody><tr>
+<td colspan="4" align="left">
+<input name="queryText1" value="" size="30" onfocus="getSearchFocus()" onblur="looseSearchFocus()" type="text"></td>
+<td align="right">
+<input src="search_buttonr.jpg" id="searchButton" name="go_search" alt="Search" value="Search" onclick="return checkSearch()" type="image">
+<span id="searching" style="display: none;">Searching...</span>
+</td>
+<td align="left">
+<a href="http://www.computer.org/portal/web/search/advanced">Advanced Search</a></td>
+</tr>
+<!--	<tr><td align="right"><input name="google" id="googleYes" value="false" checked="checked" type="radio" /></td><td align="left"><label for="googleYes">CS Search</label></td><td align="right"><input name="google" id="googleNo" value="true" type="radio" /></td><td align="left"><label for="googleNo">Google Search</label></td><td colspan="2" align="right" valign="bottom"></td></tr>-->			
+</tbody></table>
+<input name="action" value="simplesearch" type="hidden">
+<input name="yearTo" value="2007" type="hidden">
+<input name="yearFrom" value="1960" type="hidden">
+<input name="monthTo" value="12" type="hidden">
+<input name="monthFrom" value="01" type="hidden">
+<input name="sortField" value="DocWeight" type="hidden">
+<input name="sortOrder" value="descending" type="hidden">
+<input name="checkAbstract" value="yes" type="hidden">
+<input name="searchPubs" value="3" type="hidden">
+<input name="queryOption1" value="fullText" type="hidden">
+<input name="resultsPerPage" value="10" type="hidden">
+<input name="yearTo" value="2006" type="hidden">
+<input name="yearFrom" value="1870" type="hidden">
+<input name="monthTo" value="12" type="hidden">
+<input name="monthFrom" value="01" type="hidden">
+<input name="sortField" value="DocWeight" type="hidden">
+<input name="sortOrder" value="d" type="hidden">
+<input name="searchDatabases" value="dlearning+annals+cise+computer+cga+concurrency+dt+intelligent+internet+itpro+micro+multimedia+software+pc+Security+tc+tkde+tpds+tpami+tse+tvcg+tmc+tcbb+tdsc+dsonline+proceedings+acm+cal" type="hidden">
+</form>
+</div>
+<script type="text/javascript">
+
+<!--
+var loginImageButton =
+new ImageButton("searchButton",
+"/ieeecs-csdl-abstract-theme/images/buttons/search_buttonr.jpg",
+"/ieeecs-csdl-abstract-theme/images/buttons/search_button.jpg");
+//-->
+</script>
+<div class="lfr-dock interactive-mode lfr-component">
+<div class="lang">
+<a href="http://www.computer.org/portal/web/csdl/doi;jsessionid=E1104A682A869A0DB272AE40B660C8E0?p_p_id=82&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_pos=1&p_p_col_count=2&_82_struts_action=%2Flanguage%2Fview&languageId=en_US">
+<img src="en_us.png" alt="English (United States)" title="English (United States)" border="0"></a>
+</div>
+<h2 class="user-greeting">
+<span></span>
+</h2>
+</div>
+</div>
+<div id="main-menu">
+<script class="lfr-script-file" id="" src="classic_login_menu_data.js" type="text/javascript"></script><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(0)" onselectstart="return 0" id="menu0" style="padding: 0px; width: 1002px; height: 30px; z-index: 999; visibility: visible; position: absolute; top: 69px; text-align: left;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="tbl0" align="left" border="0" cellpadding="0" cellspacing="0" height="30"><tbody><tr><td id="el0" onmouseover="h$(0,0,1)" style="padding: 7px; height: 16px; background-image: url(background.png);" nowrap="nowrap"><a onclick="return $K(0)" name="mM1" onfocus="_iF0C(0)" href="http://www.computer.org/portal/web/guest/home" id="lnk0" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Home</a></td><td id="sep0" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el1" onmouseover="h$(1,0,1)" style="padding: 7px; height: 16px; background-image: url(background.png);" nowrap="nowrap"><a onclick="return $K(1)" name="mM1" onfocus="_iF0C(1)" href="http://www.computer.org/portal/web/membership/join" id="lnk1" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Join</a></td><td id="sep1" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el2" onmouseover="h$(2,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl2" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td2"><td id="itd1202" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(2)" name="mM1" onfocus="_iF0C(2)" href="http://www.computer.org/portal/web/publications" id="lnk2" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Publications</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg2" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep2" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el3" onmouseover="h$(3,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl3" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td3"><td id="itd1203" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(3)" name="mM1" onfocus="_iF0C(3)" href="http://www.computer.org/portal/web/conferences/home" id="lnk3" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Conferences</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg3" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep3" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el4" onmouseover="h$(4,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl4" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td4"><td id="itd1204" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(4)" name="mM1" onfocus="_iF0C(4)" href="http://www.computer.org/portal/web/csdl" id="lnk4" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none; text-align: center;">Digital Library</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg4" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep4" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el5" onmouseover="h$(5,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl5" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td5"><td id="itd1205" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(5)" name="mM1" onfocus="_iF0C(5)" href="http://www.computer.org/portal/web/buildyourcareer/home" id="lnk5" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none; text-align: center;">Build Your Career</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg5" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep5" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el6" onmouseover="h$(6,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl6" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td6"><td id="itd1206" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(6)" name="mM1" onfocus="_iF0C(6)" href="http://www.computer.org/portal/web/e-learning/home" id="lnk6" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none; text-align: center;">e-Learning</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg6" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep6" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el7" onmouseover="h$(7,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl7" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td7"><td id="itd1207" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(7)" name="mM1" onfocus="_iF0C(7)" href="http://www.computer.org/portal/web/getcertified" id="lnk7" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Certification & Training</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg7" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep7" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el8" onmouseover="h$(8,0,1)" style="padding: 0px; background-image: url(background.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl8" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td8"><td id="itd1208" style="padding: 7px;" width="100%" nowrap="nowrap"><a name="mM1" onfocus="_iF0C(8)" href="javascript:void(0);" id="lnk8" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Communities</a></td><td style="font-size: 1px;" width="1"><img style="width: 17px;" id="simg8" onload="_p2(0,this)" src="arrow.gif"></td></tr></tbody></table></td><td id="sep8" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el9" onmouseover="h$(9,0,1)" style="padding: 7px; height: 16px; background-image: url(background.png);" nowrap="nowrap"><a onclick="return $K(9)" name="mM1" onfocus="_iF0C(9)" href="http://www.computer.org/store" id="lnk9" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">Store</a></td><td id="sep9" style="padding: 0px; width: 1px; background-image: url(separator.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="1" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el10" onmouseover="h$(10,0,1)" style="padding: 7px; height: 16px; background-image: url(background.png);" nowrap="nowrap"><a onclick="return $K(10)" name="mM1" onfocus="_iF0C(10)" href="http://www.computer.org/portal/c/portal/login" id="lnk10" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(255, 255, 255); font-family: arial,tahoma; font-weight: bold; font-style: normal; font-size: 12px; text-decoration: none;">&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;</a></td></tr></tbody></table> <a title="" target="_self" name="mM1" id="mmlink0" href="http://www.computer.org/portal/web/e-learning/home" onclick="return $K(this._itemRef)" onmouseover="_p1(this);_mot=$P(_mot)" style="background: transparent none repeat ; 0%; overflow: hidden; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; line-height: normal; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none; height: 30px; width: 92px; position: absolute; visibility: hidden; z-index: 1; top: 0px; left: 535px;"></a></div><iframe src="34_1.html" class="mmenu" id="ifM0" style="display: none; width: 1px; height: 1px; top: -9px; position: absolute;" frameborder="0"></iframe><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(1)" onselectstart="return 0" id="menu1" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><iframe src="34_2.html" class="mmenu" id="iF0" style="display: none; width: 1px; height: 1px; top: -9px; position: absolute;" frameborder="0"></iframe><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(2)" onselectstart="return 0" id="menu2" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><iframe src="34_3.html" class="mmenu" id="iF1" style="display: none; width: 1px; height: 1px; top: -9px; position: absolute;" frameborder="0"></iframe><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(3)" onselectstart="return 0" id="menu3" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(4)" onselectstart="return 0" id="menu4" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(5)" onselectstart="return 0" id="menu5" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(6)" onselectstart="return 0" id="menu6" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(7)" onselectstart="return 0" id="menu7" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(8)" onselectstart="return 0" id="menu8" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(9)" onselectstart="return 0" id="menu9" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(10)" onselectstart="return 0" id="menu10" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -9999px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="tbl10" border="0" cellpadding="0" cellspacing="0"><tbody><tr id="pTR80"><td id="el80" onmouseover="h$(80,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(80)" name="mM1" onfocus="_iF0C(80)" href="http://www.computer.org/portal/web/e-learning/home" id="lnk80" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">e-Learning Campus</a></td></tr><tr id="pTR81"><td id="el81" onmouseover="h$(81,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(81)" name="mM1" onfocus="_iF0C(81)" href="http://www.computer.org/portal/web/e-learning/ekcourses" id="lnk81" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Course Catalog</a></td></tr><tr id="pTR82"><td id="el82" onmouseover="h$(82,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(82)" name="mM1" onfocus="_iF0C(82)" href="http://www.computer.org/portal/web/e-learning/ekbooks" id="lnk82" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Online Books</a></td></tr><tr id="pTR83"><td id="el83" onmouseover="h$(83,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(83)" name="mM1" onfocus="_iF0C(83)" href="http://www.computer.org/portal/web/membership/safari" id="lnk83" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Safari Books Online</a></td></tr><tr id="pTR84"><td id="el84" onmouseover="h$(84,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(84)" name="mM1" onfocus="_iF0C(84)" href="http://www.computer.org/portal/web/e-learning/books24x7" id="lnk84" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Books 24x7</a></td></tr><tr id="pTR85"><td id="el85" onmouseover="h$(85,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(85)" name="mM1" onfocus="_iF0C(85)" href="http://www.computer.org/portal/web/e-learning/brainbench" id="lnk85" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Certification</a></td></tr></tbody></table> <a name="mM1" id="mmlink10" href="#" onclick="return $K(this._itemRef)" onmouseover="_p1(this);_mot=$P(_mot)" style="background: transparent none repeat ; 0%; overflow: hidden; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; line-height: normal; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none; height: 1px; width: 1px; position: absolute;"></a></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(11)" onselectstart="return 0" id="menu11" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -9999px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="tbl11" border="0" cellpadding="0" cellspacing="0"><tbody><tr id="pTR86"><td id="el86" onmouseover="h$(86,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(86)" name="mM1" onfocus="_iF0C(86)" href="http://www.computer.org/portal/web/getcertified" id="lnk86" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">About Certification</a></td></tr><tr id="pTR87"><td id="el87" onmouseover="h$(87,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(87)" name="mM1" onfocus="_iF0C(87)" href="http://www.computer.org/portal/web/csda" id="lnk87" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">CSDA Home</a></td></tr><tr id="pTR88"><td id="el88" onmouseover="h$(88,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(88)" name="mM1" onfocus="_iF0C(88)" href="http://www.computer.org/portal/web/certification" id="lnk88" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">CSDP Home</a></td></tr><tr id="pTR89"><td id="el89" onmouseover="h$(89,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(89)" name="mM1" onfocus="_iF0C(89)" href="http://www.computer.org/certification/successstories" id="lnk89" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Success Stories</a></td></tr><tr id="pTR90"><td id="el90" onmouseover="h$(90,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(90)" name="mM1" onfocus="_iF0C(90)" href="http://www.computer.org/portal/web/getcertified/news" id="lnk90" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">Certification News</a></td></tr><tr id="pTR91"><td id="el91" onmouseover="h$(91,0,1)" style="padding: 2px; background: rgb(248, 247, 240) none repeat ; 0%; height: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" nowrap="nowrap"><a onclick="return $K(91)" name="mM1" onfocus="_iF0C(91)" href="http://www.computer.org/portal/web/swebok" id="lnk91" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(0, 0, 0); font-family: arial,tahoma; font-weight: normal; font-style: normal; font-size: 12px; text-decoration: none;">About SWEBOK</a></td></tr></tbody></table> <a name="mM1" id="mmlink11" href="#" onclick="return $K(this._itemRef)" onmouseover="_p1(this);_mot=$P(_mot)" style="background: transparent none repeat ; 0%; overflow: hidden; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; line-height: normal; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none; height: 1px; width: 1px; position: absolute;"></a></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(12)" onselectstart="return 0" id="menu12" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(13)" onselectstart="return 0" id="menu13" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(14)" onselectstart="return 0" id="menu14" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(15)" onselectstart="return 0" id="menu15" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div>
+</div>
+<div id="header"></div>
+<div id="submenu">
+<div id="nav-menu2">
+<script class="lfr-script-file" id="" src="dl_menu_data.js" type="text/javascript"></script><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(16)" onselectstart="return 0" id="menu16" style="padding: 0px; width: 1002px; height: 30px; z-index: 999; visibility: visible; position: absolute; top: 216px; text-align: left;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="tbl16" align="left" border="0" cellpadding="0" cellspacing="0" height="30"><tbody><tr><td id="el119" onmouseover="h$(119,0,1)" style="padding: 0px; background-image: url(background_002.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl119" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td119"><td id="_imgO119" valign="middle" align="right"><img onload="_p2(16,this)" style="display: block; width: 1px;" alt="Homepage of the Digital Library" id="_img119" src="endcap.png" border="0"></td><td id="itd120119" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(119)" name="mM1" onfocus="_iF0C(119)" href="http://www.computer.org/portal/web/csdl/home" id="lnk119" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none;">Digital Library Home</a></td></tr></tbody></table></td><td id="sep119" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el120" onmouseover="h$(120,0,1)" style="padding: 7px; height: 16px; background-image: url(background_002.png);" nowrap="nowrap"><a onclick="return $K(120)" name="mM1" onfocus="_iF0C(120)" href="http://www.computer.org/portal/web/csdl/subscribe" id="lnk120" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none;">Subscribe</a></td><td id="sep120" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el121" onmouseover="h$(121,0,1)" style="padding: 0px; background-image: url(background_002.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl121" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td121"><td id="itd120121" style="padding: 7px;" width="100%" nowrap="nowrap"><a onclick="return $K(121)" name="mM1" onfocus="_iF0C(121)" href="http://search3.computer.org/search/advancedSearch.jsp" id="lnk121" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none; text-align: center;">Search</a></td><td style="font-size: 1px;" width="1"><img style="width: 14px;" id="simg121" onload="_p2(16,this)" src="arrow_002.gif"></td></tr></tbody></table></td><td id="sep121" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el122" onmouseover="h$(122,0,1)" style="padding: 0px; background-image: url(background_002.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl122" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td122"><td id="itd120122" style="padding: 7px;" width="100%" nowrap="nowrap"><a name="mM1" onfocus="_iF0C(122)" href="javascript:void(0);" id="lnk122" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none; text-align: center;">Resources</a></td><td style="font-size: 1px;" width="1"><img style="width: 14px;" id="simg122" onload="_p2(16,this)" src="arrow_002.gif"></td></tr></tbody></table></td><td id="sep122" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el123" onmouseover="h$(123,0,1)" style="padding: 0px; background-image: url(background_002.png); height: 16px;"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl123" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td123"><td id="itd120123" style="padding: 7px;" width="100%" nowrap="nowrap"><a name="mM1" onfocus="_iF0C(123)" href="javascript:void(0);" id="lnk123" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none; text-align: center;">Institutional and Library Resources</a></td><td style="font-size: 1px;" width="1"><img style="width: 14px;" id="simg123" onload="_p2(16,this)" src="arrow_002.gif"></td></tr></tbody></table></td><td id="sep123" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el124" onmouseover="h$(124,0,1)" style="padding: 7px; height: 16px; background-image: url(background_002.png);" nowrap="nowrap"><a onclick="return $K(124)" name="mM1" onfocus="_iF0C(124)" href="http://www.computer.org/portal/web/csdl/subscribe/newsletter" id="lnk124" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none;">Newsletter</a></td><td id="sep124" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el125" onmouseover="h$(125,0,1)" style="padding: 7px; height: 16px; background-image: url(background_002.png);" nowrap="nowrap"><a onclick="return $K(125)" name="mM1" onfocus="_iF0C(125)" href="http://www.computer.org/portal/web/csdl/about" id="lnk125" style="border: medium none ; background: transparent none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; color: rgb(74, 77, 74); font-family: arial,tahoma; font-weight: bold; font-style: normal; text-decoration: none;">About the Digital Library</a></td><td id="sep125" style="padding: 0px; width: 3px; background-image: url(separator_002.png);"><table class="milonictable" style="padding: 0px; line-height: normal;" width="3" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 0px;"></td></tr></tbody></table></td><td id="el126" onmouseover="h$(126,0,1)" style="padding: 0px; background-image: url(background_002.png); height: 16px;" width="300"><table class="milonictable" style="padding: 0px; line-height: normal;" id="MTbl126" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr id="td126"><td id="_imgO126" valign="middle" align="right"><img onload="_p2(16,this)" style="display: block; width: 1px;" id="_img126" src="endcap.png" border="0"></td></tr></tbody></table></td></tr></tbody></table> <a name="mM1" id="mmlink16" href="#" onclick="return $K(this._itemRef)" onmouseover="_p1(this);_mot=$P(_mot)" style="background: transparent none repeat ; 0%; overflow: hidden; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; line-height: normal; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-decoration: none; height: 1px; width: 1px; position: absolute; visibility: hidden;"></a></div><iframe src="34_4.html" class="mmenu" id="ifM16" style="display: none; width: 1px; height: 1px; top: -9px; position: absolute;" frameborder="0"></iframe><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(17)" onselectstart="return 0" id="menu17" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(18)" onselectstart="return 0" id="menu18" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$J(19)" onselectstart="return 0" id="menu19" style="border: 1px solid rgb(136, 136, 136); padding: 7px; background: rgb(248, 247, 240) none repeat ; 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; z-index: 999; visibility: hidden; position: absolute; top: -999px;"></div>
+</div>
+</div>
+<div id="header-divider"></div>
+<div id="loading">
+<img src="loading_animation.gif" alt="loading...">
+</div>
+<div id="content-area">
+<div id="p_p_id_103_" class="portlet-boundary portlet-boundary_103_">
+<a name="p_103"></a>
+<script type="text/javascript">
+</script>
+</div>
+<div class="columns-3" id="content-wrapper">
+<table id="layout-grid">
+<tbody><tr>
+<td class="lfr-columnX eightyfour" id="column-0" valign="top">
+<table id="layout-grid-a">
+<tbody><tr>
+<td class="lfr-column eightyfour" id="column-1" colspan="2" valign="top">
+<div class="lfr-portlet-column" id="layout-column_column-1">
+<div id="p_p_id_56_INSTANCE_zXo7_" class="portlet-boundary portlet-boundary_56_ portlet-journal-content">
+<a name="p_56_INSTANCE_zXo7"></a>
+<div class="portlet-borderless-container" style="">
+<div>
+<div class="journal-content-article" id="article_44032_1404894_1.0">
+<center>
+<!-- BEGIN NetShelter Ad Tag for 728x90-->
+<script language="JavaScript" type="text/javascript">
+
+//<![CDATA[
+function isNotTransaction() { var uri = location.pathname; return (uri.indexOf("/T-C.") == -1); }
+if ((firstName != "Institution") && isNotTransaction()) {
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.computer.org/general;kw=;tile=1;dcopt=ist;sz=728x90;ord=' + ord + '?"><\/script>');
+}
+//]]>
+</script><script type="text/javascript" src="general"></script><script type="text/javascript">document.write('<scr'+'ipt language="javascript" src="http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=ns-65800190_1259237921,112c8b51938bfd5,Miscellaneous,;;kw=;dcopt=ist;tile=1;ord1=347428;sz=728x90;contx=Miscellaneous;btg=;ord=6507758880348958?"></scr'+'ipt>');</script><script language="javascript" src="34.982883"></script><script language="Javascript">createAndAttachAd("ns-65800190_1259237921", "http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=ns-65800190_1259237921,112c8b51938bfd5,Miscellaneous,;;kw=;dcopt=ist;tile=1;ord1=347428;sz=728x90;contx=Miscellaneous;btg=;ord=6507758880348958?","728","90");</script><script language="javascript" src="general_002.dat"></script><!-- Template Id = 1 Template Name = Banner Creative (Flash) -->
+<!-- Copyright 2002 DoubleClick Inc., All rights reserved. --><script src="flashwrite_1_2.js"></script>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="FLASH_AD" width="728" height="90"><param name="movie" value="http://static.2mdn.net/1840681/VSMB-0330_YouDevIt-QC_728x90_ban_091005300_ff.swf"><param name="flashvars" value="clickTag=http%3A%2F%2Fad.doubleclick.net%2Fclick%253Bh%3Dv8%2F38f1%2F3%2F0%2F%252a%2Fm%253B218822436%253B0-0%253B0%253B41954109%253B3454-728%2F90%253B33665706%2F33683584%2F1%253Bu%253Dns-65800190_1259237921%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D218833344%253B0-0%253B2%253B27855236%253B3454-728%2F90%253B33816380%2F33834258%2F1%253Bu%253Dns-65800190_1259237921%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A%2F%2Fpixel.quantserve.com%2Fr%3Ba%3Dp-6cPoWZ3i70XRQ%3Blabels%3D_click.adserver.doubleclick*http%3A%2F%2Fwww.verisign.com%2Fcode-signing%2Finformation-center%2Findex.html%3Fsl%3Db55990450080000002"><param name="quality" value="high"><param name="bgcolor" value="#"><param name="wmode" value="opaque"><param name="AllowScriptAccess" value="never"><embed src="vsmb-0330_youdevit-qc_728x90_ban_091005300_ff.swf" quality="high" wmode="opaque" swliveconnect="TRUE" bgcolor="#" type="application/x-shockwave-flash" allowscriptaccess="never" width="728" height="90"></object><noscript><A TARGET="_top" HREF="http://ad.doubleclick.net/click%3Bh=v8/38f1/3/0/%2a/m%3B218822436%3B0-0%3B0%3B41954109%3B3454-728/90%3B33665706/33683584/1%3Bu%3Dns-65800190_1259237921%2C112c8b51938bfd5%2CMiscellaneous%2C%3B%7Efdr%3D218833344%3B0-0%3B2%3B27855236%3B3454-728/90%3B33816380/33834258/1%3Bu%3Dns-65800190_1259237921%2C112c8b51938bfd5%2CMiscellaneous%2C%3B%7Esscs%3D%3fhttp://pixel.quantserve.com/r;a=p-6cPoWZ3i70XRQ;labels=_click.adserver.doubleclick*http://www.verisign.com/code-signing/information-center/index.html?sl=b55990450080000002"><IMG SRC="http://static.2mdn.net/1840681/VSMB-0330_YouDevIt_728x90_def_091005300_ff.gif" alt="" BORDER=0></A></noscript>
+
+<script type="text/javascript" src="quant.js"></script>
+<noscript>
+
+<img src="http://pixel.quantserve.com/pixel/p-6cPoWZ3i70XRQ.gif?media=ad&labels=_imp.adserver.doubleclick,_imp.publisher.41954109,_imp.placement.218822436,_imp.creative.33665706" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<noscript><a href="http://ad2.netshelter.net/jump/ns.computer.org/general;kw=;tile=2;sz=300x250,336x280;ord=123456789?" target="_blank" ><img src="http://ad2.netshelter.net/ad/ns.computer.org/general;kw=;tile=1;sz=728x90;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- END AD TAG -->
+</center>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+Liferay.Portlet.onLoad(
+{
+canEditTitle: false,
+columnPos: 0,
+isStatic: 'end',
+namespacedId: 'p_p_id_56_INSTANCE_zXo7_',
+portletId: '56_INSTANCE_zXo7'
+}
+);
+</script>
+</div>
+<div id="p_p_id_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4_" class="portlet-boundary portlet-boundary_digitallibrarylandingpage_WAR_plugins_">
+<a name="p_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4"></a>
+<div class="portlet-borderless-container" style="">
+<div>
+<!-- abstract_view.jsp -->
+<script type="text/javascript">
+
+var downloadCount=0;
+function addContextMenu() {
+jQuery(".abs-pdf").contextMenu("_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4__pdfMenu", {
+bindings: {
+'open': function(e) {
+openPDF("/plugins/dl/pdf/" + e.id, e.title);
+},
+'download': function(e) {
+downloadPDF("/plugins/dl/pdf/" + e.id, e.title);
+}
+}
+});
+}
+/*
+ * Open a link using the tab specified by the index.
+ */
+function openDoc(link, title, index) {
+// Make sure we are at the top of the page
+scrollToTop();
+try {
+// Close any trailing tabs
+tabs.clear(index);
+breadcrumbs.setLastEntry(index);
+var linkWithParms = link;
+if (linkWithParms.indexOf("?") > -1) {
+linkWithParms += '&template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+else {
+linkWithParms += '?template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+tabs.load(index, title, linkWithParms, true);
+breadcrumbs.add(title, link, index);
+} catch (e) {
+alert('openDoc: ' + e.message);
+}
+addContextMenu();
+}
+function openPdfFromToc(link, title) {
+var linkWithParms = link;
+if (linkWithParms.indexOf("?") > -1) {
+linkWithParms += '&template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+else {
+linkWithParms += '?template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+window.open(linkWithParms, "Download"+downloadCount, "menubar=no,resizable=1,width=900,height=600");		
+downloadCount++;
+}
+function openPDF(link, title) {
+try {
+var linkWithParms = link;
+if (linkWithParms.indexOf("?") > -1) {
+linkWithParms += '&template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+else {
+linkWithParms += '?template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+var wndw = window.open(linkWithParms, "Download"+downloadCount, "menubar=no,resizable=1,width=900,height=600");
+if (!wndw)
+alert("A popup blocker has prevented the download of the PDF.  Please click on the PDF link to download the file.");
+downloadCount++;
+}
+catch (e) {
+alert(e.message);
+}
+}
+function downloadPDF(link, title) {
+var linkWithParms = link;
+if (linkWithParms.indexOf("?") > -1) {
+linkWithParms += '&template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211&download=true';
+}
+else {
+linkWithParms += '?template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211&download=true';
+}
+//		window.open(linkWithParms, "DownloadPDF", "menubar=no,resizable=1,width=900,height=600");
+document.location = linkWithParms;
+}
+function openZip(link, title) {
+var linkWithParms = link;
+try {
+if (linkWithParms.indexOf("?") > -1) {
+linkWithParms += '&template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+else {
+linkWithParms += '?template=1&loginState=1&userData=anonymous-IP%253A%253A68.3.197.211';
+}
+if(jQuery.browser.msie && (parseInt(jQuery.browser.version) == 6)) {	
+var wndw = window.open(linkWithParms, "ZIP", "menubar=no,resizable=1,width=900,height=600");
+if (!wndw)
+alert("A popup blocker has prevented the download of the PDF.  Please click on the PDF link to download the file.");			
+} else {
+document.location = linkWithParms;
+}
+//window.open(linkWithParms, title);
+//document.location = linkWithParms;
+ } catch (e) {
+  	 	alert('Error ' + e.message);
+ }
+}		
+/*
+*  openurl link for the institutions
+*/
+function showOpenUrlWindow(theURL,genre,jtitle,jissn,jisbn,
+   jvol,year,jissue,atitle,pageno,
+   aDOI,fname,lname,winName,features) { 
+window.open(theURL+'rfr_id=info:sid/http://ieeecomputersociety.org\&url_ver=Z39.88-2004\&rft_val_fmt=info:ofi/fmt:kev:mtx:journal'
++'\&rft.genre='+genre+'\&rft.jtitle='+jtitle+'\&rtf.issn='+jissn
++'\&rft.isbn='+jisbn+'\&rft.volume='+jvol+'\&rft.date='+year
++'\&rtf.issue'+jissue+'\&rft.atitle='+atitle+'\&rft.spage='+pageno
++'\&rft_id=info:doi/'+aDOI+'\&aufirst='+fname+'\&aulast='+lname,
+winName,features);
+}
+var autoloadPdf = 0;
+var autoloadZip = 0;
+function _digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4__init() {
+if (autoloadPdf)
+openPdfOnLoad();
+if (autoloadZip)
+openZipOnLoad();
+}
+jQuery(function() {
+_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4__init();
+jQuery("div.abs-pdf").contextMenu("_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4__pdfMenu");
+});
+function openHtml(link, title) {
+document.location = link;
+}
+</script>
+<div id="_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4__digitalLibrary">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:ghapi="http://www.google.com/apis/homepage" xmlns:rss="http://backend.userland.com/rss2" xmlns:date="http://exslt.org/dates-and-times" id="dlcontent">
+<div id="abs-ui-tabs">
+<table id="abs-ui-tabs-nav-container">
+<tbody><tr>
+<td>
+<ul class="abs-ui-tabs-nav">
+<li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" onclick='javascript:openLinks("January","Detecting Faces in Images: A Survey","IEEE Transactions on Pattern Analysis and Machine Intelligence","1");'><span class="abs-ui-tabs-not-selected">Publication</span></a>
+</li>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" onclick='javascript:openLinks("January","Detecting Faces in Images: A Survey","IEEE Transactions on Pattern Analysis and Machine Intelligence","2");'><span class="abs-ui-tabs-not-selected">2002</span></a>
+</li>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" onclick='javascript:openLinks("January","Detecting Faces in Images: A Survey","IEEE Transactions on Pattern Analysis and Machine Intelligence","3");'><span class="abs-ui-tabs-not-selected">Issue No. 1 - January</span></a>
+</li>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void(0);" onclick='javascript:openLinks("January","Detecting Faces in Images: A Survey","IEEE Transactions on Pattern Analysis and Machine Intelligence","4");'><span class="abs-ui-tabs-selected">Abstract - Detecting Faces in Images: A Survey</span></a>
+</li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="abs-articleinfo">
+<table>
+<tbody><tr>
+<td class="top-left">&nbsp;</td><td class="top-center">This Article</td><td class="top-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="content-left">&nbsp;</td><td class="content-center">
+<ul>
+<li>
+<div onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';">
+<a class="_blank" href="http://www.computer.org/portal/c/portal/login">
+
+ 		 	Subscribers, please Login
+ 		 </a>
+</div>
+</li>
+<li>
+<div onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';" class="abs-purchase">
+<a target="_top" href="https://newton.computer.org/DocDelivery/Shopping.nsf/AddToCart?OpenAgent&U=http://csdl.computer.org/dl/trans/tp/2002/01/i0034.pdf&T=Detecting%20Faces%20in%20Images:%20A%20Survey">
+								 		 		
+ 		 
+ 		 Purchase article: $19</a>
+</div>
+</li>
+<li>
+<div class="abs-pdf-disabled">
+<span class="article-disabled">PDF</span>
+</div>
+</li>
+<li>
+<div class="abs-html-disabled">
+<span class="article-disabled">HTML</span>
+</div>
+</li>
+<li>
+<div onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';" class="abs-xplore">
+<a href="http://dx.doi.org/10.1109/34.982883">
+
+ 		 IEEE <em>Xplore</em> Subscribers
+ 	</a>
+</div>
+</li>
+<li>
+<div onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';">
+<a target="_top" href="http://csdl.computer.org/rss/tpami.xml">
+
+RSS feed
+</a>
+</div>
+</li>
+</ul>
+</td><td class="content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="sep-left">&nbsp;</td><td class="sep-center">Share</td><td class="sep-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="content-left">&nbsp;</td><td class="content-center">
+<ul>
+<li>
+<a onmouseover="return ss(0);" href="http://doi.ieeecomputersociety.org/10.1109/34.982883">
+
+Email this Article to a friend
+</a>
+</li>
+</ul>
+</td><td class="content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="sep-left">&nbsp;</td><td class="sep-center">Bibliographic References</td><td class="sep-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="content-left">&nbsp;</td><td class="content-center">
+<div id="abs-ul">
+<ul>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void();" onclick="javascript:showPopup('asciiText');">
+
+ASCII Text
+</a>
+</li>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void();" onclick="javascript:showPopup('BibTex');">
+			
+BibTex
+</a>
+</li>
+<li>
+<a onmouseover="return ss(0);" href="javascript:void();" onclick="javascript:showPopup('RefWorks');">
+						
+RefWorks Procite/RefMan/Endnote
+</a>
+</li>
+</ul>
+</div>
+</td><td class="content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="sep-left">&nbsp;</td><td onclick="addto(0)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='help';" class="sep-center">Add to:</td><td class="sep-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="content-left">&nbsp;</td><td class="content-center">
+<div class="abs-addTo">
+<span onclick="addto(3)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon3.gif">Digg</span>
+<br>
+<span onclick="addto(4)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon4.gif">Furl</span>
+</div>
+<div class="abs-addTo">
+<span onclick="addto(8)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon7.gif">Spurl</span>
+<br>
+<span onclick="addto(1)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon1.gif">Blink</span>
+</div>
+<div class="abs-addTo">
+<span onclick="addto(6)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon6.gif">Simpy</span>
+<br>
+<span onclick="addto(5)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon5.gif">Google</span>
+</div>
+<div class="abs-addTo">
+<span onclick="addto(2)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon2.gif">Del.icio.us</span>
+<br>
+<span onclick="addto(7)" onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';"><img alt="" src="icon8.gif">Y!MyWeb</span>
+</div>
+</td><td class="content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="sep-left">&nbsp;</td><td class="sep-center">Search</td><td class="sep-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="content-left">&nbsp;</td><td class="content-center">
+<ul>
+<li>
+<a rel="nofollow" target="_top" href="http://www.computer.org/search/results?operation=morelikethisreference&reference=http://csdl.computer.org/dl/trans/tp/2002/01/i0034.pdf&resultsPerPage=10&queryoption1=fulltext&sortField=DocWeight&searchDatabases=dlearning+annals+cise+computer+cga+concurrency+dt+intelligent+internet+itpro+micro+multimedia+software+pc+Security+tc+tkde+tpds+tpami+tse+tvcg+tmc+tcbb+tdsc+dsonline+proceedings+acm+cal&yearTo=2007&monthTo=12&yearFrom=1870&monthFrom=01&sortOrder=ascending">
+
+Similar Articles
+</a>
+</li>
+<li>Articles by <a rel="nofollow" target="_top" href="http://www.computer.org/search/results?action=authorsearch&resultsPerPage=50&queryOption1=DC_CREATOR&sortOrder=descending&queryText1=Ming-Hsuan%20Yang">Ming-Hsuan Yang</a>
+</li>
+<li>Articles by <a rel="nofollow" target="_top" href="http://www.computer.org/search/results?action=authorsearch&resultsPerPage=50&queryOption1=DC_CREATOR&sortOrder=descending&queryText1=David%20J.%20Kriegman">David J. Kriegman</a>
+</li>
+<li>Articles by <a rel="nofollow" target="_top" href="http://www.computer.org/search/results?action=authorsearch&resultsPerPage=50&queryOption1=DC_CREATOR&sortOrder=descending&queryText1=Narendra%20Ahuja">Narendra Ahuja</a>
+</li>
+</ul>
+</td><td class="content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td class="bottom-center"></td><td class="bottom-right"></td>
+</tr>
+</tbody></table>
+</div>
+<div id="abs-info-left">
+<div onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';" class="abs-logo-left">
+<a target="_top" href="http://www.computer.org/tpami"><img alt="" src="logo-tran-pattern_analysis_mach_intel.gif"></a>
+</div>
+<div id="abs-articleTitle">Detecting Faces in Images: A Survey<br>
+</div>
+<div id="abs-issue-date-left">January 2002 (vol. 24 no. 1) </div>
+<div class="abs-pp-left">pp. 34-58</div>
+</div>
+<div id="asciiText">
+<table>
+<tbody><tr>
+<td class="popup-top-left"></td><td class="popup-top-center">
+<div style="width: 100%;" id="asciiTextTitle">ASCII Text</div>
+</td><td onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';" onclick="javascript:hidePopup('asciiText');" class="popup-top-close">x</td><td class="popup-top-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="popup-content-left">&nbsp;</td><td colspan="2" class="popup-content-center">
+<div id="asciiText-content">Ming-Hsuan Yang, David J. Kriegman, Narendra Ahuja, 
+"Detecting Faces in Images: A Survey,"
+<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 24, no. 1, pp. 34-58, January, 2002.</div>
+</td><td class="popup-content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="popup-bottom-left"></td><td class="popup-bottom-center"></td><td class="popup-bottom-empty-cell"></td><td class="popup-bottom-right"></td>
+</tr>
+</tbody></table>
+</div>
+<div id="BibTex">
+<table>
+<tbody><tr>
+<td class="popup-top-left">&nbsp;</td><td class="popup-top-center">
+<div style="width: 100%;" id="BibTexTitle">BibTex</div>
+</td><td onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';" onclick="javascript:hidePopup('BibTex');" class="popup-top-close">x</td><td class="popup-top-right"></td>
+</tr>
+<tr>
+<td class="popup-content-left">&nbsp;</td><td colspan="2" class="popup-content-center">
+<div id="bibText-content">
+
+@article{
+10.1109/34.982883,<br>author = {Ming-Hsuan Yang and David J. Kriegman and Narendra Ahuja},<br>title = {Detecting Faces in Images: A Survey},<br>journal ={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>volume = {24},<br>number = {1},<br>issn = {0162-8828},<br>year = {2002},<br>pages = {34-58},<br>doi = {http://doi.ieeecomputersociety.org/10.1109/34.982883},<br>publisher = {IEEE Computer Society},<br>address = {Los Alamitos, CA, USA},<br>}</div>
+</td><td class="popup-content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="popup-bottom-left"></td><td class="popup-bottom-center"></td><td class="popup-bottom-empty-cell"></td><td class="popup-bottom-right"></td>
+</tr>
+</tbody></table>
+</div>
+<div id="RefWorks">
+<table>
+<tbody><tr>
+<td class="popup-top-left">&nbsp;</td><td class="popup-top-center">
+<div style="width: 100%;" id="RefWorksTitle">RefWorks Procite/RefMan/Endnote</div>
+</td><td onmouseout="this.style.cursor='default';" onmouseover="this.style.cursor='pointer';" onclick="javascript:hidePopup('RefWorks');" class="popup-top-close">x</td><td class="popup-top-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="popup-content-left">&nbsp;</td><td colspan="2" class="popup-content-center">
+<div id="refWorksText-content">TY - JOUR<br>JO - IEEE Transactions on Pattern Analysis and Machine Intelligence<br>TI - Detecting Faces in Images: A Survey<br>IS - 1<br>SN - 0162-8828<br>SP34<br>EP58<br>EPD - 34-58<br>A1 - Ming-Hsuan Yang, <br>A1 - David J. Kriegman, <br>A1 - Narendra Ahuja, <br>PY - 2002<br>KW - Face detection<br>KW -  face recognition<br>KW -  object recognition<br>KW -  view-based recognition<br>KW -  statistical pattern recognition<br>KW -  machine learning.<br>VL - 24<br>JA - IEEE Transactions on Pattern Analysis and Machine Intelligence<br>ER - <br>
+</div>
+</td><td class="popup-content-right">&nbsp;</td>
+</tr>
+<tr>
+<td class="popup-bottom-left"></td><td class="popup-bottom-center"></td><td class="popup-bottom-empty-cell"></td><td class="popup-bottom-right"></td>
+</tr>
+</tbody></table>
+</div>
+<div id="abs-authors">
+<div>
+<a rel="nofollow" target="_top" href="http://www.computer.org/search/results?action=authorsearch&resultsPerPage=50&queryOption1=DC_CREATOR&sortOrder=descending&queryText1=Ming-Hsuan%20Yang">Ming-Hsuan Yang</a>
+</div>
+<div>
+<a rel="nofollow" target="_top" href="http://www.computer.org/search/results?action=authorsearch&resultsPerPage=50&queryOption1=DC_CREATOR&sortOrder=descending&queryText1=David%20J.%20Kriegman">David J. Kriegman</a>
+</div>
+<div>
+<a rel="nofollow" target="_top" href="http://www.computer.org/search/results?action=authorsearch&resultsPerPage=50&queryOption1=DC_CREATOR&sortOrder=descending&queryText1=Narendra%20Ahuja">Narendra Ahuja</a>
+</div>
+</div>
+<div id="abs-doi-left">
+
+DOI Bookmark: 
+<a target="_top" href="http://doi.ieeecomputersociety.org/10.1109/34.982883">http://doi.ieeecomputersociety.org/10.1109/34.982883</a>
+</div>
+<div id="abs-abscontent">
+<div class="abs-tagline"></div>
+<div class="abs-articlesummary"><p>Images containing faces are essential to intelligent vision-based human computer interaction, and research efforts in face processing include face recognition, face tracking, pose estimation, and expression recognition. However, many reported methods assume that the faces in an image or an image sequence have been identified and localized. To build fully automated systems that analyze the information contained in face images, robust and efficient face detection algorithms are required. Given a single image, the goal of face detection is to identify all image regions which contain a face regardless of its three-dimensional position, orientation, and lighting conditions. Such a problem is challenging because faces are nonrigid and have a high degree of variability in size, shape, color, and texture. Numerous techniques have been developed to detect faces in a single image, and the purpose of this paper is to categorize and evaluate these algorithms. We also discuss relevant issues such as data collection, evaluation metrics, and benchmarking. After analyzing these algorithms and identifying their limitations, we conclude with several promising directions for future research.</p></div>
+</div>
+<div class="abs-ref-tagline"></div>
+<p id="abs-references">[1] 34 T. Agui, Y. Kokubo, H. Nagashashi, and T. Nagao, &ldquo;Extraction of FaceRecognition from Monochromatic Photographs Using Neural Networks,&rdquo; <em>Proc. Second Int'l Conf. Automation, Robotics, and Computer Vision,</em> vol. 1, pp. 18.8.1-18.8.5, 1992.[2] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.546258&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  N. Ahuja, &ldquo;A Transform for Multiscale Image Segmentation by Integrated Edge and Region Detection,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 18, no. 12, pp. 1211-1235, 1996.</a>[3]  Y. Amit, D. Geman, and B. Jedynak, &ldquo;Efficient Focusing and Face Detection,&rdquo; <em>Face Recognition: From Theory to Applications,</em> H. Wechsler, P.J. Phillips, V. Bruce, F. Fogelman-Soulie, and T.S. Huang, eds., vol. 163, pp. 124-156, 1998.[4] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.632990&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  Y. Amit, D. Geman, and K. Wilder, &ldquo;Joint Induction of Shape Features and Tree Classifiers,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 19, no. 11, pp. 1300-1305, Nov. 1997.</a>[5]  T.W. Anderson, <em>An Introduction to Multivariate Statistical Analysis.</em> New York: John Wiley, 1984.[6] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICNN.1993.298589&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.F. Augusteijn and T.L. Skujca, &ldquo;Identification of Human Faces through Texture-Based Feature Recognition and Neural Network Technology,&rdquo; <em>Proc. IEEE Conf. Neural Networks,</em> pp. 392-398, 1993.</a>[7] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.598228&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  P.N. Belhumeur, J. Hespanda, and D. Kriegeman, Eigenfaces vs. Fisherfaces: Recognition Using Class Specific Linear Projection <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 19, no. 7, pp. 711-720, July 1997.</a>[8] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1998.723444&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  O. Bernier, M. Collobert, R. F&eacute;raud, V. Lemaire, J.E. Viallet, and D. Collobert, &ldquo;Multrak: A System for Automatic Multiperson Localization and Tracking in Real-Time,&rdquo; <em>Proc. Int'l Conf. Image Processing,</em> 1998.</a>[9] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/525960&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  C.M. Bishop, <em>Neural Networks for Pattern Recognition.</em> Clarendon Press, 1995.</a>[10] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/646307.687601&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  C. Breazeal and B. Scassellati, "A Context-Dependent Attention System for a Social Robot," <em>Proc. 16th Int'l Joint Conf. Artificial Intelligence (IJCAI '99),</em> Morgan Kaufmann, San Francisco, 1999, pp. 1146-1153.</a>[11]  L. Breiman, J. Friedman, R. Olshen, and C. Stone, <em>Classification and Regression Trees.</em> Wadsworth, 1984.[12] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/195012.195019&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  G. Burel and D. Carel, "Detection and Localization of Faces on Digital Images," <em>Pattern Recognition Letters,</em> Vol. 15, 1994, pp. 963-967.</a>[13]  M.C. Burl, T.K. Leung, and P. Perona, &ldquo;Face Localization via Shape Statistics,&rdquo; <em>Proc. First Int'l Workshop Automatic Face and Gesture Recognition,</em> pp. 154-159, 1995.[14] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/MMDBMS.1998.709526&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J. Cai, A. Goshtasby, and C. Yu, &ldquo;Detecting Human Faces in Color Images,&rdquo; <em>Proc. 1998 Int'l Workshop Multi-Media Database Management Systems,</em> pp. 124-131, 1998.</a>[15] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/11274.11275&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  J. Canny, &ldquo;A Computational Approach to Edge Detection,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 8, no. 6, pp.&nbsp;679-698, June 1986.</a>[16]  A. Carleson, C. Cumby, J. Rosen, and D. Roth, &ldquo;The SNoW Learning Architecture,&rdquo; Technical Report UIUCDCS-R-99-2101, Univ. of Illinois at Urbana-Champaign Computer Science Dept., 1999.[17] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1998.670936&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  D. Chai and K.N. Ngan, &ldquo;Locating Facial Region of a Head-and-Shoulders Color Image,&rdquo; <em>Proc. Third Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 124-129, 1998.</a>[18] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/5.381842&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  R. Chellappa, C. Wilson, and S. Sirohey, "Human and Machine Recognition of Faces: A Survey," <em>Proc. IEEE,</em> vol. 83, no. 5, pp. 705-740, 1995.</a>[19] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1995.466885&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  Q. Chen, H. Wu, and M. Yachida, "Face Detection by Fuzzy Pattern Matching," <em>Int'l Conf. Computer Vision,</em> 1995, pp. 591-596.</a>[20]  D. Chetverikov and A. Lerch, &ldquo;Multiresolution Face Detection,&rdquo; <em>Theoretical Foundations of Computer Vision,</em> vol. 69, pp. 131-140, 1993.[21] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.632979&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  K. Cho, P. Meer, and J. Cabrera,&ldquo;Performance Assessment through Bootstrap,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 19, no. 11, pp. 1,185-1,198, Nov. 1997.</a>[22] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/139600.139606&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  S.Y. Lee and F. Hsu, &ldquo;Spatial Reasoning and Similarity Retrieval of Images using 2D C-Strings Knowledge Representation,&rdquo; <em>Pattern Recognition,</em> vol. 25, no. 3, pp. 305-318, 1992.</a>[23] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557278&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M. Collobert, R. F&eacute;raud, G.L. Tourneur, O. Bernier, J.E. Viallet, Y. Mahieux, and D. Collobert, &ldquo;LISTEN: A System for Locating and Tracking Individual Speakers,&rdquo; <em>Proc. Second Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 283-288, 1996.</a>[24] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609415&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A.J. Colmenarez and T.S. Huang, Face Detection with Information-Based Maximum Discrimination <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 782-787, 1997.</a>[25] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557265&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T.F. Cootes and C.J. Taylor, &ldquo;Locating Faces Using Statistical Feature Detectors,&rdquo; <em>Proc. Second Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 204-209, 1996.</a>[26] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/129837&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  T.M. Cover and J.A. Thomas, <em>Elements of Information Theory.</em> John Wiley&Sons, 1991.</a>[27] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/34300.34310&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  I. Craw,H. Ellis,, and J.R. Lishman,&rdquo;, Automatic extraction of face-features,&rdquo; <em>Pattern Recognition Letters,</em> vol. 5, pp. 183-187, Feb. 1987.</a>[28] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/645305.648715&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  I. Craw, D. Tock, and A. Bennet, &ldquo;Finding Face Features,&rdquo; <em>Proc. Int'l Conf. Computer Vision,</em> pp. 92-96, 1992.</a>[29] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/200241.200247&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  J.L. Crowley and J.M. Bedrune, &ldquo;Integration and Control of Reactive Visual Processes,&rdquo; <em>Proc. Third European Conf. Computer Vision,</em> vol. 2, pp. 47-58, 1994.</a>[30] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609393&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J.L. Crowley and F. Beard, &ldquo;Multimodal Tracking of Faces for Video Communications,&rdquo; <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 640-645, 1997.</a>[31]  Y. Dai and Y. Nakano, &ldquo;Extraction for Facial Images from Complex Background Using Color Information and SGLD Matrices,&rdquo; <em>Proc. First Int'l Workshop Automatic Face and Gesture Recognition,</em> pp. 238-242, 1995.[32] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/0031-3203%2895%2900139-5&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  Y. Dai and Y. Nakano, &ldquo;Face-Texture Model Based on SGLD and Its Application in Face Detection in a Color Scene,&rdquo; <em>Pattern Recognition,</em> vol. 29, no. 6, pp. 1007-1017, 1996.</a>[33] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/350676.350679&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  T. Darrell, G. Gordon, M. Harville, and J. Woodfill, &ldquo;Integrated Person Tracking Using Stereo, Color, and Pattern Detection,&rdquo; <em>Int'l J. Computer Vision,</em> vol. 37, no. 2, pp. 175-185, 2000.</a>[34]  A. Dempster, &ldquo;A Generalization of Bayesian Theory,&rdquo; <em>J. Royal Statistical Soc.,</em> vol. 30, pp. 205-247, 1978.[35] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.799905&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  G. Donato, M.S. Bartlett, J.C. Hager, P. Ekman, and T.J. Sejnowski, &ldquo;Classifying Facial Actions,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 21, no. 10, pp. 974-989, Oct. 1999.</a>[36]  R.O. Duda and P.E. Hart, <em>Pattern Classification and Scene Analysis.</em> New York: John Wiley, 1973.[37] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/954544&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  R. Duda, P. Hart, and D. Stork, <em>Pattern Classification.</em> New York: John Wiley&Sons, 2001.</a>[38] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICPR.1998.711955&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  N. Duta and A.K. Jain, &ldquo;Learning the Human Face Concept from Black and White Pictures,&rdquo; <em>Proc. Int'l Conf. Pattern Recognition,</em> pp.&nbsp;1365-1367, 1998.</a>[39] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1998.710737&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  G.J. Edwards, C.J. Taylor, and T. Cootes, &ldquo;Learning to Identify and Track Faces in Image Sequences.&rdquo; <em>Proc. Sixth IEEE Int'l Conf. Computer Vision,</em> pp. 317-322, 1998.</a>[40] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1995.466916&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  I. Essa and A. Pentland, "Facial Expression Recognition Using a Dynamic Model and Motion Energy," <em>Proc. Int'l Conf. Computer Vision,</em> pp. 360-367,Cambridge, Mass., 1995.</a>[41] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/109230.107380&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  S.E. Fahlman and C. Lebiere, "The Cascade-Correlation Learning Architecture," in <em>Advances in Neural Information Processing Systems 2,</em> D.S. Touretzky, ed., Morgan Kaufmann, San Mateo, Calif., 1990, pp. 524-532.</a>[42]  R. F&eacute;raud, &ldquo;PCA, Neural Networks and Estimation for Face Detection,&rdquo; <em>Face Recognition: From Theory to Applications,</em> H.&nbsp;Wechsler, P.J. Phillips, V. Bruce, F. Fogelman-Soulie, and T.S.&nbsp;Huang, eds., vol. 163, pp. 424-432, 1998.[43] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/302528.302739&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  R. F&eacute;raud and O. Bernier, &ldquo;Ensemble and Modular Approaches for Face Detection: A Comparison,&rdquo; <em>Neural Information Processing System,</em> vol. 10, Dec. 1997.</a>[44] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.899945&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  R. F&eacute;raud, O.J. Bernier, J.-E. Viallet, and M. Collobert, &ldquo;A Fast and Accurate Face Detection Based on Neural Network,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 23, no. 1, pp. 42-53, Jan. 2001.</a>[45] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/96550.96552&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  D.A. Forsyth, &ldquo;A Novel Algorithm for Color Constancy,&rdquo; <em>Int'l J. Computer Vision,</em> vol. 5, no. 1, pp. 5-36, 1990.</a>[46] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1998.698584&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  B.J. Frey, A. Colmenarez, and T.S. Huang, &ldquo;Mixtures of Local Subspaces for Face Recognition,&rdquo; <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 32-37, 1998.</a>[47]  F. Fukunaga and W. Koontz, &ldquo;Applications of the Karhunen-Lo&egrave;ve Expansion to Feature Selection and Ordering,&rdquo; <em>IEEE Trans. Computers,</em> vol. 19, no. 5, pp. 311-318, 1970.[48] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/92131&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  K. Fukunaga, <em>Introduction to Statistical Pattern Recognition,</em> second edition. Academic Press, 1990.</a>[49]  Z. Ghahramani and G.E. Hinton, &ldquo;The EM Algorithm for Mixtures of Factor Analyzers,&rdquo; Technical Report CRG-TR-96-1, Dept. Computer Science, Univ. of Toronto, 1996.[50] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/22881&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  R.C. Gonzales and P. Wintz, <em>Digital Image Processing,</em> second edition, pp. 146-152. Addison Wesley, 1987.</a>[51] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/235150.235153&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  V. Govindaraju, &ldquo;Locating Human Faces in Photographs,&rdquo; <em>Int'l J. Computer Vision,</em> vol. 19, no. 2 pp. 129-146, Aug. 1996.</a>[52] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1989.37900&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  V. Govindaraju, D.B. Sher, R. Srihari, and S.N. Srihari, "Locating Human Faces in Newspaper Photographs," <em>Proc. CVPR 89,</em> pp. 549-554, 1989.</a>[53] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/139619.139626&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  J.M. Schneider, L.F. Mackert, G. Zorntlein, R.J. Velthuys, and U. Bar, &ldquo;An Integrated Environment for Developing Communication Protocols,&rdquo; <em>Computer Networks and ISDN Systems,</em> vol. 25, no. 1, pp.&nbsp;43&ndash;61, Aug. 1992.</a>[54]  H.P. Graf, T. Chen, E. Petajan, and E. Cosatto, &ldquo;Locating Faces and Facial Parts,&rdquo; <em>Proc. First Int'l Workshop Automatic Face and Gesture Recognition,</em> pp. 41-46, 1995.[55] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557248&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H.P. Graf, E. Cosatto, D. Gibbon, M. Kocheisen, and E. Petajan, "Multi-Modal System for Locating Heads and Faces," <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em>Killington, Vt., pp. 88-93, Oct. 1996.</a>[56]  D.B. Graham and N.M. Allinson, &ldquo;Characterizing Virtual Eigensignatures for General Purpose Face Recognition,&rdquo; <em>Face Recognition: From Theory to Applications,</em> H. Wechsler, P.J. Phillips, V.&nbsp;Bruce, F. Fogelman-Soulie, and T.S. Huang, eds., vol. 163, pp.&nbsp;446-456, 1998.[57]  P. Hallinan, &ldquo;A Deformable Model for Face Recognition Under Arbitrary Lighting Conditions,&rdquo; PhD thesis, Harvard Univ., 1995.[58] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/646276.684227&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  C.-C. Han, H.-Y.M. Liao, K.-C. Yu, and L.-H. Chen, &ldquo;Fast Face Detection via Morphology-Based Pre-Processing,&rdquo; <em>Proc. Ninth Int'l Conf. Image Analysis and Processing,</em> pp. 469-476, 1998.</a>[59]  R.M. Haralick, K. Shanmugam, and I. Dinstein, &ldquo;Texture Features for Image Classification,&rdquo; <em>IEEE Trans. Systems, Man, and Cybernetics,</em> vol. 3, no. 6, pp. 610-621, 1973.[60] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.643893&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.D. Heath, S. Sarkar, T. Sanocki, and K.W. Bowyer, A Robust Visual Method for Assessing the Relative Performance of Edge-Detection Algorithms <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 19, no. 12, pp. 1338-1359, Dec. 1997.</a>[61] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/72.554192&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  G.E. Hinton, P. Dayan, and M. Revow, Modeling the Manifolds of Images of Handwritten Digits <em>IEEE Trans. Neural Networks,</em> vol. 8, no. 1, pp. 65-74, Jan. 1997.</a>[62]  H. Hotelling, &ldquo;Analysis of a Complex of Statistical Variables into Principal Components,&rdquo; <em>J. Educational Psychology,</em> vol. 24, pp. 417-441, pp. 498-520, 1933.[63] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1998.670927&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  K. Hotta, T. Kurita, and T. Mishima, &ldquo;Scale Invariant Face Detection Method Using Higher-Order Local Autocorrelation Features of Log-Polar Image,&rdquo; <em>Proc. Third IEEE Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 70-75, 1998.</a>[64] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557272&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J. Huang, S. Gutta, and H. Wechsler, &ldquo;Detection of Human Faces Using Decision Trees,&rdquo; <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 248-252, 1996.</a>[65] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.232073&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  D.P. Huttenlocher, G.A. Klanderman, and W.J. Rucklidge, &ldquo;Comparing Images Using the Hausdorff Distance,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 15, no. 9, pp. 850-863, Sept. 1993.</a>[66] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609312&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T. Jebara and A. Pentland, &ldquo;Parameterized Structure from Motion for 3D Adaptive Feedback Tracking of Faces,&rdquo; <em>Proc. Conf. Computer Vision and Pattern Recognition,</em> pp. 144-150, June 1997.</a>[67] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1998.710710&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T. Jebara, K. Russell, and A. Pentland, &ldquo;Mixtures of Eigenfeatures for Real-Time Structure from Texture,&rdquo; <em>Proc. IEEE Int'l Conf. Computer Vision,</em> Bombay, India, Jan. 1998.</a>[68]  I.T. Jolliffe, <em>Principal Component Analysis.</em> New York: Springer-Verlag, 1986.[69] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1999.786951&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.J. Jones and J. M. Rehg, Statistical Color Models with Application to Skin Detection <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> 1999.</a>[70] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/0031-3203%2895%2900129-8&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  P. Juell and R. Marsh, &ldquo;A Hierarchical Neural Network for Human Face Detection,&rdquo; <em>Pattern Recognition,</em> vol. 29, no. 5, pp. 781-787, 1996.</a>[71]  T. Kanade, &ldquo;Picture Processing by Computer Complex and Recognition of Human Faces,&rdquo; PhD thesis, Kyoto Univ., 1973.[72]  K. Karhunen, &ldquo;Uber Lineare Methoden in der Wahrscheinlichkeitsrechnung,&rdquo; <em>Annales Academiae Sciientiarum Fennicae, Series AI: Mathematica-Physica,</em> vol. 37, pp. 3-79, 1946. (Translated by RAND Corp., Santa Monica, Calif., Report T-131, Aug. 1960).[73]  M. Kass, A. Witkin, and D. Terzopoulos, &ldquo;Snakes: Active Contour Models,&rdquo; <em>Proc. First IEEE Int'l Conf. Computer Vision,</em> pp. 259-269, 1987.[74]  R. Kauth, A. Pentland, and G. Thomas, &ldquo;Blob: An Unsupervised Clustering Approach to Spatial Preprocessing of MSS Imagery,&rdquo; <em>Proc. 11th Int'l Symp. Remote Sensing of the Environment,</em> pp. 1309-1317, 1977.[75]  D.G. Kendall, &ldquo;Shape Manifolds, Procrustean Metrics, and Complex Projective Shapes,&rdquo; <em>Bull. London Math. Soc.,</em> vol. 16, pp.&nbsp;81-121, 1984.[76] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/646072.677301&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  C. Kervrann, F. Davoine, P. Perez, H. Li, R. Forchheimer, and C. Labit, &ldquo;Generalized Likelihood Ratio-Based Face Detection and Extraction of Mouth Features,&rdquo; <em>Proc. First Int'l Conf. Audio- and Video-Based Biometric Person Authentication,</em> pp. 27-34, 1997.</a>[77] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1998.670928&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  S.-H. Kim, N.-K. Kim, S.C. Ahn, and H.-G. Kim, Object Oriented Face Detection Using Range and Color Information <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 76-81, 1998.</a>[78] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.41390&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M. Kirby and L. Sirovich,&ldquo;Application of Karhunen-Lo&egrave;ve procedure for the characterization of human faces,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 12, no. 1, pp. 103-108, Jan. 1990.</a>[79] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557283&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  R. Kjeldsen and J. Kender, "Finding Skin in Color Images," <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em>Killington, Vt., pp. 312-317, Oct. 1996.</a>[80] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/69371&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  T. Kohonen, "Self-Organization and Associated Memory," Berlin Heidelberg. New York: Springer-Verlag, 1988.</a>[81] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICASSP.1997.595305&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  C. Kotropoulos and I. Pitas, &ldquo;Rule-Based Face Detection in Frontal Views,&rdquo; <em>Proc. Int'l Conf. Acoustics, Speech and Signal Processing,</em> vol. 4, pp. 2537-2540, 1997.</a>[82] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1998.723441&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  C. Kotropoulos, A. Tefas, and I. Pitas, &ldquo;Frontal Face Authentication Uing Variants of Dynamic Link Matching Based on Mathematical Morphology,&rdquo; <em>Proc. IEEE Int'l Conf. Image Processing,</em> pp. 122-126, 1998.</a>[83] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1002/aic.690370209&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.A. Kramer, &ldquo;Nonlinear Principal Component Analysis Using Autoassociative Neural Networks,&rdquo; <em>Am. Inst. Chemical Eng. J.,</em> vol. 37, no. 2, pp. 233-243, 1991.</a>[84] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICPR.1994.576435&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  Y.H. Kwon and N. da Vitoria Lobo, "Face Detection Using Templates," <em>ICPR'94,</em> pp. 764-767, 1994.</a>[85]  K. Lam and H. Yan, &ldquo;Fast Algorithm for Locating Head Boundaries,&rdquo; <em>J. Electronic Imaging,</em> vol. 3, no. 4, pp. 351-359, 1994.[86] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/0262-8856%2895%2999726-H&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Lanitis, C.J. Taylor, and T.F. Cootes, &ldquo;An Automatic Face Identification System Using Flexible Appearance Models,&rdquo; <em>Image and Vision Computing,</em> vol. 13, no. 5, pp. 393-401, 1995.</a>[87] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1995.466878&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T. Leung, M. Burl, and P. Perona, "Finding Faces in Cluttered Scenes Using Labeled Random Graph Matching," <em>Int'l Conf. Computer Vision,</em> 1995, pp. 637-644.</a>[88] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1998.698677&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T.K. Leung, M.C. Burl, and P. Perona, &ldquo;Probabilistic Affine Invariants for Recognition,&rdquo; <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 678-684, 1998.</a>[89] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557264&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.S. Lew, &ldquo;Information Theoretic View-Based and Modular Face Detection,&rdquo; <em>Proc. Second Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 198-203, 1996.</a>[90] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.216733&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  F. Leymarie and M. Levine, "Tracking deformable objects in the plane using an active contour model, <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 15, no. 6, pp. 617-634, June 1993.</a>[91] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/72.554196&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  S.H. Lin, S.Y. Kung, and L.J. Lin, "Face Recognition/Detection by Probabilistic Decision-Based Neural Network," <em>IEEE Trans. Neural Networks, Special Issue on Artificial Neural Networks and Pattern Recognition,</em> vol. 8, no. 1, Jan. 1997.</a>[92] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/639961.639994&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  N. Littlestone, "Learning Quickly When Irrelevant Attributes Abound: A New Linear-Threshold Algorithm," <em>Machine Learning,</em> Vol. 2, No. 4, 1987, pp. 285-318.</a>[93]  M.M. Lo&egrave;ve, <em>Probability Theory.</em> Princeton, N.J.: Van Nostrand, 1955.[94] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1998.723446&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A.C. Loui, C.N. Judice, and S. Liu, &ldquo;An Image Database for Benchmarking of Automatic Face Detection and Recognition Algorithms,&rdquo; <em>Proc. IEEE Int'l Conf. Image Processing,</em> pp. 146-150, 1998.</a>[95]  K.V. Mardia and I.L. Dryden, &ldquo;Shape Distributions for Landmark Data,&rdquo; <em>Advanced Applied Probability,</em> vol. 21, pp. 742-755, 1989.[96]  A. Martinez and R. Benavente, &ldquo;The AR Face Database,&rdquo; Technical Report CVC 24, Purdue Univ., 1998.[97] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.908974&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A.M. Martinez and A.C. Kak, PCA versus LDA <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 23, no. 2, pp. 228-233, Feb. 2001.</a>[98] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/S0031-3203%2898%2900066-1&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  S. McKenna, S. Gong, and Y. Raja, &ldquo;Modelling Facial Colour and Identity with Gaussian Mixtures,&rdquo; <em>Pattern Recognition,</em> vol. 31, no. 12, pp. 1883-1892, 1998.</a>[99]  S. McKenna, Y. Raja, and S. Gong, &ldquo;Tracking Colour Objects Using Adaptive Mixture Models,&rdquo; <em>Image and Vision Computing,</em> vol. 17, nos. 3/4, pp. 223-229, 1998.[100] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/S0031-3203%2898%2900156-3&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J. Miao, B. Yin, K. Wang, L. Shen, and X. Chen, &ldquo;A Hierarchical Multiscale and Multiangle System for Human Face Detection in a Complex Background Using Gravity-Center Template,&rdquo; <em>Pattern Recognition,</em> vol. 32, no. 7, pp. 1237-1248, 1999.</a>[101] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/541177&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  T. Mitchell, <em>Machine Learning,</em> McGraw-Hill, 1997.</a>[102]  Y. Miyake, H. Saitoh, H. Yaguchi, and N. Tsukada, &ldquo;Facial Pattern Detection and Color Correction from Television Picture for Newspaper Printing,&rdquo; <em>J. Imaging Technology,</em> vol. 16, no. 5, pp.&nbsp;165-169, 1990.[103] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.598227&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  B. Moghaddam and A. Pentland, &ldquo;Probabilistic Visual Learning for Object Representation,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 19, no. 7, pp. 696-710, July 1997.</a>[104] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1998.723445&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A.V. Nefian and M. H. HIII, &ldquo;Face Detection and Recognition Using Hidden Markov Models,&rdquo; <em>Proc. IEEE Int'l Conf. Image Processing,</em> vol. 1, pp. 141-145, 1998.</a>[105] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609309&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  N. Oliver, F. B&eacute;rard, and A. Pentland, &ldquo;Lafter: Lips and Face Tracking,&rdquo; <em>Proc. IEEE Int'l Conf. Computer Vision and Pattern Recognition (CVPR `97),</em> June 1997.</a>[106] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609319&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M. Oren, C. Papageorgiou, P. Sinha, E. Osuna, and T. Poggio, Pedestrian Detection Using Wavelet Templates <em>Proc. Computer Vision and Pattern Recognition,</em> pp. 193-199, June 1997.</a>[107] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609310&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  E. Osuna, R. Freund, and F. Girosi, Training Support Vector Machines: An Application to Face Detection <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 17-19, 1997.</a>[108] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1998.710772&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  C.P. Papageorgiou, M. Oren, and T. Poggio, &ldquo;A General Framework for Object Detection,&rdquo; <em>Proc. Int'l Conf. Computer Vision,</em> pp.&nbsp;555-562, 1998.</a>[109] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/355338.355341&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  C. Papageorgiou and T. Poggio, "A Trainable System for Object Detection," <em>Int'l J. Computer Vision,</em> vol. 38, no. 1, June 2000, pp. 15-33.</a>[110]  K. Pearson, &ldquo;On Lines and Planes of Closest Fit to Systems of Points in Space,&rdquo; <em>Philosophical Magazine,</em> vol. 2, pp. 559-572, 1901.[111] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.824823&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Pentland, "Looking at People: Sensing for Ubiquitous and Wearable Computing," <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> IEEE CS Press, Los Alamitos, Calif., Jan. 2000, pp. 107-118.</a>[112] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/330534.330536&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  A. Pentland, "Perceptual Intelligence," <em>Comm. ACM,</em> vol. 43, no. 3, Mar. 2000, pp. 35-44.</a>[113] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/2.820039&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Pentland and T. Choudhury, &ldquo;Face Recognition for Smart Environments,&rdquo; <em>Computer,</em> vol. 33, no. 2, pp. 50-, Feb. 2000.</a>[114] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1994.323814&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Pentland, B. Moghaddam, and  Starner, "View-Based and Modular Eigenspaces for Face Recognition," <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> 1994, pp. 84-91.</a>[115] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.879790&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  P.J. Phillips, H. Moon, and S.A. Rozvi, The FERET Evaluation Methodolody for Face Recognition Algorithms <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 22, no. 10, pp. 1090-1104, Oct. 2000.</a>[116] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/646072.677299&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  S. Pigeon and L. Vandendrope, &ldquo;The M2VTS Multimodal Face Database,&rdquo; <em>Proc. First Int'l Conf. Audio- and Video-Based Biometric Person Authentication,</em> 1997.</a>[117]  M. Propp and A. Samal, &ldquo;Artificial Neural Network Architectures for Human Face Detection,&rdquo; <em>Intelligent Eng. Systems through Artificial Neural Networks,</em> vol. 2, 1992.[118] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/373423.373425&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  F. Provost and T. Fawcett, &ldquo;Robust Classification for Imprecise Environments,&rdquo; <em>Machine Learning,</em> vol. 42, no. 3, pp. 203-231, 2001.</a>[119] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1997.609318&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  R.J. Qian and T.S. Huang, Object Detection Using Hierarchical MRF and MAP Estimation <em>Proc. Conf. Computer Vision and Pattern Recognition,</em> pp. 186-192, 1997.</a>[120] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1998.723443&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  R.J. Qian, M.I. Sezan, and K.E. Matthews, &ldquo;A Robust Real-Time Face Tracking Algorithm,&rdquo; <em>Proc. IEEE Int'l Conf. Image Processing,</em> pp. 131-135, 1998.</a>[121] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/152181&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  J.R. Quinlan, <em>C4.5: Programs for Machine Learning,</em>San Mateo, Calif.: Morgan Kaufman, 1992.</a>[122] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/153687&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  L.R. Rabiner and B.H. Juang, <em>Fundamentals of Speech Recognition,</em> Prentice Hall, Upper Saddle River, N.J., 1993.</a>[123] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1998.710785&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Rajagopalan, K. Kumar, J. Karlekar, R. Manivasakan, M. Patil, U. Desai, P. Poonacha, and S. Chaudhuri, &ldquo;Finding Faces in Photographs,&rdquo; <em>Proc. Sixth IEEE Int'l Conf. Computer Vision,</em> pp. 640-645, 1998.</a>[124] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICCV.1999.790386&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T. Rikert, M. Jones, and P. Viola, &ldquo;A Cluster-Based Statistical Model for Object Detection,&rdquo; <em>Proc. Seventh IEEE Int'l Conf. Computer Vision,</em> vol. 2, pp. 1046-1053, 1999.</a>[125] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/295240.295894&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  D. Roth, &ldquo;Learning to Resolve Natural Language Ambiguities: A Unified Approach,&rdquo; <em>Proc. 15th Nat'l Conf. Artificial Intelligence,</em> pp.&nbsp;806-813, 1998.</a>[126]  H. Rowley, S. Baluja, and T. Kanade, &ldquo;Human Face Detection in Visual Scenes,&rdquo; <em>Advances in Neural Information Processing Systems 8,</em> D.S. Touretzky, M.C. Mozer, and M.E. Hasselmo, eds., pp. 875-881, 1996.[127] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1996.517075&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Rowley, S. Baluja, and T. Kanade, &ldquo;Neural Network-Based Face Detection,&rdquo; <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 203-208, 1996.</a>[128] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.655647&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Rowley, S. Baluja, and T. Kanade, "Neural Network-Based Face Detection," <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 20, no. 1, Jan. 1998, pp. 23-38.</a>[129] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1998.698585&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H.A. Rowley, S. Baluja, and T. Kanade, &ldquo;Rotation Invariant Neural Network-Based Face Detection,&rdquo; <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> 1998.</a>[130] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/930745&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  H.A. Rowley, &ldquo;Neural Network-Based Face Detection,&rdquo; PhD thesis, Carnegie Mellon Univ., 1999.</a>[131] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/294412.294418&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  E. Saber and A.M. Tekalp, &ldquo;Frontal-View Face Detection and Facial Feature Extraction Using Color, Shape and Symmetry Based Cost Functions,&rdquo; <em>Pattern Recognition Letters,</em> vol. 19, pp. 669-680, 1998.</a>[132] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/0031-3203%2869%2990006-5&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  T. Sakai, M. Nagao, and S. Fujibayashi, &ldquo;Line Extraction and Pattern Detection in a Photograph,&rdquo; <em>Pattern Recognition,</em> vol. 1, pp.&nbsp;233-248, 1969.</a>[133] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/139367.139377&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  A. Samal and P.A. Iyengar,&ldquo;Automatic recognition and analysis of human faces and facial expressions: A survey,&rdquo; <em>Pattern Recognition,</em> vol. 25, no. 1, pp. 65-77, 1992.</a>[134]  A. Samal and P.A. Iyengar, &ldquo;Human Face Detection Using Silhouettes,&rdquo; <em>Int'l J. Pattern Recognition and Artificial Intelligence,</em> vol. 9, no. 6, pp. 845-867, 1995.[135] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/0262-8856%2894%2990007-8&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  F. Samaria and S. Young, &ldquo;HMM Based Architecture for Face Identification,&rdquo; <em>Image and Vision Computing,</em> vol. 12, pp. 537-583, 1994.</a>[136]  F.S. Samaria, &ldquo;Face Recognition Using Hidden Markov Models,&rdquo; PhD thesis, Univ. of Cambridge, 1994.[137] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/93.752960&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  S. Satoh, Y. Nakamura, and T. Kanade, "Name-It: Naming and Detecting Faces in News Videos," <em>IEEE MultiMedia,</em> vol. 6, no. 1, Jan.-Mar. 1999, pp. 22-35.</a>[138] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557295&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  D. Saxe and R. Foulds, Toward Robust Skin Identification in Video Images <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 379-384, 1996.</a>[139] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/295240.295937&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  B. Scassellati, &ldquo;Eye Finding via Face Detection for a Foevated, Active Vision System,&rdquo; <em>Proc. 15th Nat'l Conf. Artificial Intelligence,</em> 1998.</a>[140] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1998.698586&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Schneiderman and T. Kanade, &ldquo;Probabalistic Modeling of Local Appearance and Spatial Relationships for Object Recognition,&rdquo; <em>IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 45-51, 1998.</a>[141] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.2000.855895&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Schneiderman and T. Kanade, "A Statistical Method for 3D Object Detection Applied to Faces and Cars," <em>Proc. IEEE Computer Vision and Pattern Recognition</em> (CVPR 00), IEEE CS Press, 2000, pp. 746&mdash;751.</a>[142] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.761262&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J.A. Shufelt, &ldquo;Performance Evaluation and Analysis of Monocular Building Extraction,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 19, no. 4, pp. 311-326, Apr. 1997.</a>[143]  P. Sinha, &ldquo;Object Recognition via Image Invariants: A Case Study,&rdquo; <em>Investigative Ophthalmology and Visual Science,</em> vol. 35, no. 4, pp. 1735-1740, 1994.[144]  P. Sinha, &ldquo;Processing and Recognizing 3D Forms,&rdquo; PhD thesis, Massachusetts Inst. of Tech nology, 1995.[145]  S.A. Sirohey, &ldquo;Human Face Segmentation and Identification,&rdquo; Technical Report CS-TR-3176, Univ. of Maryland, 1993.[146] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557270&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J. Sobottka and I. Pitas, &ldquo;Segmentation and Tracking of Faces in Color Images,&rdquo; <em>Proc. Second Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 236-241, 1996.</a>[147] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1996.560536&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  K. Sobottka and I. Pitas, &ldquo;Face Localization and Feature Extraction Based on Shape and Color Information,&rdquo; <em>Proc. IEEE Int'l Conf. Image Processing,</em> pp. 483-486, 1996.</a>[148]  F. Soulie, E. Viennet, and B. Lamy, &ldquo;Multi-Modular Neural Network Architectures: Pattern Recognition Applications in Optical Character Recognition and Human Face Recognition,&rdquo; <em>Int'l J. Pattern Recognition and Artificial Intelligence,</em> vol. 7, no. 4, pp.&nbsp;721-755, 1993.[149]  T. Starner and A. Pentland, &ldquo;Real-Time ASL Recognition from Video Using HMM's,&rdquo; Technical Report 375, Media Lab, Massachusetts Inst. of Tech nology, 1996.[150]  Y. Sumi and Y. Ohta, &ldquo;Detection of Face Orientation and Facial Components Using Distributed Appearance Modeling,&rdquo; <em>Proc. First Int'l Workshop Automatic Face and Gesture Recognition,</em> pp. 254-259, 1995.[151] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1998.670937&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  Q.B. Sun, W.M. Huang, and J.K. Wu, Face Detection Based on Color and Local Symmetry Information <em>Proc. Third Int'l Conf. Face and Gesture Recognition,</em> pp. 130-135, 1998.</a>[152] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/929901&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  K. Sung, <em>Learning and Example Selection for Object and Pattern Detection,</em> PhD thesis, MIT AI Lab and Center for Biological and Computational Learning, 1995.</a>[153] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/888836&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  K. Sung and T. Poggio, <em>Example-Based Learning for View-Based Human Face Detection,</em> A.I. Memo 1521, C.B.C.L Paper 112, Dec. 1994.</a>[154] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.655648&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  K.K. Sung and T. Poggio, "Example-Based Learning for View-Based Human Face Detection," <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 20, no. 1, pp. 39-50, Jan. 1998.</a>[155] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/134839.134841&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  M.J. Swain and B.H. Ballard, &ldquo;Color Indexing,&rdquo; <em>Int'l J. Computer Vision,</em> vol. 7, no. 1, pp. 11-32, 1991.</a>[156] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.531802&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  D.L. Swets and J. Weng, Using Discriminant Eigenfeatures for Image Retrieval <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 16, no. 8, pp. 831-836, Aug. 1996.</a>[157]  B. Takacs and H. Wechsler, &ldquo;Face Location Using a Dynamic Model of Retinal Feature Extraction,&rdquo; <em>Proc. First Int'l Workshop Automatic Face and Gesture Recognition,</em> pp. 243-247, 1995.[158] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/CVPR.1998.698698&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Tefas, C. Kotropoulos, and I. Pitas, &ldquo;Variants of Dynamic Link Architecture Based on Mathematical Morphology for Frontal Face Authentication,&rdquo; <em>Proc. IEEE Conf. Computer Vision and Pattern Recognition,</em> pp. 814-819, 1998.</a>[159] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1998.670934&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J.C. Terrillon, M. David, and S. Akamatsu, &ldquo;Automatic Detection of Human Faces in Natural Scene Images by Use of a Skin Color Model of Invariant Moments&rdquo; <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 112-117, 1998.</a>[160] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICPR.1998.711952&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J.C. Terrillon, M. David, and S. Akamatsu, &ldquo;Detection of Human Faces in Complex Scene Images by Use of a Skin Color Model and Invariant Fourier-Mellin Moments,&rdquo; <em>Proc. Int'l Conf. Pattern Recognition,</em> pp. 1350-1355, 1998.</a>[161]  A. Tsukamoto, C.-W. Lee, and S. Tsuji, &ldquo;Detection and Tracking of Human Face with Synthesized Templates,&rdquo; <em>Proc. First Asian Conf. Computer Vision,</em> pp. 183-186, 1993.[162] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICPR.1994.576431&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Tsukamoto, C. Lee, and S. Tsuji, "Detection and Pose Estimation of Human Faces with Synthesized Image Models," <em>Proc. 12th Int'l Conf. Pattern Recognition,</em> vol. 1, pp. 754-757.Los Alamitos, Calif.: IEEE CS Press, 1994.</a>[163]  M. Turk and A. Pentland, &ldquo;Eigenfaces for Recognition,&rdquo; <em>J.&nbsp;Cognitive Neuroscience,</em> vol. 3, no. 1, pp. 71-86, 1991.[164] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1049/ip-vis:19941301&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  R. Vaillant, C. Monrocq, and Y. Le Cun, Original Approach for the Localisation of Objects in Images <em>IEEE Proc. Visual Image Signal Process.,</em> vol. 141, no. 4, Aug. 1994.</a>[165] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1995.537579&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M. Venkatraman and V. Govindaraju, &ldquo;Zero-Crossings of a Nonorthogonal Wavelet Transform for Complex Object Location,&rdquo; <em>Proc. Int&rsquo;l Conf. on Image Processing</em> , IEEE Signal Processing Society, to appear in Oct. 1995. </a>[166] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/29.21701&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  A. Waibel,T. Hanazawa,G. Hinton,K. Shikano,, and K. Lang,&ldquo;Phoneme recognition using time-delay neural networks,&rdquo; <em>IEEE Trans. ASSP,</em> vol. 37, no. 3, Mar. 1989.</a>[167] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/76.611173&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Wang and S.-F. Chang, &ldquo;A Highly Efficient System for Automatic Face Region Detection in MPEG Video,&rdquo; <em>IEEE Trans. Circuits and Systems for Video Technology,</em> vol. 7, no. 4, pp. 615-628, 1997.</a>[168] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/34.771326&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Wu, Q. Chen, and M. Yachida, &ldquo;Face Detection from Color Images Using a Fuzzy Pattern Matching Method,&rdquo; <em>IEEE Trans. Pattern Analysis and Machine Intelligence,</em> vol. 21, no. 6, pp. 557-563, June 1999.</a>[169] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557289&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  H. Wu, T. Yokoyama, D. Pramadihanto, and M. Yachida, &ldquo;Face and Facial Feature Extraction from Color Image,&rdquo; <em>Proc. Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 345-350, 1996.</a>[170] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/0031-3203%2894%2990017-5&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  G. Yang and T. S. Huang, &ldquo;Human Face Detection in Complex Background,&rdquo; <em>Pattern Recognition,</em> vol. 27, no. 1, pp. 53-63, 1994.</a>[171] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/274644.274666&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  J. Yang, R. Stiefelhagen, U. Meier, and A. Waibel, &ldquo;Visual Tracking for Multimodal Human Computer Interaction,&rdquo; <em>Proc. ACM Human Factors in Computing Systems Conf. (CHI 98),</em> pp. 140-147, 1998.</a>[172] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ACV.1996.572043&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  J. Yang and A. Waibel, &ldquo;A Real-Time Face Tracker,&rdquo; <em>Workshop Applications of Computer Vision,</em> pp. pp. 142-147, 1996.</a>[173] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/ICIP.1998.723442&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.-H. Yang and N. Ahuja, &rdquo;Detecting Human Faces in Color Images,&rdquo; <em>Proc. IEEE Int'l Conf. Image Processing,</em> pp. 127-139, Oct. 1998.</a>[174]  M.-H. Yang and N. Ahuja, &ldquo;Gaussian Mixture Model for Human Skin Color and Its Application in Image and Video Databases,&rdquo; <em>Proc. SPIE: Storage and Retrieval for Image and Video Databases VII,</em> vol. 3656, pp. 458-466, 1999.[175] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.2000.840614&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  M.H. Yang, N. Ahuja, and D. Kriegman, Face Detection Using Mixtures of Linear Subspaces <em>Proc. Fifth Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 70-76, 2000.</a>[176]  M.-H. Yang, D. Roth, and N. Ahuja, &ldquo;A SNoW-Based Face Detector,&rdquo; <em>Advances in Neural Information Processing Systems 12,</em> S.A. Solla, T. K. Leen, and K.-R. M&uuml;ller, eds., pp. 855-861, MIT Press, 2000.[177] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1996.557238&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  K.C. Yow and R. Cipolla, &ldquo;A Probabilistic Framework for Perceptual Grouping of Features for Human Face Detection,&rdquo; <em>Proc. Second Int'l Conf. Automatic Face and Gesture Recognition,</em> pp.&nbsp;16-21, 1996.</a>[178] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1016/S0262-8856%2897%2900003-6&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  K.C. Yow and R. Cipolla, &ldquo;Feature-Based Human Face Detection,&rdquo; <em>Image and Vision Computing,</em> vol. 15, no. 9, pp. 713-735, 1997.</a>[179] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/647290.722073&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  K.C. Yow and R. Cipolla, &ldquo;Enhancing Human Face Detection Using Motion and Active Contours,&rdquo; <em>Proc. Third Asian Conf. Computer Vision,</em> pp. 515-522, 1998.</a>[180] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1145/144379.144380&rfr_dat=cr_pub=CS;cr_dest=ACM;cr_src_DOI=10.1109/34.982883" target="_top">  A.L. Yuille, P.W. Hallinan, and D.S. Cohen, "Feature extraction from faces using deformable templates," <em>Int'l J. Computer Vision,</em> vol. 8, no. 2, 133-144, 1992.</a>[181] <a href="http://doi.ieeecomputersociety.org/resolve?ref_id=doi:10.1109/AFGR.1998.670971&rfr_id=trans/tp/2002/01/i0034.xml" target="_top">  W. Zhao, R. Chellappa, and A. Krishnaswamy, &ldquo;Discriminant Analysis of Principal Components for Face Recognition,&rdquo; <em>Proc. Third Int'l Conf. Automatic Face and Gesture Recognition,</em> pp. 336-341, 1998.</a></p>
+<div id="abs-additionalinfo">
+<div class="abs-tagline"></div>
+<div class="abs-index-terms">
+<span class="terms">Index Terms:</span>
+<div>Face detection, face recognition, object recognition, view-based recognition, statistical pattern recognition, machine learning.</div>
+</div>
+<div class="abs-citation">
+<span class="terms">Citation:</span>
+<div class="abs-citationinfo">Ming-Hsuan Yang, David J. Kriegman, Narendra Ahuja,  "Detecting Faces in Images: A Survey," <span class="abs-title">IEEE Transactions on Pattern Analysis and Machine Intelligence</span>, vol. 24, no. 1, pp. 34-58, Jan. 2002, doi:10.1109/34.982883</div>
+</div>
+</div>
+</div><div id="abs-separation">
+<div class="abs-tagline"></div>
+</div><div id="review-feedback">
+<a href="http://www2.computer.org/portal/web/csdl/peerreview">Peer Review Notice</a> | <a href="http://www2.computer.org/portal/web/csdl/feedback">Give Us Feedback</a>
+</div><div id="abs-disclaimer">
+
+ Usage of this product signifies your acceptance of the
+<a href="http://www2.computer.org/portal/web/csdl/terms">Terms of Use</a>.
+</div><script type="text/javascript">
+
+var addtoMethod=1;
+var AddURL = escape("http://doi.ieeecomputersociety.org/");
+var AddTitle = escape("Detecting Faces in Images: A Survey");			
+</script><script type="text/javascript">
+
+var savedIndex = 0;		
+function openLinks(pPackageTitle,title,pProductTitle, index) {
+var productId = escape("615");
+var pubYear = escape("2002");
+var volume =  escape("24");
+var issueNo =  escape("1");
+var packageTitle = escape("January");
+var productTitle = escape("IEEE Transactions on Pattern Analysis and Machine Intelligence");
+var acronymTemp = escape("TPAMI");
+var bcPageName = escape("Publication");
+var pubType = escape("t");
+var linkToYear=escape("/plugins/dl/years/615");
+var linkToIssue=escape("/plugins/dl/years/615?year=2002&vol=24"); 				
+var linkToTOC=escape("/plugins/dl/toc/3792");
+var linkToAbstract = escape("/plugins/dl/doi/10.1109/34.982883");
+var journalPage = escape("tpami");
+var abbrevTitle = escape("tpami");
+var yearTitle = escape("2002");
+var issueTitle = 'Issue No. ' + issueNo + ' - ' + packageTitle;
+var absTitle = escape("Detecting Faces in Images: A Survey ");
+if(pubType == "m") {
+var breadcrumbs = new BreadCrumbs('/portal/web/csdl/magazines/' + journalPage);
+} else if (pubType == "t") {
+var breadcrumbs = new BreadCrumbs('/portal/web/csdl/transactions/' + journalPage);
+} else if (pubType == "l") {
+var breadcrumbs = new BreadCrumbs('/portal/web/csdl/letters/' + journalPage);
+}  else {
+var breadcrumbs = new BreadCrumbs('/portal/web/csdl/proceedings/' + journalPage);
+}
+if (pubYear == "5555") {
+if(issueNo == "1") {
+if(abbrevTitle != "cal") {
+breadcrumbs.add('PrePrints', linkToTOC, 1);
+breadcrumbs.add('Abstract - '+ title , linkToAbstract, 2);
+//breadcrumbs.select(index);
+breadcrumbs.setLastIndex(index-1);
+}
+} else if(issueNo == "2") {
+breadcrumbs.add('RapidPosts', linkToTOC, 1);
+breadcrumbs.add('Abstract - '+ title , linkToAbstract, 2);
+//breadcrumbs.select(index);
+breadcrumbs.setLastIndex(index-1);
+} else {
+};
+} else if(pubType == "p") { 
+breadcrumbs.add(pProductTitle, linkToYear, 1);
+breadcrumbs.add(yearTitle, linkToYear + '?year=' + pubYear + '&vol=' + volume, 2);
+breadcrumbs.add(pPackageTitle,linkToTOC, 3);
+breadcrumbs.add(title , linkToAbstract, 4);	
+//breadcrumbs.select(index);
+breadcrumbs.setLastIndex(index-1);	
+} else {
+breadcrumbs.add(yearTitle, linkToYear + '?year=' + pubYear + '&vol=' + volume, 1);
+breadcrumbs.add(issueTitle,linkToTOC, 2);
+breadcrumbs.add('Abstract - '+ title , linkToAbstract, 3);	
+//breadcrumbs.select(index);
+breadcrumbs.setLastIndex(index-1);		
+}			
+if(pubType == "m") {
+//document.location = "/portal/web/csdl/magazines/" + journalPage;
+var urlLocation = location.protocol + '//' + location.host + '/portal/web/csdl/magazines/' + journalPage;
+setTimeout( "window.location.href = '" + urlLocation + "'", 0 );				
+} else if (pubType == "t") {
+var urlLocation = location.protocol + '//' + location.host + '/portal/web/csdl/transactions/' + journalPage;
+setTimeout( "window.location.href = '" + urlLocation + "'", 0 );			
+//document.location = "/portal/web/csdl/transactions/" + journalPage;
+} else if (pubType == "l") {
+var urlLocation = location.protocol + '//' + location.host + '/portal/web/csdl/letters/' + journalPage;
+setTimeout( "window.location.href = '" + urlLocation + "'", 0 );			
+//document.location = "/portal/web/csdl/letters/" + journalPage;
+}  else {
+var urlLocation = location.protocol + '//' + location.host + '/portal/web/csdl/proceedings/' + journalPage;
+setTimeout( "window.location.href = '" + urlLocation + "'", 0 );			
+//document.location = "/portal/web/csdl/proceedings/" + journalPage;
+}
+}
+</script>
+</div>
+<!-- Right click menu -->
+<div class="contextMenu" id="_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4__pdfMenu" style="display: none;">
+<ul>
+<li id="open">Open</li>
+<li id="download">Download</li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+Liferay.Portlet.onLoad(
+{
+canEditTitle: false,
+columnPos: 1,
+isStatic: 'end',
+namespacedId: 'p_p_id_digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4_',
+portletId: 'digitallibrarylandingpage_WAR_plugins_INSTANCE_ywE4'
+}
+);
+</script>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="lfr-column thirty" id="column-2" valign="top">
+<div class="lfr-portlet-column empty" id="layout-column_column-2"></div>
+</td>
+<td class="lfr-column fiftyfour" id="column-3" valign="top">
+<div class="lfr-portlet-column empty" id="layout-column_column-3"></div>
+</td>
+</tr>
+<tr>
+                                        <td class="lfr-column eightyfour" id="column-4" colspan="2" valign="top">
+<div class="lfr-portlet-column" id="layout-column_column-4">
+<div id="p_p_id_56_INSTANCE_SpOl_" class="portlet-boundary portlet-boundary_56_ portlet-journal-content">
+<a name="p_56_INSTANCE_SpOl"></a>
+<div class="portlet-borderless-container" style="">
+<div>
+<div class="journal-content-article" id="article_44032_1405025_1.0">
+<!-- begin ad tag (computer.org/general;300x250,336x280) -->
+<script type="text/javascript">
+
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.computer.org/general;kw=;tile=3;sz=300x250,336x280;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="general_003.dat"></script><script type="text/javascript">document.write('<scr'+'ipt language="javascript" src="http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=ns-20618339_1259237923,112c8b51938bfd5,Miscellaneous,;;kw=;tile=3;ord1=374101;sz=300x250,336x280;contx=Miscellaneous;btg=;ord=6507758880348958?"></scr'+'ipt>');</script><script language="javascript" src="34_002.982883"></script><script language="Javascript">createAndAttachAd("ns-20618339_1259237923", "http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=ns-20618339_1259237923,112c8b51938bfd5,Miscellaneous,;;kw=;tile=3;ord1=374101;sz=300x250,336x280;contx=Miscellaneous;btg=;ord=6507758880348958?","300","250,336");</script><script language="javascript" src="general_004.dat"></script><!-- Template Id = 5623 Template Name = 1 - Banner Creative (Flash) -  In Page -->
+<!-- Copyright 2006 DoubleClick Inc., All rights reserved. --><script src="flashwrite_1_2.js"></script>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="DCF219958309" width="300" height="250"><param name="movie" value="http://static.2mdn.net/2004590/300x250_VDC_PostContest_112509.swf?clickTag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/"><param name="flashvars" value="clickTag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/&clickTAG=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/&clicktag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/"><param name="quality" value="high"><param name="wmode" value="opaque"><param name="base" value="http://static.2mdn.net/2004590/300x250_VDC_PostContest_112509.swf?clickTag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com"><param name="AllowScriptAccess" value="always"><embed src="300x250_vdc_postcontest_112509.swf" flashvars="clickTag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/&clickTAG=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/&clicktag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com/" type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="opaque" name="DCF219958309" base="http://static.2mdn.net/2004590/300x250_VDC_PostContest_112509.swf?clickTag=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/x%253B219958309%253B0-0%253B0%253B43109525%253B4307-300/250%253B34409515/34427393/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Efdr%253D219524480%253B0-0%253B0%253B27855236%253B4307-300/250%253B34423128/34441006/1%253Bu%253Dns-20618339_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//developer.verizon.com" allowscriptaccess="always" width="300" height="250"></object>
+<noscript><a target="_top" href="http://ad.doubleclick.net/click%3Bh=v8/38f1/3/0/%2a/x%3B219958309%3B0-0%3B0%3B43109525%3B4307-300/250%3B34409515/34427393/1%3Bu%3Dns-20618339_1259237923%2C112c8b51938bfd5%2CMiscellaneous%2C%3B%7Efdr%3D219524480%3B0-0%3B0%3B27855236%3B4307-300/250%3B34423128/34441006/1%3Bu%3Dns-20618339_1259237923%2C112c8b51938bfd5%2CMiscellaneous%2C%3B%7Esscs%3D%3fhttp://developer.verizon.com/"><img src="http://static.2mdn.net/2004590/300x250_VDC_PostContest_112509.gif" width="300" height="250" border="0" alt="" galleryimg="no"></a></noscript>
+<noscript><a href="http://ad2.netshelter.net/jump/ns.computer.org/general;kw=;tile=3;sz=300x250,336x280;ord=123456789?" target="_blank" ><img src="http://ad2.netshelter.net/ad/ns.computer.org/general;kw=;tile=3;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- end ad tag -->
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+Liferay.Portlet.onLoad(
+{
+canEditTitle: false,
+columnPos: 0,
+isStatic: 'end',
+namespacedId: 'p_p_id_56_INSTANCE_SpOl_',
+portletId: '56_INSTANCE_SpOl'
+}
+);
+</script>
+</div>
+</div>
+                                        </td>
+                                </tr>
+ 			</tbody></table>
+</td>
+<td class="lfr-column sixteen" id="column-5" valign="top">
+<div class="lfr-portlet-column" id="layout-column_column-5">
+<div id="p_p_id_56_INSTANCE_a6u0_" class="portlet-boundary portlet-boundary_56_ portlet-journal-content">
+<a name="p_56_INSTANCE_a6u0"></a>
+<div class="portlet-borderless-container" style="">
+<div>
+<div class="journal-content-article" id="article_44032_1405018_1.0">
+<center>
+<!-- begin ad tag (computer.org/general;120x600,160x600) -->
+<script type="text/javascript">
+
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.computer.org/general;kw=;tile=2;sz=120x600,160x600;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="general_005.dat"></script><script type="text/javascript">document.write('<scr'+'ipt language="javascript" src="http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=ns-73774711_1259237923,112c8b51938bfd5,Miscellaneous,;;kw=;tile=2;ord1=865275;sz=120x600,160x600;contx=Miscellaneous;btg=;ord=6507758880348958?"></scr'+'ipt>');</script><script language="javascript" src="34_003.982883"></script><script language="Javascript">createAndAttachAd("ns-73774711_1259237923", "http://ad.doubleclick.net/adj/ns.computer.org/general;net=ns;u=ns-73774711_1259237923,112c8b51938bfd5,Miscellaneous,;;kw=;tile=2;ord1=865275;sz=120x600,160x600;contx=Miscellaneous;btg=;ord=6507758880348958?","120","600,160");</script><script language="javascript" src="general_006.dat"></script><img src="dot.gif">
+
+<!-- Copyright DoubleClick Inc., All rights reserved. -->
+<!-- This code was autogenerated @ Wed Nov 25 17:09:53 EST 2009 -->
+<script src="flashwrite_1_2.js"></script>
+  
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="FLASH_AD" width="160" height="600"><param name="movie" value="http://static.2mdn.net/1443686/phoneArena_Storefront_RONAd_160x600_Concept3.swf?clickTAG=http%3A//ad.doubleclick.net/click%253Bh%3Dv8/38f1/3/0/%252a/m%253B219920559%253B0-0%253B0%253B27855236%253B2321-160/600%253B34450351/34468229/1%253Bu%253Dns-73774711_1259237923%252C112c8b51938bfd5%252CMiscellaneous%252C%253B%257Esscs%253D%253fhttp%3A//ad.doubleclick.net/click%3Bh%3Dv2%7C3BC8%7C0%7C0%7C%252a%7Cn%3B217867000%3B0-0%3B0%3B41000581%3B31-1%7C1%3B34445773%7C34463651%7C1%3B%3B%253fhttp%3A//blackberry.phonearena.com/%3FCPID%3DSTBANNAUSFY10Q3000000104500000930250001BAN180"><param name="quality" value="high"><param name="bgcolor" value="#"><param name="wmode" value="opaque"><param name="AllowScriptAccess" value="never"><embed src="phonearena_storefront_ronad_160x600_concept3.swf" quality="high" wmode="opaque" swliveconnect="TRUE" bgcolor="#" type="application/x-shockwave-flash" allowscriptaccess="never" width="160" height="600"></object>
+<noscript><a target="_top" href="http://ad.doubleclick.net/click%3Bh=v8/38f1/3/0/%2a/m%3B219920559%3B0-0%3B0%3B27855236%3B2321-160/600%3B34450351/34468229/1%3Bu%3Dns-73774711_1259237923%2C112c8b51938bfd5%2CMiscellaneous%2C%3B%7Esscs%3D%3fhttp://ad.doubleclick.net/click;h=v2|3BC8|0|0|%2a|n;217867000;0-0;0;41000581;31-1|1;34445773|34463651|1;;%3fhttp://blackberry.phonearena.com/?CPID=STBANNAUSFY10Q3000000104500000930250001BAN180"><img src="http://static.2mdn.net/1443686/pasf.jpg"  border="0" alt="" ></a></noscript>
+<noscript><a href="http://ad2.netshelter.net/jump/ns.computer.org/general;kw=;tile=3;sz=120x600,160x600;ord=123456789?" target="_blank" ><img src="http://ad2.netshelter.net/ad/ns.computer.org/general;kw=;tile=2;sz=120x600,160x600;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- end ad tag -->
+</center>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+Liferay.Portlet.onLoad(
+{
+canEditTitle: false,
+columnPos: 0,
+isStatic: 'end',
+namespacedId: 'p_p_id_56_INSTANCE_a6u0_',
+portletId: '56_INSTANCE_a6u0'
+}
+);
+</script>
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div id="footer">
+<div id="copyright">
+
+This site and all contents (unless otherwise noted) are
+<a href="http://www.computer.org/portal/pages/ieeecs/content/copyright.html">
+
+Copyright</a> &copy; 2008 IEEE.  All rights reserved.
+</div>
+<div id="footer-links">
+<a href="http://www.computer.org/portal/web/guest/sitemap">Site Map</a> |
+<a href="http://www2.computer.org/portal/web/guest/privacy">Privacy Policy</a> |
+<a href="http://www2.computer.org/portal/web/guest/contact">Contact Us</a>
+</div>
+</div>
+</div><iframe style="border: 0pt none ; position: absolute; display: block; opacity: 0; width: 1002px; height: 30px; top: 69px; left: 139px; visibility: visible;" id="iFM0" src="34_5.html"></iframe><iframe style="border: 0pt none ; position: absolute; display: block; opacity: 0; width: 1002px; height: 30px; top: 216px; left: 139px; visibility: visible;" id="iFM16" src="34_6.html"></iframe>
+<form action="http://www.computer.org/portal/web/csdl/doi/10.1109/34.982883" method="post" name="hrefFm"></form>
+<div style="display: none; position: absolute; z-index: 500;" id="jqContextMenu"></div><div style="background-color: rgb(0, 0, 0); position: absolute; opacity: 0.2; z-index: 499; display: none;"></div><div style=""><div id="dialog1" style="border: 2px solid gray; width: 320px; background-color: white; text-align: center; display: none;">         <div class="hd" style="background: rgb(0, 51, 153) none repeat ; 0%; padding-bottom: 3px; font-size: 10pt; font-weight: bold; color: white; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">             Thank You!         </div>         <div class="bd" style="padding: 12px 0px 6px;">             <div style="margin: 0px 10px 5px; font-size: 9pt; text-align: left;">                 Thank you for your interest in this free content.  If you are a member, <a href="http://www.computer.org/portal/c/portal/login">login</a>                 to view this and all of your subscribed benefits.  If you are not a member, please enter the information below to view this content:             </div>             <form action="http://www.computer.org/portal/web/csdl/doi/10.1109/34.982883" name="emailForm">                 <table align="center" border="0" cellspacing="2">                    <tbody><tr><th style="font-size: 9pt;" align="right">First Name:</th><td align="left"><input id="firstname" name="firstname" style="height: 14px;" type="textbox"></td></tr>                     <tr><th style="font-size: 9pt;" align="right">Last Name:</th><td align="left"><input id="lastname" name="lastname" style="height: 14px;" type="textbox"></td></tr>                     <tr><th style="font-size: 9pt;" align="right">Email Address:</th><td align="left"><input id="email" name="email" style="height: 14px;" type="textbox"></td></tr>                     <tr><th colspan="2" align="center"><input id="saveThis" name="saveThis" value="1" type="checkbox"><span style="font-size: 9pt;"> Save this information.<br></span></th></tr>                     <tr><td colspan="2" align="center">                         <input id="emailSubmit" value="Submit" onclick="handleSubmit()" type="button">&nbsp;&nbsp;                         <input id="emailCancel" value="Cancel" onclick="handleCancel()" type="button">                     </td></tr>                 </tbody></table>                 <div style="margin: 5px 5px 0px; font-size: 7pt; text-align: left;">                     We will use this information to send you occassional announcements of IEEE Computer Society products and                     services.  You will be able to "opt-out" of these announcements.                      We will not share this information with any third-party entity.                      <a href="http://www.ieee.org/web/publications/rights/privacy.html" target="blank">                    Access the IEEE's policy with this link.</a>                 </div>             </form>         </div>     </div></div></body>
+</html>
