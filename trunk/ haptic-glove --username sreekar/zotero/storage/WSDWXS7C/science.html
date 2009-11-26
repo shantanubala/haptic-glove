@@ -1,0 +1,518 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22">
+<meta name="wpd_url" content="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22">
+<meta name="wpd_date" content="2009-10-26T12:18Z">
+
+
+
+
+
+
+
+
+
+
+<!-- TRANSKEY: 11/26/2009 07:17:55 EST#2842_003#394993#129.219.247.33 -->
+<meta name="robots" content="NOINDEX,NOFOLLOW,NOARCHIVE">
+<link rel="shortcut icon" href="about:blank?faviconsd.ico" type="image/x-icon">
+
+<!-- static const char articletmpl_sccsId[] = "%W%  %G% %U% --- Retrieved: %H% %T%"; -->
+<title>ScienceDirect - Computer Vision and Image Understanding : 
+Face Detection: A Survey  </title>
+
+
+<script type="text/javascript" src="swfobject.js"></script>
+<script src="article.js" type="text/javascript"></script>
+<script src="fontsizechanger.js" type="text/javascript"></script>
+
+
+
+
+
+
+<meta http-equiv="Set-Cookie" content="BROWSER_SUPPORTS_COOKIES=1; path=/">
+<link rel="stylesheet" type="text/css" href="science.css" media="all">
+</head>
+<body onload="resizeImgs(); resetScrollableTables(); MMCinit(); enableTabs();   javascript:toggleTabs('fullTab')" onresize="resizeImgs(); resetScrollableTables();" text="#000000" bgcolor="#ffffff">
+
+   <noscript>
+
+</noscript>
+
+
+
+<script src="prototype.js" type="text/javascript"></script>
+<script src="effects.js" type="text/javascript"></script>
+<script src="controls_mod.js" type="text/javascript"></script>
+<script src="openwindow.js" type="text/javascript"></script>
+<script language="Javascript"><!--
+function flip(e){
+  var menustyle = eval(getStyleObj(e))
+    if (menustyle.display=="none"){
+      menustyle.display=''
+    }
+    else{
+      menustyle.display="none"
+    }
+}
+function getStyleObj(elem,parent) {
+   if (document.layers) {
+   if (parent) {
+      return "document."+parent+".document."+elem;
+   } else {
+      return "document."+elem + ".style";
+   }
+   } else if (document.all) {
+     return "document.all."+elem + ".style";
+   } else if (document.getElementById) {
+     return "document.getElementById('"+elem+"').style";
+   }
+}
+//--></script>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td colspan="3" style="padding-left: 0.2em;" width="30%" nowrap="nowrap">
+      <a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=HomePageURL&_method=userHomePage&_lg=Y&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=ef5a484b359a73f299ddf259a4b2c591" border="0" target="_top"><img src="logo.gif" title="ScienceDirect® Home" alt="ScienceDirect® Home" border="0"></a>
+      <a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info%28%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume%29&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22#Skip%20Buttons" target="_top"><img src="clear.gif" alt="Skip Main Navigation Links" title="Skip Main Navigation Links" width="10" border="0" height="1"></a>
+    </td>
+    <td valign="middle" align="center" bgcolor="#ffffff" nowrap="nowrap">
+    
+        
+            
+        
+    
+
+    </td>
+    <td style="padding-right: 0.2em;" width="37%" align="right" nowrap="nowrap">
+    <span style="font-size: 75%; font-family: arial,verdana,helvetica,sans-serif;">
+    
+      
+        
+
+<script language="Javascript">
+
+<!---------------
+document.write("<div style=\"padding:0.4em\">");
+document.write("<div id=\"sdLoginBoxFold\" >");
+document.write("<a href=\"javascript:flip('sdLoginBox'); javascript:flip('sdLoginBoxFold');\" alt=\"Open the Login Box\" title=\"Open the Login Box\">Login: &nbsp;<img src=\"/scidirimg/sign_plus.gif \" width=\"9\" height=\"9\" alt=\"Open the Login Box\" border=\"0\" title=\"Open the Login Box\"/></a>
+");
+
+  
+    
+      document.write("<a href=\"https://www-sciencedirect-com.ezproxy1.lib.asu.edu/science?_ob=RegistrationURL&_method=display&_type=ip&_returnURL=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DArticleURL%26_udi%3DB6WCX-458P9XF-3%26_user%3D56861%26_coverDate%3D09%2F30%2F2001%26_rdoc%3D3%26_fmt%3Dhigh%26_orig%3Dbrowse%26_srch%3Ddoc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)%26_cdi%3D6750%26_sort%3Dd%26_docanchor%3D%26_ct%3D5%26_acct%3DC000059542%26_version%3D1%26_urlVersion%3D0%26_userid%3D56861%26md5%3D7d9483d2314b84f2fffde2579eb0ed22&_acct=C000059542&_version=1&_userid=56861&md5=598041435e7b85ac54f17bc4ce6b4946\" target=\"_top\" title=\"Click here to learn about registering with ScienceDirect\">Register</a>");
+    
+  
+document.write("</div>");
+document.write("</div>");
+document.write("<div id=\"sdLoginBox\"");
+document.write("style=\"background-image: url(/scidirimg/login_background.gif); background-repeat: repeat-x; height:70px;padding:0.2em;");
+document.write("display:none;\">");
+
+	document.write("<form name=\"sdLogin\" method=\"POST\" action=\"https://www-sciencedirect-com.ezproxy1.lib.asu.edu/science/login\">");
+	document.write("<input type=\"hidden\" name=\"login\" value=\"login\">");
+	document.write("<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">");
+	document.write("<tr valign=\"top\">");
+	document.write("<td align=\"left\" nowrap>");
+
+
+
+document.write("</td>");
+
+  
+    document.write("<tr><td nowrap>&nbsp;<a href=\"/science?_ob=FederationURL&_method=display&_type=f&_acct=C000059542&_version=1&_userid=56861&md5=21e4392831ffa57f94d9f8fe2029c593\"title=\"Athens/Institution Login\">Athens/Institution Login</a>&nbsp;</font></td>");
+  
+
+
+  
+    document.write("<td align=\"right\">");
+      
+        
+          document.write("<a href=\"https://www-sciencedirect-com.ezproxy1.lib.asu.edu/science?_ob=RegistrationURL&_method=display&_type=ip&_returnURL=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DArticleURL%26_udi%3DB6WCX-458P9XF-3%26_user%3D56861%26_coverDate%3D09%2F30%2F2001%26_rdoc%3D3%26_fmt%3Dhigh%26_orig%3Dbrowse%26_srch%3Ddoc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)%26_cdi%3D6750%26_sort%3Dd%26_docanchor%3D%26_ct%3D5%26_acct%3DC000059542%26_version%3D1%26_urlVersion%3D0%26_userid%3D56861%26md5%3D7d9483d2314b84f2fffde2579eb0ed22&_acct=C000059542&_version=1&_userid=56861&md5=598041435e7b85ac54f17bc4ce6b4946\" target=\"_top\" title=\"Click here to learn about registering with ScienceDirect\">Not Registered?&nbsp;</a>");
+        
+      
+    
+      document.write("<a href=\"javascript:flip('sdLoginBox');javascript:flip('sdLoginBoxFold');\" title=\"Close the Login Box\">");
+        document.write("<img src=\"/scidirimg/sign_minus.gif\" width=\"9\" height=\"9\" alt=\"Close the Login Box\" border=\"0\" title=\"Close the Login Box\"/>");
+        document.write("</a>");
+    
+  
+
+document.write("</td>");
+document.write("</tr>");
+document.write("</table>");
+document.write("<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">");
+document.write("<tr align=\"right\">");
+document.write("<td align=\"left\">User&nbsp;Name:</td>");
+document.write("<td align=\"left\">");
+document.write("<input type=\"text\" name=\"userid\" class=\"xpstyle\" size=\"11\" title=\"Please enter your user name here\" />");
+document.write("</td>");
+document.write("<td align=\"right\">Password: </td>");
+document.write("<td align=\"left\">");
+document.write("<input type=\"password\" name=\"password\" class=\"xpstyle\" size=\"11\" maxlength=\"20\" title=\"Please enter your password here\" onkeypress=\"if(13==event.keyCode)this.form.submit();if (13==event.keyCode)return false;\"/>");
+document.write("</td>");
+document.write("<input type=\"hidden\" name=\"_ob\" value=\"MiamiLogonURL\">");
+document.write("<input type=\"hidden\" name=\"targetURL\" value=\"http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22\" >")
+document.write("<input type=\"hidden\" name=\"returnURL\" value=\"http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22\">");
+document.write("<td align=\"left\"><input class=\"image\" type=\"image\" onmouseover=\"this.src='/scidirimg/sci_dir/arrow_small_b.gif'\" onmouseout=\"this.src='/scidirimg/sci_dir/arrow_small_a.gif'\" name=\"arrow\" src=\"/scidirimg/sci_dir/arrow_small_a.gif\" alt=\"Login\" title=\"Login\" value=\"Submit\" /></a>");
+document.write("		</td>");
+document.write("</tr>");
+document.write("<tr valign=\"baseline\">");
+document.write("<td align=\"left\" colspan=\"3\">");
+
+document.write("<input type=\"checkbox\" name=\"rememberid\" id=\"rememberMe\" value=\"Y\" class=\"checkbox\" title=\"Checking this option will log you in automatically next time you visit ScienceDirect\"/>");
+document.write("<label for=\"rememberMe\"><span title=\"Checking this option will log you in automatically next time you visit ScienceDirect\">Remember&nbsp;me&nbsp;on&nbsp;this&nbsp;computer</span></label>");
+
+document.write("</td>");
+document.write("<td align=\"left\" colspan=\"2\">");
+document.write("<a href=\"/science?_ob=ReminderURL&_method=display&_acct=C000059542&_version=1&_userid=56861&md5=5978027d5da1b64e5af70f74b1c26b58\" target=\"passwd\" onClick=\"var remindWin;remindWin=window.open('','passwd','scrollbars=yes,resizable=yes,directories=no,toolbar=n,menubar=no,status=no,width=650,height=300');\" title=\"Click here for help in recovering your ScienceDirect access\">Forgotten&nbsp;password?</a>");
+document.write("</td>");
+document.write("</tr>");
+document.write("</table></form></div>");
+//---------->
+</script>
+<noscript>
+
+<div id="sdLoginBox" style="padding: 0.02em; background-image: url(login_background.gif); background-repeat: repeat-x; height: 70px;">
+	<form name="sdLogin" method="post" action="https://www-sciencedirect-com.ezproxy1.lib.asu.edu/science/login">
+		<input name="login" value="login" type="hidden">
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr valign="top">
+
+
+
+  </tr><tr>
+  <td align="left" nowrap="nowrap">
+  &nbsp;<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=FederationURL&_method=display&_type=f&_acct=C000059542&_version=1&_userid=56861&md5=21e4392831ffa57f94d9f8fe2029c593" title="Athens/ Institution Login">Athens/Institution Login</a>&nbsp;</td>
+
+
+  
+    <td align="right">
+      
+        <a href="https://www-sciencedirect-com.ezproxy1.lib.asu.edu/science?_ob=RegistrationURL&_method=display&_type=ip&_returnURL=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DArticleURL%26_udi%3DB6WCX-458P9XF-3%26_user%3D56861%26_coverDate%3D09%2F30%2F2001%26_rdoc%3D3%26_fmt%3Dhigh%26_orig%3Dbrowse%26_srch%3Ddoc-info%28%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume%29%26_cdi%3D6750%26_sort%3Dd%26_docanchor%3D%26_ct%3D5%26_acct%3DC000059542%26_version%3D1%26_urlVersion%3D0%26_userid%3D56861%26md5%3D7d9483d2314b84f2fffde2579eb0ed22&_acct=C000059542&_version=1&_userid=56861&md5=598041435e7b85ac54f17bc4ce6b4946" title="Click here to learn about registering with ScienceDirect" target="_top">Not Registered?&nbsp;</a>
+        
+      
+    </td>
+  
+
+</tr>
+</tbody></table>
+
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr align="right">
+				<td align="left">User&nbsp;Name: </td>
+				<td align="left">
+					<input name="userid" class="xpstyle" size="11" title="Please enter your user name here" type="text">
+				</td>
+				<td align="right">Password: </td>
+				<td align="left">
+					<input name="password" class="xpstyle" size="11" maxlength="20" title="Please enter your password here" type="password">
+				</td>
+<input name="_ob" value="MiamiLogonURL" type="hidden">
+<input name="targetURL" value="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22" type="hidden">
+<input name="returnURL" value="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info(%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume)&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22" type="hidden">
+				<td align="left"><input class="image" src="arrow_small_a.gif" title="Login" alt="Login" value="Submit" type="image">
+				</td>
+			</tr>
+			<tr valign="baseline">
+				<td colspan="3" align="left">
+      
+					<input name="rememberid" id="rememberMe" value="Y" class="checkbox" title="Checking this option will log you in automatically next time you visit ScienceDirect" type="checkbox">
+					<label for="rememberMe"><span title="Checking this option will log you in automatically next time you visit ScienceDirect">Remember&nbsp;me&nbsp;on&nbsp;this&nbsp;computer</span></label>
+      
+				</td>
+				<td colspan="2" align="left">
+					<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ReminderURL&_method=display&_acct=C000059542&_version=1&_userid=56861&md5=5978027d5da1b64e5af70f74b1c26b58" target="passwd" onclick="var remindWin;remindWin=window.open('','passwd','scrollbars=yes,resizable=yes,directories=no,toolbar=n,menubar=no,status=no,width=650,height=300');" title="Click here for help in recovering your ScienceDirect access">Forgotten&nbsp;password?</a>
+				</td>
+			</tr>
+		</tbody></table></form></div>
+
+</noscript>
+
+		</span></td>
+	</tr>
+       
+    
+  
+ 
+
+</tbody></table>
+
+
+<span style="font-size: 75%; font-family: arial,verdana,helvetica,sans-serif;">
+<table class="sdMainNav sci_dirNav" style="font-size: 1em; padding-bottom: 0em; background-image: url(navbar_back.gif);" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="1%" align="right">&nbsp;</td>
+      <td align="left"><img src="space.gif" alt="" width="1" height="1"><table class="sdMainNavCenter" style="font-size: 1em;" cellpadding="0" cellspacing="0">
+        <tbody><tr valign="center">
+
+      <td class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" valign="center" align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=HomePageURL&_method=userHomePage&_btn=Y&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=ef5a484b359a73f299ddf259a4b2c591" target="_top" name="Home" alt="Home" title="Home"><div class="sdMainNavPadding">Home</div></a></td>
+
+<td class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" valign="center" align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=BrowseListURL&_type=all&_auth=y&_btn=Y&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=fcce566b24dd151a30b13c215b154766" target="_top" name="Browse" alt="Browse" title="Browse"><div class="sdMainNavPadding">Browse</div></a></td>
+
+<td class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" valign="center" align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=MiamiSearchURL&_method=requestForm&_btn=Y&_acct=C000059542&_version=1&_urlVersion=1&_userid=56861&md5=c48fb8ad0394c2c386a99038a666ad1b" target="_top" name="Search" alt="Search" title="Search"><div class="sdMainNavPadding">Search</div></a></td>
+
+
+      <td class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" valign="center" align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=UserSubscriptionURL&_method=begin&_btn=Y&_acct=C000059542&_version=1&_urlVersion=1&_userid=56861&md5=afb61290ee86637d6d13e13fcdb54282" target="_top" name="account" alt="My Settings" title="My Settings"><div class="sdMainNavPadding">My Settings</div></a></td>
+
+      <td class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" valign="center" align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=MiamiSDIURL&_method=listAlerts&_btn=Y&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=98c947bb45936e92aaa4da246e0d61d8" target="_top" name="alert" alt="Alerts" title="Alerts"><div class="sdMainNavPadding">Alerts</div></a></td>
+
+      
+
+      <td class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" valign="center" align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=HelpURL&_file=browse_open_doc.htm&_btn=Y&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=83cbcc23dfd1bfcd5697bce0ab993ded" target="sdhelp" alt="Help (Opens new window)" title="Help (Opens new window)"><div class="sdMainNavPadding">Help</div></a></td>
+      
+</tr></tbody></table>
+</td></tr></tbody></table>
+</span>
+
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  
+  <tbody><tr><td><a name="Skip Buttons"></a><script language="javascript">
+
+<!--
+function clearQSForm() {
+    document.qkSrch.qs_tak.value="";
+    document.qkSrch.qs_author.value="";
+    document.qkSrch.qs_title.value="";
+    document.qkSrch.qs_vol.value="";
+    document.qkSrch.qs_issue.value="";
+    document.qkSrch.qs_pages.value="";
+}
+//-->
+</script>
+
+<div id="sdQuickSearch" style="font-size: 75%;">
+<div style="background-image: url(qs_background.gif); background-repeat: repeat-x; background-position: left bottom; background-color: rgb(218, 218, 218);">
+<table width="100%" border="0">
+<form name="qkSrch" method="get" target="_top" action="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science"></form>
+<input name="_ob" value="QuickSearchURL" type="hidden">
+<input name="_method" value="submitForm" type="hidden">
+<input name="_acct" value="C000059542" type="hidden">
+<input name="md5" value="3ccb1b68f96664452bd8f5118fde6086" type="hidden">
+
+<tbody><tr valign="center"><td align="left" nowrap="nowrap">&nbsp;<b>Quick Search</b></td>
+   <td align="right"><label for="qs_all">&nbsp;&nbsp;All&nbsp;fields</label></td>
+   <td align="left"><input name="qs_all" id="qs_all" value="" size="28" maxlength="450" title="For example: heart attack AND behavior?" class="qsinput xpstyle" tabindex="1" type="text"></td>
+   <td align="right"><label for="qs_author">&nbsp;&nbsp;Author</label></td>
+   <td colspan="5" align="left"><input name="qs_author" id="qs_author" value="" size="30" maxlength="450" title="e.g. J S Smith or John Smith or Smith JS" class="qsinput xpstyle" tabindex="2" type="text"></td>
+   <td nowrap="nowrap">
+
+   </td>
+   <td valign="top" width="90%" align="right"></td>
+</tr>
+<tr valign="center">
+   <td align="left" nowrap="nowrap">&nbsp;<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=HelpURL&_file=qs_tips.htm&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=4b09633f51ee1cc4064610177c7318ad" target="sdhelp" onmouseover="window.status='Help is Available';return true" onmouseout="window.status='';return true"><img src="qs_tips.gif" tabindex="9" alt="Search tips (Opens new window)" title="Search tips (Opens new window)" align="absmiddle" border="0"></a></td>
+   <td align="right"><label for="qs_title">&nbsp;&nbsp;Journal/book&nbsp;title</label></td>
+   <td align="left"><div class="auto_complete nojs" id="qsPub_autoComp"></div><input name="qs_title" id="qs_title" value="" size="28" maxlength="450" title="For example: journal of molecular biology" tabindex="3" class="qsinput xpstyle" type="text"></td>
+   <td align="right"><label for="qs_vol">&nbsp;&nbsp;Volume</label></td>
+   <td align="left"><input name="qs_vol" id="qs_vol" value="" size="3" maxlength="10" class="qsinput xpstyle" style="width: 30px;" tabindex="4" type="text"></td>
+   <td align="right"><label for="qs_issue">&nbsp;&nbsp;Issue</label></td>
+   <td align="left"><input name="qs_issue" id="qs_issue" value="" size="3" maxlength="10" class="qsinput xpstyle" style="width: 30px;" tabindex="5" type="text"></td>
+   <td align="right"><label for="qs_pages">&nbsp;&nbsp;Page</label></td>
+   <td align="right"><input name="qs_pages" id="qs_pages" value="" size="3" maxlength="10" title="For example: 14-27" class="qsinput xpstyle" style="width: 30px;" tabindex="6" type="text"></td>
+   <td align="left" nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6WCX-458P9XF-3&_user=56861&_coverDate=09%2F30%2F2001&_rdoc=3&_fmt=high&_orig=browse&_srch=doc-info%28%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume%29&_cdi=6750&_sort=d&_docanchor=&_ct=5&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7d9483d2314b84f2fffde2579eb0ed22&clearQS=y" onclick="clearQSForm(); return false;" onmouseover="document.images['clearQS'].src='/scidirimg/sci_dir/btn_clear2.gif'" onmouseout="document.images['clearQS'].src='/scidirimg/sci_dir/btn_clear1.gif'"><img src="btn_clear1.gif" alt="Clear all fields" title="Clear all fields" name="clearQS" tabindex="7" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<input src="btn_go1.gif" onmouseover="this.src='/scidirimg/sci_dir/btn_go2.gif'" onmouseout="this.src='/scidirimg/sci_dir/btn_go1.gif'" alt="Submit Quick Search" title="Submit Quick Search" value="Submit" tabindex="8" type="image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td align="left" nowrap="nowrap"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=MiamiSearchURL&_method=requestForm&_btn=Y&_acct=C000059542&_version=1&_urlVersion=1&_userid=56861&md5=c48fb8ad0394c2c386a99038a666ad1b" style="vertical-align: middle;">Advanced Search</a></td></tr>
+<script type="text/javascript">
+
+//<![CDATA[
+function sdAutoComplete(inputField, outputField, serviceURL) {
+    var qsPub_autoComp = new Ajax.Autocompleter(inputField,outputField,serviceURL,{ minChars:2, frequency: 0.15 })
+}
+//]]>
+function ccAutoComplete(inputField, outputField, validCostCodes) {
+    var costcode_list = new Autocompleter.Local(inputField,outputField,validCostCodes,{ minChars:2, partialSearch:false }) }
+//]]>
+</script>
+
+<script type="text/javascript">
+
+//<![CDATA[
+    sdAutoComplete('qs_title','qsPub_autoComp','/science/jfind/auto');
+//]]>
+</script>
+
+
+</tbody></table>
+</div>
+</div>
+</td></tr>
+  </tbody></table>
+
+
+
+
+<div style="margin-left: 8px; margin-right: 5px;">
+<div style="width: 100%;">
+
+
+
+
+<div id="sdBody" class="pageText" width="80%">
+
+
+<table width="100%"><tbody><tr><td valign="top">
+<div id="artihead" class="artihead">
+
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science/journal/10773142"><b>Computer Vision and Image Understanding</b></a><br>
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=PublicationURL&_tockey=%23TOC%236750%232001%23999169996%23287848%23FLP%23&_cdi=6750&_pubType=J&view=c&_auth=y&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=9f832a2f2ced0ef405d12e6f200573a1">
+
+
+
+Volume 83, Issue 3</a>, 
+
+
+September 2001,
+
+
+Pages 236-274
+
+
+
+</div>
+</td>
+<td valign="top" align="right">
+<table cellpadding="0" cellspacing="0"><tbody><tr>
+
+<td style="vertical-align: top; padding-left: 5px;" class="nowrap" align="right">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=PublicationURL&_tockey=%23TOC%236750%232001%23999169996%23287848%23FLP%23&_cdi=6750&_pubType=&_auth=y&_srch=doc-info%28%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume%29&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=7508e301db9b80f0849d4b8e3af1ec97"><b>Result list</b></a>&nbsp;|&nbsp;
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_nxudi=B6WCX-458P9XF-3&_rdoc=2&_srch=doc-info%28%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume%29&_user=56861&_fmt=high&_orig=browse&_ct=5&_sort=d&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=608b03745b81e1d32683591a2cf12d2b">previous</a>
+&nbsp;&lt;&nbsp;3 of 5&nbsp;&gt;&nbsp;
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_pvudi=B6WCX-458P9XF-3&_rdoc=4&_srch=doc-info%28%23toc%236750%232001%23999169996%23287848%23FLP%23display%23Volume%29&_user=56861&_fmt=high&_orig=browse&_ct=5&_sort=d&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=221d98b62fb778925666e48db11f7e20">next</a>&nbsp;
+</td>
+
+
+</tr>
+<tr><td style="padding-right: 5px;" valign="bottom" align="right">
+<div style="padding-bottom: 3px; padding-top: 3px;" class="nojs">
+
+ Font Size: <a href="javascript:fontSizeMinus('articleBody',%20'science');"><img src="reduce_font.gif" alt="Decrease Font Size" title="Decrease Font Size" style="vertical-align: middle;" border="0"></a>&nbsp;&nbsp;<a href="javascript:fontSizeAdd('articleBody',%20'science');"><img src="increase_font.gif" alt="Increase Font Size" title="Increase Font Size" style="vertical-align: middle;" border="0"></a>
+</div>
+</td></tr></tbody></table></td></tr></tbody></table>
+<div style="color: rgb(255, 0, 0); font-weight: bold;">
+
+
+
+
+</div>
+
+
+
+<div class="outerPage">
+
+<div class="articlePage" style="background-image: url(bg_gradient.gif);">
+<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="nowrap" align="left">
+
+
+  
+    <div id="absTabOff" style="display: none;">
+      <a href="javascript:toggleTabs('unsubTab')" class="noul" style="cursor: pointer;"></a><div class="tabUnselectedOuter"><div style="background-image: url(tab_middle.gif);" class="tabUnselectedInner"><a href="javascript:toggleTabs('unsubTab')" class="noul" style="cursor: pointer;">Abstract</a></div></div><a href="javascript:toggleTabs('unsubTab')" class="noul" style="cursor: pointer;"><img src="corner_unselect_right.gif" alt="" style="float: left;" border="0" hspace="0"></a>
+    </div>
+    <div id="absTabOn">
+    <div class="tabSelectedOuter"><div class="tabSelectedInner"><img src="icon_arrow_active.gif" alt="" style="vertical-align: middle;" border="0" hspace="0">&nbsp;Abstract<span class="txtHidden"> - selected</span></div></div><img src="corner_select_right.gif" alt="" style="float: left;" hspace="0">
+    </div>
+  
+
+
+
+
+
+
+
+  
+      <script language="Javascript">
+
+      <!--
+      refTabOffLink_OnLoad = "javascript:toggleTabs('refTab', 'http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science/article/ke/B6WCX-458P9XF-3?&_coverDate=09%2F30%2F2001&_ap=&_tap=&_sub=Y&_fmt=references&md5=6b28ae89166622401c2156e6669e04da')";
+      //--></script>
+      <div id="refTabOff" class="nojs">
+        <a id="refTabOffLinkNode" class="noul" style="cursor: pointer;"><img src="corner_unselect_left.gif" alt="" style="float: left;" border="0" hspace="0"><div class="tabUnselectedOuter"><div class="tabUnselectedInner" style="background-image: url(tab_middle.gif);"><span class="disabledTabLink">References</span></div></div><img src="corner_unselect_right.gif" alt="" style="float: left;" border="0" hspace="0"></a>
+      </div>
+      <div id="refTabOn" class="nojs" style="display: none;">
+        <img src="corner_select_left.gif" alt="" style="float: left;" hspace="0"><div class="tabSelectedOuter"><div class="tabSelectedInner"><img src="icon_arrow_active.gif" alt="" border="0" hspace="0">&nbsp;References<span class="txtHidden"> - selected</span></div></div><img src="corner_select_right.gif" alt="" style="float: left;" hspace="0">
+      </div>
+  
+
+
+
+  
+    <a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=MImg&_imagekey=B6WCX-458P9XF-3-1&_cdi=6750&_user=56861&_orig=browse&_coverDate=09%2F30%2F2001&_sk=999169996&view=c&wchp=dGLzVlz-zSkzS&md5=535a381255f7fbfd24f9ff84dfd37733&ie=/sdarticle.pdf" target="newPdfWin" onclick="var newWidth=((document.body.clientWidth*90)/100); var newHeight=document.body.clientHeight; var pdfWin; pdfWin=window.open('http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=MImg&_imagekey=B6WCX-458P9XF-3-1&_cdi=6750&_user=56861&_orig=browse&_coverDate=09%2F30%2F2001&_sk=999169996&view=c&wchp=dGLzVlz-zSkzS&md5=535a381255f7fbfd24f9ff84dfd37733&ie=/sdarticle.pdf','newPdfWin','width='+newWidth+',height='+newHeight+',resizable=yes,left=50,top=50');" pdfwin.focus()="" class="noul" style="cursor: pointer;"><img src="corner_unselect_left.gif" alt="" style="float: left;" border="0" hspace="0"><div class="tabUnselectedOuter"><div class="tabUnselectedInner" style="background-image: url(tab_middle.gif);"><img src="icon_pdf.gif" name="pdf" alt="" title="" style="vertical-align: middle;" border="0"> PDF (434 K)</div></div><img src="corner_unselect_right.gif" alt="" style="float: left;" border="0" hspace="0"></a>
+  
+
+
+
+</td>
+
+</tr></tbody></table>
+
+<br clear="all">
+
+<table valign="top" style="width: 340px;" align="right" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td bgcolor="#ffffff"><div class="MMCvTitleBox"><span class="MMCvTitleSpan" style="border-bottom: 2px solid rgb(255, 255, 255); top: 2px;"><img id="MMCvProdImgPath" src="icon_arrow_active.gif" alt="" style="vertical-align: middle;"> </span><span class="MMCvTitleSpan" style="font-size: 0.9em;">Article Toolbox</span></div></td></tr>
+<tr><td><div class="FATTABInner">
+<table summary="This table contains links and tools for articles" title="Article Toolbox" valign="bottom" width="350" align="left" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="3">
+<tbody><tr><td valign="top"><table cellspacing="5">
+
+
+<script language="Javascript">
+
+teststring = '';
+for(j in navigator) teststring += j + ' ' + navigator[j] + unescape('%0a');
+if (teststring.indexOf ('Windows NT 5.1') != -1) 
+document.write ('<tr><td align="left" class="nowrap"><a href="/science?_ob=PdfDownloadURL&_uoikey=B6WCX-458P9XF-3&_tockey=%23toc%236750%232001%23999169996%23287848%23FLP%23&_orig=browse&_acct=C000059542&_version=1&_userid=56861&md5=372e10a5704fa952e46cf2a3f47331c8" style="vertical-align: bottom; color: #000000; font-family: arial, verdana, helvetica, sans-serif; text-decoration: none;" name="pdf" alt="Opens in new window" title="Opens in new window" target="newPdfWin" onClick="var newWidth=((document.body.clientWidth*90)/100); var newHeight=document.body.clientHeight; var pdfWin; pdfWin=window.open(\'\',\'newPdfWin\', \'width=\'+newWidth+\',height=\'+newHeight+\',resizable=yes, left=50, top=50\');"pdfWin.focus()"><img src="/scidirimg/icon_pdf.gif" border="0" name="pdf" alt="Opens in new window" title="Opens in new window" style="vertical-align:middle;">&nbsp; Download PDF</a>&nbsp;&nbsp;&nbsp;</td></tr>');
+</script>
+
+<tbody><tr><td align="left">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=EmailFriendURL&_method=gatherInfo&refSource=abrf&count=1&_uoikey=B6WCX-458P9XF-3&_acct=C000059542&_version=1&_userid=56861&md5=647a7dfabe2a5635ba8fd0144eacc237" style="vertical-align: bottom; color: rgb(0, 0, 0); font-family: arial,verdana,helvetica,sans-serif; text-decoration: none;" onmouseover="document.images['addEmail'].src='/scidirimg/sci_dir/emailarticle_b.gif'" onmouseout="document.images['addEmail'].src='/scidirimg/sci_dir/emailarticle_a.gif'"><img src="emailarticle_a.gif" name="addEmail" alt="" style="vertical-align: middle;" border="0">&nbsp; E-mail Article</a>&nbsp;&nbsp;&nbsp;</td></tr>
+
+
+<tr><td align="left">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=CitedSearchURL&_method=submitSearch&_udi=B6WCX-458P9XF-3&_alid=0&_rdoc=3&_fmt=high&_orig=browse&dest=list&_tockey=%23toc%236750%232001%23999169996%23287848%21&_orig_alid=&sterms=%23refsrchkey%23p%23Hjelmas%232001%23236%23274%23E%23&source=citedSrcs&_acct=C000059542&_version=1&_userid=56861&md5=936d954edb6d09b401d250474638b2de" style="vertical-align: bottom; color: rgb(0, 0, 0); font-family: arial,verdana,helvetica,sans-serif; text-decoration: none;" onmouseover="document.images['citedBy'].src='/scidirimg/sci_dir/citedby_b.gif'" onmouseout="document.images['citedBy'].src='/scidirimg/sci_dir/citedby_a.gif'"><img src="citedby_a.gif" name="citedBy" alt="" style="vertical-align: middle;" border="0">&nbsp; Cited By</a>&nbsp;&nbsp;&nbsp;</td></tr>
+
+
+
+
+
+<tr><td align="left">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=CitedSearchURL&_method=submitSearch&_udi=B6WCX-458P9XF-3&_alid=0&_rdoc=3&_fmt=high&_orig=browse&dest=save&_tockey=%23toc%236750%232001%23999169996%23287848%21&_orig_alid=&sterms=%23refsrchkey%23p%23Hjelmas%232001%23236%23274%23E%23&source=citedSrcs&_acct=C000059542&_version=1&_userid=56861&md5=936d954edb6d09b401d250474638b2de" style="vertical-align: bottom; color: rgb(0, 0, 0); font-family: arial,verdana,helvetica,sans-serif; text-decoration: none;" onmouseover="document.images['saveCitation'].src='/scidirimg/sci_dir/icon_saveascitationalert_b.gif'" onmouseout="document.images['saveCitation'].src='/scidirimg/sci_dir/icon_saveascitationalert_a.gif'"><img src="icon_saveascitationalert_a.gif" name="saveCitation" alt="" style="vertical-align: middle;" border="0">&nbsp; Save as Citation Alert</a>&nbsp;&nbsp;&nbsp;</td></tr>
+
+
+<tr><td align="left">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=CitedSearchURL&_method=submitSearch&_udi=B6WCX-458P9XF-3&_alid=0&_rdoc=3&_fmt=high&_orig=browse&dest=saveRss&_tockey=%23toc%236750%232001%23999169996%23287848%21&_orig_alid=&sterms=%23refsrchkey%23p%23Hjelmas%232001%23236%23274%23E%23&source=citedSrcs&_acct=C000059542&_version=1&_userid=56861&md5=936d954edb6d09b401d250474638b2de" style="vertical-align: bottom; color: rgb(0, 0, 0); font-family: arial,verdana,helvetica,sans-serif; text-decoration: none;" target="_top"><img src="rsscite.gif" alt="Set up a citation RSS feed (Opens new window)" title="Set up a citation RSS feed (Opens new window)" style="vertical-align: middle;" border="0">&nbsp; Citation Feed</a>&nbsp;&nbsp;&nbsp;</td></tr>
+
+</tbody></table></td>
+<td valign="top"><table cellspacing="5">
+
+<tbody><tr><td align="left">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=DownloadURL&_method=confirm&_uoikey=B6WCX-458P9XF-3&count=1&_docType=FLA&_acct=C000059542&_version=1&_userid=56861&md5=8a0de2f774d93d007a92b91bf897f538" style="vertical-align: bottom; color: rgb(0, 0, 0); font-family: arial,verdana,helvetica,sans-serif; text-decoration: none;" onmouseover="document.images['export'].src='/scidirimg/sci_dir/exportarticle_b.gif'" onmouseout="document.images['export'].src='/scidirimg/sci_dir/exportarticle_a.gif'"><img src="exportarticle_a.gif" name="export" alt="" style="vertical-align: middle;" border="0">&nbsp; Export Citation</a>&nbsp;&nbsp;&nbsp;</td></tr>
+
+
+<tr><td align="left">
+<a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=QuickLinksURL&_method=createIntLink&_type=article&_key=B6WCX-458P9XF-3&_acct=C000059542&_version=1&_userid=56861&md5=dde26b789971ff291e696b0e1996d28f" style="vertical-align: bottom; color: rgb(0, 0, 0); font-family: arial,verdana,helvetica,sans-serif; text-decoration: none;" onmouseover="document.images['addQuickLink'].src='/scidirimg/sci_dir/quicklink_b.gif'" onmouseout="document.images['addQuickLink'].src='/scidirimg/sci_dir/quicklink_a.gif'"><img src="quicklink_a.gif" name="addQuickLink" alt="" style="vertical-align: middle;" border="0">&nbsp; Add to my Quick Links</a>&nbsp;&nbsp;&nbsp;</td></tr>
+
+<tr><td valign="middle" align="left"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=RedirectURL&_method=outwardLink&_partnerName=936&_udi=B6WCX-458P9XF-3&_targetURL=https%3A%2F%2Fs100.copyright.com%2FAppDispatchServlet%3FpublisherName%3DELS%26contentID%3DS107731420190921X%26orderBeanReset%3Dtrue&_acct=C000059542&_version=1&_userid=56861&md5=fcbe83cae0fc742fb58e629b41e58cfd" target="outwardLink" onclick="var outwardWin; outwardWin=window.open('','outwardLink','scrollbars=yes,resizable=yes,directories=yes,toolbar=yes,menubar=yes,status=yes,location=yes,width=610,height=480,screenX=10,screenY=10'); outwardWin.focus()"><img src="gw_ol_rts.gif" alt="Request permission to reuse this article" title="Request permission to reuse this article" border="0"></a></td></tr><tr><td valign="middle" align="left"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=RedirectURL&_method=outwardLink&_partnerName=656&_udi=B6WCX-458P9XF-3&_targetURL=http%3A%2F%2Fwww.scopus.com%2Finward%2Fcitedby.url%3Feid%3D2-s2.0-0035438492%26partnerID%3D10%26rel%3DR3.0.0%26md5%3D28f0ddda64fed2ce69e4c0d4069e25c1&_acct=C000059542&_version=1&_userid=56861&md5=8ea7366ca00258818a2f875dab204943" target="outwardLink" onclick="var outwardWin; outwardWin=window.open('','outwardLink','scrollbars=yes,resizable=yes,directories=yes,toolbar=yes,menubar=yes,status=yes,location=yes,width=610,height=480,screenX=10,screenY=10'); outwardWin.focus()"><img src="scopus_logo.gif" style="vertical-align: middle;" border="0">&nbsp; Cited By in Scopus (358)</a></td></tr>
+
+</tbody></table></td></tr></tbody></table>
+</div>
+</td></tr>
+
+<tr id="multiMediaViewerRow" class="MMCvRow" style="display: none;"><td><div id="multiMediaViewerOuter" class="MMCvOuter"></div></td></tr>
+
+
+
+<tr class="tableFmDivider" bgcolor="#ddf8ad">
+<td>&nbsp;</td></tr>
+
+
+
+<tr><td>&nbsp;</td></tr>
+<tr align="right"><td><table class="greyTable" width="340" cellspacing="0">
+<tbody><tr><td scope="col" class="greyHeader" style="background-image: url(right_gradient.gif);"><b>Related Articles in ScienceDirect</b></td></tr></tbody><tbody id="mlkt"><tr><td><div id="mlktList"><div class="infobubble-container"><div class="mlktLink" id="mlktLink_1"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding: 5px 5px 0px;" valign="top"><img src="bullet_square.gif" alt=""></td><td onmouseover="InfoBubble.show('infobubble_1','mlktLink_1','iframe_1')" onmouseout="InfoBubble.timeout()"><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6V14-4T8JX9T-1&_user=56861&_origUdi=B6WCX-458P9XF-3&_fmt=high&_coverDate=03%2F31%2F2009&_rdoc=1&_orig=article&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=9cb6347d617b718ba7dd93e5acf25264">Unsupervised constellation model learning algorithm bas...<br><i>Pattern Recognition</i></a><br><iframe src="science_1.html" id="iframe_1" style="display: none; position: absolute; z-index: 1;" scrolling="no" frameborder="0"></iframe><div class="infobubble" id="infobubble_1"><table width="100%" cellpadding="0" cellspacing="0"><tbody><tr><td><div style="float: right; padding-left: 5px;"><a onclick="InfoBubble.hide()"><img src="btn_xclose.gif" alt="Close" title="Close" onmouseover="javascript:this.src='/scidirimg/btn_xclose_hov.gif';" onmouseout="javascript:this.src='/scidirimg/btn_xclose.gif';"></a></div><img src="jrn_sub.gif" alt="You are entitled to access the full text of this document" title="You are entitled to access the full text of this document" width="12" border="0" height="14">&nbsp;<b><a href="http://www.sciencedirect.com.ezproxy1.lib.asu.edu/science?_ob=ArticleURL&_udi=B6V14-4T8JX9T-1&_user=56861&_coverDate=03%2F31%2F2009&_rdoc=1&_fmt=high&_orig=article&_cdi=5664&_sort=v&_docanchor=&view=c&_ct=10&_acct=C000059542&_version=1&_urlVersion=0&_userid=56861&md5=95019db5e83dc7c636f6af4be532bd39">Unsupervised constellation model learning algorithm based on voting weight control for accurate face localization</a></b><br><i>Pattern Recognition</i>, <i>Volume 42, Issue 3</i>, <i>March 2009</i>, <i>Pages 322-333</i><br>Jinyun Chung, Taemin Kim, Yeong Nam Chae, Hyun S. Yang<br><br><b>Abstract</b><br><div class="mlktScroll"><div style="line-height: 150%;">In this paper, we propose a novel unsupervised constellation model learning algorithm based on voting weight control for accurate scale, rotation, and translation invariant face localization without manual selection of feature points. The constellation model is learned by controlling the expected voting weights of the local features to obtain their perceptual boundaries and the distribution of voting weights, and</div></div></td></tr></tbody></table></div></td></tr></tbody></table></div></div></div></td></tr></tbody></table></td></tr></tbody></table></div></div></div></div></div></body>
+</html>
