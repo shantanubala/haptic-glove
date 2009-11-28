@@ -41,16 +41,23 @@ set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise',
 
 
 figure;
-surf (double(ConfusionMatrix'));
+imagesc(ConfusionMatrix);
 ylabel('Response');
 xlabel('Stimulation');
 zlabel('Percent Response');
-view([90 90]);
-set (gca, 'XTick', [0.5:6.5]); 
+% %set (gca, 'XTick', [0.5:7.5]); 
 set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
-set (gca, 'YTick', [0.5:6.5]); 
+% %set (gca, 'YTick', [0.5:7.5]); 
 set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
 
 
-% figure;
-% bar3(TimeMatrix');
+figure;
+imagesc((TimeMatrix/1000)');
+ylabel('Response');
+xlabel('Stimulation');
+zlabel('Percent Response');
+% %set (gca, 'XTick', [0.5:7.5]); 
+set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+% %set (gca, 'YTick', [0.5:7.5]); 
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+
