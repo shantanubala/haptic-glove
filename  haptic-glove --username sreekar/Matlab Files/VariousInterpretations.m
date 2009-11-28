@@ -18,3 +18,39 @@
 %       e. Velocity of a vibration pattern (Duration and direction
 %       included)
 %    7.1. Project this to a lower dimension for visualization
+
+clear;
+clc;
+close all;
+
+% Expression Directory
+ExpressionDataDir = '..\Expression Data';
+
+% Get the confusion matrix(1), time matrix(2) and average time per
+% expression (3)
+[ConfusionMatrix, TimeMatrix, TimePerExp] = GetConfuAndTimeMat (ExpressionDataDir);
+figure;
+bar3 (ConfusionMatrix');
+ylabel('Response');
+xlabel('Stimulation');
+zlabel('Percent Response');
+set (gca, 'XLim', [0.5 7.5]);
+set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YLim', [0.5 7.5]);
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+
+
+figure;
+surf (double(ConfusionMatrix'));
+ylabel('Response');
+xlabel('Stimulation');
+zlabel('Percent Response');
+view([90 90]);
+set (gca, 'XTick', [0.5:6.5]); 
+set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTick', [0.5:6.5]); 
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+
+
+% figure;
+% bar3(TimeMatrix');

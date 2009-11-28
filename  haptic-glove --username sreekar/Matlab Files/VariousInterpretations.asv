@@ -9,6 +9,7 @@
 %       b. Accuracy in detection
 %       c. Avg time weighted by global expression accuracy
 %       d. Total duration for the experiment
+%    6.1. Project this to a lower dimension for better visualization   
 % 7. Expressions plotted as points in a multidim space. Dimensions are:
 %       a. Starting finger
 %       b. Ending finger
@@ -16,3 +17,35 @@
 %       d. Overlap of expression shape. (geometric representation of expressions as shapes)
 %       e. Velocity of a vibration pattern (Duration and direction
 %       included)
+%    7.1. Project this to a lower dimension for visualization
+
+clear;
+clc;
+close all;
+
+% Expression Directory
+ExpressionDataDir = '..\Expression Data';
+
+% Get the confusion matrix(1), time matrix(2) and average time per
+% expression (3)
+[ConfusionMatrix, TimeMatrix, TimePerExp] = GetConfuAndTimeMat (ExpressionDataDir);
+figure;
+bar3 (1:100,.ConfusionMatrix');
+ylabel('Response');
+xlabel('Stimulation');
+zlabel('Percent Response');
+set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+
+
+figure;
+bar3 (ConfusionMatrix');
+ylabel('Response');
+xlabel('Stimulation');
+zlabel('Percent Response');
+view([90 90]);
+set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+
+figure;
+bar3(TimeMatrix');
