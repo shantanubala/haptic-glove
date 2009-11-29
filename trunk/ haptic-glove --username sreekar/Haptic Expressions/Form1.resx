@@ -121,8 +121,8 @@
   <data name="HappyButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFkAAABkCAIAAABijQuLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAALthJREFUeF7tfHecVdW59j5lTp0+wwxDRxAQRJGuWJCmAoJioUmRJgI2iMSrYpKr8V5j
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAALthJREFUeF7tfHecVdW59j5lTp0+wwxDRxAQRJGuWJCmAoJioUmRJgI2iMSrYpKr8V5j
         S3Jjj0oklk9jiYWIGpMoYMOOIhB6lYGZ03ZZ/XvWXsNxgoC03Js/sn+bwzn77LP3Xs963+etawJKKetY
         bsKypGUFLCuod1zb7PkN7/Flftcn4ye80Xkh/2u8Ysd3eD78Rr/HUbMF/Yv4H81v8Rq2rMjRjgNYHNNN
         KiX8HW/8LX/AHMbO936Pr/SOfziEnSrF9r6X5gJcCaYY068Nv9OXbvjSXN38EK9HuwH2Y72ZEX63NYzY
@@ -328,8 +328,8 @@
   <data name="SadButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFEAAABkCAIAAABxWkt/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAAL3dJREFUeF7tfAd4VNXW9qSQUMUCerFfvVe96pUqRVAQRPTaEJBmBwELooAieC0okDK9
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAAL3dJREFUeF7tfAd4VNXW9qSQUMUCerFfvVe96pUqRVAQRPTaEJBmBwELooAieC0okDK9
         pBc6BEiZ3pJAQi8qCATSptdMGqRMpmUy37vPSYYQEbnof32+5//G/YQzZ86c2e9ea6/yrnWMCIVCjD/w
         FQoyGO3d7hfBYNCDekWEjyMYoa6T9O/jHZlJCP+RvxHUWXJJdPjbf9g0gfmPfHUEQx2BK4xQe6ijIxSi
         Bv7g1fWu8yDYdQYHwY7Oga/QF/+hLyzuH/7qgSb8thMpjfeyN91X4Q+fzi9u+AdjJkL6xQCisBSvuB70
@@ -538,8 +538,8 @@
   <data name="SurpriseButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGMAAABkCAIAAAAdXBl6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAAI4tJREFUeF7tnAecFdXZ/5GysICoKdbE9k8zvmkaNcXEGCUaQRHEgmBBQIqNIlEBlRgr
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAAI4tJREFUeF7tnAecFdXZ/5GysICoKdbE9k8zvmkaNcXEGCUaQRHEgmBBQIqNIlEBlRgr
         YAnYwIDwCopRBBUQI4a2u3d3792925e+tJXisuXeO+2cKe/3zFluVvTVZV2F9/9hGC4zc+fOnPM7v6ec
         53kORwRB0Obw1hwEQOrw1hwE2jTnpsP3KMk7jEIzETiMVDOBOsyp5gJ1GKnDSDUbgebeeFhPHUaquQg0
         977DnPq/gJTvB57ne35jW/mX3Qt8j8uB6/rSD1yueT43hl/5Lr/wA/W78MK+X3Kktub2uWX3HQRO0aXG
@@ -697,8 +697,8 @@
   <data name="FearButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFYAAABkCAIAAACThlAGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAAFu5JREFUeF7tnGOwLVcahmNbFZsVVmxUbNtWxbZtO5lYFdu2bduaJDe880yemXdW9dn7
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAAFu5JREFUeF7tnGOwLVcahmNbFZsVVmxUbNtWxbZtO5lYFdu2bduaJDe880yemXdW9dn7
         3N7I3FTl9o8+a3cvfN/7caHPwH379h3ob34Bwd/8Guhvzv+/jWAABAMgGKAF3TWE33//XbOikHIMLQ9/
         ++23nm/TkLeVHlK/YbedG3IXDEHKuKBVBuSB8s8//+yrn376ifuvv/76yy+/yH/ZRCapkx6s8+OPP9KD
         D2lotQzROfP20GUI6BE+IV1yZZifFGCGV1SgALe9M0CdH374oU+fPjQRHQpc33//fbc4Tz/dhABa5TNy
@@ -802,8 +802,8 @@
   <data name="DisgustButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABkCAIAAAD2a6J5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAANVxJREFUeF7tfAd0VNXa9iSEELqKqCiIYhcUKwiitPTpk8yk0ntHuiCggpQk01sSeu9Y
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAANVxJREFUeF7tfAd0VNXa9iSEELqKqCiIYhcUKwiitPTpk8yk0ntHuiCggpQk01sSeu9Y
         ruXaEJSSNu1MSQJS7IoIpExv/7NnhzEXW/DCvev/1j1rr8k5J6fs/ey3v+8+MeFwmPXf2Fry1hh0LBxi
         0UvJAbbYps7Sw8i/wjFX/nkjBgKA/itbKBz+vRaKnMQvaU27wVAYrdk58h+60Utu5ABYN/Lhf/ZsOq5m
         v2SsQIL+RnYiDafJud+0Zs/+vwlQOByIDJ3++iON7v9rowBdhVGUeJqQu4Gz/N+iIAoNxeVfobmKWH6L
@@ -1037,8 +1037,8 @@
   <data name="NeutralButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAF0AAABkCAIAAABrZqvxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAAMvBJREFUeF7tfAd4FVXafzqggFhw3VU/C7I2RFFBREEBRRSwgAg2UMCysrZd266frl0B
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAAMvBJREFUeF7tfAd4FVXafzqggFhw3VU/C7I2RFFBREEBRRSwgAg2UMCysrZd266frl0B
         gfSbe9MTkkDoPfSQdvu96Y0uNYSEJLdMn/l+75zkElDZqPH//Z/v2XnOM5nMnXLO77z9fc8Ea5oW1K0b
         Hhd85pFKEJ4fzF4QEhSMo/Yfg4PYRe2//Xwn1KAgNHYlWgiO2P+dN5xtf1B3jQW4dOOmsmfhDzVFU2VN
         lTr2Kk7itKI3/Qr8bb8UB/ixU6Nr9d9kVZM0ajig6zuu6XRnNw6g41GYzt9hO4OLDo2CvQ6JDgMNsf0Q
@@ -1261,8 +1261,8 @@
   <data name="AngryButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABkCAIAAACemCBBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
-        CwoBv0NmUwAALg1JREFUeF7tfAmcHGWd9lv31Xf3dM/05AYEAiir+OkqHsDiuouyiKIfyKGyYlhuNNyX
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCQAA
+        CwkBEvpHPgAALg1JREFUeF7tfAmcHGWd9lv31Xf3dM/05AYEAiir+OkqHsDiuouyiKIfyKGyYlhuNNyX
         xABJIAlyuZxLkAQQJNyQAyGBRI5AIOSenBMyd99dd3ft89Y7GUYgZPwMv/X3+7Ysh+rq6qr3ef/38/4r
         XBAEZK9tuFeT0J1tHG4d7nxAj+lHbPgrkUAIGriA7vQs/rKD8Gu24YAnRNxrg9t1WyDea1uzGfiNwA13
         D8fhR+xN7H4QsN0LggZ9YvODHb/D/9jOrmY7u2SvbmSv3g03a/iBhx04m0ED+yC6vwRI4YVY2NdsItxd
@@ -1471,6 +1471,6 @@
     <value>121, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>29</value>
+    <value>120</value>
   </metadata>
 </root>

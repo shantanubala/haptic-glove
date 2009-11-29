@@ -8,3 +8,5 @@ C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCod
 C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Debug\Haptic_Expressions.Form1.resources
 C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Debug\Haptic_Expressions.Properties.Resources.resources
 C:\Documents and Settings\Face Processing\My Documents\Haptic Glove on GoogleCode\Haptic Expressions\obj\Debug\Haptic Expressions.csproj.GenerateResource.Cache
+K:\Research Project\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.exe
+K:\Research Project\Haptic Glove\Haptic Expressions\obj\Debug\Haptic Expressions.pdb
