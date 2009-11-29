@@ -52,7 +52,7 @@ set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise',
 
 
 figure;
-imagesc((TimeMatrix/1000)');
+imagesc((TimeMatrix/1000));
 ylabel('Response');
 xlabel('Stimulation');
 zlabel('Percent Response');
@@ -61,10 +61,20 @@ set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise',
 % %set (gca, 'YTick', [0.5:7.5]); 
 set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
 
+
 figure;
-boxplot (TimePerExp);
-xlabel ('Expressions');
-ylabel ('Response Time (s)');
+TimeAvgCorrect = zeros(1,7);
+TimeAvgIncorrect = zeros(1,7);
+% Average time for responses, Correct and Incorrect
+for i=1:size(TimeMatrix, 1)
+    % Correct repsonse time
+    TimeAvgCorrect (i) = TimeMatrix(i,i);
+      
+    % Incorrect response time
+    TimeAvgIncorrect(i) = (sum(TimeMatrix(i,:)) - TimeMatrix(i,i)) / (sum(TimeMatrix(i,:)>0)-1);
+end
+TimeAvg = [TimeAvgCorrect; TimeAvgIncorrect];
+bar3h(TimeAvg, 'stacked');
 
 
 

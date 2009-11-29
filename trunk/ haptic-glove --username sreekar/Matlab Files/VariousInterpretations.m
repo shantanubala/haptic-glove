@@ -62,19 +62,24 @@ set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise',
 set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
 
 
-
 figure;
-MeanTimePerExp = mean (TimePerExp);
-StdTimePerExp = std (TimePerExp);
-hold on;
-bar(MeanTimePerExp);
-boxplot (TimePerExp);
-xlabel ('Expressions');
-ylabel ('Response Time (s)');
-errorbar(MeanTimePerExp, StdTimePerExp);
+TimeAvgCorrect = zeros(1,7);
+TimeAvgIncorrect = zeros(1,7);
+% Average time for responses, Correct and Incorrect
+for i=1:size(TimeMatrix, 1)
+    % Correct repsonse time
+    TimeAvgCorrect (i) = TimeMatrix(i,i);
+      
+    % Incorrect response time
+    TimeAvgIncorrect(i) = (sum(TimeMatrix(i,:)) - TimeMatrix(i,i)) / (sum(TimeMatrix(i,:)>0)-1);
+end
+TimeAvg = [TimeAvgCorrect; TimeAvgIncorrect];
+bar3((TimeAvg/1000)');
+ylabel ('Expressions');
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+xlabel ('Response');
+set (gca, 'XTickLabel', {'Correct', 'Incorrect'});
 colormap ('COOL');
-axis([0 8 75 130]);
-hold off;
 
 
 
