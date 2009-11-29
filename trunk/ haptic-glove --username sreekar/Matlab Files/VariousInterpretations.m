@@ -61,3 +61,18 @@ set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise',
 % %set (gca, 'YTick', [0.5:7.5]); 
 set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
 
+figure;
+MeanTimePerExp = mean (TimePerExp);
+StdTimePerExp = std (TimePerExp);
+hold on;
+bar(MeanTimePerExp);
+boxplot (TimePerExp);
+xlabel ('Expressions');
+ylabel ('Response Time (s)');
+errorbar(MeanTimePerExp, StdTimePerExp);
+colormap ('COOL');
+axis([0 8 75 130]);
+hold off;
+
+
+
