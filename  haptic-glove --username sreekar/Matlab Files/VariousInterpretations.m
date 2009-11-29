@@ -52,7 +52,7 @@ set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise',
 
 
 figure;
-imagesc((TimeMatrix/1000)');
+imagesc((TimeMatrix/1000));
 ylabel('Response');
 xlabel('Stimulation');
 zlabel('Percent Response');
@@ -60,6 +60,8 @@ zlabel('Percent Response');
 set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
 % %set (gca, 'YTick', [0.5:7.5]); 
 set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+
+
 
 figure;
 MeanTimePerExp = mean (TimePerExp);
