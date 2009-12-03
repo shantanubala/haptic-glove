@@ -81,5 +81,8 @@ xlabel ('Response');
 set (gca, 'XTickLabel', {'Correct', 'Incorrect'});
 colormap ('COOL');
 
+% Time for completion
+figure;
+TimeForComp = TimeSlicing(ExpressionDataDir);
 
 

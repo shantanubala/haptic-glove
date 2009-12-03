@@ -74,7 +74,15 @@ for i=1:size(TimeMatrix, 1)
     TimeAvgIncorrect(i) = (sum(TimeMatrix(i,:)) - TimeMatrix(i,i)) / (sum(TimeMatrix(i,:)>0)-1);
 end
 TimeAvg = [TimeAvgCorrect; TimeAvgIncorrect];
-bar3h(TimeAvg, 'stacked');
+bar3((TimeAvg/1000)');
+ylabel ('Expressions');
+set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+xlabel ('Response');
+set (gca, 'XTickLabel', {'Correct', 'Incorrect'});
+colormap ('COOL');
 
-
+% Time for completion
+figure;
+TimeForComp = TimeSlicing(ExpressionDataDir);
+A
 
