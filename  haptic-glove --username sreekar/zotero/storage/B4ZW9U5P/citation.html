@@ -1,0 +1,3560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://portal.acm.org/citation.cfm?id=628808">
+<meta name="wpd_url" content="http://portal.acm.org/citation.cfm?id=628808">
+<meta name="wpd_date" content="2009-10-29T17:32Z">
+
+
+
+
+
+	
+		
+		
+
+
+ 
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+	
+	  	
+		
+			
+		
+	
+	
+	
+	
+	  	
+		
+			
+		
+	
+	
+
+
+
+   
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+
+
+		
+	
+	
+  		
+		
+	
+
+
+
+
+
+
+
+
+  	 
+     
+
+
+
+	
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+ 	
+	
+
+
+
+
+
+
+
+
+<title>Multiresolution Gray-Scale and Rotation Invariant Texture Classification with Local Binary Patterns</title>
+
+ 
+<script language="JavaScript">
+
+ /* <!-- Begin
+	if(document.layers || document.all) {
+	a = 1;
+	setInterval("Jump()", 10);
+	}
+	function Jump() {
+	a = a + 1;
+	//self.moveBy((Math.random() * a * 2 - a), (Math.random() * a * 2) - a);
+	}
+//  End --> */
+</script>
+
+
+
+
+
+
+
+
+	
+	
+		
+ 		
+			
+				
+				
+				  	
+					
+		
+	
+  
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	 
+	
+	
+	
+	
+	
+	
+
+
+
+ 
+ 
+
+
+
+
+
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<link rel="stylesheet" type="text/css" href="citation.css" media="all">
+</head>
+<body onload="window.focus(); " bgcolor="#ffffff">
+<div align="center">
+<a name="CIT"></a>
+<table width="85%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+
+
+	
+		
+				
+				
+					
+				  
+		
+	 
+
+
+
+
+
+
+
+
+
+	
+		
+	  
+		
+
+	
+
+
+
+	
+
+
+	
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr valign="top">
+		<td class="small-link-text" width="1%" align="center" background="about:blank?horiz-bar.jpg"><img src="logo_acm_portal2.jpg" alt="ACM Portal" usemap="#PORT" width="263" border="0" height="54">
+			
+			
+		</td>
+		<td class="small-link-text" width="99%" align="left">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td>&nbsp;</td>
+				
+					<td class="small-link-text"><a href="https://campus.acm.org/Public/login_genpubqj.cfm?rdr=http://portal.acm.org/citation.cfm?id=628808&promo=QJPUB&offering=200&form_type=PUB&CFID=65587443&CFTOKEN=57340639" class="small-link-text">Subscribe</a><span class="small-link-text">&nbsp;(Full Service)</span>&nbsp;&nbsp;&nbsp;</td>
+					<td class="small-link-text"><a href="https://portal.acm.org/poplogin.cfm?dl=GUIDE&coll=GUIDE&want_href=citation%2Ecfm%3Fid%3D628808%26CFID%3D65587443%26CFTOKEN%3D57340639&CFID=65587443&CFTOKEN=57340639" class="small-link-text">Register</a><span class="small-link-text">&nbsp;(Limited Service, <font color="Red">Free</font>)</span>&nbsp;&nbsp;&nbsp;</td>
+				
+				<td class="small-link-text" valign="bot">
+					
+					
+		 					<a href="https://portal.acm.org/poplogin.cfm?dl=GUIDE&coll=GUIDE&want_href=citation%2Ecfm%3Fid%3D628808%26CFID%3D65587443%26CFTOKEN%3D57340639&CFID=65587443&CFTOKEN=57340639" class="small-link-text">Login</a>
+					
+				</td>			
+			</tr>
+			</tbody></table>
+			
+			
+			
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				
+					
+					
+					     
+					
+					<form name="qiksearch" action="http://portal.acm.org/results.cfm?coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" method="post"></form>
+					<tbody><tr>
+						<td height="5"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+					</tr>
+					<input name="parser" value="Internet" type="hidden">
+					<tr>
+						<td class="small-link-text">&nbsp;</td>
+						<td class="small-link-text">
+							 
+							  	
+							
+							
+							
+							<b>Search:</b>&nbsp;&nbsp;&nbsp;<input name="whichDL" value="acm" type="radio">The ACM Digital Library&nbsp;&nbsp;&nbsp;<input name="whichDL" value="guide" checked="checked" type="radio">The Guide
+
+							
+							<br><input class="pubdescr" name="query" size="60" value=" " type="text">&nbsp;&nbsp;
+							<input alt="Search" name="Go" src="search_small.jpg" type="image" border="0">
+<script type="text/javascript" src="wz_tooltip.js"></script> 
+
+
+						</td>
+					</tr>
+
+					
+				
+			</tbody></table>
+
+			
+		</td>
+	<!-- top nav END -->
+	</tr>
+	</tbody></table>
+	
+
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="12"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+	</tbody></table>
+
+<map name="PORT"> 
+  <area shape="rect" coords="1,1,55,60" href="http://www.acm.org/" alt="ACM Home Page">
+  <area shape="rect" coords="65,1,300,78" href="http://portal.acm.org/portal.cfm?coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639">
+</map>
+
+	
+
+<table width="100%" align="left" border="0">
+	<col width="40%">
+	<col width="60%">
+	<tbody><tr>
+		<td>
+			
+				<a href="http://portal.acm.org/guide.cfm?coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639"><img src="acm_guide_bar_large2.jpg" alt="" width="350" border="0" height="25"></a>
+			
+		</td>
+ 		<td class="small-text" align="center">
+			<img src="feedback.gif" alt="Please provide us with feedback." width="20" border="0" height="19">&nbsp;<a href="http://portal.acm.org/feedback.cfm?CFID=65587443&CFTOKEN=57340639">Feedback</a>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+</tbody></table>
+</td>
+</tr>
+
+
+ 	
+
+
+
+
+<tr>
+	<td colspan="3" valign="top" background="about:blank?horiz-bar-long.jpg" height="1"></td>
+</tr>
+
+
+
+
+
+<tr>
+<td class="small-text">
+	<table width="100%" border="0" cellpadding="2">
+		<col width="1%">
+		<col width="8%">
+		<col width="91%">
+	<tbody><tr>
+		<td class="medium-text" colspan="3"><strong>Multiresolution Gray-Scale and Rotation Invariant Texture Classification with Local Binary Patterns</strong></td>
+	</tr>
+			
+	
+		<tr valign="top">
+			
+			
+		</tr>
+		
+		
+		
+			<tr valign="top">
+				
+					<td class="small-text"><strong>Full text</strong></td>
+				 
+				<td class="smaller-text" colspan="2">
+						
+						
+							
+									 
+									<a name="FullText" title="Publisher Site" href="http://portal.acm.org/ft_gateway.cfm?id=628808&type=external&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_top">
+									<img src="imagetypes@5cpublishers_site.jpg" alt="Publisher Site" style="margin-right: 2px;" align="middle" border="0">Publisher Site</a>
+									 
+							
+						   
+					    
+					   
+					   
+					   
+						<br>
+						
+						
+						
+						
+				</td>
+			</tr>
+		
+		
+		<tr valign="top">
+			
+            
+            
+                
+            
+                
+            
+            
+            
+            
+		</tr>
+
+		<tr valign="top">
+			<td class="small-text"><strong>Source</strong>
+				
+				
+						
+				
+				
+					
+
+					
+				
+				
+			</td>
+			<td class="small-text" colspan="2">
+			
+								
+										
+											
+											
+										
+											
+											
+										
+											
+											
+												
+										
+											
+											
+											
+											
+											
+											
+												
+												
+												
+													
+													
+												
+											
+											
+											
+													
+													
+													
+												    
+													
+														
+														
+															
+													
+														
+														
+														
+														
+														
+														<span class="mediumb-text">IEEE Transactions on Pattern Analysis and Machine Intelligence </span>
+																			<a href="http://portal.acm.org/toc.cfm?id=J397&type=periodical&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self" class="small-link-text">archive</a><br>
+														
+															 <span class="small-text"> Volume 24 ,&nbsp; Issue 7 &nbsp;(July 2002)</span>
+															 					  <a href="http://portal.acm.org/toc.cfm?id=628329&type=issue&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self" class="small-link-text">table of contents</a><br>
+																				  <span class="small-text"> </span>
+														   
+													
+												 
+										
+								
+		
+
+		
+		<div class="medium-text">
+			
+			
+			
+		</div>
+		
+		
+		    
+			
+			
+		
+
+			
+			
+			<div class="small-text">
+
+				 Pages: 971 - 987&nbsp;&nbsp;
+			</div>
+					
+			
+			
+			
+				<div class="small-text">
+
+					Year of Publication:&nbsp;2002
+				</div>
+			
+					
+			
+				<div class="small-text">
+
+					
+						
+						
+						  	
+						  	
+						
+					  
+					ISSN:0162-8828
+				</div>
+				
+
+			
+			
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+			
+			
+		
+			 
+			  	
+			 
+			 
+		
+		
+		
+			
+				
+			</td>
+		</tr>
+		
+		
+		
+			<tr valign="top">
+				<td class="small-text">							
+										  	<strong>Authors</strong>
+										
+				</td>
+				
+				
+					
+					
+				<td colspan="2">
+				<div class="authors">
+					<table cellpadding="0" cellspacing="0">		
+					
+							<tbody><tr>
+								<td class="small-text">
+									
+									  	<a href="http://portal.acm.org/author_page.cfm?id=81100252483&coll=GUIDE&dl=GUIDE&trk=0&CFID=65587443&CFTOKEN=57340639" target="_self">Timo Ojala</a>
+									
+									
+
+ 									 
+										
+										
+										
+										
+							    </td>
+								<td class="small-text">
+										
+								</td>
+							</tr>
+					
+							<tr>
+								<td class="small-text">
+									
+									  	<a href="http://portal.acm.org/author_page.cfm?id=81100016822&coll=GUIDE&dl=GUIDE&trk=0&CFID=65587443&CFTOKEN=57340639" target="_self">Matti Pietik&auml;inen</a>
+									
+									
+
+ 									 
+										
+										
+										
+										
+							    </td>
+								<td class="small-text">
+										
+								</td>
+							</tr>
+					
+							<tr>
+								<td class="small-text">
+									
+									  	<a href="http://portal.acm.org/author_page.cfm?id=81100272533&coll=GUIDE&dl=GUIDE&trk=0&CFID=65587443&CFTOKEN=57340639" target="_self">Topi M&auml;enp&auml;&auml;</a>
+									
+									
+
+ 									 
+										
+										
+										
+										
+							    </td>
+								<td class="small-text">
+										
+								</td>
+							</tr>
+					
+					</tbody></table>	
+				</div>
+				</td>
+			</tr>
+			
+		
+		
+		
+	    
+
+		
+		
+		
+		
+			
+		
+		
+		
+		
+			
+					<tr valign="top">
+						<td class="small-text"><strong>Publisher</strong></td>
+						<td colspan="2">
+							<div class="publishers">
+
+									
+									  	IEEE Computer Society&nbsp;
+									
+									
+										<small>Washington, DC, USA</small>
+									
+							</div>
+						</td>
+					</tr>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+					<tr valign="top">
+						<td class="small-text"><strong>Bibliometrics</strong></td>
+						<td colspan="2">
+							<div class="publishers">
+
+									Downloads (6 Weeks): n/a,&nbsp;&nbsp;  Downloads (12 Months): n/a,&nbsp;&nbsp;  Citation Count: 67
+							</div>
+						</td>
+					</tr>
+			
+		
+		
+		
+		
+		</tbody></table>
+	
+ 
+ 
+  
+ 		
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<!-- third main table: main content START -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td height="6"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" background="about:blank?horiz-bar-long.jpg" height="1"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+
+	
+
+	<tr valign="top">
+	<!-- buttons -->
+		<td colspan="4" width="100%">
+	    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<col width="22%">
+	    <col width="78%">
+		<tbody><tr>
+			<td class="small-text"><b>Additional Information:</b></td>
+			<td>
+			<p class="small-text">
+				
+				
+				
+					<a href="http://portal.acm.org/citation.cfm?id=628808#abstract">abstract</a>&nbsp;&nbsp;
+				
+				
+				  
+					<a href="http://portal.acm.org/citation.cfm?id=628808#references">references</a>&nbsp;&nbsp;
+				    
+				
+				
+				
+					<a href="http://portal.acm.org/citation.cfm?id=628808#citedby">cited by</a>&nbsp;&nbsp;
+				
+				
+				
+					<a href="http://portal.acm.org/citation.cfm?id=628808#IndexTerms">index terms</a>&nbsp;&nbsp;
+				
+				
+				
+						<a href="http://portal.acm.org/citation.cfm?id=628808#collab">collaborative colleagues</a>&nbsp;&nbsp;
+				
+				
+				</p>
+			</td>
+		</tr>
+		</tbody></table>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+	
+	<tr valign="top">
+	<!-- buttons -->
+		<form action="http://portal.acm.org/citation.cfm?id=628808" name="popbinder"></form>
+		<td colspan="4" width="100%">
+		
+		<table width="100%" border="0" cellpadding="2" cellspacing="0">
+		  <col width="22%">
+		  <col width="78%">
+		  <tbody><tr valign="top">
+		  	<td class="small-text" style="padding-top: 0.75em;"><b>Tools and Actions:</b></td>
+			<td style="padding-top: 0.75em;">
+			
+			  	
+			
+			
+			
+			
+
+			
+			
+		    
+			
+			<a href="http://www.reviews.com/reviewer/quickreview/frameset_toplevel.cfm?bib_id=628808" target="reviews" class="small-link-text">Review this Article</a>&nbsp;&nbsp;
+			<div style="margin-top: 0.5em; margin-bottom: 0pt;">
+			
+				
+				
+					<a href="https://portal.acm.org/poplogin.cfm?dl=GUIDE&coll=GUIDE&comp_id=COMPONENT034&want_href=citation%2Ecfm%3Fid%3D628808%26backfrombind%3D1&CFID=65587443&CFTOKEN=57340639" class="small-link-text">
+
+				
+				Save this Article to a Binder</a><img src="blanks.gif" name="saved" border="0">
+			  
+			&nbsp;&nbsp;
+			<span class="small-text">Display Formats:</span>
+			<a href="http://portal.acm.org/popBibTex.cfm?id=628808&ids=J397.628329.628808&types=periodical.issue.article&reqtype=article&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" class="small-link-text">
+
+			BibTeX</a>&nbsp;
+
+			<a href="http://portal.acm.org/testpopendnotes.cfm?id=628808&ids=J397.628329.628808&types=periodical.issue.article&reqtype=article&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" class="small-link-text">
+
+			EndNote</a>
+
+			
+			 
+				<a href="http://portal.acm.org/popacmref.cfm?id=628808&ids=J397.628329.628808&types=periodical.issue.article&reqtype=article&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" class="small-link-text">
+
+			ACM Ref</a>
+			
+			
+			&nbsp;&nbsp;				
+			
+			</div>
+			
+			
+			
+				
+				  	
+				
+				
+				
+			
+			
+			</td>
+		</tr>
+		<tr>
+			<td height="10"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+		</tr>
+		
+		<tr valign="top">
+			<td class="small-text"><b>DOI Bookmark:</b></td>
+			<td class="small-text">
+				
+			    <a href="http://dx.doi.org/10.1109/TPAMI.2002.1017623">10.1109/TPAMI.2002.1017623</a>
+			</td>
+		</tr> 
+		
+		</tbody></table>
+		
+		</td>
+		
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" background="about:blank?horiz-bar-long.jpg" height="1"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" alt="" width="1" border="0" height="1"></td>
+	</tr>
+	</tbody></table>
+<!-- third main table: main content END -->
+	
+
+		
+		
+
+
+
+		
+		
+		  	<div class="abstract">
+			
+			
+			  	
+			 
+			 
+			
+			</div>
+		
+		
+		
+
+		
+			<br>
+			<div class="abstract">
+			
+			<a href="http://portal.acm.org/citation.cfm?id=628808#CIT"><img name="top" src="arrowu.gif" border="0" hspace="10"></a><span class="heading"><a name="abstract">ABSTRACT</a></span>
+			
+			  	
+			 
+			 
+			
+				<p class="abstract">
+
+				
+					 This paper presents a theoretically very simple, yet efficient, multiresolution approach to gray-scale and rotation invariant texture classification based on local binary patterns and nonparametric discrimination of sample and prototype distributions. The method is based on recognizing that certain local binary patterns, termed "uniform" are fundamental properties of local image texture and their occurrence histogram is proven to be a very powerful texture feature. We derive a generalized gray-scale and rotation invariant operator presentation that allows for detecting the "uniform" patterns for any quantization of the angular space and for any spatial resolution and presents a method for combining multiple operators for multiresolution analysis. The proposed approach is very robust in terms of gray-scale variations since the operator is, by definition, invariant against any monotonic transformation of the gray scale. Another advantage is computational simplicity as the operator can be realized with a few operations in a small neighborhood and a lookup table. Excellent experimental results obtained in true problems of rotation invariance, where the classifier is trained at one particular rotation angle and tested with samples from other rotation angles, demonstrate that good discrimination can be achieved with the occurrence statistics of simple rotation invariant local binary patterns. These operators characterize the spatial configuration of local image texture and the performance can be further improved by combining them with rotation invariant variance measures that characterize the contrast of local image texture. The joint distributions of these orthogonal measures are shown to be very powerful tools for rotation invariant texture analysis.
+					 
+				 
+				</p>
+			
+			
+			</div>
+		  
+			
+		
+			<br>
+			<div class="abstract">
+			
+			<a href="http://portal.acm.org/citation.cfm?id=628808#CIT"><img name="top" src="arrowu.gif" border="0" hspace="10"></a><span class="heading"><a name="references">REFERENCES</a></span>
+			<p class="abstract"><font color="Red">Note: OCR errors may be found in this Reference List extracted from the full text article.  ACM has opted to expose the complete List rather than only correct and linked references.</font></p>
+			
+			
+			  	
+			
+			
+			
+				
+				<table border="0" cellpadding="5">
+					
+						<tbody><tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									1
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									O. Alata C. Cariou C. Ramananjarasoa and M. Najim, &ldquo;Classification of Rotated and Scaled Textures Using HMHV Spectrum Estimation and the Fourier-Mellin Transform,&rdquo; &lt;i&gt;Proc. IEEE Int'l Conf. Image Processing,&lt;/i&gt; vol. 1, pp. 53-56, 1998.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									2
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									H. Arof and F. Deravi, &ldquo;Circular Neighbourhood and 1-D DFT Features for Texture Classification and Segmentation,&rdquo; &lt;i&gt;IEE Proc.&mdash;Vision, Image, and Signal Processing,&lt;/i&gt; vol. 145, pp. 167-172, 1998.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									3
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									J. Beck S. Prazdny and A. Rosenfeld, &ldquo;A Theory of Textural Segmentation,&rdquo; &lt;i&gt;Human and Machine Vision,&lt;/i&gt; J. Beck, B. Hope, and A. Rosenfeld, eds., Academic, 1983.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									4
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									P. Brodatz, &lt;i&gt;Textures: A Photographic Album for Artists and Designers.&lt;/i&gt; Dover, 1966.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									5
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=33904&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Susan Chang , Larry S. Davis , Stanley M. Dunn , Jan-Olof Eklundh , Azriel Rosenfeld, Texture discrimination by projective invariants, Pattern Recognition Letters, v.5 n.5, p.337-342, May 1, 1987
+									</a>
+
+									&nbsp;[doi&gt;<a href="http://dx.doi.org/10.1016/0167-8655%2887%2990075-4">10.1016/0167-8655(87)90075-4</a>]									
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									6
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=628567&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									J. L. Chen , A. Kundu, Rotation and Gray Scale Transform Invariant Texture Identification using Wavelet Decomposition and Hidden Markov Model, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.16 n.2, p.208-214, February 1994
+									</a>
+
+									&nbsp;[doi&gt;<a href="http://dx.doi.org/10.1109/34.273730">10.1109/34.273730</a>]									
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									7
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									D. Chetverikov, &ldquo;Experiments in the Rotation-Invariant Texture Discrimination Using Anisotropy Features,&rdquo; &lt;i&gt;Proc. Sixth Int'l Conf. Pattern Recognition,&lt;/i&gt; pp. 1071-1073, 1982.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									8
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									D. Chetverikov, &ldquo;Pattern Regularity as a Visual Key,&rdquo; &lt;i&gt;Image and Vision Computing,&lt;/i&gt; vol. 18, pp. 975-985, 2000.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									9
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=105537&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Fernand S. Cohen , Zhigang Fan , Maqbool A. Patel, Classification of Rotated and Scaled Textured Images Using Gaussian Markov Random Field Models, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.13 n.2, p.192-202, February 1991
+									</a>
+
+									&nbsp;[doi&gt;<a href="http://dx.doi.org/10.1109/34.67648">10.1109/34.67648</a>]									
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									10
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=794511&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Kristin J. Dana , Shree K. Nayar , Bram Van Ginneken , Jan J. Koenderink, Reflectance and Texture of Real-World Surfaces Authors, Proceedings of the 1997 Conference on Computer Vision and Pattern Recognition (CVPR '97), p.151, June 17-19, 1997
+									</a>
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									11
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									L.S. Davis, &ldquo;Polarograms: A New Tool for Image Texture Analysis,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 13, pp. 219-223, 1981.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									12
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									L.S. Davis S.A. Johns and J.K. Aggarwal, &ldquo;Texture Analysis Using Generalized Cooccurrence Matrices,&rdquo; &lt;i&gt;IEEE Trans. Pattern Analysis and Machine Intelligence,&lt;/i&gt; vol. 1, pp. 251-259, 1979.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									13
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									S.R. Fountain and T.N. Tan, &ldquo;Efficient Rotation Invariant Texture Features for Content-Based Image Retrieval,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 31, pp. 1725-1732, 1998.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									14
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									H. Greenspan S. Belongie R. Goodman and P. Perona, &ldquo;Rotation Invariant Texture Recognition Using a Steerable Pyramid,&rdquo; &lt;i&gt;Proc. 12th Int'l Conf. Pattern Recognition,&lt;/i&gt; vol. 2, pp. 162-167, 1994.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									15
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									G.M. Haley and B.S. Manjunath, &ldquo;Rotation-Invariant Texture Classification Using a Complete Space-Frequency Model,&rdquo; &lt;i&gt;IEEE Trans. Image Processing,&lt;/i&gt; vol. 8, pp. 255-269, 1999.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									16
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=7316&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Rangasami L. Kashyap , Alireza Khotanzad, A model-based method for rotation invariant texture classification, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.8 n.4, p.472-481, July 1986
+									</a>
+
+									&nbsp;[doi&gt;<a href="http://dx.doi.org/10.1109/TPAMI.1986.4767811">10.1109/TPAMI.1986.4767811</a>]									
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									17
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									R. Kondepudy and G. Healey, &ldquo;Using Moment Invariants to Analyze 3-D Color Textures,&rdquo; &lt;i&gt;Proc. IEEE Int'l Conf. Image Processing,&lt;/i&gt; vol. 2, pp. 61-65, 1994.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									18
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									S. Kullback, &lt;i&gt;Information Theory and Statistics.&lt;/i&gt; Dover, 1997.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									19
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									W.-K. Lam and C.-K. Li, &ldquo;Rotated Texture Classification by Improved Iterative Morphological Decomposition,&rdquo; &lt;i&gt;IEE Proc. Vision, Image, and Signal Processing,&lt;/i&gt; vol. 144, pp. 171- 179, 1997.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									20
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									M.M. Leung and A.M. Peterson, &ldquo;Scale and Rotation Invariant Texture Classification,&rdquo; &lt;i&gt;Proc. 26th Asilomar Conf. Signals, Systems, and Computers,&lt;/i&gt; vol. 1, pp. 461-465, 1992.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									21
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									S.V.R. Madiraju and C.C Liu, &ldquo;Rotation Invariant Texture Classification Using Covariance,&rdquo; &lt;i&gt;Proc. Int'l Conf. Image Processing,&lt;/i&gt; vol. 2, pp. 655-659, 1994.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									22
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									V. Manian and R. Vasquez, &ldquo;Scaled and Rotated Texture Classification Using a Class of Basis Functions,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 31, pp. 1937-1948, 1998.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									23
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=139358&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Jianchang Mao , Anil K. Jain, Texture classification and segmentation using multiresolution simultaneous autoregressive models, Pattern Recognition, v.25 n.2, p.173-188, Feb. 1992
+									</a>
+
+									&nbsp;[doi&gt;<a href="http://dx.doi.org/10.1016/0031-3203%2892%2990099-5">10.1016/0031-3203(92)90099-5</a>]									
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									24
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=877116&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Robust Texture Classification by Subsets of Local Binary Patterns, Proceedings of the International Conference on Pattern Recognition, p.3947, September 03-08, 2000
+									</a>
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									25
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=877131&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Texture Classification by Multi-Predicate Local Binary Pattern Operators, Proceedings of the International Conference on Pattern Recognition, p.3951, September 03-08, 2000
+									</a>
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									26
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=842570&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Timo Ojala , Topi M&auml;enp&auml;&auml; , Matti Pietik&auml;inen , Jaakko Viertola , Juha Kyll&ouml;nen , Sami Huovinen, Outex - New Framework for Empirical Evaluation of Texture Analysis Algorithms, Proceedings of the 16 th International Conference on Pattern Recognition (ICPR'02) Volume 1, p.10701, August 11-15, 2002
+									</a>
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									27
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									T. Ojala M. Pietik&auml;inen and D. Harwood, &ldquo;A Comparative Study of Texture Measures with Classification Based on Feature Distributions,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 29, pp. 51-59, 1996.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									28
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									T. Ojala K. Valkealahti E. Oja and M. Pietik&auml;inen, &ldquo;Texture Discrimination with Multi-Dimensional Distributions of Signed Gray Level Differences,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 34, pp. 727- 739, 2001.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									29
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									M. Pietik&auml;inen T. Ojala and Z. Xu, &ldquo;Rotation-Invariant Texture Classification Using Feature Distributions,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 33, pp. 43-52, 2000.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									30
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									M. Porat and Y. Zeevi, &ldquo;Localized Texture Processing in Vision: Analysis and Synthesis in the Gaborian Space,&rdquo; &lt;i&gt;IEEE Trans. Biomedical Eng.,&lt;/i&gt; vol. 36, pp. 115-129, 1989.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									31
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									R. Porter and N. Canagarajah, &ldquo;Robust Rotation-Invariant Texture Classification: Wavelet, Gabor Filter and GMRF Based Schemes,&rdquo; &lt;i&gt;IEE Proc. Vision, Image, and Signal Processing,&lt;/i&gt; vol. 144, pp. 180-188, 1997.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									32
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+									 
+										
+										<a href="http://portal.acm.org/citation.cfm?id=301070&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+									
+									Trygve Randen , John H&aring; Hus&oslash;y, Filtering for Texture Classification: A Comparative Study, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.21 n.4, p.291-310, April 1999
+									</a>
+
+									&nbsp;[doi&gt;<a href="http://dx.doi.org/10.1109/34.761261">10.1109/34.761261</a>]									
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									33
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									R.R. Sokal and F.J. Rohlf, &lt;i&gt;Biometry.&lt;/i&gt; W.H. Freeman, 1969.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									34
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									H. Tamura S. Mori and T. Yamawaki, &ldquo;Textural Features Corresponding to Visual Perception,&rdquo; &lt;i&gt;IEEE Trans. Systems, Man, and Cybernetics,&lt;/i&gt; vol. 8, pp. 460-473, 1978.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									35
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									T.N. Tan, &ldquo;Scale and Rotation Invariant Texture Classification,&rdquo; &lt;i&gt;IEE Colloquium Texture Classification: Theory and Applications&lt;/i&gt; 1994.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									36
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									L. Wang and G. Healey, &ldquo;Using Zernike Moments for the Illumination and Geometry Invariant Classification of MultiSpectral Texture,&rdquo; &lt;i&gt;IEEE Trans. Image Processing,&lt;/i&gt; vol. 7, pp. 196-203, 1998.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									37
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									W.-R. Wu and S.-C. Wei, &ldquo;Rotation and Gray-Scale Transform-Invariant Texture Classification Using Spiral Resampling, Subband Decomposition and Hidden Markov Model,&rdquo; &lt;i&gt;IEEE Trans. Image Processing,&lt;/i&gt; vol. 5, pp. 1423-1434, 1996.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									38
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									Y. Wu and Y. Yoshida, &ldquo;An Efficient Method for Rotation and Scaling Invariant Texture Classification,&rdquo; &lt;i&gt;Proc. IEEE Int'l Conf. Acoustics, Speech, and Signal Processing,&lt;/i&gt; vol. 4, pp. 2519-2522, 1995.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+						<tr valign="top">
+							<td valign="top"> &nbsp;</td>
+							<td>
+								<div class="abstract">
+
+									39
+								</div>
+							</td>
+							<td>
+								<div class="abstract">
+
+									 
+									J. You and H.A. Cohen, &ldquo;Classification and Segmentation of Rotated and Scaled Textured Images Using Texture &lsquo;Tuned&rsquo; Masks,&rdquo; &lt;i&gt;Pattern Recognition,&lt;/i&gt; vol. 26, pp. 245-258, 1993.
+									
+
+																		
+								</div>
+							</td>
+						</tr>
+					
+				</tbody></table>
+				
+			  
+			
+			</div>
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+			<a href="http://portal.acm.org/citation.cfm?id=628808#CIT"><img name="top" src="arrowu.gif" border="0" hspace="10"></a><span class="heading"><a name="citings">CITED BY</a><a name="citedby"></a>&nbsp;&nbsp;<i>69</i></span>
+			
+			
+			  	
+			
+			
+			<table cellpadding="5">
+			
+				<tbody><tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1083989&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Krystian Mikolajczyk , Cordelia Schmid, A Performance Evaluation of Local Descriptors, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.27 n.10, p.1615-1630, October 2005
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=998617&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Gaussian MRF Rotation-Invariant Features for Image Classification, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.26 n.7, p.951-955, July 2004
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1058383&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Kourosh Jafari-Khouzani , Hamid Soltanian-Zadeh, Radon Transform Orientation Estimation for Rotation Invariant Texture Analysis, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.27 n.6, p.1004-1008, June 2005
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1138697&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						M. K. Bashar , N. Ohnishi , T. Matsumoto , Y. Takeuchi , H. Kudo , K. Agusa, Image retrieval by pattern categorization using wavelet domain perceptual features with LVQ neural network, Pattern Recognition Letters, v.26 n.15, p.2315-2335, November 2005
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1375862&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Sara Arasteh , Chih-Cheng Hung, Color and texture image segmentation using uniform local binary patterns, Machine Graphics & Vision International Journal, v.15 n.3, p.265-274, January 2006
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1385970&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Chun-Rong Huang , Chu-Song Chen , Pau-Choo Chung, Contrast context histogram-An efficient discriminating local descriptor for object recognition and image matching, Pattern Recognition, v.41 n.10, p.3071-3077, October, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1386373&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Yun Fu , Liangliang Cao , Guodong Guo , Thomas S. Huang, Multiple feature fusion by subspace learning, Proceedings of the 2008 international conference on Content-based image and video retrieval, July 07-09, 2008, Niagara Falls, Canada
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1290746&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Wumo Pan , T. D. Bui , C. Y. Suen, Rotation invariant texture classification by ridgelet transform and frequency-orientation space decomposition, Signal Processing, v.88 n.1, p.189-199, January, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1373947&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Miki Matsumoto , Osamu Uchida , Shohachiro Nakanishi, A robust face detection method using probability maps, Proceedings of the 2nd WSEAS International Conference on Computer Engineering and Applications, p.79-84, January 25-27, 2008, Acapulco, Mexico
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1352415&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						John S. Seng , Thomas J. Norrie, Sidewalk following using color histograms, Journal of Computing Sciences in Colleges, v.23 n.6, June 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1221112&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Ilkka Autio, Using natural class hierarchies in multi-class visual classification, Pattern Recognition, v.39 n.7, p.1290-1299, July, 2006
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1224575&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Takahiro Toyoda , Osamu Hasegawa, Extension of higher order local autocorrelation features, Pattern Recognition, v.40 n.5, p.1466-1473, May, 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1221344&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Xiaoyang Tan , Songcan Chen , Zhi-Hua Zhou , Fuyan Zhang, Face recognition from a single image per person: A survey, Pattern Recognition, v.39 n.9, p.1725-1745, September, 2006
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1284093&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Mari Partio , Bogdan Cramariuc , Moncef Gabbouj, An ordinal co-occurrence matrix framework for texture retrieval, Journal on Image and Video Processing, v.2007 n.1, p.1-1, January 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1287536&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Olli Lahdenoja , Mika Laiho , Janne Maunu , Ari Paasio, A massively parallel face recognition system, EURASIP Journal on Embedded Systems, v.2007 n.1, p.31-31, January 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1371374&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Michalis A. Savelonas , Dimitris K. Iakovidis , Dimitris Maroulis, LBP-guided active contours, Pattern Recognition Letters, v.29 n.9, p.1404-1415, July, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1380098&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Hao Wang , Kongqiao Wang, Affective interaction based on person-independent facial expression space, Neurocomputing, v.71 n.10-12, p.1889-1901, June, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1243233&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Miguel Angel Garc&iacute;a , Dom&egrave;nec Puig, Supervised texture classification by integration of multiple texture methods and evaluation windows, Image and Vision Computing, v.25 n.7, p.1091-1106, July, 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1273408&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Berkant Barla Cambazoglu , Olcay Sertel , Jun Kong , Joel Saltz , Metin N. Gurcan , Umit V. Catalyurek, Efficient processing of pathological images using the grid: computer-aided prognosis of neuroblastoma, Proceedings of the 5th IEEE workshop on Challenges of large applications in distributed environments, June 25-25, 2007, Monterey, California, USA
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1282339&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Yangzhou Du , Wenyuan Bi , Tao Wang , Yimin Zhang , Haizhou Ai, Distributing expressional faces in 2-D emotional space, Proceedings of the 6th ACM international conference on Image and video retrieval, p.395-400, July 09-11, 2007, Amsterdam, The Netherlands
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1290138&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Guoying Zhao , Matti Pietik&auml;inen , Abdenour Hadid, Local spatiotemporal descriptors for visual recognition of spoken phrases, Proceedings of the international workshop on Human-centered multimedia, September 28-28, 2007, Augsburg, Bavaria, Germany
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1115789&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Marko Heikkila , Matti Pietikainen, A Texture-Based Method for Modeling the Background and Detecting Moving Objects, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.28 n.4, p.657, April 2006
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1176245&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Timo Ahonen , Abdenour Hadid , Matti Pietikainen, Face Description with Local Binary Patterns: Application to Face Recognition, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.28 n.12, p.2037-2041, December 2006
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1497664&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Timo Ahonen , Matti Pietik&auml;inen, Image description using joint distribution of filter bank responses, Pattern Recognition Letters, v.30 n.4, p.368-376, March, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1377210&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Loris Nanni , Alessandra Lumini, A reliable method for cell phenotype image classification, Arificial Intelligence in Medicine, v.43 n.2, p.87-97, June, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1498327&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Loris Nanni , Alessandra Lumini, Ensemble of multiple Palmprint representation, Expert Systems with Applications: An International Journal, v.36 n.3, p.4485-4490, April, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1343486&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Ma Li , R. C. Staunton, Optimum Gabor filter design and local binary patterns for texture segmentation, Pattern Recognition Letters, v.29 n.5, p.664-672, April, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1290401&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Loris Nanni , Alessandra Lumini, RegionBoost learning for 2D+3D based face recognition, Pattern Recognition Letters, v.28 n.15, p.2063-2070, November, 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1350237&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Piotr W. Mirowski , Daniel M. Tetzlaff, Retrieving scale from quasi-stationary images, Pattern Recognition Letters, v.29 n.6, p.754-767, April, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1341015&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Franz Leberl , Horst Bischof , Helmut Grabner , Stefan Kluckner, Recognizing cars in aerial imagery to improve orthophotos, Proceedings of the 15th annual ACM international symposium on Advances in geographic information systems, November 07-09, 2007, Seattle, Washington
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1282346&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Pavel Vacha , Michal Haindl, Image retrieval measures based on illumination invariant textural MRF features, Proceedings of the 6th ACM international conference on Image and video retrieval, p.448-454, July 09-11, 2007, Amsterdam, The Netherlands
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1351369&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Adel Hafiane , Bertrand Zavidovique, Local relational string and mutual matching for image retrieval, Information Processing and Management: an International Journal, v.44 n.3, p.1201-1213, May, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1142326&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						K. Muneeswaran , L. Ganesan , S. Arumugam , K. Ruba Soundar, Texture image segmentation using combined features from spatial and spectral distribution, Pattern Recognition Letters, v.27 n.7, p.755-764, May 2006
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1272147&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Xianghua Xie , Majid Mirmehdi, TEXEMS: Texture Exemplars for Defect Detection on Random Textured Surfaces, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.29 n.8, p.1454-1464, August 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1410546&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Matteo Masotti , Renato Campanini, Texture classification using invariant ranklet features, Pattern Recognition Letters, v.29 n.14, p.1980-1986, October, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1414252&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Goh Kah Ong Michael , Tee Connie , Andrew Beng Jin Teoh, Review article: Touch-less palm print biometrics: Novel design and implementation, Image and Vision Computing, v.26 n.12, p.1551-1560, December, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1377221&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Erno M&auml;kinen , Roope Raisamo, An experimental comparison of gender classification methods, Pattern Recognition Letters, v.29 n.10, p.1544-1556, July, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1263469&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Guoying Zhao , Matti Pietikainen, Dynamic Texture Recognition Using Local Binary Patterns with an Application to Facial Expressions, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.29 n.6, p.915-928, June 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1465408&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Peng Yang , Qingshan Liu , Dimitris N. Metaxas, Boosting encoded dynamic features for facial expression recognition, Pattern Recognition Letters, v.30 n.2, p.132-139, January, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1263441&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Stan Z. Li , RuFeng Chu , ShengCai Liao , Lun Zhang, Illumination Invariant Face Recognition Using Near-Infrared Images, IEEE Transactions on Pattern Analysis and Machine Intelligence, v.29 n.4, p.627-639, April 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1399912&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Loris Nanni , Alessandra Lumini, Local binary patterns for a hybrid fingerprint matcher, Pattern Recognition, v.41 n.11, p.3461-3466, November, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1456979&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Marko Heikkil&auml; , Matti Pietik&auml;inen , Cordelia Schmid, Description of interest regions with local binary patterns, Pattern Recognition, v.42 n.3, p.425-436, March, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1412111&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Hui Zhou , Runsheng Wang , Cheng Wang, A novel extended local-binary-pattern operator for texture analysis, Information Sciences: an International Journal, v.178 n.22, p.4314-4325, November, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1412907&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Lokesh Setia , Alexandra Teynor , Alaa Halawani , Hans Burkhardt, Grayscale medical image annotation using local relational features, Pattern Recognition Letters, v.29 n.15, p.2039-2045, November, 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1523949&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Caifeng Shan , Shaogang Gong , Peter W. McOwan, Facial expression recognition based on Local Binary Patterns: A comprehensive study, Image and Vision Computing, v.27 n.6, p.803-816, May, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1503153&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						O. Sertel , J. Kong , H. Shimada , U. V. Catalyurek , J. H. Saltz , M. N. Gurcan, Computer-aided prognosis of neuroblastoma on whole-slide images: Classification of stromal development, Pattern Recognition, v.42 n.6, p.1093-1103, June, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1503635&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Mohamed Eisa, Combined low-level descriptors for improving the retrieval performance, Proceedings of the 7th conference on Circuits, systems, electronics, control and signal processing, p.22-29, December 15-17, 2008, Tenerife, Canary Islands, Spain
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1513121&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Annalisa Franco , Loris Nanni, Fusion of classifiers for illumination robust face recognition, Expert Systems with Applications: An International Journal, v.36 n.5, p.8946-8954, July, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1497134&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Daw-Tung Lin , De-Cheng Pan, Integrating a mixed-feature model and multiclass support vector machine for facial expression recognition, Integrated Computer-Aided Engineering, v.16 n.1, p.61-74, January 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1542843&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Loris Nanni , Alessandra Lumini, Fusion of color spaces for ear authentication, Pattern Recognition, v.42 n.9, p.1906-1913, September, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1522861&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Al Mansur , Yoshinori Kuno, Specific and Class Object Recognition for Service Robots through Autonomous and Interactive Methods, IEICE - Transactions on Information and Systems, v.E91-D n.6, p.1793-1803, June 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1529693&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Duy-Dinh Le , Shin'ichi Satoh, Efficient concept detection by fusing simple visual features, Proceedings of the 2009 ACM symposium on Applied Computing, March 08-12, 2009, Honolulu, Hawaii
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1552820&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Baopu Li , Max Q. -H. Meng, Texture analysis for ulcer detection in capsule endoscopy images, Image and Vision Computing, v.27 n.9, p.1336-1342, August, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1527411&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Jan &Scaron;ochman , Jiř&iacute; Matas, Learning Fast Emulators of Binary Decision Processes, International Journal of Computer Vision, v.83 n.2, p.149-163, June      2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1527264&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Sergio Escalera , Oriol Pujol , Josepa Mauri , Petia Radeva, Intravascular Ultrasound Tissue Characterization with Sub-class Error-Correcting Output Codes, Journal of Signal Processing Systems, v.55 n.1-3, p.35-47, April     2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1529197&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Shu-Xiao Li , Hong-Xing Chang , Cheng-Fei Zhu, Fast curvilinear structure extraction and delineation using density estimation, Computer Vision and Image Understanding, v.113 n.6, p.763-775, June, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1522899&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Hadi Hadizadeh , Shahriar Baradaran Shokouhi, Random Texture Defect Detection Using 1-D Hidden Markov Models Based on Local Binary Patterns, IEICE - Transactions on Information and Systems, v.E91-D n.7, p.1937-1945, July 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1376555&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						F. Tajeripour , E. Kabir , A. Sheikhi, Fabric defect detection using modified local binary patterns, EURASIP Journal on Advances in Signal Processing, 2008, p.1-12, January 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1387915&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Luka &Scaron;ajn , Igor Kononenko, Multiresolution image parametrization for improving texture classification, EURASIP Journal on Advances in Signal Processing, 2008, p.1-12, January 2008
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1537573&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Francesco Bianconi , Antonio Fern&aacute;ndez , Elena Gonz&aacute;lez , Diego Caride , Ana Calvi&ntilde;o, Rotation-invariant colour texture classification through multilayer CCR, Pattern Recognition Letters, v.30 n.8, p.765-773, June, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1557322&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Antonio Ruiz , Olcay Sertel , Manuel Ujaldon , Umit Catalyurek , Joel Saltz , Metin N. Gurcan, Stroma classification for neuroblastoma on graphics processors, International Journal of Data Mining and Bioinformatics, v.3 n.3, p.280-298, June 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1563061&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Xiaozheng Zhang , Yongsheng Gao, Face recognition across pose: A review, Pattern Recognition, v.42 n.11, p.2876-2896, November, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1657235&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Wonjun Kim , Changick Kim, A new approach for overlay text detection and extraction from complex video scene, IEEE Transactions on Image Processing, v.18 n.2, p.401-411, February 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1657310&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						S. Liao , Max W. K. Law , Albert C. S. Chung, Dominant local binary patterns for texture classification, IEEE Transactions on Image Processing, v.18 n.5, p.1107-1118, May 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1563063&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Abdenour Hadid , Matti Pietik&auml;inen, Combining appearance and motion for face and gender recognition from videos, Pattern Recognition, v.42 n.11, p.2818-2827, November, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1566833&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						David Rotger , Petia Radeva , Eduard Fern&aacute;ndez-Nofrer&iacute;as , Josepa Mauri, Blood Detection In IVUS Longitudinal Cuts Using AdaBoost With a Novel Feature Stability Criterion, Proceeding of the 2007 conference on Artificial Intelligence Research and Development, p.197-204, June 13, 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1595174&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Guangyu Zhu , Xiaodong Yu , Yi Li , David Doermann, Language identification for handwritten document images using a shape codebook, Pattern Recognition, v.42 n.12, p.3184-3191, December, 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1247869&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Yu-Ting Chen , Chu-Song Chen , Chun-Rong Huang , Yi-Ping Hung, Efficient hierarchical method for background subtraction, Pattern Recognition, v.40 n.10, p.2706-2715, October, 2007
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+				<tr valign="top">
+				<td valign="top">
+					
+                    
+					
+				</td>
+				<td>
+					<div class="abstract">
+						
+						<a href="http://portal.acm.org/citation.cfm?id=1651795&dl=GUIDE&coll=GUIDE&CFID=65587443&CFTOKEN=57340639">
+
+						Michalis A. Savelonas , Dimitris K. Iakovidis , Ioannis Legakis , Dimitris Maroulis, Active contours guided by echogenicity and texture for delineation of thyroid nodules in ultrasound images, IEEE Transactions on Information Technology in Biomedicine, v.13 n.4, p.519-527, July 2009
+						</a>
+					</div>  
+					
+				</td>
+				</tr>
+			
+			</tbody></table>
+			
+			</div>
+		
+
+		
+			
+			
+			  	
+			 
+			 
+			
+		
+		
+		
+		  	<br>
+			<div class="indterms">
+			
+			<a href="http://portal.acm.org/citation.cfm?id=628808#CIT"><img name="top" src="arrowu.gif" border="0" hspace="10"></a><span class="heading"><a name="IndexTerms">INDEX TERMS</a></span>
+			
+				
+					<p class="Categories">
+						<span class="heading"><a name="GenTerms">Primary Classification:</a></span>
+						
+						  	
+						
+						
+						
+							<br>&nbsp;
+							
+							
+								  
+									
+									
+									
+									<b>I.</b>
+									
+									
+									
+									<a href="http://portal.acm.org/results.cfm?query=PrimaryCCS%3AI&querydisp=PrimaryCCS%3AI&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+
+									
+									Computing Methodologies</a><br>
+								  
+							
+								  
+									
+									
+										&nbsp;
+									
+									
+										<img src="tree.gif" width="20" border="0" height="20">
+									
+									<b>I.4</b>
+									
+									
+									
+									<a href="http://portal.acm.org/results.cfm?query=PrimaryCCS%3AI4&querydisp=PrimaryCCS%3AI4&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+
+									
+									 IMAGE PROCESSING AND COMPUTER VISION</a><br>
+								  
+							
+								  
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="tree.gif" width="20" border="0" height="20">
+									
+									<b>I.4.7</b>
+									
+									
+									
+									<a href="http://portal.acm.org/results.cfm?query=PrimaryCCS%3AI47&querydisp=PrimaryCCS%3AI47&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+
+									
+									 Feature Measurement</a><br>
+								  
+							
+								
+									  	
+										
+										
+											
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+											
+												<img src="tree.gif" width="20" border="0" height="20">
+											 
+											<b>Subjects:</b>
+										    
+												<a href="http://portal.acm.org/results.cfm?query=PrimarySubject%3A%22Texture%22&querydisp=PrimarySubject%3A%22Texture%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">Texture</a>											
+
+											
+										
+										<br>
+										
+								
+							
+						
+					 </p>
+				  
+				
+				  <p class="Categories">
+					<span class="heading"><a name="GenTerms">Additional&nbsp;Classification:</a></span>
+					 
+					  	
+					 
+					 
+					
+							<br>&nbsp;
+							
+							
+								 
+									
+									
+									 
+									<b>I.</b>
+									
+									
+
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI&querydisp=CCS%3AI&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+									 
+
+									Computing Methodologies</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="tree.gif" width="20" border="0" height="20">
+									 
+									<b>I.4</b>
+									
+									
+
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI4&querydisp=CCS%3AI4&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+									 
+
+									 IMAGE PROCESSING AND COMPUTER VISION</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="tree.gif" width="20" border="0" height="20">
+									 
+									<b>I.4.8</b>
+									
+									
+
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI48&querydisp=CCS%3AI48&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+									 
+
+									 Scene Analysis</a><br>
+								 
+							
+								
+								  	
+									
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="tree.gif" width="20" border="0" height="20">
+										 
+										<b>Subjects:</b>
+									    
+											<a href="http://portal.acm.org/results.cfm?query=Subject%3A%22Object%20recognition%22&querydisp=Subject%3A%22Object%20recognition%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">Object recognition</a>																					
+
+										
+									
+									<br>
+									
+								
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="tree.gif" width="20" border="0" height="20">
+									 
+									<b>I.5</b>
+									
+									
+
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI5&querydisp=CCS%3AI5&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+									 
+
+									 PATTERN RECOGNITION</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="tree.gif" width="20" border="0" height="20">
+									 
+									<b>I.5.2</b>
+									
+									
+
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI52&querydisp=CCS%3AI52&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+									 
+
+									 Design Methodology</a><br>
+								 
+							
+								
+								  	
+									
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="tree.gif" width="20" border="0" height="20">
+										 
+										<b>Subjects:</b>
+									    
+											<a href="http://portal.acm.org/results.cfm?query=Subject%3A%22Pattern%20analysis%22&querydisp=Subject%3A%22Pattern%20analysis%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">Pattern analysis</a>																					
+
+										
+									
+									<br>
+									
+								
+							
+					
+
+					</p>
+				   
+			
+				
+				<br>
+					<p class="GenTerms">
+						<span class="heading"><a name="GenTerms">General Terms:</a></span>
+						
+						  	
+						
+						
+						<br>
+						 
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=General%20Terms%3A%22Design%22&querydisp=General%20Terms%3A%22Design%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+
+
+							Design</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=General%20Terms%3A%22Performance%22&querydisp=General%20Terms%3A%22Performance%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+
+
+							 Performance</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=General%20Terms%3A%22Theory%22&querydisp=General%20Terms%3A%22Theory%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+
+
+							 Theory</a>
+							
+						
+					</p>
+				  
+				
+				
+				<br>
+					<p class="keywords">
+						<span class="heading"><a name="Keywords">Keywords:</a></span>
+						
+						  	
+						
+						
+						<br>
+						 
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22Nonparametric%22&querydisp=Keywords%3A%22Nonparametric%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							Nonparametric</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22texture%20analysis%22&querydisp=Keywords%3A%22texture%20analysis%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							 texture analysis</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22Outex%22&querydisp=Keywords%3A%22Outex%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							 Outex</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22Brodatz%22&querydisp=Keywords%3A%22Brodatz%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							 Brodatz</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22distribution%22&querydisp=Keywords%3A%22distribution%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							 distribution</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22histogram%22&querydisp=Keywords%3A%22histogram%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							 histogram</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=Keywords%3A%22contrast%2E%22&querydisp=Keywords%3A%22contrast%2E%22&termshow=matchboolean&coll=GUIDE&dl=GUIDE&CFID=65587443&CFTOKEN=57340639" target="_self">
+							
+
+							 contrast.</a>
+							
+												
+					</p>
+				  
+				
+			
+			</div>
+		 
+		
+		
+				
+		
+			<div class="abstract">
+				
+				<a href="http://portal.acm.org/citation.cfm?id=628808#CIT"><img name="top" src="arrowu.gif" border="0" hspace="10"></a><span class="heading"><a name="collab">Collaborative Colleagues:</a></span>
+				
+				<table style="margin-left: 2em;" border="0" cellpadding="2">
+				
+				
+				
+				
+				
+				
+					<tbody><tr>
+						<td>
+							<div class="abstract">
+
+							
+							  	Timo Ojala: <a href="http://portal.acm.org/author_page.cfm?id=81100252483&dsp=coll&coll=GUIDE&dl=GUIDE&trk=1&CFID=65587443&CFTOKEN=57340639" target="_self">colleagues</a>
+							
+							</div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+							<div class="abstract">
+
+							
+							  	Matti Pietik&auml;inen: <a href="http://portal.acm.org/author_page.cfm?id=81100016822&dsp=coll&coll=GUIDE&dl=GUIDE&trk=1&CFID=65587443&CFTOKEN=57340639" target="_self">colleagues</a>
+							
+							</div>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+							<div class="abstract">
+
+							
+							  	Topi M&auml;enp&auml;&auml;: <a href="http://portal.acm.org/author_page.cfm?id=81100272533&dsp=coll&coll=GUIDE&dl=GUIDE&trk=1&CFID=65587443&CFTOKEN=57340639" target="_self">colleagues</a>
+							
+							</div>
+						</td>
+					</tr>
+				
+				
+				</tbody></table>
+			</div>
+						
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+		
+				
+			
+  	
+
+
+
+
+<br>
+<div class="footer-copy-text" align="center">
+
+	
+
+
+
+	The ACM Portal is published by the Association for Computing Machinery. Copyright &copy; 2009 ACM, Inc.<br>
+	<a href="http://www.acm.org/publications/policies/usage">Terms of Usage</a>&nbsp;&nbsp;
+	<a href="http://www.acm.org/about/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;
+	<a href="http://www.acm.org/about/code-of-ethics">Code of Ethics</a>&nbsp;&nbsp;	  
+	<a href="http://www.acm.org/about/contact-us">Contact Us</a>
+
+<br><br>
+Useful downloads: 
+<a href="http://www.adobe.com/products/acrobat/readstep2.html"><img src="pdf_logo.gif" alt="" width="16" border="0" height="16"> Adobe Acrobat</a>
+&nbsp;&nbsp;
+<a href="http://www.apple.com/quicktime/download/" target="_top"><img src="qtlogo.gif" alt="" width="16" border="0" height="16"> QuickTime</a>
+&nbsp;&nbsp;
+<a href="http://www.microsoft.com/windows/windowsmedia/download/default.asp" target="_top"><img src="wmv.gif" alt="" width="16" border="0" height="15"> Windows Media Player</a>
+&nbsp;&nbsp;
+<a href="http://www.real.com/" target="_top"><img src="realplayer.gif" alt="" width="20" border="0" height="18"> Real Player</a>
+
+
+</div>
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</body>
+</html>
