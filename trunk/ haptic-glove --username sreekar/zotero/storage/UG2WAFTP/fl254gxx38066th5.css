@@ -1,0 +1,370 @@
+
+/* ::::: http://www.springerlink.com.ezproxy1.lib.asu.edu/dynamic-file.axd?id=1ea0ca37-19da-442a-bc9d-3d82945c8730&m=True ::::: */
+
+.MetaPress_Products_Reader_Web_UI_Controls_RecognizedAsControlHeading { padding: 0em 0.5em 0.5em; font-weight: bold; }
+.MetaPress_Products_Reader_Web_UI_Controls_RecognizedAsControlBody { padding: 0em 0.5em 0.5em; line-height: 1.4em; }
+.MetaPress_Products_Reader_Web_UI_Controls_LoggedInAsControlHeading { padding: 0em 0.5em 0.5em; font-weight: bold; }
+.MetaPress_Products_Reader_Web_UI_Controls_LoggedInAsControlBody { padding: 0em 0.5em 0.5em; }
+.MetaPress_Products_Reader_Web_UI_Controls_LoggedInAsControlHeading { padding: 0em 0.5em 0.5em; font-weight: bold; }
+.MetaPress_Products_Reader_Web_UI_Controls_LoggedInAsControlBody { padding: 0em 0.5em 0.5em; line-height: 1.4em; }
+.MetaPress_Products_Reader_Web_UI_Controls_LogOutControlBody { padding: 0em 0.5em 0.5em; }
+.MetaPress_Products_Reader_Web_UI_Controls_FooterControl { text-align: left; }
+.MetaPress_Products_Reader_Web_UI_Controls_FooterControlContactDetails { font-size: 85%; }
+.MetaPress_Products_Reader_Web_UI_Controls_FooterControlCopyright { padding: 0pt 0pt 0.5em; }
+.MetaPress_Products_Reader_Web_UI_Controls_FooterControlUserDetails { padding-top: 0.5em; font-size: 75%; color: rgb(90, 89, 123); }
+body { margin: 0pt; font-family: Arial,Helvetica,sans-serif; font-size: 75%; background-color: rgb(255, 255, 255); }
+a, div, img, input, p, select, span, table, td, tr, h1, h2, h3, h4, h5, h6 { font-size: 1em; }
+div.mainPageContentHeading { height: 24px; position: relative; }
+.sprites { margin: 2px 0pt 0pt; background-image: url('sprites.gif'); }
+.permissionSprite { width: 12px; height: 14px; }
+.permissionFullSprite { background-position: 0pt 0pt; }
+.permissionPartialSprite { background-position: 0pt -25px; }
+.permissionNoneSprite { background-position: 0pt -50px; }
+.htmlSprite { width: 20px; height: 20px; background-position: -25px 0pt; top: 4px; }
+.pdfSprite { width: 20px; height: 20px; background-position: -25px -25px; top: 4px; }
+.supplementalSprite { width: 20px; height: 20px; background-position: -50px -50px; top: 4px; }
+.xlsSprite { width: 20px; height: 20px; background-position: -50px 0pt; top: 4px; }
+.quicktimeSprite { width: 20px; height: 20px; background-position: -50px -25px; top: 4px; }
+.exportSprite { float: right; }
+.exportSprite img { width: 16px; height: 16px; background-position: -75px 0pt; }
+.exportSprite:hover img { background-position: -75px -25px; }
+.exportDisabledSprite { width: 18px; height: 16px; background-position: -75px -50px; float: right; }
+.rssSprite { float: right; }
+.rssSprite img { width: 16px; height: 16px; background-position: -100px 0pt; }
+.rssSprite:hover img { background-position: -100px -25px; }
+.deleteSprite { float: right; }
+.deleteSprite img { width: 18px; height: 16px; background-position: -150px -50px; }
+.deleteSprite:hover img { background-position: -175px -50px; }
+.editSprite { float: right; }
+.editSprite img { width: 18px; height: 16px; background-position: -100px -50px; }
+.editSprite:hover img { background-position: -125px -50px; }
+.emailSprite { float: right; }
+.emailSprite img { width: 18px; height: 16px; background-position: -125px 0pt; }
+.emailSprite:hover img { background-position: -125px -25px; }
+.saveSprite { width: 18px; height: 16px; float: right; }
+.saveSprite img { width: 18px; height: 16px; background-position: -150px 0pt; }
+.saveSprite:hover img { background-position: -150px -25px; }
+.printSprite { float: right; }
+.printSprite { width: 18px; height: 16px; background-position: -175px 0pt; }
+.printSprite:hover img { background-position: -175px -25px; }
+h2, h3 { margin: 0pt; }
+h2, h3 { font-weight: normal; }
+h3.listItemName { padding: 0pt 0.25em; font-size: 1.25em; }
+ul { padding-left: 0pt; }
+img, table { border: 0pt none ; }
+input, select { vertical-align: middle; }
+sub { vertical-align: sub; }
+sup { vertical-align: super; }
+table { width: 100%; }
+thead th { text-align: center; font-weight: bold; }
+tbody th { text-align: left; font-weight: normal; }
+tbody td { vertical-align: top; }
+.floatRight { float: right; }
+.alignRight { text-align: right; }
+.paragraphPadding { line-height: 1.25em; padding-bottom: 1.4em; padding-right: 2em; }
+.paragraphHeading { font-weight: bold; padding-bottom: 0.4em; }
+.block { width: 45em; }
+.highlight0 { background-color: rgb(255, 255, 153); padding-left: 2px; padding-right: 2px; }
+.hlDisabled0 { padding-left: 2px; padding-right: 2px; }
+.fontSmaller { font-size: 0.75em; }
+.markedItemsHasItems { font-weight: bold; }
+.noResults img { clear: left; }
+#jsMath_Warning { display: none; }
+#jsMath_button { display: none; }
+.latex .typeset .error { display: none; }
+a .latex { text-decoration: none; }
+.latex .cs { display: none; }
+.tab { border: 0.1em solid rgb(244, 243, 235); padding: 0.4em; background-color: rgb(244, 243, 235); white-space: nowrap; }
+.tabSelected { border-style: solid solid none; border-color: rgb(244, 243, 235) rgb(244, 243, 235) -moz-use-text-color; border-width: 0.1em 0.1em 0pt; padding: 0.4em; background-color: White; font-weight: bold; white-space: nowrap; }
+.tabSpacer { border-bottom: 0.1em solid rgb(244, 243, 235); }
+.tabLast { border-bottom: 0.1em solid rgb(244, 243, 235); width: 100%; }
+.tabContents { padding: 0.7em; width: 100%; }
+a.noLink { color: Black; }
+.exportButton { width: 8em; }
+.dateRangeHorizontal { padding: 0.4em; width: 9.5em; display: table-cell ! important; vertical-align: baseline; }
+.dialogHeading { padding: 0.4em 0.4em 0.4em 1.4em; font-weight: bold; }
+.dialogLabel { border-bottom: 0.2em solid rgb(255, 255, 255); padding: 0.4em 0.4em 0.4em 1.4em; background-color: rgb(236, 236, 236); text-align: right; white-space: nowrap; vertical-align: middle; width: 12em; display: table-cell ! important; }
+.dialogSublabel { border-bottom: 0.2em solid rgb(255, 255, 255); padding: 0.4em; background-color: rgb(236, 236, 236); white-space: nowrap; vertical-align: middle; display: table-cell ! important; }
+.dialogLabelSpacer { border-bottom: 0.2em solid rgb(255, 255, 255); padding: 0.4em; white-space: nowrap; vertical-align: middle; width: 12em; display: table-cell ! important; }
+.dialogValue { width: auto; padding-left: 0.4em; display: table-cell ! important; vertical-align: baseline; }
+.dialogValueText { padding: 0.4em; width: auto; display: table-cell ! important; white-space: nowrap; vertical-align: middle; }
+.dialogValueTextBox { width: 20em; }
+div.registrationBlock { margin: 0.5em; width: 40em; }
+.footnote { font-size: 0.8em; width: 40em; }
+.footnotePadding { padding: 0.4em 0.4em 0.4em 1.8em; }
+.defaultHeight { height: 12em; }
+.defaultPadding { padding: 0.4em; }
+.defaultPaddingBottom { padding-bottom: 0.4em; }
+.defaultPaddingTop { padding-top: 0.4em; }
+.defaultPaddingRight { padding-right: 0.4em; }
+.backToHeader { margin-right: 0.5em; }
+.divRow { display: table ! important; }
+.divColumn { display: table-cell ! important; }
+.autoWidth { width: auto; }
+.viewItem .selectedItemLinkButton { float: right; }
+.marginLeft14 { margin-left: 1.4em; }
+.refinementCell li { border-bottom: 0.1em solid rgb(255, 255, 255); padding-bottom: 0.3em; padding-top: 0.2em; }
+.refinementCell { margin: 0pt; padding-left: 0pt; }
+.snippets { margin: 0pt 0pt 0.2em 0em; }
+.resourceLinks { margin: 0pt 0pt 0em 0em; }
+.clearFloats { clear: both; position: relative; }
+.OpenAccess { margin: 0.1em 0.5em 0.1em 0pt; padding-top: 0.4em; }
+.ContentStatus { margin: 0.1em 0.5em 0.1em 0pt; padding-top: 0.4em; }
+a.sidebarItemTitleLink { float: right; }
+span.search span.error { color: Red; font-weight: bold; }
+span.search span.operator { font-weight: bold; }
+span.search span.boolean { font-style: italic; }
+img.fulltextPreview { border: 1px solid rgb(90, 89, 123); }
+.queryBuilder .rightLink { cursor: pointer; }
+#References p { margin-bottom: 2px; }
+body { margin: 0pt; font-family: Verdana; font-size: 75%; color: rgb(0, 0, 37); height: 100%; }
+td.viewToolbarButtons div input { margin: 2px; float: right; }
+div.printOnDemand { margin-bottom: 0.5em; }
+div.printOnDemand a { background: rgb(255, 255, 255) url('mycopy-20x20.gif') no-repeat scroll left center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(244, 111, 33); font-size: 1.2em; font-weight: bolder; padding-left: 24px; }
+div.printOnDemand a:hover { color: rgb(199, 79, 42); }
+div.mainPageContentHeading div.resourceLinks a { font-size: 1.2em; font-weight: bolder; }
+div.sidebarBody div.myCopy { padding: 0.5em; background: rgb(244, 111, 33) url('mycopy-wm.jpg') no-repeat scroll center center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+div.sidebarBody div.myCopy h4 { margin: 0pt 0.25em; color: rgb(255, 255, 255); font-size: 1.7em; }
+div.sidebarBody div.myCopy h4 span.subheading { margin: 0pt; font-size: 0.7em; }
+div.sidebarBody div.myCopy p { margin: 0.5em; color: rgb(255, 255, 255); font-size: 0.9em; line-height: 1.5em; }
+div.sidebarBody div.myCopy p span { padding: 0.5em 0pt; display: block; font-size: 1.15em; font-weight: bold; }
+div.sidebarBody div.myCopy a { border: 1px solid rgb(255, 255, 255); padding: 0.25em 0.5em; background-color: rgb(255, 141, 68); color: rgb(255, 255, 255); font-weight: bold; }
+div.sidebarBody div.myCopy a:hover { background-color: rgb(255, 255, 255); color: rgb(244, 111, 34); text-decoration: none; }
+div.myCopyOfferings { width: 40em; }
+div.myCopyOfferings ul { list-style-type: circle; padding-left: 2em; }
+div.myCopyOfferings p.question { background: rgb(255, 255, 255) url('question.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-weight: bold; padding-left: 2em; }
+div.myCopyOfferings p.answer { background: rgb(255, 255, 255) url('information.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; padding-left: 2em; }
+img.fulltextPreview { border: 2px solid rgb(90, 89, 123); }
+.contentlinks h2 { font-weight: bold; }
+a, div, img, input, p, select, span, table, td, tr { font-size: 1em; }
+img, table { border: 0pt none ; }
+.floatLeft { float: left; }
+.floatRight { float: right; }
+input, select { padding: 0pt 0.1em 0.1em; vertical-align: middle; }
+table { width: 100%; }
+a { text-decoration: none; }
+a:link { color: rgb(90, 89, 123); background-color: inherit; }
+a:visited { color: rgb(90, 89, 123); }
+a:hover { color: rgb(199, 79, 42); text-decoration: underline; }
+.autoWidth { width: auto; }
+.block { width: 40em; }
+.dialogHeading { padding: 0.4em 0.4em 0.4em 1.4em; font-weight: bold; }
+.dialogLabel { border-bottom: 0.2em solid rgb(255, 255, 255); padding: 0.4em 0.4em 0.4em 1.4em; background-color: rgb(236, 236, 236); text-align: right; white-space: nowrap; vertical-align: top; width: 12em; }
+.dialogSublabel { border-bottom: 0.2em solid rgb(255, 255, 255); padding: 0.4em; background-color: rgb(236, 236, 236); white-space: nowrap; vertical-align: middle; }
+.dialogLabelSpacer { border-bottom: 0.2em solid rgb(255, 255, 255); padding: 0.4em; white-space: nowrap; vertical-align: middle; width: 12em; }
+.dialogValue { width: auto; padding-left: 0.4em; }
+.dialogValueText { padding: 0.4em; width: auto; white-space: nowrap; vertical-align: middle; }
+.footnote { font-size: 0.8em; width: 40em; }
+.footnotePadding { padding: 0.4em 0.4em 0.4em 1.8em; }
+.menu { background-color: rgb(236, 236, 236); width: 16em; }
+.button { border-color: rgb(127, 157, 185); border-width: 0.1em; background: rgb(235, 235, 245) none repeat scroll 0% 0%; font-weight: bold; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(64, 64, 64); }
+.buttonHover { background: rgb(244, 243, 235) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.buttonContainer { border-color: rgb(127, 157, 185); border-width: 0.1em; padding: 0.1em; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-weight: bold; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(64, 64, 64); }
+.buttonContainerHover { background: rgb(235, 235, 245) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+ul { list-style-type: none; }
+.highlight0 { padding: 0pt 0.2em; background-color: rgb(255, 255, 153); }
+.hlDisabled0 { padding: 0pt 0.2em; }
+.blob { font-size: 1.2em; }
+.blob table { width: auto; }
+.blob .rubric { display: none; }
+.blob .Heading1 { display: none; }
+.blob h2 { font-size: 1.2em; }
+.defaultButtonSpacing { margin-left: 0.2em; }
+.leftMainColumn { width: 16em; height: 100%; background-color: rgb(236, 236, 236); }
+.outerTable { height: 100%; }
+.contentArea { padding: 0.4em; }
+.bold { font-weight: bold; }
+.logo { padding-top: 1em; }
+.headerBackground { background-color: rgb(230, 233, 243); background-image: url('springerlink-background.jpg'); background-repeat: no-repeat; background-position: right bottom; display: table ! important; width: 100%; }
+.headerTop { padding: 0pt ! important; height: 2.8em; color: rgb(255, 255, 255); font-weight: bold; background-color: rgba(68, 68, 100, 0.8); text-align: right; width: 100%; }
+.headerTop > *, .headerBottom > * { margin: 0.4em; }
+.headerTop * { text-align: left; }
+.headerBottom { padding: 0pt ! important; height: 4.4em; background-color: rgba(68, 68, 100, 0.6); width: 100%; }
+.headerBottom a.parentNavigation, .headerBottom table { color: rgb(255, 255, 255); font-weight: bold; }
+.pageHeading { color: rgb(0, 0, 0); }
+.cultureList { margin: 0.4em; }
+.searchPanel { float: left; }
+.fontSmaller { font-size: 0.8em; }
+.fontLarger { font-size: 1.2em; }
+.outdent { padding-left: 1.4em; text-indent: -1.4em; }
+.defaultHeight { height: 12em; }
+.defaultPadding { padding: 0.4em; }
+.defaultPaddingBottom { padding-bottom: 0.4em; }
+.defaultPaddingTop { padding-top: 0.4em; }
+.defaultPaddingRight { padding-right: 0.4em; }
+.backToHeader { margin-right: 0.5em; }
+a.backTo { color: rgb(255, 255, 255); }
+a.backTo:hover { color: rgb(255, 255, 255); }
+.backToSeperator { margin: 0pt 0.25em; }
+.sidebarHeading { font-weight: bold; color: rgb(255, 255, 255); background-color: rgb(90, 89, 123); width: 18em; }
+.sidebarBody { background-color: rgb(236, 236, 236); width: 18em; }
+.PersonalizationMenuItem { border-bottom: 0.1em solid rgb(255, 255, 255); padding-top: 0.2em; padding-bottom: 0.3em; }
+.PersonalizationMenuHeader { border-top: medium none; padding: 0.4em; font-weight: bold; background-color: rgb(90, 89, 123); color: rgb(255, 255, 255); }
+.parentNavigation { color: rgb(255, 255, 255); }
+.parentNavigation:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+.parentNavigationDisabled { color: rgb(160, 160, 160); cursor: default; }
+.selectedViewTab { border-top: 0.1em solid rgb(90, 89, 123); border-left: 0.1em solid rgb(90, 89, 123); border-right: 0.1em solid rgb(90, 89, 123); padding: 0.4em; font-weight: bold; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); white-space: nowrap; }
+.viewTab { border: 0.1em solid rgb(90, 89, 123); padding: 0.4em; background-color: rgb(236, 236, 236); white-space: nowrap; }
+.viewTabSpacer { border-bottom: 0.1em solid rgb(90, 89, 123); }
+.paginationControl a { color: rgb(90, 89, 123); }
+.paginationControl a:hover { color: rgb(90, 89, 123); text-decoration: underline; }
+.paginationDisabled { color: rgb(208, 208, 208); }
+table.paginationControl { padding: 0.4em; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+table.paginationControl td { white-space: nowrap; }
+.contentType { padding: 0.1em 0.1em 0.3em 0em; color: rgb(128, 128, 128); white-space: nowrap; }
+div.listItemName { padding: 0em 0.25em 0.25em 0em; font-size: 1.25em; margin-top: 0em; }
+.labelName { border-style: none solid solid none; border-color: -moz-use-text-color rgb(255, 255, 255) rgb(255, 255, 255) -moz-use-text-color; border-width: 0pt 0.1em 0.1em 0pt; padding: 0.1em 0pt 0.2em 0.4em; vertical-align: top; background-color: rgb(236, 236, 236); width: 12em; white-space: nowrap; }
+.labelValue { padding: 0.1em; vertical-align: top; }
+.viewItemIndex { color: rgb(128, 128, 128); }
+.viewItem { border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color rgb(192, 192, 192); border-width: 0pt 0pt 0.1em; padding: 0.4em; }
+.viewGroup { border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color rgb(192, 192, 192); border-width: 0pt 0pt 0.2em; padding: 0.4em; }
+.refinementCell { padding-bottom: 0.3em; padding-top: 0.2em; }
+.customLink { vertical-align: middle; }
+.toolbar { text-align: right; width: 8em; }
+.emailList { width: 51em; }
+.emailHeader { padding: 0.5em; }
+.emailList ul { list-style-type: disc; }
+.emailList textarea { width: 100%; }
+.emailList .labelName { margin: 0.2em; padding: 0.1em; width: 15em; }
+.emailList .labelValue { width: 35em; }
+.emailErrorRow { margin: 0.5em; width: 100%; }
+.emailSuccessLabel { margin-left: 0.5em; color: rgb(24, 140, 24); font-weight: bold; }
+.emailErrorLabel { margin-left: 0.5em; color: rgb(255, 0, 0); font-weight: bold; }
+.emailFooter { margin: 0.25em; width: 100%; text-align: right; }
+.emailFooter input { width: 8em; }
+.highlighting { padding: 0.2em 0.4em; float: right; white-space: nowrap; }
+.criteriaValues { display: table; }
+.criteriaValues ul { margin: 0.2em 0pt 0.5em; padding: 0pt; float: left; }
+.searchMoreOptions { vertical-align: bottom; }
+.searchMoreOptions a { font-size: 0.8em; font-weight: normal; color: White; }
+.searchMoreOptions a:hover { color: White; }
+.tab { border: 0.1em solid rgb(90, 89, 123); padding: 0.4em; background-color: rgb(236, 236, 236); white-space: nowrap; }
+.tabSelected { border-style: solid solid none; border-color: rgb(90, 89, 123) rgb(90, 89, 123) -moz-use-text-color; border-width: 0.1em 0.1em 0pt; padding: 0.4em; font-weight: bold; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); white-space: nowrap; }
+.tabContents { padding: 0.7em; width: 100%; }
+.tabSpacer { border-bottom: 0.1em solid rgb(90, 89, 123); }
+.tabLast { border-bottom: 0.1em solid rgb(90, 89, 123); width: 100%; }
+.primitiveControl .subtitle { padding: 0pt 0pt 0.2em 0.4em; }
+.dropDownMenu { margin: 0.3em 0pt 0pt; padding: 0pt; z-index: 10; }
+.dropDownMenu ul { margin: 0pt; padding: 0pt; z-index: 10; position: absolute; left: 0pt; top: 1.5em; }
+.dropDownMenu li.Collapsed, .dropDownMenu li.Expanded { margin-right: 0.4em; }
+.dropDownMenu li.Expanded ul { visibility: visible; padding-left: 16em ! important; padding-top: 1em ! important; }
+.dropDownMenu li.Collapsed ul { visibility: hidden; }
+.dropDownMenu li { padding: 0em 0.4em 0.4em; position: static ! important; float: left; }
+.dropDownMenu li li { border-bottom: 0.1em solid rgb(236, 236, 236); margin: 0pt; padding: 0pt; background-color: rgb(96, 97, 126); white-space: nowrap; float: none; }
+.dropDownMenu li li a { margin: 0pt; padding: 0.2em 1.4em 0.4em; font-weight: normal; display: block; width: auto ! important; height: 100%; color: rgb(255, 255, 255) ! important; }
+.dropDownMenu li:hover, .dropDownMenu li a:hover { color: rgb(255, 255, 255); background-color: rgb(120, 123, 148); text-decoration: none; }
+.dropDownMenu a.noScriptLink, .dropDownMenu a.noScriptLink:hover { color: White; background-color: transparent; }
+.childVertical li { float: none; }
+#ContentTypesMenuItem li { width: 12em; }
+#ContentTypesMenuItem ul { width: 12em; }
+#SubjectCollectionsMenuItem li { width: 25em; }
+div.brandingImage { width: 100%; text-align: center; }
+div.advertisementControl { width: 100%; text-align: center; }
+iframe.advertisementFrame { border-width: 0pt; margin: 0pt; width: 468px; height: 60px; }
+.labelWarning { color: rgb(255, 0, 0); font-size: 0.8em; }
+.buttonStrip { padding: 1em 0pt 0.5em; text-align: right; width: 35em; }
+h3.listItemName { margin-top: 0pt; margin-left: 0.2em; }
+.listAuthors { margin-top: 0.15em; margin-left: 0em; margin-bottom: 0.3em; }
+.listEditors { margin-top: 0.15em; margin-left: 0.2em; margin-bottom: 0.3em; }
+.listParents { margin-top: 0.35em; margin-left: 0.2em; margin-bottom: 0.1em; font-style: italic; }
+.listCopyright { margin-top: 0.15em; margin-left: 0.2em; margin-bottom: 0.3em; }
+.viewToolbarButtons { border-bottom: 0.1em solid rgb(90, 89, 123); }
+span.OpenAccess { margin: -0.2em 0.2em 0.2em 0.5em; vertical-align: middle; }
+#country-list { margin: 0pt 0pt 0.6em ! important; float: none ! important; }
+#country-list select, #institution-list select { width: 30em; }
+span.AuxiliaryLinkcolor { color: rgb(0, 102, 51); }
+table.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControl { padding: 0.4em; background-color: rgb(255, 255, 255); }
+div.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControl { padding: 0.1em; font-weight: normal; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlName { padding: 0em 0.25em 0.25em; font-size: 1.25em; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlSecondaryLinks { width: 17.5em; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlSecondaryLinks div { border-bottom: 0.1em solid rgb(236, 236, 236); padding: 0.1em; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlMarkedItemLink { font-weight: bold; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlCoverImage { width: 1%; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlOpenAccess { padding: 0.5em 0.25em 0.5em 0.35em; }
+table.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControl { padding: 0.4em; background-color: rgb(236, 236, 236); clear: both; }
+div.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControl { padding: 0.1em; font-weight: normal; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlName { padding: 0em 0.25em 0.25em; font-size: 1.25em; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlSecondaryLinks { width: 17.5em; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlSecondaryLinks div { border-bottom: 0.1em solid rgb(255, 255, 255); padding: 0.1em; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlMarkedItemLink { font-weight: bold; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlCoverImage { width: 1%; }
+.MPReader_Profiles_SpringerLink_Content_PrimitiveHeadingControlOpenAccess { border: thick solid green; padding: 0.5em 0.25em 0.5em 0.35em; }
+.MetaPress_Products_Reader_Web_UI_Controls_IconHyperlink { margin: 0.1em 0.5em 0.1em 0pt; }
+.MetaPress_Products_Reader_Web_UI_Controls_IconHyperlink img { margin-right: 0.2em; margin-bottom: 0.2em; }
+.Keyword { background: white none repeat scroll 0% 0%; font-size: 12pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+body.for-print { margin: 1.5em; background: white none repeat scroll 0% 0%; font-size: 12pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+div.Abstract { margin-top: 1em; }
+div.Acknowledgments { margin-top: 1em; }
+div.AbstractSection { margin-top: 0.3em; }
+p.AuthorGroup { font-weight: bold; }
+.Contact { font-size: 10pt; font-family: Arial,Helvetica,sans-serif; }
+.Affiliation { font-size: 10pt; font-family: Arial,Helvetica,sans-serif; }
+.Citation { font-size: 10pt; font-family: Arial,Helvetica,sans-serif; }
+div.Capt { margin-top: 1.5em; font-size: 10pt; margin-bottom: 1.5em; font-family: Arial,Helvetica,sans-serif; }
+span.CaptCont { font-size: 10pt; font-family: Arial,Helvetica,sans-serif; }
+tbody.CaptCont { font-size: 10pt; font-family: Arial,Helvetica,sans-serif; }
+div.CaptCont { margin-top: 0.3em; font-size: 10pt; font-family: Arial,Helvetica,sans-serif; }
+.AbstractHeading { font-weight: bold; }
+.KeywordHeading { font-weight: bold; }
+.ArticleNoteHeading { font-weight: bold; }
+.Acknowledgmentsheading { font-weight: bold; }
+.CaptNr { font-weight: bold; }
+div.SbLexicon { font-weight: bold; }
+table.Sidebar { background: rgb(214, 214, 214) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-family: Arial,Helvetica,sans-serif; }
+.Term { font-style: italic; }
+.AbstractSectionHeading { font-style: italic; }
+table.OrderedList { padding: 0.3em; margin-top: 1em; font-size: 12pt; margin-bottom: 1em; margin-left: 17pt; }
+unknown { margin-top: 0.3em; }
+div.GlossaryDefSimplePara { margin-top: 0.3em; margin-left: 1.5em; }
+div.Para { margin-top: 1em; margin-bottom: 1em; }
+div.FormalPara { margin-top: 1em; margin-bottom: 1em; }
+div.ArticleNote { margin-top: 1em; margin-bottom: 1em; }
+div.Motto { margin-top: 1em; margin-bottom: 1em; text-align: right; }
+div.Figure { margin-top: 1.5em; margin-bottom: 1em; }
+.PCode { font-family: 'Courier New'; }
+.Box { border: 2px solid black; padding: 0.5em; display: block; }
+.Important { border: 2px solid black; padding: 0.5em; background: rgb(214, 214, 214) none repeat scroll 0% 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.Example { border-left: 4px solid black; padding: 0.5em; display: block; }
+.Trailer { padding: 0.5em; font-weight: bold; }
+div.GlossaryEntry { margin-left: 1.5em; text-indent: -1.5em; }
+table.Stack { font-size: 0.5em; }
+.MPReader_Content_FindSidebarItem .advancedTextBox { width: 13em ! important; }
+.MetaPress_Hosting_UI_Controls_AdvancedTextBox { white-space: nowrap; }
+.MetaPress_Hosting_UI_Controls_AdvancedTextBox input { height: 1.75em; }
+.MetaPress_Hosting_UI_Controls_AdvancedTextBox .advancedTextBoxExpandButton { padding: 1px; display: none; margin-left: -1px; letter-spacing: 0.1em; height: 1.75em; }
+.MetaPress_Hosting_UI_Controls_AdvancedTextBox .advancedTextBoxGoButton { height: 1.75em; margin-left: 0.2em; }
+.MetaPress_Hosting_UI_Controls_AdvancedTextBox .advancedTextBoxContents { position: absolute; display: none; }
+.MPReader_Content_ReferrerSidebarControlReferrersDiv { padding: 0pt; }
+.MPReader_Content_ReferrerSidebarControlReferrersTitle { font-size: 1em; }
+.MPReader_Content_ReferrerSidebarControlReferrersListSingle { margin: 0pt 0.4em 0.4em 2em; list-style-position: outside; }
+.MPReader_Content_ReferrerSidebarControlReferrersListDouble { margin: 0pt 0.4em 0.4em 2.5em; list-style-position: outside; }
+.MPReader_Content_ReferrerSidebarControlReferrersListTriple { margin: 0pt 0.4em 0.4em 3.2em; list-style-position: outside; }
+.MPReader_Content_ReferrerSidebarControlReferrersListQuad { margin: 0pt 0.4em 0.4em 3.75em; list-style-position: outside; }
+.MPReader_Content_ReferrerSidebarControlReferrerItem { margin: 0pt; font-size: 1em; position: relative; left: -0.75em; }
+.MPReader_Content_ReferrerSidebarControlReferrerPagination { text-align: center; }
+.MPReader_Content_ReferrerSidebarControlReferrerPagination a { font-weight: bold; text-decoration: none; }
+.findTextBox .advancedTextBox { width: 25em; }
+.queryBuilder { border: 0.1em solid rgb(98, 98, 126); width: 28.5em; color: Black; font-weight: normal; }
+div.queryBuilder div.list { float: left; width: 50%; height: 100% ! important; }
+div.queryBuilder div.title { padding: 0.4em; display: table ! important; height: auto; width: 100%; background-color: rgb(98, 98, 126); color: White; }
+div.queryBuilder div.title span { float: left; font-weight: bold; }
+div.queryBuilder div.title span.rightLink, div.queryBuilder div.title span.rightLinkSeperator { float: right; font-weight: normal; }
+div.queryBuilder div.title span.rightLinkSeperator { padding: 0pt 0.4em; }
+div.queryBuilder div.list div { padding: 0.4em; background-color: rgb(236, 236, 236); }
+div.queryBuilder div.list ul { margin: 0pt; padding: 0pt; }
+div.queryBuilder div.list ul li { border-style: solid; border-color: white; border-width: 1px 0pt 0pt 1px; padding: 0.2em 0.8em; width: 100%; background-color: rgb(236, 236, 236); }
+div.queryBuilder div.list ul li.empty { cursor: default; }
+div.queryBuilder div.list ul li.hover { background-color: rgb(120, 123, 148); }
+div.queryBuilder div.list ul li a { color: Black; text-decoration: none; }
+div.queryBuilder div.list ul li.hover a { color: White; }
+div.queryBuilder div.list ul li .hotKey { float: right; }
+div.queryBuilder div.list ul li.hover .hotKey { color: White; }
+
+/* ::::: http://www.springerlink.com.ezproxy1.lib.asu.edu/MetaPress.Web.UI.Controls.DhtmlTabControl.css ::::: */
+
+.hide { display: none; }
+#PrimitiveTabs ul.tabs { height: 1.2em; }
+#PrimitiveTabs ul.tabs li.tab { float: left; }
+#PrimitiveTabs ul.tabs li.tab span.label { display: none; }
+#PrimitiveTabs ul.tabs li.tab.selected a.label { display: none; }
+#PrimitiveTabs ul.tabs li.tab.selected span.label { display: inline; }
