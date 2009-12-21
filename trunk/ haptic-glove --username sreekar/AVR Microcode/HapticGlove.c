@@ -19,6 +19,32 @@
 #include <avr/io.h>
 
 
+//we define types using data structures as our "objects"
+//a vibration object
+typedef struct vibration {
+	int duration;
+	int delay;
+
+	//duty cycle vars
+	int on_time;
+	int off_time;
+
+	char id;
+} vibration;
+
+//a motor object
+typedef struct motor {
+	char id;
+	uint8_t port;
+	uint8_t* portset;
+} motor;
+
+//pattern object
+typedef struct pattern {
+	char id;
+	motor motors[14];
+	vibration vibrations[14];
+} pattern;
 
 
 //NOTE: you only need to call this function once 
