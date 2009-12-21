@@ -197,6 +197,8 @@ int main () {
 		}
 		else
 		{
+			//NOTE: MRS: Motor Running Status
+			//A-N corresponds to glove from upper-thumb to lower-pinky
 			serialWrite(Read);
 			switch (Read) {
 				case 'A':
