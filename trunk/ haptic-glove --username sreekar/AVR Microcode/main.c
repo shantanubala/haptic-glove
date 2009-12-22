@@ -18,9 +18,7 @@ int Off_Time = (8*5);
 // Keep track and make sure only 5 motors will run at anytime
 int Num = 0;
 
-// Motor running status (MRS)registers
-MRS_Lower = 0; // Bits 0 - 6 represents the motors A, B, C, D, E, F, G; Bit 7 is unused
-MRS_Upper = 0; // Bits 0 - 6 represents the motors H, I, J, K, L, M, N; Bit 7 is unused
+vibration running[5];
 
 
 //hold the value of serialRead

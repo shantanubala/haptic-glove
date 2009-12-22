@@ -257,4 +257,7 @@ vibration get_vibration(int num) {
 	}
 }
 
+vibration expression[8];
+
+
 
