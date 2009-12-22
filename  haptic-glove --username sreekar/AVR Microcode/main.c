@@ -28,6 +28,11 @@ char selection[5];
 
 selectionIndex = 0;
 
+ISR(TIMER1_COMPA_vect)
+{
+	
+}
+
 
 ISR(TIMER0_COMPA_vect)
 {
@@ -121,6 +126,12 @@ int main () {
  	TCCR0B = _BV(CS00) | _BV(CS02);
  	OCR0A = 250; 
 	TIMSK0 = _BV(OCIE0A);
+	
+	//16-bit timer(1)
+	TCCR1A = _BV(WGM11);
+	TCCR1B = _BV(CS10) | _BV(CS12);
+	OCR1A = 250;
+	TIMSK1 = _BV(OCIE1A);
 
 	for (int i = 0; i < 5; i ++) 
 	{
@@ -133,170 +144,6 @@ int main () {
 		
 		// Read the data from serial port	
 		char Read = serialRead();
-
-		// If 'x' then change the duty cycle
-		if (Read == 'x')
-		{
-			const char TimingOn[47] = "\r\nEnter On-Time [1 to 30] (ms) - Ex: 10 or 02: ";
-			const char TimingOff[48] = "\r\nEnter Off-Time [1 to 30] (ms) - Ex: 10 or 02: ";
-
-			int i;
-
-			// Read the on time
-			// Three numbers have to be entered for the on time and off time.
-			// Starts with the hundred digit, tenth and then the unit digit.
-
-			for (i=0; i<47; i++)
-				serialWrite (TimingOn[i]);
-			char Read1 = serialRead();
-			serialWrite (Read1);
-			char Read0 = serialRead();
-			serialWrite (Read0);
-			
-			
-			// Read the off time
-			for (i=0; i<48; i++)
-				serialWrite (TimingOff[i]);
-			char Ready = serialRead();
-			serialWrite (Ready);
-			char Readz = serialRead();
-			serialWrite (Readz);
-
-			// Convert from ASCII character to number	
-			On_Time =  ((Read1 - 48) * 10 + (Read0 - 48)) * 8;
-			Off_Time = ((Ready - 48) * 10 + (Readz - 48)) * 8;	
-		}
-		else if (Read == 'r')				
-		{
-			const char ONTIME[16] = "\r\nOn Time (ms): ";
-			int kk;
-			for (kk=0; kk<16; kk++)
-				serialWrite(ONTIME[kk]);
-
-			// Show the On time
-			int TempOn = On_Time/8;
-
-			int temp10 = (TempOn / 10) + 48;
-			serialWrite(temp10);
-			int temp1 = TempOn - ((TempOn/10) * 10) + 48;
-			serialWrite(temp1);
-							
-					
-			// Show the off time
-			const char OFFTIME[17] = "\r\nOff Time (ms): ";
-			for (kk=0; kk<17; kk++)
-				serialWrite(OFFTIME[kk]);
-
-			int Temp_Off = Off_Time /8;
-			temp10 = (Temp_Off / 10) + 48;
-			serialWrite(temp10);
-			temp1 = Temp_Off - ((Temp_Off/10) * 10) + 48;
-			serialWrite(temp1);
-			
-
-		}
-		else
-		{
-			//NOTE: MRS: Motor Running Status
-			//A-N corresponds to glove from upper-thumb to lower-pinky
-			serialWrite(Read);
-			switch (Read) {
-				case 'A':
-					MRS_Lower |= 0x01; // Set bit 0
-					break;
-				case 'B':
-					MRS_Lower |= 0x02; // Set bit 1
-					break;
-				case 'C':
-					MRS_Lower |= 0x04; // Set bit 2
-					break;
-				case 'D':
-					MRS_Lower |= 0x08; // Set bit 3
-					break;
-				case 'E':
-					MRS_Lower |= 0x10; // Set bit 4
-					break;
-				case 'F':
-					MRS_Lower |= 0x20; // Set bit 5
-					break;
-				case 'G':
-					MRS_Lower |= 0x40; // Set bit 6
-					break;
-				case 'H':
-					MRS_Upper |= 0x01; // Set bit 0
-					break;
-				case 'I':
-					MRS_Upper |= 0x02; // Set bit 1
-					break;
-				case 'J':
-					MRS_Upper |= 0x04; // Set bit 2
-					break;
-				case 'K':
-					MRS_Upper |= 0x08; // Set bit 3
-					break;
-				case 'L':
-					MRS_Upper |= 0x10; // Set bit 4
-					break;
-				case 'M':
-					MRS_Upper |= 0x20; // Set bit 5
-					break;
-				case 'N':
-					MRS_Upper |= 0x40; // Set bit 6
-					break;
-				case 'a':
-					MRS_Lower &= 0xFE; // Reset bit 0
-					break;
-				case 'b':
-					MRS_Lower &= 0xFD; // Reset bit 1
-					break;
-				case 'c':
-					MRS_Lower &= 0xFB; // Reset bit 2
-					break;
-				case 'd':
-					MRS_Lower &= 0xF7; // Reset bit 3
-					break;
-				case 'e':
-					MRS_Lower &= 0xEF; // Reset bit 4
-					break;
-				case 'f':
-					MRS_Lower &= 0xDF; // Reset bit 5
-					break;
-				case 'g':
-					MRS_Lower &= 0xBF; // Reset bit 6
-					break;
-				case 'h':
-					MRS_Upper &= 0xFE; // Reset bit 0
-					break;
-				case 'i':
-					MRS_Upper &= 0xFD; // Reset bit 1
-					break;
-				case 'j':
-					MRS_Upper &= 0xFB; // Reset bit 2
-					break;
-				case 'k':
-					MRS_Upper &= 0xF7; // Reset bit 3
-					break;
-				case 'l':
-					MRS_Upper &= 0xEF; // Reset bit 4
-					break;
-				case 'm':
-					MRS_Upper &= 0xDF; // Reset bit 5
-					break;
-				case 'n':
-					MRS_Upper &= 0xBF; // Reset bit 6
-					break;
-				default:
-					
-					break;
-			}
-
-			serialWrite('\r');
-			serialWrite('\n');
-		}
-		
-
-		//welcomes and prompts user
-		menu_display();
 		
 	}
 

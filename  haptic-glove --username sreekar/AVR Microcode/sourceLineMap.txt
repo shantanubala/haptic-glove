@@ -1,90 +1,237 @@
-Address = 0x00000096  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:27:0:-1
-Address = 0x00000096  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:41:0:-1
-Address = 0x0000009c  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:42:0:-1
-Address = 0x000000a2  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:43:0:-1
-Address = 0x000000a8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:44:0:-1
-Address = 0x000000aa  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:60:0:-1
-Address = 0x000000b0  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:61:0:-1
-Address = 0x000000b4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:63:0:-1
-Address = 0x000000c6  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../HapticGlove.c:68:0:-1
-Address = 0x000000dc  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:10:0:-1
-Address = 0x00000100  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:12:0:-1
-Address = 0x00000104  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:15:0:-1
-Address = 0x0000010c  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:21:0:-1
-Address = 0x00000116  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:20:0:-1
-Address = 0x00000124  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:49:0:-1
-Address = 0x00000128  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:73:0:-1
-Address = 0x0000012c  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:67:0:-1
-Address = 0x00000130  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:64:0:-1
-Address = 0x00000134  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:70:0:-1
-Address = 0x00000138  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:37:0:-1
-Address = 0x0000013c  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:43:0:-1
-Address = 0x00000140  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:40:0:-1
-Address = 0x00000144  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:28:0:-1
-Address = 0x0000014e  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:29:0:-1
-Address = 0x0000019a  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:40:0:-1
-Address = 0x000001a0  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:43:0:-1
-Address = 0x000001a6  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:46:0:-1
-Address = 0x000001ac  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:49:0:-1
-Address = 0x000001b2  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:61:0:-1
-Address = 0x000001b8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:64:0:-1
-Address = 0x000001be  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:67:0:-1
-Address = 0x000001c4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:70:0:-1
-Address = 0x000001ca  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:73:0:-1
-Address = 0x000001ce  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:80:0:-1
-Address = 0x000001de  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:28:0:-1
-Address = 0x000001e6  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../main.c:84:0:-1
-Address = 0x00000210  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:9:0:-1
-Address = 0x00000214  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x00000216  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x00000218  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x00000220  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:17:0:-1
-Address = 0x00000222  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:22:0:-1
-Address = 0x00000226  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:23:0:-1
-Address = 0x0000022a  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:27:0:-1
-Address = 0x0000022e  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:28:0:-1
-Address = 0x00000232  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:31:0:-1
-Address = 0x00000232  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:22:0:-1
-Address = 0x00000236  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:32:0:-1
-Address = 0x0000023a  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:34:0:-1
-Address = 0x0000023e  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:36:0:-1
-Address = 0x00000240  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:39:0:-1
-Address = 0x00000242  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:27:0:-1
-Address = 0x00000246  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:40:0:-1
-Address = 0x0000024a  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:42:0:-1
-Address = 0x0000024e  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:44:0:-1
-Address = 0x00000250  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:48:0:-1
-Address = 0x00000250  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:42:0:-1
-Address = 0x00000254  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:27:0:-1
-Address = 0x00000258  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:40:0:-1
-Address = 0x0000025c  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:42:0:-1
-Address = 0x00000264  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x00000266  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x00000268  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x00000274  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x00000276  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x00000278  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x00000284  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x00000286  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x00000288  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x00000294  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x00000296  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x00000298  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x000002a4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x000002a6  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x000002a8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x000002b4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x000002b6  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x000002b8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x000002c4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:14:0:-1
-Address = 0x000002c6  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:15:0:-1
-Address = 0x000002c8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:12:0:-1
-Address = 0x000002d0  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:22:0:-1
-Address = 0x000002d4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:49:0:-1
-Address = 0x000002d8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:60:0:-1
-Address = 0x000002da  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:71:0:-1
-Address = 0x000002de  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:77:0:-1
-Address = 0x000002e2  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:78:0:-1
-Address = 0x000002e8  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:80:0:-1
-Address = 0x000002ee  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:130:0:-1
-Address = 0x000002f4  File:line:col:begin = C:\Documents and Settings\Shantanu\My Documents\HapticGlove\default/../SerialCom.c:130:0:-1
+Address = 0x00000102  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:44:0:-1
+Address = 0x00000102  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:58:0:-1
+Address = 0x00000108  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:59:0:-1
+Address = 0x0000010e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:60:0:-1
+Address = 0x00000114  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:61:0:-1
+Address = 0x00000116  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:77:0:-1
+Address = 0x0000011c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:78:0:-1
+Address = 0x00000120  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:80:0:-1
+Address = 0x00000132  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:85:0:-1
+Address = 0x00000148  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:111:0:-1
+Address = 0x0000014a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:112:0:-1
+Address = 0x0000014c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:113:0:-1
+Address = 0x0000014e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:114:0:-1
+Address = 0x00000150  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:117:0:-1
+Address = 0x00000152  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:118:0:-1
+Address = 0x00000154  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:119:0:-1
+Address = 0x00000156  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:120:0:-1
+Address = 0x00000158  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:123:0:-1
+Address = 0x0000015a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:124:0:-1
+Address = 0x0000015c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:125:0:-1
+Address = 0x0000015e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:126:0:-1
+Address = 0x00000160  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:127:0:-1
+Address = 0x00000162  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:128:0:-1
+Address = 0x00000164  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:129:0:-1
+Address = 0x00000166  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:205:0:-1
+Address = 0x0000016a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:206:0:-1
+Address = 0x00000176  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:208:0:-1
+Address = 0x0000017c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:209:0:-1
+Address = 0x00000188  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:211:0:-1
+Address = 0x0000018e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:212:0:-1
+Address = 0x00000196  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:214:0:-1
+Address = 0x0000019c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:215:0:-1
+Address = 0x000001a4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:217:0:-1
+Address = 0x000001a8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:218:0:-1
+Address = 0x000001b0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:220:0:-1
+Address = 0x000001b4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:221:0:-1
+Address = 0x000001bc  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:223:0:-1
+Address = 0x000001c2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:224:0:-1
+Address = 0x000001ca  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:226:0:-1
+Address = 0x000001d0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:227:0:-1
+Address = 0x000001d8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:229:0:-1
+Address = 0x000001de  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:230:0:-1
+Address = 0x000001e6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:232:0:-1
+Address = 0x000001ec  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:233:0:-1
+Address = 0x000001f4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:235:0:-1
+Address = 0x000001f8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:236:0:-1
+Address = 0x00000204  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:238:0:-1
+Address = 0x00000208  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:239:0:-1
+Address = 0x00000210  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:241:0:-1
+Address = 0x00000214  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:242:0:-1
+Address = 0x0000021c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:244:0:-1
+Address = 0x00000220  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:245:0:-1
+Address = 0x00000228  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:246:0:-1
+Address = 0x0000022a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:93:0:-1
+Address = 0x0000022e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:93:0:-1
+Address = 0x00000232  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:98:0:-1
+Address = 0x00000238  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:97:0:-1
+Address = 0x00000240  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:101:0:-1
+Address = 0x00000246  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:182:0:-1
+Address = 0x00000258  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:182:0:-1
+Address = 0x0000025c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:184:0:-1
+Address = 0x00000262  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:183:0:-1
+Address = 0x0000026a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:188:0:-1
+Address = 0x00000270  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:189:0:-1
+Address = 0x00000274  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:190:0:-1
+Address = 0x0000027a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:191:0:-1
+Address = 0x0000027e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:192:0:-1
+Address = 0x00000284  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:193:0:-1
+Address = 0x00000288  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:194:0:-1
+Address = 0x0000028e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:195:0:-1
+Address = 0x000002d0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:198:0:-1
+Address = 0x000002e6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:164:0:-1
+Address = 0x000002f8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:164:0:-1
+Address = 0x000002fc  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:166:0:-1
+Address = 0x00000302  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:165:0:-1
+Address = 0x0000030a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:170:0:-1
+Address = 0x00000310  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:171:0:-1
+Address = 0x00000314  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:172:0:-1
+Address = 0x0000031a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:173:0:-1
+Address = 0x0000031e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:174:0:-1
+Address = 0x00000324  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:175:0:-1
+Address = 0x00000328  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:176:0:-1
+Address = 0x0000032e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:177:0:-1
+Address = 0x00000370  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:180:0:-1
+Address = 0x00000386  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:151:0:-1
+Address = 0x0000038e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:151:0:-1
+Address = 0x00000392  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:154:0:-1
+Address = 0x00000398  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:153:0:-1
+Address = 0x000003a0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:155:0:-1
+Address = 0x000003a6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:156:0:-1
+Address = 0x000003aa  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:157:0:-1
+Address = 0x000003b0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:158:0:-1
+Address = 0x000003d2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:162:0:-1
+Address = 0x000003de  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:135:0:-1
+Address = 0x000003e6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:135:0:-1
+Address = 0x000003ea  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:141:0:-1
+Address = 0x000003f0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:140:0:-1
+Address = 0x000003f8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:142:0:-1
+Address = 0x000003fe  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:143:0:-1
+Address = 0x00000402  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:144:0:-1
+Address = 0x00000408  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:145:0:-1
+Address = 0x0000042a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:149:0:-1
+Address = 0x00000436  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:248:0:-1
+Address = 0x00000458  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:248:0:-1
+Address = 0x0000045c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:254:0:-1
+Address = 0x00000466  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:253:0:-1
+Address = 0x0000046e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:256:0:-1
+Address = 0x00000476  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:257:0:-1
+Address = 0x0000047c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:258:0:-1
+Address = 0x00000486  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:260:0:-1
+Address = 0x0000048c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:261:0:-1
+Address = 0x00000490  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:263:0:-1
+Address = 0x0000049c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:259:0:-1
+Address = 0x000004aa  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:272:0:-1
+Address = 0x000004b2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:273:0:-1
+Address = 0x000004ba  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:274:0:-1
+Address = 0x000004c2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:275:0:-1
+Address = 0x000004c6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:277:0:-1
+Address = 0x000004dc  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../HapticGlove.c:278:0:-1
+Address = 0x00000504  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:83:0:-1
+Address = 0x00000528  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:85:0:-1
+Address = 0x0000052a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:88:0:-1
+Address = 0x0000052e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:91:0:-1
+Address = 0x00000532  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:94:0:-1
+Address = 0x00000536  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:120:0:-1
+Address = 0x0000053a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:121:0:-1
+Address = 0x0000053e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:122:0:-1
+Address = 0x00000542  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:123:0:-1
+Address = 0x00000546  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:127:0:-1
+Address = 0x0000055c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:145:0:-1
+Address = 0x00000564  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:147:0:-1
+Address = 0x0000056e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:161:0:-1
+Address = 0x00000578  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:135:0:-1
+Address = 0x0000057e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:138:0:-1
+Address = 0x00000582  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:140:0:-1
+Address = 0x0000058e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:141:0:-1
+Address = 0x0000059c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:143:0:-1
+Address = 0x000005a2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:145:0:-1
+Address = 0x000005b4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:148:0:-1
+Address = 0x000005be  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:147:0:-1
+Address = 0x000005c4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:151:0:-1
+Address = 0x000005d8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:154:0:-1
+Address = 0x000005ec  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:156:0:-1
+Address = 0x000005fe  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:160:0:-1
+Address = 0x00000610  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:162:0:-1
+Address = 0x0000061a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:161:0:-1
+Address = 0x00000620  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:164:0:-1
+Address = 0x00000634  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:166:0:-1
+Address = 0x00000648  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:168:0:-1
+Address = 0x00000658  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:176:0:-1
+Address = 0x0000065c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:177:0:-1
+Address = 0x0000067e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:179:0:-1
+Address = 0x0000068a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:182:0:-1
+Address = 0x0000069e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:185:0:-1
+Address = 0x000006aa  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:188:0:-1
+Address = 0x000006b6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:191:0:-1
+Address = 0x000006c2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:194:0:-1
+Address = 0x000006ce  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:197:0:-1
+Address = 0x000006da  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:200:0:-1
+Address = 0x000006e6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:203:0:-1
+Address = 0x000006f2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:206:0:-1
+Address = 0x000006fe  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:209:0:-1
+Address = 0x0000070a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:212:0:-1
+Address = 0x00000716  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:215:0:-1
+Address = 0x00000722  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:218:0:-1
+Address = 0x0000072e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:221:0:-1
+Address = 0x0000073c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:224:0:-1
+Address = 0x0000074a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:227:0:-1
+Address = 0x00000758  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:230:0:-1
+Address = 0x00000766  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:233:0:-1
+Address = 0x00000774  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:236:0:-1
+Address = 0x00000782  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:239:0:-1
+Address = 0x00000790  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:242:0:-1
+Address = 0x0000079e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:245:0:-1
+Address = 0x000007ac  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:248:0:-1
+Address = 0x000007ba  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:251:0:-1
+Address = 0x000007c8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:254:0:-1
+Address = 0x000007d6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:257:0:-1
+Address = 0x000007e4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:260:0:-1
+Address = 0x000007f8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:267:0:-1
+Address = 0x000007fe  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:268:0:-1
+Address = 0x00000804  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:273:0:-1
+Address = 0x0000080a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:33:0:-1
+Address = 0x0000082c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:34:0:-1
+Address = 0x00000838  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:37:0:-1
+Address = 0x00000844  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:38:0:-1
+Address = 0x00000848  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:39:0:-1
+Address = 0x0000084e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:44:0:-1
+Address = 0x0000085a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:50:0:-1
+Address = 0x00000880  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:49:0:-1
+Address = 0x0000088a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:52:0:-1
+Address = 0x000008ac  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:51:0:-1
+Address = 0x000008b6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:54:0:-1
+Address = 0x000008bc  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:56:0:-1
+Address = 0x000008c0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:57:0:-1
+Address = 0x000008c8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:58:0:-1
+Address = 0x000008d2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:62:0:-1
+Address = 0x000008de  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:63:0:-1
+Address = 0x000008f6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:64:0:-1
+Address = 0x00000912  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:65:0:-1
+Address = 0x00000930  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:66:0:-1
+Address = 0x0000094e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:67:0:-1
+Address = 0x0000096c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:68:0:-1
+Address = 0x0000098a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:69:0:-1
+Address = 0x0000099a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:70:0:-1
+Address = 0x000009b2  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:71:0:-1
+Address = 0x000009ce  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:72:0:-1
+Address = 0x000009ec  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:73:0:-1
+Address = 0x00000a0a  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:74:0:-1
+Address = 0x00000a28  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:75:0:-1
+Address = 0x00000a46  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:78:0:-1
+Address = 0x00000a4c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../main.c:81:0:-1
+Address = 0x00000a6e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:8:0:-1
+Address = 0x00000a72  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:13:0:-1
+Address = 0x00000a74  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:14:0:-1
+Address = 0x00000a76  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:11:0:-1
+Address = 0x00000a7e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:16:0:-1
+Address = 0x00000a80  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:20:0:-1
+Address = 0x00000a84  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:21:0:-1
+Address = 0x00000a88  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:25:0:-1
+Address = 0x00000a8c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:26:0:-1
+Address = 0x00000a90  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:28:0:-1
+Address = 0x00000a90  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:20:0:-1
+Address = 0x00000a94  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:30:0:-1
+Address = 0x00000a98  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:32:0:-1
+Address = 0x00000a9c  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:33:0:-1
+Address = 0x00000a9e  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:35:0:-1
+Address = 0x00000aa0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:25:0:-1
+Address = 0x00000aa4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:37:0:-1
+Address = 0x00000aa8  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:39:0:-1
+Address = 0x00000aac  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:40:0:-1
+Address = 0x00000aae  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:47:0:-1
+Address = 0x00000ab0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:50:0:-1
+Address = 0x00000ab4  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:51:0:-1
+Address = 0x00000aba  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:53:0:-1
+Address = 0x00000ac0  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:56:0:-1
+Address = 0x00000ac6  File:line:col:begin = C:\Documents and Settings\Shantanu\Desktop\Haptic Glove Projects\AVR Microcode\default/../SerialCom.c:56:0:-1

@@ -15,9 +15,8 @@ void delayLong() {
 	} 
 }
 
-
 unsigned char serialCheckRxComplete(void) {
-	//return zero of there's nothing to read
+	//return zero if there's nothing to read
 	return( UCSR0A & _BV(RXC0));
 }
 

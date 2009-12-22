@@ -19,34 +19,6 @@
 #include <avr/io.h>
 
 
-//we define types using data structures as our "objects"
-//a vibration object
-typedef struct vibration {
-	int duration;
-	int delay;
-
-	//duty cycle vars
-	int on_time;
-	int off_time;
-
-	char id;
-} vibration;
-
-//a motor object
-typedef struct motor {
-	char id;
-	uint8_t port;
-	uint8_t* portset;
-} motor;
-
-//pattern object
-typedef struct pattern {
-	char id;
-	motor motors[14];
-	vibration vibrations[14];
-} pattern;
-
-
 //NOTE: you only need to call this function once 
 //TODO: add inputs
 void data_direction_setup() {
@@ -108,6 +80,8 @@ void menu_display () {
 	
 }
 
+//
+
 //as the name implies
 //if something goes horribly wrong
 //try and input the command for this function ASAP
@@ -133,3 +107,154 @@ void kill_all_motors() {
 	PORTD &= ~_BV(PORTD6);
 	PORTD &= ~_BV(PORTD7);
 }
+
+const char TimingOn[47] = "\r\nEnter On-Time [1 to 30] (ms) - Ex: 10 or 02: ";
+const char TimingOff[48] = "\r\nEnter Off-Time [1 to 30] (ms) - Ex: 10 or 02: ";
+const char TimingDuration[53] = "\r\nEnter Duration [1 - 5000] (ms) - Ex: 0001 or 4000: ";
+const char TimingDelay[50] = "\r\nEnter Delay [1 - 5000] (ms) - Ex: 0020 or 2000: ";
+int get_on_time() {
+	// Read the on time
+	// Three numbers have to be entered for the on time and off time.
+	// Starts with the hundred digit, tenth and then the unit digit.
+
+	for (int i=0; i<47; i++)
+		serialWrite (TimingOn[i]);
+	char Read1 = serialRead();
+	serialWrite (Read1);
+	char Read0 = serialRead();
+	serialWrite (Read0);
+
+	// Convert from ASCII character to number	
+	return ((Read1 - 48) * 10 + (Read0 - 48)) * 8;
+}
+
+int get_off_time() {
+	// Read the off time
+	for (int i=0; i<48; i++)
+		serialWrite (TimingOff[i]);
+	char Ready = serialRead();
+	serialWrite (Ready);
+	char Readz = serialRead();
+	serialWrite (Readz);
+	
+	// Convert from ASCII character to number	
+	return ((Ready - 48) * 10 + (Readz - 48)) * 8;
+}
+
+int get_duration() {
+	for (int i = 0; i < 50; i++) {
+		serialWrite(TimingDelay[i]);
+	}
+
+	char Read1, Read2, Read3, Read4;
+	Read1 = serialRead();
+	serialWrite(Read1);
+	Read2 = serialRead();
+	serialWrite(Read2);
+	Read3 = serialRead();
+	serialWrite(Read3);
+	Read4 = serialRead();
+	serialWrite(Read4);
+
+	return (Read1 - 48) * 1000 + (Read2 - 48) * 100 + (Read3 - 48) * 10 + (Read4 - 48);
+}
+
+int get_delay() {
+	for (int i = 0; i < 53; i++) {
+		serialWrite(TimingDuration[i]);
+	}
+
+	char Read1, Read2, Read3, Read4;
+	Read1 = serialRead();
+	serialWrite(Read1);
+	Read2 = serialRead();
+	serialWrite(Read2);
+	Read3 = serialRead();
+	serialWrite(Read3);
+	Read4 = serialRead();
+	serialWrite(Read4);
+
+	return (Read1 - 48) * 1000 + (Read2 - 48) * 100 + (Read3 - 48) * 10 + (Read4 - 48);
+}
+
+const char EnterMotor[43] = "\r\nEnter a single motor (A-N) for vibration ";
+
+motor all_motors[14];
+
+void define_all_motors() {
+	all_motors[0].port = PORTB0;
+	all_motors[0].portset = &PORTB;
+					
+	all_motors[1].port = PORTD7;
+	all_motors[1].portset = &PORTD;
+	
+	all_motors[2].port = PORTD6;
+	all_motors[2].portset = &PORTD;
+	
+	all_motors[3].port = PORTD5;
+	all_motors[3].portset = &PORTD;
+	
+	all_motors[4].port = PORTB7;
+	all_motors[4].portset = &PORTB;
+
+	all_motors[5].port = PORTB6;
+	all_motors[5].portset = &PORTB;
+
+	all_motors[6].port = PORTD4;
+	all_motors[6].portset = &PORTD;
+
+	all_motors[7].port = PORTD3;
+	all_motors[7].portset = &PORTD;
+
+	all_motors[8].port = PORTD2;
+	all_motors[8].portset = &PORTD;
+
+	all_motors[9].port = PORTB1;
+	all_motors[9].portset = &PORTB;
+
+	all_motors[10].port = PORTC0;
+	all_motors[10].portset = &PORTC;
+
+	all_motors[11].port = PORTC1;
+	all_motors[11].portset = &PORTC;
+
+	all_motors[12].port = PORTC2;
+	all_motors[12].portset = &PORTC;
+	
+	all_motors[13].port = PORTC3;
+	all_motors[13].portset = &PORTC;
+}
+
+vibration get_vibration(int num) {
+	motor mot;
+	char mot_id;
+	int index;
+	int i;
+	for (i = 0; i < 43; i++) {
+		serialWrite(EnterMotor[i]);
+	}
+	serialWrite((num + 48));
+	serialWrite(':');
+	serialWrite(' ');
+
+	mot_id = serialRead();
+	if (index >= 0 && index < 14) {
+		serialWrite(mot_id);
+		index = (mot_id - 65);
+		mot = all_motors[index];
+
+		vibration vib;
+		vib.on_time = get_on_time();
+		vib.off_time = get_off_time();
+		vib.delay = get_delay();
+		vib.duration = get_duration();
+		vib.motor = mot;
+
+		return vib;
+	}
+	else {
+		
+	}
+}
+
+
