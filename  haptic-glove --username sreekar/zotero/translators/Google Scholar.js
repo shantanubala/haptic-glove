@@ -1,15 +1,4 @@
-{
-	"translatorID":"57a00950-f0d1-4b41-b6ba-44ff0fc30289",
-	"translatorType":4,
-	"label":"Google Scholar",
-	"creator":"Simon Kornblith",
-	"target":"http://scholar\\.google\\.(?:com|com?\\.[a-z]{2}|[a-z]{2})/scholar",
-	"minVersion":"1.0.0b3.r1",
-	"maxVersion":"",
-	"priority":100,
-	"inRepository":true,
-	"lastUpdated":"2009-08-09 07:15:00"
-}
+{"translatorID":"57a00950-f0d1-4b41-b6ba-44ff0fc30289","translatorType":4,"label":"Google Scholar","creator":"Simon Kornblith","target":"http://scholar\\.google\\.(?:com|com?\\.[a-z]{2}|[a-z]{2})/scholar","minVersion":"1.0.0b3.r1","maxVersion":null,"priority":100,"inRepository":true,"lastUpdated":"2009-12-23 18:00:00"}
 
 function detectWeb(doc, url) {
 	return "multiple";
@@ -29,10 +18,10 @@ function scrape(doc) {
 	var itemTypes = new Array();
 	var attachments = new Array();
 	
-	var titles = doc.evaluate('//h3[@class="r"]', doc, nsResolver,
-				XPathResult.ANY_TYPE, null);
+	var titles = doc.evaluate('//div[@class="gs_r"]/h3', doc, nsResolver, XPathResult.ANY_TYPE, null);
+	
 	// changing .enw to .bib
-	var elmts = doc.evaluate('//a[contains(@href, ".bib")]',
+	var elmts = doc.evaluate('//a[contains(@href, "scholar.bib")]',
 				doc, nsResolver, XPathResult.ANY_TYPE, null);
 	var title;
 	var i = 0;
@@ -90,7 +79,7 @@ function doWeb(doc, url) {
 	// first check for EndNote links
 	// changing to BibTeX since Google is dropping characters in enw and ris output
 	
-	haveEndNoteLinks = doc.evaluate('//a[contains(@href, ".bib")]', 
+	haveEndNoteLinks = doc.evaluate('//a[contains(@href, "scholar.bib")]', 
 			doc, nsResolver, XPathResult.ANY_TYPE, null).iterateNext();
 	if(!haveEndNoteLinks) {
 			// SR:Commenting out this bit as code for retrieving citations from "Related" links is unreliable and unnecessary

@@ -1,15 +1,4 @@
-{
-	"translatorID":"2c310a37-a4dd-48d2-82c9-bd29c53c1c76",
-	"translatorType":4,
-	"label":"PROLA",
-	"creator":"Eugeniy Mikhailov and Michael Berkowitz",
-	"target":"https?://(?:www\\.)?prola.aps.org/(toc|searchabstract|abstract)/",
-	"minVersion":"1.0.0b3.r1",
-	"maxVersion":"",
-	"priority":100,
-	"inRepository":true,
-	"lastUpdated":"2009-01-08 08:19:07"
-}
+{"translatorID":"2c310a37-a4dd-48d2-82c9-bd29c53c1c76","translatorType":4,"label":"PROLA","creator":"Eugeniy Mikhailov and Michael Berkowitz","target":"https?://(?:www\\.)?prola.aps.org/(toc|searchabstract|abstract)/","minVersion":"1.0.0b3.r1","maxVersion":null,"priority":100,"inRepository":true,"lastUpdated":"2009-12-26 23:15:00"}
 
 function detectWeb(doc, url) {
 	if (url.indexOf("toc") != -1) {
@@ -17,7 +6,7 @@ function detectWeb(doc, url) {
 	} else {
 		return "journalArticle";
 	}
-}	
+}
 
 function doWeb(doc, url) {
     	var arts = new Array();
@@ -58,7 +47,7 @@ function doWeb(doc, url) {
 				item.complete();
 			});
 			translator.translate();
-		 });
+		 }, null, 'latin1');
 	}, function() {Zotero.done();});
 	Zotero.wait();
 }
