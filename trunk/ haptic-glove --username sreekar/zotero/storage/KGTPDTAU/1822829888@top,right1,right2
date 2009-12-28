@@ -1,0 +1,17 @@
+function OAS_RICH(position) {
+if (position == 'Top') {
+document.write ('<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=sb&c=17&pli=1119743&PluID=0&w=728&h=90&ncu=$$http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/short/178/4057/178/L18/515973148/Top/AAAS/SOL-BioRad-SignifTrgLdr-11.12.09/BioRad-Significant.html/5241504630307343516b4d4143696448?$$&ord=515973148"></script>\n');
+document.write ('<noscript>\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/short/178/4057/178/L18/515973148/Top/AAAS/SOL-BioRad-SignifTrgLdr-11.12.09/BioRad-Significant.html/5241504630307343516b4d4143696448?http%3A//bs.serving-sys.com/BurstingPipe/BannerRedirect.asp%3FFlightID%3D1119743%26Page%3D%26PluID%3D0%26Pos%3D7745" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/BannerSource.asp?FlightID=1119743&Page=&PluID=0&Pos=7745" border=0 width=728 height=90></a>\n');
+document.write ('</noscript>\n');
+}
+if (position == 'Right1') {
+document.write ('<div class="ad"><div STYLE="color: #52819B; font-size: 10px; text-align: center;" >ADVERTISEMENT</div><br />\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/short/178/4057/178/L18/320812636/Right1/AAAS/SOL-AAASHse-WebinarBtn-091105/J-2644_Webinar160x150_091105.HTML.html/5241504630307343516b4d4143696448?320812636" target="_blank"><img src="http://imagec14.247realmedia.com/RealMedia/ads/Creatives/AAAS/SOL-AAASHse-WebinarBtn-091105/J-2644_Webinar160x150_091105.gif" BORDER=0 WIDTH=160 HEIGHT=150 alt="Advertisement"></a></div>\n');
+document.write ('\n');
+}
+if (position == 'Right2') {
+document.write ('<div class="ad"><div STYLE="color: #52819B; font-size: 10px; text-align: center;" >ADVERTISEMENT</div><br />\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/cgi/content/short/178/4057/178/L18/805950261/Right2/AAAS/SOL-House-LdrTwr-Evolution/House-Evolution-Tower-HTML.html/5241504630307343516b4d4143696448?805950261" target="_blank"><img src="http://imagec14.247realmedia.com/RealMedia/ads/Creatives/AAAS/SOL-House-LdrTwr-Evolution/J-2606_PlusYou-Evol_160x600.gif" BORDER=0 WIDTH=160 HEIGHT=600 alt="Advertisement"></a></div>\n');
+}
+}

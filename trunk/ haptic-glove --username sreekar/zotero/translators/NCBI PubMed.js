@@ -1,4 +1,4 @@
-{"translatorID":"fcf41bed-0cbc-3704-85c7-8062a0068a7a","translatorType":12,"label":"NCBI PubMed","creator":"Simon Kornblith, Michael Berkowitz and Rintze Zelle","target":"http://[^/]*(www|preview)\\.ncbi\\.nlm\\.nih\\.gov[^/]*/(pubmed|sites/entrez|entrez/query\\.fcgi\\?.*db=PubMed)","minVersion":"1.0.0b3.r1","maxVersion":null,"priority":100,"inRepository":true,"lastUpdated":"2009-10-22 19:05:00"}
+{"translatorID":"fcf41bed-0cbc-3704-85c7-8062a0068a7a","translatorType":12,"label":"NCBI PubMed","creator":"Simon Kornblith, Michael Berkowitz and Rintze Zelle","target":"http://[^/]*(www|preview)\\.ncbi\\.nlm\\.nih\\.gov[^/]*/(pubmed|sites/entrez|entrez/query\\.fcgi\\?.*db=PubMed)","minVersion":"1.0.0b3.r1","maxVersion":null,"priority":100,"inRepository":true,"lastUpdated":"2009-12-17 08:10:00"}
 
 function detectWeb(doc, url) {
 	var namespace = doc.documentElement.namespaceURI;
@@ -16,10 +16,10 @@ function detectWeb(doc, url) {
 		}
 	}
 
-	var uids = doc.evaluate('//input[@type="checkbox" or @name="uid"]', doc,
+	var uids = doc.evaluate('//input[@type="checkbox" and @name="EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_RVDocSum.uid"]', doc,
 			nsResolver, XPathResult.ANY_TYPE, null);
-	if(uids.iterateNext() && doc.title.indexOf("PMC Results") == -1) {
-		if (uids.iterateNext() && doc.title.indexOf("PMC Results") == -1){
+	if(uids.iterateNext()) {
+		if (uids.iterateNext()){
 			return "multiple";
 		}
 		return "journalArticle";

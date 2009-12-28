@@ -1,0 +1,1088 @@
+
+/* ::::: null ::::: */
+
+table.content_box_outer_table { padding: 0px 0px 5px 10px; }
+table.content_box_outer_table_in_sidebar_frame { padding: 10px 10px 0px; }
+table.content_box_inner_table { padding: 0px 0px 5px; background-color: rgb(240, 240, 240); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 65%; }
+table.content_box_pdfinframes { padding: 0px 0px 4px; }
+td.content_box_title_highlight { padding: 1px; font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: italic; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 120%; font-weight: bold; text-align: center; vertical-align: middle; }
+td.content_box_title { padding: 1px; font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: italic; color: rgb(255, 255, 255); background-color: rgb(130, 130, 130); font-size: 120%; font-weight: bold; text-align: center; vertical-align: middle; }
+td.content_box_space_between_sections { padding-top: 2px; }
+td.content_box_arrow { padding: 0px 0px 3px 5px; text-align: right; }
+td.content_box_item { padding: 0px 5px 3px 3px; text-align: left; vertical-align: top; }
+td.content_box_pdfinframes_citation_cell { border: 1px solid rgb(0, 0, 0); padding: 3px; background-color: rgb(255, 255, 255); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 65%; text-align: left; }
+font.openaccess { font-weight: bold; padding-left: 3px; padding-right: 3px; background-color: rgb(255, 255, 255); }
+font.openaccess_open { color: rgb(0, 0, 0); }
+font.openaccess_access { color: rgb(204, 0, 0); }
+font.openaccess_oa {  }
+.content_box_openaccess_title { text-align: center; white-space: nowrap; background-color: rgb(186, 186, 186); }
+div.referrer-based-search-line { margin: 0px 4px 5px 0px; padding: 3px 25px; font-family: arial,sans-serif; font-size: 0.75em; background-color: rgb(220, 246, 219); }
+div.referrer-based-search-line .search-terms { font-weight: bold; }
+div.referrer-based-search-line .collection-name { font-style: italic; }
+@media screen, print, handheld {
+  .notonscreen { display: none; }
+}
+
+/* ::::: null ::::: */
+
+@media screen, print, handheld {
+  .notonscreen { display: none; }
+}
+
+/* ::::: http://www.sciencemag.org/styles.header.css ::::: */
+
+#hd { margin: 0pt 0pt 8px 8px; width: 1000px; padding-top: 0pt; }
+#hd-main { background: transparent url('hd-bg.gif') repeat-x scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; position: relative; font-family: arial,verdana,helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; z-index: 100; }
+#hd-main #hd-logo a { background: transparent url('hd-nav.png') no-repeat scroll 0% 0%; display: block; width: 158px; height: 90px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-indent: -9998em; }
+.pagetype-journal #hd-sub { background: transparent url('hd-nav.png') no-repeat scroll 0% 0%; position: relative; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 1000px; z-index: 20; }
+#hd-search { position: absolute; top: 2px; right: 10px; text-align: right; }
+#hd-search a { text-transform: uppercase; padding-left: 4px; }
+#hd-search form, #search form fieldset { display: inline; }
+#hd-search input { border: 1px solid rgb(217, 217, 217); padding: 3px; font-size: 11px ! important; font-weight: bold; color: rgb(204, 204, 204); vertical-align: middle; }
+#hd-search input.search-submit { border: medium none ; padding: 0pt; background: transparent url('hd-nav.png') no-repeat scroll -850px -84px; width: 68px; height: 21px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: inline-block; text-indent: -9998em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+#hd-search select { padding: 1px 0pt; color: rgb(102, 102, 102); }
+#hd-subscribe { background: transparent url('hd-nav.png') no-repeat scroll -866px -8px; display: block; position: absolute; width: 128px; height: 21px; top: 58px; right: 10px; text-indent: -9998em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#hd-subscribe:hover { background-position: -866px -52px; }
+#hd-breadcrumb { overflow: hidden; font-size: 11px; clear: both; height: 16px; margin-top: 2px; }
+#hd-breadcrumb ul { margin: 0pt; padding: 0pt; }
+#hd-breadcrumb ul li { float: left; padding-right: 8px; line-height: 16px; }
+#hd-partner { background: transparent url('hd-ptnr-bg.png') no-repeat scroll 0% 0%; position: absolute; top: 0pt; right: 35px; width: 149px; height: 44px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#hd-partner a { padding: 5px 0pt 0pt 28px; display: block; }
+#nav-util, #authstring { position: absolute; text-transform: uppercase; }
+#nav-util { margin: 0pt; padding: 0pt; top: 13px; left: 162px; }
+#nav-util li, #authstring li { border-right: 1px solid rgb(204, 204, 204); padding: 0pt 8px 0pt 6px; display: inline; }
+#nav-util li.last, #authstring li.last { border-right: medium none; }
+#nav-util a, #hd form a { color: rgb(102, 102, 102); text-decoration: none; }
+#nav-util a:hover, #hd form a:hover { color: rgb(51, 51, 51); text-decoration: underline; }
+#authstring a { color: rgb(204, 204, 204); text-decoration: none; }
+#authstring a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+#authstring { top: 34px; right: 4px; text-align: right; }
+#nav-main { margin: 0pt; padding: 0pt; position: absolute; top: 50px; left: 160px; }
+#nav-main li.item { float: left; display: block; position: relative; }
+#nav-main li.item div.item-cn { border: 2px solid rgb(132, 15, 15); padding: 16px 12px 12px; background: transparent url('decorations.png') no-repeat scroll 104px 0pt; width: 202px; position: absolute; top: 36px; display: none; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-size: 12px; }
+#nav-main li.hovering div.item-cn { display: block; }
+#nav-main-news, #nav-main-journals, #nav-main-careers, #nav-main-communities, #nav-main-multimedia, #nav-main-topics { background: transparent url('hd-nav.png') no-repeat scroll 0% 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 40px; text-indent: -9998em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+#nav-main-news { width: 60px; background-position: -172px 0px; }
+#nav-main-journals { width: 150px; background-position: -232px 0px; }
+#nav-main-careers { width: 78px; background-position: -382px 0px; }
+#nav-main-communities { width: 176px; background-position: -460px 0px; }
+#nav-main-multimedia { width: 102px; background-position: -636px 0px; }
+#nav-main-topics { width: 107px; background-position: -738px 0px; }
+#nav-main-news:hover { background-position: -172px -42px; }
+#nav-main-journals:hover { background-position: -232px -42px; }
+#nav-main-careers:hover { background-position: -382px -42px; }
+#nav-main-communities:hover { background-position: -460px -42px; }
+#nav-main-multimedia:hover { background-position: -636px -42px; }
+#nav-main-topics:hover { background-position: -738px -42px; }
+.sciencenow #nav-main-news { background-position: -172px -84px ! important; }
+#pageid-careers #nav-main-careers { background-position: -382px -84px ! important; }
+.pageid-blogs #nav-main-communities { background-position: -460px -84px ! important; }
+.pageid-multimedia #nav-main-multimedia { background-position: -636px -84px ! important; }
+.pageid-collections #nav-main-topics { background-position: -738px -84px ! important; }
+.pagetype-journal #nav-main-journals { background-position: -232px -84px ! important; }
+.sci .pagetype-journal #hd-sub { background-position: 0pt -126px; padding-top: 40px; }
+.sigtrans .pagetype-journal #hd-sub { background-position: 0pt -167px; padding-top: 40px; }
+.scitransmed .pagetype-journal #hd-sub { background-position: 0pt -209px; padding-top: 40px; }
+.sageke .pagetype-journal #hd-sub { background-position: 0pt -250px; padding-top: 40px; }
+.pageid-journal_landing .pagetype-journal #hd-sub { border-bottom: medium none; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#nav-sub { border-bottom: 2px solid white; margin: 0pt; padding: 0pt 0pt 1px 10px; background: rgb(206, 217, 223) url('hd-bg.gif') repeat-x scroll left bottom; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; }
+#hd-sub { border-bottom: medium none; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#access-util { position: absolute; left: -9998px; }
+ul.tab-list { height: 27px; }
+ul.tab-list li { float: left; display: block; font-size: 11px ! important; height: 27px; }
+ul.tab-list li a { padding: 5px 10px; display: block; text-decoration: none; height: 27px; float: left; }
+ul.tab-list li a span { display: block; padding-top: 7px; font-weight: bold; float: left; cursor: pointer; }
+ul.tab-list li.Active { background: transparent url('tab-bg.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+ul.tab-list li.Active a { background: transparent url('tab-bg.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 4px; padding-left: 6px; padding-top: 8px; }
+#SubNavBar h1 { display: none; }
+
+/* ::::: http://www.sciencemag.org/styles.basic.css ::::: */
+
+body { background: rgb(226, 225, 222) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+body.Popup { background: rgb(255, 255, 255) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+h1, h2, h3, h4, h5, h6 { margin: 0pt; padding: 0pt; }
+h1 { font-size: 120%; }
+h2 { font-size: 110%; }
+h3 { font-size: 100%; }
+h4 { font-size: 90%; }
+h5 { font-size: 75%; }
+h6 { font-size: 75%; }
+p { margin-top: 0pt; font-size: 75%; }
+dl dd p, ul li p, ol li p { font-size: 100% ! important; }
+a { color: rgb(46, 109, 143); }
+form { margin: 0pt; padding: 0pt; }
+.SectionMarker a { color: rgb(51, 51, 51); }
+
+/* ::::: http://www.sciencemag.org/styles.common.css ::::: */
+
+legend { display: none; }
+fieldset { border: medium none ; margin: 0pt; padding: 0pt; }
+#LayoutWrapper #MainColumn .IncludedContent { font-size: 100%; }
+#LayoutWrapper #MainColumn .IncludedContent * { border: medium none ; margin: 0pt; padding: 0pt; background: transparent none repeat scroll 0% 0%; text-transform: none; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#LayoutWrapper #MainColumn .IncludedContent h2, #MainColumn h2 { border-bottom: 1px solid rgb(229, 229, 229); color: rgb(102, 102, 102); font-size: 100%; padding-bottom: 0.5em; margin-bottom: 0.5em; }
+#LayoutWrapper #MainColumn .IncludedContent h3, #MainColumn h3 { border-bottom: 1px solid rgb(224, 224, 224); margin: 0.5em 0pt 1em; padding: 0.5em 0pt; color: rgb(153, 153, 153); font-size: 75%; text-transform: uppercase; }
+#LayoutWrapper #MainColumn .IncludedContent p, #MainColumn p { font-size: 75%; }
+#LayoutWrapper #MainColumn .IncludedContent p a, #MainColumn p a, #LayoutWrapper #MainColumn .IncludedContent li a, #MainColumn li a, #LayoutWrapper #MainColumn .IncludedContent dd a, #MainColumn dd a { text-decoration: underline; }
+#LayoutWrapper #MainColumn .IncludedContent a:hover, #MainColumn a:hover { text-decoration: underline ! important; }
+#LayoutWrapper #MainColumn .IncludedContent ul, #MainColumn ul { margin: 1em 0pt 1em 25px; padding: 0pt; }
+#LayoutWrapper #MainColumn .IncludedContent ul li, #MainColumn ul li { margin-bottom: 0.3em; font-size: 75%; }
+#LayoutWrapper #MainColumn .IncludedContent ul ul, #MainColumn ul ul { margin: 0.5em 0pt 0.5em 25px; }
+#LayoutWrapper #MainColumn .IncludedContent li li, #MainColumn li li { margin-bottom: 0.3em; font-size: 100% ! important; }
+* html #LayoutWrapper #MainColumn .IncludedContent ul li, * html #MainColumn ul li { margin-bottom: 0.15em; }
+#LayoutWrapper #MainColumn .IncludedContent ol, #MainColumn ol { margin: 1em 0pt 1em 2.25em; padding: 0pt; }
+#LayoutWrapper #MainColumn .IncludedContent ol li, #MainColumn ol li { margin-bottom: 0.3em; font-size: 75%; }
+* html #LayoutWrapper #MainColumn .IncludedContent ol li, * html #MainColumn ol li { margin-bottom: 0.15em; }
+#LayoutWrapper #MainColumn .IncludedContent dl, #MainColumn dl { margin: 0pt; padding: 0pt; }
+#LayoutWrapper #MainColumn .IncludedContent dl dt, #MainColumn dl dt { font-size: 75%; font-weight: bold; margin-top: 1em; }
+#LayoutWrapper #MainColumn .IncludedContent dl dd, #MainColumn dl dd { margin: 0pt 0pt 1em; font-size: 75%; }
+#LayoutWrapper #MainColumn .IncludedContent blockquote, #MainColumn blockquote { margin: 1em 2em; padding: 0pt; }
+.ClearFix { clear: both; font-size: 0pt; height: 0pt; }
+.LayoutTable { border: medium none ; width: 100%; border-collapse: collapse; border-spacing: 0pt; clear: both; }
+.LayoutTable td { vertical-align: top; }
+.FormTable { border: medium none ; border-collapse: collapse; border-spacing: 0pt; clear: both; }
+.FormTable td, .FormTable th { padding: 2px 0pt; }
+.FormTable td {  }
+.FormTable th { font-size: 75%; font-weight: normal; text-align: left; padding-right: 0.5em; }
+.FormTable th label { font-size: 100% ! important; }
+.FormAction { text-align: right; padding-top: 4px; }
+.DataTable { border: medium none ; width: 100%; border-collapse: collapse; border-spacing: 0pt; clear: both; }
+.DataTable th, .DataTable td { padding: 2px 0pt; font-size: 75%; }
+.HorizList { margin: 0pt; padding: 0pt; }
+.HorizList li { float: left; list-style-type: none; display: block; }
+.HorizList li a { display: block; }
+ul.LinkList, #MainColumn ul.LinkList, #MainColumn .NoBullet { margin: 0pt 0pt 1em; padding: 0pt; }
+ul.LinkList li, #MainColumn ul.LinkList li { margin: 0pt 0pt 0.5em; padding: 0pt 0pt 0pt 10px; list-style-type: none; }
+#MainColumn .NoBullet li { list-style-type: none; background-image: none ! important; padding-left: 0pt; }
+#BodyWrapper ul.Inputs { margin: 0pt; padding: 0pt; }
+#BodyWrapper ul.Inputs li { margin: 0pt 0pt 0.3em; padding: 0pt; list-style-type: none; font-size: 75%; }
+#BodyWrapper ul.Inputs li { text-indent: -20px; padding-left: 20px; }
+#MainColumn ul.PoundDownNav { margin: 0.5em 0pt 1em; padding: 0pt; }
+#MainColumn ul.PoundDownNav li { margin: 0pt 0pt 0.3em; padding: 0pt 0pt 0pt 17px; background: transparent url('icon.arrow.797979.sm.dn.gif') no-repeat scroll 0.25em 0.3em; list-style-type: none; font-size: 75%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn ul.PoundDownNav li a {  }
+* html #MainColumn ul.PoundDownNav li { background-position: 0.25em 0.6em; }
+:first-child + html #MainColumn ul.PoundDownNav li { background-position: 0.25em 0.6em; }
+dl.LinkList { margin: 0pt; }
+input, select, .Icon, .Button { vertical-align: middle; }
+.LinkGo { background: transparent url('icon.arrow.53859f.lg.r.gif') no-repeat scroll 100% 65%; padding-right: 10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.LinkMore { font-weight: bold; }
+.Links {  }
+.LinkNext { background: transparent url('icon.arrow.53859f.lg.r.gif') no-repeat scroll 100% 3px; padding-right: 10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.LinkPrev { background: transparent url('icon.arrow.53859f.lg.l.gif') no-repeat scroll 0pt 3px; padding-left: 10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+div.LinkBack a { background: transparent url('icon.arrow.53859f.lg.l.gif') no-repeat scroll 0pt 2px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; padding-left: 10px; font-weight: bold; text-decoration: none; }
+div.LinkTop { text-align: right; font-size: 70%; margin-right: 1em; margin-top: 10px; }
+.LinkHelp {  }
+.Invisible { display: none; }
+.Separator { margin: 10px 0pt; text-align: center; }
+.Exception {  }
+.Left { margin: 0pt 10px 10px 0pt; float: left; }
+.Right { margin: 0pt 0pt 10px 10px; float: right; }
+p.ImageAndCaption { font-size: 65% ! important; }
+p.ImageAndCaption img { display: block; margin-bottom: 4px; }
+.FeatureLeft { margin: 10px; float: left; }
+.FeatureLeft img { border: 1px solid rgb(51, 51, 51); }
+.FeatureLeft p.credit { font-size: 85% ! important; margin-top: 0pt ! important; }
+.FeatureLeft p.caption { font-size: 90% ! important; }
+.FeatureRight { margin: 10px; float: right; }
+.FeatureRight img { border: 1px solid rgb(51, 51, 51); }
+.FeatureRight p.credit { font-size: 85% ! important; margin-top: 0pt ! important; }
+.FeatureRight p.caption { font-size: 90% ! important; }
+#MainColumn .ReadFullText a { background: transparent url('readfulltext.gif') no-repeat scroll 2px 0px; font-size: 110%; font-weight: 700; padding-left: 20px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn .EdPromo { border: 1px solid rgb(204, 204, 204); padding: 5px; background: rgb(255, 255, 221) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 175px; margin-left: 5px; margin-right: 5px; margin-bottom: 15px; }
+#MainColumn .EdPromo h3 { color: rgb(102, 102, 102); }
+#MainColumn .EdPromo p { font-size: 70%; padding-bottom: 0pt; margin-bottom: 0pt; }
+#MainColumn .EdPromo img { border: 1px solid rgb(204, 204, 204); }
+#MainColumn .inline-feature { width: 320px; margin-left: 12px; }
+#MainColumn .inline-feature p.caption { color: rgb(102, 102, 102); }
+#MainColumn .inline-feature p.credit { font-size: 85% ! important; color: rgb(51, 51, 51); }
+.RelatedMaterial {  }
+.Even {  }
+.Odd {  }
+table.DataTable tr.Even td, table.DataTable tr.Even th {  }
+table.DataTable tr.Odd td, table.DataTable tr.Odd th { background: rgb(235, 239, 242) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn span.Highlight { color: rgb(204, 51, 51); font-weight: bold; }
+#MainColumn .drop { display: block; font-size: 200%; font-weight: 700; float: left; padding-right: 3px; }
+.ErrorMsg { border: 1px solid rgb(204, 51, 51); margin: 0.5em 0pt; padding: 8px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.ErrorMsg p { margin: 0pt; color: rgb(204, 51, 51); }
+.DEBUG { background: rgb(255, 204, 204) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.smallcap { text-transform: uppercase; font-size: 85%; display: inline ! important; }
+.NavGroup { margin-bottom: 16px; }
+.NavGroup h3 { padding: 2px; background: rgb(81, 130, 154) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); font-size: 75%; }
+.NavGroup h3 span { border: 1px solid rgb(138, 170, 186); padding: 2px 5px; display: block; }
+.NavGroup h3 span span { border: medium none ; padding: 0pt; display: inline; }
+.NavGroup .LinkList { background: rgb(255, 255, 255) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.NavGroup .LinkList li { border-bottom: 1px solid rgb(198, 215, 223); margin: 0pt; padding: 0pt; color: rgb(51, 51, 51); font-size: 75%; }
+.NavGroup .LinkList li a { padding: 2px 0pt 4px 12px; background: transparent url('icon.arrow.53859f.sm.gif') no-repeat scroll 3px 0.4em; color: rgb(46, 109, 143); display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.NavGroup .LinkList li.Active { color: rgb(51, 51, 51); }
+.NavGroup .LinkList li.Active a {  }
+.NavGroup .LinkList li.Active a { background-image: url('icon.arrow.333333.sm.gif'); color: rgb(51, 51, 51); }
+.NavGroup .LinkList li.Active span { padding: 2px 0pt 4px 12px; background: rgb(240, 240, 240) url('icon.arrow.666666.sm.gif') no-repeat scroll 3px 0.4em; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.NavGroup .LinkList li.Active span span { padding: 0pt; background: transparent none repeat scroll 0% 0%; display: inline; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.NavGroup .LinkList li.Expanded { padding: 0pt; background-image: none; }
+.NavGroup .LinkList li.Active.Expanded a { color: rgb(46, 109, 143); }
+.NavGroup .LinkList li.Expanded a {  }
+.NavGroup .LinkList li.Expanded a { background-image: url('icon.arrow.333333.sm.dn.gif'); }
+.NavGroup .LinkList li.Expanded span { background-image: url('icon.arrow.666666.sm.dn.gif'); background-position: 3px 0.5em; }
+.NavGroup .LinkList li.Expanded ul { border-top: 1px solid rgb(198, 215, 223); }
+.NavGroup .LinkList li.Expanded li a { background-image: url('icon.arrow.53859f.sm.gif'); color: rgb(46, 109, 143); }
+.NavGroup .Item .LinkList li.Active { background-color: rgb(255, 255, 255); font-weight: bold; }
+.NavGroup .Item .LinkList li.Active span { padding: 2px 0pt 4px 12px; background: rgb(255, 255, 255) url('icon.arrow.333333.sm.gif') no-repeat scroll 3px 0.36em; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.NavGroup .Item .LinkList li.Active span span { padding: 0pt; background: transparent none repeat scroll 0% 0%; display: inline; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html .NavGroup .LinkList li.Active { background-position: 3px 0.6em; }
+* html .NavGroup .LinkList li a { margin-top: 0pt; background-position: 5px 0.6em; padding-top: 0pt; padding-bottom: 0.3em; }
+* html .NavGroup .LinkList li.Active span { padding: 0pt 0pt 4px 12px; background-position: 5px 0.5em; }
+* html .NavGroup .LinkList li.Active span span { padding: 0pt; }
+* html .NavGroup .LinkList li .Icon { vertical-align: baseline; margin-top: 2px; }
+* html .NavGroup .LinkList li.Expanded a { background-position: 4px 0.5em; }
+* html .NavGroup .LinkList li.Expanded ul { border-top: medium none; }
+:first-child + html .NavGroup .LinkList li.Active { background-position: 3px 0.7em; }
+:first-child + html .NavGroup .LinkList li.Expanded a { background-position: 4px 0.7em; }
+:first-child + html .NavGroup .LinkList li.Active span { background-position: 5px 0.7em; }
+:first-child + html .NavGroup .LinkList li a { background-position: 5px 0.7em; }
+.NavGroup .LinkList .LinkList { margin: 0pt; padding: 0pt 0pt 0pt 12px; }
+.NavGroup .LinkList .LinkList li { border-top: 1px dotted rgb(83, 130, 156); border-bottom: medium none; font-size: 100%; background-color: rgb(255, 255, 255); }
+.NavGroup .LinkList .LinkList li.Active { background-color: rgb(240, 240, 240); }
+.NavGroup .LinkList .LinkList li a { background-image: url('icon.arrow.53859f.sm.gif'); }
+.NavGroup .LinkList .LinkList li.Active a { color: rgb(51, 51, 51); }
+.NavGroup .LinkList .LinkList li span { background-image: url('icon.arrow.333333.sm.gif'); }
+.NavGroup .LinkList .LinkList li:first-child { border-top: 0pt none; }
+* html .NavGroup .LinkList .LinkList { margin: 0pt; }
+* html .NavGroup .LinkList .LinkList li { font-size: 100%; height: 16px; }
+* html .NavGroup .LinkList .LinkList li.Active {  }
+* html .NavGroup .LinkList .LinkList li.Active span { padding-top: 3px; }
+* html .NavGroup .LinkList .LinkList li.Active span span { padding-top: 0pt; }
+* html .NavGroup .LinkList .LinkList li a { padding-top: 3px; }
+#navgroup_my-science ul.LinkList { margin-bottom: 0.4em; }
+#navgroup_my-science p { padding-left: 0.5em; font-size: 70%; }
+#navgroup_about-search p { padding: 5px 5px 0pt; font-size: 70%; color: rgb(102, 102, 102); }
+#navgroup_about-search p a { text-decoration: underline; }
+#navgroup_related-information li { border-bottom: medium none; }
+#navgroup_article-views.NavGroup .Exception { padding-top: 0pt; padding-bottom: 0pt; }
+#navgroup_related-content.NavGroup .Exception li a { background-image: url('icon.arrow.797979.sm.dn.gif'); }
+.Promo { margin-bottom: 12px; }
+.Promo h5 { font-size: 80%; font-weight: normal; color: rgb(102, 102, 102); margin-bottom: 0.5em; }
+.Promo .Item { border-style: none solid solid; border-color: -moz-use-text-color rgb(204, 204, 204) rgb(204, 204, 204); border-width: medium 1px 1px; padding: 3px; }
+.Promo .LinkList { margin-bottom: 0pt; }
+.Promo .LinkList li { background: transparent url('icon.arrow.53859f.sm.gif') no-repeat scroll 2px 0.2em; font-size: 70%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html .Promo .LinkList li { margin-top: 0pt; background-position: 2px 0.6em; padding-top: 0pt; padding-bottom: 0.3em; }
+:first-child + html .Promo .LinkList li { background-position: 2px 0.6em; }
+#journal_search #keyword { width: 127px; }
+#journal_search #search_type { width: 132px; }
+#journal_search .LinkList {  }
+* html #journal_search .LinkList li { margin-right: 2em; margin-bottom: 0pt; }
+#select_article, #search_type, #keyword { margin: 2px 0pt; }
+#select_issue { width: 150px; }
+#MainColumn #page-nav { font-size: 70%; color: rgb(153, 153, 153); font-weight: bold; margin-right: 4px; }
+#MainColumn #page-nav a { text-decoration: none; }
+#MainColumn #page-nav a:hover { text-decoration: underline; }
+#MainColumn .page-nav_next { background: transparent url('icon.arrow.999999.lg.r.gif') no-repeat scroll 100% 3px; padding-right: 10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn .page-nav_prev { background: transparent url('icon.arrow.999999.lg.l.gif') no-repeat scroll 0pt 3px; padding-left: 10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn a.page-nav_next { background-image: url('icon.arrow.53859f.lg.r.gif'); }
+#MainColumn a.page-nav_prev { background-image: url('icon.arrow.53859f.lg.l.gif'); }
+#MainColumn #article-info { font-size: 70%; margin-bottom: 0pt; }
+#MainColumn .article-tools { margin: 4px 0pt; font-size: 75%; color: rgb(102, 102, 102); text-align: right; font-weight: bold; }
+#MainColumn .article-tools .Button { margin-left: 4px; }
+#MainColumn dl.LinkList { margin-top: 12px; clear: left; }
+#MainColumn dl.LinkList dt { margin: 0pt; font-size: 75%; clear: both; }
+#MainColumn dl.LinkList dt a { font-weight: bold; text-decoration: none; }
+#MainColumn dl.LinkList dt a .Photo { border: 1px solid rgb(102, 102, 102); margin: 0pt 1em 1em 0pt; float: left; width: 70px; height: 50px; }
+#MainColumn dl.LinkList dd { margin: 0pt 0pt 1em; font-size: 70%; }
+#MainColumn dl.ArticleList { margin: 0pt 0pt 1.5em; padding: 0pt; clear: left; }
+#MainColumn dl.ArticleList dt { margin: 1em 0pt 0pt; padding: 0pt; font-size: 75%; font-weight: bold; color: rgb(51, 51, 51); }
+#MainColumn dl.ArticleList dt input { margin-right: 6px; }
+#MainColumn dl.Exception dt { text-indent: 0pt; color: rgb(102, 102, 102); }
+#MainColumn dl.ArticleList dt strong { font-weight: normal; text-transform: uppercase; font-size: 90%; margin-bottom: 0.3em; color: rgb(102, 102, 102); letter-spacing: 0.07em; }
+#MainColumn dl.ArticleList dd { margin: 0pt 0pt 1em; font-size: 75%; }
+#MainColumn dl.ArticleList dd a { font-weight: bold; white-space: nowrap; text-decoration: none; }
+#MainColumn dl.ArticleList dt a:hover { text-decoration: underline; }
+#MainColumn dl.ArticleList dd .RelatedMaterial { font-size: 90%; }
+#MainColumn dl.ArticleList dd .RelatedMaterial, #MainColumn dl.ArticleList dd .RelatedMaterial a { color: rgb(204, 51, 51) ! important; }
+#MainColumn dl.ArticleList dd .RelatedMaterial a { font-weight: normal; text-decoration: underline; }
+#MainColumn #RelatedLinks { border-top: 1px solid rgb(204, 204, 204); padding-top: 15px; }
+#MainColumn #RelatedLinks .LinkList { margin-top: 10px; }
+#MainColumn #CitingArticles { border-top: 1px solid rgb(204, 204, 204); padding-top: 15px; }
+#SearchBox, #journal_search { padding: 2px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 10px; }
+#SearchBox .BorderFix, #journal_search .BorderFix { border: 1px solid rgb(195, 195, 195); padding: 4px; }
+#SearchBox h3, #journal_search h3 { color: rgb(116, 116, 116); font-size: 75%; margin-bottom: 0.5em; }
+#SearchBox .LinkList, #journal_search .LinkList { margin: 0pt; }
+#SearchBox .LinkList li, #journal_search .LinkList li { font-size: 70%; padding-left: 0pt; margin-top: 0.5em; }
+#SearchBox .Inputs li, #journal_search .Inputs li { font-size: 90% ! important; margin-bottom: 0pt ! important; }
+#SearchBox label, #journal_search label { font-size: 70%; }
+#journal_search_volume_form { margin-bottom: 10px; }
+#journal_search_volume_form .FormTable th { padding-left: 0.5em; }
+#journal_search_volume_go { margin-left: 8px; }
+#SearchBox .TextInput { width: 125px; }
+#GlobalLoginBlock { font-family: 'Lucida Grande',arial,helvetica,sans-serif; color: rgb(51, 51, 51); }
+#GlobalLoginBlock a { color: rgb(83, 133, 159); }
+#GlobalLoginBlock, #GlobalLoginBlock td { font-size: 16px; }
+#GlobalLoginBlock h1, #GlobalLoginBlock h2, #GlobalLoginBlock h3, #GlobalLoginBlock h4, #GlobalLoginBlock h5, #GlobalLoginBlock h6 { margin: 0pt; padding: 0pt; }
+#GlobalLoginBlock h1 { font-size: 120%; }
+#GlobalLoginBlock h2 { font-size: 110%; }
+#GlobalLoginBlock h3 { font-size: 100%; }
+#GlobalLoginBlock h4 { font-size: 90%; }
+#GlobalLoginBlock h5 { font-size: 80%; }
+#GlobalLoginBlock h6 { font-size: 75%; }
+#GlobalLoginBlock p { margin-top: 0pt; font-size: 75%; }
+#GlobalLoginBlock form { margin: 0pt; padding: 0pt; }
+#GlobalLoginBlock .NoBullet { margin: 0pt 0pt 1em; padding: 0pt; }
+#GlobalLoginBlock .NoBullet li { list-style-type: none; background-image: none ! important; padding-left: 0pt; }
+#GlobalLoginBlock h2 { border: medium none ; padding: 0pt; color: rgb(51, 51, 51); text-transform: none; font-size: 110%; margin-bottom: 0.5em; }
+#GlobalLoginBlock #access-denied { margin-bottom: 25px; }
+#GlobalLoginBlock #access-denied h4 { font-size: 75%; color: rgb(102, 102, 102); }
+#GlobalLoginBlock #access-denied p.Link { margin-bottom: 0pt; }
+#GlobalLoginBlock #access-denied .LayoutTable { border-top: 1px solid rgb(217, 228, 233); }
+#GlobalLoginBlock #access-denied .LayoutTable td.LeftCell { border-right: 1px solid rgb(217, 228, 233); padding: 20px 10px 0pt 20px; }
+#GlobalLoginBlock #access-denied .LayoutTable td.RightCell { padding: 20px 0pt 0pt 20px; background: transparent url('bg.barrier.question.gif') no-repeat scroll 100% 6px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#GlobalLoginBlock #access-denied .LayoutTable td.RightCell h4 { text-transform: uppercase; margin-bottom: 10px; }
+#GlobalLoginBlock #access-denied .LayoutTable td.RightCell .LinkList { margin: 0pt; }
+#GlobalLoginBlock #access-denied .LayoutTable td.RightCell .LinkList li { font-size: 75%; list-style-type: circle; padding-left: 0pt; margin-left: 15px; }
+#GlobalLoginBlock #access-denied .LayoutTable td.RightCell .LinkList li a { text-decoration: underline; }
+#GlobalLoginBlock #access-denied h2 span.Message { display: block; position: relative; float: none; margin-left: 0pt; margin-top: 5px; margin-bottom: 5px; text-transform: none; font-weight: 400; color: rgb(51, 51, 51); font-size: 75%; }
+#GlobalLoginBlock #access-denied h2 span.Message a { text-decoration: underline; }
+#GlobalLoginBlock #get-access #sign-in fieldset { border-top: 0pt none; }
+#GlobalLoginBlock #get-access { margin-bottom: 25px; }
+#GlobalLoginBlock #get-access .LayoutTable {  }
+#GlobalLoginBlock #get-access .LayoutTable td h4 { border-bottom: 1px solid rgb(208, 216, 226); padding: 6px 15px; background: rgb(78, 131, 162) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); font-size: 75%; }
+#GlobalLoginBlock #get-access .LayoutTable td .Item { padding: 10px 15px; }
+#GlobalLoginBlock #get-access #sign-in { border: 1px solid rgb(208, 216, 226); background-color: rgb(235, 236, 238); }
+#GlobalLoginBlock #get-access #sign-in .NoBullet { margin-left: 0pt; }
+#GlobalLoginBlock #get-access #sign-in .NoBullet li { font-size: 75%; margin-left: 20px; margin-bottom: 0.5em; }
+#GlobalLoginBlock #get-access #sign-in .NoBullet li a { text-decoration: underline; }
+#GlobalLoginBlock #get-access .LayoutTable td#sign-in h4 { background-color: rgb(235, 236, 238); color: rgb(102, 102, 102); }
+#GlobalLoginBlock #get-access #sign-in fieldset { margin-right: 10%; }
+#GlobalLoginBlock #get-access #sign-in .FormTable { margin-bottom: 15px; width: 100%; }
+#GlobalLoginBlock #get-access #sign-in .FormTable th label { white-space: nowrap; }
+#GlobalLoginBlock #get-access #sign-in .FormTable .TextInput { width: 100%; }
+#GlobalLoginBlock #get-access #sign-in p { text-indent: -20px; padding-left: 20px; }
+#GlobalLoginBlock #get-access #activate { border-style: solid solid solid none; border-color: rgb(208, 216, 226) rgb(208, 216, 226) rgb(208, 216, 226) -moz-use-text-color; border-width: 1px 1px 1px medium; background-color: rgb(227, 227, 202); }
+#GlobalLoginBlock #get-access #subscribe { border-style: solid solid solid none; border-color: rgb(208, 216, 226) rgb(208, 216, 226) rgb(208, 216, 226) -moz-use-text-color; border-width: 1px 1px 1px medium; background-color: rgb(245, 245, 235); }
+#GlobalLoginBlock #get-access #site-pass, #GlobalLoginBlock #get-access #register, #GlobalLoginBlock #get-access #pay-per-article { border-style: solid solid solid none; border-color: rgb(208, 216, 226) rgb(208, 216, 226) rgb(208, 216, 226) -moz-use-text-color; border-width: 1px 1px 1px medium; background-color: rgb(253, 253, 245); }
+#GlobalLoginBlock #why-no-access { margin-bottom: 25px; }
+#GlobalLoginBlock #why-no-access h2 { border-bottom: 1px solid rgb(217, 228, 233); padding-bottom: 0.5em; }
+#AlertsLoginBlock { margin: 0pt auto 60px; width: 600px; }
+#AlertsLoginBlock h2 { border-bottom: 1px solid rgb(229, 229, 229); padding: 0px 0px 3px 30px; background: transparent url('icon.alert.envelope.gif') no-repeat scroll 0px 2px; color: rgb(102, 102, 102); text-transform: uppercase; font-size: 100%; margin-bottom: 0.5em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#AlertsLoginBlock .LayoutTable td.LeftCell { padding-right: 15px; }
+#AlertsLoginBlock .LayoutTable td h3 { border-bottom: 1px solid rgb(229, 229, 229); color: rgb(102, 102, 102); font-size: 75%; margin-bottom: 0.5em; padding-bottom: 0.3em; text-transform: none; margin-top: 0pt; }
+#AlertsLoginBlock .LayoutTable td form { border-style: solid; border-color: rgb(204, 204, 204); border-width: 1px 2px 2px 1px; padding: 10px 15px; background-color: rgb(238, 238, 238); height: 80px; }
+#AlertsLoginBlock .LayoutTable .FormTable { width: 100%; }
+#AlertsLoginBlock .LayoutTable .FormTable td { padding-right: 0pt; }
+#AlertsLoginBlock .LayoutTable .FormTable th { font-size: 100%; }
+#AlertsLoginBlock .LayoutTable label { font-size: 70% ! important; }
+#AlertsLoginBlock .LayoutTable .RightCell label { padding: 8px 0pt; }
+#AlertsLoginBlock .LayoutTable .RightCell .TextInput { margin-top: 8px; }
+#AlertsLoginBlock .LayoutTable td .TextInput { width: 100%; }
+#AlertsLoginBlock .LayoutTable td .NoBullet { border-top: 1px solid rgb(229, 229, 229); padding-top: 0.5em; margin-top: 1em; }
+#AlertsLoginBlock .LayoutTable .FormAction { margin-top: 5px; }
+* html #AlertsLoginBlock { margin: 0pt 0pt 60px 90px; text-align: center; }
+* html #AlertsLoginBlock * { text-align: left; }
+* html #AlertsLoginBlock .LayoutTable .FormAction { text-align: right; }
+* html #AlertsLoginBlock .LayoutTable { margin: 0pt ! important; }
+* html #AlertsLoginBlock .LayoutTable td form { height: 85px; }
+* html #AlertsLoginBlock .LayoutTable td.RightCell form { width: 260px; }
+#GoogleAdsense { background: rgb(255, 255, 255) none repeat-x scroll left bottom; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: center; color: rgb(255, 255, 255); position: relative; }
+#AdsenseFix { text-align: center; }
+#GoogleAdsense { border: 1px solid rgb(204, 204, 204); margin: 20px auto; padding: 10px; width: 748px; }
+#GoogleAdsense p.adlabel { background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding-left: 5px; padding-right: 5px; color: rgb(204, 204, 204); position: absolute; left: 20px; top: -10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.Callout { border: 1px solid rgb(204, 204, 204); padding: 10px; background: rgb(255, 255, 221) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-top: 25px; min-width: 520px; }
+.Callout h3 { margin: 0pt 0pt 1em ! important; font-size: 1.2em; color: rgb(64, 107, 129) ! important; }
+.Processing { padding: 0pt 0pt 0pt 30px; background: transparent url('busy.gif') no-repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; line-height: 20px; color: rgb(102, 102, 102); font-size: 0.8em; }
+
+/* ::::: http://www.sciencemag.org/styles.common.template.css ::::: */
+
+body { margin: 0pt; padding: 0pt; font-family: 'Lucida Grande',arial,helvetica,sans-serif; color: rgb(51, 51, 51); }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { display: none; }
+#MainColumn hr { display: block; visibility: hidden; }
+.SectionMarker, #BrowserWarning, #AccessibilityLinks { display: none; }
+.SectionMarker, #AccessibilityLinks { display: block; position: absolute; left: -1000px; width: 400px; }
+#Ad728x90 { margin: 7px 0pt 0pt 16px; }
+#Ad728x90 img { border: medium none ; }
+#PageWrapper { margin-bottom: 10px; }
+#LayoutWrapper { padding: 7px 0pt 0pt; background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 1014px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-top: 7px; }
+body.Popup #PageWrapper > #LayoutWrapper { max-width: 100%; min-width: 0pt; }
+#HeaderWrapper { margin: 0pt 7px; position: relative; min-height: 86px; }
+* html #HeaderWrapper { height: 86px; }
+#SiteLogo { position: absolute; width: 113px; height: 60px; top: 0pt; left: 0pt; }
+#SiteToolsNav { height: 19px; margin-left: 113px; }
+#SiteToolsNav li { height: 12px; padding-left: 15px; padding-top: 7px; }
+#SiteToolsNav #site-tools_aaas { width: 23px; }
+#SiteToolsNav #site-tools_feedback { width: 46px; }
+#SiteToolsNav #site-tools_subscribe { width: 48px; }
+#GlobalSearch { position: absolute; top: 0pt; right: 0pt; width: 400px; line-height: 0pt; }
+#GlobalSearch { width: auto; }
+#GlobalSearch img { float: left; width: 42px; margin-top: 6px; margin-right: 4px; }
+#GlobalSearch form { text-align: right; }
+#GlobalSearch select { font-size: 9px; line-height: 11px; width: 120px; }
+#GlobalSearch #search_terms { border: 1px solid rgb(102, 102, 102); margin: 0pt; padding: 0pt; font-size: 9px; }
+#GlobalSearch a { font-size: 65%; text-decoration: underline; }
+* html #GlobalSearch { right: 0pt; }
+* html #GlobalSearch img { font-size: 0pt; }
+* html #GlobalSearch select { margin-top: 0pt; }
+* html #GlobalSearch a { vertical-align: middle; }
+#GlobalSearch #search_terms { width: 90px; }
+#GlobalSearch #search_terms { width: 100px; }
+#HeaderWrapper #StatusBar { background: transparent url('bg.status-bar.19.gif') repeat-x scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 18px; margin-left: 113px; }
+#HeaderWrapper #StatusBar p { color: rgb(221, 231, 236); font-size: 70%; padding-top: 2px; text-align: right; padding-right: 1em; margin-bottom: 0pt; }
+#HeaderWrapper #StatusBar a { color: rgb(221, 231, 236); }
+#HeaderWrapper #StatusBar a.Active { font-weight: bold; }
+#SiteNavBar { background: transparent url('bg.nav.gif') repeat-x scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 23px; margin-left: 113px; }
+#SiteNavBar ul { height: 23px; width: 458px; float: left; }
+#SiteNavBar ul li { height: 23px; display: block; }
+#SiteNavBar ul li.Active { background: transparent url('bg.nav.1.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#SiteNavBar ul li a { display: block; }
+#SiteNavBar #nav_magazine { width: 82px; }
+#SiteNavBar #nav_news { width: 57px; }
+#SiteNavBar #nav_stke { width: 77px; }
+#SiteNavBar #nav_sage { width: 80px; }
+#SiteNavBar #nav_careers { width: 72px; }
+#SiteNavBar #nav_multimedia { width: 85px; }
+#SiteNavBar #nav_collections { width: 85px; }
+#SiteNavBar #site_help_form { float: left; height: 23px; }
+#SiteNavBar #site_help_form label img { vertical-align: top; }
+#SiteNavBar #site_help_form select { font-size: 10px; width: 79px; }
+#Breadcrumb { padding: 0.65em 0pt 1.5em; color: rgb(82, 129, 155); font-size: 70%; clear: both; }
+#Breadcrumb a { color: rgb(82, 129, 155); text-decoration: underline; }
+#BodyWrapper { margin: 0pt 7px; }
+#BodyWrapper #NavColumn { width: 147px; margin-right: 10px; margin-bottom: 20px; }
+#BodyWrapper #MainColumn { padding-bottom: 20px; }
+#BodyWrapper #SideColumn { width: 162px; margin-left: 5px; margin-bottom: 10px; }
+#MainColumnCell { width: 100%; }
+* html #BodyWrapper .LayoutTable { width: auto; }
+* html #BodyWrapper #MainColumn .LayoutTable { width: 100%; }
+#SideColumn #Promo160x120 { margin-bottom: 5px; }
+#SideColumn #Ad160x600 { margin-bottom: 10px; }
+#SideColumn #Ad160x600 img { border: medium none ; display: block; }
+#SideColumn #Ad160x600 img.TowerAd { border: 1px solid rgb(102, 102, 102); }
+#SideColumn p.AdInfo { font-size: 65%; text-align: center; margin-bottom: 20px; }
+#SideColumn p.AdInfo a { color: rgb(102, 102, 102); text-decoration: underline; }
+#SideColumn .SponsoredLinks { border: 1px solid rgb(204, 204, 204); padding: 8px; }
+#SideColumn .SponsoredLinks h6 { font-size: 70%; text-transform: uppercase; font-weight: normal; color: rgb(153, 153, 153); margin-bottom: 1em; }
+#SideColumn .SponsoredLinks dl.LinkList { color: rgb(153, 153, 153); }
+#SideColumn .SponsoredLinks dl.LinkList dt { font-size: 75%; font-weight: bold; }
+#SideColumn .SponsoredLinks dl.LinkList dd { margin: 0pt 0pt 1em; font-size: 70%; }
+#SideColumn .SponsoredLinks dl.LinkList dd a { color: rgb(83, 130, 156); text-decoration: underline; }
+#SideColumn .SponsoredLinks ul.LinkList li { font-size: 65%; text-align: center; padding-left: 0pt; margin-bottom: 10px; }
+#SideColumn .SponsoredLinks ul.LinkList li a { color: rgb(153, 153, 153); text-decoration: underline; }
+#SideColumn .SponsoredLinks ul.LinkList li a img { margin: 2px auto; display: block; }
+#SideColumn .FeaturedJobs { border: 1px solid rgb(204, 204, 204); margin: -0.5em 0pt; background: rgb(238, 238, 238) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#SideColumn .FeaturedJobs h6 { margin: 5px 8px; color: rgb(153, 153, 153); text-transform: uppercase; }
+#SideColumn .FeaturedJobs dl { margin: 5px 8px; }
+#SideColumn .FeaturedJobs dt { font-weight: bold; font-size: 70%; }
+#SideColumn .FeaturedJobs dd { margin: 0pt 0pt 1em; font-size: 70%; }
+#SideColumn .FeaturedJobs td { margin: 0.5em 0.5em 1em; font-size: 70%; }
+#SideColumn .FeaturedJobs .ContentArea a { color: rgb(83, 133, 159); }
+#FooterWrapper { margin: 0pt 7px 0pt 0pt; padding: 10px 0pt; background: rgb(173, 0, 22) url('bg.footer.gif') repeat-x scroll left bottom; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); position: relative; }
+#FooterWrapper p { margin: 0pt 0pt 0.5em 210px; font-size: 70%; }
+#FooterWrapper a { color: rgb(255, 255, 255); text-decoration: none; }
+#FooterWrapper a:hover { text-decoration: underline; }
+#FooterWrapper #copyright { margin-bottom: 0pt; }
+#FooterWrapper #copyright, #FooterWrapper #copyright a { color: rgb(233, 127, 130); }
+#FooterWrapper #copyright a { text-decoration: underline; }
+#FooterWrapper #logo_aaas { position: absolute; left: 127px; top: 12px; }
+#FooterWrapper #logo_hwp { position: absolute; left: 65px; top: 34px; }
+#LegacyContent, .LegacyContent { margin-top: 12px; }
+#LegacyContent nobr { white-space: normal; }
+#LegacyContent nobr strong, #LegacyContent strong nobr { white-space: nowrap; }
+#PageWrapper #BodyWrapper #LegacyContent, #PageWrapper #BodyWrapper .LegacyContent, #PageWrapper #BodyWrapper #LegacyContent p, #PageWrapper #BodyWrapper .LegacyContent p, #PageWrapper #BodyWrapper #LegacyContent ul, #PageWrapper #BodyWrapper .LegacyContent ul, #PageWrapper #BodyWrapper #LegacyContent ol, #PageWrapper #BodyWrapper .LegacyContent ol, #PageWrapper #BodyWrapper #LegacyContent li, #PageWrapper #BodyWrapper .LegacyContent li, #PageWrapper #BodyWrapper #LegacyContent dl, #PageWrapper #BodyWrapper .LegacyContent dl, #PageWrapper #BodyWrapper #LegacyContent dd, #PageWrapper #BodyWrapper .LegacyContent dd, #PageWrapper #BodyWrapper #LegacyContent dt, #PageWrapper #BodyWrapper .LegacyContent dt, #PageWrapper #BodyWrapper #LegacyContent font, #PageWrapper #BodyWrapper .LegacyContent font, #PageWrapper #BodyWrapper #LegacyContent td, #PageWrapper #BodyWrapper .LegacyContent td { font-size: small; }
+#PageWrapper #BodyWrapper #LegacyContent h2, #PageWrapper #BodyWrapper .LegacyContent h2 { font-size: medium; color: rgb(51, 51, 51); text-transform: none; margin-top: 2px; }
+#PageWrapper #BodyWrapper #LegacyContent h3, #PageWrapper #BodyWrapper .LegacyContent h3 { font-size: small; color: rgb(102, 102, 102); text-transform: uppercase; }
+#PageWrapper #BodyWrapper #LegacyContent h4, #PageWrapper #BodyWrapper .LegacyContent h4 { font-size: small; text-align: left; }
+#PageWrapper #BodyWrapper #LegacyContent h5, #PageWrapper #BodyWrapper .LegacyContent h5 { font-size: small; text-align: left; color: rgb(51, 51, 51); }
+* html #PageWrapper #BodyWrapper #LegacyContent, * html #PageWrapper #BodyWrapper .LegacyContent, * html #PageWrapper #BodyWrapper #LegacyContent p, * html #PageWrapper #BodyWrapper .LegacyContent p, * html #PageWrapper #BodyWrapper #LegacyContent ul, * html #PageWrapper #BodyWrapper .LegacyContent ul, * html #PageWrapper #BodyWrapper #LegacyContent ol, * html #PageWrapper #BodyWrapper .LegacyContent ol, * html #PageWrapper #BodyWrapper #LegacyContent li, * html #PageWrapper #BodyWrapper .LegacyContent li, * html #PageWrapper #BodyWrapper #LegacyContent dl, * html #PageWrapper #BodyWrapper .LegacyContent dl, * html #PageWrapper #BodyWrapper #LegacyContent dd, * html #PageWrapper #BodyWrapper .LegacyContent dd, * html #PageWrapper #BodyWrapper #LegacyContent dt, * html #PageWrapper #BodyWrapper .LegacyContent dt, * html #PageWrapper #BodyWrapper #LegacyContent font, * html #PageWrapper #BodyWrapper .LegacyContent font, * html #PageWrapper #BodyWrapper #LegacyContent td, * html #PageWrapper #BodyWrapper .LegacyContent td { font-size: x-small; }
+#PageWrapper #BodyWrapper #LegacyContent h4, #PageWrapper #BodyWrapper .LegacyContent h4 { font-size: x-small; }
+#PageWrapper #BodyWrapper #LegacyContent center h4, #PageWrapper #BodyWrapper #LegacyContent center h4 b font[size="-1"] { font-size: small; }
+#PageWrapper #BodyWrapper #LegacyContent p, #PageWrapper #BodyWrapper .LegacyContent p { margin: 1em 0pt; }
+#PageWrapper #BodyWrapper #LegacyContent hr, #PageWrapper #BodyWrapper .LegacyContent hr { border-style: solid none none; border-color: rgb(204, 204, 204) -moz-use-text-color -moz-use-text-color; border-width: 1px medium medium; display: block; visibility: visible; width: 100%; height: 1px; margin-bottom: 16px; }
+#PageWrapper #BodyWrapper #LegacyContent center table, #PageWrapper #BodyWrapper .LegacyContent center table { margin-bottom: 12px; }
+@media print {
+  body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+  #Ad728x90 { margin-left: 0pt; }
+  #Ad728x90 img { width: 600px; height: 74px; }
+  #HeaderWrapper { margin: 10px 0pt 0pt; }
+  #SiteToolsNav { visibility: hidden; height: 37px; }
+  #site_help_form, #StatusBar, #page-nav, #GlobalSearch { display: none; }
+  #SiteNavBar ul { width: 462px; }
+  #PageWrapper #LayoutWrapper { margin: 0pt; padding: 0pt; width: auto; min-width: 600px; }
+  * html #PageWrapper #LayoutWrapper { width: 100% ! important; }
+  #BodyWrapper { margin: 0pt; color: rgb(0, 0, 0); }
+  #BodyWrapper #MainColumn { margin: 0pt; padding: 0pt; }
+  #BodyWrapper #NavColumnCell { display: none; }
+  #FooterWrapper { clear: both; position: static; }
+  #FooterWrapper p { margin-left: 10px; }
+  #FooterWrapper #logo_hwp, #FooterWrapper #logo_aaas { display: none; }
+}
+#ISSNLine { margin-right: 7px; }
+#ISSNLine p { margin: 0pt; padding: 3px 0pt 3px 210px; font-size: 70%; }
+
+/* ::::: http://www.sciencemag.org/styles.magazine.css ::::: */
+
+#SubNavBar { background: rgb(173, 20, 22) url('bg.subnav.gif') repeat-x scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 30px; clear: left; }
+#SubNavBar ul { height: 30px; margin-left: 113px; margin-top: 0pt; }
+#SubNavBar ul li { border: medium none ; margin: 7px 12px 0pt 0pt; padding: 1px 4px 0pt 10px; background: transparent url('icon.arrow.ffffff.sm.gif') no-repeat scroll 3px 3px; font-size: 70%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#SubNavBar ul li a { color: rgb(255, 255, 255); }
+#SubNavBar ul li.Active { border: 1px dotted rgb(255, 255, 255); padding: 0pt 4px 2px 10px; }
+#SubNavBar ul li.Active a:hover { text-decoration: none; }
+* html #SubNavBar ul li.Active { border: 1px solid rgb(255, 255, 255); }
+#MainColumn h1 { margin-bottom: 2px; margin-left: 4px; }
+#MainColumn #table-of-contents { padding: 2px; background: rgb(235, 236, 237) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 12px; }
+#MainColumn #table-of-contents .BorderFix { border: 1px solid rgb(208, 219, 225); position: relative; }
+#MainColumn #table-of-contents #cover-wrapper { position: absolute; top: 10px; left: 10px; width: 108px; text-align: center; }
+#MainColumn #table-of-contents #cover-wrapper img { display: block; margin-bottom: 4px; }
+#MainColumn #table-of-contents #cover-wrapper span { background: transparent url('icon.arrow.e53f40.sm.gif') no-repeat scroll 2px 0.2em; font-size: 70%; font-weight: bold; padding-left: 10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn #table-of-contents #cover-wrapper span span { background: transparent none repeat scroll 0% 0%; font-size: 100%; padding-left: 0pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn #table-of-contents #cover-wrapper span:hover { text-decoration: underline; }
+#MainColumn #table-of-contents .LayoutTable { width: 100%; }
+#MainColumn #table-of-contents .LinkList { margin: 0pt 0pt 0.2em; }
+#MainColumn #table-of-contents .LinkList li { background: transparent url('icon.arrow.797979.sm.dn.gif') no-repeat scroll 0pt 0.3em; margin-bottom: 0.2em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn #table-of-contents a { text-decoration: none; }
+#MainColumn #table-of-contents .Item { margin: 10px 0pt 10px 150px; height: 160px; }
+#MainColumn #table-of-contents .Item p { text-transform: uppercase; font-size: 75%; }
+#MainColumn #table-of-contents .LayoutTable { margin-top: 10px; }
+#MainColumn #table-of-contents .HorizList { border-top: 1px solid rgb(208, 219, 225); margin-left: 6px; margin-top: 10px; padding-top: 10px; height: 1em; }
+#MainColumn #table-of-contents .HorizList li { margin: 0.2em 0.5em; background: transparent url('icon.arrow.e53f40.sm.gif') no-repeat scroll 2px 0.2em; font-size: 70%; font-weight: bold; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html #MainColumn #table-of-contents .Item { height: 160px; }
+* html #MainColumn #table-of-contents #cover-wrapper img { margin-bottom: 0pt; }
+* html #MainColumn #table-of-contents .HorizList { padding-top: 10px; margin-left: 2px; }
+* html #MainColumn #table-of-contents .LinkList li { margin-bottom: 0pt; background-position: 0pt 0.5em; }
+* html #MainColumn #table-of-contents .HorizList li { background-position: 2px 0.2em; }
+@media all {
+  #MainColumn #table-of-contents .Item { height: auto; min-height: 160px; }
+}
+#MainColumn #table-of-contents #PrintOnly { margin-top: 10px; }
+#MainColumn #table-of-contents #PrintOnly p { text-transform: none ! important; font-size: 75% ! important; margin-top: 10px; margin-bottom: 0pt; }
+#MainColumn #table-of-contents #PrintOnlyHead { background: transparent url('blueplus.gif') no-repeat scroll 0pt 0.4em; font-weight: 700; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn #table-of-contents #PrintOnlyHead #PrintOnlyHeadLink { background: transparent none repeat scroll 0% 0%; padding-left: 10px; margin-left: -10px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn #table-of-contents #PrintOnlyItems { font-weight: 400; display: none; width: 100%; }
+#MainColumn #table-of-contents #PrintOnlyItems .LinkList li { background: transparent url('icon.arrow.e53f40.sm.gif') no-repeat scroll 0pt 0.3em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+* html #MainColumn #table-of-contents #PrintOnlyHead { background-position: 0pt 0.6em; }
+#magazine_links {  }
+#magazine_links a { font-size: 70%; font-weight: bold; }
+#magazine_links img { margin: 5px 0pt 12px; }
+#issue-highlights ul { margin: 0pt 0pt 1em; }
+#issue-highlights li { background: transparent url('icon.arrow.e53f40.sm.gif') no-repeat scroll 2px 0.3em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 0.5em; }
+#issue-highlights li a { text-decoration: none; }
+#feature_science-products { background: transparent url('pic.science-products.165x105.jpg') no-repeat scroll 10px 60px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#feature_science-products ul.LinkList { padding-left: 150px; }
+#feature_science-careers {  }
+#feature_science-careers .Item { padding: 0pt 10px 10px; }
+#feature_science-careers h5 { font-weight: bold; padding-top: 1em; }
+.MagazineHome {  }
+.MagazineHome #MainColumn p { color: rgb(102, 102, 102); }
+.MagazineHome #MainColumn h2 { border: medium none ; margin: 0pt; padding-bottom: 0pt; }
+.MagazineHome #MainColumn h3 { border: medium none ; padding-top: 0pt; margin-top: 0pt; text-transform: none; }
+.MagazineHome #MainColumn dl { margin-top: 0.75em; }
+.MagazineHome #MainColumn .Area { border-top: 1px solid rgb(229, 229, 229); padding: 12px 0pt 12px 12px; clear: both; }
+.MagazineHome #MainColumn .Exception { border-top: medium none; padding-top: 0pt; }
+.MagazineHome #MainColumn .Area h3 { padding: 0pt; color: rgb(102, 102, 102); font-size: 75%; margin-bottom: 0.3em; }
+.MagazineHome #MainColumn .Area h3 span { font-weight: normal; }
+.MagazineHome #MainColumn .Area ul.LinkList { margin: 1em 0pt 0.75em 1.5em; clear: left; }
+.MagazineHome #MainColumn .Area ul.LinkList li { background: transparent url('icon.arrow.e53f40.sm.gif') no-repeat scroll 2px 0.2em; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 0.75em; }
+.MagazineHome #MainColumn .Area ul.LinkList li a { text-decoration: none; }
+* html #PageWrapper .MagazineHome #MainColumn .Area ul.LinkList li { background-position: 2px 0.4em; }
+:first-child + html #PageWrapper .MagazineHome #MainColumn .Area ul.LinkList li { background-position: 2px 0.4em; }
+* html #PageWrapper .MagazineHome #NavColumn #journal_search .LinkList li { margin-top: 0pt; margin-bottom: 0pt; }
+.MagazineTOC {  }
+#PageWrapper .MagazineTOC #MainColumn { padding-left: 7px; }
+.MagazineTOC #MainColumn h2 { margin: 5px 0pt; padding: 2px; background: rgb(83, 130, 156) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); font-size: 75%; }
+.MagazineTOC #MainColumn h2 span { border: 1px solid rgb(187, 187, 187); padding: 2px 5px; display: block; }
+.MagazineTOC #MainColumn h2 span span { border: medium none ; padding: 0pt; display: inline; }
+.MagazineTOC #MainColumn h3 { font-size: 95%; }
+.MagazineTOC #MainColumn h4 { font-size: 75%; color: rgb(102, 102, 102); margin-bottom: 0.5em; }
+.MagazineTOC #MainColumn dl.ArticleList dt { padding: 0pt 0pt 0pt 26px; text-indent: -26px; }
+.MagazineTOC #MainColumn dl.Exception dt { text-indent: 0pt; color: rgb(102, 102, 102); }
+.MagazineTOC #MainColumn dl.ArticleList dd { margin: 0pt 0pt 30px 26px; color: rgb(51, 51, 51); }
+.MagazineTOC #MainColumn dl.ArticleList dd span { color: rgb(0, 0, 0); font-weight: normal; }
+.MagazineTOC #MainColumn dl.ArticleList dd span.teaser { padding: 5px 10px; display: block; margin-bottom: 0pt; font-size: 110%; }
+.MagazineTOC #MainColumn dl.ArticleList dd span.teaser a { font-weight: 400; text-decoration: underline; }
+.MagazineTOC #MainColumn dl.ArticleList dd span.teaser a.summary { color: rgb(102, 102, 102); text-decoration: none ! important; }
+.MagazineTOC #MainColumn dl.ArticleList dt span.overline { color: rgb(102, 102, 102); margin-bottom: 0pt; text-transform: uppercase; font-size: 90%; }
+.MagazineTOC #journal_search_keyword_form { width: 150px; margin-left: 10px; }
+.MagazineTOC #journal_search_keyword_form #keyword { width: 144px; }
+.MagazineTOC #journal_search_keyword_form #search_type { width: 150px; }
+.MagazineTOC #page-nav { position: absolute; top: 3px; right: 0pt; }
+.MagazineTOC #table-of-contents .HorizList li { width: 110px; }
+.MagazineTOC #table-of-contents .HorizList li { width: auto; }
+.MagazineTOC #special_issue_wrapper { border: 1px solid rgb(255, 204, 127); padding: 12px; background: rgb(255, 255, 229) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineTOC #special_issue_wrapper h3, .MagazineTOC #special_issue_wrapper h4 { border: medium none ; margin: 0pt; padding: 0pt; color: rgb(255, 153, 0); text-transform: none; }
+.MagazineTOC #issue_contents_wrapper { border-bottom: 5px solid rgb(232, 232, 232); padding-left: 12px; }
+.MagazineTOC #issue_contents_wrapper h4 { color: rgb(204, 0, 0); }
+.MagazineTOC #opms_wrapper { border: 1px solid rgb(204, 204, 204); margin: 20px 20px 20px -10px; padding: 10px; }
+.MagazineTOC #gonzo_wrapper { border: 1px solid rgb(204, 204, 204); margin: 20px 20px 20px -10px; padding: 10px; background: rgb(255, 255, 221) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineTOC #gonzo_wrapper img.Sample { float: right; height: 90px; }
+.MagazineArticleAbstract {  }
+.MagazineArticleAbstract #page-nav { text-align: right; white-space: nowrap; }
+.MagazineArticleAbstract .NavGroup .Item { border-bottom: 1px solid rgb(198, 215, 223); padding: 0.5em 0pt; }
+.MagazineArticleAbstract .NavGroup div.Exception { border-bottom: medium none; }
+.MagazineArticleAbstract #NavColumn .NavGroup .Item h4, .MagazineArticleAbstract #NavColumn .NavGroup .Item p { font-size: 75%; color: rgb(102, 102, 102); padding-left: 5px; }
+.MagazineArticleAbstract .NavGroup .Item p { font-size: 65%; margin-bottom: 0pt; }
+.MagazineArticleAbstract .NavGroup .Item ul { margin-bottom: 0pt; }
+.MagazineArticleAbstract .NavGroup .Item li { border-bottom: medium none; }
+.MagazineArticleAbstract .NavGroup .Item h5 { font-size: 70%; font-weight: normal; color: rgb(153, 153, 153); margin-bottom: 0.5em; padding-left: 5px; }
+.MagazineArticleAbstract .NavGroup .Item li.Exception a { color: rgb(229, 63, 64); background-image: url('icon.arrow.e53f40.sm.gif'); background-position: 3px 0.3em; }
+* html .MagazineArticleAbstract .NavGroup .Item li { font-size: 0pt; }
+* html .MagazineArticleAbstract .NavGroup .Item li * { font-size: 12px; }
+* html .MagazineArticleAbstract .NavGroup .Item li.Active span, * html .MagazineArticleAbstract .NavGroup .Item li.Exception a { background-position: 5px 0.5em; }
+.MagazineArticleAbstract #MainColumn { color: rgb(51, 51, 51); }
+.MagazineArticleAbstract #MainColumn a { text-decoration: underline; }
+.MagazineArticleAbstract #MainColumn h2 { border: medium none ; margin: 1.5em 0pt 0.3em; padding: 0pt; color: rgb(102, 102, 102); font-size: 75%; text-transform: uppercase; }
+.MagazineArticleAbstract #MainColumn h3 { border: medium none ; margin: 0pt; padding: 0pt; color: rgb(51, 51, 51); font-size: 85%; text-transform: none; }
+.MagazineArticleAbstract #MainColumn h4 { border-top: 1px solid rgb(204, 204, 204); font-size: 75%; color: rgb(102, 102, 102); margin-bottom: 0.75em; padding-top: 1em; margin-top: 1.5em; }
+.MagazineArticleAbstract #MainColumn h4 span { font-weight: normal; text-transform: uppercase; }
+.MagazineArticleAbstract #MainColumn h5 { font-size: 75%; color: rgb(204, 0, 0); margin-top: 1.5em; }
+.MagazineArticleAbstract #MainColumn .ContentSection { border-top: 1px solid rgb(204, 204, 204); }
+.MagazineArticleAbstract #MainColumn ol { padding: 0pt; font-weight: bold; margin-top: 0pt; margin-left: 0pt; }
+.MagazineArticleAbstract #MainColumn ol li { font-weight: normal; margin-left: 25px; padding-left: 0pt; margin-bottom: 0.3em; }
+.MagazineArticleAbstract #MainColumn ol li a { text-decoration: none; white-space: nowrap; font-weight: bold; }
+* html .MagazineArticleAbstract #MainColumn ol { margin-left: 0.3em; }
+.MagazineArticleAbstract #MainColumn .References ul { margin: 0pt; padding: 0pt; list-style-type: none; }
+.MagazineArticleAbstract #MainColumn .References ul li { padding-left: 2em; text-indent: -2em; }
+.MagazineArticleAbstract #MainColumn .References ul li a { text-decoration: none; white-space: nowrap; }
+.MagazineArticleAbstract #MainColumn dt { color: rgb(51, 51, 51); }
+.MagazineArticleAbstract #MainColumn .LayoutTable p {  }
+.MagazineArticleAbstract #MainColumn .Item { border-top: 1px solid rgb(204, 204, 204); margin-top: 15px; padding-top: 15px; }
+.MagazineArticleAbstract #MainColumn .Item { border-bottom: 1px solid rgb(204, 204, 204); margin-bottom: 15px; padding-bottom: 15px; }
+.MagazineArticleAbstract #MainColumn .Exception { border-top: medium none; padding-top: 0pt; }
+.MagazineArticleAbstract #MainColumn .Item td h5 { margin-top: 0pt; color: rgb(51, 51, 51); text-transform: none; }
+.MagazineArticleAbstract #MainColumn .Item td .Figure { margin-right: 15px; }
+.MagazineArticleAbstract #MainColumn .Item td .Figure img { border: 1px solid rgb(51, 51, 51); margin-bottom: 5px; }
+.MagazineArticleAbstract #MainColumn .Item td .Figure p { white-space: nowrap; color: rgb(83, 130, 156); text-align: center; font-size: 70%; margin-bottom: 0pt; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section { border-bottom: 1px solid rgb(204, 204, 204); margin-bottom: 20px; margin-right: 15px; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section img.Logo { float: left; padding-right: 5px; padding-bottom: 5px; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #About { border: 1px solid rgb(204, 204, 204); padding: 5px; margin-left: 5px; float: right; width: 110px; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #About p { font-size: 85% ! important; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #About #GonzoDef { border: 1px solid rgb(204, 204, 204); padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; left: 520px; top: 600px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: none; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #About #GonzoDef .closer { margin: 0pt; padding: 0pt; text-align: right; width: 253px; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #About #GonzoDef .closer img { border: 0pt none ; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section h3 { text-transform: none ! important; font-size: 110% ! important; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section .drop { display: block; font-size: 200%; font-weight: 700; float: left; padding-right: 3px; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #Contents { border: 1px solid rgb(204, 204, 204); margin: 20px; padding: 10px 10px 20px; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #Contents #ContentsImage { float: right; width: 40%; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #Contents #ContentsImage img { width: 100%; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #Contents #ContentsImage .credit { font-size: 90%; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section #Contents .PoundDownNav li { font-size: 90% ! important; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section .EdPromo h3 { font-size: 90% ! important; }
+.MagazineArticleAbstract #MainColumn .Gonzo .Section .EdPromo p { font-size: 85% ! important; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .headerLarge, .MagazineArticleAbstract #MainColumn .NewsAndNotes h3 { margin: 25px 0pt 0pt; color: rgb(10, 89, 155) ! important; text-transform: none ! important; font-size: 110% ! important; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .headerMedium, .MagazineArticleAbstract #MainColumn .NewsAndNotes h4 { color: rgb(10, 89, 155) ! important; font-size: 90% ! important; margin-top: 5px; padding-top: 5px; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .headerSmall, .MagazineArticleAbstract #MainColumn .NewsAndNotes h5 { color: rgb(10, 89, 155) ! important; font-size: 85% ! important; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .subHeader, .MagazineArticleAbstract #MainColumn .NewsAndNotes h6 { font-size: 85% ! important; color: rgb(0, 102, 153) ! important; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .std_side_image { margin: 3px 0pt 10px 10px; float: right; clear: right; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .std_side_image_other { margin: 3px 10px 10px 0pt; float: left; clear: left; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .std_side_image p, .MagazineArticleAbstract #MainColumn .NewsAndNotes .std_side_image_other p { font-size: 85% ! important; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .image_credit { font-size: 85%; }
+.MagazineArticleAbstract #MainColumn .NewsAndNotes .aaas_box { margin: 1em 5%; padding: 4px 8px; background: rgb(219, 238, 255) none repeat scroll 0% 0%; width: 90%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineFiguresLarge {  }
+.MagazineFiguresLarge #MainColumn { padding-left: 20px; }
+.MagazineFiguresLarge #MainColumn .LinkBack { font-size: 70%; }
+.MagazineFiguresLarge #MainColumn h1 { border-top: 1px solid rgb(224, 224, 224); margin: 10px 0pt 5px; font-size: 75%; padding-top: 20px; }
+.MagazineFiguresLarge #MainColumn .Figure { margin-bottom: 1em; }
+.MagazineFiguresLarge #MainColumn .Figure img { border: 1px solid rgb(51, 51, 51); margin-bottom: 5px; }
+.MagazineFiguresLarge #MainColumn .Figure p { color: rgb(83, 130, 156); margin-bottom: 0pt; }
+.MagazineFiguresLarge #MainColumn .Figure p a { text-decoration: underline; }
+.MagazineFiguresLarge #MainColumn .Links { margin-top: 2em; font-size: 70%; }
+.MagazineFiguresLarge #MainColumn .Links a { font-weight: bold; }
+.MagazineSelectedAbstracts {  }
+.MagazineSelectedAbstracts #MainColumn { margin-left: 15px; margin-right: 15px; }
+.MagazineSelectedAbstracts #MainColumn h1 { text-transform: uppercase; font-size: 85%; margin-bottom: 1em; }
+.MagazineSelectedAbstracts #MainColumn ul.ArticleList { margin: 0pt; padding: 0pt; list-style-type: none; }
+.MagazineSelectedAbstracts #MainColumn ul.ArticleList li { padding: 10px 10px 10px 20px; background: rgb(221, 231, 236) url('icon.dot.53859f.gif') no-repeat scroll 10px 11px; margin-bottom: 1px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineSelectedAbstracts #MainColumn ul.ArticleList li a { font-weight: bold; text-decoration: none; }
+* html .MagazineSelectedAbstracts #MainColumn ul.ArticleList li { background-position: 10px 15px; }
+.MagazineSelectedAbstracts #MainColumn .article-tools { margin: 8px 0pt 15px; text-align: left; }
+.MagazineSelectedAbstracts #MainColumn .Item { border-top: 1px solid rgb(224, 224, 224); padding: 10px 0pt; }
+.MagazineSelectedAbstracts #MainColumn h2 { border: medium none ; padding: 0pt; font-size: 70%; color: rgb(51, 51, 51) ! important; text-transform: uppercase; margin-bottom: 1.2em; position: relative; }
+.MagazineSelectedAbstracts #MainColumn h3 { border: medium none ; margin: 0pt ! important; padding: 0pt; font-size: 75%; color: rgb(51, 51, 51) ! important; text-transform: none ! important; }
+.MagazineSelectedAbstracts #MainColumn .Links { font-weight: bold; margin-top: 1em; }
+.MagazineArticleSOM {  }
+.MagazineArticleSOM #MainColumn a { text-decoration: underline; }
+.MagazineArticleSOM #MainColumn a:hover { text-decoration: underline; }
+.MagazineArticleSOM #MainColumn h2 { border: medium none ; margin: 1.5em 0pt 0.3em; padding: 0pt; color: rgb(102, 102, 102); font-size: 75%; text-transform: uppercase; }
+.MagazineArticleSOM #MainColumn h3 { border: medium none ; margin: 0pt; padding: 0pt; color: rgb(51, 51, 51); font-size: 85%; text-transform: none; }
+.MagazineArticleSOM #MainColumn ul { margin: 0pt 0pt 0.5em; padding: 0pt; }
+.MagazineArticleSOM #MainColumn ul li { font-weight: normal; margin-left: 20px; padding-left: 0pt; }
+* html .MagazineArticleSOM #MainColumn ul { margin-left: 0.2em; }
+.MagazineArticleSOM #MainColumn .Item { border-top: 1px solid rgb(204, 204, 204); padding-top: 0.75em; margin-top: 0.75em; }
+.MagazineArticleSOM #MainColumn .Item h4 { color: rgb(102, 102, 102); font-size: 75%; margin-bottom: 0.75em; }
+.MagazineArticleSOM #MainColumn .LinkBack { border-top: 1px solid rgb(204, 204, 204); font-size: 70%; padding-top: 10px; }
+.MagazineArticleSOM #MainColumn .side-nav { float: right; margin-right: 25px; font-weight: bold; }
+.MagazineArticleSOM #MainColumn #SOMFiles { margin: 0px ! important; clear: none; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul {  }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li { border-top: 1px solid rgb(204, 204, 204); padding: 15px 15px 30px 40px; list-style-type: none; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.first { border-top: medium none; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.pdf { background: transparent url('icons_pdf_36.gif') no-repeat scroll 0px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.txt { background: transparent url('icons_text_36.gif') no-repeat scroll 0px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.xls { background: transparent url('icons_spread_36.gif') no-repeat scroll 0px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.vid { background: transparent url('icons_video_36.gif') no-repeat scroll 0px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.aud { background: transparent url('icons_audio_36.gif') no-repeat scroll 0px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineArticleSOM #MainColumn #SOMFiles ul li.zip { background: transparent url('icons_zip_36.gif') no-repeat scroll 0px 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineArticleSOM #MainColumn h3.SOMType { padding: 3px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-transform: none ! important; margin-top: 25px; }
+ul#help-tabs { margin: 0pt ! important; padding: 0pt 10px ! important; list-style-type: none; list-style-image: none; list-style-position: outside; }
+ul#help-tabs li { margin: 0pt ! important; padding: 0pt ! important; display: inline; }
+ul#help-tabs li a { border-top: 1px solid rgb(204, 204, 204); border-left: 1px solid rgb(204, 204, 204); border-right: 1px solid rgb(204, 204, 204); margin: 0pt 10px 0pt 0pt ! important; padding: 8px 8px 8px 30px ! important; cursor: pointer; }
+ul#help-tabs li a.on { border-bottom: 1px solid white; background-color: white; }
+ul#help-tabs li a.off { border-bottom: 1px solid rgb(204, 204, 204); background-color: transparent; }
+#help-pdf, .icon-pdf { background-image: url('icons_pdf_24.gif'); background-repeat: no-repeat; background-position: 3px 3px; }
+#help-text, .icon-text { background-image: url('icons_text_24.gif'); background-repeat: no-repeat; background-position: 3px 3px; }
+#help-spreadsheet, .icon-spreadsheet { background-image: url('icons_spread_24.gif'); background-repeat: no-repeat; background-position: 3px 3px; }
+#help-video, .icon-video { background-image: url('icons_video_24.gif'); background-repeat: no-repeat; background-position: 3px 3px; }
+#help-audio, .icon-audio { background-image: url('icons_audio_24.gif'); background-repeat: no-repeat; background-position: 3px 3px; }
+#help-zip, .icon-zip { background-image: url('icons_zip_24.gif'); background-repeat: no-repeat; background-position: 3px 3px; }
+#helpDescription { border: 1px solid rgb(204, 204, 204); padding: 10px 7px; background-color: white; margin-top: 8px; }
+#helpDescription p { margin: 0.5em 0pt 1em; line-height: 1.5em; }
+ul.icon-list { margin: 0pt ! important; padding: 0pt ! important; list-style-type: none; list-style-image: none; list-style-position: outside; }
+ul.icon-list li { margin: 0pt 0pt 0.5em ! important; padding: 1px 0pt 10px 35px ! important; list-style-type: none; list-style-image: none; list-style-position: outside; }
+#MainColumn .AuthorSummary { padding-right: 20px; }
+#MainColumn .AuthorSummary h2#Section { border: medium none ; margin: 1.5em 0pt 1.4em ! important; padding: 0pt; color: rgb(102, 102, 102) ! important; font-size: 90% ! important; text-transform: uppercase ! important; }
+#MainColumn .AuthorSummary h2#ArticleTitle .SumHead { font-size: 90%; font-style: italic; }
+#MainColumn .AuthorSummary .Left { border: 1px solid rgb(204, 204, 204); padding: 10px; }
+.AuthorSummary .Left #SumFig { width: 300px; }
+#MainColumn .AuthorSummary .Left p#ResizeImage { padding: 0pt 0pt 0pt 10px; background: transparent url('blueplus.gif') no-repeat scroll 0pt 0.4em; font-size: 85% ! important; margin-top: 0pt ! important; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#MainColumn .AuthorSummary .Left p.caption { font-size: 85% ! important; font-weight: 700; width: 300px; }
+#MainColumn .AuthorSummary .Left p.credit { font-size: 70% ! important; text-transform: uppercase; width: 300px; }
+#MainColumn .AuthorSummary p.SumRefHead { font-weight: 700; }
+#MainColumn .AuthorSummary p.ReadFullText { font-size: 90% ! important; }
+#MainColumn .AuthorSummary .EdPromo h3 { font-size: 85% ! important; }
+#MainColumn .AuthorSummary .EdPromo p { font-size: 85% ! important; }
+#MainColumn .AuthorSummary .SurvLinkBox { border: 1px solid rgb(204, 204, 204); padding: 5px; width: auto; }
+#MainColumn #EPAnnouncement { border: 1px solid rgb(204, 204, 204); padding: 5px; font-size: 85% ! important; }
+#MainColumn #EPHypernotes { border-top: 1px solid rgb(204, 204, 204); margin-top: 10px; padding-top: 10px; }
+#MainColumn #EPHypernotes h4.subhead { font-size: 100% ! important; padding-top: 20px; color: rgb(167, 7, 22); font-weight: 700; font-style: italic; }
+#MainColumn #EPHypernotes h3 { text-transform: none ! important; }
+.MagazineSubjectIndex {  }
+#PageWrapper .MagazineSubjectIndex #MainColumn { padding-left: 17px; }
+.MagazineSubjectIndex #MainColumn h2 { margin: 5px 0pt; padding: 2px; background: rgb(83, 130, 156) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); font-size: 75%; }
+.MagazineSubjectIndex #MainColumn h2 span { border: 1px solid rgb(187, 187, 187); padding: 2px 5px; display: block; }
+.MagazineSubjectIndex #MainColumn h2 span span { border: medium none ; padding: 0pt; display: inline; }
+.MagazineSubjectIndex #MainColumn h3 { font-size: 95%; }
+.MagazineSubjectIndex #MainColumn h4 { font-size: 75%; color: rgb(102, 102, 102); margin-bottom: 0.5em; }
+.MagazineSubjectIndex #MainColumn dl.ArticleList dt { padding: 0pt 0pt 0pt 26px; text-indent: -26px; }
+.MagazineSubjectIndex #MainColumn dl.Exception dt { text-indent: 0pt; color: rgb(102, 102, 102); }
+.MagazineSubjectIndex #MainColumn dl.ArticleList dd { margin: 0pt 0pt 1em 26px; color: rgb(102, 102, 102); }
+.MagazineSubjectIndex #journal_search_keyword_form { width: 150px; margin-left: 10px; }
+.MagazineSubjectIndex #journal_search_keyword_form #keyword { width: 144px; }
+.MagazineSubjectIndex #journal_search_keyword_form #search_type { width: 150px; }
+.MagazineSubjectIndex #page-nav { position: absolute; top: 3px; right: 0pt; }
+.MagazineSubjectIndex #MainColumn #table-of-contents .HorizList li { width: 110px; margin-right: 10px; }
+.MagazineSubjectIndex #MainColumn #table-of-contents .HorizList li { width: auto; }
+.MagazineSubjectIndex .LinkTop { margin-bottom: 1em; }
+.MagazineSubjectIndex #issue_contents_wrapper { border-bottom: 5px solid rgb(232, 232, 232); padding-left: 12px; }
+.MagazineSubjectIndex #issue_contents_wrapper h4 { color: rgb(204, 0, 0); }
+.MagazineAuthorIndex {  }
+#PageWrapper .MagazineAuthorIndex #MainColumn { padding-left: 17px; }
+.MagazineAuthorIndex #MainColumn h2 { margin: 5px 0pt; padding: 2px; background: rgb(83, 130, 156) none repeat scroll 0% 0%; font-size: 75%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); }
+.MagazineAuthorIndex #MainColumn h2 span { border: 1px solid rgb(187, 187, 187); padding: 2px 5px; display: block; }
+.MagazineAuthorIndex #MainColumn h2 span span { border: medium none ; padding: 0pt; display: inline; }
+.MagazineAuthorIndex #MainColumn h3 { font-size: 95%; }
+.MagazineAuthorIndex #MainColumn h4 { font-size: 75%; color: rgb(102, 102, 102); margin-bottom: 0.5em; }
+.MagazineAuthorIndex #MainColumn #journal_search_keyword_form {  }
+.MagazineAuthorIndex #MainColumn #journal_search_keyword_form #keyword { width: 144px; }
+.MagazineAuthorIndex #MainColumn #journal_search_keyword_form #search_type { width: 150px; }
+.MagazineAuthorIndex #page-nav { position: absolute; top: 3px; right: 0pt; }
+.MagazineAuthorIndex #MainColumn #table-of-contents .Item .HorizList { border-top: medium none; margin: 10px 0pt 0pt; height: 1.5em; }
+.MagazineAuthorIndex #MainColumn #table-of-contents .Item .HorizList li { background: transparent none repeat scroll 0% 0%; font-size: 75%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 0.4em; margin-left: 0pt; color: rgb(153, 153, 153); }
+.MagazineAuthorIndex #MainColumn #table-of-contents .HorizList { clear: left; }
+.MagazineAuthorIndex #MainColumn #table-of-contents .HorizList li { margin: 0.2em 8px 0.2em 0.4em; font-size: 70%; font-weight: bold; width: 140px; }
+.MagazineAuthorIndex #MainColumn #table-of-contents .HorizList li { width: auto; }
+.MagazineAuthorIndex #MainColumn #table-of-contents form { margin-top: 8px; }
+.MagazineAuthorIndex #MainColumn #table-of-contents form h4 { text-transform: uppercase; font-weight: normal; font-size: 70%; letter-spacing: 0.07em; }
+.MagazineAuthorIndex #MainColumn .DataTable { margin: 10px 0pt 0pt 20px; width: 560px; }
+.MagazineAuthorIndex #MainColumn .LinkTop { margin-bottom: 10px; margin-top: 3px; }
+* html .MagazineAuthorIndex #MainColumn .DataTable { margin-left: 0pt; }
+.MagazinePreviousIssues {  }
+.MagazinePreviousIssues #MainColumn { color: rgb(51, 51, 51); padding-left: 10px; }
+.MagazinePreviousIssues #MainColumn a { text-decoration: underline; }
+.MagazinePreviousIssues #MainColumn h2 { border: 0pt none ; padding: 0pt; color: rgb(102, 102, 102); font-size: 95%; text-transform: none; margin-bottom: 0.8em; }
+.MagazinePreviousIssues #MainColumn h3 { border: medium none ; padding: 0pt; color: rgb(102, 102, 102); font-size: 80%; text-transform: uppercase; margin-bottom: 1em; }
+.MagazinePreviousIssues #MainColumn h4 { border: medium none ; padding: 0pt; color: rgb(102, 102, 102); font-size: 75%; text-transform: none; margin-bottom: 1em; }
+.MagazinePreviousIssues #MainColumn .Item { border-top: 1px solid rgb(230, 230, 230); padding: 16px 0pt; }
+.MagazinePreviousIssues #MainColumn .Item .LayoutTable { clear: both; }
+.MagazinePreviousIssues #MainColumn .Item td { padding-bottom: 16px; }
+.MagazinePreviousIssues #MainColumn .Item td div a {  }
+.MagazinePreviousIssues #MainColumn .Item td div img { border: 1px solid rgb(51, 51, 51); }
+.MagazinePreviousIssues #MainColumn .Item td p { margin: 5px 0pt 0.5em; font-size: 70%; width: 100px; padding-right: 8px; }
+.MagazinePreviousIssues #MainColumn .Item td p span { font-weight: bold; }
+.MagazinePreviousIssues #MainColumn .Item td p strong { color: rgb(204, 51, 51); font-weight: normal; }
+.MagazinePreviousIssues #MainColumn .Item td .LinkList { margin: 0pt; }
+.MagazinePreviousIssues #MainColumn .Item td .LinkList li { margin: 0pt 0pt 0.2em; padding: 0pt; background: transparent none repeat scroll 0% 0%; font-size: 70%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazinePreviousIssues #MainColumn .LinkList li { background: transparent url('icon.dot.53859f.gif') no-repeat scroll 0pt 2px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazinePreviousIssues #MainColumn .LinkList.Exception { border-top: 1px solid rgb(224, 224, 224); padding-top: 10px; margin-top: 16px; }
+.MagazinePreviousIssues #MainColumn .LinkList.Exception li { font-weight: bold; }
+.MagazinePreviousIssues #MainColumn .Item dt { color: rgb(102, 102, 102); clear: both; font-weight: normal; }
+.MagazinePreviousIssues #MainColumn .Item dt strong { color: rgb(204, 51, 51); font-weight: normal; }
+.MagazinePreviousIssues #MainColumn .Item dd { margin: 0pt 0pt 1em; color: rgb(102, 102, 102); font-size: 70%; }
+.MagazinePreviousIssues #MainColumn #page-nav { text-align: right; margin-bottom: 1em; margin-right: 1em; }
+.MagazinePreviousIssues #MainColumn #page-nav a { text-decoration: underline; }
+.MagazineQuarterlyAuthors {  }
+.MagazineQuarterlyAuthors #MainColumn { margin-left: 10px; }
+.MagazineQuarterlyAuthors #MainColumn h2 { border: medium none ; padding: 0pt; color: rgb(102, 102, 102); font-size: 75%; text-transform: uppercase; margin-bottom: 0.8em; }
+.MagazineQuarterlyAuthors #MainColumn h3 { border: medium none ; padding: 0pt; color: rgb(51, 51, 51); font-size: 75%; margin-bottom: 0.5em; }
+.MagazineQuarterlyAuthors #MainColumn .Item { border-top: 1px solid rgb(224, 224, 224); margin: 10px 0pt 0pt; padding-top: 10px; }
+.MagazineQuarterlyAuthors #MainColumn .Item ul { margin: 0pt; padding: 0px 0px 10px; list-style-type: none; }
+.MagazineQuarterlyAuthors #MainColumn .Item ul li { color: rgb(102, 102, 102); margin-bottom: 0pt; }
+.MagazineQuarterlyAuthors #MainColumn .Item li a { text-decoration: underline; }
+.MyScience {  }
+.MyScience #MainColumn .Item { margin-bottom: 25px; }
+.MyScience #MainColumn .Item h4 { border-bottom: 1px solid rgb(185, 205, 215); color: rgb(102, 102, 102); text-transform: uppercase; font-size: 75%; padding-bottom: 5px; margin-bottom: 0.7em; }
+.MyScience #MainColumn .Item p .Icon { margin-bottom: 2px; }
+.MagazineBarrier {  }
+.MagazineBarrier #MainColumn { margin: 0pt 25px; }
+.MagazineBarrier #MainColumn .SCIcon { float: left; margin-right: 10px; }
+* html .MagazineBarrier #MainColumn { margin: 0pt 25px; }
+.MagazineSearch {  }
+.MagazineSearch #MainColumn .HelpText { font-size: 70%; }
+.MagazineSearch #MainColumn .HelpText a { text-decoration: underline; }
+.MagazineSearch #MainColumn h2 { border: medium none ; margin: 0pt; padding: 0pt 0pt 5px; color: rgb(102, 102, 102); font-size: 100%; }
+.MagazineSearch #MainColumn .Item { border-top: 1px solid rgb(217, 228, 233); padding: 6px 0pt; }
+.MagazineSearch #MainColumn .Item h3 { border: medium none ; margin: 0pt; padding: 0pt; color: rgb(51, 51, 51); font-size: 75%; text-transform: none; white-space: nowrap; }
+.MagazineSearch #MainColumn .Item label { font-size: 75%; }
+.MagazineSearch #MainColumn .Item .LayoutTable {  }
+.MagazineSearch #MainColumn .Item .LayoutTable th { vertical-align: top; text-align: left; padding-top: 4px; }
+.MagazineSearch #MainColumn .Item .LayoutTable td .FormAction { display: inline; margin-left: 6px; }
+.MagazineSearch #MainColumn .Item #search_citation_form .TextInput { width: 30px; }
+.MagazineSearch #MainColumn .Item #search_doi_form .TextInput { width: 170px; }
+.MagazineSearch #MainColumn .Item .FormTable th { vertical-align: top; text-align: right; padding-top: 5px; }
+.MagazineSearch #MainColumn .Item .Inputs { margin: 0pt; padding: 0pt; }
+.MagazineSearch #MainColumn .Item .Inputs li label { font-size: 100%; }
+.MagazineSearch #MainColumn .Item h5 { margin: 1em 0pt 0.5em 20px; color: rgb(51, 51, 51); text-transform: uppercase; font-size: 75%; }
+.MagazineSearch #MainColumn #search_citation_form .FormAction { margin-left: 15px; }
+.MagazineSearch #MainColumn #search_citation-vol { margin-right: 10px; }
+* html .MagazineSearch #MainColumn #search_citation_form .FormAction { margin-left: 4px; }
+.MagazineSearch #MainColumn form fieldset .Item p { margin-bottom: 0.5em; }
+.MagazineSearch #MainColumn form fieldset ul.HorizList { height: 1em; }
+.MagazineSearch #MainColumn form fieldset ul.HorizList li { margin-right: 2em; }
+.MagazineSearch #MainColumn #search_keyword_form {  }
+.MagazineSearch #MainColumn #search_keyword_form h3 { margin-bottom: 0.7em; }
+.MagazineSearch #MainColumn #search_keyword_form fieldset { padding-bottom: 10px; }
+.MagazineSearch #MainColumn #search_keyword_form p { margin: 0.7em 0pt 0.7em 20px; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable { width: 100%; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable th span { display: block; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .HorizList li { margin-right: 10px; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .Inputs { margin-left: 0pt ! important; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .Inputs { margin-bottom: 2em; margin-top: 2px; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .Exception { margin-bottom: 0pt; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .Inputs li.Exception { padding-left: 0pt; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .Inputs .Wrapper { float: left; margin-right: 10px; text-indent: 0pt; }
+.MagazineSearch #MainColumn #search_keyword_form .FormTable td .Inputs .Separator { margin: 5px 0pt; }
+.MagazineSearch #MainColumn #search_keyword_form .LayoutTable td .Inputs { margin-left: 20px; }
+.MagazineSearch #MainColumn #search_keyword_form .LayoutTable td .Inputs li { padding-left: 20px; text-indent: -20px; }
+.MagazineSearch #MainColumn #search_keyword_form .FormAction { border-bottom: 1px solid rgb(204, 204, 204); padding-bottom: 5px; text-align: right; margin-right: 5px; }
+.MagazineSearch #MainColumn #search_keyword_form #search_keyword-phrase, .MagazineSearch #MainColumn #search_keyword_form #search_keyword-author-and { margin-bottom: 25px; }
+* html .MagazineSearch #MainColumn #search_keyword_form fieldset { padding-bottom: 0pt; }
+* html .MagazineSearch #MainColumn #search_keyword_form .FormTable td .HorizList { padding-bottom: 1em; margin-bottom: 1em ! important; }
+* html .MagazineSearch #MainColumn #search_keyword_form .FormTable td .Inputs { margin-bottom: 0pt; }
+.MagazineSearchResults {  }
+.MagazineSearchResults #MainColumn h2 { border: medium none ; padding: 0pt; color: rgb(102, 102, 102); font-size: 100%; margin-bottom: 0.5em; }
+.MagazineSearchResults #MainColumn #results-header { position: relative; margin-bottom: 4px; }
+.MagazineSearchResults #MainColumn #results-found { font-size: 75%; margin-left: 4px; }
+.MagazineSearchResults #MainColumn #sort-by { position: absolute; top: 0pt; right: 6px; font-size: 70%; }
+.MagazineSearchResults #MainColumn #sort-by a { text-decoration: underline; }
+.MagazineSearchResults #MainColumn .PageNav { margin: 1em 0pt; font-size: 75%; clear: left; padding-left: 4px; }
+.MagazineSearchResults #MainColumn .PageNav a { text-decoration: none; }
+.MagazineSearchResults #MainColumn .PageNav span { font-weight: bold; }
+.MagazineSearchResults #MainColumn .PageNav { padding-left: 25px ! important; white-space: nowrap; }
+.MagazineSearchResults #MainColumn .PageNav a { border: 1px solid rgb(204, 204, 204); padding: 2px 5px; margin-right: 5px; }
+.MagazineSearchResults #MainColumn .PageNav a:hover { background: rgb(204, 204, 204) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineSearchResults #MainColumn .PageNav .Next a, .MagazineSearchResults #MainColumn .PageNav .Prev a, .MagazineSearchResults #MainColumn .PageNav .FirstPage a, .MagazineSearchResults #MainColumn .PageNav .LastPage a { border: medium none ; padding: 2px 0px; margin-right: 0pt; }
+.MagazineSearchResults #MainColumn .PageNav .Next a:hover, .MagazineSearchResults #MainColumn .PageNav .Prev a:hover, .MagazineSearchResults #MainColumn .PageNav .FirstPage a:hover, .MagazineSearchResults #MainColumn .PageNav .LastPage a:hover { background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineSearchResults #MainColumn .PageNav .Next { padding-left: 5px; }
+.MagazineSearchResults #MainColumn .PageNav .Prev { padding-right: 5px; }
+.MagazineSearchResults #MainColumn .PageNav .FirstPage { text-align: left; padding-right: 18px; font-weight: 400 ! important; }
+.MagazineSearchResults #MainColumn .PageNav .LastPage { text-align: left; padding-left: 15px; }
+.MagazineSearchResults #MainColumn .PageNav .Active { padding: 2px 4px; margin-right: 2px; }
+.MagazineSearchResults #MainColumn .PageNav .NotValid { color: rgb(153, 153, 153); }
+.MagazineSearchResults #MainColumn #change-results-per-page { background: transparent url('icon.circle.plus.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; padding-left: 20px; padding-bottom: 3px; position: absolute; font-size: 70%; top: 22px; right: 10px; }
+.MagazineSearchResults #MainColumn #query-details-box .BorderFix { min-height: 30px; }
+.MagazineSearchResults #MainColumn #ChangeResultsList { border: 1px solid rgb(204, 204, 204); padding: 4px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; position: absolute; top: 40px; right: 10px; display: none; }
+.MagazineSearchResults #MainColumn #ChangeResultsList .LinkList { margin: 0pt; padding: 0pt; }
+.MagazineSearchResults #MainColumn #ChangeResultsList .LinkList li { margin: 0pt; font-size: 70%; padding-bottom: 3px; }
+.MagazineSearchResults #MainColumn #ChangeResultsList .LinkList li.Active { font-weight: 700; color: rgb(102, 102, 102); }
+.MagazineSearchResults #MainColumn #results-found { width: 55%; }
+* html .MagazineSearchResults #MainColumn #change-results-per-page { top: 24px; }
+* html .MagazineSearchResults #MainColumn #query-details-box .BorderFix { height: 35px; }
+.MagazineSearchResults #MainColumn #query-details-box { border-style: solid solid none; border-color: rgb(204, 204, 204) rgb(204, 204, 204) -moz-use-text-color; border-width: 1px 1px medium; padding: 2px; position: relative; }
+.MagazineSearchResults #MainColumn #query-details-box .BorderFix { padding: 5px; background: rgb(234, 233, 233) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineSearchResults #MainColumn #query-details-toggle { padding: 1px 0pt 3px 20px; background: transparent url('icon.circle.plus.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-size: 70%; }
+.MagazineSearchResults #MainColumn #query-details { margin: 4px 0pt 0pt 20px; display: none; }
+.MagazineSearchResults #MainColumn #query-details li { font-size: 70%; }
+.MagazineSearchResults #MainColumn #modify-search { position: absolute; font-size: 70%; top: 6px; right: 10px; text-decoration: underline; }
+* html .MagazineSearchResults #MainColumn #query-details-toggle { padding-top: 0pt; }
+* html .MagazineSearchResults #MainColumn #modify-search { top: 8px; }
+.MagazineSearchResults #MainColumn .search-tools { border: 1px solid rgb(204, 204, 204); padding: 2px; }
+.MagazineSearchResults #MainColumn .search-tools div { margin: 0pt; padding: 2px 0pt 0pt; background: rgb(234, 233, 233) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.MagazineSearchResults #MainColumn .search-tools dl { width: 450px; }
+.MagazineSearchResults #MainColumn .search-tools dl dt { margin: 2px 0pt; padding: 2px 4px 0pt 0pt; float: left; clear: left; font-size: 70%; width: 126px; text-align: right; white-space: nowrap; font-weight: normal; }
+.MagazineSearchResults #MainColumn .search-tools dl dd { margin: 0pt; padding: 2px; float: left; }
+.MagazineSearchResults #MainColumn .ArticleList blockquote { margin: 1em 0pt; padding: 0pt; }
+.MagazineSearchResults #MainColumn .ArticleList dt { border-top: 1px solid rgb(204, 204, 204); padding-left: 24px; text-indent: -24px; padding-top: 12px; }
+.MagazineSearchResults #MainColumn .ArticleList dd { margin: 0pt; padding: 0pt 10px 0pt 24px; }
+.MagazineSearchResults #MainColumn .ArticleList dd a span.Highlight { color: inherit; font-weight: inherit; }
+.MagazineSearchResults #MainColumn .ArticleList span { color: rgb(204, 51, 51); font-weight: bold; }
+.ScienceExpressHome {  }
+.ScienceExpressHome #NavColumn #Alert { border: 1px solid rgb(229, 63, 64); padding: 8px; margin-bottom: 0.3em; }
+.ScienceExpressHome #NavColumn #Alert h3 { font-size: 75%; color: rgb(204, 51, 51); }
+.ScienceExpressHome #NavColumn #Alert p { font-size: 70%; margin-bottom: 0pt; }
+.ScienceExpressHome #NavColumn #Alert a { text-decoration: underline; white-space: nowrap; }
+.ScienceExpressHome #MainColumn { margin-left: 10px; margin-right: 15px; }
+.ScienceExpressHome #MainColumn h1 { margin-bottom: 5px; }
+.ScienceExpressHome #MainColumn p a { text-decoration: underline; }
+.ScienceExpressHome #MainColumn .LayoutTable { border-top: 1px solid rgb(224, 224, 224); }
+.ScienceExpressHome #MainColumn .LayoutTable h2 { border: medium none ; margin: 0.8em 0pt; padding: 0pt; text-transform: uppercase; color: rgb(102, 102, 102); font-size: 75%; }
+.ScienceExpressHome #MainColumn .LayoutTable img { margin-top: 10px; }
+.ScienceExpressHome #MainColumn .LayoutTable ul { margin: 0pt; padding: 0pt; list-style-type: none; }
+.ScienceExpressHome #MainColumn .LayoutTable li { background: transparent url('icon.arrow.e53f40.sm.r.gif') no-repeat scroll 2px 3px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+.ScienceExpressHome #MainColumn .LayoutTable li.Exception { background: transparent url('icon.arrow.e53f40.sm.l.dbl.gif') no-repeat scroll 0pt 3px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-weight: bold; }
+.ScienceExpressHome #MainColumn .LayoutTable li a { text-decoration: none; }
+.ScienceExpressHome #MainColumn h3 { margin: 5px 0pt; padding: 2px; background: rgb(83, 130, 156) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: rgb(255, 255, 255); font-size: 75%; text-transform: none; }
+.ScienceExpressHome #MainColumn h3 span { border: 1px solid rgb(187, 187, 187); padding: 2px 5px; display: block; }
+.ScienceExpressHome #MainColumn h3 span span { border: medium none ; padding: 0pt; display: inline; }
+.ScienceExpressHome #MainColumn dl.ArticleList { margin-left: 15px; }
+.ScienceExpressHome #MainColumn dl.ArticleList dt { padding: 0pt 0pt 0pt 26px; text-indent: -26px; }
+.ScienceExpressHome #MainColumn dl.ArticleList dd { margin: 0pt 0pt 1em 26px; color: rgb(102, 102, 102); }
+.ScienceExpressHome #MainColumn .SciExpRevision { color: red; text-transform: uppercase; }
+.ScienceExpressHome #SideColumn .SponsoredLinks .LinkList { color: rgb(153, 153, 153); }
+.ScienceExpressHome #SideColumn .SponsoredLinks .LinkList dt { font-weight: bold; }
+.ScienceExpressHome #SideColumn .SponsoredLinks .LinkList dd { margin: 0pt 0pt 1em; font-size: 70%; }
+.ScienceExpressHome #SideColumn .SponsoredLinks .LinkList dd a { color: rgb(83, 130, 156); text-decoration: underline; }
+* html .ScienceExpressHome #MainColumn .LayoutTable li { background-position: 2px 0.5em; }
+:first-child + html .ScienceExpressHome #MainColumn .LayoutTable li { background-position: 2px 0.5em; }
+* html .ScienceExpressHome #MainColumn .LayoutTable li.Exception { background-position: -2px 0.5em; }
+:first-child + html .ScienceExpressHome #MainColumn .LayoutTable li.Exception { background-position: -2px 0.5em; }
+.ScienceExpressArticleAbstract {  }
+.ScienceExpressArticleAbstract #MainColumn { margin-left: 10px; }
+.ScienceExpressArticleAbstract #page-nav { text-align: right; white-space: nowrap; }
+.ScienceExpressArticleAbstract #MainColumn #page-nav a { text-decoration: underline; }
+.ScienceExpressArticleAbstract .NavGroup .Item { border-bottom: 1px solid rgb(198, 215, 223); padding: 0.5em 0pt; }
+.ScienceExpressArticleAbstract .NavGroup div.Exception { border-bottom: medium none; }
+.ScienceExpressArticleAbstract .NavGroup .Item h4, .ScienceExpressArticleAbstract .NavGroup .Item p { font-size: 70%; color: rgb(102, 102, 102); padding-left: 5px; }
+.ScienceExpressArticleAbstract .NavGroup .Item p { font-size: 65%; margin-bottom: 0pt; }
+.ScienceExpressArticleAbstract .NavGroup .Item ul { margin-bottom: 0pt; }
+.ScienceExpressArticleAbstract .NavGroup .Item li { border-bottom: medium none; }
+.ScienceExpressArticleAbstract .NavGroup .Item h5 { font-size: 70%; font-weight: normal; color: rgb(153, 153, 153); margin-bottom: 0.5em; padding-left: 5px; }
+.ScienceExpressArticleAbstract #navgroup_article-views.NavGroup .Exception { padding-top: 0pt; padding-bottom: 0pt; }
+.ScienceExpressArticleAbstract #navgroup_related-content.NavGroup .Exception li a { background-image: url('icon.arrow.797979.sm.dn.gif'); }
+.ScienceExpressArticleAbstract #MainColumn { color: rgb(51, 51, 51); }
+.ScienceExpressArticleAbstract #MainColumn a { text-decoration: underline; }
+.ScienceExpressArticleAbstract #MainColumn h2 { border: medium none ; margin: 1.5em 0pt 0.3em; padding: 0pt; color: rgb(102, 102, 102); font-size: 75%; text-transform: uppercase; }
+.ScienceExpressArticleAbstract #MainColumn h3 { border: medium none ; margin: 0pt; padding: 0pt; color: rgb(51, 51, 51); font-size: 90%; text-transform: none; }
+.ScienceExpressArticleAbstract #MainColumn h4 { border-top: 1px solid rgb(204, 204, 204); font-size: 75%; color: rgb(102, 102, 102); margin-bottom: 0.75em; padding-top: 1em; margin-top: 1.5em; }
+.ScienceExpressArticleAbstract #MainColumn h4 span { font-weight: normal; text-transform: uppercase; }
+.ScienceExpressArticleAbstract #MainColumn h5 { font-size: 75%; color: rgb(204, 0, 0); margin-top: 1.5em; }
+.ScienceExpressArticleAbstract #MainColumn ol { padding: 0pt; font-weight: bold; }
+.ScienceExpressArticleAbstract #MainColumn ol li { font-weight: normal; }
+* html .ScienceExpressArticleAbstract #MainColumn ol { margin-left: 0.2em; }
+@media print {
+  #PageWrapper .MagazineTOC #MainColumn { padding: 0pt; }
+  #PageWrapper .MagazineTOC #table-of-contents .LayoutTable { width: 100%; }
+}
+.GeneratedPage #MainColumn { margin-left: 10px; margin-right: 10px; }
+.GeneratedPage #MainColumn #page-nav { text-align: right; font-size: 85%; font-weight: 700; }
+.GeneratedPage #MainColumn #TopMatter { margin-bottom: 30px; }
+.GeneratedPage #MainColumn #TopMatter h2 { margin-bottom: 0pt; color: rgb(51, 51, 51); }
+.GeneratedPage #MainColumn #TopMatter h2 span { display: block; font-size: small; }
+.GeneratedPage #MainColumn #IndividualArticles hr { visibility: hidden ! important; margin-bottom: 0pt ! important; }
+.GeneratedPage #MainColumn #IndividualArticles a { text-decoration: underline; }
+.GeneratedPage #MainColumn #IndividualArticles .LinkTop { margin-top: 0pt; margin-bottom: 20px; font-size: 90%; }
+.GeneratedPage #MainColumn #IndividualArticles h2 { border: 0pt none ; margin: 0pt; padding: 0px 0px 5px; clear: both; }
+.GeneratedPage #MainColumn #IndividualArticles h2 span.overline { font-size: 80%; text-transform: uppercase; padding-bottom: 0pt ! important; margin-bottom: 0pt ! important; }
+.GeneratedPage #MainColumn #IndividualArticles .LinkTop { border-bottom: 1px solid rgb(204, 204, 204); clear: both; padding-bottom: 10px; margin-bottom: 25px; }
+.GeneratedPage #MainColumn #IndividualArticles h3 { border-bottom: 0pt none; text-transform: none ! important; color: rgb(51, 51, 51) ! important; font-size: 120% ! important; }
+#SCIMyFolders h2 { border: medium none ; margin: 0pt; padding-bottom: 10px; }
+#SCIMyFolders h3 { border-bottom: medium none; padding: 1px; background: rgb(224, 224, 224) none repeat scroll 0% 0%; color: rgb(173, 20, 22); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-transform: none; }
+#SCIMyFolders h3 span { border: 1px solid rgb(255, 255, 255); margin: 0pt; display: block; padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 7em ! important; }
+#SCIMyFolders h3 span em { display: block; color: rgb(51, 51, 51); font-style: normal; font-weight: normal; font-size: 90%; text-transform: none; margin-top: 0.1em; }
+#SCIMyFolders h3 span a.LinkTop { font-size: 95%; font-weight: normal; text-decoration: underline; position: absolute; right: 10px; top: 2px; }
+#SCIMyFolders h3 { border: medium none ; margin-top: 0pt; text-transform: none; }
+#SCIMyFolders h5 { margin-top: 0pt; }
+#SCIMyFolders h6 { margin-left: 10px; }
+#SCIMyFolders #folder-manager { border-style: none solid solid; border-color: -moz-use-text-color rgb(51, 51, 51) rgb(51, 51, 51); border-width: medium 1px 1px; padding: 0pt; float: right; width: 175px; margin-bottom: 1em; margin-left: 10px; }
+#SCIMyFolders #folder-manager h6 { margin: 0pt 0pt 0.5em; text-transform: none; color: rgb(51, 51, 51); }
+#SCIMyFolders #folder-manager .NoBullet { margin-bottom: 0pt; }
+#SCIMyFolders #folder-manager a { text-decoration: none; }
+#SCIMyFolders #folder-manager .Item { border-top: 1px solid rgb(51, 51, 51); margin: 0pt; padding: 5px 10px 10px; }
+#SCIMyFolders #folder-manager .TextInput { width: 110px; }
+#SCIMyFolders #item-manager { padding: 1px; background: rgb(224, 224, 224) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-bottom: 10px; clear: both; }
+#SCIMyFolders #item-manager .BorderFix { border: 1px solid rgb(255, 255, 255); padding: 4px; }
+#SCIMyFolders #item-manager .HorizList { margin: 0pt; height: auto; }
+#SCIMyFolders #item-manager .HorizList li { display: inline; float: none; white-space: nowrap; padding-left: 5px; }
+#SCIMyFolders dl.ArticleList dt { padding: 0pt 0pt 0pt 26px; text-indent: -26px; }
+#SCIMyFolders dl.ArticleList dd { margin: 0pt 0pt 30px 26px; color: rgb(51, 51, 51); }
+#SCIMyFolders #contentsForm { padding-right: 190px; }
+#cluetip-close img { border: 0pt none ; }
+#cluetip-title #cluetip-close { float: right; position: relative; }
+#cluetip-extra { display: none; }
+.cluetip-default { background-color: rgb(255, 255, 223); font-size: 0.9em; }
+.cluetip-default #cluetip-outer { margin: 0pt; position: relative; background-color: rgb(255, 255, 223); }
+.cluetip-default h3#cluetip-title { margin: 0pt 0pt 5px; padding: 8px 10px 4px; font-size: 1.1em; font-weight: normal; background-color: rgb(173, 20, 22); color: rgb(255, 255, 255); }
+.cluetip-default #cluetip-title a { color: rgb(217, 217, 194); font-size: 0.9em; }
+.cluetip-default #cluetip-inner { padding: 10px; }
+.cluetip-default div#cluetip-close { margin: 0pt 5px 5px; text-align: right; color: rgb(153, 0, 0); font-weight: bold; }
+#MainColumn .BulletSummary { border: 3px solid rgb(204, 204, 204); margin: 0pt 8px 16px 16px; padding: 12px; width: 250px; float: right; }
+#MainColumn .BulletSummary dl dt, .BulletSummary dl dd { font-size: 85% ! important; }
+#MainColumn .FeaturedItem { border: 1px solid rgb(204, 204, 204); padding: 12px; width: 320px; float: right; margin-left: 15px; }
+
+/* ::::: http://www.sciencemag.org/styles.header.css ::::: */
+
+#hd { margin: 0pt 0pt 8px 8px; width: 1000px; padding-top: 0pt; }
+#hd-main { background: transparent url('hd-bg.gif') repeat-x scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; position: relative; font-family: arial,verdana,helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; z-index: 100; }
+#hd-main #hd-logo a { background: transparent url('hd-nav.png') no-repeat scroll 0% 0%; display: block; width: 158px; height: 90px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-indent: -9998em; }
+.pagetype-journal #hd-sub { background: transparent url('hd-nav.png') no-repeat scroll 0% 0%; position: relative; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 1000px; z-index: 20; }
+#hd-search { position: absolute; top: 2px; right: 10px; text-align: right; }
+#hd-search a { text-transform: uppercase; padding-left: 4px; }
+#hd-search form, #search form fieldset { display: inline; }
+#hd-search input { border: 1px solid rgb(217, 217, 217); padding: 3px; font-size: 11px ! important; font-weight: bold; color: rgb(204, 204, 204); vertical-align: middle; }
+#hd-search input.search-submit { border: medium none ; padding: 0pt; background: transparent url('hd-nav.png') no-repeat scroll -850px -84px; width: 68px; height: 21px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: inline-block; text-indent: -9998em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+#hd-search select { padding: 1px 0pt; color: rgb(102, 102, 102); }
+#hd-subscribe { background: transparent url('hd-nav.png') no-repeat scroll -866px -8px; display: block; position: absolute; width: 128px; height: 21px; top: 58px; right: 10px; text-indent: -9998em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#hd-subscribe:hover { background-position: -866px -52px; }
+#hd-breadcrumb { overflow: hidden; font-size: 11px; clear: both; height: 16px; margin-top: 2px; }
+#hd-breadcrumb ul { margin: 0pt; padding: 0pt; }
+#hd-breadcrumb ul li { float: left; padding-right: 8px; line-height: 16px; }
+#hd-partner { background: transparent url('hd-ptnr-bg.png') no-repeat scroll 0% 0%; position: absolute; top: 0pt; right: 35px; width: 149px; height: 44px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#hd-partner a { padding: 5px 0pt 0pt 28px; display: block; }
+#nav-util, #authstring { position: absolute; text-transform: uppercase; }
+#nav-util { margin: 0pt; padding: 0pt; top: 13px; left: 162px; }
+#nav-util li, #authstring li { border-right: 1px solid rgb(204, 204, 204); padding: 0pt 8px 0pt 6px; display: inline; }
+#nav-util li.last, #authstring li.last { border-right: medium none; }
+#nav-util a, #hd form a { color: rgb(102, 102, 102); text-decoration: none; }
+#nav-util a:hover, #hd form a:hover { color: rgb(51, 51, 51); text-decoration: underline; }
+#authstring a { color: rgb(204, 204, 204); text-decoration: none; }
+#authstring a:hover { color: rgb(255, 255, 255); text-decoration: underline; }
+#authstring { top: 34px; right: 4px; text-align: right; }
+#nav-main { margin: 0pt; padding: 0pt; position: absolute; top: 50px; left: 160px; }
+#nav-main li.item { float: left; display: block; position: relative; }
+#nav-main li.item div.item-cn { border: 2px solid rgb(132, 15, 15); padding: 16px 12px 12px; background: transparent url('decorations.png') no-repeat scroll 104px 0pt; width: 202px; position: absolute; top: 36px; display: none; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; font-size: 12px; }
+#nav-main li.hovering div.item-cn { display: block; }
+#nav-main-news, #nav-main-journals, #nav-main-careers, #nav-main-communities, #nav-main-multimedia, #nav-main-topics { background: transparent url('hd-nav.png') no-repeat scroll 0% 0%; display: block; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 40px; text-indent: -9998em; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+#nav-main-news { width: 60px; background-position: -172px 0px; }
+#nav-main-journals { width: 150px; background-position: -232px 0px; }
+#nav-main-careers { width: 78px; background-position: -382px 0px; }
+#nav-main-communities { width: 176px; background-position: -460px 0px; }
+#nav-main-multimedia { width: 102px; background-position: -636px 0px; }
+#nav-main-topics { width: 107px; background-position: -738px 0px; }
+#nav-main-news:hover { background-position: -172px -42px; }
+#nav-main-journals:hover { background-position: -232px -42px; }
+#nav-main-careers:hover { background-position: -382px -42px; }
+#nav-main-communities:hover { background-position: -460px -42px; }
+#nav-main-multimedia:hover { background-position: -636px -42px; }
+#nav-main-topics:hover { background-position: -738px -42px; }
+.sciencenow #nav-main-news { background-position: -172px -84px ! important; }
+#pageid-careers #nav-main-careers { background-position: -382px -84px ! important; }
+.pageid-blogs #nav-main-communities { background-position: -460px -84px ! important; }
+.pageid-multimedia #nav-main-multimedia { background-position: -636px -84px ! important; }
+.pageid-collections #nav-main-topics { background-position: -738px -84px ! important; }
+.pagetype-journal #nav-main-journals { background-position: -232px -84px ! important; }
+.sci .pagetype-journal #hd-sub { background-position: 0pt -126px; padding-top: 40px; }
+.sigtrans .pagetype-journal #hd-sub { background-position: 0pt -167px; padding-top: 40px; }
+.scitransmed .pagetype-journal #hd-sub { background-position: 0pt -209px; padding-top: 40px; }
+.sageke .pagetype-journal #hd-sub { background-position: 0pt -250px; padding-top: 40px; }
+.pageid-journal_landing .pagetype-journal #hd-sub { border-bottom: medium none; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#nav-sub { border-bottom: 2px solid white; margin: 0pt; padding: 0pt 0pt 1px 10px; background: rgb(206, 217, 223) url('hd-bg.gif') repeat-x scroll left bottom; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; display: block; }
+#hd-sub { border-bottom: medium none; padding: 0pt; background: transparent none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+#access-util { position: absolute; left: -9998px; }
+ul.tab-list { height: 27px; }
+ul.tab-list li { float: left; display: block; font-size: 11px ! important; height: 27px; }
+ul.tab-list li a { padding: 5px 10px; display: block; text-decoration: none; height: 27px; float: left; }
+ul.tab-list li a span { display: block; padding-top: 7px; font-weight: bold; float: left; cursor: pointer; }
+ul.tab-list li.Active { background: transparent url('tab-bg.gif') no-repeat scroll left top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; }
+ul.tab-list li.Active a { background: transparent url('tab-bg.gif') no-repeat scroll right top; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 4px; padding-left: 6px; padding-top: 8px; }
+#SubNavBar h1 { display: none; }

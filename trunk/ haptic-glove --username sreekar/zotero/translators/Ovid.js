@@ -1,15 +1,4 @@
-{
-	"translatorID":"cde4428-5434-437f-9cd9-2281d14dbf9",
-	"translatorType":4,
-	"label":"Ovid",
-	"creator":"Simon Kornblith and Michael Berkowitz",
-	"target":"/(gw2|spa|spb)/ovidweb\\.cgi",
-	"minVersion":"1.0.0b3.r1",
-	"maxVersion":"",
-	"priority":100,
-	"inRepository":true,
-	"lastUpdated":"2009-07-07 00:15:00"
-}
+{"translatorID":"cde4428-5434-437f-9cd9-2281d14dbf9","translatorType":4,"label":"Ovid","creator":"Simon Kornblith and Michael Berkowitz","target":"/(gw2|spa|spb|sp....)/ovidweb\\.cgi","minVersion":"1.0.0b3.r1","maxVersion":null,"priority":100,"inRepository":true,"lastUpdated":"2009-12-23 18:00:00"}
 
 function detectWeb(doc, url) {
 	var namespace = doc.documentElement.namespaceURI;
