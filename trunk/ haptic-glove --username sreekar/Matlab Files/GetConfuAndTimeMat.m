@@ -35,7 +35,7 @@ for i=1:length(ExpDirListing)
 end
 
 % Divide the Matrices by the number of iterations
-ConfusionMatrix = uint32(ConfusionMatrix ./ (length(ExpDirListing) - 3) * 100);
+ConfusionMatrix = round(ConfusionMatrix ./ (length(ExpDirListing)) * 100);
 TimeAvgIndex(TimeAvgIndex == 0) = 1;
 TimeMatrix = TimeMatrix ./ (TimeAvgIndex);
-TimePerExp = TimePerExp ./ (length(ExpDirListing) - 3);
+TimePerExp = TimePerExp ./ (length(ExpDirListing));

@@ -6,7 +6,7 @@ close all;
 ExpressionDataDir = '..\Expression Data';
 
 % List the Exp Data Dir
-ExpDirListing = dir (ExpressionDataDir);
+ExpDirListing = dir ([ExpressionDataDir '\\*.txt']);
 
 % Average Confusion Matrix and Time Matrix
 ConfusionMatrix = zeros (7,7);
@@ -15,7 +15,7 @@ TimeAvgIndex = zeros (7,7);
 TimePerExp = zeros (1,7);
 
 % Stepping through each directory
-for i=4:length(ExpDirListing)
+for i=1:length(ExpDirListing)
     
     % Display for debug
     printstring = sprintf('%s %s\n', 'Working on', ExpDirListing(i).name);
@@ -43,4 +43,5 @@ TimeAvgIndex(TimeAvgIndex == 0) = 1;
 TimeMatrix = TimeMatrix ./ (TimeAvgIndex);
 TimePerExp = TimePerExp ./ (length(ExpDirListing) - 3);
 
+% Plots
 
