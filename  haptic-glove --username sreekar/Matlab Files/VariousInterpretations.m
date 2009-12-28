@@ -35,31 +35,31 @@ ylabel('Response');
 xlabel('Stimulation');
 zlabel('Percent Response');
 set (gca, 'XLim', [0.5 7.5]);
-set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 set (gca, 'YLim', [0.5 7.5]);
-set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 
 
 figure;
 imagesc(ConfusionMatrix);
-ylabel('Response');
-xlabel('Stimulation');
+ylabel('Stimulation');
+xlabel('Response');
 zlabel('Percent Response');
 % %set (gca, 'XTick', [0.5:7.5]); 
-set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 % %set (gca, 'YTick', [0.5:7.5]); 
-set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 
 
 figure;
 imagesc((TimeMatrix/1000));
-ylabel('Response');
-xlabel('Stimulation');
+ylabel('Stimulation');
+xlabel('Response');
 zlabel('Percent Response');
 % %set (gca, 'XTick', [0.5:7.5]); 
-set (gca, 'XTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 % %set (gca, 'YTick', [0.5:7.5]); 
-set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 
 
 figure;
@@ -76,13 +76,13 @@ end
 TimeAvg = [TimeAvgCorrect; TimeAvgIncorrect];
 bar3((TimeAvg/1000)');
 ylabel ('Expressions');
-set (gca, 'YTickLabel', {'Anger', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral'});
+set (gca, 'YTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 xlabel ('Response');
 set (gca, 'XTickLabel', {'Correct', 'Incorrect'});
 colormap ('COOL');
 
 % Time for completion
-figure;
-TimeForComp = TimeSlicing(ExpressionDataDir);
+%figure;
+%TimeForComp = TimeSlicing(ExpressionDataDir);
 
 
