@@ -28,7 +28,7 @@ ExpressionDataDir = '..\Expression Data';
 
 % Get the confusion matrix(1), time matrix(2) and average time per
 % expression (3)
-[ConfusionMatrix, TimeMatrix, TimePerExp] = GetConfuAndTimeMat (ExpressionDataDir);
+[ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir);
 figure;
 bar3 (ConfusionMatrix');
 ylabel('Response');
@@ -80,6 +80,28 @@ set (gca, 'YTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear',
 xlabel ('Response');
 set (gca, 'XTickLabel', {'Correct', 'Incorrect'});
 colormap ('COOL');
+
+
+figure;
+hold on;
+CorrAvg = mean(TimeAvgCorrect);
+WrongAvg = mean(TimeAvgIncorrect);
+
+AvgEmoticon = mean(TimeAvgCorrect(1:4));
+AvgNonEmo = mean(TimeAvgCorrect(5:7));
+%bar(ones(1,4)*AvgEmoticon, 1, 'b');
+%bar([zeros(1,4) ones(1,3)*AvgNonEmo], 1, 'm');
+
+plot (0:8, ones(1,9)*CorrAvg, 'k');
+plot (0:8, ones(1,9)*WrongAvg, 'r');
+axis ([0 8 0 3000]);
+h = bar(TimeAvgCorrect, 'c');
+set(h, 'BaseValue', CorrAvg);
+h = bar(TimeAvgIncorrect, 0.6, 'r');
+set(h, 'BaseValue', WrongAvg);
+set (gca, 'XTickLabel', {'', 'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust', ''});
+plot (0.5:4.5, ones(1,5)*AvgEmoticon, '-.b', 'LineWidth', 2);
+plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '-.m', 'LineWidth', 2);
 
 % Time for completion
 %figure;
