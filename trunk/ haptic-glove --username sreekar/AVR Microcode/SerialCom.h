@@ -10,17 +10,19 @@
 typedef struct motor {
 	uint8_t port;
 	uint8_t* portset;
+	char id;
 } motor;
 
 //we define types using data structures as our "objects"
 //a vibration object
 typedef struct vibration {
-	int duration;
-	int delay;
-
-	//duty cycle vars
+	
+	//timing variables
 	int on_time;
 	int off_time;
+	int off_time_zero;
+	int duration;
+	int delay;
 
 	motor motor;
 } vibration;

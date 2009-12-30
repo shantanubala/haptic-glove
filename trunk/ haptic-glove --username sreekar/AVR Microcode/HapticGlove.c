@@ -179,50 +179,68 @@ int get_delay() {
 
 const char EnterMotor[43] = "\r\nEnter a single motor (A-N) for vibration ";
 
-motor all_motors[14];
+motor all_motors[15];
 
 void define_all_motors() {
 	all_motors[0].port = PORTB0;
 	all_motors[0].portset = &PORTB;
+	all_motors[0].id = 'a';
 					
 	all_motors[1].port = PORTD7;
 	all_motors[1].portset = &PORTD;
+	all_motors[1].id = 'b';
 	
 	all_motors[2].port = PORTD6;
 	all_motors[2].portset = &PORTD;
+	all_motors[2].id = 'c';
 	
 	all_motors[3].port = PORTD5;
 	all_motors[3].portset = &PORTD;
+	all_motors[3].id = 'd';
 	
 	all_motors[4].port = PORTB7;
 	all_motors[4].portset = &PORTB;
+	all_motors[4].id = 'e';
 
 	all_motors[5].port = PORTB6;
 	all_motors[5].portset = &PORTB;
+	all_motors[5].id = 'f';
 
 	all_motors[6].port = PORTD4;
 	all_motors[6].portset = &PORTD;
+	all_motors[6].id = 'g';
 
 	all_motors[7].port = PORTD3;
 	all_motors[7].portset = &PORTD;
+	all_motors[7].id = 'h';
 
 	all_motors[8].port = PORTD2;
 	all_motors[8].portset = &PORTD;
+	all_motors[8].id = 'i';
 
 	all_motors[9].port = PORTB1;
 	all_motors[9].portset = &PORTB;
+	all_motors[9].id = 'j';
 
 	all_motors[10].port = PORTC0;
 	all_motors[10].portset = &PORTC;
+	all_motors[10].id = 'k';
 
 	all_motors[11].port = PORTC1;
 	all_motors[11].portset = &PORTC;
+	all_motors[11].id = 'l';
 
 	all_motors[12].port = PORTC2;
 	all_motors[12].portset = &PORTC;
+	all_motors[12].id = 'm';
 	
 	all_motors[13].port = PORTC3;
 	all_motors[13].portset = &PORTC;
+	all_motors[13].id = 'n';
+
+	all_motors[14].port = 0;
+	all_motors[14].portset = &PORTD;
+	all_motors[14].id = 'x';
 }
 
 vibration get_vibration(int num) {
@@ -238,26 +256,24 @@ vibration get_vibration(int num) {
 	serialWrite(' ');
 
 	mot_id = serialRead();
+	vibration vib;
+	index = (mot_id - 65);
 	if (index >= 0 && index < 14) {
 		serialWrite(mot_id);
-		index = (mot_id - 65);
 		mot = all_motors[index];
-
-		vibration vib;
 		vib.on_time = get_on_time();
 		vib.off_time = get_off_time();
 		vib.delay = get_delay();
 		vib.duration = get_duration();
+		vib.off_time_zero = vib.delay + vib.duration;
 		vib.motor = mot;
-
-		return vib;
 	}
 	else {
-		
+		vib.on_time = 0;
+		vib.duration = 0;
+		vib.off_time = 0;
+		vib.off_time_zero = 0;
+		vib.motor = all_motors[14];
 	}
+	return vib;
 }
-
-vibration expression[8];
-
-
-
