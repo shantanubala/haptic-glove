@@ -2,10 +2,14 @@
 % Confusion Matrix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir)
+function [ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, File, Pattern)
 
 % List the Exp Data Dir
-ExpDirListing = dir ([ExpressionDataDir '\\*.txt']);
+if (File)
+    ExpDirListing = dir ([ExpressionDataDir '\\' Pattern]);
+else
+    ExpDirListing = dir ([ExpressionDataDir '\\*.txt']);
+end
 
 % Average Confusion Matrix and Time Matrix
 ConfusionMatrix = zeros (7,7);
