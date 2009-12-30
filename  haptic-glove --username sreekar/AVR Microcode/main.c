@@ -18,17 +18,143 @@ int Off_Time = (8*5);
 // Keep track and make sure only 5 motors will run at anytime
 int Num = 0;
 
-vibration running[5];
+// Motor running status (MRS)registers
+MRS_Lower = 0; // Bits 0 - 6 represents the motors A, B, C, D, E, F, G; Bit 7 is unused
+MRS_Upper = 0; // Bits 0 - 6 represents the motors H, I, J, K, L, M, N; Bit 7 is unused
 
+//this holds the pattern for an expression
+vibration expression[9];
+int completed_vibrations;
+int completed_events;
+int events[18];
 
 //hold the value of serialRead
 char selection[5];
 
 selectionIndex = 0;
 
+void MRS_switch(int index, uint8_t turnOn) {
+	if(turnOn) {
+		switch (index) {
+			case 'A':
+	            MRS_Lower |= 0x01; // Set bit 0
+	            break;
+	        case 'B':
+	            MRS_Lower |= 0x02; // Set bit 1
+	            break;
+	        case 'C':
+	            MRS_Lower |= 0x04; // Set bit 2
+	            break;
+	        case 'D':
+	            MRS_Lower |= 0x08; // Set bit 3
+	            break;
+	        case 'E':
+	            MRS_Lower |= 0x10; // Set bit 4
+	            break;
+	        case 'F':
+	            MRS_Lower |= 0x20; // Set bit 5
+                break;
+	        case 'G':
+	            MRS_Lower |= 0x40; // Set bit 6
+                break;
+	        case 'H':
+	            MRS_Upper |= 0x01; // Set bit 0
+	            break;
+	        case 'I':
+	            MRS_Upper |= 0x02; // Set bit 1
+	            break;
+	        case 'J':
+	            MRS_Upper |= 0x04; // Set bit 2
+	            break;
+	        case 'K':
+	            MRS_Upper |= 0x08; // Set bit 3
+	            break;
+	        case 'L':
+	            MRS_Upper |= 0x10; // Set bit 4
+	            break;
+	        case 'M':
+	            MRS_Upper |= 0x20; // Set bit 5
+	            break;
+	        case 'N':
+	            MRS_Upper |= 0x40; // Set bit 6
+	            break;
+			default:
+				break;
+		}
+	}
+	else {
+		switch (index) {
+			case 'A':
+                MRS_Lower &= 0xFE; // Reset bit 0
+                break;
+            case 'B':
+                MRS_Lower &= 0xFD; // Reset bit 1
+                break;
+            case 'C':
+                MRS_Lower &= 0xFB; // Reset bit 2
+                break;
+            case 'D':
+                MRS_Lower &= 0xF7; // Reset bit 3
+                break;
+            case 'E':
+                MRS_Lower &= 0xEF; // Reset bit 4
+                break;
+            case 'F':
+                MRS_Lower &= 0xDF; // Reset bit 5
+                break;
+            case 'G':
+                MRS_Lower &= 0xBF; // Reset bit 6
+                break;
+            case 'H':
+                MRS_Upper &= 0xFE; // Reset bit 0
+                break;
+            case 'I':
+                MRS_Upper &= 0xFD; // Reset bit 1
+                break;
+            case 'J':
+                MRS_Upper &= 0xFB; // Reset bit 2
+                break;
+            case 'K':
+                MRS_Upper &= 0xF7; // Reset bit 3
+                break;
+            case 'L':
+                MRS_Upper &= 0xEF; // Reset bit 4
+                break;
+            case 'M':
+                MRS_Upper &= 0xDF; // Reset bit 5
+                break;
+            case 'N':
+                MRS_Upper &= 0xBF; // Reset bit 6
+                break;
+            default:
+                break;
+
+		}
+	}
+}
+
 ISR(TIMER1_COMPA_vect)
 {
-	
+	if (completed_vibrations < 9 && completed_events < 18) {
+		for (int i = 0; i < 9; i++) {
+			if (completed_vibrations < 9 && completed_events < 18) {
+				if (events[completed_events] == expression[i].delay) {
+					MRS_switch(expression[i].motor.id, 1);
+					completed_events++;
+					On_Time = (8 * expression[i].on_time);
+					Off_Time = (8 * expression[i].off_time);
+				}
+				else {
+					MRS_switch(expression[i].motor.id, 0);
+					completed_events++;
+				}
+				OCR1A = (8 * events[completed_events]);
+			}
+			else {
+				break;
+			}
+		}
+	}
 }
 
 
@@ -48,7 +174,7 @@ ISR(TIMER0_COMPA_vect)
 
 		// Count the number of motors that are on. If more than 5 are on, kill all motors
 		int MotorCount = 0;
-		int i,j;
+		int i;
 		for (i=0; i<6; i++)
 			MotorCount += ((MRS_Lower >> i) & 0x01);
 		for (i=0; i<6; i++)
@@ -83,6 +209,26 @@ ISR(TIMER0_COMPA_vect)
 	
 }
 
+
+void get_expression() {
+	vibration temp;
+	int i;
+	for (i = 0; i < 9; i++) {
+		temp = get_vibration(i + 1);
+		if (temp.duration != 0) {
+			expression[i] = temp;
+		}
+		else {
+			for (int j = i; j < 9; j++) {
+				expression[j] = temp;
+			}
+			break;
+		}
+	}
+	completed_vibrations = 8 - i;
+	completed_events = 16 - (2*i);
+}
+
 int main () {
 	//Turn on global interrupts
 	sei();
@@ -92,9 +238,6 @@ int main () {
 	
 	//sets up baud rates, Rx, Tx, etc.
 	setup_serial();
-	
-	//welcomes and prompts user
-	menu_display();
 	
 
 	
@@ -139,10 +282,7 @@ int main () {
 	//keep prompting the user once operations are finished
 	//	using this infinite while loop
 	while (1) {
-		
-		// Read the data from serial port	
-		char Read = serialRead();
-		
+		get_expression();
 	}
 
 }
