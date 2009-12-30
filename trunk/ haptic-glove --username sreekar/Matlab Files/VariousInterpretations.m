@@ -50,6 +50,22 @@ set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear',
 % %set (gca, 'YTick', [0.5:7.5]); 
 set (gca, 'YTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 
+figure;
+CorrectRate = diag (ConfusionMatrix);
+AvgGroup1 = mean(CorrectRate(1:4));
+AvgGroup2 = mean(CorrectRate(5:end));
+Avg = mean (CorrectRate);
+BarHan = bar (CorrectRate');
+colormap cool;
+hold on;
+plot (0:0.5:4.5, ones(1,10)*AvgGroup1, '--b', 'LineWidth', 2);
+plot (4.5:0.5:8, ones(1,8)*AvgGroup2, '-.r', 'LineWidth', 2);
+plot (0:8, ones(1,9)*Avg, '-k', 'LineWidth', 2);
+hold off;
+axis ([0 8 70 100]);
+box off;
+set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
+
 
 figure;
 imagesc((TimeMatrix/1000));
@@ -84,24 +100,27 @@ colormap ('COOL');
 
 figure;
 hold on;
+TimeAvgCorrect = TimeAvgCorrect/1000;
+TimeAvgIncorrect = TimeAvgIncorrect/1000;
 CorrAvg = mean(TimeAvgCorrect);
 WrongAvg = mean(TimeAvgIncorrect);
 
 AvgEmoticon = mean(TimeAvgCorrect(1:4));
 AvgNonEmo = mean(TimeAvgCorrect(5:7));
-%bar(ones(1,4)*AvgEmoticon, 1, 'b');
-%bar([zeros(1,4) ones(1,3)*AvgNonEmo], 1, 'm');
 
-plot (0:8, ones(1,9)*CorrAvg, 'k');
-plot (0:8, ones(1,9)*WrongAvg, 'r');
-axis ([0 8 0 3000]);
-h = bar(TimeAvgCorrect, 'c');
+plot (0:8, ones(1,9)*CorrAvg, 'c', 'LineWidth', 2);
+plot (0:8, ones(1,9)*WrongAvg, 'r', 'LineWidth', 2, 'LineStyle', ':');
+axis ([0 8 0 3]);
+h = bar(TimeAvgCorrect, 0.8, 'c');
 set(h, 'BaseValue', CorrAvg);
-h = bar(TimeAvgIncorrect, 0.6, 'r');
-set(h, 'BaseValue', WrongAvg);
+
+h1 = bar(TimeAvgIncorrect, 0.6, 'r');
+set(get(h1, 'BaseLine'), 'LineStyle', ':', 'LineWidth', 2, 'Color', 'r');
+set(h1, 'BaseValue', WrongAvg);
+
 set (gca, 'XTickLabel', {'', 'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust', ''});
 plot (0.5:4.5, ones(1,5)*AvgEmoticon, '-.b', 'LineWidth', 2);
-plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '-.m', 'LineWidth', 2);
+plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '--m', 'LineWidth', 2);
 
 % Time for completion
 %figure;
