@@ -27,6 +27,7 @@ vibration expression[9];
 int completed_vibrations;
 int completed_events;
 int events[18];
+int current_time = 0;
 
 //hold the value of serialRead
 char selection[5];
@@ -140,15 +141,16 @@ ISR(TIMER1_COMPA_vect)
 			if (completed_vibrations < 9 && completed_events < 18) {
 				if (events[completed_events] == expression[i].delay) {
 					MRS_switch(expression[i].motor.id, 1);
-					completed_events++;
 					On_Time = (8 * expression[i].on_time);
 					Off_Time = (8 * expression[i].off_time);
 				}
 				else {
 					MRS_switch(expression[i].motor.id, 0);
-					completed_events++;
 				}
-				OCR1A = (8 * events[completed_events]);
+				
+				current_time += events[completed_events];
+				completed_events++;
+				OCR1A = (8 * (events[completed_events] - current_time));
 			}
 			else {
 				break;
@@ -214,26 +216,41 @@ ISR(TIMER0_COMPA_vect)
 /*******************************************************/
 void get_expression() {
 	vibration temp;
-	vibration sorted[9];
 	int i;
+	int count_events;
 	for (i = 0; i < 9; i++) {
 		temp = get_vibration(i + 1);
 		if (temp.duration != 0) {
 			expression[i] = temp;
+			events[i] = temp.delay;
+			events[i + 1] = temp.off_time_zero;
 		}
 		else {
 			for (int j = i; j < 9; j++) {
 				expression[j] = temp;
+				events[j] = 0;
+				events[j + 1] = 0;
 			}
 			break;
 		}
 	}
 	completed_vibrations = 8 - i;
 	completed_events = 16 - (2*i);
+	current_time = 0;
 
-	for (int k = completed_events; k < 18; k++) {
-		events[k]
+	for(int x=0; x < 18; x++) {
+		int index_of_min = x;
+		for(int y = x; y < 18; y++) {
+			if(events[index_of_min] < events[y]) {
+				index_of_min = y;
+			}
+		}
+		int temp = events[x];
+		events[x] = events[index_of_min];
+		events[index_of_min] = temp;
 	}
+
+
 }
 
 int main () {
@@ -276,7 +293,7 @@ int main () {
 	TIMSK0 = _BV(OCIE0A);
 	
 	//16-bit timer(1)
-	TCCR1A = _BV(WGM11);
+	TCCR1A = _BV(WGM10);
 	TCCR1B = _BV(CS10) | _BV(CS12);
 	OCR1A = 250;
 	TIMSK1 = _BV(OCIE1A);

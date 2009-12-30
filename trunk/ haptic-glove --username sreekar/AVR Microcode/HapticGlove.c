@@ -141,7 +141,7 @@ int get_off_time() {
 	return ((Ready - 48) * 10 + (Readz - 48)) * 8;
 }
 
-int get_duration() {
+int get_delay() {
 	for (int i = 0; i < 50; i++) {
 		serialWrite(TimingDelay[i]);
 	}
@@ -159,7 +159,7 @@ int get_duration() {
 	return (Read1 - 48) * 1000 + (Read2 - 48) * 100 + (Read3 - 48) * 10 + (Read4 - 48);
 }
 
-int get_delay() {
+int get_duration() {
 	for (int i = 0; i < 53; i++) {
 		serialWrite(TimingDuration[i]);
 	}
