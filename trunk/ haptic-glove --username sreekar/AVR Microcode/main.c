@@ -209,9 +209,12 @@ ISR(TIMER0_COMPA_vect)
 	
 }
 
-
+/*******************************************************/
+//TODO: Add sorting of event timings to get_expression()
+/*******************************************************/
 void get_expression() {
 	vibration temp;
+	vibration sorted[9];
 	int i;
 	for (i = 0; i < 9; i++) {
 		temp = get_vibration(i + 1);
@@ -227,6 +230,10 @@ void get_expression() {
 	}
 	completed_vibrations = 8 - i;
 	completed_events = 16 - (2*i);
+
+	for (int k = completed_events; k < 18; k++) {
+		events[k]
+	}
 }
 
 int main () {
