@@ -130,7 +130,7 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xcf8
+.text           0x00000000      0xdee
  *(.vectors)
  .vectors       0x00000000       0x68 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm168.o
                 0x00000000                __vectors
@@ -216,37 +216,37 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
                 0x0000010a                define_all_motors
                 0x00000234                menu_display
                 0x000000ec                kill_all_motors
-                0x00000250                get_delay
+                0x000002f0                get_delay
                 0x000000a6                data_direction_setup
                 0x00000390                get_off_time
-                0x000002f0                get_duration
+                0x00000250                get_duration
                 0x00000440                get_vibration
- .text          0x0000055a      0x742 main.o
-                0x000008f4                get_expression
+ .text          0x0000055a      0x838 main.o
+                0x00000900                get_expression
                 0x000007ba                __vector_11
-                0x000009ea                main
+                0x00000ade                main
                 0x0000055a                MRS_switch
-                0x00000a38                __vector_14
- .text          0x00000c9c       0x58 SerialCom.o
-                0x00000c9c                delayLong
-                0x00000cae                serialCheckRxComplete
-                0x00000cb6                serialCheckTxReady
-                0x00000cbe                serialRead
-                0x00000cdc                setup_serial
-                0x00000ccc                serialWrite
- .text          0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .text          0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .text          0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
-                0x00000cf4                . = ALIGN (0x2)
+                0x00000b2e                __vector_14
+ .text          0x00000d92       0x58 SerialCom.o
+                0x00000d92                delayLong
+                0x00000da4                serialCheckRxComplete
+                0x00000dac                serialCheckTxReady
+                0x00000db4                serialRead
+                0x00000dd2                setup_serial
+                0x00000dc2                serialWrite
+ .text          0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000dea                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
-                0x00000cf4                . = ALIGN (0x2)
+ .text.libgcc   0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000dea                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000cf4        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
-                0x00000cf4                exit
-                0x00000cf4                _exit
+ .fini9         0x00000dea        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x00000dea                exit
+                0x00000dea                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -265,11 +265,11 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000cf4        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000dea        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000cf8                _etext = .
+                0x00000dee                _etext = .
 
-.data           0x00800100      0x140 load address 0x00000cf8
+.data           0x00800100      0x140 load address 0x00000dee
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm168.o
@@ -295,40 +295,41 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
                 0x00800240                _edata = .
                 0x00800240                PROVIDE (__data_end, .)
 
-.bss            0x00800240       0xef
+.bss            0x00800240       0xf1
                 0x00800240                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00800240        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm168.o
  .bss           0x00800240        0x0 HapticGlove.o
- .bss           0x00800240        0x8 main.o
+ .bss           0x00800240        0xa main.o
                 0x00800240                Num
                 0x00800244                MRS_Upper
-                0x00800246                selectionIndex
+                0x00800246                current_time
+                0x00800248                selectionIndex
                 0x00800242                MRS_Lower
- .bss           0x00800248        0x0 SerialCom.o
- .bss           0x00800248        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .bss           0x00800248        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .bss           0x00800248        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080024a        0x0 SerialCom.o
+ .bss           0x0080024a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .bss           0x0080024a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080024a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x00800248       0x3c HapticGlove.o
-                0x00800248                all_motors
- COMMON         0x00800284       0xab main.o
-                0x00800284                expression
-                0x00800302                selection
-                0x00800307                completed_events
-                0x00800309                events
-                0x0080032d                completed_vibrations
-                0x0080032f                PROVIDE (__bss_end, .)
-                0x00000cf8                __data_load_start = LOADADDR (.data)
-                0x00000e38                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0080024a       0x3c HapticGlove.o
+                0x0080024a                all_motors
+ COMMON         0x00800286       0xab main.o
+                0x00800286                expression
+                0x00800304                selection
+                0x00800309                completed_events
+                0x0080030b                events
+                0x0080032f                completed_vibrations
+                0x00800331                PROVIDE (__bss_end, .)
+                0x00000dee                __data_load_start = LOADADDR (.data)
+                0x00000f2e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080032f        0x0
-                0x0080032f                PROVIDE (__noinit_start, .)
+.noinit         0x00800331        0x0
+                0x00800331                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0080032f                PROVIDE (__noinit_end, .)
-                0x0080032f                _end = .
-                0x0080032f                PROVIDE (__heap_start, .)
+                0x00800331                PROVIDE (__noinit_end, .)
+                0x00800331                _end = .
+                0x00800331                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -389,33 +390,33 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
                 0x00000040       0x20 SerialCom.o
 
 .debug_pubnames
-                0x00000000      0x2a9
+                0x00000000      0x2ba
  *(.debug_pubnames)
  .debug_pubnames
                 0x00000000      0x125 HapticGlove.o
  .debug_pubnames
-                0x00000125      0x103 main.o
+                0x00000125      0x114 main.o
  .debug_pubnames
-                0x00000228       0x81 SerialCom.o
+                0x00000239       0x81 SerialCom.o
 
-.debug_info     0x00000000      0x936
+.debug_info     0x00000000      0x9b4
  *(.debug_info)
  .debug_info    0x00000000      0x4be HapticGlove.o
- .debug_info    0x000004be      0x332 main.o
- .debug_info    0x000007f0      0x146 SerialCom.o
+ .debug_info    0x000004be      0x3b0 main.o
+ .debug_info    0x0000086e      0x146 SerialCom.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0x3ce
+.debug_abbrev   0x00000000      0x3ec
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x199 HapticGlove.o
- .debug_abbrev  0x00000199      0x162 main.o
- .debug_abbrev  0x000002fb       0xd3 SerialCom.o
+ .debug_abbrev  0x00000199      0x180 main.o
+ .debug_abbrev  0x00000319       0xd3 SerialCom.o
 
-.debug_line     0x00000000      0xa0c
+.debug_line     0x00000000      0xa64
  *(.debug_line)
  .debug_line    0x00000000      0x516 HapticGlove.o
- .debug_line    0x00000516      0x3c3 main.o
- .debug_line    0x000008d9      0x133 SerialCom.o
+ .debug_line    0x00000516      0x41b main.o
+ .debug_line    0x00000931      0x133 SerialCom.o
 
 .debug_frame    0x00000000      0x180
  *(.debug_frame)
@@ -423,20 +424,20 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
  .debug_frame   0x000000b0       0x60 main.o
  .debug_frame   0x00000110       0x70 SerialCom.o
 
-.debug_str      0x00000000      0x301
+.debug_str      0x00000000      0x328
  *(.debug_str)
  .debug_str     0x00000000      0x1d5 HapticGlove.o
                                 0x249 (size before relaxing)
- .debug_str     0x000001d5       0xb5 main.o
-                                0x1f6 (size before relaxing)
- .debug_str     0x0000028a       0x77 SerialCom.o
+ .debug_str     0x000001d5       0xdc main.o
+                                0x21d (size before relaxing)
+ .debug_str     0x000002b1       0x77 SerialCom.o
                                 0x146 (size before relaxing)
 
-.debug_loc      0x00000000      0x422
+.debug_loc      0x00000000      0x462
  *(.debug_loc)
  .debug_loc     0x00000000      0x1dc HapticGlove.o
- .debug_loc     0x000001dc      0x228 main.o
- .debug_loc     0x00000404       0x1e SerialCom.o
+ .debug_loc     0x000001dc      0x268 main.o
+ .debug_loc     0x00000444       0x1e SerialCom.o
 
 .debug_macinfo
  *(.debug_macinfo)
