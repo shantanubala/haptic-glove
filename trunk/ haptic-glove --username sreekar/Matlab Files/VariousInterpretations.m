@@ -28,7 +28,7 @@ ExpressionDataDir = '..\Expression Data';
 
 % Get the confusion matrix(1), time matrix(2) and average time per
 % expression (3)
-[ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir);
+[ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, 0);
 figure;
 bar3 (ConfusionMatrix');
 ylabel('Response');
@@ -98,6 +98,7 @@ set (gca, 'XTickLabel', {'Correct', 'Incorrect'});
 colormap ('COOL');
 
 
+% Time comparison
 figure;
 hold on;
 TimeAvgCorrect = TimeAvgCorrect/1000;
@@ -122,8 +123,21 @@ set (gca, 'XTickLabel', {'', 'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fe
 plot (0.5:4.5, ones(1,5)*AvgEmoticon, '-.b', 'LineWidth', 2);
 plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '--m', 'LineWidth', 2);
 
-% Time for completion
-%figure;
-%TimeForComp = TimeSlicing(ExpressionDataDir);
-
+% Steven results
+[ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, 1, 'ste*.txt');
+figure;
+CorrectRate = diag (ConfusionMatrix);
+AvgGroup1 = mean(CorrectRate(1:4));
+AvgGroup2 = mean(CorrectRate(5:end));
+Avg = mean (CorrectRate);
+BarHan = bar (CorrectRate');
+colormap cool;
+hold on;
+plot (0:0.5:4.5, ones(1,10)*AvgGroup1, '--b', 'LineWidth', 2);
+plot (4.5:0.5:8, ones(1,8)*AvgGroup2, '-.r', 'LineWidth', 2);
+plot (0:8, ones(1,9)*Avg, '-k', 'LineWidth', 2);
+hold off;
+axis ([0 8 80 105]);
+box off;
+set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 
