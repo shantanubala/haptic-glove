@@ -28,7 +28,7 @@ ExpressionDataDir = '..\Expression Data';
 
 % Get the confusion matrix(1), time matrix(2) and average time per
 % expression (3)
-[ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, 0);
+[ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails, RecogPerSub] = GetConfuAndTimeMat (ExpressionDataDir, 0);
 figure;
 bar3 (ConfusionMatrix');
 ylabel('Response');
@@ -55,14 +55,16 @@ CorrectRate = diag (ConfusionMatrix);
 AvgGroup1 = mean(CorrectRate(1:4));
 AvgGroup2 = mean(CorrectRate(5:end));
 Avg = mean (CorrectRate);
+SDRecog = std(RecogPerSub*100);
 BarHan = bar (CorrectRate');
 colormap cool;
 hold on;
+EBhan = errorbar (1:7, CorrectRate, SDRecog, '.r', 'LineWidth', 2);
 plot (0:0.5:4.5, ones(1,10)*AvgGroup1, '--b', 'LineWidth', 2);
-plot (4.5:0.5:8, ones(1,8)*AvgGroup2, '-.r', 'LineWidth', 2);
+plot (4.5:0.5:8, ones(1,8)*AvgGroup2, '-.m', 'LineWidth', 2);
 plot (0:8, ones(1,9)*Avg, '-k', 'LineWidth', 2);
 hold off;
-axis ([0 8 70 100]);
+axis ([0 8 50 115]);
 box off;
 set (gca, 'XTickLabel', {'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust'});
 
@@ -122,6 +124,10 @@ set(h1, 'BaseValue', WrongAvg);
 set (gca, 'XTickLabel', {'', 'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fear', 'Disgust', ''});
 plot (0.5:4.5, ones(1,5)*AvgEmoticon, '-.b', 'LineWidth', 2);
 plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '--m', 'LineWidth', 2);
+
+
+
+
 
 % Steven results
 [ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, 1, 'ste*.txt');

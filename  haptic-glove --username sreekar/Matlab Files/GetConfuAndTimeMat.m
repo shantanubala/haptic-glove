@@ -2,7 +2,7 @@
 % Confusion Matrix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, File, Pattern)
+function [ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails, RecogPerSub] = GetConfuAndTimeMat (ExpressionDataDir, File, Pattern)
 
 % List the Exp Data Dir
 if (File)
@@ -17,6 +17,7 @@ TimeMatrix = zeros (7,7);
 TimeAvgIndex = zeros (7,7);
 TimePerExp = [];
 NoTrails = zeros(7,7);
+RecogPerSub = zeros (length(ExpDirListing), 7);
 
 % Stepping through each directory
 for i=1:length(ExpDirListing)
@@ -30,6 +31,9 @@ for i=1:length(ExpDirListing)
     
     % Get the Confusion Matrix and Time Matrix
     [ConfusionMat, TimeMat, AvgTimePerExp, NoofTrails] = SubjectDataExtract (FilePath);
+    
+    % Stroe this subjects Recognition Rates 
+    RecogPerSub(i,:) = diag (ConfusionMat);
     
     % Add from the number of trails
     NoTrails = NoTrails + NoofTrails;
