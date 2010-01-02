@@ -125,9 +125,16 @@ set (gca, 'XTickLabel', {'', 'Happy', 'Sad', 'Surprise', 'Neutral', 'Angry', 'Fe
 plot (0.5:4.5, ones(1,5)*AvgEmoticon, '-.b', 'LineWidth', 2);
 plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '--m', 'LineWidth', 2);
 
-
-
-
+% ANOVA
+% one-way ANOVA on all the 7 expressions
+anova1(RecogPerSub);
+% one-way ANOVA on the two Expression Groups
+Grp1 = reshape (RecogPerSub(:,1:4), 1, 48);
+Grp2 = reshape (RecogPerSub(:,5:7), 1, 36);
+Grp2(37:48) = NaN;
+Grps = [Grp1' Grp2'];
+Grps = Grps*100;
+anova1(Grps) 
 
 % Steven results
 [ConfusionMatrix, TimeMatrix, TimePerExp, NoTrails] = GetConfuAndTimeMat (ExpressionDataDir, 1, 'ste*.txt');
