@@ -1,15 +1,4 @@
-{
-	"translatorID":"e9632edc-8032-4dc5-b2d4-284d481583e6",
-	"translatorType":4,
-	"label":"SAE International",
-	"creator":"Michael Berkowitz",
-	"target":"http://www.sae.org/",
-	"minVersion":"1.0",
-	"maxVersion":"",
-	"priority":100,
-	"inRepository":true,
-	"lastUpdated":"2009-01-08 08:19:07"
-}
+{"translatorID":"e9632edc-8032-4dc5-b2d4-284d481583e6","translatorType":4,"label":"SAE International","creator":"Michael Berkowitz","target":"http://www.sae.org/","minVersion":"1.0","maxVersion":null,"priority":100,"inRepository":true,"lastUpdated":"2009-12-30 22:30:00"}
 
 function detectWeb(doc, url) {
 	if (doc.evaluate('//td[2][@class="search-results"]/a', doc, null, XPathResult.ANY_TYPE, null).iterateNext()) {
@@ -36,7 +25,7 @@ function doWeb(doc, url) {
 	}
 	Zotero.Utilities.processDocuments(arts, function(doc) {
 		var type = detectWeb(doc, doc.location.href);
-		if (type == "paper") {
+		if (type == "conferencePaper") {
 			var data = new Object();
 			var metas = doc.evaluate('//meta', doc, null, XPathResult.ANY_TYPE, null);
 			var meta;
