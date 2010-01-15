@@ -1,0 +1,3 @@
+K:\Research Project\Haptic Glove\Haptic Glove\bin\Debug\Haptic Glove.exe.config
+K:\Research Project\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.exe
+K:\Research Project\Haptic Glove\Haptic Glove\obj\Debug\Haptic Glove.pdb
