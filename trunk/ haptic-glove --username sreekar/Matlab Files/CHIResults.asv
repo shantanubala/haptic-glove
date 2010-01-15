@@ -127,17 +127,10 @@ plot (4.5:0.5:7.5, ones(1,7)*AvgNonEmo, '--m', 'LineWidth', 2);
 
 % ANOVA
 % one-way ANOVA on all the 7 expressions
-[p,table,stats] = anova1(RecogPerSub);
-figure; multcompare (stats);
-
+anova1(RecogPerSub);
 % one-way ANOVA on the two Expression Groups
-Grp1 = reshape (RecogPerSub(:,1:4), 1, 48);
-Grp2 = reshape (RecogPerSub(:,5:7), 1, 36);
-Grp2(37:48) = NaN;
-Grps = [Grp1' Grp2'];
-Grps = Grps*100;
-[p,table,stats] = anova1(Grps); 
-figure; multcompare (stats);
+Grp1 = 
+
 
 
 % Steven results

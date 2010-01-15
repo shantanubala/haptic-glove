@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haptic Glove", "Haptic Glove.csproj", "{747E7ABE-0AA1-405B-AC0A-709D581865D6}"
 EndProject
 Global

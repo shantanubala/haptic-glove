@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Haptic Glove">
+</Property><Property Name="Solution File" Value="K:\Research Project\Haptic Glove\Haptic Glove\Haptic Glove.sln">
+</Property><Property Name="User Options File" Value="K:\Research Project\Haptic Glove\Haptic Glove\Haptic Glove.suo">
+</Property><Property Name="Date" Value="Saturday, January 09, 2010">
+</Property><Property Name="Time" Value="1:53 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Haptic Glove.sln" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Haptic Glove.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Haptic Glove.suo" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Haptic Glove.suo">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Haptic Glove.csproj" Description="Project file successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Haptic Glove.csproj">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Form1.cs" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Form1.Designer.cs" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Program.cs" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="app.config" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Properties\Settings.settings" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Form1.resx" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Properties\Resources.resx" Description="File successfully backed up as K:\Research Project\Haptic Glove\Haptic Glove\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Haptic Glove" Source="Haptic Glove.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="Haptic Glove" Source="Haptic Glove.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="Haptic Glove.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Haptic Glove.sln" Description="Converted">
+</Event></UpgradeLog>
