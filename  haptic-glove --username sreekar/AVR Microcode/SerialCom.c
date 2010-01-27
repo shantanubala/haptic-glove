@@ -15,16 +15,28 @@ void delayLong() {
 	} 
 }
 
+/**
+ * Returns a 0 if there is no data available from serial communication.
+ */
 unsigned char serialCheckRxComplete(void) {
 	//return zero if there's nothing to read
 	return( UCSR0A & _BV(RXC0));
 }
 
+/**
+ * Returns a 0 if the transmit register is not ready.
+ */
 unsigned char serialCheckTxReady(void) {
 	//return zero if the transmit register is not ready
 	return( UCSR0A & _BV(UDRE0) );
 }
 
+/**
+ * A function that gets a single character from the serial communication.
+ * It waits until a character has been received.
+ * @see serialCheckRxComplete()
+ * @return the character received through serial communication
+ */
 unsigned char serialRead(void) {
 	//dawdle until we have data to read
 	while (serialCheckRxComplete() == 0)
@@ -32,13 +44,24 @@ unsigned char serialRead(void) {
 	return UDR0;
 }
 
-void serialWrite(unsigned char DataOut) {
+
+/**
+ * A function that gets a single character from the serial communication.
+ * It waits until the transmit register is ready.
+ * @param dataOut a character argument to be sent through serial com
+ * @see serialCheckTxReady()
+ */
+void serialWrite(unsigned char dataOut) {
 	//dawdle until we can transmit data
 	while (serialCheckTxReady() == 0)
 	{;;} 
-	UDR0 = DataOut;
+	UDR0 = dataOut;
 }
 
+/**
+ * A function that sets up serial communication transmit lines. 
+ * The value of the transmit line is set to 1 in order to enable it. The receive line is enabled by default.
+ */
 int setup_serial (void) {
 	//we just need to set the transmit line to '1'
 	//	since a bit value of 1 indicates output
