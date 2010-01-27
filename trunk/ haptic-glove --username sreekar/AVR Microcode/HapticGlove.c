@@ -19,8 +19,10 @@
 #include <avr/io.h>
 
 
-//NOTE: you only need to call this function once 
-//TODO: add inputs
+/**
+ * Sets up the microcontroller's data directions.
+ * This function only needs to be called once, but must be called before motors are enabled.
+ */
 void data_direction_setup() {
 	//this sets the data direction
 
@@ -41,19 +43,13 @@ void data_direction_setup() {
 }
 
 
-
-//PARAM-1: the sepcific port to switch on or off
-//	in the format PORTxy where x is the port set and y is port number
-//PARAM-2: the pointer to the set of ports PARAM-1 belongs to
-//	in the format PORTx where x is the port set
-//PARAM-3: a boolean (0 or 1) value with 0=off and 1=on
-/* EXAMPLE: */
-/*
- * //this would turn on the motor located on port C2
- * motor_switch(PORTC0, &PORTC, 1);
- *
+/**
+ * Activates a particular motor.
+ * It simply activates one of the microcontroller's pins that is not used for programming or reserved.
+ * @param port A uint8_t value corresponding to one of the Atmega168's ports
+ * @param portset A pointer to a uint8_t value that corresponds to one of the Atmega168's port sets
+ * @param turnOn A 0 or 1, depending on whether you wish to turn off or turn on a particular motor
  */
-//NOTE: see 
 void motor_switch (uint8_t port, uint8_t* portset, uint8_t turnOn ) {
 	if (turnOn) {
 		//we want motors to run simultaneously
@@ -67,6 +63,7 @@ void motor_switch (uint8_t port, uint8_t* portset, uint8_t turnOn ) {
 	
 }
 
+/*
 //nothing specific here, just call
 //we add it as a function so we can call it
 //to prompt the user after every input
@@ -78,14 +75,13 @@ void menu_display () {
 		serialWrite(menu[i]);
 	}
 	
-}
+}*/
 
-//
 
-//as the name implies
-//if something goes horribly wrong
-//try and input the command for this function ASAP
-//TODO: shorten this code
+
+/**
+ * Turns off all running motors.
+ */
 void kill_all_motors() {
 	//kill all port B
 	PORTB &= ~_BV(PORTB0);
