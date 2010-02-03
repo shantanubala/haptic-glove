@@ -108,6 +108,11 @@ const char TimingOn[47] = "\r\nEnter On-Time [1 to 30] (ms) - Ex: 10 or 02: ";
 const char TimingOff[48] = "\r\nEnter Off-Time [1 to 30] (ms) - Ex: 10 or 02: ";
 const char TimingDuration[53] = "\r\nEnter Duration [1 - 5000] (ms) - Ex: 0001 or 4000: ";
 const char TimingDelay[50] = "\r\nEnter Delay [1 - 5000] (ms) - Ex: 0020 or 2000: ";
+
+/**
+ * Gets the on time from serial communication.
+ * Prompts for entering the on time through serial communication. 3 digits must be entered (i.e. 001, 040, 600)
+ */
 int get_on_time() {
 	// Read the on time
 	// Three numbers have to be entered for the on time and off time.
@@ -124,6 +129,10 @@ int get_on_time() {
 	return ((Read1 - 48) * 10 + (Read0 - 48)) * 8;
 }
 
+/**
+ * Gets the off time from serial communication.
+ * Prompts for entering the off time through serial communication. 3 digits must be entered (i.e. 001, 040, 600)
+ */
 int get_off_time() {
 	// Read the off time
 	for (int i=0; i<48; i++)
@@ -137,6 +146,10 @@ int get_off_time() {
 	return ((Ready - 48) * 10 + (Readz - 48)) * 8;
 }
 
+/**
+ * Gets the delay time from serial communication.
+ * Prompts for entering the on time through serial communication. 4 digits must be entered (i.e. 0001, 0040, 0600, 3000)
+ */
 int get_delay() {
 	for (int i = 0; i < 50; i++) {
 		serialWrite(TimingDelay[i]);
@@ -155,6 +168,10 @@ int get_delay() {
 	return (Read1 - 48) * 1000 + (Read2 - 48) * 100 + (Read3 - 48) * 10 + (Read4 - 48);
 }
 
+/**
+ * Gets the duration time from serial communication.
+ * Prompts for entering the on time through serial communication. 3 digits must be entered (i.e. 001, 040, 600)
+ */
 int get_duration() {
 	for (int i = 0; i < 53; i++) {
 		serialWrite(TimingDuration[i]);
