@@ -293,7 +293,7 @@ int main () {
 	TIMSK0 = _BV(OCIE0A);
 	
 	//16-bit timer(1)
-	TCCR1A = _BV(WGM10);
+	TCCR1A = _BV(WGM11);
 	TCCR1B = _BV(CS10) | _BV(CS12);
 	OCR1A = 250;
 	TIMSK1 = _BV(OCIE1A);
