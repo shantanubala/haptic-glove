@@ -5,14 +5,18 @@
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Components of Social Interactions}{2}
 \contentsline {subsection}{Non-verbal communication cues}{3}
-\contentsline {subsubsection}{Social Sight and Social Hearing}{3}
-\contentsline {subsubsection}{Social touch}{4}
-\contentsline {subsection}{Decoding of non-verbal communication cues}{5}
-\contentsline {chapter}{\chapternumberline {2}RELATED WORK}{6}
-\contentsline {section}{\numberline {2.1}Test 1}{6}
-\contentsline {subsection}{Test 2}{6}
-\contentsline {subsubsection}{Test 3}{6}
-\contentsline {chapter}{REFERENCES}{7}
-\contentsline {chapter}{APPENDIX}{7}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{8}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{9}
+\contentsline {subsubsection}{Social Sight and Social Hearing}{4}
+\contentsline {subsubsection}{Social Touch}{4}
+\contentsline {section}{\numberline {1.2}Social Situational Awareness}{5}
+\contentsline {subsection}{Social Situational Awareness in Everyday Social Interactions}{6}
+\contentsline {subsubsection}{SSA in Dyadic Interactions}{6}
+\contentsline {subsubsection}{SSA in Group Interactions}{7}
+\contentsline {subsection}{Learning Social Awareness}{8}
+\contentsline {chapter}{\chapternumberline {2}RELATED WORK}{10}
+\contentsline {section}{\numberline {2.1}Test 1}{10}
+\contentsline {subsection}{Test 2}{10}
+\contentsline {subsubsection}{Test 3}{10}
+\contentsline {chapter}{REFERENCES}{12}
+\contentsline {chapter}{APPENDIX}{13}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{14}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{15}
