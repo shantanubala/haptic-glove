@@ -1,39 +1,18 @@
 \contentsline {chapter}{TABLE OF CONTENTS}{v}
-\contentsline {chapter}{LIST OF TABLES}{vii}
-\contentsline {chapter}{LIST OF FIGURES}{viii}
+\contentsline {chapter}{LIST OF TABLES}{vi}
+\contentsline {chapter}{LIST OF FIGURES}{vii}
 \contentsline {chapter}{CHAPTER}{1}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Components of Social Interactions}{2}
-\contentsline {subsection}{Encoding of non-verbal communication cues}{3}
-\contentsline {chapter}{\chapternumberline {2}RELATED WORK}{4}
-\contentsline {section}{\numberline {2.1}Test 1}{4}
-\contentsline {subsection}{Test 2}{4}
-\contentsline {subsubsection}{Test 3}{4}
-\contentsline {chapter}{\chapternumberline {3}RELATED WORK}{5}
-\contentsline {section}{\numberline {3.1}Test 1}{5}
-\contentsline {subsection}{Test 2}{5}
-\contentsline {subsubsection}{Test 3}{5}
-\contentsline {chapter}{\chapternumberline {4}RELATED WORK}{6}
-\contentsline {section}{\numberline {4.1}Test 1}{6}
+\contentsline {subsection}{Non-verbal communication cues}{3}
+\contentsline {subsubsection}{Social Sight and Social Hearing}{3}
+\contentsline {subsubsection}{Social touch}{4}
+\contentsline {subsection}{Decoding of non-verbal communication cues}{5}
+\contentsline {chapter}{\chapternumberline {2}RELATED WORK}{6}
+\contentsline {section}{\numberline {2.1}Test 1}{6}
 \contentsline {subsection}{Test 2}{6}
 \contentsline {subsubsection}{Test 3}{6}
-\contentsline {chapter}{\chapternumberline {5}RELATED WORK}{7}
-\contentsline {section}{\numberline {5.1}Test 1}{7}
-\contentsline {subsection}{Test 2}{7}
-\contentsline {subsubsection}{Test 3}{7}
-\contentsline {chapter}{\chapternumberline {6}RELATED WORK}{8}
-\contentsline {section}{\numberline {6.1}Test 1}{8}
-\contentsline {subsection}{Test 2}{8}
-\contentsline {subsubsection}{Test 3}{8}
-\contentsline {chapter}{\chapternumberline {7}RELATED WORK}{9}
-\contentsline {section}{\numberline {7.1}Test 1}{9}
-\contentsline {subsection}{Test 2}{9}
-\contentsline {subsubsection}{Test 3}{9}
-\contentsline {chapter}{\chapternumberline {8}RELATED WORK}{10}
-\contentsline {chapter}{\chapternumberline {9}RELATED WORK}{11}
-\contentsline {chapter}{\chapternumberline {10}RELATED WORK}{12}
-\contentsline {chapter}{\chapternumberline {11}RELATED WORK}{13}
-\contentsline {chapter}{REFERENCES}{15}
-\contentsline {chapter}{APPENDIX}{15}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{16}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{17}
+\contentsline {chapter}{REFERENCES}{7}
+\contentsline {chapter}{APPENDIX}{7}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{8}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{9}
