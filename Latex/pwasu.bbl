@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{riggio_assessment_1986}
 R.~E. Riggio, ``Assessment of basic social skills,'' {\em Journal of
@@ -40,5 +40,35 @@ A.~Haans and W.~{IJsselsteijn}, ``Mediated social touch: a review of current
 J.~Bailenson and N.~Yee, ``Virtual interpersonal touch: Haptic interaction and
   copresence in collaborative virtual environments,'' {\em Multimedia Tools and
   Applications}, vol.~37, pp.~5--14, Mar. 2008.
+
+\bibitem{sameroff_reproductive_1975}
+A.~J. Sameroff and M.~J. Chandler, ``Reproductive risk and the continuum of
+  caretaker casualty,'' in {\em Review of Child Development Research} (F.~D.
+  Horowitz, ed.), vol.~4, Chicago: University of Chicago Press, 1975.
+
+\bibitem{altmann_analysis_2007}
+U.~Altmann, R.~Hermkes, and L.~Alisch, ``Analysis of nonverbal involvement in
+  dyadic interactions,'' in {\em Verbal and Nonverbal Communication
+  Behaviours}, pp.~37--50, 2007.
+
+\bibitem{zancanaro_automatic_2006}
+M.~Zancanaro, B.~Lepri, and F.~Pianesi, ``Automatic detection of group
+  functional roles in face to face interactions,'' (Banff, Alberta, Canada),
+  pp.~28--34, {ACM}, 2006.
+
+\bibitem{dong_using_2007}
+W.~Dong, B.~Lepri, A.~Cappelletti, A.~S. Pentland, F.~Pianesi, and
+  M.~Zancanaro, ``Using the influence model to recognize functional roles in
+  meetings,'' in {\em Proceedings of the 9th international conference on
+  Multimodal interfaces}, (Nagoya, Aichi, Japan), pp.~271--278, {ACM}, 2007.
+
+\bibitem{hawkins_intelligence_2004}
+J.~Hawkins and S.~Blakeslee, {\em On Intelligence}.
+\newblock Times Books, adapted~ed., Oct. 2004.
+
+\bibitem{rogers_edward_2002}
+E.~Rogers, W.~Hart, and Y.~Miike, ``Edward t. hall and the history of
+  intercultural communication: The united states and japan,'' {\em Keio
+  Communication Review}, vol.~24, pp.~26, 3, 2002.
 
 \end{thebibliography}
