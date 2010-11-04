@@ -163,7 +163,7 @@
 \renewcommand{\contentsname}{TABLE OF CONTENTS}
 \renewcommand{\listfigurename}{LIST OF FIGURES}
 \renewcommand{\listtablename}{LIST OF TABLES}
-\renewcommand*{\tocheadstart}{\vspace*{-\topfiddle}}
+\renewcommand*{\tocheadstart}{\vspace*{-0.2in}}
 \renewcommand*{\aftertoctitle}{\thispagestyle{plain}%
   \par\nobreak \mbox{}\hfill{\normalfont Page}\par\nobreak}
 \renewcommand*{\cftchapterfont}{\normalfont}
@@ -181,13 +181,13 @@
 %% And the LoF and LoT
 \let\oldlof\listoffigures
 \renewcommand{\listoffigures}{\clearpage\pagestyle{lof}\oldlof}
-\renewcommand*{\lofheadstart}{\vspace*{-\topfiddle}}
+\renewcommand*{\lofheadstart}{\vspace*{-0.2in}}
 \renewcommand*{\afterloftitle}{\thispagestyle{plain}%
   \par\nobreak {\normalfont Figure \hfill Page}\par\nobreak}
  
 \let\oldlot\listoftables
 \renewcommand{\listoftables}{\clearpage\pagestyle{lot}\oldlot}
-\renewcommand*{\lotheadstart}{\vspace*{-\topfiddle}}
+\renewcommand*{\lotheadstart}{\vspace*{-0.2in}}
 \renewcommand*{\afterlottitle}{\thispagestyle{plain}%
   \par\nobreak {\normalfont Table \hfill Page}\par\nobreak}
 
