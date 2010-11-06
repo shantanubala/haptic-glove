@@ -1,3 +1,4 @@
+ 
 
 %Peter W.
 %Requires the memoir class (as of this date v1.6180339e 2009/02/17)
@@ -33,7 +34,7 @@
 \oddsidemargin 0.5in   % read Lamport p.163
 \evensidemargin 0in  % same as oddsidemargin but for left-hand pages
 \textwidth 5.5in
-\textheight 8.83in 
+\textheight 8.83in
 %\pagestyle{empty}       % Uncomment if don't want page numbers
 \parskip 7.2pt           % sets spacing between paragraphs
 %\renewcommand{\baselinestretch}{1.5} % Uncomment for 1.5 spacing between lines
@@ -55,21 +56,21 @@
 \def\listofsymbols{\input{memoir/symbols} \clearpage}
 \def\addsymbol #1: #2#3{$#1$ \> \parbox{5.45in}{#2 \dotfill \pageref{#3}}\\}
 \def\newnot#1{\label{#1}}
- 
- 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % here is the main part of your dessertation
- 
+
 % put your abstract here
- 
-\asuabstract 
+
+\asuabstract
 \setlength{\parindent}{.5in}
 This is a sample abstract
- 
+
 % your acknowledgement
 
 \setdedication{ Your dedication goes here. } % if you want a dedication
- 
+
 \asudedication
 
 \asuacknowledgements
@@ -107,69 +108,224 @@ This is a sample abstract
 
 \addcontentsline{toc}{chapter}{CHAPTER}
 
-\pagestyle{plain} 
+\pagestyle{plain}
 % finally, start of your main text
 
-\chapter{INTRODUCTION} 
+\chapter{INTRODUCTION}
 
 \DoubleSpacing
 \setlength{\parindent}{.5in}
-Human interpersonal interactions are socially driven exchanges of verbal and non-verbal communicative cues. The essence of humans as social animals is very well exemplified in the way humans interact face-to-face with one another. Even in a brief exchange of eye gaze, humans communicate a lot of information about themselves, while assessing a lot about others around them. Though not much is spoken, plenty is always said. We still do not understand the nature of human communication and why face-to-face interactions are so significant for us. 
+Human interpersonal interactions are socially driven exchanges of verbal and non-verbal communicative cues. The essence of humans as social animals is very well exemplified in the way humans interact face-to-face with one another. Even in a brief exchange of eye gaze, humans communicate a lot of information about themselves, while assessing a lot about others around them. Though not much is spoken, plenty is always said. We still do not understand the nature of human communication and why face-to-face interactions are so significant for us.
 
-Social interaction refers to any form of mutual communication between two individuals or between an individual and a group \cite{riggio_assessment_1986}. Such communications involve any or all forms of sensory and motor activities as deemed necessary by the participants of the interaction. Social, Behavioral and Developmental Sociologists emphasize that the ability of individuals to effectively control expressive behavior is essential for the social and interpersonal functioning of our society. Such social interactions are the aggregate cause of social behaviors, social actions and social contact that helps not only in effective bilateral communication, but also in forming an efficient feedback driven behavioral learning loop. It is this feedback (termed as social feedback) that children use towards developing good social and communicative skills. 
+Social interaction refers to any form of mutual communication between two individuals or between an individual and a group \cite{riggio_assessment_1986}. Such communications involve any or all forms of sensory and motor activities as deemed necessary by the participants of the interaction. Social, Behavioral and Developmental Sociologists emphasize that the ability of individuals to effectively control expressive behavior is essential for the social and interpersonal functioning of our society. Such social interactions are the aggregate cause of social behaviors, social actions and social contact that helps not only in effective bilateral communication, but also in forming an efficient feedback driven behavioral learning loop. It is this feedback (termed as social feedback) that children use towards developing good social and communicative skills.
 
 Recent studies in behavioral psychology are furthering our understanding of the importance of social behaviors and social actions in everyday context. Researchers have revealed an unconscious need in humans to mimic and imitate the mannerisms of their interaction partners. An increasing number of experiments have highlighted this need for imitation to be very primeval and that they offer an elegant channel for building trust and confidence between individuals.
 
 \section{Components of Social Interactions}
-From a neurological perspective, social interactions result from the complex interplay of cognition, action and perception tasks within the human brain. For example, the simple act of shaking hands involves interactions of sensory, motor and cognitive events. Two individuals who engage in the act of shaking hands have to first make eye contact, exchange emotional desire to interact (this usually happens through a complex set of face and body gestures, such as smile and increased upper body movements), determine the exact distance between themselves, move appropriately towards each other maintaining Proxemics (interpersonal distance) that are befitting of their cultural setting, engage in shaking hands, and finally, move apart assuming a conversational distance which is invariably wider than the hand shake distance. Verbal exchanges may occur before, during or after the hand shake itself. This example shows the need for sensory (visual senses of face and bodily actions, auditory verbal exchange etc.), perceptual (understanding expressions, distance between individuals etc.), and cognitive (recognizing the desire to interact, engaging in verbal communication etc.) exchange during social interactions. Further, though social interactions display such complex interplay, they have been studied in the human communication literature under two important categories \cite{brent_d._ruben_human_1975}, namely, 
+From a neurological perspective, social interactions result from the complex interplay of cognition, action and perception tasks within the human brain. For example, the simple act of shaking hands involves interactions of sensory, motor and cognitive events. Two individuals who engage in the act of shaking hands have to first make eye contact, exchange emotional desire to interact (this usually happens through a complex set of face and body gestures, such as smile and increased upper body movements), determine the exact distance between themselves, move appropriately towards each other maintaining Proxemics (interpersonal distance) that are befitting of their cultural setting, engage in shaking hands, and finally, move apart assuming a conversational distance which is invariably wider than the hand shake distance. Verbal exchanges may occur before, during or after the hand shake itself. This example shows the need for sensory (visual senses of face and bodily actions, auditory verbal exchange etc.), perceptual (understanding expressions, distance between individuals etc.), and cognitive (recognizing the desire to interact, engaging in verbal communication etc.) exchange during social interactions. Further, though social interactions display such complex interplay, they have been studied in the human communication literature under two important categories \cite{brent_d._ruben_human_1975}, namely,
 
 \begin{itemize}
 \item \emph {Verbal communication}: Explicit communication through the use of words in the form of speech or transcript.
-\item \emph {Non-verbal communication}: Implicit communication cues that use prosody, body kinesis, facial movements and spatial location to communicate information that may be unique or overlapping with verbal information. 
+\item \emph {Non-verbal communication}: Implicit communication cues that use prosody, body kinesis, facial movements and spatial location to communicate information that may be unique or overlapping with verbal information.
 \end{itemize}
 
-While the spoken language plays an important role in communication, speech accounts for only 35\% of the interpersonal exchanges. Nearly 65\% of all information communication happens through non-verbal cues \cite{knapp_nonverbal_1996}. Out of this large chunk, 48\% of the communication, is through visual encoding of face and body kinesis and posture, while the rest is encoded in the prosody (intonation, pitch, pace and loudness of voice) \cite{borkenau_thin_2004}. A closer look at the various non-verbal communication modes can highlight the importance of the multi-modality of social exchanges (See Figure \ref{Figure1}).
+While the spoken language plays an important role in communication, speech accounts for only 35\% of the interpersonal exchanges. Nearly 65\% of all information communication happens through non-verbal cues \cite{knapp_nonverbal_1996}. Out of this large chunk, 48\% of the communication, is through visual encoding of face and body kinesis and posture, while the rest is encoded in the prosody (intonation, pitch, pace and loudness of voice) \cite{borkenau_thin_2004}. A closer look at the various non-verbal communication modes can highlight the importance of the multi-modality of social exchanges (See Figure \ref{Fig:Figure1}).
 
 \subsection{Non-verbal communication cues}
-Speech, voice, face and body form the primary channels of communication in any social interaction. Speech forms the primary channel for verbal communication, while prosody (intonation, pace and loudness of one’s voice), face, and body (posture, gesture and mannerisms) form the medium for nonverbal communication. In everyday social interactions, people communicate so effortlessly through both verbal and non-verbal cues that they are not cognizant of the complex interplay of their voice, face and body in establishing a smooth communication channel. 
+Speech, voice, face and body form the primary channels of communication in any social interaction. Speech forms the primary channel for verbal communication, while prosody (intonation, pace and loudness of one's voice), face, and body (posture, gesture and mannerisms) form the medium for nonverbal communication. In everyday social interactions, people communicate so effortlessly through both verbal and non-verbal cues that they are not cognizant of the complex interplay of their voice, face and body in establishing a smooth communication channel.
 
 \begin{figure}[h]
 \begin{center}
  \includegraphics[width=3in]{NVCEncodings.jpg}
 \end{center}
 \caption{Relative importance of a) verbal vs. non-verbal cues, b) four channels of non-verbal cues, and c) visual vs. audio encoding and decoding of bilateral human interpersonal communicative cues.}
-\label{Figure1}
+\label{Fig:Figure1}
 \end{figure}
 
 \subsubsection{Social Sight and Social Hearing}
-Unlike speech, which is mostly under the conscious control of the user, the non-verbal communication channels are engaged from a subconscious level. Though people can increase their control on these channels through training, innately, individuals demonstrate certain inability to control their non-verbal cues. This inability to control non-verbal channels is referred to as the leakiness \cite{brown_social_1986} and humans (evolutionarily) have learnt to pick up these leaked signals during social interactions. For example, people can read very subtle body mannerisms very easily to determine the mental state of their interaction partner. Eye Gaze is a classic example of such subtle cues where interaction partners can detect interest, focus, involvement and role play, to name a few.  On this leakiness scale, it has been found that the voice is the leakiest of all channels, implying that emotions of individuals are revealed first in their voice before any of the other channels are engaged. The voice is followed by body, face and finally the verbal channel, speech. The leakiness is plotted on the abscissa of Figure \ref{Figure2} with the ordinate showing the amount of information encoded in the other three non-verbal communication channels. It can be seen that the face communicates the most amount of non-verbal cues, while the prosody (voice) is the first channel to leak emotional information.
+Unlike speech, which is mostly under the conscious control of the user, the non-verbal communication channels are engaged from a subconscious level. Though people can increase their control on these channels through training, innately, individuals demonstrate certain inability to control their non-verbal cues. This inability to control non-verbal channels is referred to as the leakiness \cite{brown_social_1986} and humans (evolutionarily) have learnt to pick up these leaked signals during social interactions. For example, people can read very subtle body mannerisms very easily to determine the mental state of their interaction partner. Eye Gaze is a classic example of such subtle cues where interaction partners can detect interest, focus, involvement and role play, to name a few.  On this leakiness scale, it has been found that the voice is the leakiest of all channels, implying that emotions of individuals are revealed first in their voice before any of the other channels are engaged. The voice is followed by body, face and finally the verbal channel, speech. The leakiness is plotted on the abscissa of Figure \ref{Fig:Figure2} with the ordinate showing the amount of information encoded in the other three non-verbal communication channels. It can be seen that the face communicates the most amount of non-verbal cues, while the prosody (voice) is the first channel to leak emotional information.
 
 \begin{figure}[h]
 \begin{center}
  \includegraphics[width=4in]{Leakiness.jpg}
 \caption{Relative communicative information plotted against its leakiness. Speech forms the verbal channel. Face, body and voice form the non-verbal communication channels.}
+\label{Fig:Figure2}
 \end{center}
- \label {Figure2}
 \end{figure}
 
-\subsubsection{Social touch}
-Apart from visual and auditory channels of social stimulation, humans increasingly rely on social touch during interpersonal interactions. For example, hand shake represents an important aspect of social communication conveying confidence, trust, dominance and other important personal and professional skills \cite{burgoon_relational_1984}. Social touch has also been studied by psychologists in the context of emotional gratification. Wetzel \cite{wetzel_midas_1984} demonstrated patron gratification effects through tipping behavior when waitresses touched their patrons. Similar studies have revealed the importance of social touch and how conscious decision making is connected deeply with the human affect system. In the recent years social touch has gained a lot of interest in the area enriching remote interactions \cite{haans_mediated_2006} \cite{bailenson_virtual_2008} to help better understand an individula's  social awareness and social presence. In the next section, we describe the term \emph{Social Situational Awareness} as seen pertinent to this report and emphasize the importance of any individual being aware of his/her social situational awareness.
+\subsubsection{Social Touch}
+Apart from visual and auditory channels of social stimulation, humans increasingly rely on social touch during interpersonal interactions. For example, hand shake represents an important aspect of social communication conveying confidence, trust, dominance and other important personal and professional skills \cite{burgoon_relational_1984}. Social touch has also been studied by psychologists in the context of emotional gratification. Wetzel \cite{wetzel_midas_1984} demonstrated patron gratification effects through tipping behavior when waitresses touched their patrons. Similar studies have revealed the importance of social touch and how conscious decision making is connected deeply with the human affect system. In the recent years social touch has gained a lot of interest in the area enriching remote interactions \cite{haans_mediated_2006} \cite{bailenson_virtual_2008} to help better understand an individual's  social awareness and social presence. In the next section, we describe the term \emph{Social Situational Awareness} as seen pertinent to this report and emphasize the importance of any individual being aware of his/her social situational awareness.
 
-\subsection{Social Situational Awareness}
-We refer to the term Social Situational Awareness (SSA) as the ability of individuals to receive the visual, auditory and touch based non-verbal cues and respond appropriately through their voice, face and/or body (touch and gestures). Figure \ref{Figure3} represents the concept of consuming social cues and reacting accordingly to the needs of social interaction. Social cognition bridges stimulation and reciprocation and allows individuals to interpret and react to the non-verbal cues. 
+\section{Social Situational Awareness}
+We refer to the term Social Situational Awareness (SSA) as the ability of individuals to receive the visual, auditory and touch based non-verbal cues and respond appropriately through their voice, face and/or body (touch and gestures). Figure \ref{Fig:Figure3} represents the concept of consuming social cues and reacting accordingly to the needs of social interaction. Social cognition bridges stimulation and reciprocation and allows individuals to interpret and react to the non-verbal cues.
 
 \begin{figure}[h]
 \begin{center}
  \includegraphics[width=4.5in]{SSA.jpg}
  \includegraphics[width=4.5in]{SSA2.jpg}
 \caption{Social Situational Awareness.}
+\label{Fig:Figure3}
 \end{center}
-\label{Figure3}
 \end{figure}
 
 The Transactional Communication Model \cite{sameroff_reproductive_1975} suggests that during any face-to-face interaction, the interpretation of the social stimulation and the corresponding social response are under the control of various factors including the culture, physical and emotional state, experience, memory, expectation, self concept and attitude of the individuals involved in the interaction. In order to effectively cognize and react to the social stimulation, it is necessary that individuals be able to receive and synthesize these above factors. Enriching social situational awareness then represents the ability of a mediator (telecommunication technology for remote interactions; social assistive technologies for the disabled population) to allow the social cognition of an individual to have access to the above mentioned factors and thereby evoking appropriate social reciprocation.
 
-\chapter{RELATED WORK} 
+\subsection{Social Situational Awareness in Everyday Social Interactions}
+\subsubsection{SSA in Dyadic Interactions}
+Human communication theories have studied dyadic or bilateral interaction between individuals as the basis of most communication models. Theories of leadership, conflict and trust base their findings on dyadic interaction primitives where the importance of the various non-verbal cues is heightened due to the one-on-one nature of dyadic interactions. Eye contact, head gestures (nod and shake), body posture (conveying dominance or submissiveness), social touch (hand shake, shoulder pat, hug, etc.), facial expressions and mannerisms (smile, surprise, inquiry, etc.), eye gestures (threatened gaze, inquisitive gaze, etc.) are some of the parameters that are studied closely in dyadic understanding of human bilateral communication \cite{altmann_analysis_2007}. Enriching SSA in dyadic communication thus focuses on appropriate extraction and delivery of communicator's face, body and voice based behaviors to a remote participant or to a person who is disabled.
+
+\subsubsection{SSA in Group Interactions}
+Group dynamics refer to the interactions between members of a team assembled together for a common purpose. For example, teams of medical professionals operating on a patient, a professional team meeting for achieving a certain goal, a congressional meeting on regulations, etc. represent groups of individuals with a shared mental model of what needs to be accomplished. Within such groups, communication behaviors play a vital role in determining the dynamics and outcome of the meeting. Zancanaro et. al. \cite{zancanaro_automatic_2006} and Dong et. al.  \cite{dong_using_2007} presented one model of identifying role-play of participants in a group discussion. They identified two distinct categories of roles for the individuals within the group, namely, the socio-emotion roles and the task roles. The socio-emotional roles included the protagonist, attacker, supporter and neutral, and the task roles included the orienteer, seeker, follower and giver. These roles were dependent heavily on the emotional state (affect) of the individuals participating in the group interaction. Good teams are those where individual team members and their leaders are able to compose and coordinate their affect towards a smooth and conflict free group interaction. And effective leaders are those who can read the affect of their group member, make decisions on individual's roles and steer the group towards effective and successful decisions. Inability to access the affective cues of team members has significant consequences to team leaders leading to unresolved conflict situations and underproductive meetings, or in the worst case, the death of a patient. Thus, enriching SSA in group settings correspond to the extraction and delivery of team's interaction dynamics (which are in turn modulated in their mutual and group affect) to a remotely located team member or to a co-located individual who is disabled.
+
+In essence, SSA enrichment technologies provide for a richer interaction experience for individuals involved either in a dyadic or group interaction. It is well established that in teams comprising of good communication strategies a shared mental model towards effective decision is achieved faster with little or no emotional stress on the team members. The lack of social awareness can lead to interactions where individuals are not committed cognitively and find it very difficult to focus their attention on the communication. This is true in the case of remote interactions, disability and situations where doctors, nurses and other medical professionals are operating simultaneously on a patient.
+
+\subsection{Learning Social Awareness}
+Figure \ref{Fig:Figure3} represents a simple unidirectional model of social stimulation and reciprocation. In reality, social awareness is a continuous feedback learning system where individuals are learning through observing, predicting, enacting and correcting themselves. It is this learning mechanism that allows people to adapt easily from one culture to another with ease - here we refer to term culture in very broadly encompassing work culture, social culture in a new environment and culture of a new team, etc. Figure \ref{Fig:Figure4} shows the continuous feedback loop involved in social learning systems, based on the model of human cognition as proposed by Hawkins \cite{hawkins_intelligence_2004}.
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[width=4.5in]{SSALearning.jpg} 
+\caption{Social learning systems with continuous learning feedback loop.}
+\label{Fig:Figure4}
+\end{center}
+\end{figure}
+
+People exposed to everyday social interactions learn social skills from the three different social stimulations (social sight, social hearing and social touch) effortlessly. When faced with a new environment, individuals exercise their learned social skills to predict what social actions are appropriate in the setting. Once executed, they observe and assess their counterparts to determine if their new behavior is appropriate or not for the new setting. Such learning continues until their social rule set adapts to the new environment. Psychologists have been studying the nature of learning that happens in individuals who move from Western to Eastern cultures and vice versa. Largely, USA and Japan have been the countries of choice based on their economic equality and cultural diversity \cite{rogers_edward_2002}. In the West, large body movements and excitement in the voice are considered to be typical and to a large part encouraged as a good social skill. Similar attitudes in the East are considered to be inappropriate in professional settings and to a large extent considered indecent. An individual displaying any such inappropriate mannerisms or gestures will receive social feedback from his counterparts (everyone staring at the individual, reduced interaction with the individual, etc.).  Thus, social awareness is a learned set of rules about the environment within which the individual is present and this requires continuous monitoring of the various social channels of stimulation. Deprivation of any one of these channels can in turn affect the ability of the individual to learn social actions and responses that are pertinent to a social situation. Thus, enriching SSA not only offers the means for individuals to make appropriate social decisions, but also cognitively trains them towards effective social judgments.
+
+-------------------------------------
+In this paper, we advocate that the social separation induced by remote interactions in physically separated partners is similar to the social separation resulting from information impoverishment induced by sensory/physical disabilities in co-located interaction partners and propose technologies targeted at enriching social interactions.
+--------------------------------------
+
+\section{Components of Non-verbal Communication}
+Non-verbal communications are inherently complex in nature. In order to understand the nature of these cues, psychologists have been studying these cues under three subdivisions based on what affects individual’s non-verbal cueing \cite{knapp_nonverbal_1996}. These subdivisions include, 
+\begin{enumerate}[(a)]
+\item The communication environment
+\item  The physical characteristics of the communicators
+\item The behaviors of the communicators
+\end{enumerate}
+Below, these three items are discussed in detail providing a highlevel discussion on the nature of their influence on the non-verbal communication between individuals.
+
+\subsection{The Communication Environment}
+The communication environment or surroundings where the interactions are taking place make a huge difference of how humans respond or react \cite{hargie_social_1994} \cite{walsh_person-environment_2000}. For example, lengthy periods of extreme heat \cite{kenrick_ambient_1986} are known to increase discomfort, irritability, reduced work output and unfavorable evaluations of other. Along with the interaction partners, the environment either reinforces or depreciates the emotional experience of an individual. For example, wide open spaces and natural environments are known to be conducive for psychological stability \cite{krupat_people_1985}. Though the environmental factors just perceptual, they impose a lot of control on how humans react towards them. Some of the important environmental factors that affect interpersonal communication and non-verbal cueing are shown in the table below. **These are some of the well identified factors towards which psychologists and sociologists are working towards.**
+ 
+
+The Communication Environment	
+Familiarity of the environment	[27][28]
+Colors in the environment	[29][30]
+Other people in the environment	See next two subsections.
+Architectural Designs	[31]
+Objects in the environment	[32]
+Sounds	[33][34]
+Lighting	[35]
+Temperature	[25]
+
+1.3.2 The Physical Characteristics of the communicators:
+The physical appearance of a person is very important aspect of non-verbal cueing. People draw impressions of their communication partner as soon as they see them. The human body acts like means for communicating important sociological parameters like status, interest, dominance etc. Researchers have found cultural and global preferences in overall body image and any deviations from the norm affects interactions between people. For example, facial babyishness [36] has been found affect judgment of facial attractiveness, honesty, warmth and sincerity. Any deviation from the babyishness has been correlated to immediate reduction in the judgment of these traits. A similar such example is the clothing that people wear. It has been found that first impressions are positive if the interviewer and interviewee are clothed similarly [37]. The table below shows the important aspects of a person’s physical appearance that affects the interpersonal interaction. Various psychological studies have been conducted towards understanding the model of human perception of character. Very little is known on the reasons for some of the human norms, but it is an active area of research that is being explored rigorously, especially, in the context of group behaviors and personal mannerisms with work environments [38]. 
+
+Physical Characteristics that affect interpersonal communication 	
+The human facial attractiveness	[36][39][40]
+body shape	[41][42]
+height of a person	[43]
+self image	[44]
+body color	[45]
+body smell	[46][47][48]
+body hair	[49]
+clothing	[37][50]
+personality	[51][52]
+body decoration or artifacts	[53]
+
+1.3.3 Behavior of the Communicator:
+The last of the three units of non-verbal communication is the behavior of the communicators. While the term behavior is used loosely in defining this unit, this encompasses both static posture and dynamic movements demonstrated by communicators. Of the three units of non-verbal communication, the behavior forms the most important aspect. Most part of the emotional information encoded by humans is delivered through the behavior of individuals during social interactions. Gestures, Posture, Touch and Voice form the basic subdivisions in behavioral non-verbal cueing. While the entire human body is important for the communication of these cues, the face and eyes play a major role. 
+
+1.3.3.1 Gesture:
+Gestures are dynamic movement of face and limbs displayed during interpersonal communication. Together, they convey a lot of information that is sometimes redundant (with speech) while other times deliver emotional information about the enactor. Most often gestures are classified based on their occurrence with speech. Accordingly, there are 
+a)	Speech-independent gestures, or emblems (like shrug, thumbs up, victory sign etc), that are mostly visual in nature and convey the user’s response to the situation [54][55]. 
+b)	Speech-related gestures, or illustrators (pointing to a thing, drawing a shape while describing etc) [56].
+c)	Punctuation gestures, that emphasize, organize and accent important segments of a communication, like pounding the hand, raising a fist in the air etc.
+
+1.3.3.2 Posture:
+Posture refers to the temporary limb and body positions assumed by individuals during interpersonal interactions.  Posture is a very effective medium for communicating some of the important non-verbal cues like leadership, dominance [57], submissiveness and social hierarchy [58]. For example, people who show a tendency of dominance tend to extend their limbs out while sitting thereby displaying an overall larger body size. Similarly, submissiveness seems to be correlated to reducing the overall body size by keeps the limbs together. 
+
+Both gestures and postures are influenced heavily by the cultural background of the individual and also varied with the geographical location [59]. Though the cultural influence if true with other non-verbal and verbal cues, the perceived difference is the highest in gestures and posture displayed by individuals. 
+
+1.3.3.3 Touch:
+Social touch has been a very important aspect of non-verbal communication in humans. Developmental biologists believe that the first set of sensory responses in a human fetus is touch [60]. From a social context this sensory channel is very well used in conveying important interpersonal cues such as interest, intimacy, warmth, confidence, leadership and sympathy [61]. Touch is a powerful means of unconscious interaction and it is believed that people who are very good in their social skills rely upon touch a lot [62].   
+
+Historically, the sense of touch (Haptics Communication [63]) has been studied by psychologists in the perspective of understanding the human sensory system, but recently, haptics has grown out into the technology front providing human machine interfaces that augment or replace visual and auditory interfaces [64].   
+
+1.3.3.4 Face:
+The face is the primary channel for non-verbal communication. Humans are efficient in conveying and receiving plethora of information through subtle movements of their face and head. This focus on the face develops from a very young age and it has been shown that by 2 months, infants are adept in understanding facial gestures and mannerisms [65]. The human face has very fine muscular control allowing it to perform complex patterns that are common to humans, while at the same time being vastly individual [66]. The facial appearance of an individual is due to their genetic makeup, transient moods that stimulate the facial muscles and due to chronically held expressions that seem to set in and become permanent. Human visual system has developed the ability to read these subtleties on people’s faces and interpret all the three aspects of the face - genetic makeup (person’s identity through face recognition), transient mood (facial expression and emotion recognition), and permanent expression on the face (default neutral face of individuals). While the aspects of permanent facial appearance are important in the recognition of the individual, from a non-verbal communication perspective, the primary function of the face is directed towards communicating emotions and expressions. 
+
+The understanding of the human facial expression space was immensely increased by the work of Ekman, Frisen [67] and Izard [68] in the late 1970s. They independently measured precise facial movement patterns and correlated these individual movements with facial expressions on the human face. While Izard developed these patterns on infants, the Facial Action Coding System (FACS) developed by Ekman and Frisen has become the de facto standard for measuring facial expressions and emotions. FACS allow expression and emotion researchers to encode facial movements into accurate contraction and relaxation of facial muscles. Based on these facial actions, Ekman and Frisen discovered the global occurrence of seven basic judged emotions. As psychologists have started to master the FACS system of analyzing facial actions, human computer interaction specialists have started to use the same FACS encodings for building better interfaces that can determine human affect and respond accordingly. 
+
+1.3.3.4.1 Facial Action Coding System (FACS):
+FACS defines all possible facial feature movements into Action Units (AU) which represent movement of facial features (like lips, eye brow, chin etc). The AUs are the net effect of facial muscle contraction and relaxation, though they are not directly related to the muscles. Table below shows the different AUs that form the basis of FACS based facial coding with the appropriate number and the associated facial feature movement.
+ 
+•	1 Inner Brow Raiser
+•	2 Outer Brow Raiser 
+•	4 Brow Lowerer 
+•	5 Upper Lid Raiser 
+•	6 Cheek Raiser 
+•	7 Lid Tightener 
+•	9 Nose Wrinkler 
+•	10 Upper Lip Raiser 
+•	11 Nasolabial Deepener 
+•	12 Lip Corner Puller 
+•	13 Cheek Puffer 
+•	14 Dimpler 
+•	15 Lip Corner Depressor 
+•	16 Lower Lip Depressor 
+•	17 Chin Raiser 
+•	18 Lip Puckerer 
+•	19 Tongue Out
+•	20 Lip stretcher 
+•	21 Neck Tightener 
+•	22 Lip Funneler 
+•	23 Lip Tightener 
+•	24 Lip Pressor 
+•	25 Lips part 
+•	26 Jaw Drop 
+•	27 Mouth Stretch 
+•	28 Lip Suck 
+•	29 Jaw Thrust
+•	30 Jaw Sideways
+•	31 Jaw Clencher 
+•	32 Lip Bite
+•	33 Cheek Blow
+•	34 Cheek Puff
+•	35 Cheek Suck
+•	36 Tongue Bulge
+•	37 Lip Wipe
+•	38 Nostril Dilator
+•	39 Nostril Compressor
+•	41 Lid Droop
+•	42 Slit
+•	43 Eyes Closed 
+•	44 Squint
+•	45 Blink 
+•	46 Wink 
+ 
+1.3.3.5 Eye:
+Like the human face, eyes are very important for the control of non-verbal communication. This involvement of human eyes comes from the functions that gaze and mutual gaze play in everyday human interpersonal communication [69]. People use their gaze to convey subtle information that enables smooth verbal interaction which eventually leads to information exchange [70]. From a research perspective, the function of gaze has been classified into four important functional categories [71][2]. These include
+1.3.3.5.1 Regulating the flow of communication.
+One of the most important functions of gaze is the regulation of verbal communication in bilateral and group communications. People use gaze to shift focus, bring the attention of a group of people to one thing, turn taking in group conversations [72] and eliciting response from communication partners [73].  
+1.3.3.5.2 Monitoring feedback.
+Gaze provides a means for individuals to get feedback during conversations and communications. Feedback is a very important tool while people converse. Humans study the eyes of the listener to cognitively inject or eliminate more verbal information into the conversation [74].
+1.3.3.5.3 Reflective of cognitive activity.
+Both listeners and speakers tend not to gaze at others when they are processing complex ideas or tasks. Studies have shown that people can answer better when they close their eyes and are allowed to process their thoughts [75]. Thus, cognitive processing is displayed very elegantly by monitoring eye gaze patterns.
+1.3.3.5.4 Expressing emotions.  
+Along with the facial muscular movements, the eyes play a vital role in the expression of emotions. In fact, in human computer interaction research, it has been found that relying on the eyes and the eyelids alone can provide more accurate delivery of affect information when compared to the entire face [76]. Verbal communication tends to move the lips and mouth quickly and randomly that can make image and video processing of expressions very tough. Some of the more recent spontaneous expression recognition research is focusing on the eyes for this very reason. 
+
+
+
+\chapter{MOTIVATION}
+\DoubleSpacing
+\setlength{\parindent}{.5in}
+
+
+
+
+\chapter{RELATED WORK}
 
 \DoubleSpacing
 \setlength{\parindent}{.5in}
@@ -190,8 +346,8 @@ The Transactional Communication Model \cite{sameroff_reproductive_1975} suggests
 \bibliography{references}
 \end{SingleSpace}
 %\clearpage
- 
-%% maybe endnotes 
+
+%% maybe endnotes
 %% maybe bibliography
 % if appendices, then
 
@@ -211,7 +367,7 @@ The Transactional Communication Model \cite{sameroff_reproductive_1975} suggests
 %\clearpage
 %\newpage	
 
-This LaTeX document was generated using the Graduate College Format Advising tool. Please turn a copy of this page in when you submit your document to Graduate College format advising. You may discard this page once you have printed your final document. DO NOT TURN THIS PAGE IN WITH YOUR FINAL DOCUMENT! 
+This LaTeX document was generated using the Graduate College Format Advising tool. Please turn a copy of this page in when you submit your document to Graduate College format advising. You may discard this page once you have printed your final document. DO NOT TURN THIS PAGE IN WITH YOUR FINAL DOCUMENT!
 
 
 \end{document}		
