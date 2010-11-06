@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.18)  4 NOV 2010 13:20
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  6 NOV 2010 01:40
 entering extended mode
-**I:/Dissertation/pwasu.tex
-(I:/Dissertation/pwasu.tex
+**C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
+("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
@@ -369,7 +369,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(I:\Dissertation\pwasu.sty
+("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.sty"
 Package: pwasu 2009/04/18 v0.3 ASU thesis
 \toptafiddle=\skip182
 \bottafiddle=\skip183
@@ -422,7 +422,11 @@ File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
-(I:\Dissertation\pwasu.aux)
+("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.aux"
+
+LaTeX Warning: Label `Tab:Table2' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
@@ -436,8 +440,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 47.
-
-("C:\Program Files\MiKTeX 2.8\tex\latex\psnfss\ot1ptm.fd"
+ ("C:\Program Files\MiKTeX 2.8\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \big@size=\dimen149
@@ -458,7 +461,8 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 
 
-{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
+{C:/Documents and Settings/All Users/Application Data/MiKTeX/2.8/pdftex/config/
+pdftex.map}]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -478,7 +482,7 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 [4
 
 
-] (I:\Dissertation\pwasu.toc
+] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.toc"
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
 
 
@@ -509,23 +513,27 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [5
 
-] (I:\Dissertation\pwasu.lot)
+])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[6
-
-] (I:\Dissertation\pwasu.lof)
+[6] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.lot")
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [7
+
+] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.lof")
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[8
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
@@ -546,14 +554,14 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[2] <NVCEncodings.jpg, id=33, 151.11pt x 174.105pt>
+[2] <NVCEncodings.jpg, id=36, 151.11pt x 174.105pt>
 File: NVCEncodings.jpg Graphic file (type jpg)
  <use NVCEncodings.jpg>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[3 <I:/Dissertation/NVCEncodings.jpg>]
-<Leakiness.jpg, id=37, 381.67593pt x 322.95656pt>
+[3 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/NVCEncodings.jpg
+>] <Leakiness.jpg, id=40, 381.67593pt x 322.95656pt>
 File: Leakiness.jpg Graphic file (type jpg)
  <use Leakiness.jpg>
 
@@ -563,10 +571,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[4] <SSA.jpg, id=41, 240.7905pt x 135.6705pt>
+[4] <SSA.jpg, id=44, 240.7905pt x 135.6705pt>
 File: SSA.jpg Graphic file (type jpg)
  <use SSA.jpg>
-<SSA2.jpg, id=42, 554.07pt x 90.3375pt>
+<SSA2.jpg, id=45, 554.07pt x 90.3375pt>
 File: SSA2.jpg Graphic file (type jpg)
  <use SSA2.jpg>
 
@@ -576,21 +584,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[5 <I:/Dissertation/Leakiness.jpg>]
+[5 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Leakiness.jpg>]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[6 <I:/Dissertation/SSA.jpg> <I:/Dissertation/SSA2.jpg>]
+[6 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SSA.jpg> <C:/Doc
+uments and Settings/Sreekar/Desktop/Dissertation SVN/SSA2.jpg>]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[7] <SSALearning.jpg, id=53, 598.48593pt x 237.88875pt>
+[7] <SSALearning.jpg, id=56, 598.48593pt x 237.88875pt>
 File: SSALearning.jpg Graphic file (type jpg)
  <use SSALearning.jpg>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[8 <I:/Dissertation/SSALearning.jpg>]
+[8 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SSALearning.jpg>
+]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -598,13 +612,66 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[10
-
-] (I:\Dissertation\pwasu.bbl
+[10]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[11
+[11]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[12]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[13]
+Overfull \hbox (2.31694pt too wide) in paragraph at lines 295--297
+[]\OT1/ptm/m/it/10.95 Facial Ac-tion Cod-ing Sys-tem (FACS): \OT1/ptm/m/n/10.95
+ FACS de-fines all pos-si-ble fa-cial fea-ture move-
+ []
+
+
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[14]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[15]
+Underfull \hbox (badness 1122) in paragraph at lines 369--369
+[]|\OT1/ptm/m/n/10.95 Gaze pro-vides a means for in-di-vid-u-als
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 369--369
+\OT1/ptm/m/n/10.95 com-plex ideas or tasks. Stud-ies have
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 369--369
+[]|\OT1/ptm/m/n/10.95 Along with the fa-cial mus-cu-lar move-
+ []
+
+
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[16]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[17]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[18
+
+] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[19
 
 ]
 bibitemlist
@@ -612,51 +679,68 @@ bibitemlist
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[12
-
-])
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[13]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[14
+[20
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[15
+[21]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[22])
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[23]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[24
+
+]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[25
 
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[16
+[26
 
 ]
 \tf@toc=\write4
 \tf@lot=\write5
 \tf@lof=\write6
- (I:\Dissertation\pwasu.aux) ) 
+ ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4595 strings out of 495285
- 60329 string characters out of 3180312
- 142054 words of memory out of 3000000
- 7785 multiletter control sequences out of 15000+200000
+ 4632 strings out of 495285
+ 61858 string characters out of 3180282
+ 149824 words of memory out of 3000000
+ 7822 multiletter control sequences out of 15000+200000
  15347 words of font info for 38 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,10n,21p,1964b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.8/fonts/enc/dvips/font
-name/8r.enc}<C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
-iles/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pwasu.pdf (23 pages, 271686 bytes).
+ 29i,11n,21p,2007b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.8/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on pwasu.pdf (34 pages, 296459 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
