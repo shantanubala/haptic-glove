@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  6 NOV 2010 01:40
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  6 NOV 2010 10:10
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -635,25 +635,25 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [14]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[15]
-Underfull \hbox (badness 1122) in paragraph at lines 369--369
+Underfull \hbox (badness 1122) in paragraph at lines 348--348
 []|\OT1/ptm/m/n/10.95 Gaze pro-vides a means for in-di-vid-u-als
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 369--369
+Underfull \hbox (badness 1082) in paragraph at lines 348--348
 \OT1/ptm/m/n/10.95 com-plex ideas or tasks. Stud-ies have
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 369--369
+Underfull \hbox (badness 1490) in paragraph at lines 348--348
 []|\OT1/ptm/m/n/10.95 Along with the fa-cial mus-cu-lar move-
  []
 
 
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[15]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -694,7 +694,10 @@ Missing character: There is no © in font ptmr7t!
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[22])
+[22]
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -702,20 +705,28 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[24
-
-]
+[24])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[25
-
-
-]
+[25]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [26
+
+]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[27
+
+
+]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[28
 
 ]
 \tf@toc=\write4
@@ -727,10 +738,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4632 strings out of 495285
- 61858 string characters out of 3180282
- 149824 words of memory out of 3000000
- 7822 multiletter control sequences out of 15000+200000
+ 4655 strings out of 495285
+ 62400 string characters out of 3180282
+ 154080 words of memory out of 3000000
+ 7845 multiletter control sequences out of 15000+200000
  15347 words of font info for 38 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,11n,21p,2007b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -738,9 +749,9 @@ Here is how much of TeX's memory you used:
 s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.8/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on pwasu.pdf (34 pages, 296459 bytes).
+Output written on pwasu.pdf (36 pages, 302760 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
