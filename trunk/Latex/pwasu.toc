@@ -23,11 +23,14 @@
 \contentsline {subsubsection}{Face}{13}
 \contentsline {subsubsection}{Eye}{15}
 \contentsline {chapter}{\chapternumberline {2}MOTIVATION}{18}
-\contentsline {chapter}{\chapternumberline {3}RELATED WORK}{19}
-\contentsline {section}{\numberline {3.1}Test 1}{19}
-\contentsline {subsection}{Test 2}{19}
-\contentsline {subsubsection}{Test 3}{19}
-\contentsline {chapter}{REFERENCES}{20}
-\contentsline {chapter}{APPENDIX}{25}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{26}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{27}
+\contentsline {section}{\numberline {2.1}Assistive Technology}{18}
+\contentsline {section}{\numberline {2.2}Remote Interactions}{18}
+\contentsline {section}{\numberline {2.3}Medical Teams}{20}
+\contentsline {chapter}{\chapternumberline {3}RELATED WORK}{21}
+\contentsline {section}{\numberline {3.1}Test 1}{21}
+\contentsline {subsection}{Test 2}{21}
+\contentsline {subsubsection}{Test 3}{21}
+\contentsline {chapter}{REFERENCES}{22}
+\contentsline {chapter}{APPENDIX}{27}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{28}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{29}
