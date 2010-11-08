@@ -365,6 +365,8 @@ National Center for Health Statistics reported in $2007$ that the estimated numb
 
 Recently, Jindal-Snape \cite{jindal-snape_generalization_2004} \cite{jindal-snape_use_2005} \cite{jindal-snape_using_1998} carried out extensive research in understanding social skill development in the blind and visually impaired. She has studied individual children (who are blind) from India where the socio-economic conditions do not provide for trained professionals to work with children with disabilities. Her seminal work in understanding social needs of children who are blind have revealed two important aspects of visual impairment that restricts seamless social interactions.
 
+While most persons who are blind or visually impaired eventually make accommodations for the lack of visual information, and lead a healthy personal and professional life, the path towards learning effective accommodations could be positively effected through the use of assistive aids. Specifically, children with visual disabilities find it very difficult to learn social skills while growing amongst sighted peers, leading to social isolation and psychological problems \cite{jindal-snape_generalization_2004}. Social disconnect due to visual disability has also been observed at the college level \cite{shinohara_blind_2009} where students start to learn professional skills and independent living skills. Any assistive technology aid that can enrich interpersonal social interactions could prove beneficial for persons who are visual disabled.
+
 \section{Remote Interactions}
 An industry survey \cite{solomon_challenges_2010} of $1592$ individuals who collaborated remotely, carried out by RW3 CultureWizard - a company focused on improving international collaborations - reported difficulties similar to what was faced by the individuals who are blind. "Respondents found virtual teams more challenging than face-to-face teams in managing conflict ($73$\%), making decisions ($69$\%), and expressing opinions ($64$\%). The top five challenges faced during virtual team meetings were insufficient time to build relationships ($90$\%), speed of decision making ($80$\%), different leadership styles ($77$\%), method of decision making ($76$\%), and colleagues who do not participate ($75$\%)." These results can be correlated to the need for Social Situational Awareness in group settings, specifically one that can promote leadership and personal understanding of each other as indicated in Section 2.1.2.
 
@@ -401,15 +403,46 @@ Personal challenges during virtual team meetings\\
 
 
 
-\chapter{RELATED WORK}
+\chapter{ASSISTIVE TECHNOLOGY DESIGN}
 
 \DoubleSpacing
 \setlength{\parindent}{.5in}
-[Enter your text here]
+Affective Computing research has employed algorithmic framework to quantitatively study both verbal and non-verbal cues displayed by the humans during social communication.  Signal streams from various sensors, including visual sensors (e.g. cameras), audio sensors (e.g. microphones) and various physiological sensors (such as EEG, EMG, and galvanic skin resistance sensors) have been used to evaluate human emotional states.  A good review of research work in Affective Computing can be found in [15].  This research has enabled a better understanding of human physiological signals, with respect to emotional states, and the results have been used to facilitate human-computer interaction (HCI). In theory, a system that can detect non-verbal social cues could also be used as an assistive device to provide social feedback to people with disabilities.  The emphasis here would not be so much on interpreting these cues as on presenting social cue information to the user, and allowing the user to interpret them.  However, very little research has been done towards finding intuitive methods for presenting social cue information to humans.  [16] developed a haptic chair for presenting facial expression information.  It was equipped with vibrotactile actuators on the back of the chair that represented some specific facial feature. Experiments conducted by the researchers showed that people were able to distinguish between six basic emotions.  However, this solution had the obvious limitation that the user needed to be sitting in the chair to use the system.
 
-\section{Test 1}
-\subsection{Test 2}
-\subsubsection{Test 3}
+Observation 1: Assistive technology designed towards social assistance should be portable and wearable so that the users can use them at various social circumstances without any restriction to their everyday life.
+People with disabilities are not always able to perceive or interpret implicit social feedback as a guide to improving their communication competence.  However, they might be able to use explicit feedback provided by a technological device.  Rana and Picard [17] developed a device called Self Cam, which provides explicit feedback to people with Autism Spectrum Disorder (ASD).  The system employs a wearable, self-directed camera that is supported on the users own shoulder to capture the user's facial expressions. The system attempts to categorize the facial expressions of the user during social interactions to evaluate the social interaction performance of the ASD user.  Unfortunately, the technology does not take into account the social implication of assistive technologies. Since the technology is being developed to address social interactions, it is important to take into account the social artifacts of technology. A device that has unnatural extensions could become more of a social distraction for both the participants and users than as an aid.
+
+
+Observation 2: Assistive technology designed towards social assistance should allow seamless and discrete embodiment of sensors or actuators making sure the device does not become a social distraction.
+
+Vinciarelli et. al. [18] have described the use of discrete technologies for understanding social interactions within groups, specifically targeting professional environments where individuals take decisions as a group. They analyze the use of bodily mannerisms and prosody to extract nonverbal cues that allow group dynamics analysis. They rely on simple sensors in the form of wearable tags [19] which detect face to face interaction events along with prosody analysis to determine turn taking, emotion of the speaker, distance to an individual etc. Pentland describes these signals captured during group interactions as [20] honest signals. Some of his recent works [21] in the area of social monitoring hopes to capture these signals and provide feedback to individuals about their social presence within a group. The use of social feedback is illustrated elegantly in their work but their findings relied on sensors carried by all individuals involved in the study. Having everyone in a group wear sensors has proved to be a viable and productive approach for studying group dynamics.  However, this approach is not viable as a strategy for developing an assistive technology, as it is not realistic to assume that everyone who interacts with a person with a disability will wear sensors.
+
+Observation 3: Assistive technology designed towards social assistance should incorporate mechanisms embodied on the user to determine both self and other's social mannerism.
+
+In two independent experiments [22] and [14], researchers developed a social feedback device that provides intervention when a person with visual impairment starts to rock their body displaying a stereotypy. [22] designed a device that consisted of a metal box with a mercury level switch that detects any bending actions. The feedback was provided with a tone generator that was also located inside the metal box.  The entire box was mounted on a strap that the user wears around his/her head. The authors tested it on a congenitally blind individual who had severe case of body rocking and they conclude that the use of any assistive technology is useful only temporarily while the device is in use. They state that the body rocking behavior returned to baseline levels as soon as the device was removed. Since the time of this experiment, behavioral psychology studies have explored short term feedback for rehabilitation [23], and these studies support the above observation that short term feedback is often detrimental to rehabilitation and subject's case invariably worsens. Unfortunately, due to the prohibitively large design of the device developed by these researchers, it was impossible to have the individual wear the device over long durations.
+
+Observation 4: Assistive technology designed towards social assistance and behavioral rehabilitation should be used over long durations in such a way that the feedback is slowly tapered off over a significantly longer duration of time.
+
+
+In [14] researchers used a 'Drive Alert' (driver alerting system that monitors head droop) to detect body rocking and provide feedback to a congenitally blind 21 year old student. The research concludes that they were able to control body rocking effectively, but the device could not differentiate between body rocks from any other functional body movements. This device, primarily built to sense drooping in drivers provides no opportunity to differentiate between a body rock and a functional droop. Use of such devices could only be negative on the user as a large number of false alarms would only discourage an individual from using any assistive technology.
+
+Observation 5: Assistive technology designed towards social assistance and behavioral rehabilitation should be effective in discriminating social stereotypic mannerisms from other functional movements to keep the motivation of device use high.
+
+
+3.	Conceptual Framework
+3.1	Design principles for social assistive and rehabilitative devices
+A device that is developed to facilitate the social interactions of people with sensory, or cognitive disabilities might do so by (1) detecting social cues during social interactions and delivering that information to the user in real time to enable empathy, or (2) detecting the user's stereotypic behaviors during social interactions and communicating that information to the user in real time to provide social feedback.  The first device might be classified as an assistive technology, while the second might be classified as a rehabilitative technology.  Ideally, such a device would be based on the following design principles:
+
+Design principle 1: The device should be portable and wearable so that it can be used in any social situation, and without any restriction on the user's everyday life.
+
+Design principle 2: The device should employ sensors and personal signaling devices that are unobtrusive, and do not become a social distraction.
+
+Design principle 3: The device should include sensors that can detect the social mannerisms of both the user and other people with whom the user might communicate.
+
+Design principle 4: The device should be comfortable enough to be worn repeatedly for extended periods of time, to allow it to be used effectively for rehabilitation.
+
+Design principle 5: The device should be able to reliably distinguish between the user's problematic stereotypic mannerisms and normal functional movements, to ensure that it will be worn long enough to achieve rehabilitation.
+
 
 
 
