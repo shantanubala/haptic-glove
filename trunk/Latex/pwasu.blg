@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99cThe top-level auxiliary file: pwasu.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
+Repeated entry---line 2033 of file references.bib
+ : @inproceedings{ur_rehman_manifold_2007
+ :                                       ,
+I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 2351 of file references.bib
  :  
  :  year = {1977}
@@ -22,6 +26,10 @@ Repeated entry---line 5189 of file references.bib
  : @article{jindal-snape_generalization_2004
  :                                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 5205 of file references.bib
+ : @article{felps_modification_1988
+ :                                 ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 5488 of file references.bib
  : @article{jindal-snape_generalization_2004
  :                                          ,
@@ -34,8 +42,18 @@ Repeated entry---line 5650 of file references.bib
  : @book{knapp_nonverbal_1996
  :                           ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 5890 of file references.bib
+ : @inproceedings{teeters_self-cam:_2006
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6000 of file references.bib
+ : @inproceedings{teeters_self-cam:_2006
+ :                                      ,
+I'm skipping whatever remains of this entry
 Warning--empty publisher in altmann_analysis_2007
 Warning--empty booktitle in zancanaro_automatic_2006
 Warning--empty year in rosenfeld_clothing_1977
 Warning--empty publisher in robles-de-la-torre_principles_2008
-(There were 8 error messages)
+Warning--empty booktitle in ur_rehman_manifold_2007
+Warning--empty booktitle in kim_meeting_2008
+(There were 12 error messages)
