@@ -6,9 +6,29 @@ I was expecting a `,' or a `}'---line 2351 of file references.bib
  :  year = {1977}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 4407 of file references.bib
+ : @article{segrin_poor_2000
+ :                          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 5116 of file references.bib
  : @article{riggio_assessment_1986
  :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5140 of file references.bib
+ : @article{segrin_poor_2000
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5189 of file references.bib
+ : @article{jindal-snape_generalization_2004
+ :                                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5488 of file references.bib
+ : @article{jindal-snape_generalization_2004
+ :                                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5602 of file references.bib
+ : @article{jindal-snape_generalization_2004
+ :                                          ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5650 of file references.bib
  : @book{knapp_nonverbal_1996
@@ -18,4 +38,4 @@ Warning--empty publisher in altmann_analysis_2007
 Warning--empty booktitle in zancanaro_automatic_2006
 Warning--empty year in rosenfeld_clothing_1977
 Warning--empty publisher in robles-de-la-torre_principles_2008
-(There were 3 error messages)
+(There were 8 error messages)

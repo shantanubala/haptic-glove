@@ -359,27 +359,34 @@ In this chapter we discuss three important problems that highlight the need to c
 \section{Assistive Technology}
 
 \section{Remote Interactions}
-An industry survey [17] of 1592 individuals who collaborated remotely, carried out by RW3 CultureWizard - a company focused on improving international collaborations - reported difficulties similar to what was faced by the individuals who are blind. "Respondents found virtual teams more challenging than face?to?face teams in managing conflict (73\%), making decisions (69\%), and expressing opinions (64\%). The top five challenges faced during virtual team meetings were insufficient time to build relationships (90\%), speed of decision making (80\%), different leadership styles (77\%), method of decision making (76\%), and colleagues who do not participate (75\%)." These results can be correlated to the need for Social Situational Awareness in group settings, specifically one that can promote leadership and personal understanding of each other as indicated in Section 2.1.2.
-Further, when the participants were asked about the personal challenges faced during virtual team meetings, they reported "… inability to read non?verbal cues (94\%), absence of collegiality (85\%), difficulty establishing rapport and trust (81\%), difficulty seeing the whole picture (77\%), reliance on email and telephone (68\%), and a sense of isolation (66\%)." Delivering non-verbal cues, establishing trust and rapport, and easing isolation are all derivatives of increasing one's social connection to their interaction partners, be it remote or face-to-face. Observing people who are disabled and the way they communicate with their co-located partners, it is possible to derive inspirations for novel social mediation technologies. The following subsection discusses one example of how to develop an evidence-based social situational awareness model based on hand shaking in the blind population as an example of social interaction between participants.
+An industry survey \cite{solomon_challenges_2010} of 1592 individuals who collaborated remotely, carried out by RW3 CultureWizard - a company focused on improving international collaborations - reported difficulties similar to what was faced by the individuals who are blind. "Respondents found virtual teams more challenging than face?to?face teams in managing conflict (73\%), making decisions (69\%), and expressing opinions (64\%). The top five challenges faced during virtual team meetings were insufficient time to build relationships (90\%), speed of decision making (80\%), different leadership styles (77\%), method of decision making (76\%), and colleagues who do not participate (75\%)." These results can be correlated to the need for Social Situational Awareness in group settings, specifically one that can promote leadership and personal understanding of each other as indicated in Section 2.1.2.
 
-\begin{table}[hpdf]
-\caption{Survey on the challenges of remote interaction [17]}
-\lable{Table:Tab3}
-\begin{tabular} {|l|}
+Further, when the participants were asked about the personal challenges faced during virtual team meetings, they reported inability to read non-verbal cues (94\%), absence of collegiality (85\%), difficulty establishing rapport and trust (81\%), difficulty seeing the whole picture (77\%), reliance on email and telephone (68\%), and a sense of isolation (66\%)." Delivering non-verbal cues, establishing trust and rapport, and easing isolation are all derivatives of increasing one's social connection to their interaction partners, be it remote or face-to-face. Observing people who are disabled and the way they communicate with their co-located partners, it is possible to derive inspirations for novel social mediation technologies. The following subsection discusses one example of how to develop an evidence-based social situational awareness model based on hand shaking in the blind population as an example of social interaction between participants.
+
+\begin{table}
+\caption{Survey on the challenges of remote interaction \cite{solomon_challenges_2010}}
+\label{Table:Tab3}
+\begin{tabular}{|l|}
 \hline
 Challenges in virtual teams compared to face-to-face teams \\
 \hline
-
+\includegraphics[width=3in]{Suggestion1.jpg}\\
 \hline
 Top five challenges faced during virtual team meetings \\
 \hline
-
+\includegraphics[width=3in]{Suggestion2.jpg}\\
 \hline
 Personal challenges during virtual team meetings\\
 \hline
-
+\includegraphics[width=4.5in]{Suggestion3.jpg}\\
 \hline
+\end{tabular}
 \end{table}
+
+
+
+
+
 \section{Medical Teams}
 
 
