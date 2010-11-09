@@ -468,7 +468,51 @@ While various other examples were cited by individuals during these focus group 
 \item How one is perceived by others during social interactions.
 \end{enumerate}
 
+These needs correlated with the psychology studies conducted by Jindal-Snape with children who were visually impaired. She identifies these two needs under the \emph{Social Learning} and \emph{Social Feedback}. While these two important categories were identified, for simplification, the non-verbal cue needs were reduced to $8$ aspects of social interactions that focused primarily on the physical characteristics of the interaction partner and the behaviors of the
+interaction partner. These questions were developed with the help of visually impaired professionals and students:
 
+\begin{enumerate}[1.]
+\item Knowing how many people are standing in front you, and where each person is standing.
+\item Knowing where a person is directing his/her attention.
+\item Knowing the identities of the people standing in front of you.
+\item Knowing something about the appearance of the people standing in front of you.
+\item Knowing whether the physical appearance of a person who you know has changed since the last time you encountered him/her.
+\item Knowing the facial expressions of the person standing in front of you.
+\item Knowing the hand gestures and body motions of the person standing in front of you.
+\item Knowing whether your personal mannerisms do not fit the behavioral norms and expectations of the sighted people with whom you will be interacting.
+\end{enumerate}
+
+Further, in order to understand the importance of these non-verbal communication primitives an online survey was carried out to determine a self-report importance map of the various non-verbal cues. This list of questions included both the importance from the perspective of allowing access to the non-verbal cues of the interaction partner (for enabling Social Learning), while also focusing on the personal body mannerism (for enabling Social Feedback) of the individual.The online survey was anonymously completed by $28$ people, of whom $16$ were blind, $9$ had low vision, and $3$ were sighted specialists in the area of visual impairment and vocational training. The online survey consisted of eight questions that corresponded to the previously identified list of needs. Respondents answered each question using a Five-point Likert scale, the metrics being (1) Strongly disagree, (2) Disagree, (3) Neutral, (4) Agree, and (5) Strongly agree.
+
+\section{Results from the Online Survey}
+
+\begin{table}[h]
+\caption{Average Score on the 8 Questions obtained through an Online Survey}
+\label{Tab:Table5}
+\begin{center}
+\begin{tabularx}{5in}{|l|X|c|}
+\hline
+Question No. & Question & Mean Score\\
+\hline
+8. & I would like to know if any of my personal mannerisms might interfere with my social interactions with others. & 4.5 \\
+\hline
+6. & I would like to know what facial expressions others are displaying while I am interacting with them. & 4.4 \\
+\hline
+3. & When I am standing in a group of people, I would like to know the names of the people around me. & 4.3 \\
+\hline
+7. & I would like to know what gestures or other body motions people are using while I am interacting with them. & 4.2 \\
+\hline
+1. & When I am standing in a group of people, I would like to know how many people there are, and where each person is. & 4.1 \\
+\hline
+2. & When I am standing in a group of people, I would like to know which way each person is facing, and which way they are looking. & 4.0 \\
+\hline
+5. & I would like to know if the appearance of others has changed (such as the addition of glasses or a new hair-do) since I last saw them. & 3.5 \\
+\hline
+4. & When I am communicating with other people, I would like to know what others look like. & 3.4 \\
+\hline
+\end{tabularx}
+\end{center}
+\end{table}
 
 %\newpage
 \vspace*{1in}

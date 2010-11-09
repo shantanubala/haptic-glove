@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  8 NOV 2010 08:38
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  8 NOV 2010 19:22
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -703,23 +703,44 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[24] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
+[24]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 459.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 459.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 459.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 463.
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [25]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[26]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[27] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[28]
 bibitemlist
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[26
+[29
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[27]
+[30]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
@@ -728,39 +749,43 @@ Missing character: There is no © in font ptmr7t!
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[28]
+[31]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[29]
+[32]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[30])
+[33]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[31]
+[34])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[32
+[35]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[36
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[33
+[37
 
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[34
+[38
 
 ]
 \tf@toc=\write4
@@ -772,21 +797,22 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4680 strings out of 495285
- 62856 string characters out of 3180282
- 154193 words of memory out of 3000000
- 7864 multiletter control sequences out of 15000+200000
- 16405 words of font info for 41 fonts, out of 3000000 for 9000
+ 4724 strings out of 495285
+ 63500 string characters out of 3180282
+ 154311 words of memory out of 3000000
+ 7902 multiletter control sequences out of 15000+200000
+ 30175 words of font info for 68 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,11n,21p,2007b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
  2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.8/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on pwasu.pdf (42 pages, 421161 bytes).
+ts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
+urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on pwasu.pdf (46 pages, 438831 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
+ 180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
