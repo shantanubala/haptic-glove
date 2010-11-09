@@ -357,11 +357,20 @@ Expressing emotions & Along with the facial muscular movements, the eyes play a 
 In this chapter we discuss three important problems that highlight the need to communicate social situational awareness to individuals involved in interpersonal interactions.
 
 \section{Assistive Technology}
+most part of the non-verbal encoding happens through visual media. While some parts of these cues are delivered along with speech, most part of the nonverbal communication is inaccessible to someone with visual impairment or blindness. This disconnect from the visual stimulations deprive the individuals of vital communicative cues that enrich the experience of social interactions.  People who are blind cannot independently access this visual information, putting them at a disadvantage in daily social encounters.  For example, during a group conversation it is common for a question to be directed to an individual without using his or her name-instead, the gaze of the questioner indicates to whom the question is directed. In such situations, people who are blind find it difficult to know when to speak because they cannot determine the direction of the questioner's gaze. Consequently, individuals who are blind might be slow to respond or talk out of turn, possibly interrupting the conversation. As another example, consider that people who are blind cannot use visual cues to determine when their conversation partners change positions (e.g., pacing the floor or moving to a more comfortable chair). In this scenario, an individual who is blind might inadvertently create a socially awkward situation by speaking in the wrong direction.
+
+To compound these problems, sighted individuals are often unaware of their non-verbal cues and often do not (or cannot) make appropriate adjustments when communicating with people who are blind. Also, people who are blind often do not feel comfortable asking others to interpret non-verbal information during social encounters because they do not want to burden friends and family.  The combination of all these factors can lead people who are blind to become socially isolated \cite{segrin_poor_2000}, which is a major concern given the importance of social interaction. While people who are blind and visually impaired face a difficulty in social interactions, research in rehabilitation training for these populations recommends that the social involvement for these individuals have to substantially increase in order to enable their acceptance of the society.
+
+National Center for Health Statistics reported in $2007$ that the estimated number of visually impaired and blind people totals up to $21.2$ million in the United States alone . Global numbers are daunting. In $2002$ more than $161$ million people were visually impaired, of whom $124$ million people had low vision and $37$ million were blind . World Health Organization reports that more than $82$\% of the populations who are blind or visually impaired are of age $50$ or older. With the life expectancy going up in most developing countries, the percentage of general population entering into some sort of visual impairment is going to increase in the coming years.
+
+Recently, Jindal-Snape \cite{jindal-snape_generalization_2004} \cite{jindal-snape_use_2005} \cite{jindal-snape_using_1998} carried out extensive research in understanding social skill development in the blind and visually impaired. She has studied individual children (who are blind) from India where the socio-economic conditions do not provide for trained professionals to work with children with disabilities. Her seminal work in understanding social needs of children who are blind have revealed two important aspects of visual impairment that restricts seamless social interactions.
+
+While most persons who are blind or visually impaired eventually make accommodations for the lack of visual information, and lead a healthy personal and professional life, the path towards learning effective accommodations could be positively effected through the use of assistive aids. Specifically, children with visual disabilities find it very difficult to learn social skills while growing amongst sighted peers, leading to social isolation and psychological problems \cite{jindal-snape_generalization_2004}. Social disconnect due to visual disability has also been observed at the college level \cite{shinohara_blind_2009} where students start to learn professional skills and independent living skills. Any assistive technology aid that can enrich interpersonal social interactions could prove beneficial for persons who are visual disabled.
 
 \section{Remote Interactions}
-An industry survey \cite{solomon_challenges_2010} of 1592 individuals who collaborated remotely, carried out by RW3 CultureWizard - a company focused on improving international collaborations - reported difficulties similar to what was faced by the individuals who are blind. "Respondents found virtual teams more challenging than face?to?face teams in managing conflict (73\%), making decisions (69\%), and expressing opinions (64\%). The top five challenges faced during virtual team meetings were insufficient time to build relationships (90\%), speed of decision making (80\%), different leadership styles (77\%), method of decision making (76\%), and colleagues who do not participate (75\%)." These results can be correlated to the need for Social Situational Awareness in group settings, specifically one that can promote leadership and personal understanding of each other as indicated in Section 2.1.2.
+An industry survey \cite{solomon_challenges_2010} of $1592$ individuals who collaborated remotely, carried out by RW3 CultureWizard - a company focused on improving international collaborations - reported difficulties similar to what was faced by the individuals who are blind. "Respondents found virtual teams more challenging than face-to-face teams in managing conflict ($73$\%), making decisions ($69$\%), and expressing opinions ($64$\%). The top five challenges faced during virtual team meetings were insufficient time to build relationships ($90$\%), speed of decision making ($80$\%), different leadership styles ($77$\%), method of decision making ($76$\%), and colleagues who do not participate ($75$\%)." These results can be correlated to the need for Social Situational Awareness in group settings, specifically one that can promote leadership and personal understanding of each other as indicated in Section 2.1.2.
 
-Further, when the participants were asked about the personal challenges faced during virtual team meetings, they reported inability to read non-verbal cues (94\%), absence of collegiality (85\%), difficulty establishing rapport and trust (81\%), difficulty seeing the whole picture (77\%), reliance on email and telephone (68\%), and a sense of isolation (66\%)." Delivering non-verbal cues, establishing trust and rapport, and easing isolation are all derivatives of increasing one's social connection to their interaction partners, be it remote or face-to-face. Observing people who are disabled and the way they communicate with their co-located partners, it is possible to derive inspirations for novel social mediation technologies. The following subsection discusses one example of how to develop an evidence-based social situational awareness model based on hand shaking in the blind population as an example of social interaction between participants.
+Further, when the participants were asked about the personal challenges faced during virtual team meetings, they reported inability to read non-verbal cues ($94$\%), absence of collegiality ($85$\%), difficulty establishing rapport and trust ($81$\%), difficulty seeing the whole picture ($77$\%), reliance on email and telephone ($68$\%), and a sense of isolation ($66$\%)." Delivering non-verbal cues, establishing trust and rapport, and easing isolation are all derivatives of increasing one's social connection to their interaction partners, be it remote or face-to-face. Observing people who are disabled and the way they communicate with their co-located partners, it is possible to derive inspirations for novel social mediation technologies. The following subsection discusses one example of how to develop an evidence-based social situational awareness model based on hand shaking in the blind population as an example of social interaction between participants.
 
 \begin{table}
 \caption{Survey on the challenges of remote interaction \cite{solomon_challenges_2010}}
@@ -394,17 +403,116 @@ Personal challenges during virtual team meetings\\
 
 
 
-\chapter{RELATED WORK}
+\chapter{ASSISTIVE TECHNOLOGY DESIGN}
 
 \DoubleSpacing
 \setlength{\parindent}{.5in}
-[Enter your text here]
+Affective Computing research has employed algorithmic framework to quantitatively study both verbal and non-verbal cues displayed by the humans during social communication.  Signal streams from various sensors, including visual sensors (e.g. cameras), audio sensors (e.g. microphones) and various physiological sensors (such as EEG, EMG, and galvanic skin resistance sensors) have been used to evaluate human emotional states.  A good review of research work in Affective Computing can be found in \cite{zhihong_zeng_survey_2009}.  This research has enabled a better understanding of human physiological signals, with respect to emotional states, and the results have been used to facilitate human-computer interaction (HCI). In theory, a system that can detect non-verbal social cues could also be used as an assistive device to provide social feedback to people with disabilities.  The emphasis here would not be so much on interpreting these cues as on presenting social cue information to the user, and allowing the user to interpret them.  However, very little research has been done towards finding intuitive methods for presenting social cue information to humans.  \cite{ur_rehman_manifold_2007} developed a haptic chair for presenting facial expression information.  It was equipped with vibrotactile actuators on the back of the chair that represented some specific facial feature. Experiments conducted by the researchers showed that people were able to distinguish between six basic emotions.  However, this solution had the obvious limitation that the user needed to be sitting in the chair to use the system.
 
-\section{Test 1}
-\subsection{Test 2}
-\subsubsection{Test 3}
+\emph{Observation 1: Assistive technology designed towards social assistance should be portable and wearable so that the users can use them at various social circumstances without any restriction to their everyday life.}
+
+People with disabilities are not always able to perceive or interpret implicit social feedback as a guide to improving their communication competence.  However, they might be able to use explicit feedback provided by a technological device.  Rana and Picard \cite{teeters_self-cam:_2006} developed a device called Self Cam, which provides explicit feedback to people with Autism Spectrum Disorder (ASD).  The system employs a wearable, self-directed camera that is supported on the users own shoulder to capture the user's facial expressions. The system attempts to categorize the facial expressions of the user during social interactions to evaluate the social interaction performance of the ASD user.  Unfortunately, the technology does not take into account the social implication of assistive technologies. Since the technology is being developed to address social interactions, it is important to take into account the social artifacts of technology. A device that has unnatural extensions could become more of a social distraction for both the participants and users than as an aid.
 
 
+\emph{Observation 2: Assistive technology designed towards social assistance should allow seamless and discrete embodiment of sensors or actuators making sure the device does not become a social distraction.}
+
+Vinciarelli et. al. \cite{vinciarelli_social_2008} have described the use of discrete technologies for understanding social interactions within groups, specifically targeting professional environments where individuals take decisions as a group. They analyze the use of bodily mannerisms and prosody to extract nonverbal cues that allow group dynamics analysis. They rely on simple sensors in the form of wearable tags \cite{kim_meeting_2008} which detect face to face interaction events along with prosody analysis to determine turn taking, emotion of the speaker, distance to an individual etc. Pentland describes these signals captured during group interactions as \cite{pentland_honest_2008} honest signals. Some of his recent works \cite{vinciarelli_social_2008-1} in the area of social monitoring hopes to capture these signals and provide feedback to individuals about their social presence within a group. The use of social feedback is illustrated elegantly in their work but their findings relied on sensors carried by all individuals involved in the study. Having everyone in a group wear sensors has proved to be a viable and productive approach for studying group dynamics.  However, this approach is not viable as a strategy for developing an assistive technology, as it is not realistic to assume that everyone who interacts with a person with a disability will wear sensors.
+
+\emph{Observation 3: Assistive technology designed towards social assistance should incorporate mechanisms embodied on the user to determine both self and other's social mannerism.}
+
+In two independent experiments \cite{transon_using_1988} and \cite{felps_modification_1988}, researchers developed a social feedback device that provides intervention when a person with visual impairment starts to rock their body displaying a stereotypy. \cite{transon_using_1988} designed a device that consisted of a metal box with a mercury level switch that detects any bending actions. The feedback was provided with a tone generator that was also located inside the metal box.  The entire box was mounted on a strap that the user wears around his/her head. The authors tested it on a congenitally blind individual who had severe case of body rocking and they conclude that the use of any assistive technology is useful only temporarily while the device is in use. They state that the body rocking behavior returned to baseline levels as soon as the device was removed. Since the time of this experiment, behavioral psychology studies have explored short term feedback for rehabilitation \cite{jindal-snape_use_2005}, and these studies support the above observation that short term feedback is often detrimental to rehabilitation and subject's case invariably worsens. Unfortunately, due to the prohibitively large design of the device developed by these researchers, it was impossible to have the individual wear the device over long durations.
+
+\emph{Observation 4: Assistive technology designed towards social assistance and behavioral rehabilitation should be used over long durations in such a way that the feedback is slowly tapered off over a significantly longer duration of time.}
+
+
+In \cite{felps_modification_1988} researchers used a 'Drive Alert' (driver alerting system that monitors head droop) to detect body rocking and provide feedback to a congenitally blind 21 year old student. The research concludes that they were able to control body rocking effectively, but the device could not differentiate between body rocks from any other functional body movements. This device, primarily built to sense drooping in drivers provides no opportunity to differentiate between a body rock and a functional droop. Use of such devices could only be negative on the user as a large number of false alarms would only discourage an individual from using any assistive technology.
+
+\emph{Observation 5: Assistive technology designed towards social assistance and behavioral rehabilitation should be effective in discriminating social stereotypic mannerisms from other functional movements to keep the motivation of device use high.}
+
+
+\section{Conceptual Framework}
+\subsection{Design principles for social assistive and rehabilitative devices}
+A device that is developed to facilitate the social interactions of people with sensory, or cognitive disabilities might do so by, (a) detecting social cues during social interactions and delivering that information to the user in real time to enable empathy, or (b) detecting the user's stereotypic behaviors during social interactions and communicating that information to the user in real time to provide social feedback.  The first device might be classified as an assistive technology, while the second might be classified as a rehabilitative technology.  Ideally, such a device would be based on the following design principles:
+
+\begingroup
+\leftskip0.5in
+\setlength{\parindent}{0in}
+\emph{Design principle 1:} The device should be portable and wearable so that it can be used in any social situation, and without any restriction on the user's everyday life.
+
+\emph{Design principle 2:} The device should employ sensors and personal signaling devices that are unobtrusive, and do not become a social distraction.
+
+\emph{Design principle 3:} The device should include sensors that can detect the social mannerisms of both the user and other people with whom the user might communicate.
+
+\emph{Design principle 4:} The device should be comfortable enough to be worn repeatedly for extended periods of time, to allow it to be used effectively for rehabilitation.
+
+\emph{Design principle 5:} The device should be able to reliably distinguish between the user's problematic stereotypic mannerisms and normal functional movements, to ensure that it will be worn long enough to achieve rehabilitation.
+
+\endgroup
+
+\section{Requirements Analysis for a Social Assistive Technology for Individuals who are Blind and Visually Impaired}
+In order to identify the unmet needs of the visually impaired community, two focus groups consisting primarily of people who are blind, as well as disability specialists and parents of students with visual impairment and blindness where conducted \footnote{ In  order  to  understand  the  assistive  technology  requirements  of  people  who  are  blind, we conducted two focus group studies (one in Tempe, Arizona USA - $9$ participants, and another in Tucson, Arizona USA - $11$ participants) which included:
+\begin{enumerate}[1.]
+\item Students and adult professionals who are blind,
+\item Parents of individuals who are blind
+\item Professionals who work in the area of blindness and visual impairments.
+\end{enumerate}
+There was unanimous agreement among participants that a technology that would help people with visual impairment to recognize people or hear them described would significantly enhance their social life.}. Members of these focus groups who were blind or visually impaired were encouraged to speak freely about their challenges in coping with daily living. During these focus groups, the participants agreed on many issues as being important problems. However, one particular problem - that of engaging freely with their sighted counterparts - was highlighted as a particularly important problem that was not being addressed by technology specialists \footnote{  To quote some candidate's opinion about social assistance technology in a everyday setting:
+\begin{itemize}
+\item \"It would be nice to walk into a room and immediately get to know who are all in front of me before they start a conversation\".
+\item One young man said, \"It would be great to walk into a bar and identify beautiful women\".
+\end{itemize}}.
+
+While various other examples were cited by individuals during these focus group studies, the inability to access non-verbal cues were considered of highest priority. Based on these discussions, a list of needs was complied that characterized social needs often experienced by people with visual impairments. In doing so, two important aspects of social interaction were identified. These included
+\begin{enumerate}[1.]
+\item Access to the non-verbal cues of others during social interactions, and
+\item How one is perceived by others during social interactions.
+\end{enumerate}
+
+These needs correlated with the psychology studies conducted by Jindal-Snape with children who were visually impaired. She identifies these two needs under the \emph{Social Learning} and \emph{Social Feedback}. While these two important categories were identified, for simplification, the non-verbal cue needs were reduced to $8$ aspects of social interactions that focused primarily on the physical characteristics of the interaction partner and the behaviors of the
+interaction partner. These questions were developed with the help of visually impaired professionals and students:
+
+\begin{enumerate}[1.]
+\item Knowing how many people are standing in front you, and where each person is standing.
+\item Knowing where a person is directing his/her attention.
+\item Knowing the identities of the people standing in front of you.
+\item Knowing something about the appearance of the people standing in front of you.
+\item Knowing whether the physical appearance of a person who you know has changed since the last time you encountered him/her.
+\item Knowing the facial expressions of the person standing in front of you.
+\item Knowing the hand gestures and body motions of the person standing in front of you.
+\item Knowing whether your personal mannerisms do not fit the behavioral norms and expectations of the sighted people with whom you will be interacting.
+\end{enumerate}
+
+Further, in order to understand the importance of these non-verbal communication primitives an online survey was carried out to determine a self-report importance map of the various non-verbal cues. This list of questions included both the importance from the perspective of allowing access to the non-verbal cues of the interaction partner (for enabling Social Learning), while also focusing on the personal body mannerism (for enabling Social Feedback) of the individual.The online survey was anonymously completed by $28$ people, of whom $16$ were blind, $9$ had low vision, and $3$ were sighted specialists in the area of visual impairment and vocational training. The online survey consisted of eight questions that corresponded to the previously identified list of needs. Respondents answered each question using a Five-point Likert scale, the metrics being (1) Strongly disagree, (2) Disagree, (3) Neutral, (4) Agree, and (5) Strongly agree.
+
+\section{Results from the Online Survey}
+
+\begin{table}[h]
+\caption{Average Score on the 8 Questions obtained through an Online Survey.}
+\label{Tab:Table5}
+\begin{center}
+\begin{tabularx}{5in}{|l|X|c|}
+\hline
+Question No. & Question & Mean Score\\
+\hline
+8. & I would like to know if any of my personal mannerisms might interfere with my social interactions with others. & 4.5 \\
+\hline
+6. & I would like to know what facial expressions others are displaying while I am interacting with them. & 4.4 \\
+\hline
+3. & When I am standing in a group of people, I would like to know the names of the people around me. & 4.3 \\
+\hline
+7. & I would like to know what gestures or other body motions people are using while I am interacting with them. & 4.2 \\
+\hline
+1. & When I am standing in a group of people, I would like to know how many people there are, and where each person is. & 4.1 \\
+\hline
+2. & When I am standing in a group of people, I would like to know which way each person is facing, and which way they are looking. & 4.0 \\
+\hline
+5. & I would like to know if the appearance of others has changed (such as the addition of glasses or a new hair-do) since I last saw them. & 3.5 \\
+\hline
+4. & When I am communicating with other people, I would like to know what others look like. & 3.4 \\
+\hline
+\end{tabularx}
+\end{center}
+\end{table}
 
 %\newpage
 \vspace*{1in}
