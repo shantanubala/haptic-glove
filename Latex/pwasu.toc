@@ -31,7 +31,11 @@
 \contentsline {subsection}{Design principles for social assistive and rehabilitative devices}{25}
 \contentsline {section}{\numberline {3.2}Requirements Analysis for a Social Assistive Technology for Individuals who are Blind and Visually Impaired}{26}
 \contentsline {section}{\numberline {3.3}Results from the Online Survey}{28}
-\contentsline {chapter}{REFERENCES}{29}
-\contentsline {chapter}{APPENDIX}{35}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{36}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{37}
+\contentsline {subsection}{Average Response}{28}
+\contentsline {subsection}{Response on Individual Questions}{28}
+\contentsline {subsection}{Response Ratio}{30}
+\contentsline {subsection}{Rank Average Importance Map for Various Non-verbal Cues}{32}
+\contentsline {chapter}{REFERENCES}{33}
+\contentsline {chapter}{APPENDIX}{39}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Insert Appendix A Title here}}{40}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{41}

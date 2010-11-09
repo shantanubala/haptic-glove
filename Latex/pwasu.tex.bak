@@ -485,9 +485,11 @@ interaction partner. These questions were developed with the help of visually im
 Further, in order to understand the importance of these non-verbal communication primitives an online survey was carried out to determine a self-report importance map of the various non-verbal cues. This list of questions included both the importance from the perspective of allowing access to the non-verbal cues of the interaction partner (for enabling Social Learning), while also focusing on the personal body mannerism (for enabling Social Feedback) of the individual.The online survey was anonymously completed by $28$ people, of whom $16$ were blind, $9$ had low vision, and $3$ were sighted specialists in the area of visual impairment and vocational training. The online survey consisted of eight questions that corresponded to the previously identified list of needs. Respondents answered each question using a Five-point Likert scale, the metrics being (1) Strongly disagree, (2) Disagree, (3) Neutral, (4) Agree, and (5) Strongly agree.
 
 \section{Results from the Online Survey}
+\subsection{Average Response}
+Table \ref{Tab:Table5} shows the eight aspects of social interactions that were investigated with the individuals who are blind and visually impaired. The results are sorted by descending importance, as indicated by the survey respondents (the question numbers correspond to the need listed in the previous section). The mean score is the average of the respondents on the $5$ point scale that was used to capture the opinions.  A score closer to $5$ implies that the respondents strongly agree with a certain question and that they consider inaccessibility to that particular non-verbal cue to be important deterrent to their social interactions. On the other hand, a score closer to $1$ represents the respondent did not consider the access to a specific non-verbal cue to be important during their social interactions.
 
 \begin{table}[h]
-\caption{Average Score on the 8 Questions obtained through an Online Survey}
+\caption{Average Score on the 8 Questions obtained through an Online Survey.}
 \label{Tab:Table5}
 \begin{center}
 \begin{tabularx}{5in}{|l|X|c|}
@@ -513,6 +515,40 @@ Question No. & Question & Mean Score\\
 \end{tabularx}
 \end{center}
 \end{table}
+
+\subsection{Response on Individual Questions}
+Figure \ref{Fig:Figure6} shows the histogram of responses for the 8 Questions that were asked as part of the survey. Each subplot refers to a single question and shows the number of times users responded to that particular question with answers from 1 to 5 on the Lickert Scale. Each histogram adds up to a total of 28 that corresponds to the 28 participants that took part in the online survey.
+
+\begin{figure}[h]
+\includegraphics[width=5.5in]{histogram.jpg}
+\caption{Histogram of Responses grouped by Questions}
+\label{Fig:Figure6}
+\end{figure}
+
+Some of the observations from the important histograms include,
+\begin{itemize}
+\item Respondents are highly concerned about how their body mannerisms are perceived by their sighted peers (based on the response to Question 8 on the survey).
+\item Facial expressions form the most important visual non-verbal cue that individuals who are blind or visually impaired feel they do not have access to (based on Question 6 on the survey). This correlates with the studies into non-verbal communication that highlights the importance of facial mannerisms and gestures, which are mostly visual in their decoding.
+\item Followed by facial expressions, body mannerisms seem to be of higher importance for individuals who are blind and visually impaired (based on Question 3 of the survey). 
+\item The responses to questions 7, 1 and 2 suggest that respondents would like to know the identities of the people with whom they are communicating, relative location of these people and whether their attentions are focused on the respondent. This corresponds to knowing the position of their interaction partners when they are involved in a bilateral or group communication. People tend to move around, especially when they are standing, causing people who are blind to lose their bearing on where people were standing. This can result in individuals addressing an empty space assuming that someone was standing there based on their memory.
+\item The responses to questions 4 and 5 indicate that there was a wide variation in respondents' interest in (4) knowing the physical appearance of people with whom they are communicating and (5) knowing about changes in the physical appearance of people with whom they are communicating. Many respondents indicated moderate, little, or no interest in either of these areas.
+\end{itemize}
+
+\subsection{Response Ratio}
+Figure \ref{Fig:Figure7} shows the number of times the respondents chose to answer the 8 questions with their agreement or disagreement. The y-axis has been normalized to 100 points. The graph shows that respondents chose to answer the most by agreeing (Likert Scale 4) with the 8 questions. Followed closely behind was the strong agreement (Likert Scale 5) with the questions asked in the survey. The respondents chose to answer the least through strong disagreement (Likert Scale 1) to what was asked in the survey.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5in]{responseratio.jpg}
+\caption{Response Ratio}
+\label{Fig:Figure7}
+\end{center}
+\end{figure}
+
+As described earlier, the 8 questions corresponding to the social needs of the individuals were identified from the focus group survey that was conducted. Thus, the questions presented in the online survey questions were biased towards the needs of everyday social interactions of individuals who are blind and visually impaired. Thus, the implicit assumption while preparing this survey itself is that most of these items have been identified as being important and that only a priority scale needs to be extracted. This implicit assumption is immediately brought out by looking at the frequency with which the respondents answer with their agreement (Likert Scale 4) and strong agreement (Likert Scale 5).
+
+\subsection{}
+
 
 %\newpage
 \vspace*{1in}
