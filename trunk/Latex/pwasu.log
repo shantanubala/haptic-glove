@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  8 NOV 2010 19:22
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  9 NOV 2010 11:41
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -724,23 +724,54 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[27] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
+[27]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<histogram.jpg, id=125, 421.575pt x 316.18124pt>
+File: histogram.jpg Graphic file (type jpg)
+ <use histogram.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [28]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[29]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[30 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/histogram.jpg>]
+<responseratio.jpg, id=136, 421.575pt x 316.18124pt>
+File: responseratio.jpg Graphic file (type jpg)
+ <use responseratio.jpg>
+("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[31 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/responseratio.j
+pg>]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[32]
 bibitemlist
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[29
+[33
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[30]
+[34]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
@@ -749,43 +780,43 @@ Missing character: There is no © in font ptmr7t!
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[31]
+[35]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[32]
+[36]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[33]
+[37]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[34])
+[38])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[35]
+[39]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[36
+[40
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[37
+[41
 
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[38
+[42
 
 ]
 \tf@toc=\write4
@@ -797,10 +828,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4724 strings out of 495285
- 63500 string characters out of 3180282
- 154311 words of memory out of 3000000
- 7902 multiletter control sequences out of 15000+200000
+ 4736 strings out of 495285
+ 63714 string characters out of 3180282
+ 154401 words of memory out of 3000000
+ 7912 multiletter control sequences out of 15000+200000
  30175 words of font info for 68 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,11n,21p,2007b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -810,9 +841,9 @@ s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
 ts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
 urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on pwasu.pdf (46 pages, 438831 bytes).
+Output written on pwasu.pdf (50 pages, 498585 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
