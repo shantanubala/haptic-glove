@@ -529,7 +529,7 @@ Some of the observations from the important histograms include,
 \begin{itemize}
 \item Respondents are highly concerned about how their body mannerisms are perceived by their sighted peers (based on the response to Question 8 on the survey).
 \item Facial expressions form the most important visual non-verbal cue that individuals who are blind or visually impaired feel they do not have access to (based on Question 6 on the survey). This correlates with the studies into non-verbal communication that highlights the importance of facial mannerisms and gestures, which are mostly visual in their decoding.
-\item Followed by facial expressions, body mannerisms seem to be of higher importance for individuals who are blind and visually impaired (based on Question 3 of the survey). 
+\item Followed by facial expressions, body mannerisms seem to be of higher importance for individuals who are blind and visually impaired (based on Question 3 of the survey).
 \item The responses to questions 7, 1 and 2 suggest that respondents would like to know the identities of the people with whom they are communicating, relative location of these people and whether their attentions are focused on the respondent. This corresponds to knowing the position of their interaction partners when they are involved in a bilateral or group communication. People tend to move around, especially when they are standing, causing people who are blind to lose their bearing on where people were standing. This can result in individuals addressing an empty space assuming that someone was standing there based on their memory.
 \item The responses to questions 4 and 5 indicate that there was a wide variation in respondents' interest in (4) knowing the physical appearance of people with whom they are communicating and (5) knowing about changes in the physical appearance of people with whom they are communicating. Many respondents indicated moderate, little, or no interest in either of these areas.
 \end{itemize}
@@ -547,7 +547,19 @@ Figure \ref{Fig:Figure7} shows the number of times the respondents chose to answ
 
 As described earlier, the 8 questions corresponding to the social needs of the individuals were identified from the focus group survey that was conducted. Thus, the questions presented in the online survey questions were biased towards the needs of everyday social interactions of individuals who are blind and visually impaired. Thus, the implicit assumption while preparing this survey itself is that most of these items have been identified as being important and that only a priority scale needs to be extracted. This implicit assumption is immediately brought out by looking at the frequency with which the respondents answer with their agreement (Likert Scale 4) and strong agreement (Likert Scale 5).
 
-\subsection{}
+\subsection{Rank Average Importance Map for Various Non-verbal Cues}
+As can be seen from Figure \ref{Fig:Figure7}, the questionnaires were biased and the frequency of the responses is not Gaussian. This bias implies that using sample mean of the Lickert Scale responses will immediately show the same bias. This is due to the Gaussian iid assumption that is made while extracting the mean for the answers. In order to overcome this non-Gaussianity, we resort to non-parametric mean for the responses. Rank average of the responses is estimated instead of the typical mean of the responses for each of the question. Please see Appendix XXX for the algorithm to determine the Rank Average. Since no assumptions on the distribution of the response are made, unlike the mean, the rank average gives a non-parametric method for comparing the responses of the individuals. The ranks can be either assigned ascending or descending with respect to the responses, i.e. rank 1 could mean all responses that were answered with strongly disagree (numeral 1), or rank 1 could mean all responses that were answered with strongly agree (numeral 5).
+
+\begin{figure}
+\includegraphics[width=5in]{rankaverage.jpg}
+\caption{Rank average of the 8 questions}
+\label{Fig:Figure8}
+\end{figure}
+
+
+In the Figure \ref{Fig:Figure8}, we have assigned rank 1 to strongly disagree. This is for the sake of visual convenience. Thus, higher the average rank, higher is that group's response from the respondents. Comparing Figure \ref{Fig:Figure8} to Table \ref{Tab:Table5}, it can be seen that the same ordering of priority can be seen through mean and rank average. But the mean tends to show very little variation between responses due to the bias that is present in the questions. On the other hand the rank average provides a good comparison scale.
+
+
 
 
 %\newpage
@@ -565,8 +577,26 @@ As described earlier, the 8 questions corresponding to the social needs of the i
 
 \appendix
 \addcontentsline{toc}{chapter}{APPENDIX}
-\chapter{\uppercase{Insert Appendix A Title here}}
+\chapter{\uppercase{Algorithm for Estimating Rank Average of Groups}}
 \clearpage
+While analyzing the responses of participants to the online survey, the participants responses for each question are represented as entries $x_{i,q}$, where, $i$ represents the $i^{th}$ participant and $q$ represents the $q^{th}$ question. $i = 1,\ldots,N$ are the $N$ participants who responded on the survey, and $q = 1, \ldots, Q$ are the $Q$ questions. In the survey presented in Chapter XXX, $N = 28$ and $Q = 8$.
+
+\subsection{Procedure}
+\emph{Input:} Each participants response is considered as an entry $e_m$ into a pool $E = \{x_{i,q}\}$, where, $m=1,\ldots,M$ and $M=N \text{x} Q$.
+
+\emph{Ouput:} The rank average for the $8$ groups (questions), $\bar{R}_m$.
+
+\emph{Steps:}
+\begin{enumerate}[1.]
+\item Group $x_n \in X$ removing all group affiliations.
+\item Order the entries Rank all data from all groups together; i.e., rank the data from 1 to N ignoring group membership. Assign any tied values the average of the ranks they would have received had they not been tied. Let this rank be referred to as  , where i represents the group (question) and j represents the individual element.
+	Rank Average for each group is then given as
+
+Where,
+is the average rank of the group (question) Giwith the cardinality ni. Further,
+
+Since no assumptions on the distribution of the response are made, unlike the mean, the rank average gives a non-parametric method for comparing the responses of the individuals.
+
 \chapter{\uppercase{Insert Appendix B Title here}}
 \clearpage
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  9 NOV 2010 18:09
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  9 NOV 2010 23:40
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -750,28 +750,36 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 <responseratio.jpg, id=136, 421.575pt x 316.18124pt>
 File: responseratio.jpg Graphic file (type jpg)
  <use responseratio.jpg>
-("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [31 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/responseratio.j
-pg>]
+pg>] <rankaverage.jpg, id=140, 612.78937pt x 395.22656pt>
+File: rankaverage.jpg Graphic file (type jpg)
+
+<use rankaverage.jpg>
+("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[32]
+[32 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/rankaverage.jpg
+>]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[33]
 bibitemlist
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[33
+[34
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[34]
+[35]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
@@ -780,14 +788,10 @@ Missing character: There is no © in font ptmr7t!
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[35]
+[36]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[36]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -795,28 +799,47 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[38])
+[38]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[39]
+[39])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[40
-
-]
+[40]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [41
 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 589--592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--592
+
+ []
+
+
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[42
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[42
+[43
+
+]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[44
 
 ]
 \tf@toc=\write4
@@ -828,22 +851,23 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4736 strings out of 495285
- 63714 string characters out of 3180282
- 154401 words of memory out of 3000000
- 7912 multiletter control sequences out of 15000+200000
- 30175 words of font info for 68 fonts, out of 3000000 for 9000
+ 4757 strings out of 495285
+ 63911 string characters out of 3180282
+ 154512 words of memory out of 3000000
+ 7918 multiletter control sequences out of 15000+200000
+ 35898 words of font info for 82 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,11n,21p,2007b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
- 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.8/fon
-ts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
-urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on pwasu.pdf (50 pages, 498585 bytes).
+ 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.8/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
+public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/symbo
+l/usyr.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pwasu.pdf (52 pages, 570062 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
