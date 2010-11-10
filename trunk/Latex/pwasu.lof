@@ -5,3 +5,15 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Histogram of Responses grouped by Questions}}{30}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Response Ratio}}{31}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Rank average of the 8 questions}}{32}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces An example false face detection.}}{34}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Block diagram.}}{35}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Skin pixels in nRGB space.}}{37}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Extra region for background modeling.}}{38}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Example of {\em true} and {\em false} face detection.}}{39}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pre-processing.}}{41}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Neighborhood System.}}{42}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Frontal face Local Conditional Probability Density (LCPD) models.}}{44}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Skin-region masks.}}{44}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Soft threshold.}}{45}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces An example of combining evidence from two experts under Dempster-Shafer Theory.}}{47}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Coarse pose estimation.}}{49}
