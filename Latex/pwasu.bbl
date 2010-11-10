@@ -400,4 +400,71 @@ J.~N. Felps and R.~J. Devlin, ``Modification of stereotypic rocking of a blind
   adult.,'' {\em Journal of Visual Impairment and Blindness}, vol.~82, no.~3,
   pp.~107--08, 1988.
 
+\bibitem{viola_robust_2004}
+P.~Viola and M.~J. Jones, ``Robust {Real-Time} face detection,'' {\em Int. J.
+  Comput. Vision}, vol.~57, no.~2, pp.~137--154, 2004.
+
+\bibitem{ming-hsuan_yang_detecting_2002}
+M.~Yang, D.~Kriegman, and N.~Ahuja, ``Detecting faces in images: a survey,''
+  {\em Pattern Analysis and Machine Intelligence, {IEEE} Transactions on},
+  vol.~24, no.~1, pp.~34--58, 2002.
+
+\bibitem{a_hadid_hybrid_2006}
+A.~Hadid and M.~Pietikainen, ``A hybrid approach to face detection under
+  unconstrained environments,'' {\em 18th International Conference on Pattern
+  Recognition}, vol.~1, pp.~227--230, 2006.
+
+\bibitem{naseem_robust_2005}
+I.~Naseem and M.~Deriche, ``Robust human face detection in complex color
+  images,'' {\em IEEE International Conference on Image Processing}, vol.~2,
+  pp.~338--41, 2005.
+
+\bibitem{m_wimmer_person_2006}
+M.~Wimmer, B.~Radig, and M.~Beetz, ``A person and context specific approach for
+  skin color classification,'' {\em Pattern Recognition, 2006. ICPR 2006. 18th
+  International Conference on}, vol.~2, pp.~39--42, 2006.
+
+\bibitem{hmid_fuzzy_2006}
+M.~B. Hmid and Y.~B. Jemaa, ``Fuzzy classification, image segmentation and
+  shape analysis for human face detection,'' {\em 8th International Conference
+  on Signal Processing}, vol.~4, 2006.
+
+\bibitem{tariq_face_2004}
+U.~Tariq, H.~Jamal, M.~Shahid, and M.~Malik, ``Face detection in color images,
+  a robust and fast statistical approach,'' {\em Proceedings of INMIC 2004. 8th
+  International Multitopic Conference}, pp.~73--78, 2004.
+
+\bibitem{yan-wen_wu_face_2008}
+Y.-W. Wu and X.-Y. Ai, ``Face detection in color images using adaboost
+  algorithm based on skin color information,'' {\em International Workshop on
+  Knowledge Discovery and Data Mining}, pp.~339--342, 2008.
+
+\bibitem{sentz_combination_2002}
+K.~Sentz and S.~Ferson, ``Combination of evidence in dempster-shafer theory,''
+  tech. rep., Sandia National Laboratories, 2002.
+
+\bibitem{phillips_feret_1997}
+P.~J. Phillips, H.~Moon, P.~Rauss, and S.~A. Rizvi, ``The feret evaluation
+  methodology for face-recognition algorithms,'' {\em Proceedings of the 1997
+  Conference on Computer Vision and Pattern Recognition}, p.~137, 1997.
+
+\bibitem{bilmes_gentle_1998}
+J.~Bilmes, ``A gentle tutorial of the em algorithm and its application to
+  parameter estimation for gaussian mixture and hidden markov models,''
+  (Berkeley CA), International Computer Science Institute, U.C. Berkeley,
+  April, 1998.
+
+\bibitem{perez_markov_1998}
+P.~Perez, ``Markov random fields and images,'' {\em {CWI} Quaterly}, vol.~11,
+  pp.~413--437, 1998.
+
+\bibitem{vezjak_anthropological_1994}
+M.~Vezjak and M.~Stephancic, ``An anthropological model for automatic
+  recognition of the male human face,'' {\em Annals of Human Biology}, vol.~21,
+  pp.~363--380, 1994.
+
+\bibitem{paget_texture_1997}
+R.~Paget, I.~D. Longstaff, and B.~Lovell, ``Texture classification using
+  nonparametric markov random fields,'' vol.~1, pp.~67--70, 1997.
+
 \end{thebibliography}
