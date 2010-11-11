@@ -14,13 +14,33 @@ Repeated entry---line 2845 of file references.bib
  : @article{ming-hsuan_yang_detecting_2002
  :                                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 3042 of file references.bib
+ : @inproceedings{ram_people_1998
+ :                               ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 3523 of file references.bib
  : @article{ming-hsuan_yang_detecting_2002
  :                                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 3656 of file references.bib
+ : @inproceedings{ram_people_1998
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3969 of file references.bib
+ : @article{ram_people_1998
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3981 of file references.bib
+ : @inproceedings{brewster_tactons:_2004
+ :                                      ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4407 of file references.bib
  : @article{segrin_poor_2000
  :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4930 of file references.bib
+ : @book{hall_hidden_1990
+ :                       ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5116 of file references.bib
  : @article{riggio_assessment_1986
@@ -58,6 +78,38 @@ Repeated entry---line 6000 of file references.bib
  : @inproceedings{teeters_self-cam:_2006
  :                                      ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 6111 of file references.bib
+ : @techreport{sentz_combination_2002
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6118 of file references.bib
+ : @inproceedings{paget_texture_1997
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6136 of file references.bib
+ : @article{perez_markov_1998
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6145 of file references.bib
+ : @article{ram_people_1998
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6166 of file references.bib
+ : @inproceedings{brewster_tactons:_2004
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6207 of file references.bib
+ : @book{hall_hidden_1990
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6269 of file references.bib
+ : @inproceedings{barralon_development_2007
+ :                                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6284 of file references.bib
+ : @inproceedings{brown_first_2005
+ :                                ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "hjelmýs_face_2001"
 Warning--empty publisher in altmann_analysis_2007
 Warning--empty booktitle in zancanaro_automatic_2006
@@ -65,6 +117,7 @@ Warning--empty year in rosenfeld_clothing_1977
 Warning--empty publisher in robles-de-la-torre_principles_2008
 Warning--empty booktitle in ur_rehman_manifold_2007
 Warning--empty booktitle in kim_meeting_2008
+Warning--empty booktitle in ram_people_1998
 Warning--empty booktitle in bilmes_gentle_1998
 Warning--empty booktitle in paget_texture_1997
-(There were 14 error messages)
+(There were 27 error messages)

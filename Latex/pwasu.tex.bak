@@ -563,7 +563,37 @@ In the Figure \ref{Fig:Figure8}, we have assigned rank 1 to strongly disagree. T
 \DoubleSpacing
 \setlength{\parindent}{.5in}
 
-\section{Introduction}\label{Introduction} \vspace{-0.2in} Face
+In behavioral psychology, influences of interpersonal distances on social interactions between people have been studied for over four decades. The term proxemics, coined by Edward T. Hall, describes influence of interpersonal distances in animal and man \cite{hall_hidden_1990}. The following list describes the American proxemic distances; note that such distances vary with culture and environment.
+
+\begin{enumerate}[1.]
+\item Intimate Distance (Close Phase): 0-6 inches
+\item Intimate Distance (Far Phase): 6-18 inches
+\item Personal Distance (Close Phase): 1.5-2.5 feet
+\item Personal Distance (Far Phase): 2.5-4 feet
+\item Social Distance (Close Phase): 4-7 feet
+\item Social Distance (Far Phase): 7-12 feet
+\item Public Distance (Close Phase): 12-25 feet
+\item Public Distance (Far Phase): 25 feet or more
+\end{enumerate}
+
+Proxemics plays a very important role in interpersonal communication, but people who are blind and visually impaired do not have access to this information. In \cite{ram_people_1998}, Ram and Sharf introduced The People Sensor: an electronic travel aid, for individuals who are blind, designed to help detect and localize people and objects in front of the user. The distance between the user and an obstacle is found using ultrasonic sensors and communicated through the rate of short vibratory pulses, where the rate is inversely proportional to distance. However, the researchers did not do any user testing to determine the usefulness of their technology. Similar to this system, our technology uses the haptic belt described in Chapter 2 for delivering the proxemics information to an individual who is blind or visually impaired.
+
+Tactile rhythms delivered using a vibrotactile belt were used in \cite{erp_waypoint_2005} to convey distance information during waypoint navigation. Time between vibratory pulses was varied using one of two schemes: monotonic (rate is inversely proportional to distance) or three-phase-model (three distinct rhythms mapped to three distances). Distinct tactile rhythms are promising for use with multidimensional tactons \cite{barralon_development_2007} \cite{brown_first_2005}, which are vibratory signals used to communicate abstract messages \cite{brown_first_2005} by changing the dimensions of the signal including frequency, amplitude, location, rhythm, etc. Based on pilot test results, we chose to pursue distinct rhythms over monotonic rhythms as users find it difficult to identify interpersonal distances using monotonic rhythms as the vibratory signal varies smoothly with changes in distance.
+
+From the sensing perspective we resort to the camera that is on the user's glasses and through the use of computer vision technology, face detection, we extract non-verbal cues for social interaction, including the number of people in the user's visual field, where people are located relative to the user, coarse information related to gaze direction (pose estimation algorithms could be used to extract finer estimates of pose), and the approximate distance of the person from the user based on the size of the face image.
+
+\sectin{Conceptual Framework}
+As shown in Figure 1, the output of the face detection process (indicated by a green rectangle on the image) provided by the Social Interaction Assistant is directly coupled with the haptic belt. Every frame in the video sequence captured by the Social Interaction Assistant is divided into 7 regions. After face detection, the region to which the top-left corner of the face detection output belongs is identified (as shown by the star in Figure 3). This region directly corresponds to the tactor on the belt that needs to be activated to indicate the direction of the person with respect to the user. To this end, a control byte is used to communicate between the software and the hardware components of the system. Regions 1 through 7 are coded into 7 bits on the parallel port of a PC. Depending on the location of the face image, the corresponding bit is set to 1. The software also controls the duration of the vibration by using timers. The duration of a vibration indicates the distance between the user and the person in his or her visual field. The longer the vibration, the closer the people are, which is estimated by the face image size determined during the face detection process.
+
+An overall perspective of the system and its process flow is given below. When a user encounters a person in his or her field of view, the face is detected and recognized (if the person is not in the face database, the user can add it). The delivery of information comprises two steps: Firstly, the identity of the person is audibly communicated to the user (we are currently investigating the use of tactons \cite{brewster_tactons:_2004} to convey identities through touch, but this is part of future work). Secondly, the location of the person is conveyed through a vibrotactile cue in the haptic belt, where the location of the vibration indicates the direction of the person and the duration of vibration indicates the distance between the person and the user. Based on user preference, this information can be repeatedly conveyed with every captured frame, or just when the direction or distance of the person has changed. The presence of multiple people in the visual field is not problematic as long as faces are not occluded and can be detected and recognized by the Social Interaction Assistant. We are currently investigating how to effectively and efficiently communicate non-verbal communication cues when the user is interacting with more than one person.
+
+**********************************
+In this chapter we introduce the sensing and the delivery end of the system that can deliver proxemics information to an individual who is blind or visually impaired. From the sensing end, we describe a face detection methodology that is capable of identifying exact boundaries of the face region through which we model the distance of the interaction partner from the person who is using the device. From the delivery end, we describe user tests that were conducted to determine the use of tactons for conveying direction and distance information.
+**********************************
+
+
+
+\section{Accurate Face Detection}\label{Introduction} \vspace{-0.2in} Face
 detection has become an important first step towards solving
 plethora of other computer vision problems like face recognition,
 face tracking, pose estimation, intent monitoring and other face
@@ -777,8 +807,9 @@ explained in the Section \ref{DynamicModel}. Example skin-masks are
 shown in Figure \ref{Fig:Skinmasks}. This example shows two sets of
 images - one corresponding to a {\emph true} face detection result,
 and another {\emph false} face detection result.
+
 \begin{figure}[h]
-\hspace{-0.4in}
+\centering
 \includegraphics[width=4in]{Figure5.jpg}
 \caption{Example of {\em true} and {\em false} face detection.} \label{Fig:Skinmasks}
 \end{figure}
@@ -852,7 +883,7 @@ used as the basis for determining whether the face detector output
 is indeed a face.
 
 \begin{figure}[h]
-\hspace{-0.3in}
+\centering
 \includegraphics[width=4in]{Figure6.jpg} \caption{Pre-processing.}
 \label{Fig:RowColumnBlocks}
 \end{figure}
@@ -882,7 +913,7 @@ be restricted to single $R_i$ at a time, as shown in Figure
 \end{enumerate}
 
 \begin{figure}[h]
-\hspace{-0.3in}
+\centering
 \includegraphics[width=4in]{Figure7.jpg} \caption{Neighborhood System.}
 \label{Fig:Neighborhood}
 \end{figure}
@@ -952,10 +983,14 @@ and the optimal window width, respectively, defined as:
 \end{eqnarray}
 Figure \ref{Fig:LCPDs} shows the $5$ LCPDs learnt over a set of
 $390$ training frontal face images.
+
 \begin{figure}[h]
-\hspace{-0.3in}\includegraphics[width=4in]{Figure8.jpg}
+\centering
+\includegraphics[width=4in]{Figure8.jpg}
 \caption{Frontal face Local Conditional Probability Density (LCPD) models.} \label{Fig:LCPDs}
 \end{figure}
+
+
 \subsubsection{Human Face Pose}\label{HumanFacePose} \vspace{-0.1in} During our studies we discovered that
 the structure of the skin-region varies based on the pose of
 detected face as shown in Figure \ref{Fig:PoseMasks}. Combining face
@@ -965,11 +1000,14 @@ to design three different sets of RFs, one for each pose. This was
 accomplished by grouping {\emph true} face detections into three
 piles, Turned right ($r$), Facing front ($f$), and, Turned Left
 ($l$).
+
 \begin{figure}[h]
-\hspace{-0.3in}\includegraphics[width=4in]{Figure9.jpg}
+\centering
+\includegraphics[width=4in]{Figure9.jpg}
 \caption{Skin-region masks.}
 \label{Fig:PoseMasks}
 \end{figure}
+
 Thus, the final set of LCPDs could be described by the super set.
 \begin{equation}
 P(\mathbf z) = \left\{P^{k|k=\{1,\ldots,5\}}_{m|m=\{r,f,l\}}(\mathbf
@@ -1056,9 +1094,10 @@ $[0,1]$, and any conflict of opinions were added into the conflict
 factor, $K$. For the sake of clarity, we show an example of
 combining two expert opinions in Figure \ref{Fig:DST}. The same idea
 could be extended to multiple experts.
+
 \begin{figure}[h]
 \centering
-\hspace{-0.2in}\includegraphics[width=3.5in]{Figure11.jpg}
+\includegraphics[width=3.5in]{Figure11.jpg}
 \caption{An example of combining
 evidence from two experts under Dempster-Shafer Theory.}
 \label{Fig:DST}
@@ -1138,6 +1177,7 @@ this manual labeling is shown below:
 
 
 \begin{table}[h]
+\caption{Face detection validation results on FERET database.} \label{Tab:FERET}
 \centering
  \begin{tabular}{|c||c|c|}
    \hline
@@ -1149,13 +1189,12 @@ this manual labeling is shown below:
    FDR & $28.8$ \% & $3.35$ \% \\
    P & $0.7120$ & $0.9551$ \\
    C & $0.026$ & $0.281$ \\
-   \hline
- \end{tabular}
- \vspace{0.2in}
-   \caption{Face detection validation results on FERET database.} \label{Tab:FERET}
+ \hline
+\end{tabular}
 \end{table}
 
 \begin{table}[h]
+\caption{Face detection validation results on the in-house face database.}
 \centering
  \begin{tabular}{|c||c|c|}
    \hline
@@ -1169,13 +1208,10 @@ this manual labeling is shown below:
    C & $0.691$ & $0.798$ \\
    \hline
  \end{tabular}
-  \vspace{0.2in}
-  \caption{Face detection validation results on the in-house face database.}
 
-   \label{Tab:Inhouse}
-   \end{table}
+\label{Tab:Inhouse}
+\end{table}
 
-     \vspace{0.1in}
 
   As explained in Section \ref{CoarsePoseEstimation}, the framework
   was extensible to perform coarse pose estimation. Figure
@@ -1188,7 +1224,7 @@ this manual labeling is shown below:
 
 \begin{figure}[h]
 \centering
-\hspace{-0.3in}\includegraphics[width=3.5in]{Figure12.jpg}
+\includegraphics[width=3.5in]{Figure12.jpg}
 \caption{Coarse pose estimation.} \label{Fig:Result}
 \end{figure}
 
@@ -1232,7 +1268,36 @@ the belief values to pose angle, we could not confirm quantitatively
 how accurate the pose estimations were. Through visual consort, one
 can verify that the labeling is meaningful.
 
+\chapter{Exocentric Sensing: Accurate Tracking of Individuals}
+The problem of person localization in general is very broad in its scope and wide varieties of challenges such as variations in articulation, scale, clothing, partial appearances, occlusions, etc make this a complex problem. Narrowing the focus, this paper targets person localization in real world video sequences captured from the wearable camera of the Social Interaction Assistant. Specifically, we focus on the task of localizing a person who is approaching the user to initiate a social interaction or just conversation. In this context, the problem of person localization can be constrained to the cases where the person of interest is facing the user.
 
+\begin{figure}[h]
+\includegraphics[width=4in]{ClosePerson.JPG}
+\caption{Person of interest at a short distance from camera}
+\label{Fig:Figure100}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=4in]{FarPerson.JPG}
+\caption{Person of interest at a large distance from camera}
+\label{Fig:Figure101}
+\end{figure}
+
+When such a person of interest is in close proximity, his/her presence can be detected by analyzing the incoming video stream for facial features (\ref{Fig:Figure100}). But when such a person is approaching the user from a distance, the size of the facial region in the video appears to be extremely small. In this case, relying on facial features alone would not suffice and there is a need to analyze the data for full body features (\ref{Fig:Figure101}). In this work, we have concentrated on improving the effectiveness of the SIA by applying computer vision techniques to robustly localize people using full body features. Following section discusses some of the critical issues that are evident when performing person localization from the wearable camera setup of the SIA
+
+\section{Challenges in Person Localization from a wearable camera platform}
+A number of factors associated with the background, object, camera/object motion, etc. determine the complexity of the problem of person localization from a wearable camera platform. Following is a descriptive discussion of the imminent challenges that we encountered while processing the data using the SIA.
+
+\subsection{Background Properties}
+When the Social Interaction Assistant is used in natural settings, it is highly possible that there are objects in the background which move, thus causing the background to be dynamic. Also, there are bound to be regions in the background whose image features are highly similar to that of the person, thus leading to a cluttered background. Due to these factors, the problem of distinguishing the person of interest from the background becomes highly challenging in this context. Figure 4 (a) and (b) illustrate the contrast in the data due to the nature of the background.
+
+\begin{figure}[h]
+\includegraphics[width=4in]{SimpleBackground.JPG}
+\caption{Simple Background}
+\includegraphics[width=4in]{FarPerson.JPG}
+\caption{Complex Background}
+\label{Fig:Figure102}
+\end{figure}
 
 %\newpage
 \vspace*{1in}
@@ -1273,7 +1338,7 @@ Where, $Q_m$ represents the group $m$ with the cardinality $n_m$.
 \end{enumerate}
 \endgroup
 
-Since no assumptions on the distribution of the response are made, unlike the mean, the rank average gives a non-parametric method for comparing the grpoups.
+Since no assumptions on the distribution of the response are made, unlike the mean, the rank average gives a non-parametric method for comparing the groups.
 
 \chapter{\uppercase{Insert Appendix B Title here}}
 \clearpage

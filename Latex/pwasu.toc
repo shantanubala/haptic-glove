@@ -36,27 +36,31 @@
 \contentsline {subsection}{Response Ratio}{30}
 \contentsline {subsection}{Rank Average Importance Map for Various Non-verbal Cues}{31}
 \contentsline {chapter}{\chapternumberline {4}Exocentric Sensing}{33}
-\contentsline {section}{\numberline {4.1}Introduction}{33}
-\contentsline {section}{\numberline {4.2}Related Work}{34}
-\contentsline {section}{\numberline {4.3}Proposed Framework}{36}
-\contentsline {subsection}{Module $1$: Human Skin Tone Detector with Dynamic Background Modeler}{36}
-\contentsline {subsubsection}{{\em a-priori} Bi-modal Gaussian Mixture Model for Human Skin Classification}{36}
-\contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{38}
-\contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{39}
-\contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{39}
-\contentsline {subsubsection}{Random Field (RF) Models}{40}
-\contentsline {subsubsection}{Pre-processing}{41}
-\contentsline {subsubsection}{The Neighborhood System}{41}
-\contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{42}
-\contentsline {subsubsection}{Human Face Pose}{43}
-\contentsline {subsection}{Combining Evidence}{44}
-\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{45}
-\contentsline {subsection}{Coarse Pose estimation}{46}
-\contentsline {section}{\numberline {4.4}Experiments}{47}
-\contentsline {section}{\numberline {4.5}Results}{48}
-\contentsline {section}{\numberline {4.6}Discussion of Results}{49}
-\contentsline {chapter}{REFERENCES}{51}
-\contentsline {chapter}{APPENDIX}{58}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{59}
-\contentsline {subsection}{Procedure}{60}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{61}
+\contentsline {section}{\numberline {4.1}Conceptual Framework}{34}
+\contentsline {section}{\numberline {4.2}Accurate Face Detection}{36}
+\contentsline {section}{\numberline {4.3}Related Work}{37}
+\contentsline {section}{\numberline {4.4}Proposed Framework}{39}
+\contentsline {subsection}{Module $1$: Human Skin Tone Detector with Dynamic Background Modeler}{39}
+\contentsline {subsubsection}{{\em a-priori} Bi-modal Gaussian Mixture Model for Human Skin Classification}{39}
+\contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{41}
+\contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{42}
+\contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{42}
+\contentsline {subsubsection}{Random Field (RF) Models}{42}
+\contentsline {subsubsection}{Pre-processing}{43}
+\contentsline {subsubsection}{The Neighborhood System}{44}
+\contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{45}
+\contentsline {subsubsection}{Human Face Pose}{46}
+\contentsline {subsection}{Combining Evidence}{47}
+\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{48}
+\contentsline {subsection}{Coarse Pose estimation}{49}
+\contentsline {section}{\numberline {4.5}Experiments}{50}
+\contentsline {section}{\numberline {4.6}Results}{51}
+\contentsline {section}{\numberline {4.7}Discussion of Results}{52}
+\contentsline {chapter}{\chapternumberline {5}Exocentric Sensing: Accurate Tracking of Individuals}{54}
+\contentsline {section}{\numberline {5.1}Challenges in Person Localization from a wearable camera platform}{55}
+\contentsline {subsection}{Background Properties}{55}
+\contentsline {chapter}{REFERENCES}{57}
+\contentsline {chapter}{APPENDIX}{65}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{66}
+\contentsline {subsection}{Procedure}{67}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{68}
