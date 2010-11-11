@@ -35,7 +35,7 @@
 \contentsline {subsection}{Response on Individual Questions}{28}
 \contentsline {subsection}{Response Ratio}{30}
 \contentsline {subsection}{Rank Average Importance Map for Various Non-verbal Cues}{31}
-\contentsline {chapter}{\chapternumberline {4}Exocentric Sensing}{33}
+\contentsline {chapter}{\chapternumberline {4}EXOCENTRIC SENSING}{33}
 \contentsline {section}{\numberline {4.1}Conceptual Framework}{34}
 \contentsline {section}{\numberline {4.2}Accurate Face Detection}{36}
 \contentsline {section}{\numberline {4.3}Related Work}{37}
@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {4.5}Experiments}{50}
 \contentsline {section}{\numberline {4.6}Results}{51}
 \contentsline {section}{\numberline {4.7}Discussion of Results}{52}
-\contentsline {chapter}{\chapternumberline {5}Exocentric Sensing: Accurate Tracking of Individuals}{54}
+\contentsline {chapter}{\chapternumberline {5}EXOCENTRIC SENSING: ACCURATE TRACKING OF PEOPLE}{54}
 \contentsline {section}{\numberline {5.1}Challenges in Person Localization from a wearable camera platform}{55}
 \contentsline {subsection}{Background Properties}{55}
 \contentsline {chapter}{REFERENCES}{57}
