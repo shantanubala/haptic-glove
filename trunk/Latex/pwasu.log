@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  11 NOV 2010 11:02
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  12 NOV 2010 15:12
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -426,6 +426,9 @@ File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
 
 LaTeX Warning: Label `Tab:Table2' multiply defined.
 
+
+LaTeX Warning: Label `Fig:Figure108' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
@@ -533,13 +536,13 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 [8
 
-] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.lof")
+] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.lof"
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [9
 
-]
+])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -938,28 +941,135 @@ File: SimpleBackground.JPG Graphic file (type jpg)
 <use SimpleBackground.JPG>
 File: FarPerson.JPG Graphic file (type jpg)
  <use FarPerson.JPG>
-("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [55 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SimpleBackgroun
-d.JPG>]
+d.JPG>] <rigidobject.JPG, id=244, 934.99312pt x 237.13594pt>
+File: rigidobject.JPG Graphic file (type jpg)
+
+<use rigidobject.JPG> <nonrigidobject.JPG, id=245, 936.49875pt x 234.1247pt>
+File: nonrigidobject.JPG Graphic file (type jpg)
+
+<use nonrigidobject.JPG>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[56]
+[56 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/rigidobject.JPG
+> <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/nonrigidobject.JP
+G>]
+File: FarPerson.JPG Graphic file (type jpg)
+ <use FarPerson.JPG> <MotionBlur.JPG, id=249, 973.38657pt x 242.40562pt>
+File: MotionBlur.JPG Graphic file (type jpg)
+
+<use MotionBlur.JPG> <light.JPG, id=250, 936.49875pt x 234.1247pt>
+File: light.JPG Graphic file (type jpg)
+
+<use light.JPG>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[57 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/MotionBlur.JPG>
+]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[58 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/light.JPG>]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[59]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[60]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[61] <Step1.JPG, id=267, 331.99031pt x 462.22687pt>
+File: Step1.JPG Graphic file (type jpg)
+ <use Step1.JPG>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Step2.JPG, id=268, 329.73187pt x 456.20438pt>
+File: Step2.JPG Graphic file (type jpg)
+ <use Step2.JPG>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[62]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[63 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Step1.JPG>]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[64 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Step2.JPG>]
+<StructuredSearch.JPG, id=279, 724.20563pt x 399.74344pt>
+File: StructuredSearch.JPG Graphic file (type jpg)
+
+<use StructuredSearch.JPG>
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[65 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/StructuredSearc
+h.JPG>] <SearchStructure.JPG, id=283, 464.4853pt x 417.81094pt>
+File: SearchStructure.JPG Graphic file (type jpg)
+
+<use SearchStructure.JPG>
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[66 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SearchStructure
+.JPG>] <ComparisonTracking.JPG, id=287, 367.3725pt x 447.92343pt>
+File: ComparisonTracking.JPG Graphic file (type jpg)
+
+<use ComparisonTracking.JPG>
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[67]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[68 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/ComparisonTrack
+ing.JPG>] <Campher.JPG, id=294, 742.27313pt x 456.95718pt>
+File: Campher.JPG Graphic file (type jpg)
+ <use Campher.JPG>
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[69 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Campher.JPG>]
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[70] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
+Overfull \vbox (12.59999pt too high) has occurred while \output is active []
+
+
+[71]
 bibitemlist
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[57
+[72
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[58]
+[73]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
@@ -968,46 +1078,46 @@ Missing character: There is no © in font ptmr7t!
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[59]
+[74]
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[60]
+[75]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[61]
+[76]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[62]
+[77]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[63]
+[78]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[64])
+[79])
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[65]
+[80]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[66
+[81
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1326--1329
+Underfull \hbox (badness 10000) in paragraph at lines 1503--1506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1326--1329
+Underfull \hbox (badness 10000) in paragraph at lines 1503--1506
 
  []
 
@@ -1015,19 +1125,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 1326--1329
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[67
+[82
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[68
+[83
 
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[69
+[84
 
 ]
 \tf@toc=\write4
@@ -1042,13 +1152,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4901 strings out of 495285
- 66137 string characters out of 3180282
- 156707 words of memory out of 3000000
- 8039 multiletter control sequences out of 15000+200000
+ 4962 strings out of 495285
+ 67222 string characters out of 3180282
+ 157245 words of memory out of 3000000
+ 8090 multiletter control sequences out of 15000+200000
  40242 words of font info for 89 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,13n,21p,2007b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,13n,21p,2590b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.8/fon
@@ -1060,9 +1170,9 @@ am Files/MiKTeX 2.8/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.
 8/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw
 /times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on pwasu.pdf (79 pages, 1188213 bytes).
+Output written on pwasu.pdf (94 pages, 1700852 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
+ 385 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
