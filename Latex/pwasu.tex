@@ -1272,32 +1272,209 @@ can verify that the labeling is meaningful.
 The problem of person localization in general is very broad in its scope and wide varieties of challenges such as variations in articulation, scale, clothing, partial appearances, occlusions, etc make this a complex problem. Narrowing the focus, this paper targets person localization in real world video sequences captured from the wearable camera of the Social Interaction Assistant. Specifically, we focus on the task of localizing a person who is approaching the user to initiate a social interaction or just conversation. In this context, the problem of person localization can be constrained to the cases where the person of interest is facing the user.
 
 \begin{figure}[h]
+\centering
 \includegraphics[width=4in]{ClosePerson.JPG}
 \caption{Person of interest at a short distance from camera}
 \label{Fig:Figure100}
 \end{figure}
 
 \begin{figure}[h]
+\centering
 \includegraphics[width=4in]{FarPerson.JPG}
 \caption{Person of interest at a large distance from camera}
 \label{Fig:Figure101}
 \end{figure}
 
-When such a person of interest is in close proximity, his/her presence can be detected by analyzing the incoming video stream for facial features (\ref{Fig:Figure100}). But when such a person is approaching the user from a distance, the size of the facial region in the video appears to be extremely small. In this case, relying on facial features alone would not suffice and there is a need to analyze the data for full body features (\ref{Fig:Figure101}). In this work, we have concentrated on improving the effectiveness of the SIA by applying computer vision techniques to robustly localize people using full body features. Following section discusses some of the critical issues that are evident when performing person localization from the wearable camera setup of the SIA
+When such a person of interest is in close proximity, his/her presence can be detected by analyzing the incoming video stream for facial features (Figure \ref{Fig:Figure100}). But when such a person is approaching the user from a distance, the size of the facial region in the video appears to be extremely small. In this case, relying on facial features alone would not suffice and there is a need to analyze the data for full body features (Figure \ref{Fig:Figure101}). In this work, we have concentrated on improving the effectiveness of the SIA by applying computer vision techniques to robustly localize people using full body features. Following section discusses some of the critical issues that are evident when performing person localization from the wearable camera setup of the SIA
 
 \section{Challenges in Person Localization from a wearable camera platform}
 A number of factors associated with the background, object, camera/object motion, etc. determine the complexity of the problem of person localization from a wearable camera platform. Following is a descriptive discussion of the imminent challenges that we encountered while processing the data using the SIA.
 
 \subsection{Background Properties}
-When the Social Interaction Assistant is used in natural settings, it is highly possible that there are objects in the background which move, thus causing the background to be dynamic. Also, there are bound to be regions in the background whose image features are highly similar to that of the person, thus leading to a cluttered background. Due to these factors, the problem of distinguishing the person of interest from the background becomes highly challenging in this context. Figure 4 (a) and (b) illustrate the contrast in the data due to the nature of the background.
+When the Social Interaction Assistant is used in natural settings, it is highly possible that there are objects in the background which move, thus causing the background to be dynamic. Also, there are bound to be regions in the background whose image features are highly similar to that of the person, thus leading to a cluttered background. Due to these factors, the problem of distinguishing the person of interest from the background becomes highly challenging in this context. Figures \ref{Fig:Figure103} and \ref{Fig:Figure104} illustrate the contrast in the data due to the nature of the background.
 
 \begin{figure}[h]
+\centering
 \includegraphics[width=4in]{SimpleBackground.JPG}
 \caption{Simple Background}
+\label{Fig:Figure103}
 \includegraphics[width=4in]{FarPerson.JPG}
 \caption{Complex Background}
-\label{Fig:Figure102}
+\label{Fig:Figure104}
 \end{figure}
+
+\subsection{Object Properties}
+As we are interested in person localization, it can be clearly seen that the object is non-rigid in nature as there are appearance changes that occur throughout the sequence of images.  Further, significant scale changes and deformities in the structure can also be observed. Also, when analyzing video frames of persons approaching the user, the basic image features in various sub-regions of the object vary vastly. For example, the image features from the facial region are considerably different from that of the torso region. Tracking detected persons from one frame to another will require individualized tracking of each region to maintain confidence. This non-homogeneity of the object poses a major hurdle while applying localization algorithms and has not been studied much in the literature. Figure \ref{Fig:Figure105} shows the simplicity of the data when these problems are not present, while Figure \ref{Fig:Figure106} highlights complex data formulations in a typical interaction scenario.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{rigidobject.JPG}
+\caption{Rigid, Homogeneous Object}
+\label{Fig:Figure105}
+\includegraphics[width=4in]{nonrigidobject.JPG}
+\caption{Non-Rigid, Deformable, Non-Homogeneous Object}
+\label{Fig:Figure106}
+\end{figure}
+
+\subsection{Object/Camera Motion}
+Traditionally, most computer vision applications use a static camera where strong assumptions of motion continuity and temporal redundancy can be made. But in our problem, as it is very natural for users to move their head continuously, the mobile nature of the platform causes abrupt motion in the image space (Compare Figure \ref{Fig:Figure107} and Figure \ref{Fig:Figure108}). This is similar to the problem of working with low frame rate videos or the cases where the object exhibits abrupt movements. Recently, there has been an increase of interest in dealing with this issue in computer vision research [5] [6-8]. Some important applications which are required to meet real-time constraints, such as teleconferencing over low bandwidth networks, and cameras on low-power embedded systems, along with those which deal with abrupt object and camera motion like sports applications are becoming common place [8]. Though solutions have been suggested, person localization through low frame rate moving cameras still remains an active research topic.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{FarPerson.JPG}
+\caption{Static Camera}
+\label{Fig:Figure107}
+\includegraphics[width=4in]{MotionBlur.JPG}
+\caption{Mobile Camera}
+\label{Fig:Figure108}
+\end{figure}
+
+
+\subsection{Other Important Factors Affecting Effective Person Tracking}
+As the SIA is intended to be used in uncontrolled environments, changing illumination conditions need to be taken into account. Further, partial occlusions, self occlusions, in-plane and out-of-plane rotations, pose changes, blur and various other factors can complicate the nature of the data. See  Figure \ref{Fig:Figure108} for example situations where various factors can affect the video quality.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{light.JPG}
+\caption{Changing Illumination, Pose Change and Blur}
+\label{Fig:Figure108}
+\end{figure}
+
+Given the nature of this problem, in this chapter we focus on the problem of robust localization of a single person approaching a user of the SIA using full-body features. Issues arising due to cluttered background along with object and camera motion have been handled towards providing robustness. In the following section we discuss some of the important related work in the computer vision literature.
+
+\section{Related Computer Vision Work in Person Localization and Tracking}
+Historically, two distinct approaches have been used for searching and localizing objects in videos. On one hand, there are detection algorithms which focus on locating an object in every frame using specific spatial features which are fine tuned for the object of interest. For example, haar-based rectangular features [9] and histograms of oriented gradients [10] can develop detectors that are very specific to objects in videos. On the other hand, there are tracking algorithms which trail an object using generic image features, once it is located, by exploiting the temporal redundancy in videos. Examples of features used by tracking algorithms include color histograms [11] and edge orientation histograms [12].
+
+\subsection{Detection Algorithms}
+As mentioned previously, detection algorithms exploit the specific, distinctive features of an object and apply learning algorithms to detect a general class of objects. They use information related to the relative feature positions, invariant structural features, characteristic patterns and appearances to locate objects within the gallery image. But, when the object is complex, like a person, it becomes difficult for these algorithms to achieve generality thereby failing even under minute non-rigidity. A number of human factors such as variations in articulation, pose, clothing, scale and partial occlusions make this problem very challenging.
+
+When assumptions about the background cannot be made, learning algorithms which take advantage of the relative positions of body parts are used to build classifiers. The kind of low-level features generally used in this context are gradient strengths and gradient orientations [13,10], , entropy and haar-like features. Some of the well-known higher level descriptors are histogram of oriented gradients [10] and covariance features [14]. Efforts have been made to make these descriptors scale invariant as well.
+
+In order to make these algorithms real-time, researchers have popularly resorted to two kinds of approaches. One category includes part-based approach such as Implicit Shape Models [5] and constellation models [15] which place emphasis on detecting parts of the object before integrating, while the other category of algorithms tries to search for relevant descriptors for the whole object in a cascaded manner[16].  Shape-based Chamfer matching [25] is a popular technique used in multiple ways for person detection as the silhouette gives a strong indication of the presence of a person. In recent times, Chamfer matching has been used extensively by the person detection and localization community. It has been applied with hierarchically arranged templates to obtain the initial candidate detection blocks so that they can be analyzed further by techniques such as segmentation, neural networks, etc. It has also been used as a validation tool to overcome ambiguities in detection results obtained by the Implicit Shape Model technique [18].
+
+\subsection{Tracking Algorithms}
+Assuming that there is temporal object redundancy in the incoming videos, many algorithms have been proposed to track objects over frames and build confidence as they go. Generally they make the simplifying assumption that the properties of the object depend only on its properties in the previous frame, i.e. the evolution of the object is a Markovian process of first order. Based on these assumptions, a number of deterministic as well as stochastic algorithms have been developed.
+
+Deterministic algorithms usually apply iterative approaches to find the best estimate of the object in a particular image in the video sequence [16]. Optimal solutions based on various similarity measures between the object template and regions in the current image, such as sum of squared differences (SSD), histogram-based distances, distances in eigenspace and other low dimensional projected spaces and conformity to particular object models, have been explored [16]. Mean Shift is a popular, efficient optimization-based tracking algorithm which has been widely used.
+
+Stochastic algorithms use the state space approach of modeling dynamic systems and formulate tracking as a problem of probabilistic state estimation using noisy measurements [20]. In the context of visual object tracking, it is the problem of probabilistically estimating the object's properties such as its location, scale and orientation by efficiently looking for appropriate image features of the object. Most of these stochastic algorithms perform Bayesian filtering at each step for tracking, i.e. they predict the probable state distribution based on all the available information and then update their estimate according to the new observations. Kalman filtering is one such algorithm which fixes the type of the underlying system to be linear with Gaussian noise distributions and analytically gives an optimal estimate based on this assumption. As most tracking scenarios do not fit into this linear-Gaussian model and as analytic solutions for non-linear, non-Gaussian systems are not feasible, approximations to the underlying distribution are widely used from both parametric and non-parametric perspective.
+
+Sequential monte-carlo based Particle Filtering techniques have gained a lot of attention recently. These techniques approximate the state distribution of the tracked object using a finite set of weighted samples using various features of the system. For visual object tracking, a number of features have been used to build different kinds of observation models, each of which have their own advantages and disadvantages. Color histograms[11], contours[21], appearance models, intensity gradients[22], region covariance, texture, edge-orientation histograms, haar-like rectangular features [16] , to name a few. Apart from the kind of observation models used, this technique allows for variations in the filtering process itself. A lot of work has gone into adapting this algorithm to better perform in the context of visual object tracking.
+	
+While both the areas of detection and tracking have been explored extensively, there is an impending need to address some of the issues faced by low frame rate visual tracking of objects. Especially in the case of SIA, person localization in low frame rate video is of utmost importance. In this paper, we have attempted to modify the color histogram comparison based particle filtering algorithm to handle the complexities that occur mobile camera on the Social Interaction Assistant.
+
+\section{Conceptual Framework}
+As discussed in the previous section, detection and tracking offer distinctive advantages and disadvantages when it comes to localizing objects. In the case of SIA, thorough object detection is not possible in every frame due to the lack of computational power (on a wearable platform computing platform) and tracking is not always efficient due to the movement of the camera and the object's (interaction partner's) independent motion. Though there are clear advantages in applying these techniques individually, the strengths of both these approaches need to be combined in order to tackle the challenges posed by the complex setting of the SIA. In the past, a few researchers have approached the problem of tracking in low frame rate or abrupt videos by interjecting a standard particle filtering algorithm with independent object detectors [23]. In our experience, the Social Interaction Assistant offers a weak temporal redundancy in most cases. We exploit this information trickle between frames to get an approximate estimate of the object location by incorporating a deterministic object search while avoiding the explicit use of pre-trained detectors. Due to the flexibility in the design, particle filtering algorithms provide a good platform to address the issues arising due to complex data. These algorithms give an estimate of an object's position by discretely building the underlying distribution which determines the object's properties. But, real-time constraints impose limits on the number of particles and the strength of the observation models that can be used. This generally causes the final estimate to be noisy when conventional particle filtering approaches are applied. Unless the choice of the particles and the observation models fit the underlying data well, the estimate is likely to drift away as the tracking progresses. To mitigate these problems faced in the use of the SIA, we propose a new particle filtering framework that gets an initial estimate of the person's location by spreading particles over a reasonably large area and then successively corrects the position  though a deterministic search in a reduced search space. Termed as Structured Mode Searching Particle Filter (SMSPF), the algorithm uses color histogram comparison in the particle filtering framework at each step to get an initial estimate which is then corrected by applying a structured search based on gradient features and chamfer matching. The details of this algorithm are described in the next section.
+
+\section{STRUCTURED MODE SEARCHING PARTICLE FILTER}
+Assuming that an independent person detection algorithm can initialize this tracking algorithm with the initial estimate of the person location, this particle filtering framework focuses on tracking a single person under the following circumstances, namely
+\begin{itemize}
+\item Image region with the person is non-rigid and non-homogeneous
+\item Image region with the person exhibits significant scale changes
+\item Image region with the person exhibits abrupt motions of small magnitude in the image space due to the movement of the camera.
+\item Background is cluttered.
+\end{itemize}
+
+The algorithm progresses by implementing two steps on each frame of the incoming video stream. In the first step (Figure \ref{Fig:Figure109}), an approximate estimate of the person region is obtained by applying a color histogram based particle filtering step over a large search space. This is followed by a refining second step (Figure \ref{Fig:Figure110}) where the estimate is corrected by applying a structured search based on gradient features and Chamfer matching.  These two steps have been described in detail below.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{Step1.JPG}
+\caption{SMSPF - Step 1}
+\label{Fig:Figure109}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{Step2.JPG}
+\caption{SMSPF - Step 2}
+\label{Fig:Figure110}
+\end{figure}
+
+\subsection{Step 1: Particle Filtering Step}
+In the context of SIA, as the person of interest can exhibit abrupt motion changes in the image space, it is extremely difficult to model the placement of the person in the current image based on the previous frame's information alone. When such data is modeled in the Bayesian filtering based particle filtering framework, the state of each particle's position becomes independent of its state in the previous step. Thus, the prior distribution can be considered to be a uniform random distribution over the support region of the image.
+
+\begin{equation}
+p\left( x_t^i|x^i_{t-1} = p(x_t^i)\right)
+\end{equation}
+
+As it is essential for particle filtering algorithm to choose a good set of particles, it would be useful to pick a good portion of them near the estimate in the previous step. By approximating this previous estimate to be equivalent to a measurement of the image region with the person in the current step, the proposal distribution of each particle can be chosen to be dependent only on the current measurement
+
+\begin{equation}
+q\left(x_t^i|x_{t-1}^iZ_t\right) = q\left(x_t^i|Z_t\right)
+\end{equation}
+
+Though the propagation of information through particles is lost by making such an assumption, it gives a better sampling of the underlying system. We employ a large variance Gaussian with its mean centered at the previous estimate for successive frame particle propagation. By using such a set of particles, a larger area is covered, thus accounting for abrupt motion changes and a good portion of them are picked near the previous estimate, thus exploiting the weak temporal redundancy.  As in [11], we have employed this technique using HSV color histogram comparison to get likelihoods at each of the particle locations. Since intensity is separated from chrominance in this color space, it is reasonably insensitive to illumination changes. We use an 8x8x4 HSV binning thereby allowing lesser sensitivity to changes in V when compared to chrominance. The histograms are compared using the well-known Bhattacharyya Similarity Coefficient which guarantees near optimality and scale invariance.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{StructuredSearch.JPG}
+\caption{Structured Search}
+\label{Fig:Figure111}
+\end{figure}
+
+With the above step alone, due to the small number of particles which are spread widely across the image, we can get an approximate location of the person. When such an estimate partially overlaps with the desired person region, the best match occurs between the intersection of the estimate and the actual person region as shown in Figure \ref{Fig:Figure111}. But, it is not trivial to detect this partial presence due to the existence of background clutter.  To handle this problem, we introduce a second step which uses efficient image feature representations of the desired person object and employs an efficient search around the estimate to accurately localize the person object.
+
+\subsection{Step 2: Structured Search}
+As the estimate obtained using widely spread particles gives the approximate location of the object, the search for the image block with a person in it can be restricted to a region around it. We have employed a grid-based approach to discretely search for the object of interest (a person) instead of checking at every pixel. By dividing the estimate into an m x n grid and sliding a window along the bins of the grid as shown in Figure \ref{Fig:Figure112}, the search space can be restricted to a region close to the estimate. By finding the location which gives the best match with the person template, we can localize the person in the video sequence with better accuracy.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{SearchStructure.JPG}
+\caption{Sliding window of the Structured Search (Green: Estimate; Red: Sliding window).}
+\label{Fig:Figure112}
+\end{figure}
+
+If this search is performed based on scale-invariant features, then it can be extended to identify scale changes as well. In order to achieve search over scale, the estimate and the sliding window need to be divided into different number of bins. If the search is performed using smaller number of bins as compared to the estimate, then shrinking of the object can be identified while searching with higher number of bins can account for dilation of the object. For example, if a (m-1) x (n-1) grid is used with the sliding window while a m x n grid is used with the estimate, then the best match will find a shrink in the object size. Similarly if an m x n grid sliding window is used with a (m-1) x (n-1) estimate grid, then dilations can be detected. It can be seen that this search is characterized by the number of bins m x n into which the sliding window and the estimate are divided. Based on the nature of the problem, the number of bins and the amount of sweep across scale and space can be adjusted. Currently, these parameters are being set manually, but the structured search framework can be extended to include online algorithms which can adapt the number of grid bins based on the evolution of the object.
+
+If the object of interest was simple, then the best match across space and scale could be obtained by using simple feature matching techniques. But, due to the complex nature of the data, strong confidence is required while searching for the person region across scale. To this end, we propose to perform the structured search by analyzing the internal features of the person region as well as the external boundary/silhouette features and aggregating the confidence obtained from these two measures to refine the person location estimate in the image (Figure \ref{Fig:Figure113})
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{ComparisonTracking.JPG}
+\caption{Structured Search Matching Technique}
+\label{Fig:Figure113}
+\end{figure}
+
+In literature, gradient based features have been widely used for person detection and tracking problems and their applicability has been strongly established by various algorithms like Histogram of Oriented Gradients (HoGs) [10]. Following this principle, we have used the Edge Orientation Histogram (EOH) features [12] in order to obtain the internal content information measure. For this purpose, a gradient histogram template (GHT) is initially built using a generic template image of a walking/standing person. This GHT is then compared with the gradient histogram of each structured search block using the Bhattacharyya histogram comparison as in [11] in order to find the block with the best internal confidence. In our implementation, orientations are computed using the Sobel operator and the gradients are then binned into 9 discrete bins. These features were extracted using the integral histogram concept [27] to facilitate computationally efficient searching.
+
+Similarly, in order to obtain the boundary confidence measure, a generic person silhouette template (GPT) (as shown in Figure 13) is used to perform a modified Chamfer match on each of the search blocks. In general, Chamfer matching is used to search for a particular contour model in an edge map by building a distance transformed image of the edge map. Each pixel value in a distance transformed image is proportional to the distance to its nearest edge pixel. In order to compare the edge map to the contour map, we convolve the edge image with the contour map. If the contour completely overlaps with the matching edge region, we get a chamfer match value of zero. Based on how different the edge map is to the template contour, the chamfer match score will increase and move towards 1. A chamfer match score of 1 implies a very bad match.
+
+While the theory of chamfer matching offers elegant search score, in reality, especially with clutter within the object's silhouette, it is very difficult to get an exact match score. In SIA, since the data is very noisy and complex, certain modifications need to be made with the Chamfer matching algorithm in order achieve good performance. The following section details a modified Chamfer match algorithm introduced in this work.
+
+\subsection{Chamfer Matching in Structured Search}
+As discussed above, Chamfer matching gives a measure of confidence on the presence of the person within an image based on silhouette information. We have incorporated this confidence into the structured search in order to detect the precise location of the person around the particle filter estimate. An edge map of the image under consideration is first obtained which is then divided into (m x n) windows in accordance with the structured search and an elliptical ring mask is then applied to each of these windows as shown in Figure \ref{Fig:Figure114}. This mask is applied so as to eliminate the edges that arise due to clothing and background thereby emphasizing the silhouette edges which are likely to appear in the ring region if a window is precisely placed on the object perimeter. A distance transformed image of the window is then obtained using the masked edges.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{Campher.JPG}
+\caption{Incorporating Chamfer Matching into Structured Search}
+\label{Fig:Figure114}
+\end{figure}
+
+By applying the modified chamfer matching (with a generic person contour resized to the current particle filter estimate), a confidence number in locating the desired object within the image region can be obtained. Similar to the Chamfer matching as before, a value close to 0 indicates a strong confidence of the presence of a person and vice versa. As 1 is the maximum value that can be obtained by the chamfer match, this measure can be incorporated into the match score of the structured search using the following equation.
+
+\begin{equation}
+\mbox{BoundaryConf} = (1 - \mbox{ChamferMatch})
+\end{equation}
+
+The standard form of Chamfer Matching gives a continuous measure of confidence in locating an object in an edge map. But, in our case, when the elliptical ring mask is used to filter out the noisy edges in each search block, this nature of Chamfer match is lost. Since the primary goal of the structured search is to find a single best matching location of the person, it is more advantageous to use the filter mask at the cost of losing this continuous nature of the chamfer match. Further, as it is very likely that the person region is close to the approximate estimate obtained from the first step, one of the search windows of the structured search is bound to capture the entire person object thus resulting in a good match score.
+
+From the above discussion, it can be seen that combining the knowledge about the internal structure of the person region with the silhouette information results in a greater confidence in the SMSPF algorithm. Further, using such complementary features in the structured search robustly corrects the approximate estimate obtained from the particle filtering step while handling various problems associated with search across scale.
+
+\section{Experiments and Datasets}
+\subsection{Datasets}
+The performance of the structured mode searching particle filter (SMSPF) has been tested using three datasets where a single person faces the camera while approaching it. There are significant scale changes in each of these sequences. Further, non-rigidity and deformability of the person region can also be clearly observed. Different scenarios with varying degrees of complexity of the background and camera movement have been considered. Following is a brief description of these datasets.
+\begin{enumerate}[(a)]
+\item \emph{DataSet \footnote{Collected at CUbiC }}: Plain Background; Static Camera; 320x240 resolution
+\item \emph{DataSet \footnote{CASIA  Gait Dataset B with subject approaching the camera [4]}}: Slightly cluttered Background; Static Camera; 320x240 resolution
+\item \emph{DataSet \footnote{Collected at CUbiC}}: Cluttered Background;  Mobile Camera; 320x240 resolution
+\end{enumerate}
+
+Figure 13 shows the sample results on each of the datasets used.
+
+
+
 
 %\newpage
 \vspace*{1in}

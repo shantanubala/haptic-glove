@@ -21,3 +21,14 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Person of interest at a large distance from camera}}{54}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Simple Background}}{55}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Complex Background}}{55}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Rigid, Homogeneous Object}}{56}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Non-Rigid, Deformable, Non-Homogeneous Object}}{56}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Static Camera}}{57}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Mobile Camera}}{57}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Changing Illumination, Pose Change and Blur}}{58}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces SMSPF - Step 1}}{63}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces SMSPF - Step 2}}{64}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Structured Search}}{65}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Sliding window of the Structured Search (Green: Estimate; Red: Sliding window).}}{66}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Structured Search Matching Technique}}{68}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Incorporating Chamfer Matching into Structured Search}}{69}

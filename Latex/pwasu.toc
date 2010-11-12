@@ -59,8 +59,21 @@
 \contentsline {chapter}{\chapternumberline {5}EXOCENTRIC SENSING: ACCURATE TRACKING OF PEOPLE}{54}
 \contentsline {section}{\numberline {5.1}Challenges in Person Localization from a wearable camera platform}{55}
 \contentsline {subsection}{Background Properties}{55}
-\contentsline {chapter}{REFERENCES}{57}
-\contentsline {chapter}{APPENDIX}{65}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{66}
-\contentsline {subsection}{Procedure}{67}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{68}
+\contentsline {subsection}{Object Properties}{56}
+\contentsline {subsection}{Object/Camera Motion}{56}
+\contentsline {subsection}{Other Important Factors Affecting Effective Person Tracking}{57}
+\contentsline {section}{\numberline {5.2}Related Computer Vision Work in Person Localization and Tracking}{58}
+\contentsline {subsection}{Detection Algorithms}{58}
+\contentsline {subsection}{Tracking Algorithms}{59}
+\contentsline {section}{\numberline {5.3}Conceptual Framework}{61}
+\contentsline {section}{\numberline {5.4}STRUCTURED MODE SEARCHING PARTICLE FILTER}{62}
+\contentsline {subsection}{Step 1: Particle Filtering Step}{62}
+\contentsline {subsection}{Step 2: Structured Search}{65}
+\contentsline {subsection}{Chamfer Matching in Structured Search}{69}
+\contentsline {section}{\numberline {5.5}Experiments and Datasets}{70}
+\contentsline {subsection}{Datasets}{70}
+\contentsline {chapter}{REFERENCES}{72}
+\contentsline {chapter}{APPENDIX}{80}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{81}
+\contentsline {subsection}{Procedure}{82}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{83}
