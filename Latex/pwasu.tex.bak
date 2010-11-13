@@ -957,14 +957,13 @@ is larger than the variance in the $y$ direction.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width=2.3in] {GaussianDiffVar.eps}
-\includegraphics [width=2.3in] {GaussianDiffVarImage.eps}
-(a) \hspace{2.25in} (b) \caption{(a) 3D representation of a Gaussian
+\includegraphics [width=5.5in] {FRFig1.JPG}
+\caption{(a) 3D representation of a Gaussian
 mask; $\sigma_x = 10$, $\sigma_y = 15$ and $\theta=0$
 \newline (b)Image of the Gaussian mask $\sigma_x = 10$, $\sigma_y
-= 15$ and $\theta=0$} \label{Fig:G}
+= 15$ and $\theta=0$} 
+\label{Fig:G}
 \end{center}
-
 \end{figure}
 
 
