@@ -117,6 +117,12 @@ Warning--empty year in rosenfeld_clothing_1977
 Warning--empty publisher in robles-de-la-torre_principles_2008
 Warning--empty booktitle in ur_rehman_manifold_2007
 Warning--empty booktitle in kim_meeting_2008
+Warning--empty journal in Schw2003
+Warning--empty booktitle in wiskott_face_1997
+Warning--empty publisher in wiskott_face_1995
+Warning--can't use both author and editor fields in wiskott_face_1996
+Warning--empty chapter and pages in wiskott_face_1996
+Warning--empty institution in Ozkan2006
 Warning--empty booktitle in ram_people_1998
 Warning--empty booktitle in bilmes_gentle_1998
 Warning--empty booktitle in paget_texture_1997

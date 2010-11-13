@@ -606,25 +606,7 @@ is moderately challenging, but still potentially within the realm of
 possibility. When people who are blind enter a room, they might find
 it awkward to initiate social interactions because they don't know
 how many people are in the room, who those people are, or where they
-are standing \footnote{In order to understand the assistive
-technology requirements of people who are blind, we conducted two
-focus group studies (one in Tempe, Arizona USA - 9 participants, and
-another in Tucson, Arizona USA - 11 participants) which included:
-\begin{enumerate} \item students and
-adult professionals who are blind,
-\item parents of individuals who are blind \item professionals
-who work in the area of blindness and visual
-impairments\end{enumerate}There was unanimous agreement among
-participants that a technology that would help people with visual
-impairment to recognize people or hear them described would
-significantly enhance their social life.}\hspace*{0.1in}\footnote{To
-quote some candidates opinion about face recognition technology in a
-social setting:
-\begin{itemize}
-\item ``It would be nice to walk into a room and immediately get to
-know who are all in front of me before they start a conversation''.
-\item One young man said, ``It would be great to walk into a bar
-and identify beautiful women''.\end{itemize}}. A robust, wearable
+are standing. A robust, wearable
 face recognition device could solve this problem.
 
 This problem is simplified considerably by the fact that, on a
@@ -729,7 +711,7 @@ when recognizing faces.
 
 Another important area of research in the human perception of faces
 has been in understanding the medical condition of face blindness,
-called {\it prosopagnosia}.  People with prosopagnosia are unable to
+called \emph{prosopagnosia}.  People with prosopagnosia are unable to
 recognize faces including their own. Until recently it was assumed
 that prosopagnosia was acquired often as a result of a localized
 stroke. However new evidence suggests that a substantial portion of
@@ -957,12 +939,12 @@ is larger than the variance in the $y$ direction.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width=2.3in] {GaussianDiffVar.eps}
-\includegraphics [width=2.3in] {GaussianDiffVarImage.eps}
-(a) \hspace{2.25in} (b) \caption{(a) 3D representation of a Gaussian
+\includegraphics [width=5.5in] {FRFig1.JPG}
+\caption{(a) 3D representation of a Gaussian
 mask; $\sigma_x = 10$, $\sigma_y = 15$ and $\theta=0$
 \newline (b)Image of the Gaussian mask $\sigma_x = 10$, $\sigma_y
-= 15$ and $\theta=0$} \label{Fig:G}
+= 15$ and $\theta=0$} 
+\label{Fig:G}
 \end{center}
 \end{figure}
 
@@ -988,11 +970,7 @@ except for the $\pi$ radian phase shift.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width=2in] {Sinusoid.eps}
-\includegraphics [width=1.25in] {SinusoidRealImage.eps}
-\includegraphics [width=1.25in] {SinusoidImagImage.eps} \newline
-(a) \hspace{1.65in} (b) \hspace{1in} (c)
-
+\includegraphics [width=5.5in] {FRFig2.JPG}
 \caption{(a)3D representation of a Sinusoid $S_{\omega,\theta}$
 \newline (b)Image representation of the real part of the complex
 Sinusoid $\Re\left\{S_{\omega,\theta}\right\}$\newline (c)Image
@@ -1026,12 +1004,7 @@ the complex filter.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width = 2in] {GaborFilter.eps}
-\includegraphics [width = 1.25in] {GaborFilterRealImage.eps}
-\includegraphics [width = 1.25in] {GaborFilterImagImage.eps}\newline
-(a) \hspace{1.65in} (b) \hspace{1in} (c)
-
-
+\includegraphics [width = 5.5in] {FRFig3.JPG}
 \caption{(a)3D representation of a Gabor filter
 $\Psi_{\omega,\theta}$ \newline (b)Image representation of the real
 part of Gabor filter  $\Re\left\{\Psi_{\omega,\theta}\right\}$
@@ -1055,7 +1028,7 @@ C_{\Psi}\left(x,y\right) = \sqrt{\left(I \left(x,y\right) *
 \label{Eqn:GaborCoeff}
 \end{equation}
 
-In our experiments, a {\it Gabor filter bank} was created by varying
+In our experiments, a \emph{Gabor filter bank} was created by varying
 three parameters of $\Psi_{\omega,\theta}$: (1) the frequency
 parameter $\omega$, (2) the orientation parameter $\theta$, and (3)
 the variance parameter $\sigma$. We chose five values for each of
@@ -1102,8 +1075,8 @@ Algorithm (GA) searches for the optimum solution by randomly picking
 parameter sets and evolving newer ones from the best performers.
 This happens over many generations, hopefully resulting in the
 optimum set of parameters. To start the search, the GA generates a
-random set of {\it parents}. Each parent is characterized by the
-presence of a {\it chromosome}. The chromosome internally encodes
+random set of \emph{parents}. Each parent is characterized by the
+presence of a \emph{chromosome}. The chromosome internally encodes
 all the parameters that are used by the parent to perform the
 intended operation. In our case, the intended operation is face
 recognition. The parent uses the parameters that are found in its
@@ -1112,11 +1085,11 @@ images.
 
 Based on the ability of these features to distinguish a face from
 all others in the database, the parent is ranked within its
-population. This rank is also referred to as the {\it fitness of the
+population. This rank is also referred to as the \emph{fitness of the
 parent}. The ranking of all the parents, based on their fitness,
 marks the end of a generation, and a new generation needs to be
 created. New generations are formed based on three important aspects
-of GAs, {\it Retention}, {\it Cross Over} and {\it Mutation}. A
+of GAs, \emph{Retention}, \emph{ Cross Over} and \emph{ Mutation}. A
 portion of the newer generation is derived from the older
 generation, using the above mentioned methods, and the rest of the
 new generation is created randomly, maintaining the same overall
@@ -1211,7 +1184,7 @@ recognition.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 2in] {chromosome.eps}
+\includegraphics[width = 2in] {Chromosome.JPG}
 \caption{A typical chromosome used in the proposed method.}
 \label{Fig:Chromosome}
 \end{center}
@@ -1234,7 +1207,7 @@ evolution.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {firstgeneration.eps}
+\includegraphics[width = 4in] {Ranking.JPG}
 \caption{Stages in the creation of the first generation of parents}
 \label{Fig:FirstGen}
 \end{center}
@@ -1250,7 +1223,7 @@ recognition using Gabor filters for feature extraction.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 3in] {latergeneration.eps}
+\includegraphics[width = 4in] {Rankorder.JPG}
 \caption{Deriving newer parents from the current generation}
 \label{Fig:laterGen}
 \end{center}
@@ -1279,7 +1252,7 @@ reproduction.
 
 \subsubsection{Creation of the newer generations}
 The newer generations are created from the older population using
-{\it clones}, {\it mutants}, and {\it crossovers} of the fittest
+\emph{ clones}, \emph{ mutants}, and \emph{ crossovers} of the fittest
 parents. To better search for the optimal parameter set, new random
 parents are created every generation. This reduces the likelihood
 that the algorithm will get stuck in a local minimum in the search
@@ -1294,14 +1267,14 @@ number of clones, mutants, and corssovers are controlled by the
 following parameters:
 
 \begin{enumerate}
-\item {\it Cloning Rate} This parameter controls the number of
+\item \emph{ Cloning Rate} This parameter controls the number of
 parents from the previous generation that will be retained without
 undergoing any changes in their genetic structure.
-\item{\it Crossover Rate} This parameter controls the number of offsprings that will be
+\item\emph{ Crossover Rate} This parameter controls the number of offsprings that will be
 born from crossing the parents from the previous generation.
-\item {\it Mutation Rate} This parameter determines how many of the
+\item \emph{ Mutation Rate} This parameter determines how many of the
 crossed offsprings will then be mutated.
-\item {\it Cloning Distribution Variance} After determining the number of offsprings be to cloned, the
+\item \emph{ Cloning Distribution Variance} After determining the number of offsprings be to cloned, the
 index of the parents for cloning are chosen using a normal
 distribution random number generator, with the mean zero and
 variance equal to this parameter. Since the parents from the
@@ -1309,7 +1282,7 @@ previous generation have been rank ordered in descending order of
 fitness, the zeroth parent will be the top performer (which
 coincides with the mean of the random number generator, and has the
 highest probability of getting picked).
-\item{\it Crossover Distribution Variance} This parameter (which is
+\item\emph{ Crossover Distribution Variance} This parameter (which is
 similar to the Cloning Distribution Variance) is used to choose the
 index of the parents who will undergo Crossover.
 \end{enumerate}
@@ -1317,14 +1290,14 @@ index of the parents who will undergo Crossover.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {crossover.eps}
+\includegraphics[width = 4in] {Crossover.JPG}
 \caption{Typical crossing of two parents to create an offspring}
 \label{Fig:CrossOver}
 \end{center}
 \end{figure}
 
 
-\subsubsection{{\it Crossover}}
+\subsubsection{\emph{ Crossover}}
 As discussed earlier, the parents for crossover are selected by a
 random number generator. Between these parents, the points of
 crossover are determined by choosing locations of crossover
@@ -1340,12 +1313,12 @@ the parents.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {mutation.eps}
+\includegraphics[width = 2in] {Mutation.JPG}
 \caption{Mutation of a newly created offspring} \label{Fig:Mutation}
 \end{center}
 \end{figure}
 
-\subsubsection{{\it Mutation}}
+\subsubsection{\emph{ Mutation}}
 In addition to the process of crossover at gene boundaries in the
 chromosome, the values of some parameters within the genes might be
 changed randomly. This is illustrated in the Figure
@@ -1387,18 +1360,18 @@ from which the required frames are extracted.
 
 \begin{figure}[h]
     \centering
-        \includegraphics[scale=0.7]{facepix.eps}
+        \includegraphics[scale=0.7]{Setup.JPG}
     \caption{The data capture setup for FacePix(30)}
     \label{fig-facepix}
 \end{figure}
 
 This database has face images of 30 people across a spectrum of pose
 and illumination angles. For each person in the database, there are
-three sets of images. (1) The {\it pose angle set} contains face
-images of each person at pose angles from +90º to –90º (2) The {\it
+three sets of images. (1) The \emph{ pose angle set} contains face
+images of each person at pose angles from +90º to –90º (2) The \emph{
 no-ambient-light set} contains frontal face images with a spotlight
 placed at angles ranging from +90º to -90º with no ambient light,
-and (3) The {\it ambient-light set} contains frontal face images
+and (3) The \emph{ ambient-light set} contains frontal face images
 with a spot light placed at angles placed at angels from +90º to
 -90º in the presence of ambient light. Thus, for each person, there
 are three face images available for every angle, over a range of 180
@@ -1411,7 +1384,7 @@ available.
 
 \begin{figure}[h]
     \centering
-        \includegraphics[width = 4in]{facepiximages.eps}
+        \includegraphics[width = 5.5in]{FacePix.JPG}
     \caption{Sample face images with varying pose and illumination from the FacePix(30) database}
     \label{fig:facepiximages}
 \end{figure}
@@ -1426,17 +1399,7 @@ recognize the test images.
 
 \begin{figure}[h]
     \centering
-        \subfigure[]{
-          \label{fig-embeddingsa}
-          \includegraphics[scale=0.7]{Img1.eps}}
-     \hspace{.05in}
-     \subfigure[]{
-          \label{fig-embeddingsb}
-          \includegraphics[scale=0.7]{Img2.eps}}
-     \hspace{.05in}
-     \subfigure[]{
-          \label{fig-embeddingsc}
-          \includegraphics[scale=0.7]{Img3.eps}}
+    \includegraphics[width=5.5in]{FacePixVariant.JPG}
     \caption{Sample frontal images of one person from the FacePix(30) Database}
     \label{facepix}
 \end{figure}
@@ -1471,7 +1434,7 @@ by a single Gabor feature detector.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale = 0.5] {Res2.eps}
+\includegraphics[scale = 0.5] {Result.JPG}
 \caption{A face image marked with 5 locations where unique Gabor
 features were extracted} \label{fig:facedots}
 \end{center}
@@ -1532,7 +1495,7 @@ parents within the same generation) then the distance measure $D$
 will be the largest for that parent, making its fitness $F$ large.
 If the correlation between the extracted features is small, $C$ will
 be small, which also makes the fitness $F$ large. Thus, the
-correlation measure serves as a {\it penalty} for extracting the
+correlation measure serves as a \emph{penalty} for extracting the
 same feature from the face image multiple times, even though that
 particular feature might be the best distinguishing feature on that
 face.
@@ -1568,7 +1531,7 @@ of Gabor filters, positive images and negatives images set
 respectively for the individual $i$.
 
 \begin{itemize}
-\item {\bf The Distance Measure} $D$ \\
+\item \textbf{ The Distance Measure} $D$ \\
 A parent trying to recognize an individual $i$ with a Gabor filter
 set $S_i$ can be thought of as a transformation that projects all of
 the face images from the image space to a $M$-dimensional space,
@@ -1601,13 +1564,13 @@ of Gabor filters.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 3in] {fitness.ps}
+\includegraphics[width = 3in] {Distance.JPG}
 \caption{Distance Measure $D$ for the fitness function}
 \label{Fig:Fitness}
 \end{center}
 \end{figure}
 
-\item {\bf The Correlation Measure} $C$ \\
+\item \textbf{ The Correlation Measure} $C$ \\
 In the proposed method, in addition to having every parent selecting
 the Gabor filter set $S_i$ that can best distinguish the individual
 $i$ from all the others in the database, it is necessary to ensure
@@ -1667,7 +1630,7 @@ between pairs if locations. Thus, as the covariance between the
 image points decreases, the value of the overall correlation
 parameter decreases.
 
-\item {\bf Normalization of} $D$ {\bf and} $C$ \\
+\item \textbf{ Normalization of} $D$ \textbf{ and} $C$ \\
 In order to have an equal representation of both the Distance
 measure $D$ and the Correlation term $C$ in the fitness function, it
 is necessary to normalize the range of values that they can take.
@@ -1684,7 +1647,7 @@ where, the $Max$ represents the maximum value of $D$ or $C$ in a
 single generation across all the parents and $Min$ refers to the
 minimum value.
 
-\item {\bf Weighting factors} $w_{D}$ {\bf and} $w_{C}$ \\
+\item \textbf{ Weighting factors} $w_{D}$ \textbf{ and} $w_{C}$ \\
 The influence of the two components of the fitness function are
 controlled by the weighting factors $w_{D}$ and $w_{C}$. We used the
 relation $w_{C} = 1 - w_{D}$ to control the two parameters
@@ -1710,7 +1673,7 @@ rate achieved in each case.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {Result2.eps}
+\includegraphics[width = 4in] {Result1FR.JPG}
 \caption{The recognition rate versus the number Gabor feature
 detectors} \label{RES1}
 \end{center}
@@ -1726,7 +1689,7 @@ each case.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {Result1.eps}
+\includegraphics[width = 4in] {Result2FR.JPG}
 \caption{Recognition rate with varying $w_D$}\label{RES2}
 \end{center}
 \end{figure}
@@ -1779,13 +1742,7 @@ decreases toward the boundaries of the images.
 
 \begin{figure}[h]
     \centering
-        \subfigure[]{
-          \label{loga}
-          \includegraphics[scale=0.2]{res1.eps}}
-          \hspace{.05in}
-     \subfigure[]{
-          \label{logb}
-          \includegraphics[scale=0.2]{res1b.eps}}
+    \includegraphics[width=4in]{ResultFR.JPG}
     \caption{10 and 20 person-specific features extracted for a particular individual in the database}
     \label{fig:result1}
 \end{figure}
@@ -1808,7 +1765,7 @@ encounter.
 A wearable social interaction assistant prototype has been
 implemented using a pair of eyeglasses equipped with a tiny
 unobtrusive video camera in the nose bridge ~\cite{Sreekar2005} and
-is shown in Figure \ref{Susie}. The analog video output from this
+is shown in Section XXXX, Figure XXXX. The analog video output from this
 camera is passed through a video digitizer, and the resulting
 digital stream is then fed into a portable laptop computer. A video
 stream is captured of any person standing in front of the
@@ -1817,13 +1774,6 @@ violajones01}, is then used to identify the frames of the video
 where a face is present, and to localize that face within that
 frame. This detected face is then cropped and compared to indexed
 faces in a face database.
-
-\begin{figure}[h]
-    \centering
-        \includegraphics[scale=0.7]{susie.eps}
-        \caption{Wearable face recognition platform}
-    \label{Susie}
-\end{figure}
 
 
 The performance of the proposed approach for identifying
