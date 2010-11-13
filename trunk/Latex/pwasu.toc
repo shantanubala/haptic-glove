@@ -1,6 +1,6 @@
 \contentsline {chapter}{TABLE OF CONTENTS}{v}
-\contentsline {chapter}{LIST OF TABLES}{viii}
-\contentsline {chapter}{LIST OF FIGURES}{ix}
+\contentsline {chapter}{LIST OF TABLES}{ix}
+\contentsline {chapter}{LIST OF FIGURES}{x}
 \contentsline {chapter}{CHAPTER}{1}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Components of Social Interactions}{2}
@@ -72,8 +72,10 @@
 \contentsline {subsection}{Chamfer Matching in Structured Search}{69}
 \contentsline {section}{\numberline {5.5}Experiments and Datasets}{70}
 \contentsline {subsection}{Datasets}{70}
-\contentsline {chapter}{REFERENCES}{72}
-\contentsline {chapter}{APPENDIX}{80}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{81}
-\contentsline {subsection}{Procedure}{82}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{83}
+\contentsline {subsection}{Evaluation Metrics}{71}
+\contentsline {section}{\numberline {5.6}Results}{73}
+\contentsline {chapter}{REFERENCES}{77}
+\contentsline {chapter}{APPENDIX}{85}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{86}
+\contentsline {subsection}{Procedure}{87}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Insert Appendix B Title here}}{88}
