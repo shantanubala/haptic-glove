@@ -32,3 +32,9 @@
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Sliding window of the Structured Search (Green: Estimate; Red: Sliding window).}}{66}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Structured Search Matching Technique}}{68}
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Incorporating Chamfer Matching into Structured Search}}{69}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces SMSPF Results}}{71}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces AO (Dotted Line: Color PF; Solid Line: SMSPF)}}{74}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces DC(Dotted Line: Color PF; Solid Line: SMSPF)}}{74}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Evaluation Measure for DataSet 1}}{75}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Evaluation Measure for DataSet 2}}{75}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Evaluation Measure for DataSet 3}}{76}
