@@ -5,52 +5,52 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Histogram of Responses grouped by Questions}}{30}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Response Ratio}}{31}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Rank average of the 8 questions}}{32}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) 3D representation of a Gaussian mask; $\sigma _x = 10$, $\sigma _y = 15$ and $\theta =0$ \newline (b)Image of the Gaussian mask $\sigma _x = 10$, $\sigma _y = 15$ and $\theta =0$}}{42}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces (a)3D representation of a Sinusoid $S_{\omega ,\theta }$ \newline (b)Image representation of the real part of the complex Sinusoid $\Re \left \{S_{\omega ,\theta }\right \}$\newline (c)Image representation of the imaginary part of complex Sinusoid $\Im \left \{S_{\omega ,\theta }\right \}$}}{43}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces (a)3D representation of a Gabor filter $\Psi _{\omega ,\theta }$ \newline (b)Image representation of the real part of Gabor filter $\Re \left \{\Psi _{\omega ,\theta }\right \}$ \newline (c)Image representation of the imaginary part of Gabor filter $\Im \left \{\Psi _{\omega ,\theta }\right \}$}}{44}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A typical chromosome used in the proposed method.}}{48}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Stages in the creation of the first generation of parents}}{49}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Deriving newer parents from the current generation}}{50}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Typical crossing of two parents to create an offspring}}{52}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mutation of a newly created offspring}}{53}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The data capture setup for FacePix(30)}}{54}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Sample face images with varying pose and illumination from the FacePix(30) database}}{55}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Sample frontal images of one person from the FacePix(30) Database}}{56}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces A face image marked with 5 locations where unique Gabor features were extracted}}{57}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Distance Measure $D$ for the fitness function}}{60}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The recognition rate versus the number Gabor feature detectors}}{63}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Recognition rate with varying $w_D$}}{64}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces 10 and 20 person-specific features extracted for a particular individual in the database}}{65}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces An example false face detection.}}{71}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Block diagram.}}{73}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Skin pixels in nRGB space.}}{75}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Extra region for background modeling.}}{76}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of {\em true} and {\em false} face detection.}}{77}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Pre-processing.}}{79}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Neighborhood System.}}{80}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Frontal face Local Conditional Probability Density (LCPD) models.}}{82}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Skin-region masks.}}{82}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Soft threshold.}}{83}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces An example of combining evidence from two experts under Dempster-Shafer Theory.}}{85}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Coarse pose estimation.}}{87}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Person of interest at a short distance from camera}}{89}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Person of interest at a large distance from camera}}{89}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Simple Background}}{90}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Complex Background}}{90}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Rigid, Homogeneous Object}}{91}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Non-Rigid, Deformable, Non-Homogeneous Object}}{91}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Static Camera}}{92}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Mobile Camera}}{92}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Changing Illumination, Pose Change and Blur}}{93}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces SMSPF - Step 1}}{98}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces SMSPF - Step 2}}{99}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Structured Search}}{100}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Sliding window of the Structured Search (Green: Estimate; Red: Sliding window).}}{101}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Structured Search Matching Technique}}{103}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Incorporating Chamfer Matching into Structured Search}}{104}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces SMSPF Results}}{106}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces AO (Dotted Line: Color PF; Solid Line: SMSPF)}}{109}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces DC(Dotted Line: Color PF; Solid Line: SMSPF)}}{109}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Evaluation Measure for DataSet 1}}{110}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Evaluation Measure for DataSet 2}}{110}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Evaluation Measure for DataSet 3}}{111}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces (a) 3D representation of a Gaussian mask; $\sigma _x = 10$, $\sigma _y = 15$ and $\theta =0$ \newline (b)Image of the Gaussian mask $\sigma _x = 10$, $\sigma _y = 15$ and $\theta =0$}}{49}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces (a)3D representation of a Sinusoid $S_{\omega ,\theta }$ \newline (b)Image representation of the real part of the complex Sinusoid $\Re \left \{S_{\omega ,\theta }\right \}$\newline (c)Image representation of the imaginary part of complex Sinusoid $\Im \left \{S_{\omega ,\theta }\right \}$}}{50}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces (a)3D representation of a Gabor filter $\Psi _{\omega ,\theta }$ \newline (b)Image representation of the real part of Gabor filter $\Re \left \{\Psi _{\omega ,\theta }\right \}$ \newline (c)Image representation of the imaginary part of Gabor filter $\Im \left \{\Psi _{\omega ,\theta }\right \}$}}{51}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A typical chromosome used in the proposed method.}}{55}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Stages in the creation of the first generation of parents}}{56}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Deriving newer parents from the current generation}}{57}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Typical crossing of two parents to create an offspring}}{59}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Mutation of a newly created offspring}}{60}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The data capture setup for FacePix(30)}}{61}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Sample face images with varying pose and illumination from the FacePix(30) database}}{62}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Sample frontal images of one person from the FacePix(30) Database}}{63}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces A face image marked with 5 locations where unique Gabor features were extracted}}{64}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Distance Measure $D$ for the fitness function}}{67}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces The recognition rate versus the number Gabor feature detectors}}{70}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Recognition rate with varying $w_D$}}{71}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces 10 and 20 person-specific features extracted for a particular individual in the database}}{72}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces An example false face detection.}}{78}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Block diagram.}}{80}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Skin pixels in nRGB space.}}{82}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Extra region for background modeling.}}{83}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Example of {\em true} and {\em false} face detection.}}{84}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Pre-processing.}}{86}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Neighborhood System.}}{87}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Frontal face Local Conditional Probability Density (LCPD) models.}}{89}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Skin-region masks.}}{89}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Soft threshold.}}{90}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces An example of combining evidence from two experts under Dempster-Shafer Theory.}}{92}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Coarse pose estimation.}}{94}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Person of interest at a short distance from camera}}{96}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Person of interest at a large distance from camera}}{96}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Simple Background}}{97}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Complex Background}}{97}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Rigid, Homogeneous Object}}{98}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Non-Rigid, Deformable, Non-Homogeneous Object}}{98}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Static Camera}}{99}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mobile Camera}}{99}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Changing Illumination, Pose Change and Blur}}{100}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces SMSPF - Step 1}}{105}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces SMSPF - Step 2}}{106}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Structured Search}}{107}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Sliding window of the Structured Search (Green: Estimate; Red: Sliding window).}}{108}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Structured Search Matching Technique}}{110}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Incorporating Chamfer Matching into Structured Search}}{111}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces SMSPF Results}}{113}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces AO (Dotted Line: Color PF; Solid Line: SMSPF)}}{116}
+\contentsline {figure}{\numberline {7.18}{\ignorespaces DC(Dotted Line: Color PF; Solid Line: SMSPF)}}{116}
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Evaluation Measure for DataSet 1}}{117}
+\contentsline {figure}{\numberline {7.20}{\ignorespaces Evaluation Measure for DataSet 2}}{117}
+\contentsline {figure}{\numberline {7.21}{\ignorespaces Evaluation Measure for DataSet 3}}{118}
