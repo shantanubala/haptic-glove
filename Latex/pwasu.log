@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  13 NOV 2010 18:08
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  14 NOV 2010 22:17
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -422,42 +422,45 @@ File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen149
+)
 ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.aux"
 
 LaTeX Warning: Label `Tab:Table2' multiply defined.
 
-
-LaTeX Warning: Label `Fig:Figure108' multiply defined.
-
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
  ("C:\Program Files\MiKTeX 2.8\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\big@size=\dimen149
+\big@size=\dimen150
 
 ("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count138
-\scratchdimen=\dimen150
+\scratchdimen=\dimen151
 \scratchbox=\box28
 \nofMPsegments=\count139
 \nofMParguments=\count140
 \everyMPshowfont=\toks23
 \MPscratchCnt=\count141
-\MPscratchDim=\dimen151
+\MPscratchDim=\dimen152
 \MPnumerator=\count142
 \everyMPtoPDFconversion=\toks24
 ) [1
@@ -523,6 +526,12 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 [5
 
 ]
+Overfull \hbox (4.88043pt too wide) in paragraph at lines 48--48
+ [][] \OT1/ptm/m/n/10.95 Ex-tract-ing Body Rock In-for-ma-tion from Mo-tion Sen
+-sor Data - De-sign choice 
+ []
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -538,7 +547,12 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[9] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.lot")
+[9] ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.lot"
+
+LaTeX Warning: Citation `solomon_challenges_2010' on page x undefined on input 
+line 5.
+
+)
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -559,6 +573,15 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [13]
+
+LaTeX Warning: Citation `riggio_assessment_1986' on page 1 undefined on input l
+ine 126.
+
+
+LaTeX Warning: Citation `brent_d._ruben_human_1975' on page 1 undefined on inpu
+t line 131.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -566,59 +589,117 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 128.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 134.
 
  ("C:\Program Files\MiKTeX 2.8\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
+
+
+LaTeX Warning: Citation `knapp_nonverbal_1996' on page 2 undefined on input lin
+e 138.
+
+
+LaTeX Warning: Citation `borkenau_thin_2004' on page 2 undefined on input line 
+138.
+
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[2] <NVCEncodings.jpg, id=56, 151.11pt x 174.105pt>
+[2] <NVCEncodings.jpg, id=57, 151.11pt x 174.105pt>
 File: NVCEncodings.jpg Graphic file (type jpg)
  <use NVCEncodings.jpg>
+
+LaTeX Warning: Citation `brown_social_1986' on page 3 undefined on input line 1
+52.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [3 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/NVCEncodings.jpg
->] <Leakiness.jpg, id=60, 381.67593pt x 322.95656pt>
+>] <Leakiness.jpg, id=61, 381.67593pt x 322.95656pt>
 File: Leakiness.jpg Graphic file (type jpg)
  <use Leakiness.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Citation `burgoon_relational_1984' on page 4 undefined on input 
+line 163.
+
+
+LaTeX Warning: Citation `wetzel_midas_1984' on page 4 undefined on input line 1
+63.
+
+
+LaTeX Warning: Citation `haans_mediated_2006' on page 4 undefined on input line
+ 163.
+
+
+LaTeX Warning: Citation `bailenson_virtual_2008' on page 4 undefined on input l
+ine 163.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[4] <SSA.jpg, id=64, 240.7905pt x 135.6705pt>
+[4] <SSA.jpg, id=65, 240.7905pt x 135.6705pt>
 File: SSA.jpg Graphic file (type jpg)
  <use SSA.jpg>
-<SSA2.jpg, id=65, 554.07pt x 90.3375pt>
+<SSA2.jpg, id=66, 554.07pt x 90.3375pt>
 File: SSA2.jpg Graphic file (type jpg)
  <use SSA2.jpg>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Citation `sameroff_reproductive_1975' on page 5 undefined on inp
+ut line 177.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [5 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Leakiness.jpg>]
+
+LaTeX Warning: Citation `altmann_analysis_2007' on page 6 undefined on input li
+ne 181.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [6 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SSA.jpg> <C:/Doc
 uments and Settings/Sreekar/Desktop/Dissertation SVN/SSA2.jpg>]
+
+LaTeX Warning: Citation `zancanaro_automatic_2006' on page 7 undefined on input
+ line 184.
+
+
+LaTeX Warning: Citation `dong_using_2007' on page 7 undefined on input line 184
+.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[7] <SSALearning.jpg, id=76, 598.48593pt x 237.88875pt>
+[7]
+
+LaTeX Warning: Citation `hawkins_intelligence_2004' on page 8 undefined on inpu
+t line 189.
+
+<SSALearning.jpg, id=77, 598.48593pt x 237.88875pt>
 File: SSALearning.jpg Graphic file (type jpg)
  <use SSALearning.jpg>
+
+LaTeX Warning: Citation `rogers_edward_2002' on page 8 undefined on input line 
+199.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -628,47 +709,286 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
+
+LaTeX Warning: Citation `knapp_nonverbal_1996' on page 9 undefined on input lin
+e 206.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [9]
+
+LaTeX Warning: Citation `hargie_social_1994' on page 10 undefined on input line
+ 215.
+
+
+LaTeX Warning: Citation `walsh_person-environment_2000' on page 10 undefined on
+ input line 215.
+
+
+LaTeX Warning: Citation `kenrick_ambient_1986' on page 10 undefined on input li
+ne 215.
+
+
+LaTeX Warning: Citation `krupat_people_1985' on page 10 undefined on input line
+ 215.
+
+
+LaTeX Warning: Citation `sommer_personal_1969' on page 10 undefined on input li
+ne 225.
+
+
+LaTeX Warning: Citation `sommer_tight_1974' on page 10 undefined on input line 
+225.
+
+
+LaTeX Warning: Citation `schauss_psysiological_1985' on page 10 undefined on in
+put line 226.
+
+
+LaTeX Warning: Citation `bottomley_interactive_2006' on page 10 undefined on in
+put line 226.
+
+
+LaTeX Warning: Citation `farrenkopf_university_1980' on page 10 undefined on in
+put line 228.
+
+
+LaTeX Warning: Citation `moos_human_1985' on page 10 undefined on input line 22
+9.
+
+
+LaTeX Warning: Citation `manusov_attribution_2001' on page 10 undefined on inpu
+t line 230.
+
+
+LaTeX Warning: Citation `north_-store_1997' on page 10 undefined on input line 
+230.
+
+
+LaTeX Warning: Citation `meer_light_1985' on page 10 undefined on input line 23
+1.
+
+
+LaTeX Warning: Citation `kenrick_ambient_1986' on page 10 undefined on input li
+ne 232.
+
+
+LaTeX Warning: Citation `berry_attractive_1991' on page 10 undefined on input l
+ine 239.
+
+
+LaTeX Warning: Citation `johnson_clothing_1977' on page 10 undefined on input l
+ine 239.
+
+
+LaTeX Warning: Citation `helen_h._jennings_sociometry_1959' on page 10 undefine
+d on input line 239.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [10]
+
+LaTeX Warning: Citation `berry_attractive_1991' on page 11 undefined on input l
+ine 251.
+
+
+LaTeX Warning: Citation `zebrowitz_reading_1997' on page 11 undefined on input 
+line 251.
+
+
+LaTeX Warning: Citation `berry_perceiving_1986' on page 11 undefined on input l
+ine 251.
+
+
+LaTeX Warning: Citation `cortes_physique_1965' on page 11 undefined on input li
+ne 253.
+
+
+LaTeX Warning: Citation `tucker_physical_1984' on page 11 undefined on input li
+ne 253.
+
+
+LaTeX Warning: Citation `cameron_courtship_1977' on page 11 undefined on input 
+line 255.
+
+
+LaTeX Warning: Citation `ogden_prevalence_2002' on page 11 undefined on input l
+ine 257.
+
+
+LaTeX Warning: Citation `griffin_black_1996' on page 11 undefined on input line
+ 259.
+
+
+LaTeX Warning: Citation `porter_olfaction_1998' on page 11 undefined on input l
+ine 261.
+
+
+LaTeX Warning: Citation `lord_identification_1989' on page 11 undefined on inpu
+t line 261.
+
+
+LaTeX Warning: Citation `russell_human_1976' on page 11 undefined on input line
+ 261.
+
+
+LaTeX Warning: Citation `barber_mustache_2001' on page 11 undefined on input li
+ne 263.
+
+
+LaTeX Warning: Citation `johnson_clothing_1977' on page 11 undefined on input l
+ine 265.
+
+
+LaTeX Warning: Citation `hensley_effects_1981' on page 11 undefined on input li
+ne 265.
+
+
+LaTeX Warning: Citation `joseph_uniforms_1986' on page 11 undefined on input li
+ne 267.
+
+
+LaTeX Warning: Citation `rosenfeld_clothing_1977' on page 11 undefined on input
+ line 267.
+
+
+LaTeX Warning: Citation `sanders_customizing_2008' on page 11 undefined on inpu
+t line 269.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [11]
+
+LaTeX Warning: Citation `ekman_nonverbal_1976' on page 12 undefined on input li
+ne 283.
+
+
+LaTeX Warning: Citation `wagner_field_2003' on page 12 undefined on input line 
+283.
+
+
+LaTeX Warning: Citation `efron_gesture_1972' on page 12 undefined on input line
+ 284.
+
+
+LaTeX Warning: Citation `weisfeld_erectness_1982' on page 12 undefined on input
+ line 289.
+
+
+LaTeX Warning: Citation `grant_comparison_1963' on page 12 undefined on input l
+ine 289.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [12]
+
+LaTeX Warning: Citation `kleinsmith_cross-cultural_2006' on page 13 undefined o
+n input line 291.
+
+
+LaTeX Warning: Citation `montagu_touching:_1986' on page 13 undefined on input 
+line 294.
+
+
+LaTeX Warning: Citation `afifi_use_1999' on page 13 undefined on input line 294
+.
+
+
+LaTeX Warning: Citation `hertenstein_communicative_2006' on page 13 undefined o
+n input line 294.
+
+
+LaTeX Warning: Citation `hertenstein_touch_2006' on page 13 undefined on input 
+line 294.
+
+
+LaTeX Warning: Citation `robles-de-la-torre_principles_2008' on page 13 undefin
+ed on input line 294.
+
+
+LaTeX Warning: Citation `carver_development_2002' on page 13 undefined on input
+ line 297.
+
+
+LaTeX Warning: Citation `rinn_neuropsychology_1984' on page 13 undefined on inp
+ut line 297.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [13]
-Overfull \hbox (2.31694pt too wide) in paragraph at lines 295--297
+
+LaTeX Warning: Citation `ekman_facial_1978' on page 14 undefined on input line 
+299.
+
+
+LaTeX Warning: Citation `izard_maximally_1983' on page 14 undefined on input li
+ne 299.
+
+
+Overfull \hbox (2.31694pt too wide) in paragraph at lines 301--303
 []\OT1/ptm/m/it/10.95 Facial Ac-tion Cod-ing Sys-tem (FACS): \OT1/ptm/m/n/10.95
  FACS de-fines all pos-si-ble fa-cial fea-ture move-
  []
+
+
+LaTeX Warning: Citation `argyle_gaze_1976' on page 14 undefined on input line 3
+38.
+
+
+LaTeX Warning: Citation `kleinke_gaze_1986' on page 14 undefined on input line 
+338.
+
+
+LaTeX Warning: Citation `kendon_functions_1967' on page 14 undefined on input l
+ine 338.
 
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [14]
-Underfull \hbox (badness 1122) in paragraph at lines 348--348
+
+LaTeX Warning: Citation `mast_dominance_2002' on page 15 undefined on input lin
+e 354.
+
+
+LaTeX Warning: Citation `bavelas_listener_2002' on page 15 undefined on input l
+ine 354.
+
+
+LaTeX Warning: Citation `van_dulmen_shifts_1997' on page 15 undefined on input 
+line 354.
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 354--354
 []|\OT1/ptm/m/n/10.95 Gaze pro-vides a means for in-di-vid-u-als
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 348--348
+LaTeX Warning: Citation `glenberg_averting_1998' on page 15 undefined on input 
+line 354.
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 354--354
 \OT1/ptm/m/n/10.95 com-plex ideas or tasks. Stud-ies have
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 348--348
+LaTeX Warning: Citation `orozco_confidence_2008' on page 15 undefined on input 
+line 354.
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 354--354
 []|\OT1/ptm/m/n/10.95 Along with the fa-cial mus-cu-lar move-
  []
 
@@ -685,25 +1005,63 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [17]
+
+LaTeX Warning: Citation `segrin_poor_2000' on page 18 undefined on input line 3
+68.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [18
 
 ]
+
+LaTeX Warning: Citation `jindal-snape_generalization_2004' on page 19 undefined
+ on input line 372.
+
+
+LaTeX Warning: Citation `jindal-snape_use_2005' on page 19 undefined on input l
+ine 372.
+
+
+LaTeX Warning: Citation `jindal-snape_using_1998' on page 19 undefined on input
+ line 372.
+
+
+LaTeX Warning: Citation `jindal-snape_generalization_2004' on page 19 undefined
+ on input line 374.
+
+
+LaTeX Warning: Citation `shinohara_blind_2009' on page 19 undefined on input li
+ne 374.
+
+
+LaTeX Warning: Citation `solomon_challenges_2010' on page 19 undefined on input
+ line 377.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[19] <Suggestion1.jpg, id=115, 529.22719pt x 265.74281pt>
+[19]
+
+LaTeX Warning: Citation `solomon_challenges_2010' on page 20 undefined on input
+ line 382.
+
+
+LaTeX Warning: Citation `solomon_challenges_2010' on page 20 undefined on input
+ line 382.
+
+<Suggestion1.jpg, id=116, 529.22719pt x 265.74281pt>
 File: Suggestion1.jpg Graphic file (type jpg)
-
-<use Suggestion1.jpg> <Suggestion2.jpg, id=116, 368.1253pt x 281.55188pt>
+ <use Suggestion1.jpg>
+<Suggestion2.jpg, id=117, 368.1253pt x 281.55188pt>
 File: Suggestion2.jpg Graphic file (type jpg)
-
-<use Suggestion2.jpg> <Suggestion3.jpg, id=117, 562.35094pt x 350.05782pt>
+ <use Suggestion2.jpg>
+<Suggestion3.jpg, id=118, 562.35094pt x 350.05782pt>
 File: Suggestion3.jpg Graphic file (type jpg)
-
-<use Suggestion3.jpg>
+ <use Suggestion3.jpg>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -714,28 +1072,79 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 [21 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Suggestion1.jpg
 > <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Suggestion2.jpg> 
 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Suggestion3.jpg>]
+
+LaTeX Warning: Citation `zhihong_zeng_survey_2009' on page 22 undefined on inpu
+t line 415.
+
+
+LaTeX Warning: Citation `ur_rehman_manifold_2007' on page 22 undefined on input
+ line 415.
+
+
+LaTeX Warning: Citation `teeters_self-cam:_2006' on page 22 undefined on input 
+line 419.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [22
 
 ]
+
+LaTeX Warning: Citation `vinciarelli_social_2008' on page 23 undefined on input
+ line 424.
+
+
+LaTeX Warning: Citation `kim_meeting_2008' on page 23 undefined on input line 4
+24.
+
+
+LaTeX Warning: Citation `pentland_honest_2008' on page 23 undefined on input li
+ne 424.
+
+
+LaTeX Warning: Citation `vinciarelli_social_2008-1' on page 23 undefined on inp
+ut line 424.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [23]
+
+LaTeX Warning: Citation `transon_using_1988' on page 24 undefined on input line
+ 428.
+
+
+LaTeX Warning: Citation `felps_modification_1988' on page 24 undefined on input
+ line 428.
+
+
+LaTeX Warning: Citation `transon_using_1988' on page 24 undefined on input line
+ 428.
+
+
+LaTeX Warning: Citation `jindal-snape_use_2005' on page 24 undefined on input l
+ine 428.
+
+
+LaTeX Warning: Citation `felps_modification_1988' on page 24 undefined on input
+ line 433.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [24]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 458.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 464.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 458.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 464.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 458.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 464.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 468.
 
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
@@ -752,7 +1161,7 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<histogram.jpg, id=144, 421.575pt x 316.18124pt>
+<histogram.jpg, id=145, 421.575pt x 316.18124pt>
 File: histogram.jpg Graphic file (type jpg)
  <use histogram.jpg>
 
@@ -771,14 +1180,18 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [30 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/histogram.jpg>]
-<responseratio.jpg, id=155, 421.575pt x 316.18124pt>
+<responseratio.jpg, id=156, 421.575pt x 316.18124pt>
 File: responseratio.jpg Graphic file (type jpg)
  <use responseratio.jpg>
+
+LaTeX Warning: Reference `AppendixA' on page 31 undefined on input line 556.
+
+
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [31 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/responseratio.j
-pg>] <rankaverage.jpg, id=159, 612.78937pt x 395.22656pt>
+pg>] <rankaverage.jpg, id=160, 612.78937pt x 395.22656pt>
 File: rankaverage.jpg Graphic file (type jpg)
 
 <use rankaverage.jpg>
@@ -812,7 +1225,9 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[38]
+[38] <JMMFigure1.JPG, id=183, 459.96844pt x 312.41719pt>
+File: JMMFigure1.JPG Graphic file (type jpg)
+ <use JMMFigure1.JPG>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -820,21 +1235,27 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[40
-
+[40 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/JMMFigure1.JPG>
 ]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[41]
+[41] <JMMFigure2.JPG, id=193, 922.44624pt x 673.51625pt>
+File: JMMFigure2.JPG Graphic file (type jpg)
+ <use JMMFigure2.JPG>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[42]
+[42 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/JMMFigure2.JPG>
+] <AccelerometerData.jpg, id=198, 1245.65375pt x 729.72626pt>
+File: AccelerometerData.jpg Graphic file (type jpg)
+
+<use AccelerometerData.jpg>
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
-[43]
+[43 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/AccelerometerDa
+ta.jpg>]
 Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
@@ -843,641 +1264,33 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 
 
 [45]
-Missing character: There is no ö in font ptmr7t!
 
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[46]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[47]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[48] <FRFig1.JPG, id=215, 973.38657pt x 355.3275pt>
-File: FRFig1.JPG Graphic file (type jpg)
- <use FRFig1.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[49 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/FRFig1.JPG>]
-<FRFig2.JPG, id=219, 928.97063pt x 355.3275pt>
-File: FRFig2.JPG Graphic file (type jpg)
- <use FRFig2.JPG>
-<FRFig3.JPG, id=220, 972.63374pt x 365.86688pt>
-File: FRFig3.JPG Graphic file (type jpg)
- <use FRFig3.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[50 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/FRFig2.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[51 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/FRFig3.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[52]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[53]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[54] <Chromosome.JPG, id=237, 239.39438pt x 422.32782pt>
-File: Chromosome.JPG Graphic file (type jpg)
- <use Chromosome.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[55 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Chromosome.JPG>
-] <Ranking.JPG, id=241, 533.74406pt x 399.74344pt>
-File: Ranking.JPG Graphic file (type jpg)
- <use Ranking.JPG>
-<Rankorder.JPG, id=242, 361.35pt x 435.87843pt>
-File: Rankorder.JPG Graphic file (type jpg)
- <use Rankorder.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[56 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Ranking.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[57 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Rankorder.JPG>]
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[58] <Crossover.JPG, id=252, 520.19344pt x 439.6425pt>
-File: Crossover.JPG Graphic file (type jpg)
- <use Crossover.JPG>
-<Mutation.JPG, id=253, 196.48407pt x 439.6425pt>
-File: Mutation.JPG Graphic file (type jpg)
- <use Mutation.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[59 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Crossover.JPG>]
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[60 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Mutation.JPG>]
-<Setup.JPG, id=261, 541.27219pt x 406.51875pt>
-File: Setup.JPG Graphic file (type jpg)
- <use Setup.JPG>
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[61 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Setup.JPG>]
-<FacePix.JPG, id=265, 902.6222pt x 348.55219pt>
-File: FacePix.JPG Graphic file (type jpg)
- <use FacePix.JPG>
-Missing character: There is no º in font ptmr7t!
-Missing character: There is no ’ in font ptmr7t!
-
-<FacePixVariant.JPG, id=266, 819.8128pt x 284.56313pt>
-File: FacePixVariant.JPG Graphic file (type jpg)
-
-<use FacePixVariant.JPG>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[62 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/FacePix.JPG>]
-<Result.JPG, id=270, 359.09157pt x 363.60844pt>
-File: Result.JPG Graphic file (type jpg)
- <use Result.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[63 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/FacePixVariant.
-JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[64 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Result.JPG>]
-Overfull \hbox (4.7696pt too wide) in paragraph at lines 1553--1562
-[]\OT1/ptm/m/n/10.95 The cor-re-la-tion be-tween co-ef-fi-cients was used in-st
-ead of spa-tial sep-a-ra-tion to counter
- []
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[65]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[66] <Distance.JPG, id=285, 493.845pt x 368.1253pt>
-File: Distance.JPG Graphic file (type jpg)
- <use Distance.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[67 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Distance.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[68] <Result1FR.JPG, id=292, 480.29437pt x 400.49625pt>
-File: Result1FR.JPG Graphic file (type jpg)
- <use Result1FR.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[69] <Result2FR.JPG, id=296, 475.7775pt x 389.20406pt>
-File: Result2FR.JPG Graphic file (type jpg)
- <use Result2FR.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[70 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Result1FR.JPG>]
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[71 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Result2FR.JPG>]
-<ResultFR.JPG, id=303, 611.28375pt x 335.00156pt>
-File: ResultFR.JPG Graphic file (type jpg)
- <use ResultFR.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[72 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/ResultFR.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[73]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[74]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[75
-
-]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[76]
-Overfull \hbox (49.22833pt too wide) in paragraph at lines 1890--1893
-\OT1/ptm/m/n/10.95 of tac-tons for con-vey-ing di-rec-tion and dis-tance in-for
--ma-tion. ********************************** 
- []
-
-
-LaTeX Warning: Citation `hjelmýs_face_2001' on page 77 undefined on input line 
-1907.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[77] <Figure1.jpg, id=323, 390.45876pt x 407.5225pt>
-File: Figure1.jpg Graphic file (type jpg)
- <use Figure1.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[78 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure1.jpg>]
-<Figure2.jpg, id=328, 425.59pt x 658.46pt>
-File: Figure2.jpg Graphic file (type jpg)
- <use Figure2.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation `hjelmýs_face_2001' on page 79 undefined on input line 
-1989.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[79]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[80 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure2.jpg>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[81] <Figure3.jpg, id=338, 456.70625pt x 618.31pt>
-File: Figure3.jpg Graphic file (type jpg)
- <use Figure3.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[82 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure3.jpg>]
-<Figure4.jpg, id=342, 319.1925pt x 453.695pt>
-File: Figure4.jpg Graphic file (type jpg)
- <use Figure4.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[83 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure4.jpg>]
-<Figure5.jpg, id=346, 520.94624pt x 218.8175pt>
-File: Figure5.jpg Graphic file (type jpg)
- <use Figure5.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[84 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure5.jpg>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[85] <Figure6.jpg, id=355, 574.145pt x 278.03876pt>
-File: Figure6.jpg Graphic file (type jpg)
- <use Figure6.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[86 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure6.jpg>]
-<Figure7.jpg, id=359, 496.85625pt x 233.87375pt>
-File: Figure7.jpg Graphic file (type jpg)
- <use Figure7.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[87 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure7.jpg>]
-<Figure8.jpg, id=363, 581.17125pt x 608.2725pt>
-File: Figure8.jpg Graphic file (type jpg)
- <use Figure8.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figure9.jpg, id=364, 353.32pt x 139.52126pt>
-File: Figure9.jpg Graphic file (type jpg)
- <use Figure9.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[88]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[89 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure8.jpg> <C
-:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure9.jpg>]
-<Figure10.jpg, id=371, 366.36874pt x 282.05376pt>
-File: Figure10.jpg Graphic file (type jpg)
- <use Figure10.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[90 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure10.jpg>]
-<Figure11.jpg, id=376, 602.25pt x 250.9375pt>
-File: Figure11.jpg Graphic file (type jpg)
- <use Figure11.jpg>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[91]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[92 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure11.jpg>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[93] <Figure12.jpg, id=386, 342.27875pt x 203.76125pt>
-File: Figure12.jpg Graphic file (type jpg)
- <use Figure12.jpg>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[94 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Figure12.jpg>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[95] <ClosePerson.JPG, id=393, 972.63374pt x 246.9225pt>
-File: ClosePerson.JPG Graphic file (type jpg)
- <use ClosePerson.JPG>
-<FarPerson.JPG, id=394, 974.89218pt x 246.9225pt>
-File: FarPerson.JPG Graphic file (type jpg)
- <use FarPerson.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[96
-
- <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/ClosePerson.JPG> <
-C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/FarPerson.JPG>]
-<SimpleBackground.JPG, id=399, 936.49875pt x 234.1247pt>
-File: SimpleBackground.JPG Graphic file (type jpg)
-
-<use SimpleBackground.JPG>
-File: FarPerson.JPG Graphic file (type jpg)
- <use FarPerson.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[97 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SimpleBackgroun
-d.JPG>] <rigidobject.JPG, id=403, 934.99312pt x 237.13594pt>
-File: rigidobject.JPG Graphic file (type jpg)
-
-<use rigidobject.JPG> <nonrigidobject.JPG, id=404, 936.49875pt x 234.1247pt>
-File: nonrigidobject.JPG Graphic file (type jpg)
-
-<use nonrigidobject.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[98 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/rigidobject.JPG
-> <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/nonrigidobject.JP
-G>]
-File: FarPerson.JPG Graphic file (type jpg)
- <use FarPerson.JPG> <MotionBlur.JPG, id=408, 973.38657pt x 242.40562pt>
-File: MotionBlur.JPG Graphic file (type jpg)
-
-<use MotionBlur.JPG> <light.JPG, id=409, 936.49875pt x 234.1247pt>
-File: light.JPG Graphic file (type jpg)
-
-<use light.JPG>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[99 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/MotionBlur.JPG>
-]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[100 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/light.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[101]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[102]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[103] <Step1.JPG, id=426, 331.99031pt x 462.22687pt>
-File: Step1.JPG Graphic file (type jpg)
- <use Step1.JPG>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Step2.JPG, id=427, 329.73187pt x 456.20438pt>
-File: Step2.JPG Graphic file (type jpg)
- <use Step2.JPG>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[104]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[105 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Step1.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[106 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Step2.JPG>]
-<StructuredSearch.JPG, id=437, 724.20563pt x 399.74344pt>
-File: StructuredSearch.JPG Graphic file (type jpg)
-
-<use StructuredSearch.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[107 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/StructuredSear
-ch.JPG>] <SearchStructure.JPG, id=441, 464.4853pt x 417.81094pt>
-File: SearchStructure.JPG Graphic file (type jpg)
-
-<use SearchStructure.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[108 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/SearchStructur
-e.JPG>] <ComparisonTracking.JPG, id=446, 367.3725pt x 447.92343pt>
-File: ComparisonTracking.JPG Graphic file (type jpg)
-
-<use ComparisonTracking.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[109]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[110 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/ComparisonTrac
-king.JPG>] <Campher.JPG, id=453, 742.27313pt x 456.95718pt>
-File: Campher.JPG Graphic file (type jpg)
- <use Campher.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[111 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Campher.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[112] <Results.JPG, id=460, 464.4853pt x 463.7325pt>
-File: Results.JPG Graphic file (type jpg)
- <use Results.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[113 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Results.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[114] <Result1.JPG, id=468, 649.67719pt x 413.29407pt>
-File: Result1.JPG Graphic file (type jpg)
- <use Result1.JPG>
-<Result2.JPG, id=469, 649.67719pt x 367.3725pt>
-File: Result2.JPG Graphic file (type jpg)
- <use Result2.JPG>
-<ResultBar1.JPG, id=470, 534.49687pt x 398.23781pt>
-File: ResultBar1.JPG Graphic file (type jpg)
- <use ResultBar1.JPG>
-<ResultBar2.JPG, id=471, 514.92375pt x 400.49625pt>
-File: ResultBar2.JPG Graphic file (type jpg)
- <use ResultBar2.JPG>
-File: ResultBar1.JPG Graphic file (type jpg)
-
-<use ResultBar1.JPG>
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[115]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[116 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Result1.JPG> <
-C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/Result2.JPG>]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[117 <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/ResultBar1.JPG
-> <C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/ResultBar2.JPG>]
-("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.bbl"
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[118]
-bibitemlist
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[119
-
-]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[120]
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no © in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no © in font ptmr7t!
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[121]
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no © in font ptmr7t!
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[122]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[123]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[124]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[125]
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¶ in font ptmr7t!
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[126]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[127]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[128]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[129])
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[130]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[131
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2887--2890
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2887--2890
-
- []
-
-
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[132
-
-]
-Overfull \vbox (12.59999pt too high) has occurred while \output is active []
-
-
-[133
-
-]
-\tf@toc=\write4
-\tf@lot=\write5
-\tf@lof=\write6
- ("C:\Documents and Settings\Sreekar\Desktop\Dissertation SVN\pwasu.aux")
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.675 ... Feature Identification Numbers: 1, 2, 3}
+                                                   & LB & Lucus Radebe \\ & ...
+
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.675 ... Feature Identification Numbers: 1, 2, 3}
+                                                   & LB & Lucus Radebe \\ & ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
 Here is how much of TeX's memory you used:
- 5138 strings out of 495285
- 69811 string characters out of 3180282
- 159593 words of memory out of 3000000
- 8244 multiletter control sequences out of 15000+200000
- 40242 words of font info for 89 fonts, out of 3000000 for 9000
+ 4788 strings out of 495285
+ 64615 string characters out of 3180282
+ 155179 words of memory out of 3000000
+ 7950 multiletter control sequences out of 15000+200000
+ 33311 words of font info for 73 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,13n,21p,2590b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.8/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.8/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/hoekwater/rsfs/rs
-fs10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/symbol/usyr.pfb><C:/Progr
-am Files/MiKTeX 2.8/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.
-8/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on pwasu.pdf (146 pages, 2743884 bytes).
-PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 29i,11n,24p,2007b,322s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

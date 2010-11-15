@@ -41,6 +41,12 @@
 \parindent 0pt          % sets leading space for paragraphs
  %%%%%%%%
 
+%%%%%% Landscape Mode %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lscape}
+
+%%%%%%%%%5 Multi Row %%%%%%%%%%%%55555
+\usepackage{multirow}
+
 %    The general sequence in your document, after you have set the data for
 %the TITLE and APPROVAL pages, and any other specifics in the preamble is:
 \DoubleSpacing
@@ -605,7 +611,8 @@ The proposed methodology uses these two design dimensions while addressing the n
 Recently, human activity detection and recognition using motion sensors have taken a front seat in technology and behavioral research. This is due to the availability of micro mechanized electronic systems (MEMS) that have started to implement complex mechanical systems at a micro scale on integrated circuit chips. These offers advantages like reliability, cheaper cost of production, smaller form factor and above all extremely precise measurement with least or no maintenance. One such sensor is the accelerometer that is capable of measuring the effect of gravity on three perpendicular axes. When mounted on any moving object, the opposing motion (opposing gravity) of the entity allows these sensors to measure the speed and direction of motion. Integrating the magnitude and orientation information over time it is possible to accurately measure the exact motion pattern of the moving entity. These accelerometers have been used by researchers to track motion activity in almost every joint of the human body [25]. Researchers have used single, double or triple orthogonal axis accelerometers to detect various activities of humans. They all follow the same underlying supervised learning architecture [26] with difference in learning algorithm used. A simplified representation of the same is shown in Figure 1.
 
 \begin{figure}
-\includegraphics[width=3in]{JMMFigure1.JPG}
+\centering
+\includegraphics[width=4in]{JMMFigure1.JPG}
 \caption{Training and testing phases of a typical learning framework found in literature.}
 \label{JMMFigure1}
 \end{figure}
@@ -615,8 +622,65 @@ In [27], the researchers provide a nice discussion on some of the ambulatory mov
 Based on all these findings, we hypothesize that an accelerometer based motion detector should be capable of capturing body rocking data and should be able to discriminate between rocking and other functional activities. We specifically chose the motion sensor and learning algorithm based on previous work done at our institute with the detection of seven simple body activities [36]. Researchers analyzed the performance of discriminative classifiers like AdaBoost, Support Vector Machines and RLogReg for recognizing these seven different activities and concluded that AdaBoost classifier offered the best recognition rate at 94\%. Based on these results, in this paper, we extend the use of AdaBoost learning framework into body rock detection. We discuss the use of two AdaBoost classifiers - the classical AdaBoost [37] and the more recent Modest AdaBoost [38] for detecting and discriminating body rocking effectively. Our focus in the paper is directed towards understanding the generalization capabilities of the two AdaBoost learning models so that false positive rate is reduced while keeping the true positive rate high.
 
 \subsection{Motion Sensors - Design choice along the ``Acceptance'' Dimension}
-In order to keep the motion detector discrete, we have chosen state-of-the-art tri-axial accelerometer package, ZStar III [39], marketed by Freescale Semiconductor. The accelerometer is shown in the inset of Figure 2. The device (including a coin battery as a power source) is an inch in diameter and less than eighth of an inch in thickness thereby allowing an elegant integration into everyday clothing. Figure 2 shows the typical use of the accelerometer in the proposed application for detecting body rocking. The accelerometer has a very high sensitivity with protection against excessive g-force damage. The sensors wirelessly connect to a PDA and/or cell phone through IEEE 802.15.4 (ZigBee) wireless standards. The use of low power consumption electronics for both acceleration sensing and wireless communication allows this device to work for hours at length on a single coin battery. Further, the advanced sleep mode implementations allow the device to stay at nano watt power mode during non-operation. The proposed solution allows for prolonged use of the device to the effect of an assistive technology thereby maintaining a longer duration feedback based rehabilitation regimen.
+In order to keep the motion detector discrete, we have chosen state-of-the-art tri-axial accelerometer package, ZStar III [39], marketed by Freescale Semiconductor. The accelerometer is shown in the inset of Figure \ref{JMMFigure2}. The device (including a coin battery as a power source) is an inch in diameter and less than eighth of an inch in thickness thereby allowing an elegant integration into everyday clothing. Figure 2 shows the typical use of the accelerometer in the proposed application for detecting body rocking. The accelerometer has a very high sensitivity with protection against excessive g-force damage. The sensors wirelessly connect to a PDA and/or cell phone through IEEE 802.15.4 (ZigBee) wireless standards. The use of low power consumption electronics for both acceleration sensing and wireless communication allows this device to work for hours at length on a single coin battery. Further, the advanced sleep mode implementations allow the device to stay at nano watt power mode during non-operation. The proposed solution allows for prolonged use of the device to the effect of an assistive technology thereby maintaining a longer duration feedback based rehabilitation regimen.
 
+\begin{figure}
+\includegraphics[width=4.5in]{JMMFigure2.JPG}
+\centering
+\caption{The proposed hardware for use in the detection of body rocking stereotypic behavior. The accelerometer, in comparison with a US quarter, is shown in the inset. The three axes marked in the image shows the orientation of the accelerometer as it is placed on the head.}
+\label{JMMFigure2}
+\end{figure}
+
+processing element for the current study was a Windows Mobile Operating System based PDA running on a 400Mhz XScale processor. The software components (described in detail in Section III-B of the proposed solution were placed on the PDA that could be carried by a user without any extra load. The proposed assistive technology is a planned addition on top of the Social Interaction Assistant proposed in [40].  The software component implementation is generic to be ported to most modern cell phones that possess enough processing power, but is always underutilized for its capacity. The feedback (an audio tone) is currently being provided through a Bluetooth headset that is paired with the processing element. The choice of this feedback device was again based on the idea that Bluetooth headset has everyday acceptance among the masses and is no longer seen as a social distraction. In future, we plan to explore the use of delivery modalities that transcends the typical visual and audio medium. We intend to use haptic cues to inform the participant not only their rocking behavior but more complex self-monitoring routines that could allow the user to withdraw from the rocking behavior effectively.
+
+\begin{figure}
+\includegraphics[width=5.5in]{AccelerometerData.jpg}
+\caption{Data stream for the tri-axial accelerometer. The three streams correspond to the three axes. The figure shows non-rocking events followed by rocking and then followed by non-rocking.}
+\label{JMMFigure3}
+\end{figure}
+
+Figure \ref{JMMFigure3} shows a typical data stream collected from the accelerometer shown in Figure 2 during rocking and non-rocking functional behavior. The three data streams correspond to the three axis of the accelerometer each sampled at 100 Hz. It can be seen that the data stream under rocking conditions are visually distinguishable when compared to non-rocking functional movements. The following section highlights our choice of learning framework and features we extracted from these data stream in order to achieve reliable rocking and non-rocking discrimination.
+
+\subsection{Extracting Body Rock Information from Motion Sensor Data - Design choice along the ``Motivation'' Dimension}
+As mentioned before, the work presented in this paper builds on top of the work presented in [36] where the authors use two accelerometers placed one at the ankle and the other on the thigh to distinguish between simple activities like walking, running, standing etc. They proved the use of an aggregated AdaBoost classifier system that was built out of simple linear classifiers to achieve activity recognition. Unfortunately, the work does not provide any assessment on the generalization capabilities of their aggregate classifier. We extend their work into the problem of body rock detection using only one accelerometer placed on the back of the person's head. Below, we discuss the various features that we extract from the accelerometer data and introduce the variant of AdaBoost that generalizes on its training set very well (termed Modest AdaBoost). We show results of our experiments and discuss our reasoning to believe how the new AdaBoost framework is able to generalize on body rocking data when compared to classical AdaBoost used by [36].
+
+\subsubsection{Features:}
+Since we are using a tri-axial accelerometer, we obtain three orthogonal axis data through rocking and non-rocking events. In order to capture the temporal variation in the acceleration data, we accumulate the input stream on each axis for a fixed duration T seconds and all features are extracted on this packet of acceleration data. As a part of the assessment, we determine the best packet length for the task of body rock detection. Further, successive packets are extracted with a fixed duration of overlap between them.
+
+We chose five sets of features that were extracted on the three axes of accelerometer data. For the sake of clarity, we cluster these sets into two groups based on whether they were chosen due to popular use in the accelerometer data processing community or due to the author's insights into the body rocking data.
+
+\emph{Group 1 - Popular features used by the motion analysis research community [25] [36]:}
+We choose the following three sets each of which were applied on all three axes of acceleration data, henceforth referred to as x, y, z axis data.
+
+\begin{enumerate}[1.]
+\item Mean of x, y, z data over the duration of packet.
+\item Variance of x, y, z data over the duration of packet.
+\item Correlation between the three axes (x-y, y-z and z-x) over the duration of packet.
+\end{enumerate}
+
+\emph{Group 2 - Authors insights into body rocking data:} Inspecting the accelerometer data shown in Figure 3, it can be seen that the Z axis changes from random signal pattern to more of a sinusoidal pattern when the individual's behavior transitions from non-rocking to rocking. Thus we choose two sets of features which we hope would capture this non-sinusoid to sinusoid transition between events. These features include
+
+\begin{enumerate}[1.]
+\setcounter{enumi}{3}
+\item The first order differential power on all three axes - Sinusoidal signals change gradually over time such that the averaged sum square energy in the temporal first order differential of the signal should be less when compared to a random signal where the first order differential can have very high variations and hence higher power.
+\item Fourier Transform variance and kurtosis on the Z-axis only - An effective way to capture power distribution of a signal into sinusoids is by using Fourier Transform. We hypothesize that the non-sinusoid to sinusoid transitions can be captured by quantitatively measuring the power spread spectrum of the Z-axis accelerometer data. We model the power spread to be a Gaussian and extract the variance and kurtosis (peaking) of the spread to determine if there is rocking or not.
+\end{enumerate}
+
+\begin{landscape}
+\begin{table}
+\begin{tabular}{|l|l|l|l|} \hline 
+\multicolumn{3}{|c|}{\textbf{Group 1}}\\ 
+\hline 
+\hline
+\multirow{4}{*}{Set 1 Definition: Mean on the temporal dimension. \\Axes affected: x, y, z \\ Number of contributing features: 3 \\ Feature Identification Numbers: 1, 2, 3} & LB & Lucus Radebe \\ & DC & Michael Duberry \\ & DC & Dominic Matteo \\ & RB & Didier Domi \\ \hline
+\multirow{3}{*}{Midfielders} & MC & David Batty \\ & MC & Eirik Bakke \\ & MC & Jody Morris \\ 
+\hline 
+Forward & FW & Jamie McMaster \\ 
+\hline \multirow{2}{*}{Strikers} & ST & Alan Smith \\ & ST & Mark Viduka \\ 
+\hline 
+\end{tabular}
+\end{table}
+\end{landscape}
 
 
 

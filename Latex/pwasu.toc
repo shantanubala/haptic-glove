@@ -44,74 +44,77 @@
 \contentsline {subsection}{Need for Assistive or Rehabilitative Technology}{37}
 \contentsline {subsubsection}{Past research into building assistive technology to detect body rocking}{38}
 \contentsline {section}{\numberline {4.3}METHODOLOGY}{39}
-\contentsline {chapter}{\chapternumberline {5}Person-Specific Face Recognition}{40}
-\contentsline {subsection}{Employing face recognition to facilitate social interactions}{41}
-\contentsline {section}{\numberline {5.1}Face Recognition in Humans}{42}
-\contentsline {section}{\numberline {5.2}Our Approach to Face Recognition}{45}
-\contentsline {section}{\numberline {5.3}Feature Extractors}{45}
-\contentsline {subsection}{What is a Feature?}{45}
-\contentsline {subsection}{Gabor Features}{46}
-\contentsline {subsubsection}{Use of Gabor Filters in Face Recognition}{46}
-\contentsline {subsubsection}{Gabor Filters}{48}
-\contentsline {subsubsection}{Gaussian Function}{49}
-\contentsline {subsubsection}{Sinusoid}{49}
-\contentsline {section}{\numberline {5.4}The Learning Algorithm}{51}
-\contentsline {subsection}{Genetic Algorithms}{52}
-\contentsline {subsubsection}{Use of Genetic Algorithms in Face Recognition}{53}
-\contentsline {subsubsection}{The Chromosome}{55}
-\contentsline {subsubsection}{Creation of the first generation}{56}
-\contentsline {subsubsection}{Creation of the newer generations}{58}
-\contentsline {subsubsection}{\emph { Crossover}}{59}
-\contentsline {subsubsection}{\emph { Mutation}}{59}
-\contentsline {section}{\numberline {5.5}Methodology}{60}
-\contentsline {subsection}{The FacePix (30) Database}{61}
-\contentsline {subsection}{The Gabor Features}{63}
-\contentsline {subsection}{The Genetic Algorithm}{64}
-\contentsline {subsubsection}{The Fitness Function }{65}
-\contentsline {section}{\numberline {5.6}Results}{69}
-\contentsline {subsection}{Discussion of Results}{70}
-\contentsline {subsection}{Person-specific feature extraction}{71}
-\contentsline {section}{\numberline {5.7}Conclusions and Future Work}{72}
-\contentsline {chapter}{\chapternumberline {6}EXOCENTRIC SENSING}{75}
-\contentsline {section}{\numberline {6.1}Conceptual Framework}{76}
-\contentsline {section}{\numberline {6.2}Accurate Face Detection}{78}
-\contentsline {section}{\numberline {6.3}Related Work}{79}
-\contentsline {section}{\numberline {6.4}Proposed Framework}{81}
-\contentsline {subsection}{Module $1$: Human Skin Tone Detector with Dynamic Background Modeler}{81}
-\contentsline {subsubsection}{{\em a-priori} Bi-modal Gaussian Mixture Model for Human Skin Classification}{81}
-\contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{83}
-\contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{84}
-\contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{84}
-\contentsline {subsubsection}{Random Field (RF) Models}{84}
-\contentsline {subsubsection}{Pre-processing}{85}
-\contentsline {subsubsection}{The Neighborhood System}{86}
-\contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{87}
-\contentsline {subsubsection}{Human Face Pose}{88}
-\contentsline {subsection}{Combining Evidence}{89}
-\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{90}
-\contentsline {subsection}{Coarse Pose estimation}{91}
-\contentsline {section}{\numberline {6.5}Experiments}{92}
-\contentsline {section}{\numberline {6.6}Results}{93}
-\contentsline {section}{\numberline {6.7}Discussion of Results}{94}
-\contentsline {chapter}{\chapternumberline {7}EXOCENTRIC SENSING: ACCURATE TRACKING OF PEOPLE}{96}
-\contentsline {section}{\numberline {7.1}Challenges in Person Localization from a wearable camera platform}{97}
-\contentsline {subsection}{Background Properties}{97}
-\contentsline {subsection}{Object Properties}{98}
-\contentsline {subsection}{Object/Camera Motion}{98}
-\contentsline {subsection}{Other Important Factors Affecting Effective Person Tracking}{99}
-\contentsline {section}{\numberline {7.2}Related Computer Vision Work in Person Localization and Tracking}{100}
-\contentsline {subsection}{Detection Algorithms}{100}
-\contentsline {subsection}{Tracking Algorithms}{101}
-\contentsline {section}{\numberline {7.3}Conceptual Framework}{103}
-\contentsline {section}{\numberline {7.4}STRUCTURED MODE SEARCHING PARTICLE FILTER}{104}
-\contentsline {subsection}{Step 1: Particle Filtering Step}{104}
-\contentsline {subsection}{Step 2: Structured Search}{107}
-\contentsline {subsection}{Chamfer Matching in Structured Search}{111}
-\contentsline {section}{\numberline {7.5}Experiments and Datasets}{112}
-\contentsline {subsection}{Datasets}{112}
-\contentsline {subsection}{Evaluation Metrics}{113}
-\contentsline {section}{\numberline {7.6}Results}{115}
-\contentsline {chapter}{REFERENCES}{119}
-\contentsline {chapter}{APPENDIX}{130}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{131}
-\contentsline {subsection}{Procedure}{132}
+\contentsline {subsection}{Motion Sensors - Design choice along the ``Acceptance'' Dimension}{41}
+\contentsline {subsection}{Extracting Body Rock Information from Motion Sensor Data - Design choice along the ``Motivation'' Dimension}{43}
+\contentsline {subsubsection}{Features:}{44}
+\contentsline {chapter}{\chapternumberline {5}Person-Specific Face Recognition}{47}
+\contentsline {subsection}{Employing face recognition to facilitate social interactions}{48}
+\contentsline {section}{\numberline {5.1}Face Recognition in Humans}{49}
+\contentsline {section}{\numberline {5.2}Our Approach to Face Recognition}{52}
+\contentsline {section}{\numberline {5.3}Feature Extractors}{52}
+\contentsline {subsection}{What is a Feature?}{52}
+\contentsline {subsection}{Gabor Features}{53}
+\contentsline {subsubsection}{Use of Gabor Filters in Face Recognition}{53}
+\contentsline {subsubsection}{Gabor Filters}{55}
+\contentsline {subsubsection}{Gaussian Function}{56}
+\contentsline {subsubsection}{Sinusoid}{56}
+\contentsline {section}{\numberline {5.4}The Learning Algorithm}{58}
+\contentsline {subsection}{Genetic Algorithms}{59}
+\contentsline {subsubsection}{Use of Genetic Algorithms in Face Recognition}{60}
+\contentsline {subsubsection}{The Chromosome}{62}
+\contentsline {subsubsection}{Creation of the first generation}{63}
+\contentsline {subsubsection}{Creation of the newer generations}{65}
+\contentsline {subsubsection}{\emph { Crossover}}{66}
+\contentsline {subsubsection}{\emph { Mutation}}{66}
+\contentsline {section}{\numberline {5.5}Methodology}{67}
+\contentsline {subsection}{The FacePix (30) Database}{68}
+\contentsline {subsection}{The Gabor Features}{70}
+\contentsline {subsection}{The Genetic Algorithm}{71}
+\contentsline {subsubsection}{The Fitness Function }{72}
+\contentsline {section}{\numberline {5.6}Results}{76}
+\contentsline {subsection}{Discussion of Results}{77}
+\contentsline {subsection}{Person-specific feature extraction}{78}
+\contentsline {section}{\numberline {5.7}Conclusions and Future Work}{79}
+\contentsline {chapter}{\chapternumberline {6}EXOCENTRIC SENSING}{82}
+\contentsline {section}{\numberline {6.1}Conceptual Framework}{83}
+\contentsline {section}{\numberline {6.2}Accurate Face Detection}{85}
+\contentsline {section}{\numberline {6.3}Related Work}{86}
+\contentsline {section}{\numberline {6.4}Proposed Framework}{88}
+\contentsline {subsection}{Module $1$: Human Skin Tone Detector with Dynamic Background Modeler}{88}
+\contentsline {subsubsection}{{\em a-priori} Bi-modal Gaussian Mixture Model for Human Skin Classification}{88}
+\contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{90}
+\contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{91}
+\contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{91}
+\contentsline {subsubsection}{Random Field (RF) Models}{91}
+\contentsline {subsubsection}{Pre-processing}{92}
+\contentsline {subsubsection}{The Neighborhood System}{93}
+\contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{94}
+\contentsline {subsubsection}{Human Face Pose}{95}
+\contentsline {subsection}{Combining Evidence}{96}
+\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{97}
+\contentsline {subsection}{Coarse Pose estimation}{98}
+\contentsline {section}{\numberline {6.5}Experiments}{99}
+\contentsline {section}{\numberline {6.6}Results}{100}
+\contentsline {section}{\numberline {6.7}Discussion of Results}{101}
+\contentsline {chapter}{\chapternumberline {7}EXOCENTRIC SENSING: ACCURATE TRACKING OF PEOPLE}{103}
+\contentsline {section}{\numberline {7.1}Challenges in Person Localization from a wearable camera platform}{104}
+\contentsline {subsection}{Background Properties}{104}
+\contentsline {subsection}{Object Properties}{105}
+\contentsline {subsection}{Object/Camera Motion}{105}
+\contentsline {subsection}{Other Important Factors Affecting Effective Person Tracking}{106}
+\contentsline {section}{\numberline {7.2}Related Computer Vision Work in Person Localization and Tracking}{107}
+\contentsline {subsection}{Detection Algorithms}{107}
+\contentsline {subsection}{Tracking Algorithms}{108}
+\contentsline {section}{\numberline {7.3}Conceptual Framework}{110}
+\contentsline {section}{\numberline {7.4}STRUCTURED MODE SEARCHING PARTICLE FILTER}{111}
+\contentsline {subsection}{Step 1: Particle Filtering Step}{111}
+\contentsline {subsection}{Step 2: Structured Search}{114}
+\contentsline {subsection}{Chamfer Matching in Structured Search}{118}
+\contentsline {section}{\numberline {7.5}Experiments and Datasets}{119}
+\contentsline {subsection}{Datasets}{119}
+\contentsline {subsection}{Evaluation Metrics}{120}
+\contentsline {section}{\numberline {7.6}Results}{122}
+\contentsline {chapter}{REFERENCES}{126}
+\contentsline {chapter}{APPENDIX}{137}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{138}
+\contentsline {subsection}{Procedure}{139}
