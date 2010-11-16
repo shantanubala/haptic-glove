@@ -128,6 +128,6 @@
 \contentsline {subsection}{Evaluation Metrics}{139}
 \contentsline {section}{\numberline {7.6}Results}{141}
 \contentsline {chapter}{REFERENCES}{145}
-\contentsline {chapter}{APPENDIX}{159}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{160}
-\contentsline {subsection}{Procedure}{161}
+\contentsline {chapter}{APPENDIX}{160}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{161}
+\contentsline {subsection}{Procedure}{162}
