@@ -28,6 +28,12 @@
 \DoubleSpacing         % memoir's double spacing
 \usepackage{pwasu}     % this package
 
+% Table footnote
+\usepackage{threeparttable}
+
+% Subfigure
+\usepackage{subfigure}
+
 %%%%%%Added by Craig Picone to meet ASU's margin requirements
 \usepackage{graphicx}    % needed for including graphics e.g. EPS, PS
 \topmargin -0.2in        % read Lamport p.163
@@ -42,7 +48,8 @@
  %%%%%%%%
 
 %%%%%% Landscape Mode %%%%%%%%%%%%%%%%%%%%%%
-\usepackage{lscape}
+%\usepackage{lscape}
+\usepackage{pdflscape}
 
 %%%%%%%%%5 Multi Row %%%%%%%%%%%%55555
 \usepackage{multirow}
@@ -666,22 +673,287 @@ We choose the following three sets each of which were applied on all three axes 
 \item Fourier Transform variance and kurtosis on the Z-axis only - An effective way to capture power distribution of a signal into sinusoids is by using Fourier Transform. We hypothesize that the non-sinusoid to sinusoid transitions can be captured by quantitatively measuring the power spread spectrum of the Z-axis accelerometer data. We model the power spread to be a Gaussian and extract the variance and kurtosis (peaking) of the spread to determine if there is rocking or not.
 \end{enumerate}
 
+%\begin{landscape}
+%\begin{table}
+%\begin{tabular}{|l|l|l|l|} \hline
+%\multicolumn{3}{|c|}{\textbf{Group 1}}\\
+%\hline
+%\hline
+%\multirow{4}{*}{Set 1 Definition: Mean on the temporal dimension. \\Axes affected: x, y, z \\ Number of contributing features: 3 \\ Feature Identification Numbers: 1, 2, 3} & LB & Lucus Radebe \\ & DC & Michael Duberry \\ & DC & Dominic Matteo \\ & RB & Didier Domi \\ \hline
+%\multirow{3}{*}{Midfielders} & MC & David Batty \\ & MC & Eirik Bakke \\ & MC & Jody Morris \\
+%\hline
+%Forward & FW & Jamie McMaster \\
+%\hline \multirow{2}{*}{Strikers} & ST & Alan Smith \\ & ST & Mark Viduka \\
+%\hline
+%\end{tabular}
+%\end{table}
+%\end{landscape}
+
 \begin{landscape}
 \begin{table}
-\begin{tabular}{|l|l|l|l|} \hline 
-\multicolumn{3}{|c|}{\textbf{Group 1}}\\ 
-\hline 
+\centering
+\caption{Features for Body Rock Detection: Group 1}
+\label{JMMTable1}
+\small\addtolength{\tabcolsep}{-3pt}
+\begin{tabular}{|l|c|c|c|} \hline
+\multicolumn{4}{|c|}{\textbf{Group 1}}\\
 \hline
-\multirow{4}{*}{Set 1 Definition: Mean on the temporal dimension. \\Axes affected: x, y, z \\ Number of contributing features: 3 \\ Feature Identification Numbers: 1, 2, 3} & LB & Lucus Radebe \\ & DC & Michael Duberry \\ & DC & Dominic Matteo \\ & RB & Didier Domi \\ \hline
-\multirow{3}{*}{Midfielders} & MC & David Batty \\ & MC & Eirik Bakke \\ & MC & Jody Morris \\ 
-\hline 
-Forward & FW & Jamie McMaster \\ 
-\hline \multirow{2}{*}{Strikers} & ST & Alan Smith \\ & ST & Mark Viduka \\ 
-\hline 
+\hline
+  \textbf{Set 1} & \multirow{9}{*}{$M_x=\frac{1}{N}\sum\limits_{i=1}^{N}x_i$} & \multirow{3}{*}{1. $M_x$} & \multirow{9}{*}{\includegraphics[width=3in]{Mean.jpg}}\\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+  \textbf{Definition:} Mean on the temporal dimension. &                      & \multirow{3}{*}{2. $M_y$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 1, 2, 3     &                      & \multirow{3}{*}{3. $M_z$}                       &       \\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+\hline
+  \textbf{Set 2} & \multirow{9}{*}{$V_x=\frac{1}{N-1}\sum\limits_{i=1}^{N}\left(x_i - M_x\right)^2$} & \multirow{3}{*}{4. $V_x$} & \multirow{9}{*}{\includegraphics[width=3.5in]{Variance.jpg}}\\
+                 &                                                            &                        &       \\
+                                  &                                                            &                        &       \\
+  \textbf{Definition:} Variance on the temporal dimension. &                  & \multirow{3}{*}{5. $V_y$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 4, 5, 6     &                      &  \multirow{3}{*}{6. $V_z$}                      &       \\
+                   &                                                            &                        &       \\
+                                    &                                                            &                        &       \\
+\hline
+  \textbf{Set 3} & \multirow{9}{*}{$C_{xy}=\frac{1}{N-1}\sum\limits_{i=1}^N \left(x_i-M_x\right) \left(y_i-M_y\right)$} & \multirow{3}{*}{7. $C_{xy}$} & \multirow{9}{*}{\includegraphics[width=3.5in]{Corr.jpg}}\\
+                 &                                                            &                        &       \\
+                                  &                                                            &                        &       \\
+  \textbf{Definition:} Cross Correlation between axes. &                      & \multirow{3}{*}{8. $C_{yz}$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 7, 8, 9     &                      &   \multirow{3}{*}{9. $C_{xz}$}                     &       \\
+                   &                                                            &                        &       \\
+                                    &                                                            &                        &       \\
+\hline
 \end{tabular}
 \end{table}
 \end{landscape}
 
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Features for Body Rock Detection: Group 2}
+\label{JMMTable2}
+\small\addtolength{\tabcolsep}{-3pt}
+\begin{tabular}{|p{2.5in}|c|c|c|} \hline
+\multicolumn{4}{|c|}{\textbf{Group 2}}\\
+\hline
+\hline
+  \textbf{Set 4} & \multirow{9}{*}{$D_x=\sqrt{\sum\limits_{1=2}^N\left(x_i-x_{i-1}\right)^2}$} & \multirow{3}{*}{10. $D_x$} & \multirow{9}{*}{\includegraphics[width=3in]{DiffPower.jpg}}\\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+  \textbf{Definition:} First order differential power. &                      & \multirow{3}{*}{11. $D_y$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 10, 11, 12     &                      & \multirow{3}{*}{12. $D_z$}                       &       \\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+\hline
+  \textbf{Set 5} & & \multirow{5}{*}{13. $F_{v_z}$} & \multirow{5}{*}{\includegraphics[width=3.5in]{FFTVar.jpg}}\\
+  & If, $Freq_k=\left\{-\frac{\gamma}{2},\ldots,0,\ldots,\frac{\gamma}{2}\right\} $ &  &       \\
+  &&&\\
+  & $\gamma$ is the sampling Frequency & & \\
+  \textbf{Definition:} Gaussian fit power spread spectrum - Variance and Kurtosis. & $X_k=\sum\limits_{i=1}^Nx_n e^{-\frac{2\pi i}{N}kn}$, $k=\{1,\ldots,N\}$ &  &       \\
+  \textbf{Axes affected:}z  &    &  \multirow{5}{*}{14. $F_{k_z}$}& \multirow{5}{*}{\includegraphics[width=3.5in]{FFTKurt.jpg}} \\
+  \textbf{Number of contributing features:} 2          & then  &  &       \\
+  \textbf{Feature Identification Numbers:} 13, 14     &                      &                        &       \\
+  &   \textbf{FFT Variance:} $F_v = \sum\limits_{i=1}^N X_k(Freq_k)^2$  &                        &       \\
+  &     &                        &       \\
+  &  \textbf{FFT Kurtosis:} $F_k = \sum\limits_{i=1}^N X_k(Freq_k)^4$   &                        &       \\
+  &     &                        &       \\
+\hline
+\end{tabular}
+\end{table}
+\begin{SingleSpace}
+The figures shown in the last column plots mean values of data from positive rocking samples and negative rocking samples as bars. The variance on the same is shown as vertical error lines around the mean. The lighter (blue when viewed in color) shaded bar are values from the positive class, whereas the darker (pink when viewed in color) bar are values from the negative class.
+\end{SingleSpace}
+\end{landscape}
+
+Thus, the features used in our study can be categorized as belonging to two groups with three sets in Group 1and two sets in Group 2. Each set has varying number of features based on what parameter the set is extracting from the temporal accelerometer data. Based on the descriptions above, the entire feature set has a total of 14 features. We identify each of these by their respective Feature Identification Numbers. Table 1 shows the two groups and the different sets under the group with typical values of these features under rocking and non-rocking behavior.
+
+\subsubsection{Learning Algorithm:}
+As discussed in introduction of this section, we compare the performance of two AdaBoost learning frameworks to determine which one can generalize the best on the training data. The two algorithms are introduced briefly below. For further details, the reader is referred to appropriate references provided within the subsections.
+
+\emph{(a) Classical AdaBoost Learning Framework:}
+AdaBoost learns any classification problem by working with a set of weak classifiers. Weak classifiers are those classifiers that use simple decision steps to categorize data into one of two pools - positives or negatives (In all our experiments, we used a three level decision tree [41] as the simple classifier). AdaBoost proceeds by ranking the labeled training data as being simple to complex based on how many weak classifiers are needed to learn each of the examples. The process continues on an iterative manner until all the training examples are learnt or till the allowed number of learning cycles are exhausted. Let, $X$ be the input to a learning algorithm, in our case the features extracted as explained in the previous step, and $Y$ be the label of what class the data belongs to, in our case, $Y = \{1, -1\}$ implying {rocking, non-rocking}, respectively. Values at each dimension of input $X$ can be considered to characterize the incoming data in some manner and the task of the learning algorithm is to learn these representational values of the input dimensions that allow the algorithm to distinguish between rocking and non-rocking. AdaBoost does this learning by using a large set of simple (weak) learners (or classifiers) that act on each of the dimension of the input data with the determined goal of distinguishing rocking from non-rocking. The final decision of the complete learning module is a combined opinion of all the simple learners that make up the system. The beauty of AdaBoost implementation is that the human intervention into the learning process stops at identifying what simple (weak) learners to use and what feature pool to operate on. Selection of number of weak learners, selection of input dimension on which the weak learners have to act, and the confidence to place on the decision of each of the weak learner is all determined by the algorithm during the training phase. Once the algorithm is trained, the final learnt rocking/non-rocking classifier can be represented as
+
+\begin{equation}
+L(x)= \mbox{sign} \left[\sum\limits_{i=1}^N w_i f_i(x)\right]
+\end{equation}
+
+where,
+x: An instance of all possible rocking patterns X.
+L: The final learnt classifier that can distinguish input x as rocking or non-rocking.
+f: The simple (weak) learner.
+N: The total number of weak learners that make up the complete learner L.
+w: Weight associated with each weak learners output. This corresponds to the confidence placed in each weak learner by the Boosted system.
+
+From a learning perspective, in each step of the iterative learning, the AdaBoost algorithm implements a greedy optimization to pick a set of weak learners that minimize exponential classification error of the picked simple classifiers as shown below
+
+\begin{equation}
+Error_k=\sum\limits_{i=1}^M e^{-y_i.L(x_i)}
+\end{equation}
+
+where,
+	y: Label of the input instance x
+	M: Total number of examples in the training set
+	k: Learning iteration number
+
+
+Further, based on each iterative step, a distribution $(D_m)$ is created over the training set examples to represent their complexity (difficulty to learn). For example, in a given iteration, an example that could be solved is assigned a lower distribution weight while, a sample that was not learnt in that iteration step is assigned a higher weight. The lower weight on the learnt example implies that this example will be stressed less in the next learning iteration while all other examples which could not be solved will become the focus for picking new weak learners. Moving from one iteration to the next, all the weak learners from the past k iterations are added into a pool of selected weak learners leading up to the final classifier $L$.
+
+\emph{(a) Modest AdaBoost Learning Framework:}
+All learning algorithms, including AdaBoost suffer from the problem of over fitting or over learning. This is due to the fact that training sample sets of positives and negatives can never be representative of all the possible samples that the algorithm will face in its operational life span. Since the learning is limited to a restricted set of examples, there is always the problem of over fitting into this small set and thereby loosing the ability to generalize their learnt knowledge to all other possible examples. To this end, many alternatives have been proposed to AdaBoost that will allow the algorithm to generalize better. We introduce Modest AdaBoost [38] which was recently proposed towards better generalization capabilities and has been shown to be powerful on various machine learning datasets. Unlike the classic AdaBoost where the distribution penalizes only examples that are not learnt in the previous iteration, Modest AdaBoost penalizes for examples that are not learnt and also examples that are learnt very well (over fitting). This is done by projecting all the examples in the training pool on to four separate distributions,
+
+\begin{enumerate}[1.]
+\item $P_m^{(+1)}=P_{(D_m)} (y=+1 \cap L(x))$: Probability of the learner, as measured on $D_m$, predicting an input instance $x$ correctly as being rocking when the label also represents it to be rocking.
+\item $P_m^{(-1)}=P_{(D_m)} (y=-1 \cap L(x))$: Probability of the learner, as measured on $D_m$, predicting an input instance $x$ correctly as being non-rocking when the label also represents it to be non-rocking.
+\item $\bar{P}_m^{(+1)}=P_{(\bar{D}_m)} (y=+1 \cap L(x))$: Probability of the learner, as measured in the inverse distribution $(\bar{D}_m)$, predicting an input instance $x$ correctly as being rocking when the label also represents it to be rocking.
+\item $\bar{P}_m^{(-1)}=P_{(\bar{D}_m)} (y=-1\cap L(x))$: Probability of the learner, measured in the inverse distribution $(\bar{D}_m)$, predicting an input instance $x$ correctly as being rocking when the label also represents it to be rocking.
+\end{enumerate}
+
+Conditions 1 and 2 penalize the classifier on examples that are not learnt during a training iteration, whereas 3 and 4 penalize examples that are already learnt in the previous iteration which was learnt again in the current iteration. Combining these four measures as
+
+\begin{equation}
+f_m=\left(P_m^{(+1)} (1-\bar{P}_m^{(+1)})-P_m^{(-1)} (1-\bar{P}_m^{(-1)})\right)(x)
+\end{equation}
+
+provides a means for penalizing the learner for not classifying an example and also for over fitting an example. This provides a means for modest learning of the final combined classifier $L$. We hypothesize that the choice of a learning algorithm that generalizes well will provide the opportunity to allow better non-rocking detection thereby hopefully increasing discrimination ability for the assistive device. This would directly reflect upon the motivation of the user to get feedback only when he/she is rocking and not performing other functional activities.
+
+\section{Data Collection}\label{DataCollection}
+Two separate data collections were carried out, one in a controlled setting while the other in a more uncontrolled naturalistic everyday research laboratory setting. The controlled setting data collection was used for training and lab testing the device, whereas the uncontrolled naturalistic setting was used to determine how well the learning algorithm was able to generalize when used for an extended period of time as an assistive tool.
+\subsection{Controlled Data Collection:}
+Data was collected on ten participants who did not have any known stereotype rocking behavior. The goal of the experiments was to collect data for training the system to differentiate rocking from non-rocking behavior. To this end, we devised three separate data collection routines where the subjects were required to do rocking and non-rocking tasks as naturally as possible. The details of the routines are as follows:
+
+\subsubsection{	Routine A: Rocking data} \label{RoutineA}
+Participants were allowed to choose from a rocking chair or a stool or sitting on the ground, so they could rock as comfortably and naturally as possible. We found some cultural preferences to the way people choose to rock. The subjects were asked to rock for a total of 20 complete cycles.
+
+\subsubsection{Routine B: Non-rocking data}\label{RoutineB}
+The participants were asked to do activities that did not involve rocking. They moved around the experimental setup reading posters, operating computers, interacting with everyday office equipments and included some functional body motions similar to rocking like, stooping down to pick up objects, rapidly bending down to pick up objects etc. Data was collected for a total of 30 seconds.
+
+\subsubsection{Routine C: Test data}\label{RountineC}
+Since rocking can happen at any given instance, we collected data where subjects did various activities and interspersed them randomly with rocking. The goal is to determine how fast and accurately our system can detect such rocking occurrences. In all of these data streams, rocking instances were manually identified and marked for the sake of ground truth. Figure 3 shows the combination of rocking and non-rocking activities by the participants. It can be noticed that there is a clear demarcation between the two activity zones.
+
+\subsection{Uncontrolled Data Collection:}\label{Uncontrolled}
+The uncontrolled data was collected towards testing the generalization capabilities of the learnt system. To this end, the body rock detection system was worn by the primary author during everyday laboratory activities. Body rock detection was provided as a feedback through a pair of headphones in the form of an audio beep. Five trails of four separate ten minute data collections were done. Two of the four were done with classic AdaBoost whereas the other two were done with Modest AdaBoost. Further, under each of these two classifiers, one data collection measured how many false positives were detected, whereas the second data collection counted how many rocking actions went undetected. During all these data collection the researcher counted the number of false positive or false negatives using a handheld thumb counter. This experiment was conducted purely to test the generalization capability of the learnt classifier.
+
+\section{Experiments}
+Experiments were carried out for comparing the performance of the classic AdaBoost framework with Modest AdaBoost for the specific tasks of determining
+\begin{enumerate}[a.]
+\item The length of a temporal packet of data needed to effectively distinguish rocking from non-rocking.
+\item The accuracy with which the two classifiers can distinguish between rocking from non-rocking.
+\item The generalization capabilities of the two classifier systems.
+\end{enumerate}
+
+To this end the rocking samples collected in Routine A (discussed under Section \ref{RoutineA}) and Routine B (discussed under \ref{RoutineB}) were used as labeled positive (rocking) and negative (non-rocking) data for training the AdaBoost classifiers. Data collected under Routine C (discussed in Section\ref{RoutineC}) were used for testing the learnt classifiers. The results from this analysis were used for determining a. and b. above. We varied the packet length on the data stream and determined the recognition rate on the test data. While the packet length was varied, a constant overlap was maintained between successive packets. This overlap was determined empirically to be 0.5 seconds or 50 samples (100 Hz sampling rate). With the ground truth already provided for the test set, we were able to determine the accuracy of the two classifiers.
+
+To determine c., we resorted to using the data collected in Section \ref{Uncontrolled}. The primary author of the paper used the device to collect false positive and false negative data in order to determine how well the classifiers generalized on the training data. Further, we analyzed the working of the two classifiers in a piece wise manner by breaking down the features into individual sets (Sets 1 through 5 as identified in Table \ref{JMMTable1} and Table \ref{JMMTable2} and Set 6 that included all 14 features) and understanding the functional ability of the classifiers under individual feature sets. This allowed for an in-depth analysis of the workings of the two classifiers. In Section VII, we discuss the generalization capability of the two classifiers by heuristic analysis of the piecewise operational modes.
+
+All our experiments were carried out with the aid of the AdaBoost Matlab library developed by Graphics and Media Lab at the Dept. of Computer Science at Moscow State University [42].
+
+\section{Results}
+Figures \ref{JMMFigure4} and Figure \ref{JMMFigure5} shows the box plot [43] of packet length (T secs) versus recognition rate for classic AdaBoost and Modest AdaBoost frameworks, respectively. The abscissa represents the length of the data stream (in seconds) used for the analysis, while the ordinate represents the recognition rate. Training and testing were all carried out on the data collected as depicted in Section \ref{DataCollection}. The horizontal line inside the box represents the median (second quartile) of recognition rates over the ten subject's data. The lower end of box presents the first quartile (25 percentile) and the upper end of the box represents the third quartile (75 percentile). Thus the box surrounds the center 50 percentile ranges of recognition results. This box is also called the Inter-Quartile Range (IQR = third quartile - first quartile). The dotted extremity represents the minimum and maximum recognition rate under a certain packet length among the ten subjects. Any outlier (an outlier is greater than 1.5 IQR from the median in any direction) is marked by an asterisk.
+
+Table 2 presents the results from the experiment carried out to determine the generalization capabilities of the two classifiers. The entries in the table are counts as measured by the researchers of the number of false positives and false negatives counted manually while using the device for body rock detection and feedback. Five trails were carried out of 10 minutes each for determining these numbers. False positives represent the number of times the device falsely gave feedback when the user was not involved in rocking. It is important that this rate be minimal as too many false feedbacks would be discouraging for the user to continue using the assistive aid. The false negative represents the number of times the device did not detect that the user was rocking. This metric could be correlated to the failure of the device to perform its functional task.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{PacketLength-Gentle.jpg}
+\caption{Packet length to recognition rate comparison under the classic AdaBoost framework.}
+\label{JMMFigure4}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{PacketLength-Modest.jpg}
+\caption{Packet length to recognition rate comparison under the Modest AdaBoost framework.}
+\label{JMMFigure5}
+\end{figure}
+
+Table 2 presents the results from the experiment carried out to determine the generalization capabilities of the two classifiers. The entries in the table are counts as measured by the researchers of the number of false positives and false negatives counted manually while using the device for body rock detection and feedback. Five trails were carried out of 10 minutes each for determining these numbers. False positives represent the number of times the device falsely gave feedback when the user was not involved in rocking. It is important that this rate be minimal as too many false feedbacks would be discouraging for the user to continue using the assistive aid. The false negative represents the number of times the device did not detect that the user was rocking. This metric could be correlated to the failure of the device to perform its functional task.
+
+\begin{table}
+\centering
+\begin{threeparttable}
+\begin{tabular}{|l|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Generalization Capabilities & Classic AdaBoost & Modest AdaBoost \\
+  \hline
+
+  False Positives per Minute\tnote{1} & 86 & 44 \\
+  False Negatives per Minute\tnote{1} & 20 & 9 \\
+  \hline
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item[1] Averaged over 10 minutes
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\begin{figure}
+\subfigure[(a)] {
+\includegraphics[width=4in]{AUCClassic.jpg}
+\label{JMMFigure7a}
+}
+\subfigure[(b)] {
+\includegraphics[width=4in]{ROC-Classic.jpg}
+\label{JMMFigure7a}
+}
+\subfigure[(c)] {
+\includegraphics[width=4in]{FeatureSetRecogRate-Gentle.jpg}
+\label{JMMFigure7a}
+}
+\subfigure[(d)] {
+\includegraphics[width=4in]{ClassicClassifierAnalysis.jpg}
+\label{JMMFigure7a}
+}
+\caption{Piecewise performance analysis of the classic AdaBoost classifier framework; (a) Recognition rates under use of individual feature sets; (b) The Receiver Operating Characteristics (ROC) under the use of individual feature sets; (c) Area under the curve (AUC) for each feature set as estimated from the ROC; (d) The number of simple classifiers used by the aggregated AdaBoost classifier. Each set and each feature representation in the classifier pool are separately marked. In all the graphs Set 1 through 5 are as explained by Table \ref{JMMTable1}. Set 6 represents a set containing all 14 features from Table 1}
+\end{figure}
+
+
+
+Figure 7 and Figure 8 shows the piecewise analysis of the classic AdaBoost and Modest AdaBoost frameworks. Subfigure (a) shows the performance of each feature set considered one at a time in detecting body rocking; feature set 6 corresponds to the use of all 14 features together. For example, column 1 in Figure 7 (a) represents the recognition performance using only temporal mean along x, y and z axis tested on all ten subjects. The bar graph in (a) shows the mean performance rate while the superimposed box plot shows the performance at first, second and third quartile as discussed earlier.
+
+Subfigure (b) represents the Receiver Operating Characteristics (ROC) [44] for the same six feature sets as in subfigure (a). ROC is plotted a false positive rate (FPR) versus true positive rate (TPR). The better the performance, the curve moves towards the (1,1) co-ordinate. For example, in Figure 7 (b) Set 6 with all features is performing better than feature set 1 as Set 6 curve is closer towards (1,1) while the feature set 1 curve is almost along the diagonal of the plot. The diagonal of the ROC plot represents a recognition rate of 50\% i.e. random pick.
+
+Subfigure (c) is a derivate of the ROC curves in subfigure (b). Each bar in the graph is representing the area under the corresponding curve (AUC) in (b). An area of 1 represents an ideal classifier with no false positive or false negatives, while an area of 0.5 represents randomness in the classifier output. AUC can be used to immediately determine the curve with the best performance.
+
+Subfigure (d) is an understanding of how the aggregated AdaBoost classifier is built. As discussed above, AdaBoost classifier uses a collection of simple classifiers to achieve the final classifier. We plotted the number of times a particular feature is being used by the aggregate classifier. Further, the features are grouped into 5 sets corresponding to the five feature sets identified in Table 1. Columns belonging to the same set have the same top count which corresponds to the total simple classifiers used form that set. Each column within the set represents how many classifiers are used on each feature within that set. The count on the individual feature is represented by the bottom color along each column. For example, consider set 4 in Figure 8 (d), features with identification number 10, 11 and 12 form this set (corresponding to the first order differential power from x, y and z axis of the accelerometer data) and have a top count of 646 simple classifiers. Within the group, the z axis differential power dominates the other two by having a count of 374.
+
+\section{Discussion of Results}
+Before discussing the results of the experiments conducted on the accelerometer data, we step back to the first research question that we identified in Section I - A, 	Is there any evidence of individuals responding to rehabilitation for reducing stereotypic body rocking behavior? From the Psychology background work presented in Section II, we believe that there is enough evidence that individuals with sensory or cognitive impairment respond to rehabilitation through assistive devices. Specifically, the experiments highlighted in Section II - C support the claim that body rocking can be decreased by providing immediate feedback to the individual.
+
+Regarding the second research question, what is the state-of-the-art technology available to detect and notify individuals of their rocking behavior? We identified the state-of-the-art motion sensor that is small enough in form factor to become part of one's everyday clothing. Further, we designed this device to be discrete so that the user does not feel any intrusion into their everyday activities. The software can be run on any mobile processing device that the user already carries like a cell phone or PDA. This allows the users to use the device without carrying any additional load. Our solution to this research question caters to the Acceptance design dimension that we identified in Section II - C 1.
+
+Focusing on the third research question, Is it possible to build a device that detects body rocking condition and how well can it distinguish body rocking from other functional activities of daily living? We turn our attention to the various results presented in Section VI to prove the efficiency of our proposed method in detecting body rocking and distinguishing it from other non-rocking behavior.
+
+\subsection{Packet Length, and Detection Efficiency}
+From Figure 4 and Figure 5, it is evident that the recognition rates for the two classifiers are comparable and the median recognition rate ranges from 89\% to 95\%. Based on these numbers, the best performance was achieved at a sample length of 1.5 seconds or 150 samples per packet. Packet length of 150 samples has the highest recognition rate on both the classifiers. Comparing this packet with the 2 seconds packet length or 200 samples per packet, we notice that the 2 seconds packet is very close behind and it has a smaller 1.5 IQR box. Thus, the variance in the recognition rates between 10 subjects is lesser in the 200 samples packet length, implying that the results are more consistent. Further, we noticed that the average natural rocking motion of the 10 subjects was around 27 rocks a minute (i.e. 27 rocks in 60 seconds or 2.22 seconds per rock; this is supported by results from [45]), which implies that a latency of 2 seconds was the closest to the time duration of a single rocking action. As mentioned earlier, all experiments were carried out with an overlap 0.5 seconds or 50 samples between successive packets. Combing these two results, we have
+
+\begin{enumerate}
+\item \emph{Optimum Packet Length}
+2 seconds or 200 samples with 0.5 seconds or 50 samples overlap between packets.
+\item \emph{Best Detection Rate}
+@ 2 seconds packet length \approx 94\% under both classifiers
+\end{enumerate}
+
+\subsection{Generalization Capabilities}
+From Figure 4 and Figure 5, it is very difficult to distinguish any performance benefits between classic AdaBoost and Modest AdaBoost. But analyzing Table 2, we can notice a dramatic difference in the performance of the Modest AdaBoost when compared to classic AdaBoost. The number of false positives is down from 86 to 44 over a ten minute period. That is, the user receives nearly half less number of false feedback with Modest AdaBoost framework when compared to the classic AdaBoost. This was not evident in the detection tests that were carried out with data collected from Routine C (Section IV - A 3.). We asked the question of why there is an increased performance in Modest AdaBoost and why there is a discrepancy between the test results from Routine C and the naturalistic data capture (Section IV - B). The answer to these questions lies in the generalization capabilities of the two classifiers. We noticed that most of the false feedback provided by classic AdaBoost occurred while the user was sitting and not rocking. In hind sight, we realized a slight discrepancy in our non-rocking (negative class) data collection. While capturing data under Routine B (as explained in Section IV - A 2.) the participants were asked to perform various tasks that did not involve rocking to use as negative training set. We realized that most of the participants performed tasks that involved some form of walking or standing activities while they did no activity that involved sitting and not rocking. Thus, just sitting activity was a non-rocking event that was not represented in the training data set. We hypothesize that classic AdaBoost over trained on the non-rocking data while Modest AdaBoost, which is penalized for learning the training set very well, had a better generalization. Extending this heuristic analysis to a more formal analysis, we look at the piecewise performance of the two classifiers. Comparing the ROC curves from Figure 6 (b) with Figure 7 (b), it can be seen that feature set 2 - Variance and feature set 4 - First Order Differential Power performed the best following Set 2 - All features set. Now comparing Figure 6 (d) with Figure 7 (d) it can be seen that Modest AdaBoost distributed it simple classifiers such that there were more classifiers representing the two feature sets 2 and 4. On the other hand, the classic AdaBoost's distribution of simple classifiers is unexplainable as feature set 1 - Mean - seems to have received more representation than set 4. Mean had the worst performance as an individual feature set as can be verified by the ROC curve that comes closest to the diagonal on the plot hinting that the performance is barely above random guess. Contrasting this with Modest AdaBoost selection, Mean is in the bottom two sets among the five feature sets. This bad performance of Mean as a feature set can be understood by looking at the graph shown in the first row and last column of Table 1. It can be seen that the Mean acceleration values between rocking and non-rocking are not significantly different. Table 1, Rows 2 and 4 highlights the capabilities of Variance and First Order Differential Power in distinguishing rocking from non-rocking. This is further confirmed by the ROC graph.
+
+
+Feature 4 having the highest distribution of simple classifiers under Modest AdaBoost (Figure 7 (d)), within this feature set we can see that the highest number of simple classifier is assigned to feature 12 which corresponds to First Order Differential Power on z axis. As can be verified from Figure 3, the best distinguishing character between non-rocking and rocking patterns seems to be the transformation of a random signal pattern on z-axis to a deterministic sinusoidal waveform. If this can be the true identity of the rocking data stream, feature 12 would capture it in the best possible manner by measuring the power in the first order differential of the temporal signal. Using this feature as the most reliant feature would provide a good basis to support the final classifier selected by Modest AdaBoost.
+
+
+	We are now ready to answer the last research question stating that the use of approximately 2 seconds (or 200 samples @ 100 Hz sampling rate) packet length used with a learning framework biased towards generalized learning (like Modest AdaBoost) would be a good assistive technology solution for detecting and giving feedback towards stereotypic body rocking. We can extend the same argument to other body mannerisms that involve any form of repetitive body part movement.
+
+\section{Conclusion}
+ In this chapter, we have addressed the topic detecting stereotypic body mannerisms, specifically body rocking, and propose a technology solution for providing an assistive technology that may reduce or control body rocking. We have discussed the hardware and software components of the proposed system in detail and offer a thorough analysis on the learning framework that provides generalization benefits to allow this framework to be extended to detection of any body mannerism. Investigations are in progress to determine how incoming samples of acceleration data can be labeled automatically by the system based on the AdaBoost classifier's classification confidence metrics. This would provide opportunity for self-learning [46] modes where the device can readily understand and learn data points that were not available in the training set. Combining such self-learning into a generalized learner would provide immense opportunities for not only body mannerism detection, but for solving future data mining problems where typical lab setting training data collection would just not be sufficient to train a robust classifier.
+From the assistive technology perspective, we plan to integrate a well planned self-monitoring as a part of the proposed device. We are exploring the broad area of human communication to determine the best cognitive self-correction techniques that could augment the proposed solution. . We have implemented a rudimentary form of real-time body rock counter, as discussed in [3], but we have not yet tested it for its feedback capabilities.
 
 
 \chapter{Person-Specific Face Recognition}
