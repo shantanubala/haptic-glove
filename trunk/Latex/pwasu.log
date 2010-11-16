@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  16 NOV 2010 01:21
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.10.13)  16 NOV 2010 08:09
 entering extended mode
 **C:/Documents*and*Settings/Sreekar/Desktop/Dissertation*SVN/pwasu.tex
 ("C:/Documents and Settings/Sreekar/Desktop/Dissertation SVN/pwasu.tex"
@@ -1687,12 +1687,12 @@ Overfull \vbox (12.59999pt too high) has occurred while \output is active []
 [161
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 3239--3242
+Underfull \hbox (badness 10000) in paragraph at lines 3240--3243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3239--3242
+Underfull \hbox (badness 10000) in paragraph at lines 3240--3243
 
  []
 
@@ -1721,10 +1721,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5439 strings out of 495285
- 75414 string characters out of 3180282
- 164515 words of memory out of 3000000
- 8495 multiletter control sequences out of 15000+200000
+ 5447 strings out of 495285
+ 75600 string characters out of 3180282
+ 164555 words of memory out of 3000000
+ 8503 multiletter control sequences out of 15000+200000
  54902 words of font info for 118 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,14n,21p,3491b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1739,7 +1739,7 @@ am Files/MiKTeX 2.8/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.
 8/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw
 /times/utmr8a.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on pwasu.pdf (177 pages, 4262463 bytes).
+Output written on pwasu.pdf (177 pages, 4263761 bytes).
 PDF statistics:
  690 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

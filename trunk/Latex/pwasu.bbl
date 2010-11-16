@@ -915,4 +915,43 @@ R.~Fergus, P.~Perona, and A.~Zisserman, ``Object class recognition by
   Recognition, 2003. Proceedings. 2003 {IEEE} Computer Society Conference on},
   vol.~2, pp.~II--264--II--271 vol.2, 2003.
 
+\bibitem{yang_fast_2005}
+C.~Yang, R.~Duraiswami, and L.~Davis, ``Fast multiple object tracking via a
+  hierarchical particle filter,'' {\em {IN:} {INTERNATIONAL} {CONFERENCE} {ON}
+  {COMPUTER} {VISION}}, vol.~1, pp.~212---219, 2005.
+
+\bibitem{barrow_parametric_2006}
+H.~G. Barrow, J.~M. Tenenbaum, R.~C. Bolles, and H.~C. Wolf, ``Parametric
+  correspondence and chamfer matching: Two new techniques for image matching,''
+  2006.
+
+\bibitem{leibe_pedestrian_2005}
+B.~Leibe, E.~Seemann, and B.~Schiele, ``Pedestrian detection in crowded
+  scenes,'' {\em {IN} {CVPR}}, vol.~1, pp.~878---885, 2005.
+
+\bibitem{arulampalam_tutorial_2002}
+M.~S. Arulampalam, S.~Maskell, and N.~Gordon, ``A tutorial on particle filters
+  for online {nonlinear/non-Gaussian} bayesian tracking,'' {\em {IEEE}
+  {TRANSACTIONS} {ON} {SIGNAL} {PROCESSING}}, vol.~50, pp.~174---188, 2002.
+
+\bibitem{isard_condensation_1998}
+M.~Isard and A.~Blake, ``{CONDENSATION} - conditional density propagation for
+  visual tracking,'' {\em {INTERNATIONAL} {JOURNAL} {OF} {COMPUTER} {VISION}},
+  vol.~29, pp.~5---28, 1998.
+
+\bibitem{birchfield_elliptical_1998}
+S.~Birchfield, ``Elliptical head tracking using intensity gradients and color
+  histograms,'' {\em Proceedings of the {IEEE} Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pp.~232---237, 1998.
+
+\bibitem{okuma_boosted_2004}
+K.~Okuma, A.~Taleghani, N.~D. Freitas, O.~D. Freitas, J.~J. Little, and D.~G.
+  Lowe, ``A boosted particle filter: Multitarget detection and tracking,'' {\em
+  {IN} {ECCV}}, vol.~1, pp.~28---39, 2004.
+
+\bibitem{crow_summed-area_1984}
+F.~Crow, ``Summed-area tables for texture mapping,'' in {\em {SIGGRAPH} '84:
+  Proceedings of the 11th annual conference on Computer graphics and
+  interactive techniques}, pp.~207--212, {ACM}, 1984.
+
 \end{thebibliography}
