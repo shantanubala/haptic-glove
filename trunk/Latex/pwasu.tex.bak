@@ -3220,7 +3220,7 @@ An important shortcoming of the early Social Interaction Assistant [5] (and many
 UDIO and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment [1]. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized [2].
 
 Of all the modalities that engage the human somatosensory system, vibrotactile stimulation has become very popular in the recent past due to the sophistication and unobtrusiveness of vibrotactile displays [3], as well as their portability and wearability [2]. But this new modality is far from displacing the primary delivery modalities due to the fact that haptics (touch) is a low bandwidth channel compared to audio or video. Previously, complex vibratory pulses have been designed using combinations of vibration dimensions [4][5], such as vibration frequency, amplitude, duration, rhythm and location, and by using human psychophysical perception (like sensory saltation [6]). There are infinite ways to map meanings to vibration dimensions, but conceptually, there are two extremes: symbolic and literal. On one end of the spectrum, tactons [7], or tactile icons, use a symbolic mapping to arbitrarily assign meaning to vibration dimensions. On the other end, a literal mapping assigns vibrotactile cues to intuitive somatosensory signals that humans are already acquainted with, such as a shoulder tap to obtain one's attention. Encoding schemes may also fall somewhere in between such that the vibrotactile cues may be intuitive, but still require training. Studies on symbolic and literal mappings have shown an extraordinary increase in information delivery bandwidth for vibratory cues, thereby making a case for vibrotactile stimulation as a potential alternative (or at least an augmentation) to audio and video.
- 
+
 Vibrotactile displays have been implemented in a variety of form factors including desktop displays, handheld devices, and wearable systems, such as gloves [8], jackets [9], and jewelry [10]. In this paper we focus our discussion to vibrotactile displays worn around the waist, commonly referred to in the literature as haptic or vibrotactile belts. Vibrotactile belts have found a number of applications including, but not limited to, pedestrian navigation [11][12][13] (vibrations guide users from a starting point to their destination); balance control [14] for people with vestibular damage (vibrations convey tilt information); virtual reality [15] (vibrations indicate collisions with virtual objects); spatial orientation aids for pilots [16] and astronauts [17] (vibrations provide spatial orientation towards magnetic north or Earth's gravity vector in zero-gravity environments); psychophysical study of human vibrotactile perception [5][18] (experiments on vibrotactile spatial acuity, spatio-temporal pattern perception, saltation, etc.); and social interaction assistant aids [19] for individuals who are blind or visually impaired (vibrations are used to communicate nonverbal cues). Unlike other form factors, belts tend to be physically discreet and part of almost all everyday clothing. A variety of vibrotactile belt designs and implementations have been proposed in the literature (please refer to Section II for a detailed analysis). However, existing designs have two primary limitations: (1) Limited applicability due to application-specific designs; and (2) Usability and performance requirements tend to be secondary to functionality, thereby forcing readers to question the real-world use of the application itself. This is the natural inclination of a technology-centric, as opposed to human-centric, approach towards interface design. A human-centered design strategy critically accounts for all users of the technology throughout the lifecycle of the design and development of a human machine interface. In this work, we generalize the scope of our users to include both customers: end users of a specific technology; and developers (engineers, scientists, and researchers): those modifying the product for novel applications.
 
 \section{Related Work}
@@ -3319,25 +3319,25 @@ The three important dimensions of the vibration signal, as delivered through our
 
 \begin{enumerate}[(a)]
 \item Location of Vibration: The location of vibration is reflected by the flexibility of our belt which allows the easy movement, addition or removal of tactors from the belt strap. This allows users of the belt to achieve any positional configuration that is desired for the application in focus.
-    
+
 \item Amplitude of Vibration: A pulse-width modulation (PWM) based amplitude control (similar to digital sound modulation) is incorporated to control the intensity of vibrations. The applied voltage is modulated in 20 microsecond intervals to achieve desired levels of intensity.  Although the design allows for a much smaller resolution, human sensory mechanisms cannot practically distinguish them. Figure 3(a) and 3(b) shows the duty cycles under 2 different magnitudes, and Figure 3(c) and 3(d) shows sample waveform of the actuation signals generated by the tactor microcontroller under 25\% and 75\% intensities.
-    
+
     \begin{figure}
 \includegraphics[width=5.5in]{AmplitudePWM.jpg}
 \caption{(a) 25\%; (b) 75\% Pulse-width modulation; (c) and (d) Vibration motor magnitudes of 25\% and 75\% achieved using duty cycles with 25 pulses over a 50 ms vibration period.}
 \label{TIMFigure104}
 \end{figure}
-    
+
 \item Timing and Temporal Rhythm of Vibration: Temporal rhythm patterns refer to the actuation of the vibrators as discrete time pulses.  Readers should not confuse these temporal pulses with the pulse-widths used for magnitude control as described in the section above. The vibration of any tactor on the belt is divided into discrete temporal time events referred to as the Temporal Rhythm Unit (TRU), where each TRU is 50 ms long. The choice of 50 ms per TRU was determined experimentally, where we found that any vibration pulse of duration lesser than 50 ms was not perceivable to the participants. All vibrations are defined in terms of the number of TRUs for which the vibration motor should be ON or OFF. This sequence of ON-OFF patterns forms a Temporal Rhythm Sequence (TRS).  Note that any ON TRU can be controlled in magnitude by incorporating the PWM amplitude control as explained in the previous section.  Two sample TRS are shown in Figure 4 below. The first sequence has 5 TRUs, ON-OFF-ON-ON-OFF, totaling 250ms with amplitude of 100\%. The second TRS has 4 TRUs, ON-OFF-ON-OFF, totaling 200ms with amplitude of 50\%.
-    
+
     \begin{figure}
 \includegraphics[width=5.5in]{TRSTRU.jpg}
 \caption{Sample Temporal Rhythm Sequences (TRS) with different magnitudes of vibration encoded on the Temporal Rhythm Units (TRU) (a) 100\% Magnitude, (b) 50\% Magnitude.}
 \label{TIMFigure105}
 \end{figure}
-    
+
 \end{enumerate}
-    
+
 The tactor controller firmware communicates directly with the main controller firmware as a slave device over the I2C bus and maintains the PWM timing for the local vibration motor. A two-byte command structure is used between the main controller and the tactors. Similar to the main controller firmware, the functionality of the tactor controller can be categorized into five important roles (Fig. 4). While the communication module and command parser are similar as above, the memory module and the low-level hardware module (PWM module) form the critical components of the tactor module. The memory manager module is responsible for temporarily storing the definition of the TRU and TRS that are sent over to the tactors at boot up. At run time, a two-byte activate command selects the appropriate TRU and TRS for each tactor, which the PWM module executes on the vibration motor.
 
 \begin{figure}
@@ -3374,20 +3374,285 @@ Subjects: 10 subjects (8 males and 2 females), of ages between 24 and 59, partic
 
 \subsubsection{Apparatus:} The haptic belt described in Section III was used for this experiment. Vibratory signals were 600 ms in length, and had a frequency and intensity well within the range of human perception. In contrast to [15], cues are longer-600 ms compared to 200 ms-and we do not use headphones to mask subtle vibration noise, nor do we randomly vary intensity with each cue; the reason for these changes is that we are mostly concerned with how the belt as a complete system accomplishes non-verbal communication, rather than the spatial acuity of the waist. Hence, if a specific intensity of vibration feels different around the waist, and some vibrations can be heard, and if these cues help in tactor localization, then this redundant information should only add to the usability of the system.
 
-\subsubsection{Procedure:} Subjects put on the haptic belt over their shirt and around their waist such that the middle tactor (#4) was centered at their navel, and the endpoint tactors (#1 and #7) were at their left and ride sides, respectively. As the belt has LEDs that light up to indicate tactor activation (used for testing the belt), subjects were instructed to not look down at the belt any time during the experiment. Next, subjects were familiarized with tactor numbering: the experimenter activated tactors in order from #1 to #7, and spoke aloud the number of the activated tactor. This process was repeated twice for each subject.
+\subsubsection{Procedure:} Subjects put on the haptic belt over their shirt and around their waist such that the middle tactor (\#4) was centered at their navel, and the endpoint tactors (\#1 and \#7) were at their left and ride sides, respectively. As the belt has LEDs that light up to indicate tactor activation (used for testing the belt), subjects were instructed to not look down at the belt any time during the experiment. Next, subjects were familiarized with tactor numbering: the experimenter activated tactors in order from \#1 to \#7, and spoke aloud the number of the activated tactor. This process was repeated twice for each subject.
 
 The training phase involved 35 trials where each tactor was randomly activated 5 times (with approximately 5 seconds between tactor activations) and subjects had to identify the number of each activated tactor. A visual guide was provided for subjects to help recall tactor numbers; this guide was a white board with a drawing of a semicircle (the belt) and the numbers 1 through 7 (tactors) on the belt. Feedback was given during the training phase to correct wrong guesses. The testing phase was similar to the training phase, but involved 70 trials where each tactor was randomly activated 10 times, and feedback was not provided. Subjects stood during the entire experiment.
 
-\subsubsection{Results:} The localization accuracy for each tactor (number of times identified correctly out of the total number of times activated) was averaged across subjects and is shown in Figure 4 (indicated by the dots centered within each error bar), where error bars indicate 95% confidence intervals. The overall localization accuracy across tactors and subjects was (92.1 7.0)%.
+\subsubsection{Results:} The localization accuracy for each tactor (number of times identified correctly out of the total number of times activated) was averaged across subjects and is shown in Figure 4 (indicated by the dots centered within each error bar), where error bars indicate 95\% confidence intervals. The overall localization accuracy across tactors and subjects was (92.1 7.0)\%.
 
-
-Figure 4: Experiment 1 Results: Mean Localization Accuracy for each Tactor, Averaged across Subjects, with 95% Confidence Intervals
+\begin{figure}
+\centering
+\includegraphics[width=4in]{LocalizationResult.jpg}
+\caption{Experiment 1 Results: Mean Localization Accuracy for each Tactor, Averaged across Subjects, with 95\% Confidence Intervals}
+\label{TIMFigure107}
+\end{figure}
 
 \subsubsection{Discussion:} An overall localization accuracy of (92.1 7.0)\% (an improvement over that of [15]) is promising and shows that our prototype haptic belt can be reliably used to indicate the direction of someone in the user's visual field. Moreover, 100\% of misclassifications were off by a single tactor location; hence, even when users made a mistake in localizing an activated tactor, they still had a very good idea of the general direction of someone in their visual field.
 
 We hypothesize that the increase in accuracy is largely due to greater cue duration (600 ms as opposed to the 200 ms used in [15]); it is well known that larger cue durations make localization easier [16]. Moreover, redundant information provided by the belt, such as subtle audible cues when tactors are activated, could have helped as well. Subjects found tactors closer to the midline easier to localize, which agrees with the results found in the literature where spatial acuity improves near the sagittal plane [15, 16] given that spatial acuity is better at anatomical reference points-in this case, the navel.
 
-It is hypothesized in [15] that the tactors at the end of the semicircle, which rest at the sides of the torso, act as landmarks and are easier to localize; but in our experiments, we noticed that tactor #1 could be localized more accurately than tactor #7, as shown in Figure 4. We are investigating this asymmetric result.
+It is hypothesized in [15] that the tactors at the end of the semicircle, which rest at the sides of the torso, act as landmarks and are easier to localize; but in our experiments, we noticed that tactor \#1 could be localized more accurately than tactor \#7, as shown in Figure 4. We are investigating this asymmetric result.
+
+\subsection{Experiment 2: Signal Duration as Cue for Distance}
+Experiment 2 included two sub-experiments to examine the use of vibrotactile cues to indicate both direction and distance. Experiment 2A focused on how well subjects could perceive cue duration, regardless of tactor location. Experiment 2B tested how well subjects could perceive both tactor location and cue duration at the same time.
+
+\subsubsection{Subjects:} The ten subjects introduced for Experiment 1 also performed Experiment 2A and 2B.
+
+\subsubsection{Apparatus:} The belt and signal properties were identical to those of Experiment 1 with the exception of signal duration. For Experiment 2A and 2B, signal durations of 200 ms, 400 ms, 600 ms, 800 ms and 1000 ms were used. These durations may refer to any distance in the implementation of the system; e.g., less than 2 ft (1000 ms), 2 ft to 4ft (800 ms), 4 ft to 6 ft (600 ms), and so on.
+
+\subsubsection{Procedure:} In the first part of Experiment 2A, subjects were familiarized with the five cue durations. All five durations were delivered to the user at each of the seven tactors from \#1 to \#7, in order. The training phase for Experiment 2A involved 35 trials where each tactor was randomly activated 5 times (one time for each of the 5 durations) with approximately 5 seconds between tactor activations. Subjects were instructed to guess only cue duration. The testing phase involved 70 trials with each tactor activated twice for each duration. As in the training phase, subjects had to guess the duration of the cue, but no feedback was provided. Immediately following Experiment 2A, subjects began Experiment 2B. First, the familiarization and training phase of Experiment 1 were repeated. The testing phase involved 70 trials similar to 2A, but subjects now had to guess both cue duration and tactor location. As in Experiment 1, subjects stood the entire experiment, had access to a visual guide and were told not to look at the belt.
+
+\subsubsection{Results:} Classification accuracy of duration (number of times identified correctly out of the total number of times used) was averaged across subjects and is shown in Figure 5 (indicated by the dots centered within each error bar), where error bars indicate 95\% confidence intervals. Note that the x-axis of Figure 5 lists durations as \#1 (200 ms), \#2 (400 ms), \#3 (600 ms), \#4 (800 ms) and \#5 (1000 ms). The results for both Experiment 2A and 2B are included in Figure 5. The overall classification accuracy of duration across tactors and subjects was (73 3.6)\% and (67 11.8)\% for Experiment 2A and 2B, respectively. There were not any noticeable differences in classification accuracy of duration between different tactor locations in either part of the experiment.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment1.jpg}
+\caption{Mean Classification Accuracy of Duration, Averaged across Subjects and Tactors, with 95\% Confidence Intervals. Durations listed in figure correspond to 200 ms (\#1), 400 ms (\#2), 600 ms (\#3), 800 ms (\#4) and 1000 ms (\#5)}
+\label{TIMFigure108}
+\end{figure}
+
+\subsubsection{Discussion:} In Experiment 2A, subjects were able to easily identify durations of 200 ms and 400 ms, most likely due to their short length. However, subjects had difficulty distinguishing between 600 ms, 800 ms and 1000 ms. Two subjects suggested that a logarithmic scale of 200 ms, 400 ms, 800 ms, 1600 ms, and so on, might improve recognition. However, longer cues slow down use of the system, making it more difficult to use in real time. Another option would be to use fewer cues (e.g., 200 ms, 500 ms and 1000 ms) to provide only coarse distance information. Regardless, the overall classification accuracy of duration at (73 3.6)\% is impressive, and accuracies for longer durations are satisfactory. The skill of subjects at classifying lengths of vibrations varied, resulting in large variations in classification accuracy for longer cue durations (see Figure 5). In any case, 94.7\% of misclassifications were off by only 200 ms (5.3\% of misclassifications were off by 400 ms), which shows that subjects were quite accurate with their estimates.
+
+In Experiment 2B, overall classification accuracy of duration dropped to (67 11.8)\%. We hypothesize that this small drop in mean accuracy, as well as an increase in variance, was due to the cognitive load of having to attend to both vibration duration and tactor location. In any case, overall accuracy is still satisfactory, and 89\% of misclassifications were off by only 200 ms (11\% of misclassifications were off by 400 ms). Overall tactor localization accuracy for Experiment 2B was (94.3 5.7)\% (averaged across subjects, tactors and durations), which is similar to the localization accuracy of (92.1 7.0)\% found in Experiment 1. Once again, 100\% of misclassifications were off by a single tactor location. We conclude that tactor locations are still easy to perceive even when cue length varies and attention must be divided between cue duration and location.
+
+\subsection{Experiment 3: Vibrotactile Rhythm as Cue for Distance}
+As an alternative to vibration duration, we also explored the use of vibrotactile rhythm to deliver distance information.
+
+\subsubsection{Tactile Rhythm Design}
+The tactile rhythms used in our experiments were motivated by results reported in [5], where just noticeable differences of vibrotactile duration were assessed. Subjects perceived pulses of duration below 100ms as a poke or nudge. Between 100ms to 2000ms, the just noticeable difference is an increasing curvilinear function of duration; although between 100ms to 500ms, the function is approximately linear. Based on these results, Geldard [5] recommended three durations, specifically 100ms, 300ms and 500ms, for accurate identification by subjects.
+
+We conducted pilot studies to determine rhythm patterns that are convenient for users to identify vibratory rhythms. Through use of a vibrotactile belt, we evaluated use of five rhythms, each 10 seconds in length: 50ms vibrotactile pulses separated by pauses of length 50ms, 100ms, 300ms, 500ms and 1000ms. Subjects found rhythms with pauses of 100ms, 300ms and 500ms difficult to discriminate between. Based on these findings, we selected the four rhythms depicted in figure 1; this design includes more separation of pauses within 100ms to 500ms, and a small increase of 1000ms to 1200ms (much longer durations may be too time consuming for communication [5]). In the Social Interaction Assistant, these four tactile rhythms are mapped to interpersonal distances corresponding to intimate, personal (close phase), personal (far phase) and social (close phase) space respectively.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment2.jpg}
+\caption{The on/off timing values of the four tactile rhythm designs, and corresponding distances, used in the experiment.}
+\label{TIMFigure109}
+\end{figure}
+
+\subsubsection{Experiment}
+\emph{Aim:} The aim of this experiment is to evaluate participants' performance identifying the tactile rhythms of figure 1 as they relate to interpersonal distances. Moreover, to ensure that the proposed tactile rhythms do not hamper subjects' ability to localize vibrations, as evaluated in previous work [8] to convey directions, we evaluate how well subjects can identify both cues as conveyed through tactons.
+
+\emph{Hypotheses:} (1) Subjects will achieve at least 90\% accuracy at identification of tactile rhythms; (2) Subjects will achieve at least 90\% accuracy at identification of vibration locations; (3) Subjects will achieve at least 80\% accuracy at identification of complete tactons;(4) Subjects' ability to localize vibrations will depend on the location of the vibration motor (tactor) around the waist; (5) Subjects' ability to identify tactile rhythms will depend on the type of rhythm; and (6) Subjects' ability to localize vibrations will not depend on rhythm type, and vice versa.
+
+\emph{Subjects:} 11 males and 4 females of ages 22 to 60 (avg. 32) participated; one subject is visually impaired.
+
+\emph{Apparatus:} An elastic vibrotactile belt [8] was used for this experiment. The design of the belt was based on the experiments of Cholewiak, et al. [3]. The belt consists of 7 tactors equidistantly placed in a semi-circle with the first, fourth and seventh tactor at the user's left side, navel, and right side, respectively. Each tactor consists of a pancake motor of diameter 10mm and length of 3.4mm, and operates at 170Hz.
+
+\emph{Procedure:} Subjects wore the belt underneath their clothing and sat during the entire experiment. Subjects had access to visual guides-a semi-circle with tactors \#1-7 drawn and interpersonal distances labeled as rhythms \#1-4-to recall tactor and rhythm numbers, respectively. First, subjects were familiarized with vibration location as it pertains to direction. Each tactor was vibrated for 3 seconds, and the tactor number was called out by the experimenter. Next, subjects were familiarized with tactile rhythms. Each rhythm was presented for 7 seconds through the fourth tactor at the navel, and the rhythm number was called out by the experimenter. Next, subjects began the training phase where they were asked to identify the direction (through the location of the activated tactor) and distance (through the type of rhythm) indicated by each tacton. All 28 tactons (4 tactile rhythms at 7 different locations/tactors) were randomly presented for 10 seconds each. Subjects were encouraged to respond before the 10 seconds ended. Subjects had to achieve a recognition accuracy of 80\% or more on each tacton dimension to proceed immediately to the testing phase; otherwise, the training phase was repeated (only 6 subjects had to repeat training, and all passed on the second try). The experimenter corrected wrong guesses and confirmed correct guesses. The testing phase was similar to the training phase, except no feedback was provided by the experimenter concerning right or wrong guesses, and each of the 28 tactons was randomly presented 3 times for a total of 84 trials.
+
+\emph{Results:} The overall recognition accuracy follows: location (mean: 95\%, SD: 4\%), rhythm (mean: 91.7\%, SD: 5.7\%) and both (mean: 87\%, SD: 8.5\%). These results support hypotheses (1)-(3), and show that, overall, subjects had little difficulty in recognizing rhythms and locations as they pertain to distance and direction, respectively. Feedback from participants after the experiment further supported this. From herein, reported ANOVA results are from a two-way ANOVA on complete tacton recognition accuracy through location and rhythm. The overall recognition accuracy of each tactor location is shown in figure 2. Subjects felt that the vibrations of tactor \#1 (left side), \#4 (navel) and \#7 (right side), were easier to localize compared to tactor \#2, \#3, \#5 and \#6. This result is easy to explain as spatial acuity is better at anatomical reference points [3]. Although figure 2 does show a very small difference between recognition accuracies, which supports what subjects reported, there was no significant difference between recognition accuracy of tactor locations [F(6,1232)=1.96, p=0.068], hence hypothesis (4) cannot be accepted. The overall recognition accuracy of rhythms is shown in figure 3. Subjects felt that rhythm \#2 (personal-close) and \#3 (personal-far) were more difficult to identify than rhythm \#1 (intimate) or \#4 (social-close), which is supported by figure 3. A significant difference between recognition accuracy of rhythms [F(3,1232) =5.70, p=0.001] supported hypothesis (5). No interaction was found between location and rhythm for recognition accuracy of complete tactons [F(18,1232)=0.91, p=0.569], supporting hypothesis (6).
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment3.jpg}
+\caption{Overall direction recognition accuracy of each tactor location with standard deviations.}
+\label{TIMFigure110}
+\end{figure}
+
+
+After the experiment, subjects filled out 10-level Likert scales-1 (lowest) to 10 (highest). Subjects rated their ability to localize vibrations (mean: 8.4), identify rhythms (mean: 7.4), intuitiveness of location to convey direction (mean: 9.7) and intuitiveness of rhythm to convey distance (mean: 8.9). Overall, subjects felt that they could accurately identify the proposed tactons, although identifying direction was easier than distance, and both schemes were intuitive.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment4.jpg}
+\caption{Overall distance recognition accuracy of each rhythm type with standard deviations.}
+\label{TIMFigure111}
+\end{figure}
+
+\section{CASE STUDY: WAIST-WORN VIBROTACTILE DISPLAY FOR PEDAGOGICAL APPLICATION FOR CHOREOGRAPHED DANCE}
+To evaluate the vibrotactile belt's three important design parameters of usability, functionality and performance, we conducted a case study in which the belt was used for a novel pedagogical application under realistic conditions. A two-fold, quantitative and subjective analysis was conducted to evaluate real-world usability issues. In [1], we demonstrated the general usability of the belt through a pilot study from the user's perspective, but the functional and performance metrics were not evaluated. In this paper, we delve into the details of the belt's evaluation through its use as a research platform for a novel application of teaching choreographed dance. While the usability analysis was done from the user's perspective, the functional and performance analyses were done by an independent researcher who designed and executed the dance study. The researcher was not part of the development team and evaluated the proposed belt as a research platform to impart choreography of simple dance steps to a mixed group of participants with and without dance experience. It is important to note that the researcher who worked with the proposed belt (a) had never used the vibrotactile belt; (b) had limited experience with haptic devices, and had never designed vibrotactile spatio-temporal patterns; and (c) had a novel application design with specific research objectives of determining how effectively choreography can be achieved through wearable vibrotactile devices.
+
+\subsection{Related Work in the Use of Vibrotactile Cues for Teaching Dance}
+In the literature, vibrotactile stimulation to elicit motor movement can be divided into two approaches: feedback-based and instruction-based, both of which are relatively new and unexplored. While feedback based approaches track human body motion and provide feedback whenever there is a deviation from a predefined path [23][24], instruction-based methods assign specific body movements to predesigned vibrotactile patterns, and expect subjects to memorize this mapping. In [25], Drobny et al. developed a wireless sensory system placed in the shoes of ballroom dancers. By measuring the force of taps, the system recognizes any missteps and emphasizes beats acoustically to help partners get back in sync. While this study was centered on a feedback based learning system, this case study uses an instruction-based method for teaching dance (similar to various other pedagogical applications targeting physical activities such as snowboarding [26], bowing [27][28] and swimming [29]), where predefined spatio-temporal vibration patterns require participants to demonstrate specific movements. To the best of the authors' knowledge, the only other work that explores instruction-based vibrotactile cues for teaching dancing is an approach by Nakamura et al. [30] where vibrotactile cues instructed arm movements for traditional Japanese folk dance. Unfortunately, the paper does not describe any of the proposed vibrotactile cues, and no statistical analysis was presented. Note that the cues proposed here are for basic dance movements only; more complex dance movements will require further exploration by dance experts on the possible redesign of vibrotactile stimulators to be placed in strategic locations on the body.
+
+\subsection{Subjects}
+11 males and 2 females of ages 21 to 60 (average: 30) participated in the dance study. No subjects had any tactile impairment around their waist. 5 subjects had never danced before, 4 subjects had less than one year of dance experience, and 4 subjects had a least 5 years of dance experience. The dance participants provided data for analyzing the usability of the belt, while the independent researcher offered evaluations for the functionality and performance of the belt. Although we would have preferred several researchers and/or developers to assess the usability of our belt through their own novel applications and user studies, this was not feasible due to time limitations and the need for a specific target application.
+
+\subsection{Procedure}
+The belt was configured with 8 tactors placed equidistantly around each participant's waist. Fig. 6 shows the configuration with tactor \#1 is at the user's left side, tactor \#3 at the user's navel, tactor \#5 at the user's right side and tactor \#7 at the user's spine.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure6.jpg}
+\caption{Arrangement of 8 Tactors around the Waist.}
+\label{TIMFigure112}
+\end{figure}
+
+
+	Subjects were informed that the purpose of the experiment was to assess how well they can recognize vibrotactile cues. They were not told that they would be learning basic dance moves to avoid giving any advantage to those with prior dance experience. Subjects were given instructions regarding how to put on the belt, and were told to move tactors along the length of the belt to match the configuration shown to them on a printed paper (same as Fig. 6). First, subjects were familiarized with the different vibrotactile patterns and the corresponding body movements (see Table II). Next, participants began the training phase where they were asked to feel a vibrotactile pattern and perform the associated movement, then return to the starting position. 24 trials (12 vibrotactile patterns each presented twice) were randomly presented. Subjects were encouraged to respond within ten seconds. Subjects were required to achieve above 70\% accuracy in order to move on to the testing phase. The testing phase consisted of two parts. In the first part, the testing phase was similar to training phase, but with 48 trials and no feedback. Before the second part of the testing phase, participants performed another familiarization phase to help them learn how to link individual moves. In this familiarization phase, participants performed 11 moves in sequence. Finally, participants performed two different dance sequences: a modified box step and a modified electric slide. The modified box step was repeated once, and consisted of the following vibrotactile patterns of Table II, in order: A, B, J, I, F, E, K, and L, as shown in Fig. 7. The modified electric slide was not repeated, and consisted of the following patterns of Table II, in order: J, I, J, I, K, L, K, L, F, E, A, B, B, A, E, F, K, L, K, L, J, I, J, I, A, B, F, E, F, E, A, and B, as shown in Fig. 8. A pause of 2 seconds was given between the pattern presentations. During this phase, no feedback was given to participants regarding right or wrong movements.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure7.jpg}
+\caption{Modified Box Dance.}
+\label{TIMFigure113}
+\end{figure}
+
+\begin{table}
+\caption{Foot Steps Involved in the Choreographed Dance Movements.}
+\begin{tabular}{|l|l|l|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  ID & Movement & Vibrotactile Pattern \\
+  \hline
+  \hline
+A &	Left foot forward (small step) &	1 - 2 - 3 \\
+\hline
+B &	Right foot forward (small step) & 	5 - 4 - 3 \\
+\hline
+C &	Left foot forward (long step) &	7 - 8 - 1 - 2 - 3 \\
+\hline
+D &	Right foot forward (long step) &	7 - 6 - 5 - 4 - 3 \\
+\hline
+E &	Left foot back (small step) &	1 - 8 - 7 \\
+\hline
+F &	Right foot back (small step) &	5 - 6 - 7 \\
+\hline
+G &	Left foot back (long step) &	3 - 2 - 1 - 8 - 7 \\
+\hline
+H &	Right foot back (long step) &	3 - 4 - 5 - 6 - 7 \\
+\hline
+I &	Left foot right  &	1 - 2 - 3 - 4 - 5 \\
+\hline
+J &	Right foot right &	3 - 4 - 5 \\
+\hline
+K &	Left foot left &	3 - 2 - 1 \\
+\hline
+L &	Right foot left &	5 - 4 - 3 - 2 - 1\\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure8.jpg}
+\caption{ Modified Electric Slide Dance.}
+\label{TIMFigure114}
+\end{figure}
+
+The independent researcher was given oral instructions (30 minutes) on the components of the belt and its complete operation including its software. The researcher was then allowed to configure the belt to his application. It took him 20 minutes to affix eight tactors and a control box, wire them together, and place them in the desired configuration. It took about 15 minutes to implement the vibrotactile cues for basic dance movements (left foot forward, right foot forward, etc.), and another 20 minutes to concatenate them into two dance sequences (modified box step and modified electric slide).
+
+\subsection{Aim}
+To evaluate the usability (see Table 1) of our vibrotactile belt, we relied upon survey questionnaires completed by participants after the experiment. To evaluate the functionality and the performance, we relied upon the survey questionnaire completed by the researcher who worked with our team on conducting the experiment. Both surveys asked questions that directly or indirectly captured the various elements provided in Table 1. The usability questions for participants were:
+
+\begin{enumerate}
+\item[Q1.]	How easy was it to put on the belt and adjust the location of the vibration motors?
+\item[Q2.]	How easy was it to take off the belt?
+\item[Q3.]	How easy was it to recognize vibrotactile patterns corresponding to specific body movements?
+\item[Q4.]	How easy was it to move while wearing the belt?
+\item[Q5.]	How unobtrusive was the belt?
+\item[Q6.]	How comfortable was the belt?
+\item[Q7.]	How ergonomic was the belt?
+\item[Q8.]	How lightweight was the belt?
+\item[Q9.]	How well did the belt fit your waist size?
+\item[Q10.]	How would you rate the belt's physical discreetness?
+\item[Q11.]	How silent were the belt vibration motors?
+\end{enumerate}
+
+The functionality and performance questions for the researcher were:
+\begin{enumerate}
+\item[Q1.]	How easy was it to create your desired configuration of the belt, which involved adding/remove tactors, moving tactors around, wiring, etc. (take into account scalability and reconfigurability)?
+\item[Q2.]	How easy was it to design your desired vibrotactile patterns using the GUI (take into account the expressiveness of the system, and GUI usability)?
+\item[Q3.]	Was the portability of the belt, in terms of wearability and wireless capabilities, suitable for your intended application?
+\item[Q4.]	Was the durability of the belt suitable for your intended application?
+\item[Q5.]	Was the reliability of the belt suitable for your intended application?
+\item[Q6.]	Was the wireless communication latency suitable for your intended application?
+\item[Q7.]	Was the battery life suitable for your intended application?
+\end{enumerate}
+
+
+In order to determine how well the experiment itself faired, we devised 5 research hypotheses for objective evaluation:
+\begin{enumerate}
+\item[Q1.]	Subjects will achieve at least 90% accuracy at absolute identification of spatio-temporal patterns.
+\item[Q2.]	Subjects will achieve at least 85% accuracy at absolute identification of the individual moves of the modified box step dance.
+\item[Q3.]	Subjects will achieve at least 85% accuracy at absolute identification of the individual moves of the modified electric slide dance.
+\item[Q4.]	No one spatio-temporal pattern is more difficult to identify than the other.
+\item[Q5.]	The moves of neither dance-modified box step or modified electric slide-will be more difficult to recognize than the other.
+\end{enumerate}
+
+Other than the objective evaluations, participants were asked questions directed towards the dance experiment itself:
+\begin{enumerate}
+\item[Q1.]	How easy was it to recognize the vibrotactile patterns?
+\item[Q2.]	How intuitive was the mapping between vibrotactile patterns and movements you had to perform?
+\item[Q3.]	In the second part of the testing phase, you learned how to perform a dance sequence. How well did you learn the dance through use of the vibrotactile patterns?
+\item[Q4.]	If you wanted to learn how to dance someday, how likely are you to use this system?
+\item[Q5.]	Do you think others would like to use this system to learn dance?
+\item[Q6.]	Have you danced before?
+\item[Q7.]	If you have danced before, how many years?
+\item[Q8.]	What is your preferred style of dance?
+\end{enumerate}
+
+\subsection{Results}
+\subsubsection{Usability:}
+In order to understand the usability of the haptic belt through the subjective evaluation survey, we performed a one-way ANOVA on the data presented in Fig. 9. Considering a 5\% significance test on the null-hypothesis that there is no significant difference in the means of the 11 usability questions, a 10 DoF along the questions axis, and 11*(13-1) = 132 DoF along the participant axis, F test results in [F(10,132)=3.29, p=0.0008], thereby rejecting the null hypothesis. Further, as a post-hoc analysis, a Multiple Comparison Procedure on the linear one-way ANOVA (with significance level ?=0.05) shows that with respect to question 2 (How easy was it to take off the belt?) and question 4 (How easy was it to move while wearing the belt?), question 10 (How would you rate the belt's physical discreetness?) and question 11 (How silent were the belt vibration motors?) are significantly different, thereby contributing to the rejection of the null hypothesis. On reviewing the descriptive evaluation provided by the participants on the haptic belt, it was discovered that question 10 relating to the physical discreteness was rated low due to the bulkiness of controller box on the belt. For question 11, referring to the noise made by the vibration motors, a redesign of the tactor modules is necessary to ensure that the vibration motors are enclosed rigidly within the tactor module.
+
+Question 4, relating to how easy it was to move wearing the belt, had the highest mean value of 9.46 (SD 1.13). This question relates to the important aspect of whether the belt allows the participants to move freely wearing the device. Any research platform has to offer this movement flexibility so that the hindrance due to the platform does not bias the user's opinion of the experiment's research questions. It was also seen that it was easy to take off the belt (Question 2) when compared to putting it on and adjusting the location of the vibrators (Question 1). The results are obvious as removing the belt necessitated only releasing the plastic snap buckle, whereas, wearing the belt and locating the motors necessitated the participant's attention and effort.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure9.jpg}
+\caption{Usability Results.}
+\label{TIMFigure115}
+\end{figure}
+
+\subsubsection{Functionality and Performance:}
+	Fig. 10 shows the responses of the independent researcher to the seven questions on functionality and performance. Since the belt was reviewed by one independent researcher, no formal statistical analysis can be done on the results. We report here our observations from what the researcher offered as explanations to his survey. No problems were experienced by the researcher when reconfiguring the belt or designing spatio-temporal patterns. In terms of the performance of the belt, portability, durability and wireless communication latency were found to be fine. As can be seen from Fig. 10, the two important drawbacks in terms of functionality and performance were found in a) the reliability of the belt for the intended application (Question 5) and b) the battery life of the haptic belt (Question 7). The failure to meet the necessary battery life on the belt was realized by the developers through the experimental study itself. The choice of battery manufacturer turned out to be a problem and has little or nothing to do with the design of the power supply module for the belt. We also realized that the researcher found the battery issue to be the main reason to consider the reliability of the belt to be low or not up to expectation.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure10.jpg}
+\caption{Functionality and Performance Results.}
+\label{TIMFigure116}
+\end{figure}
+
+\subsubsection{Quantitative Evaluation of the Dance Experiment:}
+Fig. 11 shows participants' recognition accuracies on the 12 spatio-temporal patterns that were delivered as part of the dance experiment. The overall recognition accuracy of vibrotactile patterns, averaged across participants, was 97\% (SD: 4.6\%). The average accuracy for recognizing the individual moves of the modified box step dance was 88\% (SD: 20\%), and the average accuracy for recognizing the individual moves of the modified electric slide was 95\% (SD: 7.5\%). Fig. 11 shows the results of the experiment where the participants performed the 12 patterns based on the 12 spatio temporal sequences. These results support hypothesis (1), showing that overall, participants had no difficulty recognizing the vibrotactile patterns. Using a one-way ANOVA, no significant difference [F=1.87, p=0.0475] between average recognition accuracies of vibrotactile patterns was found. This supports hypothesis (4), and shows that no single pattern was more difficult to recognize compared to the others. These results also support hypotheses (2) and (3), showing that participants were able to link moves together to perform some basic dances. A one-way ANOVA was applied to the accuracies achieved on the two dances, revealing no significant difference [F=1.55, p=0.2255] between the average recognition accuracies of the two dances (modified box step and modified electric slide). This supports hypothesis (5), and shows that participants didn't find one dance more difficult than the other, even though the electric slide is longer and more complex than the box step. However, 3 out of the 13 participants scored very low on the modified box step dance, after which they performed very well on the more complex electric slide dance. We hypothesize that, for these participants, additional learning beyond the familiarization phase was required to learn how to link movements together; we believe that this learning took place during the modified box step dance steps. Reversing the dance sequences may have avoided this, but we feel that performing box step dance before the electric slide dance facilitated learning, as the box step dance is easier than the electric slide.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure11.jpg}
+\caption{Pattern Recognition Results for Dance Experiment.}
+\label{TIMFigure117}
+\end{figure}
+
+\subsubsection{Subjective Evaluation of the Dance Experiment:}
+	Fig. 12 shows the subjective user responses for questions 1 through 5 based on whether the participants were experienced in dancing or not. Questions 6 through 8 explored the participants dance experience level, and we found on average, participants had no experience with dancing to about 5 years. We set the average of all user experience (1.8 years) as a threshold to decide whether participants were experienced or not.
+
+	Fig. 12(a) shows the results of participants who were experienced (mean experience of 5.12 years), and (b) shows the results of participants who were inexperienced (mean experience 0.44 years). From Fig. 12, it can be seen that the participants' opinions varies widely between the experienced and inexperienced groups, except for question 1, which enquired about the ease of recognizing the spatio-temporal patterns. The mean response for question 1 was 8 (SD 1.16). When the participants were asked how intuitive (Question 2) and useful (Question 3) the spatio-temporal patterns were, the experienced group seemed to desire having this sensory augmentation more than the inexperienced group. Correlating this to the quantitative analysis, the experienced group achieved 99\% accuracy (SD: 1.8\%) in recognizing all the 12 spatio-temporal patterns, whereas, the inexperienced participants achieved 95\% accuracy (SD: 5.2\%). We hypothesize that the experienced dancers had no problem executing the dance step and hence could focus on the vibrotactile pattern, whereas the inexperienced participants had to consciously process the haptic cues and the movements. When the participants were asked how likely they would use this device again (Question 4), or suggest this device to someone else (Question 5) to learn dance, the results seem to indicate opposite of what was seen in the previous two questions. The experienced dancers found this device rudimentary and not recommendable, whereas the inexperienced dancers seem to reluctantly agree to using or suggesting a sensory augmentation.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TIMFigure12a.jpg}\\
+(a)\\
+\includegraphics[width=4in]{TIMFigure12b.jpg}\\
+(b)
+\caption{Questionnaire Results from Dance Experiment for Experienced Dance Participants (a) and Inexperienced Dance Participants (b). Responses from Q6-Q8 are excluded.}
+\label{TIMFigure118}
+\end{figure}
+
+\section{Proposed Solution}
+\begin{figure}
+\centering
+\includegraphics[width=4in]{Proxemics.jpg}
+\caption{Typical use of the social interaction assistant, a third person perspective on the use case scenario.}
+\label{TIMFigure119}
+\end{figure}
+
+
+\chapter{Sensing Facial Expressions of Interaction Partners}
+As described in Chapter 2, in the survey conducted towards understanding the non-verbal cue needs for people who are blind and visually impaired, they emphasized on the lack of access to facial expressions and mannerisms of their interaction partners. This is supported by the argument that most part of the non-verbal cues occur through visual facial mannerisms as described in Section 1.2.1 of Chapter 1. The face encodes a lot of information that is both communicative and expressive in nature. Unfortunately, the face is a very complex data generator and the encodings on the face are not very context sensitive and individualistic in nature. Evolving computing technologies have been focused on developing solutions towards understanding the nature of facial mannerisms and gestures, but most of this multi-modal affective interaction research has been focused on the development of sensors and algorithms that understand user's emotional state in a human-machine interaction scenario. These interactions are mostly unilateral in nature and directed primarily towards the machine interpreting the user's emotional state. That is, the machines become the primary consumers of the affective cues. But from the perspective of an assistive technology affect interactions have to be augmentations that enrich human-human interpersonal interaction, where the machines not only interpret communicator's affective state, but also delivers affect information through novel affect actuators to a social interaction recipient.
+
+As mentioned before most affect information is causal in nature and understanding what the expression or mannerism means requires an understanding of context when it is happening and the situation in which the communication is occurring. Our understanding of the cognitive models within the human brain that allows for the processing of complex facial expressions and emotions is very naïve. Computational models developed towards understanding context are very simplistic and performs nominally even under very well controlled laboratory conditions. Contrary to such a setting, assistive technologies provide some respite to the complexities by having the cognitive abilities of the user of the technology to make decisions. That is, while human computer interfaces need to mimic sensing, cognition and delivery, assistive technologies for people who are blind have to look at sensing and delivery alone and piggy back on human cognition. This requires precise sensing of the facial and head movements while delivering as much information back to the user as possible through technologies that do not overload the user with information but provides just the right level of information to allow them to cognitively process this information.
+
+Thus, the focus of this chapter is on the precise sensing and proficient delivery of facial mannerisms and gestures of interaction partners to the user of the Social Interaction Assistant who is blind or visually impaired. To this end, the two important aspects of sense and delivery will be handled simultaneously to meet the goal of delivering dynamic facial and head movement information to the user of the social interaction assistant.
+
+\section{Dyadic Interaction Assistant}
+Dyadic interactions represent a large portion of social interactions between individuals; and during dyadic interactions, it is very important to assess the communicator's face, head and body-based gestures and mannerisms. As presented in Figure 2, the face captures the largest portion of the non-verbal cues and the current implementation of the dyadic interaction assistant focuses on the interaction partner's face (and head). The dyadic interaction assistant is to convey important facial and head mannerisms of the interaction partner that might correlate to communicative gestures like head nod, head shake, doubt, anger, frustration, happiness, interest, etc. See Figure 10 for a typical dyadic interaction setting. The device incorporates an automated table top face tracker which acts as the input to the system while allowing any extracted data to be delivered on a wearable haptic display called the Haptic Glove.
+
+
 
 
 
