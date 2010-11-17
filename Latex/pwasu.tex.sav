@@ -28,6 +28,11 @@
 \DoubleSpacing         % memoir's double spacing
 \usepackage{pwasu}     % this package
 
+% Table footnote
+\usepackage{threeparttable}
+
+
+
 %%%%%%Added by Craig Picone to meet ASU's margin requirements
 \usepackage{graphicx}    % needed for including graphics e.g. EPS, PS
 \topmargin -0.2in        % read Lamport p.163
@@ -40,6 +45,13 @@
 %\renewcommand{\baselinestretch}{1.5} % Uncomment for 1.5 spacing between lines
 \parindent 0pt          % sets leading space for paragraphs
  %%%%%%%%
+
+%%%%%% Landscape Mode %%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lscape}
+\usepackage{pdflscape}
+
+%%%%%%%%%5 Multi Row %%%%%%%%%%%%55555
+\usepackage{multirow}
 
 %    The general sequence in your document, after you have set the data for
 %the TITLE and APPROVAL pages, and any other specifics in the preamble is:
@@ -558,6 +570,396 @@ As can be seen from Figure \ref{Fig:Figure7}, the questionnaires were biased and
 
 In the Figure \ref{Fig:Figure8}, we have assigned rank 1 to strongly disagree. This is for the sake of visual convenience. Thus, higher the average rank, higher is that group's response from the respondents. Comparing Figure \ref{Fig:Figure8} to Table \ref{Tab:Table5}, it can be seen that the same ordering of priority can be seen through mean and rank average. But the mean tends to show very little variation between responses due to the bias that is present in the questions. On the other hand the rank average provides a good comparison scale.
 
+\chapter{Detecting Stereotypic Body Mannerisms}
+STEREOTYPIC behavior refers to any mannerism or utterance that is repetitive and non functional in nature \cite{thompson_stereotyped_1995} \cite{jankovic_stereotypies_1994}. Stereotypy occurs in a large portion of the general population in various forms, although aggressive forms have been associated with sensory and cognitive disabilities in individuals. For example, individuals who are blind have the tendency to develop body rocking, head weaving, head drooping, and eye poking \cite{mcadam_self-monitoring_1993}, while, individuals who are deaf have a propensity to develop various repetitive vocal behaviors \cite{reivich_behavior_1972}\cite{haag_repetitive_1985}. Cognitive disabilities (both acquired, like brain injury and congenital, like autism and mental retardation) are associated with stereotypic behaviors like body rocking, hand flapping, jumping, and marching in place \cite{shabani_reducing_2001}.
+
+Though harmless by itself, Stereotypy can become a hindrance to social interactions and social acceptance \cite{loftin_social_2008}. Reference \cite{felps_modification_1988} introduces a 21 year old congenitally blind student who has an extreme case of body rocking (both while sitting and standing) that has become an obstruction to his career and an independent vocational evaluation states that a reduction in the student's body rocking was absolutely necessary for any form of employment. Stereotypy is a concerning problem in children, for whom peer acceptance is very important for their healthy growth and development of good social skills \cite{yu_loneliness_2005}. Children with stereotypic behaviors become victims of teasing thereby leading to social isolation, bullying and social segregation leading to negative self esteem. Aggravating these problems, social segregation and isolation have long term psychologically effects on the individual rendering an overall poor social skill set. Studies have shown that poor social skills are a leading cause for psychological problems such as depression, loneliness, and social anxiety \cite{segrin_poor_2000}.
+
+Stereotypy, like any other human behavior, is very person specific. But socio-behavioral studies have shown that there are commonalities in these behaviors and there are broad classifications that can be identified in stereotypy prevalent in the general population. Eichel \cite{eichel_taxonomy_1979} introduces taxonomy for mannerisms that people with blindness and visual impairment tend to display. He identifies that body rocking appears on top of the most commonly seen behavior stereotype. A review of literature \cite{blasch_blindisms:_1972} further supports the claim that body rocking and head related mannerisms, including head weaving and drooping, are distinctive behaviors exhibited by individuals who have sensory or cognitive disabilities.  For example, \cite{mcadam_self-monitoring_1993} discusses the case of a blind student who has developed extreme body rocking stereotype. The student bends in a 30 degree arc when he is sitting and when standing, places a foot well ahead of him and bends forward in an even greater arc. Such stereotypes can hinder the interactions of these individuals with friends and family, eventually leading to isolation and social inadequacy in their personal and professional life.
+
+\section{Focus of the chapter}\label{ResearchQuest}
+Having identified stereotypic body behaviors to be an important deterrent in social acceptance of individuals with cognitive or physical disabilities, we focus on the possibility of building a rehabilitative and/or assistive technology towards providing feedback to individuals about their stereotypic body behavior. Specifically, we focus on body rocking, as it tops the list of most widely seen stereotypic behaviors. To this end, our research aims to answer three important questions:
+
+\begin{enumerate}[1.]
+\item Is there any evidence of individuals responding to rehabilitation for reducing stereotypic body rocking behavior?
+\item If yes, what is the state-of-the-art technology available to detect and notify individuals of their rocking behavior?
+\item Is it possible to build a device that detects body rocking condition and how well can it distinguish body rocking from other functional activities of daily living?
+\end{enumerate}
+
+We answer the first question by looking into the immense literature available in behavioral psychology which has been studying behaviors in humans and their response to rehabilitation and assistance. To answer the second and third questions, we focus our attention towards wearable computing solutions that have gained a lot of momentum in the recent past. In specific, we develop an argument for an inclusive framework that uses state-of-the art motion sensors with effective learning algorithms for detecting stereotype body rocking. As mentioned above, body rocking seems to be the most widely seen stereotype behavior and we use it as a basis for our argument that current level of technology can provide immense opportunities for developing rehabilitative and assistive technology solutions for reducing or controlling stereotypic behaviors.
+
+\section{Background and Related Work}\label{BackGandRelatedWork}
+\subsection{Foundations for social rehabilitation of behavioral stereotypes}
+For over three decades, researchers in behavioral psychology have been publishing case studies on individuals who exhibit stereotypic body rocking. Most of these studies have targeted at reducing or controlling stereotypic body rocking. The methodologies used by these researchers, though varying in nature, can be broadly classified into two important categories.
+
+\subsubsection{\emph{Intervention}}: Intervention relates to any form of feedback provided to an individual at the moment of exhibiting stereotype behaviors. Researchers have attempted to reduce body rocking by providing audio and/or tactual intervention whenever an individual started to rock. They have tried aversive punishment as well as less restrictive positive feedback in such situations. Felps and Devlin \cite{felps_modification_1988} issued an annoying tone in the ears of the subject while \cite{blasch_blindisms:_1972} used a recording of stone scratching on blackboard as the feedback tone whenever the individual started rocking. Both reported that the subjects responded well to the intervention. In contrast, \cite{raver_modification_1984}, \cite{raver_modification_1984} and \cite{ohlsen_control_1978} have used verbal praise, physical guidance, verbal reprimands, and brief time-outs as intervention tools. Most of these researches have shown that intervention has worked in reducing and controlling body rocking without the use of aversive techniques. Aversive or not, these techniques validate a claim that it is possible to control or reduce body rocking (or any other stereotypic body mannerism) through feedback.
+
+\subsubsection{\emph{Self Monitoring}}: In contrast to intervention, self-monitoring does not stop at intervening into the activities of the individual. It attempts to teach these individuals subtle cognitive skills to replace the current mannerism with more socially acceptable behavior, exercise, or medications. McAdam and O`Cleirigh \cite{mcadam_self-monitoring_1993} identifies that self monitoring is a very effective way of reducing the body rock behavior. They introduce the case of a congenitally blind individual who is trained (with constant monitoring and positive feedback) to count the number of body rocks he goes through. Researchers noticed that the individual slowly waned off body rocking as he came to recognize and count his body's oscillatory movements. The research concludes that a well designed self monitoring program could benefit in reducing stereotypic body rocking. Shabani, Wilder and Flood \cite{shabani_reducing_2001} presents the case of a 12 year old child who was diagnosed with attention deficit hyperactivity disorder (ADHD) having an excessive body rocking and hand flapping stereotypy. The authors introduce an elaborate and positively rewarding self monitoring scheme that allows the child to improve on his behavior effectively. A follow-up with the child's teacher indicated that the social outlook of the child had improved over the course of rehabilitation and the case further reiterates ability to rehabilitate individuals with stereotypic behavior. Estevis and Koenig \cite{estevis_cognitive_1994} introduces a cognitive approach to reducing body rocking on an 8 year old congenitally blind child through self monitoring. Teachers or family members would tap on the shoulders of the child when he started rocking, while the child was taught to recite his own monitoring script. The authors conclude that rocking can be significantly reduced through notification to the individual combined with self monitoring.
+
+Supporting such case studies of behavioral mannerisms, psychologists have been studying intervention and feedback as an integral component of social development. Feedback can be defined as the provision of evaluative information to an individual with the aim of either maintaining present behavior or improving future behavior \cite{schloss_increasing_1994}. According to \cite{cartledge_teaching_1986}, feedback is critical to social development because after an individual receives information about his or her performance, he or she can make the necessary modifications to improve social skills. Most social skills develop during early years and in order for children to evaluate themselves accurately and to modify social skills, it is essential that children to be given feedback \cite{jindal-snape_generalization_2004} \cite{jindal-snape_using_1998}, since without clear feedback, the children are unable to identify how their social behavior differs from others or is perceived by others in the environment \cite{raver_increasing_1988}. Based on these studies there is enough evidence that feedback that offers intervention, possibly followed by a well planned self-monitoring program could benefit in reducing or controlling body rocking behavior.
+
+\subsection{Need for Assistive or Rehabilitative Technology}
+The feedback needed for intervention usually comes from people in and around these individuals who have stereotypic behavior. It has been observed that significant others in the environment often fail to give feedback, and even when they do, it is not meaningful or understandable to individuals who need rehabilitation - for example, in case of individuals who are blind or visually impaired, nodding one's head in reply to a question or gesturing \cite{jindal-snape_use_2005} would be futile. Meaningful feedback is important, not only for social interaction, but for accurate self-evaluation by individuals. Most times people within the vicinity of individuals with needs fail to offer these crucial feedbacks. Many times, the individuals with needs feel guilty or obligated to ask for help from others in their environment. The ability to augment or replace this significant individual(s) in the environment with a reliable feedback mechanism is the aim and goal of all assistive technology solutions (In an independent online survey conducted by \cite{krishna_systematic_2008}, the researchers found that people who are visually impaired would expressed the need for an assistive technology that would provide feedback on their own social mannerisms and offer a potential to improve their social outlook). Focusing on the development of such a technology that effectively detects body rocking and provides feedback to an individual is the goal of this paper. While we focus only on intervention through feedback, in the Future works section we highlight some ideas for extending the proposed framework into self-monitoring tools.
+
+\subsubsection{Past research into building assistive technology to detect body rocking}\label{BandRWC}
+Transon \cite{transon_using_1988} developed a head mounted switching device that would trigger a tone when an individual starts to rock. The device consisted of a metal box with a mercury level switch that detects any bending actions. The feedback was provided with a tone generator that was also located inside the metal box.  The entire box was mounted on a strap that the user wears around his/her head such that the speaker aligns with the ears. The authors tested it on a congenitally blind individual who had severe case of body rocking and they conclude that the use of any assistive technology is useful only temporarily while the device is in use. They state that the body rocking behavior returned to baseline levels as soon as the device was removed. Since the time of this experiment, behavioral psychology studies have explored short term feedback for rehabilitation \cite{jindal-snape_use_2005} and these studies support the above observation that short time feedback is most of the times detrimental to rehabilitation and subject's case invariably worsens. Unfortunately, due to the prohibitively large design of the device developed by these researchers, it was impossible to have the individual wear the device over long durations. Thus, any technology developed for behavioral rehabilitation should be small and researchers should target the use over long durations in such a way that the feedback is slowly tapered off over a significantly longer duration of time.
+
+Similar to the pervious experiment, \cite{felps_modification_1988} used a 'Drive Alert' (driver alerting system that monitors head droop) to detect body rocking and provide feedback to a congenitally blind 21 year old student. The research concludes that they were able to control body rocking effectively, but the device could not differentiate between body rocks from any other functional body movements. This device, primarily built to sense drooping in drivers provides no opportunity to differentiate between a body rock and a droop. Use of such devices could only be negative on the user as a large number of false alarms would only discourage an individual from using any assistive technology.
+Assessing these above technologies, we resort to two important design dimensions in every step of the building of our assistive device.
+
+\begin{enumerate}[1.]
+\item Size and placement of the device: We argue that any assistive device developed for the sake of improving social outlook of an individual should respect the appearance of a person in his/her social circle and should provide a solution that is discrete and non intrusive. We call this the Acceptance dimension.
+\item Ability to discriminate rocking from other functional activities:  False feedback even over a short period of time could be discouraging for an individual to continue using his/her assistive tool. It is imperative that the device be able to distinguish between the stereotypy from any other form functional activities effectively to keep the motivation of device use high. We call this the Motivation dimension.
+\end{enumerate}
+
+The proposed methodology uses these two design dimensions while addressing the need of a new assistive technology.
+
+\section{Methodology}
+Recently, human activity detection and recognition using motion sensors have taken a front seat in technology and behavioral research. This is due to the availability of micro mechanized electronic systems (MEMS) that have started to implement complex mechanical systems at a micro scale on integrated circuit chips. These offers advantages like reliability, cheaper cost of production, smaller form factor and above all extremely precise measurement with least or no maintenance. One such sensor is the accelerometer that is capable of measuring the effect of gravity on three perpendicular axes. When mounted on any moving object, the opposing motion (opposing gravity) of the entity allows these sensors to measure the speed and direction of motion. Integrating the magnitude and orientation information over time it is possible to accurately measure the exact motion pattern of the moving entity. These accelerometers have been used by researchers to track motion activity in almost every joint of the human body \cite{bao_activity_2004}. Researchers have used single, double or triple orthogonal axis accelerometers to detect various activities of humans. They all follow the same underlying supervised learning architecture with difference in learning algorithm used. A simplified representation of the same is shown in Figure \ref{JMMFigure1}.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{JMMFigure1.JPG}
+\caption{Training and testing phases of a typical learning framework found in literature.}
+\label{JMMFigure1}
+\end{figure}
+
+ Five bi-axial accelerometers are used in \cite{bao_activity_2004}, along with a decision tree classifier to detect and recognize 20 different activities of daily life. They report a recognition rate of over 85\%. In \cite{ravi_activity_2005}, the authors evaluated different meta classifiers for recognizing seven lower body motion patterns from a single biaxial accelerometer data and reported the best performance for boosted Support Vector Machines (SVM) \cite{cristianini_introduction_2000} with a subject independent accuracy of 64\%. Since each dimension of the accelerometer data is similar to audio waveform, popular Hidden Markov Models \cite{rabiner_tutorial_1989} can be used to learn motion patterns. Reference \cite{amft_detection_2005} used HMM to learn the accelerometer data for specific tasks performed by participants and reports a recognition rate of over 90\%. In \cite{chambers_hierarchical_2002}, researchers have used two accelerometers placed on the arms of Kung-Fu practitioner and report a recognition accuracy of 3 Kung-Fu arm movements at 96.6\%. Research work \cite{seon-woo_lee_activity_2002} demonstrates the use of accelerometer data to not only recognize activity, but also localize people within a building. Though the technique is rudimentary, the authors report a high accuracy in recognition of activities while localization still remains a research topic. \cite{foerster_detection_1999} have demonstrated the use of accelerometers in not only monitoring movements, but also static posture of the human body. They report a recognition rate of 95\% using four sensors placed on the chest, thigh, forearm and wrist of participants. Extending this work, \cite{arteaga_low-cost_2008} have demonstrated an assistive technology solution that uses low cost accelerometers on stroke patients and monitor their posture and walking patterns. Using this information, a feedback is provided to the patient to self-correct their posture and walking pattern.
+
+Based on all these findings, we hypothesize that an accelerometer based motion detector should be capable of capturing body rocking data and should be able to discriminate between rocking and other functional activities. We specifically chose the motion sensor and learning algorithm based on previous work done at our institute with the detection of seven simple body activities \cite{krishnan_analysis_2008}. Researchers analyzed the performance of discriminative classifiers like AdaBoost, Support Vector Machines and RLogReg for recognizing these seven different activities and concluded that AdaBoost classifier offered the best recognition rate at 94\%. Based on these results, in this paper, we extend the use of AdaBoost learning framework into body rock detection. We discuss the use of two AdaBoost classifiers - the classical AdaBoost \cite{polikar_ensemble_2006} and the more recent Modest AdaBoost \cite{vezhnevets_modest_2005} for detecting and discriminating body rocking effectively. Our focus in the paper is directed towards understanding the generalization capabilities of the two AdaBoost learning models so that false positive rate is reduced while keeping the true positive rate high.
+
+\subsection{Motion Sensors - Design choice along the ``Acceptance'' Dimension}
+In order to keep the motion detector discrete, we have chosen state-of-the-art tri-axial accelerometer package, ZStar III \cite{_drm103_2008}, marketed by Freescale Semiconductor. The accelerometer is shown in the inset of Figure \ref{JMMFigure2}. The device (including a coin battery as a power source) is an inch in diameter and less than eighth of an inch in thickness thereby allowing an elegant integration into everyday clothing. Figure \ref{JMMFigure2} shows the typical use of the accelerometer in the proposed application for detecting body rocking. The accelerometer has a very high sensitivity with protection against excessive g-force damage. The sensors wirelessly connect to a PDA and/or cell phone through IEEE 802.15.4 (ZigBee) wireless standards. The use of low power consumption electronics for both acceleration sensing and wireless communication allows this device to work for hours at length on a single coin battery. Further, the advanced sleep mode implementations allow the device to stay at nano watt power mode during non-operation. The proposed solution allows for prolonged use of the device to the effect of an assistive technology thereby maintaining a longer duration feedback based rehabilitation regimen.
+
+\begin{figure}
+\includegraphics[width=4.5in]{JMMFigure2.JPG}
+\centering
+\caption{The proposed hardware for use in the detection of body rocking stereotypic behavior. The accelerometer, in comparison with a US quarter, is shown in the inset. The three axes marked in the image shows the orientation of the accelerometer as it is placed on the head.}
+\label{JMMFigure2}
+\end{figure}
+
+processing element for the current study was a Windows Mobile Operating System based PDA running on a 400Mhz XScale processor. The software components (described in detail in Section III-B of the proposed solution were placed on the PDA that could be carried by a user without any extra load. The proposed assistive technology is a planned addition on top of the Social Interaction Assistant proposed in \cite{krishna_wearable_2005}.  The software component implementation is generic to be ported to most modern cell phones that possess enough processing power, but is always underutilized for its capacity. The feedback (an audio tone) is currently being provided through a Bluetooth headset that is paired with the processing element. The choice of this feedback device was again based on the idea that Bluetooth headset has everyday acceptance among the masses and is no longer seen as a social distraction. In future, we plan to explore the use of delivery modalities that transcends the typical visual and audio medium. We intend to use haptic cues to inform the participant not only their rocking behavior but more complex self-monitoring routines that could allow the user to withdraw from the rocking behavior effectively.
+
+\begin{figure}
+\includegraphics[width=5.5in]{AccelerometerData.jpg}
+\caption{Data stream for the tri-axial accelerometer. The three streams correspond to the three axes. The figure shows non-rocking events followed by rocking and then followed by non-rocking.}
+\label{JMMFigure3}
+\end{figure}
+
+Figure \ref{JMMFigure3} shows a typical data stream collected from the accelerometer shown in Figure 2 during rocking and non-rocking functional behavior. The three data streams correspond to the three axis of the accelerometer each sampled at 100 Hz. It can be seen that the data stream under rocking conditions are visually distinguishable when compared to non-rocking functional movements. The following section highlights our choice of learning framework and features we extracted from these data stream in order to achieve reliable rocking and non-rocking discrimination.
+
+\subsection{Extracting Body Rock Information from Motion Sensor Data - Design choice along the ``Motivation'' Dimension}
+As mentioned before, the work presented in this paper builds on top of the work presented in \cite{krishnan_analysis_2008} where the authors use two accelerometers placed one at the ankle and the other on the thigh to distinguish between simple activities like walking, running, standing etc. They proved the use of an aggregated AdaBoost classifier system that was built out of simple linear classifiers to achieve activity recognition. Unfortunately, the work does not provide any assessment on the generalization capabilities of their aggregate classifier. We extend their work into the problem of body rock detection using only one accelerometer placed on the back of the person's head. Below, we discuss the various features that we extract from the accelerometer data and introduce the variant of AdaBoost that generalizes on its training set very well (termed Modest AdaBoost). We show results of our experiments and discuss our reasoning to believe how the new AdaBoost framework is able to generalize on body rocking data when compared to classical AdaBoost used by [36].
+
+\subsubsection{Features:}
+Since we are using a tri-axial accelerometer, we obtain three orthogonal axis data through rocking and non-rocking events. In order to capture the temporal variation in the acceleration data, we accumulate the input stream on each axis for a fixed duration T seconds and all features are extracted on this packet of acceleration data. As a part of the assessment, we determine the best packet length for the task of body rock detection. Further, successive packets are extracted with a fixed duration of overlap between them.
+
+We chose five sets of features that were extracted on the three axes of accelerometer data. For the sake of clarity, we cluster these sets into two groups based on whether they were chosen due to popular use in the accelerometer data processing community or due to the author's insights into the body rocking data.
+
+\emph{Group 1 - Popular features used by the motion analysis research community \cite{bao_activity_2004} \cite{krishnan_analysis_2008}:}
+We choose the following three sets each of which were applied on all three axes of acceleration data, henceforth referred to as x, y, z axis data.
+
+\begin{enumerate}[1.]
+\item Mean of x, y, z data over the duration of packet.
+\item Variance of x, y, z data over the duration of packet.
+\item Correlation between the three axes (x-y, y-z and z-x) over the duration of packet.
+\end{enumerate}
+
+\emph{Group 2 - Authors insights into body rocking data:} Inspecting the accelerometer data shown in Figure 3, it can be seen that the Z axis changes from random signal pattern to more of a sinusoidal pattern when the individual's behavior transitions from non-rocking to rocking. Thus we choose two sets of features which we hope would capture this non-sinusoid to sinusoid transition between events. These features include
+
+\begin{enumerate}[1.]
+\setcounter{enumi}{3}
+\item The first order differential power on all three axes - Sinusoidal signals change gradually over time such that the averaged sum square energy in the temporal first order differential of the signal should be less when compared to a random signal where the first order differential can have very high variations and hence higher power.
+\item Fourier Transform variance and kurtosis on the Z-axis only - An effective way to capture power distribution of a signal into sinusoids is by using Fourier Transform. We hypothesize that the non-sinusoid to sinusoid transitions can be captured by quantitatively measuring the power spread spectrum of the Z-axis accelerometer data. We model the power spread to be a Gaussian and extract the variance and kurtosis (peaking) of the spread to determine if there is rocking or not.
+\end{enumerate}
+
+
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Features for Body Rock Detection: Group 1}
+\label{JMMTable1}
+\small\addtolength{\tabcolsep}{-3pt}
+\begin{tabular}{|l|c|c|c|} \hline
+\multicolumn{4}{|c|}{\textbf{Group 1}}\\
+\hline
+\hline
+  \textbf{Set 1} & \multirow{9}{*}{$M_x=\frac{1}{N}\sum\limits_{i=1}^{N}x_i$} & \multirow{3}{*}{1. $M_x$} & \multirow{9}{*}{\includegraphics[width=3in]{Mean.jpg}}\\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+  \textbf{Definition:} Mean on the temporal dimension. &                      & \multirow{3}{*}{2. $M_y$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 1, 2, 3     &                      & \multirow{3}{*}{3. $M_z$}                       &       \\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+\hline
+  \textbf{Set 2} & \multirow{9}{*}{$V_x=\frac{1}{N-1}\sum\limits_{i=1}^{N}\left(x_i - M_x\right)^2$} & \multirow{3}{*}{4. $V_x$} & \multirow{9}{*}{\includegraphics[width=3.5in]{Variance.jpg}}\\
+                 &                                                            &                        &       \\
+                                  &                                                            &                        &       \\
+  \textbf{Definition:} Variance on the temporal dimension. &                  & \multirow{3}{*}{5. $V_y$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 4, 5, 6     &                      &  \multirow{3}{*}{6. $V_z$}                      &       \\
+                   &                                                            &                        &       \\
+                                    &                                                            &                        &       \\
+\hline
+  \textbf{Set 3} & \multirow{9}{*}{$C_{xy}=\frac{1}{N-1}\sum\limits_{i=1}^N \left(x_i-M_x\right) \left(y_i-M_y\right)$} & \multirow{3}{*}{7. $C_{xy}$} & \multirow{9}{*}{\includegraphics[width=3.5in]{Corr.jpg}}\\
+                 &                                                            &                        &       \\
+                                  &                                                            &                        &       \\
+  \textbf{Definition:} Cross Correlation between axes. &                      & \multirow{3}{*}{8. $C_{yz}$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 7, 8, 9     &                      &   \multirow{3}{*}{9. $C_{xz}$}                     &       \\
+                   &                                                            &                        &       \\
+                                    &                                                            &                        &       \\
+\hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Features for Body Rock Detection: Group 2}
+\label{JMMTable2}
+\small\addtolength{\tabcolsep}{-3pt}
+\begin{tabular}{|p{2.5in}|c|c|c|} \hline
+\multicolumn{4}{|c|}{\textbf{Group 2}}\\
+\hline
+\hline
+  \textbf{Set 4} & \multirow{9}{*}{$D_x=\sqrt{\sum\limits_{1=2}^N\left(x_i-x_{i-1}\right)^2}$} & \multirow{3}{*}{10. $D_x$} & \multirow{9}{*}{\includegraphics[width=3in]{DiffPower.jpg}}\\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+  \textbf{Definition:} First order differential power. &                      & \multirow{3}{*}{11. $D_y$} &       \\
+  \textbf{Axes affected:} x, y, z                      &                      &                        &       \\
+  \textbf{Number of contributing features:} 3          &                      &  &       \\
+  \textbf{Feature Identification Numbers:} 10, 11, 12     &                      & \multirow{3}{*}{12. $D_z$}                       &       \\
+                 &                                                            &                        &       \\
+                 &                                                            &                        &       \\
+\hline
+  \textbf{Set 5} & & \multirow{5}{*}{13. $F_{v_z}$} & \multirow{5}{*}{\includegraphics[width=3.5in]{FFTVar.jpg}}\\
+  & If, $Freq_k=\left\{-\frac{\gamma}{2},\ldots,0,\ldots,\frac{\gamma}{2}\right\} $ &  &       \\
+  &&&\\
+  & $\gamma$ is the sampling Frequency & & \\
+  \textbf{Definition:} Gaussian fit power spread spectrum - Variance and Kurtosis. & $X_k=\sum\limits_{i=1}^Nx_n e^{-\frac{2\pi i}{N}kn}$, $k=\{1,\ldots,N\}$ &  &       \\
+  \textbf{Axes affected:}z  &    &  \multirow{5}{*}{14. $F_{k_z}$}& \multirow{5}{*}{\includegraphics[width=3.5in]{FFTKurt.jpg}} \\
+  \textbf{Number of contributing features:} 2          & then  &  &       \\
+  \textbf{Feature Identification Numbers:} 13, 14     &                      &                        &       \\
+  &   \textbf{FFT Variance:} $F_v = \sum\limits_{i=1}^N X_k(Freq_k)^2$  &                        &       \\
+  &     &                        &       \\
+  &  \textbf{FFT Kurtosis:} $F_k = \sum\limits_{i=1}^N X_k(Freq_k)^4$   &                        &       \\
+  &     &                        &       \\
+\hline
+\end{tabular}
+\end{table}
+\begin{SingleSpace}
+The figures shown in the last column plots mean values of data from positive rocking samples and negative rocking samples as bars. The variance on the same is shown as vertical error lines around the mean. The lighter (blue when viewed in color) shaded bar are values from the positive class, whereas the darker (pink when viewed in color) bar are values from the negative class.
+\end{SingleSpace}
+\end{landscape}
+
+Thus, the features used in our study can be categorized as belonging to two groups with three sets in Group 1and two sets in Group 2. Each set has varying number of features based on what parameter the set is extracting from the temporal accelerometer data. Based on the descriptions above, the entire feature set has a total of 14 features. We identify each of these by their respective Feature Identification Numbers. Table 1 shows the two groups and the different sets under the group with typical values of these features under rocking and non-rocking behavior.
+
+\subsubsection{Learning Algorithm:}
+As discussed in introduction of this section, we compare the performance of two AdaBoost learning frameworks to determine which one can generalize the best on the training data. The two algorithms are introduced briefly below. For further details, the reader is referred to appropriate references provided within the subsections.
+
+\emph{(a) Classical AdaBoost Learning Framework:}
+AdaBoost learns any classification problem by working with a set of weak classifiers. Weak classifiers are those classifiers that use simple decision steps to categorize data into one of two pools - positives or negatives (In all our experiments, we used a three level decision tree \cite{yuan_induction_1995} as the simple classifier). AdaBoost proceeds by ranking the labeled training data as being simple to complex based on how many weak classifiers are needed to learn each of the examples. The process continues on an iterative manner until all the training examples are learnt or till the allowed number of learning cycles are exhausted. Let, $X$ be the input to a learning algorithm, in our case the features extracted as explained in the previous step, and $Y$ be the label of what class the data belongs to, in our case, $Y = \{1, -1\}$ implying {rocking, non-rocking}, respectively. Values at each dimension of input $X$ can be considered to characterize the incoming data in some manner and the task of the learning algorithm is to learn these representational values of the input dimensions that allow the algorithm to distinguish between rocking and non-rocking. AdaBoost does this learning by using a large set of simple (weak) learners (or classifiers) that act on each of the dimension of the input data with the determined goal of distinguishing rocking from non-rocking. The final decision of the complete learning module is a combined opinion of all the simple learners that make up the system. The beauty of AdaBoost implementation is that the human intervention into the learning process stops at identifying what simple (weak) learners to use and what feature pool to operate on. Selection of number of weak learners, selection of input dimension on which the weak learners have to act, and the confidence to place on the decision of each of the weak learner is all determined by the algorithm during the training phase. Once the algorithm is trained, the final learnt rocking/non-rocking classifier can be represented as
+
+\begin{equation}
+L(x)= \mbox{sign} \left[\sum\limits_{i=1}^N w_i f_i(x)\right]
+\end{equation}
+
+where,
+x: An instance of all possible rocking patterns X.
+L: The final learnt classifier that can distinguish input x as rocking or non-rocking.
+f: The simple (weak) learner.
+N: The total number of weak learners that make up the complete learner L.
+w: Weight associated with each weak learners output. This corresponds to the confidence placed in each weak learner by the Boosted system.
+
+From a learning perspective, in each step of the iterative learning, the AdaBoost algorithm implements a greedy optimization to pick a set of weak learners that minimize exponential classification error of the picked simple classifiers as shown below
+
+\begin{equation}
+Error_k=\sum\limits_{i=1}^M e^{-y_i.L(x_i)}
+\end{equation}
+
+where,
+	y: Label of the input instance x
+	M: Total number of examples in the training set
+	k: Learning iteration number
+
+
+Further, based on each iterative step, a distribution $(D_m)$ is created over the training set examples to represent their complexity (difficulty to learn). For example, in a given iteration, an example that could be solved is assigned a lower distribution weight while, a sample that was not learnt in that iteration step is assigned a higher weight. The lower weight on the learnt example implies that this example will be stressed less in the next learning iteration while all other examples which could not be solved will become the focus for picking new weak learners. Moving from one iteration to the next, all the weak learners from the past k iterations are added into a pool of selected weak learners leading up to the final classifier $L$.
+
+\emph{(a) Modest AdaBoost Learning Framework:}
+All learning algorithms, including AdaBoost suffer from the problem of over fitting or over learning. This is due to the fact that training sample sets of positives and negatives can never be representative of all the possible samples that the algorithm will face in its operational life span. Since the learning is limited to a restricted set of examples, there is always the problem of over fitting into this small set and thereby loosing the ability to generalize their learnt knowledge to all other possible examples. To this end, many alternatives have been proposed to AdaBoost that will allow the algorithm to generalize better. We introduce Modest AdaBoost \cite{vezhnevets_modest_2005} which was recently proposed towards better generalization capabilities and has been shown to be powerful on various machine learning datasets. Unlike the classic AdaBoost where the distribution penalizes only examples that are not learnt in the previous iteration, Modest AdaBoost penalizes for examples that are not learnt and also examples that are learnt very well (over fitting). This is done by projecting all the examples in the training pool on to four separate distributions,
+
+\begin{enumerate}[1.]
+\item $P_m^{(+1)}=P_{(D_m)} (y=+1 \cap L(x))$: Probability of the learner, as measured on $D_m$, predicting an input instance $x$ correctly as being rocking when the label also represents it to be rocking.
+\item $P_m^{(-1)}=P_{(D_m)} (y=-1 \cap L(x))$: Probability of the learner, as measured on $D_m$, predicting an input instance $x$ correctly as being non-rocking when the label also represents it to be non-rocking.
+\item $\bar{P}_m^{(+1)}=P_{(\bar{D}_m)} (y=+1 \cap L(x))$: Probability of the learner, as measured in the inverse distribution $(\bar{D}_m)$, predicting an input instance $x$ correctly as being rocking when the label also represents it to be rocking.
+\item $\bar{P}_m^{(-1)}=P_{(\bar{D}_m)} (y=-1\cap L(x))$: Probability of the learner, measured in the inverse distribution $(\bar{D}_m)$, predicting an input instance $x$ correctly as being rocking when the label also represents it to be rocking.
+\end{enumerate}
+
+Conditions 1 and 2 penalize the classifier on examples that are not learnt during a training iteration, whereas 3 and 4 penalize examples that are already learnt in the previous iteration which was learnt again in the current iteration. Combining these four measures as
+
+\begin{equation}
+f_m=\left(P_m^{(+1)} (1-\bar{P}_m^{(+1)})-P_m^{(-1)} (1-\bar{P}_m^{(-1)})\right)(x)
+\end{equation}
+
+provides a means for penalizing the learner for not classifying an example and also for over fitting an example. This provides a means for modest learning of the final combined classifier $L$. We hypothesize that the choice of a learning algorithm that generalizes well will provide the opportunity to allow better non-rocking detection thereby hopefully increasing discrimination ability for the assistive device. This would directly reflect upon the motivation of the user to get feedback only when he/she is rocking and not performing other functional activities.
+
+\section{Data Collection}\label{DataCollection}
+Two separate data collections were carried out, one in a controlled setting while the other in a more uncontrolled naturalistic everyday research laboratory setting. The controlled setting data collection was used for training and lab testing the device, whereas the uncontrolled naturalistic setting was used to determine how well the learning algorithm was able to generalize when used for an extended period of time as an assistive tool.
+\subsection{Controlled Data Collection:}
+Data was collected on ten participants who did not have any known stereotype rocking behavior. The goal of the experiments was to collect data for training the system to differentiate rocking from non-rocking behavior. To this end, we devised three separate data collection routines where the subjects were required to do rocking and non-rocking tasks as naturally as possible. The details of the routines are as follows:
+
+\subsubsection{	Routine A: Rocking data} \label{RoutineA}
+Participants were allowed to choose from a rocking chair or a stool or sitting on the ground, so they could rock as comfortably and naturally as possible. We found some cultural preferences to the way people choose to rock. The subjects were asked to rock for a total of 20 complete cycles.
+
+\subsubsection{Routine B: Non-rocking data}\label{RoutineB}
+The participants were asked to do activities that did not involve rocking. They moved around the experimental setup reading posters, operating computers, interacting with everyday office equipments and included some functional body motions similar to rocking like, stooping down to pick up objects, rapidly bending down to pick up objects etc. Data was collected for a total of 30 seconds.
+
+\subsubsection{Routine C: Test data}\label{RountineC}
+Since rocking can happen at any given instance, we collected data where subjects did various activities and interspersed them randomly with rocking. The goal is to determine how fast and accurately our system can detect such rocking occurrences. In all of these data streams, rocking instances were manually identified and marked for the sake of ground truth. Figure 3 shows the combination of rocking and non-rocking activities by the participants. It can be noticed that there is a clear demarcation between the two activity zones.
+
+\subsection{Uncontrolled Data Collection:}\label{Uncontrolled}
+The uncontrolled data was collected towards testing the generalization capabilities of the learnt system. To this end, the body rock detection system was worn by the primary author during everyday laboratory activities. Body rock detection was provided as a feedback through a pair of headphones in the form of an audio beep. Five trails of four separate ten minute data collections were done. Two of the four were done with classic AdaBoost whereas the other two were done with Modest AdaBoost. Further, under each of these two classifiers, one data collection measured how many false positives were detected, whereas the second data collection counted how many rocking actions went undetected. During all these data collection the researcher counted the number of false positive or false negatives using a handheld thumb counter. This experiment was conducted purely to test the generalization capability of the learnt classifier.
+
+\section{Experiments}
+Experiments were carried out for comparing the performance of the classic AdaBoost framework with Modest AdaBoost for the specific tasks of determining
+\begin{enumerate}[a.]
+\item The length of a temporal packet of data needed to effectively distinguish rocking from non-rocking.
+\item The accuracy with which the two classifiers can distinguish between rocking from non-rocking.
+\item The generalization capabilities of the two classifier systems.
+\end{enumerate}
+
+To this end the rocking samples collected in Routine A (discussed under Section \ref{RoutineA}) and Routine B (discussed under \ref{RoutineB}) were used as labeled positive (rocking) and negative (non-rocking) data for training the AdaBoost classifiers. Data collected under Routine C (discussed in Section\ref{RoutineC}) were used for testing the learnt classifiers. The results from this analysis were used for determining a. and b. above. We varied the packet length on the data stream and determined the recognition rate on the test data. While the packet length was varied, a constant overlap was maintained between successive packets. This overlap was determined empirically to be 0.5 seconds or 50 samples (100 Hz sampling rate). With the ground truth already provided for the test set, we were able to determine the accuracy of the two classifiers.
+
+To determine c., we resorted to using the data collected in Section \ref{Uncontrolled}. The primary author of the paper used the device to collect false positive and false negative data in order to determine how well the classifiers generalized on the training data. Further, we analyzed the working of the two classifiers in a piece wise manner by breaking down the features into individual sets (Sets 1 through 5 as identified in Table \ref{JMMTable1} and Table \ref{JMMTable2} and Set 6 that included all 14 features) and understanding the functional ability of the classifiers under individual feature sets. This allowed for an in-depth analysis of the workings of the two classifiers. In Section VII, we discuss the generalization capability of the two classifiers by heuristic analysis of the piecewise operational modes.
+
+All our experiments were carried out with the aid of the AdaBoost Matlab library developed by Graphics and Media Lab at the Dept. of Computer Science at Moscow State University [42].
+
+\section{Results}\label{ResultsJMM}
+Figures \ref{JMMFigure4} and Figure \ref{JMMFigure5} shows the box plot \cite{benjamini_opening_1988} of packet length (T secs) versus recognition rate for classic AdaBoost and Modest AdaBoost frameworks, respectively. The abscissa represents the length of the data stream (in seconds) used for the analysis, while the ordinate represents the recognition rate. Training and testing were all carried out on the data collected as depicted in Section \ref{DataCollection}. The horizontal line inside the box represents the median (second quartile) of recognition rates over the ten subject's data. The lower end of box presents the first quartile (25 percentile) and the upper end of the box represents the third quartile (75 percentile). Thus the box surrounds the center 50 percentile ranges of recognition results. This box is also called the Inter-Quartile Range (IQR = third quartile - first quartile). The dotted extremity represents the minimum and maximum recognition rate under a certain packet length among the ten subjects. Any outlier (an outlier is greater than 1.5 IQR from the median in any direction) is marked by an asterisk.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{PacketLength-Gentle.jpg}
+\caption{Packet length to recognition rate comparison under the classic AdaBoost framework.}
+\label{JMMFigure4}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{PacketLength-Modest.jpg}
+\caption{Packet length to recognition rate comparison under the Modest AdaBoost framework.}
+\label{JMMFigure5}
+\end{figure}
+
+
+Table \ref{JMMTable3} presents the results from the experiment carried out to determine the generalization capabilities of the two classifiers. The entries in the table are counts as measured by the researchers of the number of false positives and false negatives counted manually while using the device for body rock detection and feedback. Five trails were carried out of 10 minutes each for determining these numbers. False positives represent the number of times the device falsely gave feedback when the user was not involved in rocking. It is important that this rate be minimal as too many false feedbacks would be discouraging for the user to continue using the assistive aid. The false negative represents the number of times the device did not detect that the user was rocking. This metric could be correlated to the failure of the device to perform its functional task.
+
+
+\begin{table}
+\centering
+\begin{threeparttable}
+\begin{tabular}{|l|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Generalization Capabilities & Classic AdaBoost & Modest AdaBoost \\
+  \hline
+
+  False Positives per Minute\tnote{1} & 86 & 44 \\
+  False Negatives per Minute\tnote{1} & 20 & 9 \\
+  \hline
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item[1] Averaged over 10 minutes
+\end{tablenotes}
+\end{threeparttable}
+\label{JMMTable3}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{AUCClassic.jpg} \\
+(a)\\
+\includegraphics[width=4in]{ROC-Classic.jpg} \\
+(b)
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{FeatureSetRecogRate-Gentle.jpg}\\
+(c)\\
+\includegraphics[width=4in]{ClassicClassifierAnalysis.jpg}\\
+(d)
+\caption{Piecewise performance analysis of the classic AdaBoost classifier framework; (a) Recognition rates under use of individual feature sets; (b) The Receiver Operating Characteristics (ROC) under the use of individual feature sets; (c) Area under the curve (AUC) for each feature set as estimated from the ROC; (d) The number of simple classifiers used by the aggregated AdaBoost classifier. Each set and each feature representation in the classifier pool are separately marked. In all the graphs Set 1 through 5 are as explained by Tables \ref{JMMTable1} and \ref{JMMTable2}. Set 6 represents a set containing all 14 features from Tables \ref{JMMTable1} and \ref{JMMTable2}.}
+\label{JMMFigure7}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{AUCModest.jpg} \\
+(a)\\
+\includegraphics[width=4in]{ROC-Modest.jpg} \\
+(b)
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{FeatureSetRecogRate-Modest.jpg}\\
+(c)\\
+\includegraphics[width=4in]{ModestClassifierAnalysis.jpg}\\
+(d)
+\caption{Piecewise performance analysis of the classic AdaBoost framework; (a) Recognition rates under use of individual feature sets; (b) The Receiver Operating Characteristics (ROC) under the use of individual feature sets; (c) Area under the curve (AUC) for each feature set as estimated from the ROC; (d) The number of simple classifiers used by the aggregated AdaBoost classifier; Each set and each feature representation in the classifier pool are separately marked. In all the graphs Set 1 through 5 are as explained by Tables \ref{JMMTable1} and \ref{JMMTable2}. Set 6 represents a set containing all 14 features from Tables \ref{JMMTable1} and \ref{JMMTable2}.}
+\label{JMMFigure8}
+\end{figure}
+
+
+Figure \ref{JMMFigure7} and Figure \ref{JMMFigure8} shows the piecewise analysis of the classic AdaBoost and Modest AdaBoost frameworks. Subfigure (a) shows the performance of each feature set considered one at a time in detecting body rocking; feature set 6 corresponds to the use of all 14 features together. For example, column 1 in Figure \ref{JMMFigure7}(a) represents the recognition performance using only temporal mean along x, y and z axis tested on all ten subjects. The bar graph in (a) shows the mean performance rate while the superimposed box plot shows the performance at first, second and third quartile as discussed earlier.
+
+Subfigure (b) represents the Receiver Operating Characteristics (ROC) \cite{fawcett_introduction_2006} for the same six feature sets as in subfigure (a). ROC is plotted a false positive rate (FPR) versus true positive rate (TPR). The better the performance, the curve moves towards the (1,1) co-ordinate. For example, in Figure \ref{JMMFigure7}(b) Set 6 with all features is performing better than feature set 1 as Set 6 curve is closer towards (1,1) while the feature set 1 curve is almost along the diagonal of the plot. The diagonal of the ROC plot represents a recognition rate of 50\% i.e. random pick.
+
+Subfigure (c) is a derivate of the ROC curves in subfigure (b). Each bar in the graph is representing the area under the corresponding curve (AUC) in (b). An area of 1 represents an ideal classifier with no false positive or false negatives, while an area of 0.5 represents randomness in the classifier output. AUC can be used to immediately determine the curve with the best performance.
+
+Subfigure (d) is an understanding of how the aggregated AdaBoost classifier is built. As discussed above, AdaBoost classifier uses a collection of simple classifiers to achieve the final classifier. We plotted the number of times a particular feature is being used by the aggregate classifier. Further, the features are grouped into 5 sets corresponding to the five feature sets identified in Table 1. Columns belonging to the same set have the same top count which corresponds to the total simple classifiers used form that set. Each column within the set represents how many classifiers are used on each feature within that set. The count on the individual feature is represented by the bottom color along each column. For example, consider set 4 in Figure \ref{JMMFigure8}(d), features with identification number 10, 11 and 12 form this set (corresponding to the first order differential power from x, y and z axis of the accelerometer data) and have a top count of 646 simple classifiers. Within the group, the z axis differential power dominates the other two by having a count of 374.
+
+\section{Discussion of Results}
+Before discussing the results of the experiments conducted on the accelerometer data, we step back to the first research question that we identified in Section \ref{ResearchQuest}, Is there any evidence of individuals responding to rehabilitation for reducing stereotypic body rocking behavior? From the Psychology background work presented in Section \ref{BackGandRelatedWork}, we believe that there is enough evidence that individuals with sensory or cognitive impairment respond to rehabilitation through assistive devices. Specifically, the experiments highlighted in Section \ref{BandRWC} support the claim that body rocking can be decreased by providing immediate feedback to the individual.
+
+Regarding the second research question, what is the state-of-the-art technology available to detect and notify individuals of their rocking behavior? We identified the state-of-the-art motion sensor that is small enough in form factor to become part of one's everyday clothing. Further, we designed this device to be discrete so that the user does not feel any intrusion into their everyday activities. The software can be run on any mobile processing device that the user already carries like a cell phone or PDA. This allows the users to use the device without carrying any additional load. Our solution to this research question caters to the Acceptance design dimension that we identified in Section \ref{BandRWC} 1.
+
+Focusing on the third research question, Is it possible to build a device that detects body rocking condition and how well can it distinguish body rocking from other functional activities of daily living? We turn our attention to the various results presented in Section \ref{ResultsJMM} to prove the efficiency of our proposed method in detecting body rocking and distinguishing it from other non-rocking behavior.
+
+\subsection{Packet Length, and Detection Efficiency}
+From Figure \ref{JMMFigure4} and Figure \ref{JMMFigure8}, it is evident that the recognition rates for the two classifiers are comparable and the median recognition rate ranges from 89\% to 95\%. Based on these numbers, the best performance was achieved at a sample length of 1.5 seconds or 150 samples per packet. Packet length of 150 samples has the highest recognition rate on both the classifiers. Comparing this packet with the 2 seconds packet length or 200 samples per packet, we notice that the 2 seconds packet is very close behind and it has a smaller 1.5 IQR box. Thus, the variance in the recognition rates between 10 subjects is lesser in the 200 samples packet length, implying that the results are more consistent. Further, we noticed that the average natural rocking motion of the 10 subjects was around 27 rocks a minute (i.e. 27 rocks in 60 seconds or 2.22 seconds per rock; this is supported by results from \cite{newell_variability_1999}), which implies that a latency of 2 seconds was the closest to the time duration of a single rocking action. As mentioned earlier, all experiments were carried out with an overlap 0.5 seconds or 50 samples between successive packets. Combing these two results, we have
+
+\begin{enumerate}
+\item \emph{Optimum Packet Length}
+2 seconds or 200 samples with 0.5 seconds or 50 samples overlap between packets.
+\item \emph{Best Detection Rate}
+@ 2 seconds packet length $\approx$ 94\% under both classifiers
+\end{enumerate}
+
+\subsection{Generalization Capabilities}
+From Figure \ref{JMMFigure4} and Figure \ref{JMMFigure8}, it is very difficult to distinguish any performance benefits between classic AdaBoost and Modest AdaBoost. But analyzing Table \ref{JMMTable3}, we can notice a dramatic difference in the performance of the Modest AdaBoost when compared to classic AdaBoost. The number of false positives is down from 86 to 44 over a ten minute period. That is, the user receives nearly half less number of false feedback with Modest AdaBoost framework when compared to the classic AdaBoost. This was not evident in the detection tests that were carried out with data collected from Routine C (Section IV - A 3.). We asked the question of why there is an increased performance in Modest AdaBoost and why there is a discrepancy between the test results from Routine C and the naturalistic data capture (Section \ref{RountineC}). The answer to these questions lies in the generalization capabilities of the two classifiers. We noticed that most of the false feedback provided by classic AdaBoost occurred while the user was sitting and not rocking. In hind sight, we realized a slight discrepancy in our non-rocking (negative class) data collection. While capturing data under Routine B (as explained in Section \ref{RoutineB}) the participants were asked to perform various tasks that did not involve rocking to use as negative training set. We realized that most of the participants performed tasks that involved some form of walking or standing activities while they did no activity that involved sitting and not rocking. Thus, just sitting activity was a non-rocking event that was not represented in the training data set. We hypothesize that classic AdaBoost over trained on the non-rocking data while Modest AdaBoost, which is penalized for learning the training set very well, had a better generalization. Extending this heuristic analysis to a more formal analysis, we look at the piecewise performance of the two classifiers. Comparing the ROC curves from Figure \ref{JMMFigure7} (b) with Figure  \ref{JMMFigure8} (b), it can be seen that feature set 2 - Variance and feature set 4 - First Order Differential Power performed the best following Set 2 - All features set. Now comparing Figure  \ref{JMMFigure7} (d) with Figure  \ref{JMMFigure8} (d) it can be seen that Modest AdaBoost distributed it simple classifiers such that there were more classifiers representing the two feature sets 2 and 4. On the other hand, the classic AdaBoost's distribution of simple classifiers is unexplainable as feature set 1 - Mean - seems to have received more representation than set 4. Mean had the worst performance as an individual feature set as can be verified by the ROC curve that comes closest to the diagonal on the plot hinting that the performance is barely above random guess. Contrasting this with Modest AdaBoost selection, Mean is in the bottom two sets among the five feature sets. This bad performance of Mean as a feature set can be understood by looking at the graph shown in the first row and last column of Table 1. It can be seen that the Mean acceleration values between rocking and non-rocking are not significantly different. Table \ref{JMMTable1} Row 2 and Table \ref{JMMTable2} Row 1 highlights the capabilities of Variance and First Order Differential Power in distinguishing rocking from non-rocking. This is further confirmed by the ROC graph.
+
+
+Feature 4 having the highest distribution of simple classifiers under Modest AdaBoost (Figure  \ref{JMMFigure8} (d)), within this feature set we can see that the highest number of simple classifier is assigned to feature 12 which corresponds to First Order Differential Power on z axis. As can be verified from Figure \ref{JMMFigure3}, the best distinguishing character between non-rocking and rocking patterns seems to be the transformation of a random signal pattern on z-axis to a deterministic sinusoidal waveform. If this can be the true identity of the rocking data stream, feature 12 would capture it in the best possible manner by measuring the power in the first order differential of the temporal signal. Using this feature as the most reliant feature would provide a good basis to support the final classifier selected by Modest AdaBoost.
+
+
+We are now ready to answer the last research question stating that the use of approximately 2 seconds (or 200 samples @ 100 Hz sampling rate) packet length used with a learning framework biased towards generalized learning (like Modest AdaBoost) would be a good assistive technology solution for detecting and giving feedback towards stereotypic body rocking. We can extend the same argument to other body mannerisms that involve any form of repetitive body part movement.
+
+\section{Conclusion}
+ In this chapter, we have addressed the topic detecting stereotypic body mannerisms, specifically body rocking, and propose a technology solution for providing an assistive technology that may reduce or control body rocking. We have discussed the hardware and software components of the proposed system in detail and offer a thorough analysis on the learning framework that provides generalization benefits to allow this framework to be extended to detection of any body mannerism. Investigations are in progress to determine how incoming samples of acceleration data can be labeled automatically by the system based on the AdaBoost classifier's classification confidence metrics. This would provide opportunity for self-learning \cite{raina_self-taught_2007} modes where the device can readily understand and learn data points that were not available in the training set. Combining such self-learning into a generalized learner would provide immense opportunities for not only body mannerism detection, but for solving future data mining problems where typical lab setting training data collection would just not be sufficient to train a robust classifier.
+
+From the assistive technology perspective, we plan to integrate a well planned self-monitoring as a part of the proposed device. We are exploring the broad area of human communication to determine the best cognitive self-correction techniques that could augment the proposed solution. . We have implemented a rudimentary form of real-time body rock counter, as discussed in [3], but we have not yet tested it for its feedback capabilities.
+
+
 \chapter{Person-Specific Face Recognition}
 face recognition has the potential for recognizing
 people at a distance, without their knowledge or cooperation.  For
@@ -606,25 +1008,7 @@ is moderately challenging, but still potentially within the realm of
 possibility. When people who are blind enter a room, they might find
 it awkward to initiate social interactions because they don't know
 how many people are in the room, who those people are, or where they
-are standing \footnote{In order to understand the assistive
-technology requirements of people who are blind, we conducted two
-focus group studies (one in Tempe, Arizona USA - 9 participants, and
-another in Tucson, Arizona USA - 11 participants) which included:
-\begin{enumerate} \item students and
-adult professionals who are blind,
-\item parents of individuals who are blind \item professionals
-who work in the area of blindness and visual
-impairments\end{enumerate}There was unanimous agreement among
-participants that a technology that would help people with visual
-impairment to recognize people or hear them described would
-significantly enhance their social life.}\hspace*{0.1in}\footnote{To
-quote some candidates opinion about face recognition technology in a
-social setting:
-\begin{itemize}
-\item ``It would be nice to walk into a room and immediately get to
-know who are all in front of me before they start a conversation''.
-\item One young man said, ``It would be great to walk into a bar
-and identify beautiful women''.\end{itemize}}. A robust, wearable
+are standing. A robust, wearable
 face recognition device could solve this problem.
 
 This problem is simplified considerably by the fact that, on a
@@ -729,7 +1113,7 @@ when recognizing faces.
 
 Another important area of research in the human perception of faces
 has been in understanding the medical condition of face blindness,
-called {\it prosopagnosia}.  People with prosopagnosia are unable to
+called \emph{prosopagnosia}.  People with prosopagnosia are unable to
 recognize faces including their own. Until recently it was assumed
 that prosopagnosia was acquired often as a result of a localized
 stroke. However new evidence suggests that a substantial portion of
@@ -957,14 +1341,13 @@ is larger than the variance in the $y$ direction.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width=2.3in] {GaussianDiffVar.eps}
-\includegraphics [width=2.3in] {GaussianDiffVarImage.eps}
-(a) \hspace{2.25in} (b) \caption{(a) 3D representation of a Gaussian
+\includegraphics [width=5.5in] {FRFig1.JPG}
+\caption{(a) 3D representation of a Gaussian
 mask; $\sigma_x = 10$, $\sigma_y = 15$ and $\theta=0$
 \newline (b)Image of the Gaussian mask $\sigma_x = 10$, $\sigma_y
-= 15$ and $\theta=0$} \label{Fig:G}
+= 15$ and $\theta=0$}
+\label{Fig:G}
 \end{center}
-
 \end{figure}
 
 
@@ -989,11 +1372,7 @@ except for the $\pi$ radian phase shift.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width=2in] {Sinusoid.eps}
-\includegraphics [width=1.25in] {SinusoidRealImage.eps}
-\includegraphics [width=1.25in] {SinusoidImagImage.eps} \newline
-(a) \hspace{1.65in} (b) \hspace{1in} (c)
-
+\includegraphics [width=5.5in] {FRFig2.JPG}
 \caption{(a)3D representation of a Sinusoid $S_{\omega,\theta}$
 \newline (b)Image representation of the real part of the complex
 Sinusoid $\Re\left\{S_{\omega,\theta}\right\}$\newline (c)Image
@@ -1027,12 +1406,7 @@ the complex filter.
 
 \begin{figure}
 \begin{center}
-\includegraphics [width = 2in] {GaborFilter.eps}
-\includegraphics [width = 1.25in] {GaborFilterRealImage.eps}
-\includegraphics [width = 1.25in] {GaborFilterImagImage.eps}\newline
-(a) \hspace{1.65in} (b) \hspace{1in} (c)
-
-
+\includegraphics [width = 5.5in] {FRFig3.JPG}
 \caption{(a)3D representation of a Gabor filter
 $\Psi_{\omega,\theta}$ \newline (b)Image representation of the real
 part of Gabor filter  $\Re\left\{\Psi_{\omega,\theta}\right\}$
@@ -1056,7 +1430,7 @@ C_{\Psi}\left(x,y\right) = \sqrt{\left(I \left(x,y\right) *
 \label{Eqn:GaborCoeff}
 \end{equation}
 
-In our experiments, a {\it Gabor filter bank} was created by varying
+In our experiments, a \emph{Gabor filter bank} was created by varying
 three parameters of $\Psi_{\omega,\theta}$: (1) the frequency
 parameter $\omega$, (2) the orientation parameter $\theta$, and (3)
 the variance parameter $\sigma$. We chose five values for each of
@@ -1103,8 +1477,8 @@ Algorithm (GA) searches for the optimum solution by randomly picking
 parameter sets and evolving newer ones from the best performers.
 This happens over many generations, hopefully resulting in the
 optimum set of parameters. To start the search, the GA generates a
-random set of {\it parents}. Each parent is characterized by the
-presence of a {\it chromosome}. The chromosome internally encodes
+random set of \emph{parents}. Each parent is characterized by the
+presence of a \emph{chromosome}. The chromosome internally encodes
 all the parameters that are used by the parent to perform the
 intended operation. In our case, the intended operation is face
 recognition. The parent uses the parameters that are found in its
@@ -1113,11 +1487,11 @@ images.
 
 Based on the ability of these features to distinguish a face from
 all others in the database, the parent is ranked within its
-population. This rank is also referred to as the {\it fitness of the
+population. This rank is also referred to as the \emph{fitness of the
 parent}. The ranking of all the parents, based on their fitness,
 marks the end of a generation, and a new generation needs to be
 created. New generations are formed based on three important aspects
-of GAs, {\it Retention}, {\it Cross Over} and {\it Mutation}. A
+of GAs, \emph{Retention}, \emph{ Cross Over} and \emph{ Mutation}. A
 portion of the newer generation is derived from the older
 generation, using the above mentioned methods, and the rest of the
 new generation is created randomly, maintaining the same overall
@@ -1212,7 +1586,7 @@ recognition.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 2in] {chromosome.eps}
+\includegraphics[width = 2in] {Chromosome.JPG}
 \caption{A typical chromosome used in the proposed method.}
 \label{Fig:Chromosome}
 \end{center}
@@ -1235,7 +1609,7 @@ evolution.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {firstgeneration.eps}
+\includegraphics[width = 4in] {Ranking.JPG}
 \caption{Stages in the creation of the first generation of parents}
 \label{Fig:FirstGen}
 \end{center}
@@ -1251,7 +1625,7 @@ recognition using Gabor filters for feature extraction.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 3in] {latergeneration.eps}
+\includegraphics[width = 4in] {Rankorder.JPG}
 \caption{Deriving newer parents from the current generation}
 \label{Fig:laterGen}
 \end{center}
@@ -1280,7 +1654,7 @@ reproduction.
 
 \subsubsection{Creation of the newer generations}
 The newer generations are created from the older population using
-{\it clones}, {\it mutants}, and {\it crossovers} of the fittest
+\emph{ clones}, \emph{ mutants}, and \emph{ crossovers} of the fittest
 parents. To better search for the optimal parameter set, new random
 parents are created every generation. This reduces the likelihood
 that the algorithm will get stuck in a local minimum in the search
@@ -1295,14 +1669,14 @@ number of clones, mutants, and corssovers are controlled by the
 following parameters:
 
 \begin{enumerate}
-\item {\it Cloning Rate} This parameter controls the number of
+\item \emph{ Cloning Rate} This parameter controls the number of
 parents from the previous generation that will be retained without
 undergoing any changes in their genetic structure.
-\item{\it Crossover Rate} This parameter controls the number of offsprings that will be
+\item\emph{ Crossover Rate} This parameter controls the number of offsprings that will be
 born from crossing the parents from the previous generation.
-\item {\it Mutation Rate} This parameter determines how many of the
+\item \emph{ Mutation Rate} This parameter determines how many of the
 crossed offsprings will then be mutated.
-\item {\it Cloning Distribution Variance} After determining the number of offsprings be to cloned, the
+\item \emph{ Cloning Distribution Variance} After determining the number of offsprings be to cloned, the
 index of the parents for cloning are chosen using a normal
 distribution random number generator, with the mean zero and
 variance equal to this parameter. Since the parents from the
@@ -1310,7 +1684,7 @@ previous generation have been rank ordered in descending order of
 fitness, the zeroth parent will be the top performer (which
 coincides with the mean of the random number generator, and has the
 highest probability of getting picked).
-\item{\it Crossover Distribution Variance} This parameter (which is
+\item\emph{ Crossover Distribution Variance} This parameter (which is
 similar to the Cloning Distribution Variance) is used to choose the
 index of the parents who will undergo Crossover.
 \end{enumerate}
@@ -1318,14 +1692,14 @@ index of the parents who will undergo Crossover.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {crossover.eps}
+\includegraphics[width = 4in] {Crossover.JPG}
 \caption{Typical crossing of two parents to create an offspring}
 \label{Fig:CrossOver}
 \end{center}
 \end{figure}
 
 
-\subsubsection{{\it Crossover}}
+\subsubsection{\emph{ Crossover}}
 As discussed earlier, the parents for crossover are selected by a
 random number generator. Between these parents, the points of
 crossover are determined by choosing locations of crossover
@@ -1341,12 +1715,12 @@ the parents.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {mutation.eps}
+\includegraphics[width = 2in] {Mutation.JPG}
 \caption{Mutation of a newly created offspring} \label{Fig:Mutation}
 \end{center}
 \end{figure}
 
-\subsubsection{{\it Mutation}}
+\subsubsection{\emph{ Mutation}}
 In addition to the process of crossover at gene boundaries in the
 chromosome, the values of some parameters within the genes might be
 changed randomly. This is illustrated in the Figure
@@ -1388,18 +1762,18 @@ from which the required frames are extracted.
 
 \begin{figure}[h]
     \centering
-        \includegraphics[scale=0.7]{facepix.eps}
+        \includegraphics[scale=0.7]{Setup.JPG}
     \caption{The data capture setup for FacePix(30)}
     \label{fig-facepix}
 \end{figure}
 
 This database has face images of 30 people across a spectrum of pose
 and illumination angles. For each person in the database, there are
-three sets of images. (1) The {\it pose angle set} contains face
-images of each person at pose angles from +90º to –90º (2) The {\it
+three sets of images. (1) The \emph{ pose angle set} contains face
+images of each person at pose angles from +90º to –90º (2) The \emph{
 no-ambient-light set} contains frontal face images with a spotlight
 placed at angles ranging from +90º to -90º with no ambient light,
-and (3) The {\it ambient-light set} contains frontal face images
+and (3) The \emph{ ambient-light set} contains frontal face images
 with a spot light placed at angles placed at angels from +90º to
 -90º in the presence of ambient light. Thus, for each person, there
 are three face images available for every angle, over a range of 180
@@ -1412,7 +1786,7 @@ available.
 
 \begin{figure}[h]
     \centering
-        \includegraphics[width = 4in]{facepiximages.eps}
+        \includegraphics[width = 5.5in]{FacePix.JPG}
     \caption{Sample face images with varying pose and illumination from the FacePix(30) database}
     \label{fig:facepiximages}
 \end{figure}
@@ -1427,17 +1801,7 @@ recognize the test images.
 
 \begin{figure}[h]
     \centering
-        \subfigure[]{
-          \label{fig-embeddingsa}
-          \includegraphics[scale=0.7]{Img1.eps}}
-     \hspace{.05in}
-     \subfigure[]{
-          \label{fig-embeddingsb}
-          \includegraphics[scale=0.7]{Img2.eps}}
-     \hspace{.05in}
-     \subfigure[]{
-          \label{fig-embeddingsc}
-          \includegraphics[scale=0.7]{Img3.eps}}
+    \includegraphics[width=5.5in]{FacePixVariant.JPG}
     \caption{Sample frontal images of one person from the FacePix(30) Database}
     \label{facepix}
 \end{figure}
@@ -1472,7 +1836,7 @@ by a single Gabor feature detector.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale = 0.5] {Res2.eps}
+\includegraphics[scale = 0.5] {Result.JPG}
 \caption{A face image marked with 5 locations where unique Gabor
 features were extracted} \label{fig:facedots}
 \end{center}
@@ -1533,7 +1897,7 @@ parents within the same generation) then the distance measure $D$
 will be the largest for that parent, making its fitness $F$ large.
 If the correlation between the extracted features is small, $C$ will
 be small, which also makes the fitness $F$ large. Thus, the
-correlation measure serves as a {\it penalty} for extracting the
+correlation measure serves as a \emph{penalty} for extracting the
 same feature from the face image multiple times, even though that
 particular feature might be the best distinguishing feature on that
 face.
@@ -1569,7 +1933,7 @@ of Gabor filters, positive images and negatives images set
 respectively for the individual $i$.
 
 \begin{itemize}
-\item {\bf The Distance Measure} $D$ \\
+\item \textbf{ The Distance Measure} $D$ \\
 A parent trying to recognize an individual $i$ with a Gabor filter
 set $S_i$ can be thought of as a transformation that projects all of
 the face images from the image space to a $M$-dimensional space,
@@ -1602,13 +1966,13 @@ of Gabor filters.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 3in] {fitness.ps}
+\includegraphics[width = 3in] {Distance.JPG}
 \caption{Distance Measure $D$ for the fitness function}
 \label{Fig:Fitness}
 \end{center}
 \end{figure}
 
-\item {\bf The Correlation Measure} $C$ \\
+\item \textbf{ The Correlation Measure} $C$ \\
 In the proposed method, in addition to having every parent selecting
 the Gabor filter set $S_i$ that can best distinguish the individual
 $i$ from all the others in the database, it is necessary to ensure
@@ -1668,7 +2032,7 @@ between pairs if locations. Thus, as the covariance between the
 image points decreases, the value of the overall correlation
 parameter decreases.
 
-\item {\bf Normalization of} $D$ {\bf and} $C$ \\
+\item \textbf{ Normalization of} $D$ \textbf{ and} $C$ \\
 In order to have an equal representation of both the Distance
 measure $D$ and the Correlation term $C$ in the fitness function, it
 is necessary to normalize the range of values that they can take.
@@ -1685,7 +2049,7 @@ where, the $Max$ represents the maximum value of $D$ or $C$ in a
 single generation across all the parents and $Min$ refers to the
 minimum value.
 
-\item {\bf Weighting factors} $w_{D}$ {\bf and} $w_{C}$ \\
+\item \textbf{ Weighting factors} $w_{D}$ \textbf{ and} $w_{C}$ \\
 The influence of the two components of the fitness function are
 controlled by the weighting factors $w_{D}$ and $w_{C}$. We used the
 relation $w_{C} = 1 - w_{D}$ to control the two parameters
@@ -1711,7 +2075,7 @@ rate achieved in each case.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {Result2.eps}
+\includegraphics[width = 4in] {Result1FR.JPG}
 \caption{The recognition rate versus the number Gabor feature
 detectors} \label{RES1}
 \end{center}
@@ -1727,7 +2091,7 @@ each case.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width = 4in] {Result1.eps}
+\includegraphics[width = 4in] {Result2FR.JPG}
 \caption{Recognition rate with varying $w_D$}\label{RES2}
 \end{center}
 \end{figure}
@@ -1780,13 +2144,7 @@ decreases toward the boundaries of the images.
 
 \begin{figure}[h]
     \centering
-        \subfigure[]{
-          \label{loga}
-          \includegraphics[scale=0.2]{res1.eps}}
-          \hspace{.05in}
-     \subfigure[]{
-          \label{logb}
-          \includegraphics[scale=0.2]{res1b.eps}}
+    \includegraphics[width=4in]{ResultFR.JPG}
     \caption{10 and 20 person-specific features extracted for a particular individual in the database}
     \label{fig:result1}
 \end{figure}
@@ -1809,7 +2167,7 @@ encounter.
 A wearable social interaction assistant prototype has been
 implemented using a pair of eyeglasses equipped with a tiny
 unobtrusive video camera in the nose bridge ~\cite{Sreekar2005} and
-is shown in Figure \ref{Susie}. The analog video output from this
+is shown in Section XXXX, Figure XXXX. The analog video output from this
 camera is passed through a video digitizer, and the resulting
 digital stream is then fed into a portable laptop computer. A video
 stream is captured of any person standing in front of the
@@ -1818,13 +2176,6 @@ violajones01}, is then used to identify the frames of the video
 where a face is present, and to localize that face within that
 frame. This detected face is then cropped and compared to indexed
 faces in a face database.
-
-\begin{figure}[h]
-    \centering
-        \includegraphics[scale=0.7]{susie.eps}
-        \caption{Wearable face recognition platform}
-    \label{Susie}
-\end{figure}
 
 
 The performance of the proposed approach for identifying
@@ -2618,7 +2969,7 @@ As we are interested in person localization, it can be clearly seen that the obj
 \end{figure}
 
 \subsection{Object/Camera Motion}
-Traditionally, most computer vision applications use a static camera where strong assumptions of motion continuity and temporal redundancy can be made. But in our problem, as it is very natural for users to move their head continuously, the mobile nature of the platform causes abrupt motion in the image space (Compare Figure \ref{Fig:Figure107} and Figure \ref{Fig:Figure108}). This is similar to the problem of working with low frame rate videos or the cases where the object exhibits abrupt movements. Recently, there has been an increase of interest in dealing with this issue in computer vision research [5] [6-8]. Some important applications which are required to meet real-time constraints, such as teleconferencing over low bandwidth networks, and cameras on low-power embedded systems, along with those which deal with abrupt object and camera motion like sports applications are becoming common place [8]. Though solutions have been suggested, person localization through low frame rate moving cameras still remains an active research topic.
+Traditionally, most computer vision applications use a static camera where strong assumptions of motion continuity and temporal redundancy can be made. But in our problem, as it is very natural for users to move their head continuously, the mobile nature of the platform causes abrupt motion in the image space (Compare Figure \ref{Fig:Figure107} and Figure \ref{Fig:Figure108}). This is similar to the problem of working with low frame rate videos or the cases where the object exhibits abrupt movements. Recently, there has been an increase of interest in dealing with this issue in computer vision research \cite{leibe_combined_2004} \cite{porikli_object_2005} \cite{yuan_li_tracking_2007} \cite{Kwon:2008:TAM:1478392.1478425}. Some important applications which are required to meet real-time constraints, such as teleconferencing over low bandwidth networks, and cameras on low-power embedded systems, along with those which deal with abrupt object and camera motion like sports applications are becoming common place \cite{Kwon:2008:TAM:1478392.1478425}. Though solutions have been suggested, person localization through low frame rate moving cameras still remains an active research topic.
 
 \begin{figure}[h]
 \centering
@@ -2644,28 +2995,28 @@ As the SIA is intended to be used in uncontrolled environments, changing illumin
 Given the nature of this problem, in this chapter we focus on the problem of robust localization of a single person approaching a user of the SIA using full-body features. Issues arising due to cluttered background along with object and camera motion have been handled towards providing robustness. In the following section we discuss some of the important related work in the computer vision literature.
 
 \section{Related Computer Vision Work in Person Localization and Tracking}
-Historically, two distinct approaches have been used for searching and localizing objects in videos. On one hand, there are detection algorithms which focus on locating an object in every frame using specific spatial features which are fine tuned for the object of interest. For example, haar-based rectangular features [9] and histograms of oriented gradients [10] can develop detectors that are very specific to objects in videos. On the other hand, there are tracking algorithms which trail an object using generic image features, once it is located, by exploiting the temporal redundancy in videos. Examples of features used by tracking algorithms include color histograms [11] and edge orientation histograms [12].
+Historically, two distinct approaches have been used for searching and localizing objects in videos. On one hand, there are detection algorithms which focus on locating an object in every frame using specific spatial features which are fine tuned for the object of interest. For example, haar-based rectangular features \cite{violajones01} and histograms of oriented gradients \cite{dalal_histograms_2005} can develop detectors that are very specific to objects in videos. On the other hand, there are tracking algorithms which trail an object using generic image features, once it is located, by exploiting the temporal redundancy in videos. Examples of features used by tracking algorithms include color histograms \cite{nummiaro_adaptive_2003} and edge orientation histograms \cite{porikli_integral_2005}.
 
 \subsection{Detection Algorithms}
 As mentioned previously, detection algorithms exploit the specific, distinctive features of an object and apply learning algorithms to detect a general class of objects. They use information related to the relative feature positions, invariant structural features, characteristic patterns and appearances to locate objects within the gallery image. But, when the object is complex, like a person, it becomes difficult for these algorithms to achieve generality thereby failing even under minute non-rigidity. A number of human factors such as variations in articulation, pose, clothing, scale and partial occlusions make this problem very challenging.
 
-When assumptions about the background cannot be made, learning algorithms which take advantage of the relative positions of body parts are used to build classifiers. The kind of low-level features generally used in this context are gradient strengths and gradient orientations [13,10], , entropy and haar-like features. Some of the well-known higher level descriptors are histogram of oriented gradients [10] and covariance features [14]. Efforts have been made to make these descriptors scale invariant as well.
+When assumptions about the background cannot be made, learning algorithms which take advantage of the relative positions of body parts are used to build classifiers. The kind of low-level features generally used in this context are gradient strengths and gradient orientations \cite{zhu_fast_2006} \cite{dalal_histograms_2005}, , entropy and haar-like features. Some of the well-known higher level descriptors are histogram of oriented gradients \cite{dalal_histograms_2005} and covariance features \cite{porikli_p.:_2007}. Efforts have been made to make these descriptors scale invariant as well.
 
-In order to make these algorithms real-time, researchers have popularly resorted to two kinds of approaches. One category includes part-based approach such as Implicit Shape Models [5] and constellation models [15] which place emphasis on detecting parts of the object before integrating, while the other category of algorithms tries to search for relevant descriptors for the whole object in a cascaded manner[16].  Shape-based Chamfer matching [25] is a popular technique used in multiple ways for person detection as the silhouette gives a strong indication of the presence of a person. In recent times, Chamfer matching has been used extensively by the person detection and localization community. It has been applied with hierarchically arranged templates to obtain the initial candidate detection blocks so that they can be analyzed further by techniques such as segmentation, neural networks, etc. It has also been used as a validation tool to overcome ambiguities in detection results obtained by the Implicit Shape Model technique [18].
+In order to make these algorithms real-time, researchers have popularly resorted to two kinds of approaches. One category includes part-based approach such as Implicit Shape Models \cite{leibe_combined_2004} and constellation models \cite{fergus_object_2003} which place emphasis on detecting parts of the object before integrating, while the other category of algorithms tries to search for relevant descriptors for the whole object in a cascaded manner\cite{yang_fast_2005}.  Shape-based Chamfer matching \cite{barrow_parametric_2006} is a popular technique used in multiple ways for person detection as the silhouette gives a strong indication of the presence of a person. In recent times, Chamfer matching has been used extensively by the person detection and localization community. It has been applied with hierarchically arranged templates to obtain the initial candidate detection blocks so that they can be analyzed further by techniques such as segmentation, neural networks, etc. It has also been used as a validation tool to overcome ambiguities in detection results obtained by the Implicit Shape Model technique \cite{leibe_pedestrian_2005}.
 
 \subsection{Tracking Algorithms}
 Assuming that there is temporal object redundancy in the incoming videos, many algorithms have been proposed to track objects over frames and build confidence as they go. Generally they make the simplifying assumption that the properties of the object depend only on its properties in the previous frame, i.e. the evolution of the object is a Markovian process of first order. Based on these assumptions, a number of deterministic as well as stochastic algorithms have been developed.
 
-Deterministic algorithms usually apply iterative approaches to find the best estimate of the object in a particular image in the video sequence [16]. Optimal solutions based on various similarity measures between the object template and regions in the current image, such as sum of squared differences (SSD), histogram-based distances, distances in eigenspace and other low dimensional projected spaces and conformity to particular object models, have been explored [16]. Mean Shift is a popular, efficient optimization-based tracking algorithm which has been widely used.
+Deterministic algorithms usually apply iterative approaches to find the best estimate of the object in a particular image in the video sequence \cite{yang_fast_2005}. Optimal solutions based on various similarity measures between the object template and regions in the current image, such as sum of squared differences (SSD), histogram-based distances, distances in eigenspace and other low dimensional projected spaces and conformity to particular object models, have been explored \cite{yang_fast_2005}. Mean Shift is a popular, efficient optimization-based tracking algorithm which has been widely used.
 
-Stochastic algorithms use the state space approach of modeling dynamic systems and formulate tracking as a problem of probabilistic state estimation using noisy measurements [20]. In the context of visual object tracking, it is the problem of probabilistically estimating the object's properties such as its location, scale and orientation by efficiently looking for appropriate image features of the object. Most of these stochastic algorithms perform Bayesian filtering at each step for tracking, i.e. they predict the probable state distribution based on all the available information and then update their estimate according to the new observations. Kalman filtering is one such algorithm which fixes the type of the underlying system to be linear with Gaussian noise distributions and analytically gives an optimal estimate based on this assumption. As most tracking scenarios do not fit into this linear-Gaussian model and as analytic solutions for non-linear, non-Gaussian systems are not feasible, approximations to the underlying distribution are widely used from both parametric and non-parametric perspective.
+Stochastic algorithms use the state space approach of modeling dynamic systems and formulate tracking as a problem of probabilistic state estimation using noisy measurements \cite{arulampalam_tutorial_2002}. In the context of visual object tracking, it is the problem of probabilistically estimating the object's properties such as its location, scale and orientation by efficiently looking for appropriate image features of the object. Most of these stochastic algorithms perform Bayesian filtering at each step for tracking, i.e. they predict the probable state distribution based on all the available information and then update their estimate according to the new observations. Kalman filtering is one such algorithm which fixes the type of the underlying system to be linear with Gaussian noise distributions and analytically gives an optimal estimate based on this assumption. As most tracking scenarios do not fit into this linear-Gaussian model and as analytic solutions for non-linear, non-Gaussian systems are not feasible, approximations to the underlying distribution are widely used from both parametric and non-parametric perspective.
 
-Sequential monte-carlo based Particle Filtering techniques have gained a lot of attention recently. These techniques approximate the state distribution of the tracked object using a finite set of weighted samples using various features of the system. For visual object tracking, a number of features have been used to build different kinds of observation models, each of which have their own advantages and disadvantages. Color histograms[11], contours[21], appearance models, intensity gradients[22], region covariance, texture, edge-orientation histograms, haar-like rectangular features [16] , to name a few. Apart from the kind of observation models used, this technique allows for variations in the filtering process itself. A lot of work has gone into adapting this algorithm to better perform in the context of visual object tracking.
+Sequential monte-carlo based Particle Filtering techniques have gained a lot of attention recently. These techniques approximate the state distribution of the tracked object using a finite set of weighted samples using various features of the system. For visual object tracking, a number of features have been used to build different kinds of observation models, each of which have their own advantages and disadvantages. Color histograms \cite{nummiaro_adaptive_2003}, contours \cite{isard_condensation_1998}, appearance models, intensity gradients \cite{birchfield_elliptical_1998}, region covariance, texture, edge-orientation histograms, haar-like rectangular features \cite{yang_fast_2005}, to name a few. Apart from the kind of observation models used, this technique allows for variations in the filtering process itself. A lot of work has gone into adapting this algorithm to better perform in the context of visual object tracking.
 	
 While both the areas of detection and tracking have been explored extensively, there is an impending need to address some of the issues faced by low frame rate visual tracking of objects. Especially in the case of SIA, person localization in low frame rate video is of utmost importance. In this paper, we have attempted to modify the color histogram comparison based particle filtering algorithm to handle the complexities that occur mobile camera on the Social Interaction Assistant.
 
 \section{Conceptual Framework}
-As discussed in the previous section, detection and tracking offer distinctive advantages and disadvantages when it comes to localizing objects. In the case of SIA, thorough object detection is not possible in every frame due to the lack of computational power (on a wearable platform computing platform) and tracking is not always efficient due to the movement of the camera and the object's (interaction partner's) independent motion. Though there are clear advantages in applying these techniques individually, the strengths of both these approaches need to be combined in order to tackle the challenges posed by the complex setting of the SIA. In the past, a few researchers have approached the problem of tracking in low frame rate or abrupt videos by interjecting a standard particle filtering algorithm with independent object detectors [23]. In our experience, the Social Interaction Assistant offers a weak temporal redundancy in most cases. We exploit this information trickle between frames to get an approximate estimate of the object location by incorporating a deterministic object search while avoiding the explicit use of pre-trained detectors. Due to the flexibility in the design, particle filtering algorithms provide a good platform to address the issues arising due to complex data. These algorithms give an estimate of an object's position by discretely building the underlying distribution which determines the object's properties. But, real-time constraints impose limits on the number of particles and the strength of the observation models that can be used. This generally causes the final estimate to be noisy when conventional particle filtering approaches are applied. Unless the choice of the particles and the observation models fit the underlying data well, the estimate is likely to drift away as the tracking progresses. To mitigate these problems faced in the use of the SIA, we propose a new particle filtering framework that gets an initial estimate of the person's location by spreading particles over a reasonably large area and then successively corrects the position  though a deterministic search in a reduced search space. Termed as Structured Mode Searching Particle Filter (SMSPF), the algorithm uses color histogram comparison in the particle filtering framework at each step to get an initial estimate which is then corrected by applying a structured search based on gradient features and chamfer matching. The details of this algorithm are described in the next section.
+As discussed in the previous section, detection and tracking offer distinctive advantages and disadvantages when it comes to localizing objects. In the case of SIA, thorough object detection is not possible in every frame due to the lack of computational power (on a wearable platform computing platform) and tracking is not always efficient due to the movement of the camera and the object's (interaction partner's) independent motion. Though there are clear advantages in applying these techniques individually, the strengths of both these approaches need to be combined in order to tackle the challenges posed by the complex setting of the SIA. In the past, a few researchers have approached the problem of tracking in low frame rate or abrupt videos by interjecting a standard particle filtering algorithm with independent object detectors \cite{okuma_boosted_2004}. In our experience, the Social Interaction Assistant offers a weak temporal redundancy in most cases. We exploit this information trickle between frames to get an approximate estimate of the object location by incorporating a deterministic object search while avoiding the explicit use of pre-trained detectors. Due to the flexibility in the design, particle filtering algorithms provide a good platform to address the issues arising due to complex data. These algorithms give an estimate of an object's position by discretely building the underlying distribution which determines the object's properties. But, real-time constraints impose limits on the number of particles and the strength of the observation models that can be used. This generally causes the final estimate to be noisy when conventional particle filtering approaches are applied. Unless the choice of the particles and the observation models fit the underlying data well, the estimate is likely to drift away as the tracking progresses. To mitigate these problems faced in the use of the SIA, we propose a new particle filtering framework that gets an initial estimate of the person's location by spreading particles over a reasonably large area and then successively corrects the position  though a deterministic search in a reduced search space. Termed as Structured Mode Searching Particle Filter (SMSPF), the algorithm uses color histogram comparison in the particle filtering framework at each step to get an initial estimate which is then corrected by applying a structured search based on gradient features and chamfer matching. The details of this algorithm are described in the next section.
 
 \section{STRUCTURED MODE SEARCHING PARTICLE FILTER}
 Assuming that an independent person detection algorithm can initialize this tracking algorithm with the initial estimate of the person location, this particle filtering framework focuses on tracking a single person under the following circumstances, namely
@@ -2705,7 +3056,7 @@ As it is essential for particle filtering algorithm to choose a good set of part
 q\left(x_t^i|x_{t-1}^iZ_t\right) = q\left(x_t^i|Z_t\right)
 \end{equation}
 
-Though the propagation of information through particles is lost by making such an assumption, it gives a better sampling of the underlying system. We employ a large variance Gaussian with its mean centered at the previous estimate for successive frame particle propagation. By using such a set of particles, a larger area is covered, thus accounting for abrupt motion changes and a good portion of them are picked near the previous estimate, thus exploiting the weak temporal redundancy.  As in [11], we have employed this technique using HSV color histogram comparison to get likelihoods at each of the particle locations. Since intensity is separated from chrominance in this color space, it is reasonably insensitive to illumination changes. We use an 8x8x4 HSV binning thereby allowing lesser sensitivity to changes in V when compared to chrominance. The histograms are compared using the well-known Bhattacharyya Similarity Coefficient which guarantees near optimality and scale invariance.
+Though the propagation of information through particles is lost by making such an assumption, it gives a better sampling of the underlying system. We employ a large variance Gaussian with its mean centered at the previous estimate for successive frame particle propagation. By using such a set of particles, a larger area is covered, thus accounting for abrupt motion changes and a good portion of them are picked near the previous estimate, thus exploiting the weak temporal redundancy.  As in \cite{nummiaro_adaptive_2003}, we have employed this technique using HSV color histogram comparison to get likelihoods at each of the particle locations. Since intensity is separated from chrominance in this color space, it is reasonably insensitive to illumination changes. We use an 8x8x4 HSV binning thereby allowing lesser sensitivity to changes in V when compared to chrominance. The histograms are compared using the well-known Bhattacharyya Similarity Coefficient which guarantees near optimality and scale invariance.
 
 \begin{figure}
 \centering
@@ -2737,9 +3088,9 @@ If the object of interest was simple, then the best match across space and scale
 \label{Fig:Figure113}
 \end{figure}
 
-In literature, gradient based features have been widely used for person detection and tracking problems and their applicability has been strongly established by various algorithms like Histogram of Oriented Gradients (HoGs) [10]. Following this principle, we have used the Edge Orientation Histogram (EOH) features [12] in order to obtain the internal content information measure. For this purpose, a gradient histogram template (GHT) is initially built using a generic template image of a walking/standing person. This GHT is then compared with the gradient histogram of each structured search block using the Bhattacharyya histogram comparison as in [11] in order to find the block with the best internal confidence. In our implementation, orientations are computed using the Sobel operator and the gradients are then binned into 9 discrete bins. These features were extracted using the integral histogram concept [27] to facilitate computationally efficient searching.
+In literature, gradient based features have been widely used for person detection and tracking problems and their applicability has been strongly established by various algorithms like Histogram of Oriented Gradients (HoGs) \cite{dalal_histograms_2005}. Following this principle, we have used the Edge Orientation Histogram (EOH) features \cite{porikli_integral_2005} in order to obtain the internal content information measure. For this purpose, a gradient histogram template (GHT) is initially built using a generic template image of a walking/standing person. This GHT is then compared with the gradient histogram of each structured search block using the Bhattacharyya histogram comparison as in \cite{nummiaro_adaptive_2003} in order to find the block with the best internal confidence. In our implementation, orientations are computed using the Sobel operator and the gradients are then binned into 9 discrete bins. These features were extracted using the integral histogram concept \cite{crow_summed-area_1984} to facilitate computationally efficient searching.
 
-Similarly, in order to obtain the boundary confidence measure, a generic person silhouette template (GPT) (as shown in Figure 13) is used to perform a modified Chamfer match on each of the search blocks. In general, Chamfer matching is used to search for a particular contour model in an edge map by building a distance transformed image of the edge map. Each pixel value in a distance transformed image is proportional to the distance to its nearest edge pixel. In order to compare the edge map to the contour map, we convolve the edge image with the contour map. If the contour completely overlaps with the matching edge region, we get a chamfer match value of zero. Based on how different the edge map is to the template contour, the chamfer match score will increase and move towards 1. A chamfer match score of 1 implies a very bad match.
+Similarly, in order to obtain the boundary confidence measure, a generic person silhouette template (GPT) (as shown in Figure \ref{Fig:Figure113}) is used to perform a modified Chamfer match on each of the search blocks. In general, Chamfer matching is used to search for a particular contour model in an edge map by building a distance transformed image of the edge map. Each pixel value in a distance transformed image is proportional to the distance to its nearest edge pixel. In order to compare the edge map to the contour map, we convolve the edge image with the contour map. If the contour completely overlaps with the matching edge region, we get a chamfer match value of zero. Based on how different the edge map is to the template contour, the chamfer match score will increase and move towards 1. A chamfer match score of 1 implies a very bad match.
 
 While the theory of chamfer matching offers elegant search score, in reality, especially with clutter within the object's silhouette, it is very difficult to get an exact match score. In SIA, since the data is very noisy and complex, certain modifications need to be made with the Chamfer matching algorithm in order achieve good performance. The following section details a modified Chamfer match algorithm introduced in this work.
 
@@ -2782,7 +3133,8 @@ Figure \ref{Fig:Figure115} shows the sample results on each of the datasets used
 \end{figure}
 
 \subsection{Evaluation Metrics}
-In order to test the robustness of this algorithm and the applicability in complex situations, its performance has been compared with the Color Particle Filtering algorithm [25]. Assuming that a detection algorithm can detect persons in at least some frames, the image region containing the person in each of the test sequences has been manually set. The following two criteria have been used to evaluate their performance [3].
+In order to test the robustness of this algorithm and the applicability in complex situations, its performance has been compared with the Color Particle Filtering algorithm \cite{barrow_parametric_2006}. Assuming that a detection algorithm can detect persons in at least some frames, the image region containing the person in each of the test sequences has been manually set. The following two criteria have been used to evaluate their performance,
+
 \begin{itemize}
 \item Area Overlap (A0)
 \item Distance between Centroids  (DC)
@@ -2815,7 +3167,7 @@ TEM=2*\frac{AvgAOR . e^{-k.OTE}}{AvgAOR + e^{-k.OTE}}
 where $k$ is a constant which exponentially penalizes the cases where the distance between centroids is large.
 
 \section{Results}
-Particle Filtering has been widely used to handle complex scenarios by maintaining multiple hypotheses. As mentioned in [21], in order to handle abrupt motion changes, it is essential that the particles are widely spread while tracking. Following this principle, we have compared the performance of color particle filter (PF) [25] and the structured mode searching particle filter (SMSPF) by using a 2-D Gaussian with large variance as the system model. The position of the person and its scale have been included in the state vector. In order to compensate for the computational cost of structured search, only 50 particles were used for the SMSPF algorithm while 100 particles were used for the PF algorithm. A 10x10 grid with a sweep of 8 steps along the spatial dimension and 3 steps along the scale dimension were incorporated in the structured search.
+Particle Filtering has been widely used to handle complex scenarios by maintaining multiple hypotheses. As mentioned in \cite{isard_condensation_1998}, in order to handle abrupt motion changes, it is essential that the particles are widely spread while tracking. Following this principle, we have compared the performance of color particle filter (PF) \cite{barrow_parametric_2006} and the structured mode searching particle filter (SMSPF) by using a 2-D Gaussian with large variance as the system model. The position of the person and its scale have been included in the state vector. In order to compensate for the computational cost of structured search, only 50 particles were used for the SMSPF algorithm while 100 particles were used for the PF algorithm. A 10x10 grid with a sweep of 8 steps along the spatial dimension and 3 steps along the scale dimension were incorporated in the structured search.
 
 \begin{figure}
 \centering
@@ -2860,6 +3212,255 @@ Figure \ref{Fig:Figure118}, Figure \ref{Fig:Figure119} and Figure \ref{Fig:Figur
 
 The results presented as a comparison between Color PF and SMSPF shows that incorporating a deterministic structured search into the stochastic particle filtering framework improves the person tracking performance in complex scenarios. The SMSPF algorithm strikes a balance between specificity and generality offered by detection and tracking algorithms as discussed in Section 2. It uses specific structure-aware features in the search in order to handle non-homogeneity of the object and the cluttered nature of the background. On the other hand, generality is maintained by using simple, global features in the particle filtering framework so as to handle non-rigidity and deformability of the object. The clear advantage of using the structured search can be observed on the complex Dataset 3 which encompasses most of the challenges generally encountered while using the Social Interaction Assistant.
 
+\chapter{Communicating Proxemics}
+An important shortcoming of the early Social Interaction Assistant [5] (and many other assistive devices for individuals who are blind) is that the prototype Assistant provides only audio outputs. This design is not practical for the target user population because individuals who are blind rely on their ears to perceive their environment, and audio outputs may interfere with normal hearing. This chapter describes an alternative delivery modality: a vibrotactile belt that can convey non-verbal communication cues to individuals who are blind or visually impaired. Specifically, we focus on the first non-verbal cue listed in Section I.C: helping users perceive the number of people in their visual field, and the relative direction and distance of each individual with respect to the user. In some social situations, location information is available through audible cues, but this is not always the case. For example, when a group of friends approaches all of them may smile but only some may offer a verbal greeting, or a passing co-worker may nod to you in the hallway without exchanging a verbal greeting. These non-verbal communications are common occurrences, but are not accessible to someone who is blind.
+
+\section{Motivation}
+
+UDIO and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment [1]. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized [2].
+
+Of all the modalities that engage the human somatosensory system, vibrotactile stimulation has become very popular in the recent past due to the sophistication and unobtrusiveness of vibrotactile displays [3], as well as their portability and wearability [2]. But this new modality is far from displacing the primary delivery modalities due to the fact that haptics (touch) is a low bandwidth channel compared to audio or video. Previously, complex vibratory pulses have been designed using combinations of vibration dimensions [4][5], such as vibration frequency, amplitude, duration, rhythm and location, and by using human psychophysical perception (like sensory saltation [6]). There are infinite ways to map meanings to vibration dimensions, but conceptually, there are two extremes: symbolic and literal. On one end of the spectrum, tactons [7], or tactile icons, use a symbolic mapping to arbitrarily assign meaning to vibration dimensions. On the other end, a literal mapping assigns vibrotactile cues to intuitive somatosensory signals that humans are already acquainted with, such as a shoulder tap to obtain one's attention. Encoding schemes may also fall somewhere in between such that the vibrotactile cues may be intuitive, but still require training. Studies on symbolic and literal mappings have shown an extraordinary increase in information delivery bandwidth for vibratory cues, thereby making a case for vibrotactile stimulation as a potential alternative (or at least an augmentation) to audio and video.
+ 
+Vibrotactile displays have been implemented in a variety of form factors including desktop displays, handheld devices, and wearable systems, such as gloves [8], jackets [9], and jewelry [10]. In this paper we focus our discussion to vibrotactile displays worn around the waist, commonly referred to in the literature as haptic or vibrotactile belts. Vibrotactile belts have found a number of applications including, but not limited to, pedestrian navigation [11][12][13] (vibrations guide users from a starting point to their destination); balance control [14] for people with vestibular damage (vibrations convey tilt information); virtual reality [15] (vibrations indicate collisions with virtual objects); spatial orientation aids for pilots [16] and astronauts [17] (vibrations provide spatial orientation towards magnetic north or Earth's gravity vector in zero-gravity environments); psychophysical study of human vibrotactile perception [5][18] (experiments on vibrotactile spatial acuity, spatio-temporal pattern perception, saltation, etc.); and social interaction assistant aids [19] for individuals who are blind or visually impaired (vibrations are used to communicate nonverbal cues). Unlike other form factors, belts tend to be physically discreet and part of almost all everyday clothing. A variety of vibrotactile belt designs and implementations have been proposed in the literature (please refer to Section II for a detailed analysis). However, existing designs have two primary limitations: (1) Limited applicability due to application-specific designs; and (2) Usability and performance requirements tend to be secondary to functionality, thereby forcing readers to question the real-world use of the application itself. This is the natural inclination of a technology-centric, as opposed to human-centric, approach towards interface design. A human-centered design strategy critically accounts for all users of the technology throughout the lifecycle of the design and development of a human machine interface. In this work, we generalize the scope of our users to include both customers: end users of a specific technology; and developers (engineers, scientists, and researchers): those modifying the product for novel applications.
+
+\section{Related Work}
+Our literature survey revealed over twenty vibrotactile belt designs from academic publications and electronics hobby forums. We've selected a subset for discussion here based on the maturity of their implementation and availability of information regarding implementation details.
+Cholewiak et al. [18] introduced a reconfigurable and scalable haptic belt design for use in human haptic perception experiments, where vibration motors were wired directly to a waveform generator, and attached via Velcro onto an elastic belt. The belt was specifically intended for psychophysical experiments, and its wired implementation limits portability, ease of movement, unobtrusiveness and discreetness. Van Erp et al. [11] presented a wireless, elastic vibrotactile belt for waypoint navigation. The belt consisted of eight vibration motors with adjustable locations. The belt was controlled by a minicomputer placed inside a backpack worn by the user. The paper provides no information regarding the scalability of the belt, i.e., the option of removing or adding vibration motors. Moreover, it is unclear if the amplitude and/or frequency of the vibrations can be adjusted. For studying human haptic perception, Jones and Ray [5] built a wireless haptic belt made of fabric consisting of 8 vibration motors held by Velcro. A back display was also constructed, which consisted of a four-by-four matrix of vibration motors. The locations of the vibration motors were adjustable, but the paper does not mention whether amplitude or timing could be controlled, nor is there any mention of the capability to add or remove vibration motors. Further, the bulkiness of the system, and its excessive cabling, could limit ease of movement, unobtrusiveness and discreetness.
+
+ActiveBelt [13] is a wireless haptic belt for pedestrian navigation, among other applications. The belt consisted of eight fixed vibration modules with elastic between vibration sites and used a large, onboard processing unit. Dimensions of the vibratory signals, such as frequency and timing, could be altered, but the reconfigurability and scalability of ActiveBelt is limited given its fixed vibration motors. Further, although the paper claims universal accessibility in that the belt can adapt to varying waist sizes, this may be only partially true-from our own past experiences, extreme waist sizes (either very small or very large) may not be able to use such an implementation.
+Ferscha et al. [21] presented a wireless vibrotactile belt for spatial awareness. Vibratory dimensions, such as intensity and timing, could be altered in a portable and lightweight design. However, since the belt used eight fixed vibration motors, its reconfigurability and scalability is limited. The Tactile Wayfinder [12], by Heuten et al., is a wireless vibrotactile belt for pedestrian navigation. It has many of the same advantages and disadvantages of Ferscha et al.'s belt design, but with a few differences; one advantage being The Tactile Wayfinder has an available API for application creation.
+
+Perhaps the most accomplished of the aforementioned belt designs is the TactaBelt by Lindeman et al. [15], which consisted of eight vibration motors connected via Velcro to neoprene. The vibration motors of the belt are reconfigurable and scalable, and their vibratory dimensions are adjustable. Although the TactaBelt is functional and rich in features, there is little to no discussion regarding the usability and performance of the belt-this is also a reoccurring problem with all aforementioned belt designs. The rigidness and durability of this belt is questionable given that vibration motors were attached to the belt via Velcro. Whereas this solution may work in controlled environments, such as a virtual reality setup in a laboratory, it's unlikely to work well in real world conditions and under everyday use.
+
+\begin{table}
+\centering
+\begin{tabular}{c}
+\includegraphics[width=5in]{TIMComparisonTable.jpg}
+\end{tabular}
+\end{table}
+
+\section{Design Requirements}
+Identifying the shortcomings of vibrotactile belt designs, reviewing existing design guidelines in the literature, and combining these with our own past experiences, we've compiled a set of design requirements for vibrotactile belts, depicted in Table I.
+In the above table, usability is the most important metric that captures the capability of a haptic platform to be used for exploring novel applications; in other words, if there are usability issues in a research platform, it will bias the outcome of any research experiment, thereby distracting the researcher from the true outcomes of an experiment. Following usability, functionality takes the next higher precedence, as it allows a researcher to configure the device to his or her novel application needs. Offering higher functionality allows adaptability of the research platform to various experiments. Finally, performance captures the lenience offered by the platform during experimental use. Mostly, higher performance reduces the researcher's requirement to focus attention on the research platform, and allows him/her to focus on the study itself. We discuss some of the existing work in eliciting such design requirements for vibrotactile belt and add design considerations that we have identified through our experience.
+
+Regarding the usability of a vibrotactile belt, Lindeman et al. [15] described a vibrotactile wearable device with limited cumber as one that is easy to put on or take off, and doesn't hinder movement with excessive wiring and bulky modules. Adding to this description of limited cumber, we include factors such as comfort and unobtrusiveness [20], ergonomics, lightweight and adaptability to fit different waist sizes. A vibrotactile belt should be intuitive so that it is easy to learn to use from both an end-user's perspective, as well as a developer's perspective. The latter will have much more vested interest in reconfiguring the belt for his or her intended application. Lastly, a vibrotactile belt should be discreet in that it is physically discreet and silent. As belts are a common part of everyday attire, keeping the design of vibrotactile belts close to accustomed dressing attire will help gain wider acceptance among users. Vibration motors can be noisy, which when used in public, can be distracting to those around us. Hence, vibrotactile modules should be designed to reduce noise.
+
+Lindeman et al. [15] proposed three functionality attributes: expressiveness, scalability and reconfigurability as being important for a vibrotactile display. The first attribute, expressiveness, was met by providing variability of vibration dimensions: intensity, timing and location. However, the paper gives little detail about what exactly defines scalability and reconfigurability of a vibrotactile belt. We extend their work to define scalability as the capability to add/remove tactors to/from a vibrotactile belt without performance degradation; and reconfigurability, which is related to the adaptability of the belt to different applications and uses, is defined as the capability to (1) easily change the placement of tactors on a vibrotactile belt, and (2) easily change the vibrotactile belt's functions through an Application Programming Interface (API). Lastly, portability is an important functionality influenced by its wearability and wireless connectivity.
+Attributes that describe performance design requirements include durability, long wireless communication range, negligible latencies in wireless communication, long battery life and replaceable/rechargeable batteries. Although the importance of these attributes will largely depend on an application's minimum performance requirements, it's recommended that all of the proposed attributes be taken into account when developing a versatile vibrotactile belt.
+
+As mentioned earlier, the versatility and usefulness of existing vibrotactile belt implementations are severely limited due to an application-specific focus. Such a non-structured approach results in replication of work between researchers and developers. Our goal, through this paper, is to establish a repeatable means of approaching the development of vibrotactile belts. While we discuss most of the design issues in the context of developing vibrotactile belts, we are confident that these guidelines can be immediately extended to any wearable vibrotactile display technology.
+
+\section{Implementation}
+\subsection{Form Factor}
+A belt's form factor ultimately determines its wearability and portability. To this end, we attempted to make the belt as robust and wearable as possible (see Fig. 1). The control box offers complete belt control along with wireless connectivity and battery power supply, and measures 8 cm by 4 cm by 2 cm. The individual tactor modules enclose a separate controller and a vibration motor, and measure 5.4 cm by 3.49 cm by 1.47 cm. The belt was designed to be lightweight (harness: 92.14 g; each tactor: 21.26 g; and controller: 95.68 g), comfortable and physically discreet.
+
+\begin{figure}
+\centering
+\includegraphics[width=5in]{belt.jpg}
+\end{figure}
+
+The belt harness (flat nylon webbing) is easily adjustable to any waist size using plastic buckles while the tactors and control box are on pocket clips and can be adjusted appropriately per application, in seconds. This design was chosen over a Velcro based implementation (popularly encountered in our literature survey) to achieve better adaptability to different waist sizes; to hold tactors very close to the body during use; and to offer robustness and rigidity for real-world applications. The control box and the individual tactors are connected over a 4 -wire I2C bus that carries power along with the data and clock. This configuration, allows plug and play adding, removing and reconfiguring of tactors for scalability and reconfigurability.
+
+\subsection{System Architecture}
+In order to provide two important functional requirements of expressiveness and scalability, we employ a network of distributed controllers. The hierarchical system level design of the belt, shown in Fig. 2, utilizes an independently functioning wireless main controller (Haptic Belt Controller) enclosed within the control box, and auxiliary controllers (Tactor Controllers) for monitoring and controlling each vibration motor, represented as tactors in Figure 2.
+
+While the main controller offers connectivity to a command control center (PC or PDA), each tactor controller takes care of the micromanagement of vibrotactile cueing at each vibration motor. This multi level hardware processing buffers commands, and consequently allows for a higher performance and responsiveness of the system when compared to a centralized processing system. Each sub-system encapsulates its functionality locally so that it provides functional independence from other sub-systems, all while achieving this with minimal data transmissions. Any shared data is stored centrally on the main controller and is distributed on power-up or redistributed after a configuration change. One of the important design requirements of a haptic belt, reconfigurability, is the capability to configure the belt's parameters easily with the bare minimum software tools. To this end, the belt connects through character terminal interface with Hayes AT command like serial communication interface.
+
+\section{Hardware Design}
+\subsection{Control Box}
+The control box receives all control messages transmitted from the command control center (PC or PDA) to the haptic belt. As shown in Fig. 2, the most important components of the control unit are as follows:
+\subsubsection{Main Controller}
+A specific implementation of the popular Arduino Open Source hardware platform (based on Atmel ATMeg168 microcontroller), called Funnel IO , was used for the main controller.
+\subsubsection{Bus Communication}
+One of the most important requirements for the design of the haptic belt was the need to reduce the number of wires connecting tactors. It was this constraint which led to the use of individual controllers at each of the tactors. Complementing this choice, I2C offered the least number of wires with reliability. Thus, a four wire bus implementation, 2 wires for power, one for data (SDA) and one for clock (SCL), was adopted. The implementation allows up to 16 tactors on the belt simultaneously.
+\subsubsection{Power Supply}
+Much consideration was given to the possible use time of the belt when specifying and sizing the power supply technology. Considering the space constraints, Lithium-polymer chemistry provides the most charge density for its size, and so a single cell 3.7V 800 mAh battery that allows up to 6 hours of continuous operation was chosen.
+\subsubsection{Wireless Hardware}
+Our performance requirements for the wireless module included transmission range of a large room, and the inclusion of a separate microcontroller to manage transmission without impacting general controller function. Either of two integrated wireless modules (Digi's XBee ZigBee module and Roving Network's RN-41 Bluetooth module) were chosen to connect to the Funnel board through a dedicated UART providing the necessary wireless connectivity and control.
+
+\section{Tactor Modules}
+As shown in Fig. 2, the tactor modules individually contain a microcontroller that negotiates its role with the main controller through the I2C bus. An Atmel ATtiny88 microcontroller forms the core of the tactor module. The PWM unit on the microcontroller is used for amplitude control and temporal rhythm generation, as described in Software Design (Section VI), while running independently from the main controller. A MOSFET driver provides the necessary switching between the digital output and the motor actuations. Six GPIO pins of the ATtiny88 are configured to read a DIP switch setting that assigns each tactor module's bus address. This address is used by the main controller to dynamically assign the I2C bus address at startup. This eliminates the need to reprogram all tactor modules for different applications/uses, thereby providing plug-and-play functionality. Vibrations are actuated through use of a 12 mm coin-type shaftless vibration motor, which has a rotational speed of 150Hz and a nominal vibration of 0.9g. The motors were mounted such that the vibration axis is parallel to human skin causing a net lateral vibration along the skin.
+
+\section{Software Design}
+The software components of our proposed design contain two important aspects: the firmware, which is programmed on the microcontrollers, and the User Interface (UI) that allows the design of vibrotactile rhythm patterns and access to the operational modes of the haptic belt.
+\subsection{Firmware}
+As explained earlier, the proposed haptic belt system makes use of a distributed microcontroller network framework with a separate main controller and the tactor microcontrollers for increased functionality and reliability. Below we discuss the important aspects of the firmware for the two controllers.
+
+\subsubsection{Main Controller Firmware}
+The main controller provides communication between the command control (through wireless protocols) and the tactors on the belt. The main controller's firmware can be categorized into 7 primary functional areas as shown in Fig. 3.
+
+\begin{figure}
+\includegraphics[width=5in]{MainController.jpg}
+\caption{Main Controller implementation}
+\label{TIMFigure100}
+\end{figure}
+
+\begin{enumerate}[(a)]
+\item \emph{Wireless Communication Module:} All communication from the command control center (PC) is received through the ZigBee/Bluetooth wireless module. This module reads and writes data to and from the hardware buffers in a continuous loop. All data received is automatically sent to the Command Parser for further interpretation.
+
+\item \emph{Command Parser and ASCII User Interface:} This module provides four primary user modes, namely, a) new belt configuration; b) query current configurations; c) test vibrotactile patterns; and d) binary command mode. These modes allow the user to configure, use and debug individual tactors and the belt as a whole.
+
+\item \emph{Learn Command Module:} In the proposed belt design, versatility is provided through user definitions of the Temporal Rhythm Unit (TRU) and Temporal Rhythm Sequence (TRS) (See Section VI.B). This module handles all the activities of the learning module while building rhythm pattern definitions (TRS and TRUs). This module also sends all new configurations to the Memory management module (via command parser) to be stored in the on-chip memory.
+
+\item \emph{I2C Communication Module:} This module is responsible for querying all tactors (or any devices) on the bus and stores their addresses into a data table. This module is also responsible for sending commands and receiving status codes from all the tactor modules.
+
+\item \emph{Memory Manager:} The ATmega168 controller has limited SRAM for runtime operations. The memory manager is implemented so that all rhythm definitions or text-based menus can be stored and retrieved from the on-chip Flash memory. The command parser handles the control flow to the memory manager.
+
+\item \emph{Activate Command Module:} This module handles the binary encoding of a tactor activate command. It packages the requested rhythm (TRS) and magnitude (TRU) with the appropriate cross-referenced tactor bus address and sends the command to the specific tactor for activation.
+\end{enumerate}
+
+\subsubsection{The Tactor Controller}
+The second part of the system includes the hardware for the tactor module. As shown in Figure 2, the tactor modules individually contain a microcontroller that negotiates its role with the main controller through the I2C bus. In this section, we provide details of the design choices and the implementation of the tactor.
+
+\emph{The Vibration Motor:} The vibrations are actuated in our tactor modules through the use of 12 mm coin-type shaftless vibration motors manufactured by Precision Microdrives, which have a rotational speed of 150Hz and a nominal vibration of 0.9g. These motors use an off-center mass to actuate vibrations. When the motor is powered, the rotation of the shaft, and hence the eccentric mass, causes vibrations that is maximal along the direction perpendicular to the rotational axis. In our implementation, we mounted the motor in such a way that the vibration axis is parallel to human skin causing a net lateral vibration along the skin. Recently, we have incorporated cylindrical vibration motors that are mounted such that the vibration axis is perpendicular to the human skin. Experimental results with both have not revealed significant difference in their vibration conveyance.
+
+\emph{Dimensions of the Vibration Signal}
+The three important dimensions of the vibration signal, as delivered through our haptic belt, include a) the location of vibration, b) the amplitude of vibration, and c) the timing and temporal rhythm of vibration:
+
+\begin{enumerate}[(a)]
+\item Location of Vibration: The location of vibration is reflected by the flexibility of our belt which allows the easy movement, addition or removal of tactors from the belt strap. This allows users of the belt to achieve any positional configuration that is desired for the application in focus.
+    
+\item Amplitude of Vibration: A pulse-width modulation (PWM) based amplitude control (similar to digital sound modulation) is incorporated to control the intensity of vibrations. The applied voltage is modulated in 20 microsecond intervals to achieve desired levels of intensity.  Although the design allows for a much smaller resolution, human sensory mechanisms cannot practically distinguish them. Figure 3(a) and 3(b) shows the duty cycles under 2 different magnitudes, and Figure 3(c) and 3(d) shows sample waveform of the actuation signals generated by the tactor microcontroller under 25\% and 75\% intensities.
+    
+    \begin{figure}
+\includegraphics[width=5.5in]{AmplitudePWM.jpg}
+\caption{(a) 25\%; (b) 75\% Pulse-width modulation; (c) and (d) Vibration motor magnitudes of 25\% and 75\% achieved using duty cycles with 25 pulses over a 50 ms vibration period.}
+\label{TIMFigure104}
+\end{figure}
+    
+\item Timing and Temporal Rhythm of Vibration: Temporal rhythm patterns refer to the actuation of the vibrators as discrete time pulses.  Readers should not confuse these temporal pulses with the pulse-widths used for magnitude control as described in the section above. The vibration of any tactor on the belt is divided into discrete temporal time events referred to as the Temporal Rhythm Unit (TRU), where each TRU is 50 ms long. The choice of 50 ms per TRU was determined experimentally, where we found that any vibration pulse of duration lesser than 50 ms was not perceivable to the participants. All vibrations are defined in terms of the number of TRUs for which the vibration motor should be ON or OFF. This sequence of ON-OFF patterns forms a Temporal Rhythm Sequence (TRS).  Note that any ON TRU can be controlled in magnitude by incorporating the PWM amplitude control as explained in the previous section.  Two sample TRS are shown in Figure 4 below. The first sequence has 5 TRUs, ON-OFF-ON-ON-OFF, totaling 250ms with amplitude of 100\%. The second TRS has 4 TRUs, ON-OFF-ON-OFF, totaling 200ms with amplitude of 50\%.
+    
+    \begin{figure}
+\includegraphics[width=5.5in]{TRSTRU.jpg}
+\caption{Sample Temporal Rhythm Sequences (TRS) with different magnitudes of vibration encoded on the Temporal Rhythm Units (TRU) (a) 100\% Magnitude, (b) 50\% Magnitude.}
+\label{TIMFigure105}
+\end{figure}
+    
+\end{enumerate}
+    
+The tactor controller firmware communicates directly with the main controller firmware as a slave device over the I2C bus and maintains the PWM timing for the local vibration motor. A two-byte command structure is used between the main controller and the tactors. Similar to the main controller firmware, the functionality of the tactor controller can be categorized into five important roles (Fig. 4). While the communication module and command parser are similar as above, the memory module and the low-level hardware module (PWM module) form the critical components of the tactor module. The memory manager module is responsible for temporarily storing the definition of the TRU and TRS that are sent over to the tactors at boot up. At run time, a two-byte activate command selects the appropriate TRU and TRS for each tactor, which the PWM module executes on the vibration motor.
+
+\begin{figure}
+\includegraphics[width=5in]{TactorController.jpg}
+\caption{Tactor Controller implementation}
+\label{TIMFigure101}
+\end{figure}
+	
+
+\section{User Interface}
+The user interface on the haptic belt currently supports two complementary formats: 1) A console based Hayes AT command set-like interface for quick access to all functionalities of the belt, and 2) an Application Programming Interface (API) for more advanced programming in higher level languages and for Graphical User Interface development.
+
+\begin{figure}
+\includegraphics[width=5.5in]{SoftwareSection.jpg}
+\caption{a) Graphical User Interface on a Portable Platform. b) Temporal Rhythm Sequence (TRS) Design Interface.}
+\label{TIMFigure103}
+\end{figure}
+
+Currently, we have implemented a PC based and a PDA based GUI for controlling and configuring the haptic belt. The GUI allows the design of complex vibrotactile rhythm and spatio-temporal patterns. The API has the portability of supporting a wide range of ubiquitous computing platforms, including mobile devices. In Fig. 5(a), we show the PDA interface with highlights on some of the important features. While the functionalities on the PC are very similar to the PDA version, additional features on the PC allow easy configurability of the belt. The example feature shown in Fig. 5(b) shows the setup used for designing a TRS. Users can select specific rhythms and vary the TRUs appropriately based on the application. Each TRU is 50 ms long, and the entire TRS can be a maximum of 3 seconds long. The interface allows a user to compose a pattern of patterns by interleaving TRSs. The case study discussed later in this paper used these controls to design haptic patterns related to the study. Our graphical interface is similar to other haptic pattern authoring software like posVibEditor [22], and provides a framework for rendering digitally modulated vibration patterns. As there is a lack of standardization and open sourcing among authoring tools for vibrotactile patterns, our efforts are unique in that our work is available for download, as of this publication.
+
+\section{Experiments}
+The experiments presented here tested the haptic belt system for its use in conveying non-verbal cues, specifically cues pertaining to where communicators are located in front of the user in terms of direction and distance. Figure XXXXXXX shows seven vibrators located in the front of the user in the form of a semicircle. This setup allowed us to focus on accurately assessing the capabilities of the haptic belt. Future experiments (see Section V) will investigate the capability of the combined system in conveying additional non-verbal cues, such as gaze direction, and will include extensive usability testing of the system by individuals who are blind.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{Experiments.jpg}
+\caption{System Architecture for Haptic Belt used as part of the Social Interaction Assistant}
+\label{TIMFigure106}
+\end{figure}
+
+\subsection{Experiment 1: Localization of Vibrotactile Cues}
+Prior work [15] showed that reasonable localization accuracy-between 80% to 100% accuracy depending upon tactor location-was possible with a belt design similar to what we presented above. Our experiment is similar, but offers a few variations to verify the results obtained in [15].
+Subjects: 10 subjects (8 males and 2 females), of ages between 24 and 59, participated in this experiment. One of the subjects was blind; the rest were sighted. Subjects had no known deficits related to their tactile sense of the waist area. Further, no subjects had prior experience with haptic belts, but all subjects had some exposure to vibrotactile cues (e.g., vibrations of a cell phone).
+
+\subsubsection{Apparatus:} The haptic belt described in Section III was used for this experiment. Vibratory signals were 600 ms in length, and had a frequency and intensity well within the range of human perception. In contrast to [15], cues are longer-600 ms compared to 200 ms-and we do not use headphones to mask subtle vibration noise, nor do we randomly vary intensity with each cue; the reason for these changes is that we are mostly concerned with how the belt as a complete system accomplishes non-verbal communication, rather than the spatial acuity of the waist. Hence, if a specific intensity of vibration feels different around the waist, and some vibrations can be heard, and if these cues help in tactor localization, then this redundant information should only add to the usability of the system.
+
+\subsubsection{Procedure:} Subjects put on the haptic belt over their shirt and around their waist such that the middle tactor (\#4) was centered at their navel, and the endpoint tactors (\#1 and \#7) were at their left and ride sides, respectively. As the belt has LEDs that light up to indicate tactor activation (used for testing the belt), subjects were instructed to not look down at the belt any time during the experiment. Next, subjects were familiarized with tactor numbering: the experimenter activated tactors in order from \#1 to \#7, and spoke aloud the number of the activated tactor. This process was repeated twice for each subject.
+
+The training phase involved 35 trials where each tactor was randomly activated 5 times (with approximately 5 seconds between tactor activations) and subjects had to identify the number of each activated tactor. A visual guide was provided for subjects to help recall tactor numbers; this guide was a white board with a drawing of a semicircle (the belt) and the numbers 1 through 7 (tactors) on the belt. Feedback was given during the training phase to correct wrong guesses. The testing phase was similar to the training phase, but involved 70 trials where each tactor was randomly activated 10 times, and feedback was not provided. Subjects stood during the entire experiment.
+
+\subsubsection{Results:} The localization accuracy for each tactor (number of times identified correctly out of the total number of times activated) was averaged across subjects and is shown in Figure 4 (indicated by the dots centered within each error bar), where error bars indicate 95\% confidence intervals. The overall localization accuracy across tactors and subjects was (92.1 7.0)\%.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{LocalizationResult.jpg}
+\caption{Experiment 1 Results: Mean Localization Accuracy for each Tactor, Averaged across Subjects, with 95\% Confidence Intervals}
+\label{TIMFigure107}
+\end{figure}
+
+\subsubsection{Discussion:} An overall localization accuracy of (92.1 7.0)\% (an improvement over that of [15]) is promising and shows that our prototype haptic belt can be reliably used to indicate the direction of someone in the user's visual field. Moreover, 100\% of misclassifications were off by a single tactor location; hence, even when users made a mistake in localizing an activated tactor, they still had a very good idea of the general direction of someone in their visual field.
+
+We hypothesize that the increase in accuracy is largely due to greater cue duration (600 ms as opposed to the 200 ms used in [15]); it is well known that larger cue durations make localization easier [16]. Moreover, redundant information provided by the belt, such as subtle audible cues when tactors are activated, could have helped as well. Subjects found tactors closer to the midline easier to localize, which agrees with the results found in the literature where spatial acuity improves near the sagittal plane [15, 16] given that spatial acuity is better at anatomical reference points-in this case, the navel.
+
+It is hypothesized in [15] that the tactors at the end of the semicircle, which rest at the sides of the torso, act as landmarks and are easier to localize; but in our experiments, we noticed that tactor \#1 could be localized more accurately than tactor \#7, as shown in Figure 4. We are investigating this asymmetric result.
+
+\subsection{Experiment 2: Signal Duration as Cue for Distance}
+Experiment 2 included two sub-experiments to examine the use of vibrotactile cues to indicate both direction and distance. Experiment 2A focused on how well subjects could perceive cue duration, regardless of tactor location. Experiment 2B tested how well subjects could perceive both tactor location and cue duration at the same time.
+
+\subsubsection{Subjects:} The ten subjects introduced for Experiment 1 also performed Experiment 2A and 2B.
+
+\subsubsection{Apparatus:} The belt and signal properties were identical to those of Experiment 1 with the exception of signal duration. For Experiment 2A and 2B, signal durations of 200 ms, 400 ms, 600 ms, 800 ms and 1000 ms were used. These durations may refer to any distance in the implementation of the system; e.g., less than 2 ft (1000 ms), 2 ft to 4ft (800 ms), 4 ft to 6 ft (600 ms), and so on.
+
+\subsubsection{Procedure:} In the first part of Experiment 2A, subjects were familiarized with the five cue durations. All five durations were delivered to the user at each of the seven tactors from \#1 to \#7, in order. The training phase for Experiment 2A involved 35 trials where each tactor was randomly activated 5 times (one time for each of the 5 durations) with approximately 5 seconds between tactor activations. Subjects were instructed to guess only cue duration. The testing phase involved 70 trials with each tactor activated twice for each duration. As in the training phase, subjects had to guess the duration of the cue, but no feedback was provided. Immediately following Experiment 2A, subjects began Experiment 2B. First, the familiarization and training phase of Experiment 1 were repeated. The testing phase involved 70 trials similar to 2A, but subjects now had to guess both cue duration and tactor location. As in Experiment 1, subjects stood the entire experiment, had access to a visual guide and were told not to look at the belt.
+
+\subsubsection{Results:} Classification accuracy of duration (number of times identified correctly out of the total number of times used) was averaged across subjects and is shown in Figure 5 (indicated by the dots centered within each error bar), where error bars indicate 95\% confidence intervals. Note that the x-axis of Figure 5 lists durations as \#1 (200 ms), \#2 (400 ms), \#3 (600 ms), \#4 (800 ms) and \#5 (1000 ms). The results for both Experiment 2A and 2B are included in Figure 5. The overall classification accuracy of duration across tactors and subjects was (73 3.6)\% and (67 11.8)\% for Experiment 2A and 2B, respectively. There were not any noticeable differences in classification accuracy of duration between different tactor locations in either part of the experiment.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment1.jpg}
+\caption{Mean Classification Accuracy of Duration, Averaged across Subjects and Tactors, with 95\% Confidence Intervals. Durations listed in figure correspond to 200 ms (\#1), 400 ms (\#2), 600 ms (\#3), 800 ms (\#4) and 1000 ms (\#5)}
+\label{TIMFigure108}
+\end{figure}
+
+\subsubsection{Discussion:} In Experiment 2A, subjects were able to easily identify durations of 200 ms and 400 ms, most likely due to their short length. However, subjects had difficulty distinguishing between 600 ms, 800 ms and 1000 ms. Two subjects suggested that a logarithmic scale of 200 ms, 400 ms, 800 ms, 1600 ms, and so on, might improve recognition. However, longer cues slow down use of the system, making it more difficult to use in real time. Another option would be to use fewer cues (e.g., 200 ms, 500 ms and 1000 ms) to provide only coarse distance information. Regardless, the overall classification accuracy of duration at (73 3.6)\% is impressive, and accuracies for longer durations are satisfactory. The skill of subjects at classifying lengths of vibrations varied, resulting in large variations in classification accuracy for longer cue durations (see Figure 5). In any case, 94.7\% of misclassifications were off by only 200 ms (5.3\% of misclassifications were off by 400 ms), which shows that subjects were quite accurate with their estimates.
+
+In Experiment 2B, overall classification accuracy of duration dropped to (67 11.8)\%. We hypothesize that this small drop in mean accuracy, as well as an increase in variance, was due to the cognitive load of having to attend to both vibration duration and tactor location. In any case, overall accuracy is still satisfactory, and 89\% of misclassifications were off by only 200 ms (11\% of misclassifications were off by 400 ms). Overall tactor localization accuracy for Experiment 2B was (94.3 5.7)\% (averaged across subjects, tactors and durations), which is similar to the localization accuracy of (92.1 7.0)\% found in Experiment 1. Once again, 100\% of misclassifications were off by a single tactor location. We conclude that tactor locations are still easy to perceive even when cue length varies and attention must be divided between cue duration and location.
+
+\subsection{Experiment 3: Vibrotactile Rhythm as Cue for Distance}
+As an alternative to vibration duration, we also explored the use of vibrotactile rhythm to deliver distance information. 
+
+\subsubsection{Tactile Rhythm Design}
+The tactile rhythms used in our experiments were motivated by results reported in [5], where just noticeable differences of vibrotactile duration were assessed. Subjects perceived pulses of duration below 100ms as a poke or nudge. Between 100ms to 2000ms, the just noticeable difference is an increasing curvilinear function of duration; although between 100ms to 500ms, the function is approximately linear. Based on these results, Geldard [5] recommended three durations, specifically 100ms, 300ms and 500ms, for accurate identification by subjects.
+
+We conducted pilot studies to determine rhythm patterns that are convenient for users to identify vibratory rhythms. Through use of a vibrotactile belt, we evaluated use of five rhythms, each 10 seconds in length: 50ms vibrotactile pulses separated by pauses of length 50ms, 100ms, 300ms, 500ms and 1000ms. Subjects found rhythms with pauses of 100ms, 300ms and 500ms difficult to discriminate between. Based on these findings, we selected the four rhythms depicted in figure 1; this design includes more separation of pauses within 100ms to 500ms, and a small increase of 1000ms to 1200ms (much longer durations may be too time consuming for communication [5]). In the Social Interaction Assistant, these four tactile rhythms are mapped to interpersonal distances corresponding to intimate, personal (close phase), personal (far phase) and social (close phase) space respectively.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment2.jpg}
+\caption{The on/off timing values of the four tactile rhythm designs, and corresponding distances, used in the experiment.}
+\label{TIMFigure109}
+\end{figure}
+
+\subsubsection{Experiment}
+\emph{Aim:} The aim of this experiment is to evaluate participants' performance identifying the tactile rhythms of figure 1 as they relate to interpersonal distances. Moreover, to ensure that the proposed tactile rhythms do not hamper subjects' ability to localize vibrations, as evaluated in previous work [8] to convey directions, we evaluate how well subjects can identify both cues as conveyed through tactons.
+
+\emph{Hypotheses:} (1) Subjects will achieve at least 90\% accuracy at identification of tactile rhythms; (2) Subjects will achieve at least 90\% accuracy at identification of vibration locations; (3) Subjects will achieve at least 80\% accuracy at identification of complete tactons;(4) Subjects' ability to localize vibrations will depend on the location of the vibration motor (tactor) around the waist; (5) Subjects' ability to identify tactile rhythms will depend on the type of rhythm; and (6) Subjects' ability to localize vibrations will not depend on rhythm type, and vice versa.
+
+\emph{Subjects:} 11 males and 4 females of ages 22 to 60 (avg. 32) participated; one subject is visually impaired.
+
+\emph{Apparatus:} An elastic vibrotactile belt [8] was used for this experiment. The design of the belt was based on the experiments of Cholewiak, et al. [3]. The belt consists of 7 tactors equidistantly placed in a semi-circle with the first, fourth and seventh tactor at the user's left side, navel, and right side, respectively. Each tactor consists of a pancake motor of diameter 10mm and length of 3.4mm, and operates at 170Hz.
+
+\emph{Procedure:} Subjects wore the belt underneath their clothing and sat during the entire experiment. Subjects had access to visual guides-a semi-circle with tactors \#1-7 drawn and interpersonal distances labeled as rhythms \#1-4-to recall tactor and rhythm numbers, respectively. First, subjects were familiarized with vibration location as it pertains to direction. Each tactor was vibrated for 3 seconds, and the tactor number was called out by the experimenter. Next, subjects were familiarized with tactile rhythms. Each rhythm was presented for 7 seconds through the fourth tactor at the navel, and the rhythm number was called out by the experimenter. Next, subjects began the training phase where they were asked to identify the direction (through the location of the activated tactor) and distance (through the type of rhythm) indicated by each tacton. All 28 tactons (4 tactile rhythms at 7 different locations/tactors) were randomly presented for 10 seconds each. Subjects were encouraged to respond before the 10 seconds ended. Subjects had to achieve a recognition accuracy of 80\% or more on each tacton dimension to proceed immediately to the testing phase; otherwise, the training phase was repeated (only 6 subjects had to repeat training, and all passed on the second try). The experimenter corrected wrong guesses and confirmed correct guesses. The testing phase was similar to the training phase, except no feedback was provided by the experimenter concerning right or wrong guesses, and each of the 28 tactons was randomly presented 3 times for a total of 84 trials.
+
+\emph{Results:} The overall recognition accuracy follows: location (mean: 95\%, SD: 4\%), rhythm (mean: 91.7\%, SD: 5.7\%) and both (mean: 87\%, SD: 8.5\%). These results support hypotheses (1)-(3), and show that, overall, subjects had little difficulty in recognizing rhythms and locations as they pertain to distance and direction, respectively. Feedback from participants after the experiment further supported this. From herein, reported ANOVA results are from a two-way ANOVA on complete tacton recognition accuracy through location and rhythm. The overall recognition accuracy of each tactor location is shown in figure 2. Subjects felt that the vibrations of tactor \#1 (left side), \#4 (navel) and \#7 (right side), were easier to localize compared to tactor \#2, \#3, \#5 and \#6. This result is easy to explain as spatial acuity is better at anatomical reference points [3]. Although figure 2 does show a very small difference between recognition accuracies, which supports what subjects reported, there was no significant difference between recognition accuracy of tactor locations [F(6,1232)=1.96, p=0.068], hence hypothesis (4) cannot be accepted. The overall recognition accuracy of rhythms is shown in figure 3. Subjects felt that rhythm \#2 (personal-close) and \#3 (personal-far) were more difficult to identify than rhythm \#1 (intimate) or \#4 (social-close), which is supported by figure 3. A significant difference between recognition accuracy of rhythms [F(3,1232) =5.70, p=0.001] supported hypothesis (5). No interaction was found between location and rhythm for recognition accuracy of complete tactons [F(18,1232)=0.91, p=0.569], supporting hypothesis (6).
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment3.jpg}
+\caption{Overall direction recognition accuracy of each tactor location with standard deviations.}
+\label{TIMFigure110}
+\end{figure}
+
+
+After the experiment, subjects filled out 10-level Likert scales-1 (lowest) to 10 (highest). Subjects rated their ability to localize vibrations (mean: 8.4), identify rhythms (mean: 7.4), intuitiveness of location to convey direction (mean: 9.7) and intuitiveness of rhythm to convey distance (mean: 8.9). Overall, subjects felt that they could accurately identify the proposed tactons, although identifying direction was easier than distance, and both schemes were intuitive.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DistanceExperiment4.jpg}
+\caption{Overall distance recognition accuracy of each rhythm type with standard deviations.}
+\label{TIMFigure111}
+\end{figure}
+
+
 
 %\newpage
 \vspace*{1in}
@@ -2902,7 +3503,6 @@ Where, $Q_m$ represents the group $m$ with the cardinality $n_m$.
 
 Since no assumptions on the distribution of the response are made, unlike the mean, the rank average gives a non-parametric method for comparing the groups.
 
-\chapter{\uppercase{Insert Appendix B Title here}}
 \clearpage
 
 % if Biographical sketch then
