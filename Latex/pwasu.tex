@@ -3220,7 +3220,7 @@ An important shortcoming of the early Social Interaction Assistant [5] (and many
 UDIO and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment [1]. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized [2].
 
 Of all the modalities that engage the human somatosensory system, vibrotactile stimulation has become very popular in the recent past due to the sophistication and unobtrusiveness of vibrotactile displays [3], as well as their portability and wearability [2]. But this new modality is far from displacing the primary delivery modalities due to the fact that haptics (touch) is a low bandwidth channel compared to audio or video. Previously, complex vibratory pulses have been designed using combinations of vibration dimensions [4][5], such as vibration frequency, amplitude, duration, rhythm and location, and by using human psychophysical perception (like sensory saltation [6]). There are infinite ways to map meanings to vibration dimensions, but conceptually, there are two extremes: symbolic and literal. On one end of the spectrum, tactons [7], or tactile icons, use a symbolic mapping to arbitrarily assign meaning to vibration dimensions. On the other end, a literal mapping assigns vibrotactile cues to intuitive somatosensory signals that humans are already acquainted with, such as a shoulder tap to obtain one's attention. Encoding schemes may also fall somewhere in between such that the vibrotactile cues may be intuitive, but still require training. Studies on symbolic and literal mappings have shown an extraordinary increase in information delivery bandwidth for vibratory cues, thereby making a case for vibrotactile stimulation as a potential alternative (or at least an augmentation) to audio and video.
- 
+
 Vibrotactile displays have been implemented in a variety of form factors including desktop displays, handheld devices, and wearable systems, such as gloves [8], jackets [9], and jewelry [10]. In this paper we focus our discussion to vibrotactile displays worn around the waist, commonly referred to in the literature as haptic or vibrotactile belts. Vibrotactile belts have found a number of applications including, but not limited to, pedestrian navigation [11][12][13] (vibrations guide users from a starting point to their destination); balance control [14] for people with vestibular damage (vibrations convey tilt information); virtual reality [15] (vibrations indicate collisions with virtual objects); spatial orientation aids for pilots [16] and astronauts [17] (vibrations provide spatial orientation towards magnetic north or Earth's gravity vector in zero-gravity environments); psychophysical study of human vibrotactile perception [5][18] (experiments on vibrotactile spatial acuity, spatio-temporal pattern perception, saltation, etc.); and social interaction assistant aids [19] for individuals who are blind or visually impaired (vibrations are used to communicate nonverbal cues). Unlike other form factors, belts tend to be physically discreet and part of almost all everyday clothing. A variety of vibrotactile belt designs and implementations have been proposed in the literature (please refer to Section II for a detailed analysis). However, existing designs have two primary limitations: (1) Limited applicability due to application-specific designs; and (2) Usability and performance requirements tend to be secondary to functionality, thereby forcing readers to question the real-world use of the application itself. This is the natural inclination of a technology-centric, as opposed to human-centric, approach towards interface design. A human-centered design strategy critically accounts for all users of the technology throughout the lifecycle of the design and development of a human machine interface. In this work, we generalize the scope of our users to include both customers: end users of a specific technology; and developers (engineers, scientists, and researchers): those modifying the product for novel applications.
 
 \section{Related Work}
@@ -3319,25 +3319,25 @@ The three important dimensions of the vibration signal, as delivered through our
 
 \begin{enumerate}[(a)]
 \item Location of Vibration: The location of vibration is reflected by the flexibility of our belt which allows the easy movement, addition or removal of tactors from the belt strap. This allows users of the belt to achieve any positional configuration that is desired for the application in focus.
-    
+
 \item Amplitude of Vibration: A pulse-width modulation (PWM) based amplitude control (similar to digital sound modulation) is incorporated to control the intensity of vibrations. The applied voltage is modulated in 20 microsecond intervals to achieve desired levels of intensity.  Although the design allows for a much smaller resolution, human sensory mechanisms cannot practically distinguish them. Figure 3(a) and 3(b) shows the duty cycles under 2 different magnitudes, and Figure 3(c) and 3(d) shows sample waveform of the actuation signals generated by the tactor microcontroller under 25\% and 75\% intensities.
-    
+
     \begin{figure}
 \includegraphics[width=5.5in]{AmplitudePWM.jpg}
 \caption{(a) 25\%; (b) 75\% Pulse-width modulation; (c) and (d) Vibration motor magnitudes of 25\% and 75\% achieved using duty cycles with 25 pulses over a 50 ms vibration period.}
 \label{TIMFigure104}
 \end{figure}
-    
+
 \item Timing and Temporal Rhythm of Vibration: Temporal rhythm patterns refer to the actuation of the vibrators as discrete time pulses.  Readers should not confuse these temporal pulses with the pulse-widths used for magnitude control as described in the section above. The vibration of any tactor on the belt is divided into discrete temporal time events referred to as the Temporal Rhythm Unit (TRU), where each TRU is 50 ms long. The choice of 50 ms per TRU was determined experimentally, where we found that any vibration pulse of duration lesser than 50 ms was not perceivable to the participants. All vibrations are defined in terms of the number of TRUs for which the vibration motor should be ON or OFF. This sequence of ON-OFF patterns forms a Temporal Rhythm Sequence (TRS).  Note that any ON TRU can be controlled in magnitude by incorporating the PWM amplitude control as explained in the previous section.  Two sample TRS are shown in Figure 4 below. The first sequence has 5 TRUs, ON-OFF-ON-ON-OFF, totaling 250ms with amplitude of 100\%. The second TRS has 4 TRUs, ON-OFF-ON-OFF, totaling 200ms with amplitude of 50\%.
-    
+
     \begin{figure}
 \includegraphics[width=5.5in]{TRSTRU.jpg}
 \caption{Sample Temporal Rhythm Sequences (TRS) with different magnitudes of vibration encoded on the Temporal Rhythm Units (TRU) (a) 100\% Magnitude, (b) 50\% Magnitude.}
 \label{TIMFigure105}
 \end{figure}
-    
+
 \end{enumerate}
-    
+
 The tactor controller firmware communicates directly with the main controller firmware as a slave device over the I2C bus and maintains the PWM timing for the local vibration motor. A two-byte command structure is used between the main controller and the tactors. Similar to the main controller firmware, the functionality of the tactor controller can be categorized into five important roles (Fig. 4). While the communication module and command parser are similar as above, the memory module and the low-level hardware module (PWM module) form the critical components of the tactor module. The memory manager module is responsible for temporarily storing the definition of the TRU and TRS that are sent over to the tactors at boot up. At run time, a two-byte activate command selects the appropriate TRU and TRS for each tactor, which the PWM module executes on the vibration motor.
 
 \begin{figure}
@@ -3416,7 +3416,7 @@ Experiment 2 included two sub-experiments to examine the use of vibrotactile cue
 In Experiment 2B, overall classification accuracy of duration dropped to (67 11.8)\%. We hypothesize that this small drop in mean accuracy, as well as an increase in variance, was due to the cognitive load of having to attend to both vibration duration and tactor location. In any case, overall accuracy is still satisfactory, and 89\% of misclassifications were off by only 200 ms (11\% of misclassifications were off by 400 ms). Overall tactor localization accuracy for Experiment 2B was (94.3 5.7)\% (averaged across subjects, tactors and durations), which is similar to the localization accuracy of (92.1 7.0)\% found in Experiment 1. Once again, 100\% of misclassifications were off by a single tactor location. We conclude that tactor locations are still easy to perceive even when cue length varies and attention must be divided between cue duration and location.
 
 \subsection{Experiment 3: Vibrotactile Rhythm as Cue for Distance}
-As an alternative to vibration duration, we also explored the use of vibrotactile rhythm to deliver distance information. 
+As an alternative to vibration duration, we also explored the use of vibrotactile rhythm to deliver distance information.
 
 \subsubsection{Tactile Rhythm Design}
 The tactile rhythms used in our experiments were motivated by results reported in [5], where just noticeable differences of vibrotactile duration were assessed. Subjects perceived pulses of duration below 100ms as a poke or nudge. Between 100ms to 2000ms, the just noticeable difference is an increasing curvilinear function of duration; although between 100ms to 500ms, the function is approximately linear. Based on these results, Geldard [5] recommended three durations, specifically 100ms, 300ms and 500ms, for accurate identification by subjects.
@@ -3497,7 +3497,7 @@ The belt was configured with 8 tactors placed equidistantly around each particip
   % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
   ID & Movement & Vibrotactile Pattern \\
   \hline
-  \hline  
+  \hline
 A &	Left foot forward (small step) &	1 - 2 - 3 \\
 \hline
 B &	Right foot forward (small step) & 	5 - 4 - 3 \\
@@ -3632,6 +3632,34 @@ Fig. 11 shows participants' recognition accuracies on the 12 spatio-temporal pat
 \caption{Questionnaire Results from Dance Experiment for Experienced Dance Participants (a) and Inexperienced Dance Participants (b). Responses from Q6-Q8 are excluded.}
 \label{TIMFigure118}
 \end{figure}
+
+\section{Proposed Solution}
+\begin{figure}
+\centering
+\includegraphics[width=4in]{Proxemics.jpg}
+\caption{Typical use of the social interaction assistant, a third person perspective on the use case scenario.}
+\label{TIMFigure119}
+\end{figure}
+
+
+\chapter{Sensing Facial Expressions of Interaction Partners}
+As described in Chapter 2, in the survey conducted towards understanding the non-verbal cue needs for people who are blind and visually impaired, they emphasized on the lack of access to facial expressions and mannerisms of their interaction partners. This is supported by the argument that most part of the non-verbal cues occur through visual facial mannerisms as described in Section 1.2.1 of Chapter 1. The face encodes a lot of information that is both communicative and expressive in nature. Unfortunately, the face is a very complex data generator and the encodings on the face are not very context sensitive and individualistic in nature. Evolving computing technologies have been focused on developing solutions towards understanding the nature of facial mannerisms and gestures, but most of this multi-modal affective interaction research has been focused on the development of sensors and algorithms that understand user's emotional state in a human-machine interaction scenario. These interactions are mostly unilateral in nature and directed primarily towards the machine interpreting the user's emotional state. That is, the machines become the primary consumers of the affective cues. But from the perspective of an assistive technology affect interactions have to be augmentations that enrich human-human interpersonal interaction, where the machines not only interpret communicator's affective state, but also delivers affect information through novel affect actuators to a social interaction recipient.
+
+As mentioned before most affect information is causal in nature and understanding what the expression or mannerism means requires an understanding of context when it is happening and the situation in which the communication is occurring. Our understanding of the cognitive models within the human brain that allows for the processing of complex facial expressions and emotions is very naïve. Computational models developed towards understanding context are very simplistic and performs nominally even under very well controlled laboratory conditions. Contrary to such a setting, assistive technologies provide some respite to the complexities by having the cognitive abilities of the user of the technology to make decisions. That is, while human computer interfaces need to mimic sensing, cognition and delivery, assistive technologies for people who are blind have to look at sensing and delivery alone and piggy back on human cognition. This requires precise sensing of the facial and head movements while delivering as much information back to the user as possible through technologies that do not overload the user with information but provides just the right level of information to allow them to cognitively process this information.
+
+Thus, the focus of this chapter is on the precise sensing and proficient delivery of facial mannerisms and gestures of interaction partners to the user of the Social Interaction Assistant who is blind or visually impaired. To this end, the two important aspects of sense and delivery will be handled simultaneously to meet the goal of delivering dynamic facial and head movement information to the user of the social interaction assistant.
+
+\section{Dyadic Interaction Assistant}
+Dyadic interactions represent a large portion of social interactions between individuals; and during dyadic interactions, it is very important to assess the communicator's face, head and body-based gestures and mannerisms. As presented in Figure 2, the face captures the largest portion of the non-verbal cues and the current implementation of the dyadic interaction assistant focuses on the interaction partner's face (and head). The dyadic interaction assistant is to convey important facial and head mannerisms of the interaction partner that might correlate to communicative gestures like head nod, head shake, doubt, anger, frustration, happiness, interest, etc. See Figure 10 for a typical dyadic interaction setting. The device incorporates an automated table top face tracker which acts as the input to the system while allowing any extracted data to be delivered on a wearable haptic display called the Haptic Glove.
+
+\section{Proposed Solution}
+\begin{figure}
+\centering
+\includegraphics[width=4in]{DyadicInteraction.JPG}
+\caption{Typical use of the dyadic interaction assistance scenario, a third person perspective on the use case scenario.}
+\label{DAFigure1}
+\end{figure}
+
 
 
 %\newpage
