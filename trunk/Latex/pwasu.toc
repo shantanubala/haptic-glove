@@ -1,6 +1,6 @@
 \contentsline {chapter}{TABLE OF CONTENTS}{v}
-\contentsline {chapter}{LIST OF TABLES}{x}
-\contentsline {chapter}{LIST OF FIGURES}{xi}
+\contentsline {chapter}{LIST OF TABLES}{xii}
+\contentsline {chapter}{LIST OF FIGURES}{xiii}
 \contentsline {chapter}{CHAPTER}{1}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Components of Social Interactions}{2}
@@ -127,7 +127,51 @@
 \contentsline {subsection}{Datasets}{138}
 \contentsline {subsection}{Evaluation Metrics}{139}
 \contentsline {section}{\numberline {7.6}Results}{141}
-\contentsline {chapter}{REFERENCES}{145}
-\contentsline {chapter}{APPENDIX}{160}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{161}
-\contentsline {subsection}{Procedure}{162}
+\contentsline {chapter}{\chapternumberline {8}Communicating Proxemics}{145}
+\contentsline {section}{\numberline {8.1}Motivation}{145}
+\contentsline {section}{\numberline {8.2}Related Work}{147}
+\contentsline {section}{\numberline {8.3}Design Requirements}{149}
+\contentsline {section}{\numberline {8.4}Implementation}{151}
+\contentsline {subsection}{Form Factor}{151}
+\contentsline {subsection}{System Architecture}{152}
+\contentsline {section}{\numberline {8.5}Hardware Design}{153}
+\contentsline {subsection}{Control Box}{153}
+\contentsline {subsubsection}{Main Controller}{153}
+\contentsline {subsubsection}{Bus Communication}{153}
+\contentsline {subsubsection}{Power Supply}{154}
+\contentsline {subsubsection}{Wireless Hardware}{154}
+\contentsline {section}{\numberline {8.6}Tactor Modules}{154}
+\contentsline {section}{\numberline {8.7}Software Design}{155}
+\contentsline {subsection}{Firmware}{155}
+\contentsline {subsubsection}{Main Controller Firmware}{155}
+\contentsline {subsubsection}{The Tactor Controller}{157}
+\contentsline {section}{\numberline {8.8}User Interface}{159}
+\contentsline {section}{\numberline {8.9}Experiments}{161}
+\contentsline {subsection}{Experiment 1: Localization of Vibrotactile Cues}{162}
+\contentsline {subsubsection}{Apparatus:}{163}
+\contentsline {subsubsection}{Procedure:}{163}
+\contentsline {subsubsection}{Results:}{164}
+\contentsline {subsubsection}{Discussion:}{164}
+\contentsline {subsection}{Experiment 2: Signal Duration as Cue for Distance}{165}
+\contentsline {subsubsection}{Subjects:}{165}
+\contentsline {subsubsection}{Apparatus:}{165}
+\contentsline {subsubsection}{Procedure:}{166}
+\contentsline {subsubsection}{Results:}{166}
+\contentsline {subsubsection}{Discussion:}{166}
+\contentsline {subsection}{Experiment 3: Vibrotactile Rhythm as Cue for Distance}{168}
+\contentsline {subsubsection}{Tactile Rhythm Design}{168}
+\contentsline {subsubsection}{Experiment}{169}
+\contentsline {section}{\numberline {8.10}CASE STUDY: WAIST-WORN VIBROTACTILE DISPLAY FOR PEDAGOGICAL APPLICATION FOR CHOREOGRAPHED DANCE}{172}
+\contentsline {subsection}{Related Work in the Use of Vibrotactile Cues for Teaching Dance}{173}
+\contentsline {subsection}{Subjects}{174}
+\contentsline {subsection}{Procedure}{174}
+\contentsline {subsection}{Aim}{177}
+\contentsline {subsection}{Results}{179}
+\contentsline {subsubsection}{Usability:}{179}
+\contentsline {subsubsection}{Functionality and Performance:}{180}
+\contentsline {subsubsection}{Quantitative Evaluation of the Dance Experiment:}{181}
+\contentsline {subsubsection}{Subjective Evaluation of the Dance Experiment:}{183}
+\contentsline {chapter}{REFERENCES}{186}
+\contentsline {chapter}{APPENDIX}{201}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{202}
+\contentsline {subsection}{Procedure}{203}

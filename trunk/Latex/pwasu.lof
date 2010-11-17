@@ -61,3 +61,21 @@
 \contentsline {figure}{\numberline {7.19}{\ignorespaces Evaluation Measure for DataSet 1}}{143}
 \contentsline {figure}{\numberline {7.20}{\ignorespaces Evaluation Measure for DataSet 2}}{143}
 \contentsline {figure}{\numberline {7.21}{\ignorespaces Evaluation Measure for DataSet 3}}{144}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Main Controller implementation}}{156}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces (a) 25\%; (b) 75\% Pulse-width modulation; (c) and (d) Vibration motor magnitudes of 25\% and 75\% achieved using duty cycles with 25 pulses over a 50 ms vibration period.}}{158}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Sample Temporal Rhythm Sequences (TRS) with different magnitudes of vibration encoded on the Temporal Rhythm Units (TRU) (a) 100\% Magnitude, (b) 50\% Magnitude.}}{159}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Tactor Controller implementation}}{160}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces a) Graphical User Interface on a Portable Platform. b) Temporal Rhythm Sequence (TRS) Design Interface.}}{161}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces System Architecture for Haptic Belt used as part of the Social Interaction Assistant}}{162}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Experiment 1 Results: Mean Localization Accuracy for each Tactor, Averaged across Subjects, with 95\% Confidence Intervals}}{164}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Mean Classification Accuracy of Duration, Averaged across Subjects and Tactors, with 95\% Confidence Intervals. Durations listed in figure correspond to 200 ms (\#1), 400 ms (\#2), 600 ms (\#3), 800 ms (\#4) and 1000 ms (\#5)}}{167}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces The on/off timing values of the four tactile rhythm designs, and corresponding distances, used in the experiment.}}{169}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Overall direction recognition accuracy of each tactor location with standard deviations.}}{171}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Overall distance recognition accuracy of each rhythm type with standard deviations.}}{172}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Arrangement of 8 Tactors around the Waist.}}{174}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Modified Box Dance.}}{176}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Modified Electric Slide Dance.}}{177}
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Usability Results.}}{181}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Functionality and Performance Results.}}{182}
+\contentsline {figure}{\numberline {8.17}{\ignorespaces Pattern Recognition Results for Dance Experiment.}}{183}
+\contentsline {figure}{\numberline {8.18}{\ignorespaces Questionnaire Results from Dance Experiment for Experienced Dance Participants (a) and Inexperienced Dance Participants (b). Responses from Q6-Q8 are excluded.}}{185}
