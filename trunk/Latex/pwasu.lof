@@ -79,3 +79,17 @@
 \contentsline {figure}{\numberline {8.16}{\ignorespaces Functionality and Performance Results.}}{182}
 \contentsline {figure}{\numberline {8.17}{\ignorespaces Pattern Recognition Results for Dance Experiment.}}{183}
 \contentsline {figure}{\numberline {8.18}{\ignorespaces Questionnaire Results from Dance Experiment for Experienced Dance Participants (a) and Inexperienced Dance Participants (b). Responses from Q6-Q8 are excluded.}}{185}
+\contentsline {figure}{\numberline {8.19}{\ignorespaces Typical use of the social interaction assistant, a third person perspective on the use case scenario.}}{186}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Typical use of the dyadic interaction assistance scenario, a third person perspective on the use case scenario.}}{190}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces The Vibrotactile Glove.}}{193}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Localization and spatio-temporal cueing software used for the vibrotactile glove.}}{194}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Phalange naming convention and grouping bases on the anatomical distances.}}{195}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Mapping of Group 1 and Group 2 haptic expression icons to the central three fingers (9 Phalanges) of the vibrotactile glove. In the expression mapping chart, Columns 1 to 3 represent the expression. Column 4 shows the spatial mapping of vibrations. Column 5 shows the temporal mapping of the vibrations.}}{197}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{203}
+\contentsline {figure}{\numberline {10.6}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{204}
+\contentsline {figure}{\numberline {10.7}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{205}
+\contentsline {figure}{\numberline {10.8}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{206}
+\contentsline {figure}{\numberline {10.9}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{207}
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Confusion Matrix across the 12 participants. The rows are the stimulation and the columns are the responses of the participants. Each row adds to 100\% (rounding error of 1\%).}}{209}
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Average recognition rate and response time for the subject who is blind, for over 70 trails.}}{210}
+\contentsline {figure}{\numberline {10.12}{\ignorespaces Average response time for all 12 participants. Four important results are shown above, 1) Avg. correct response time per expression (Cyan), 2) Avg. incorrect response time per expression (Red), 3) Avg. correct response time for Group 1 (Blue), and 4) Avg. correct response time for Group 2 (Magenta).}}{211}

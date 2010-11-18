@@ -746,13 +746,6 @@ M.~Turk and A.~Pentland, ``Face recognition using eigenfaces,'' in {\em
   Proceedings of IEEE Conference on Computer Vision and Pattern Recognition},
   pp.~586--591, 1991.
 
-\bibitem{Sreekar2005}
-S.~Krishna, G.~Little, J.~Black, and S.~Panchanathan, ``A wearable face
-  recognition system for individuals with visual impairments,'' in {\em Assets
-  '05: Proceedings of the 7th international ACM SIGACCESS conference on
-  Computers and accessibility}, (New York, NY, USA), pp.~106--113, ACM Press,
-  2005.
-
 \bibitem{violajones01}
 P.~Viola and M.~Jones, ``Robust real-time object detection,'' {\em
   International Journal of Computer Vision - to appear}, 2002.
@@ -953,5 +946,10 @@ K.~Okuma, A.~Taleghani, N.~D. Freitas, O.~D. Freitas, J.~J. Little, and D.~G.
 F.~Crow, ``Summed-area tables for texture mapping,'' in {\em {SIGGRAPH} '84:
   Proceedings of the 11th annual conference on Computer graphics and
   interactive techniques}, pp.~207--212, {ACM}, 1984.
+
+\bibitem{vinciarelli_proceedings_2008}
+A.~Vinciarelli, M.~Pantic, H.~Bourlard, and A.~Pentland, ``Social signals,
+  their function, and automatic analysis,'' (Chania, Crete, Greece),
+  pp.~61--68, {ACM}, 2008.
 
 \end{thebibliography}
