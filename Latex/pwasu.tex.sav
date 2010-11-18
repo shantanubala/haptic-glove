@@ -404,11 +404,56 @@ Personal challenges during virtual team meetings\\
 \end{tabular}
 \end{table}
 
-
-
-
-
 \section{Medical Teams}
+Modern day critical care facilities require multi-disciplinary medical professionals to operate on a single patient, all at the same time. This imposes an hard and fast requirement on the professionals to work as a team. Unlike typical professional teams who choose their members over thorough deliberation, medical teams assume shape dynamically based on whichever medical professional is available on the hospital floor at the time of emergency. Further, these teams last for a very short duration of time (the duration dictated by the emergency) and new teams will form dynamically per need basis. Studies show that teams that establish well articulated communication between members perform well  under the stressful environment. Unfortunately, this is not true of all medical teams and one individual's stress may very well propagate through the team and breakdown mutual communication and support, leading to patient's death.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TeamStepps.jpg}
+\caption{\textbf{TeamSTEPPS:} Team Strategies and Tools to Enhance Performance and Patient Safety}
+\label{fig_cp}
+\end{figure}
+
+The importance of studying a group of physicians entering a medical situation as a single operating unit began to appear in the focus of behavioral scientists with the publication of the Institute of Medicine (IoM) report titled \emph{To Err is Human: Building a Safer Health System} in Dec 1999. One of the four core messages from the report identified that patient life is lost not because of the failure of an individual, but due to the failure of the group as a whole. Since this report, Agency for Healthcare Research and Quality (AHRQ) and Department of Defense (DoD) have focused on the team failure from an Evidence-Based Medicine perspective and released Team Strategies and Tools to Enhance Performance and Patient Safety (TeamSTEPPS) [13] as the standard for team training in health care. The core of TeamSTEPPS focuses on the need to have (a) leadership, (b) mutual support, (c) communication, and (d) situation monitoring (or a shared mental model) among the team members.
+
+As seen from Figure 1, the skills component TeamSTEPPS focuses on the individual physician and the team's ability to work together as a system. Leadership, Communication, Situation Monitoring and Mutual Support were all derived from earlier DoD and AHRQ lead studies in medical team management and are based on the underlying principles of: Team Leadership [8], Mutual Performance Monitoring [9], Backup Behavior [10], Adaptability [11], Team/Collective Orientation [12], Shared Mental Model [13] [11], Mutual Trust [14] and Closed loop Communication [10]. For a detailed analysis of each of these principles, please see King et. al. [4]. Most of these principles are in turn derivatives of the social skill set of the individuals who make up the medical team that is responsible for the patient safety. It have been shown that in cases of medical errors, leading to loss of life, communication breakdown between one or more team members resulted in an avalanche of problems eventually resulting in death.
+
+The four team performance qualities identified above depends intricately on each medical personnel's communication abilities.  Behavioral psychologists have been studying the impact of socio-emotional states, especially stress induced socio-emotional states, on the performance of professionals and conclude that the direct artifact of stress include deprecated decision making, failure in leadership and breakdown of mutual support. Assessing the socio-emotional and communication skills of the professionals within the critical care unit will provide an unfettered advantage towards determining metrics of team performance under stress. To this end, in this paper we propose an initial set of three parameters that need to be studied towards advancing patient safety in critical care environments. Note that these research questions are still under investigation and their efficacy can only be hypothesized based on preliminary socio-behavioral studies conducted in related areas, under laboratory conditions.
+
+\subsection{Evidence for Group Performance and Leadership}
+\subsubsection{Group Dynamics}
+As the term implies GD focuses on studying the various components of group communication, including inter-agent communication [19], productivity of a given group [20], level of understanding of each other's potentials and limitations, job satisfaction and combined creativity of a team [21]  to name a few. In the recent years, the interest in understanding group dynamics in work environments has tremendously increased in interdisciplinary teams involving computer scientists and socio-behavioral psychologists in the area of Computer Supported Collaborative Work (CSCW) [22]. In the context of medical teams, group dynamics focuses on the ability of the physicians/specialists to intercommunicate their needs. During emergency situations, group dynamics facilitates the emerging Shared Mental Model [23].
+
+In the classical model for group dynamics, Bruce Tuckman [24], defines four stages in the formation of an efficient group. Forming, Storming, Norming and Performing describe the typical process that the groups go through before delivering at their best. The stages of Storming and Norming are deeply connected to the individual group member's abilities to communicate, coordinate and emphasize with their fellow group members. The socio-emotional interactions between the group members dictate how quickly or slowly a group will progress from the formative first stage to performing fourth stage [25]. If every individual group member can be assessed on their socio-emotional interactions - in general with everyone and in specific with professional teams - it is possible to determine what teams will work better together and progress through the four stages quickly towards efficient group performance.
+
+\subsubsection{Leadership}
+Theories of leadership have proposed evidence-based models for explaining qualities exemplified in successful leaders. From bureaucratic leaders to political leaders, the models described to explain the qualities of leaders vary dramatically. There is no single accepted definition of what a leader should represent, as the problem of identifying a leader is highly contextual in nature. Recently, the functional model of leadership has been developed to describe team leaders as having self regulation which translates to learning, performance and adaptability. These models allow studying of dynamic teams that are formed in very short durations (like medical response teams) and allow monitoring of each individual and their contribution to the group activity [26]. Kozlowski et. al. have described a dynamic multi-goal model for team leadership as shown in Figure 3. Accordingly, they describe effective leaders as those who can not only assess simultaneously their own goals while keeping track of team goals while approaching a dynamically evolving situation.
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{TeamStepps.jpg}
+\caption{Multi goal model of self regulation for effective team regulation.}
+\label{fig_cp}
+\end{figure}
+
+
+While Figure 3 shows the behavioral choice of the leader to be a vital component of self regulation and team regulation, very little work has been focused on studying the effect of leader affect on team dynamics. Recently Sy et. al. [27] have demonstrated how important it is for the leader to control and regulate his/her affect cues within dynamical formed teams. The mood of the leader percolates through the team and can have net positive or negative effect on the team outlook and performance. The dynamic nature of team formation is further complicated in medical teams as the responsibility shifts very quickly from one specialist to another as they operate on the patient [28]. Socio-emotional role play of leaders in such dynamic teams is vital to the execution of the current task and smooth development of the shared mental model.
+
+\vspace{-0.1in}
+\subsection{Human Communication Challenges in Medical Teams}
+\subsubsection{Automated monitoring of group dynamics to determine communication breakdowns}
+\vspace{-0.13in}
+Current team performance analysis systems are mostly based on retrospective video stream analysis collected during simulations of hospital emergency codes. The analyses are mostly based on expert's opinion of what happened during critical incidents of the simulation [6] [3]. Unfortunately, expert's time is very valuable and post-simulation analysis may not get sufficient attention due to increased hospital load. For long, researchers have questioned how communication between medical team members vary over the period of the emergency code execution [2], but very little is understood on the basics of the communication patterns during emergency, mostly due to the lack of automated annotation system that does not require expensive specialist time. Automated team performance analysis systems that focus on detecting specific instances of communication breakdown occurring during code simulation could greatly enhance our understanding of team work and how it can be enhanced through training.
+
+\vspace{-0.1in}
+\subsubsection{Automatic evaluation of the social affinity between team members}
+\vspace{-0.13in}
+Sociograms (social affinity maps) have been used historically to determine the interpersonal match between members of a team or an organization. Sociograms are obtained through the process of sociometry [15], which quantitatively measures the relationships of individuals who exist within a social space. As mentioned earlier, in medical teams, the social space happens to be the emergency room where the team assembles with very little or no time to assess who are the members of the team. Sociometry is achieved through a set of evaluations that can assess the social interactions between individuals. The measurements could happen within the environment where the individuals interact (the medical team) or outside (casual interactions). Technologies developed to assess sociometric affinity between professionals could in turn provide quantitative evaluations of the social interactions between individuals. Sociograms developed at a hospital level could offer effective tools for quick team formations. Teams formed out of specialists, technicians and nurses who are closer to one another on the sociogram could offer a team with relatively less emotional stress. Socially closer individuals will also exhibit better communication, thereby increasing team performance.
+
+\vspace{-0.1in}
+\subsubsection{Leadership evaluation and nomination through long term monitoring of individuals}
+\vspace{-0.13in}
+Theories of leadership have proposed evidence-based models for explaining qualities exemplified in successful leaders. Recently, the functional model of leadership [7] has been developed to describe team leaders as having self regulation which translates to learning, performance and adaptability. These models allow studying of dynamic teams that are formed in very short durations (like medical response teams) and allow monitoring of each individual and their contribution to the group activity.Reference [7] also describes a dynamic multi-goal model for team leadership which models effective leaders as those who can not only assess their own goals but also keep track of team goals, while approaching a dynamically evolving situation. Technologies developed towards understanding and modeling human interactions and communications can provide the tools needed to measure leadership qualities through long term monitoring.
 
 
 
@@ -3729,7 +3774,7 @@ The Group 1 haptic expression icons primarily represent popular emoticons that a
 \begin{enumerate}[1)]
 \item Happy is represented by a $\cup$ shaped pattern,
 \item Sad by an inverted $\cup$,
-\item Surprise by a circle $\bigcir$, and
+\item Surprise by a circle $\bigcirc$, and
 \item Neutral by a straight line $\textemdash$.
 \end{enumerate}
 
@@ -3795,20 +3840,138 @@ One-way analysis of variance is a statistical tool used for comparing two or mor
 \subsubsection{Tuckey HSD}
 While ANOVA tests for a chance that the samples could have been derived from different populations, the Tuckey Honestly Significant Difference (HSD) test relies only on the group means to determine if there is a significant difference between groups of samples. A significant difference calls for reasoning to suspect/explain performance differences within groups derived from a single sample set. Unlike ANONA, where all the groups and samples are combined into the dimensions of comparison, HSD allows individual group-wise comparisons, providing for an opportunity to identify which groups are performing differently from others. Mostly reported as a ratio of the group mean difference and the standard group mean error, it is possible to quickly identify the significant group differences. In the results section below, the group means and the standard errors are plotted as circles and whiskers, respectively. Significant difference is established when one group's standard error stretch is beyond the scope of any of the other groups.
 
+\section{Results}
+In this section, five sets of results (Figure 5 - 9) are presented. Each set presents the three analyses that were described in Section VI C. Three of the five sets correspond to the localization experiments, while the other two correspond to the spatio-temporal experiments.
+\clearpage
+
+\subsection{Localization Experiments}
+\subsubsection{Phalange Level Localization}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure5a.jpg}\\
+(a)\\
+\includegraphics[width=4in]{HAVE10Figure5b.jpg}\\
+(b)\\
+\includegraphics[width=4in]{HAVE10Figure5c.jpg}\\
+(c)\\
+\caption{(a) Recognition Accuracies; (b) ANOVA; (c) HSD}
+\label{DAFigure6}
+\end{figure}	
+
+\clearpage
 
 
+\subsubsection{Finger Level Localization}
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure6a.jpg}\\
+(a)\\
+\includegraphics[width=4in]{HAVE10Figure6b.jpg}\\
+(b)\\
+\includegraphics[width=4in]{HAVE10Figure6c.jpg}\\
+(c)\\
+\caption{(a) Recognition Accuracies; (b) ANOVA; (c) HSD}
+\label{DAFigure7}
+\end{figure}	
 
 
+\clearpage
+
+\subsubsection{Phalange Position Localization}
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure7a.jpg}\\
+(a)\\
+\includegraphics[width=4in]{HAVE10Figure7b.jpg}\\
+(b)\\
+\includegraphics[width=4in]{HAVE10Figure7c.jpg}\\
+(c)\\
+\caption{(a) Recognition Accuracies; (b) ANOVA; (c) HSD}
+\label{DAFigure8}
+\end{figure}	
 
 
+\clearpage
 
+\subsection{Spatio-Temporal Experiments}
+\subsubsection{Individual Spatio-temporal Patterns}
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure8a.jpg}\\
+(a)\\
+\includegraphics[width=4in]{HAVE10Figure8b.jpg}\\
+(b)\\
+\includegraphics[width=4in]{HAVE10Figure8c.jpg}\\
+(c)\\
+\caption{(a) Recognition Accuracies; (b) ANOVA; (c) HSD}
+\label{DAFigure9}
+\end{figure}
+
+
+\clearpage
+
+\subsubsection{Comparison of Spatio-temporal Cueing groups}
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure9a.jpg}\\
+(a)\\
+\includegraphics[width=4in]{HAVE10Figure9b.jpg}\\
+(b)\\
+\includegraphics[width=4in]{HAVE10Figure9c.jpg}\\
+(c)\\
+\caption{(a) Recognition Accuracies; (b) ANOVA; (c) HSD}
+\label{DAFigure10}
+\end{figure}
+
+
+\clearpage
+
+From Figure 5 through 9, it can be seen that the part (a) of the five research hypotheses can be answered immediately. Users of the device found it convenient to localize vibration patterns and identify expressions easily. The localization recognition accuracy was at 92\% (SD: 7.5\%), while the expression recognition rate was measured at 89\% (SD: 5.9\%). This validates the null hypothesis that the users were able to localize and identify vibrotactile patterns well above average.
+
+Investigating part (b) of the five hypotheses reveals interesting insights into the user's abilities to detect and localize vibrotactile stimulations.  From Figure 5(b) and 5(c) it can be concluded that Hypothesis 1(b) is accepted; both ANOVA HSD tests reveal no significant difference between phalange performances. Similarly from Figure 6(b) and 6(c), it can be concluded that there is no significant difference in the performance between fingers. Figure 8(b) and 8(c) accepts the Hypothesis 4(b) and we see no significant difference in the mean performance of the seven spatio-temporal cueing patterns of facial expressions.
+
+In contrast, from Figure 7(b) and 7(c), we see that the Hypothesis 3(b) is rejected as user performance diminished at the proximal phalanges. This could be attributed to the fact that the vibration motors are very closely placed next to one another at the proximal phalanges which may cause inter-motor vibrations. From Figure 9(b) and 9(c), we see that Group 2 performance was much higher than Group 1 rejecting the Hypothesis 5(b). Studies are underway to determine the nature of the haptic cues in Group 2 that make them significantly better than Group 1. This could have been due to the fact that Group 2 cues were designed based on extensive user feedback when compared to Group 1 expressions which were designed based on popular visual emoticons.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure10.jpg}\\
+\caption{Confusion Matrix across the 12 participants. The rows are the stimulation and the columns are the responses of the participants. Each row adds to 100\% (rounding error of 1\%).}
+\label{DAFigure11}
+\end{figure}
+
+Figure 6 shows the confusion matrix for all the seven expressions. The diagonals correspond to the bar graph shown in Figure 5. The off-diagonal elements represent the confusion between expressions. These off-diagonal elements provide insight into the parameters that control effective and responsive haptic patterns. While subjects confused Sad and Neutral expressions with various others (mostly in Group 1), Anger and Surprise show exchangeability, where there is strong confusion between each other. Fear and Disgust are strongly isolated from the rest of the expressions as they were very well recognized by the subjects.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure11.jpg}\\
+\caption{Average recognition rate and response time for the subject who is blind, for over 70 trails.}
+\label{DAFigure12}
+\end{figure}
+
+Figure 7 shows the average recognition performance and the average time of response for the subject who is blind. The individual was able to recognize most of the expressions at 100\%, over the 70 trails.
+
+
+\subsubsection{Time for Recognition:}
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{HAVE10Figure12.jpg}\\
+\caption{Average response time for all 12 participants. Four important results are shown above, 1) Avg. correct response time per expression (Cyan), 2) Avg. incorrect response time per expression (Red), 3) Avg. correct response time for Group 1 (Blue), and 4) Avg. correct response time for Group 2 (Magenta).}
+\label{DAFigure12}
+\end{figure}
+
+Figure 8 shows the average time taken by the subjects per expression when they recognized the haptic patterns correctly (cyan), and when they misclassified them (red). The bar graph shows excess or shortage of response time around the mean value. It can be seen that correct identification happened in just over a second (1.4s). When the subjects were not sure of the haptic pattern, they took more time to respond. This can be seen from the inverse correlation of the response time and recognition rates in Figure 5. The pattern for Sad had the worst performance of 81\% and the corresponding response time was the highest (2s). Pattern for Fear had the best performance (98\%) and least response time (765ms). This analysis can be extended to the Group level where Group 1 has a higher recognition time when compared to Group 2. Whenever the subjects responded wrong, they seem to take more time, as seen by the average incorrect response time of 2.31s (red), almost a second more than the response time for correct responses. We could not find any significant relevance between the response time for incorrect answers and the recognition rate graph. We conclude that subjects were responding with random answers once they crossed a self imagined time limit less than the 5 seconds that was provided.
+
+\section{Conclusion}
+In this paper we demonstrated a novel interface, a vibrotactile glove, used as an assistive device for delivering seven facial expressions to persons who are visually disabled. Results are convincing that it is possible to convey basic facial expressions through haptic interfaces. Work is in progress to make the system more dynamic for delivering all facial movements, thereby allowing the user to make the judgment of what facial expressions someone is displaying. This would allow independent access to all interpersonal communicative cues, and not just the basic expressions. Efforts are underway to recruit more individuals who are blind and visually impaired towards testing the efficacy of the system. \cite{vinciarelli_proceedings_2008}
 
 %\newpage
 \vspace*{1in}
 %\chapter*{REFERENCES\hfill} \addcontentsline{toc}{chapter}{REFERENCES}
 \begin{SingleSpace}
 \bibliographystyle{ieeetr}	
-\bibliography{references}
+\bibliography{PrunedReferences}
 \end{SingleSpace}
 %\clearpage
 
