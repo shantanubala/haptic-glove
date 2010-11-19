@@ -217,7 +217,11 @@
 \contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{213}
 \contentsline {subsubsection}{Time for Recognition:}{215}
 \contentsline {section}{\numberline {10.8}Conclusion}{216}
-\contentsline {chapter}{REFERENCES}{218}
-\contentsline {chapter}{APPENDIX}{233}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{234}
-\contentsline {subsection}{Procedure}{235}
+\contentsline {chapter}{\chapternumberline {11}Social Disability}{218}
+\contentsline {section}{\numberline {11.1}Social Intelligence}{218}
+\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{220}
+\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{221}
+\contentsline {chapter}{REFERENCES}{224}
+\contentsline {chapter}{APPENDIX}{239}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{240}
+\contentsline {subsection}{Procedure}{241}
