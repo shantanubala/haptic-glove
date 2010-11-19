@@ -221,7 +221,8 @@
 \contentsline {section}{\numberline {11.1}Social Intelligence}{218}
 \contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{220}
 \contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{221}
-\contentsline {chapter}{REFERENCES}{224}
-\contentsline {chapter}{APPENDIX}{239}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{240}
-\contentsline {subsection}{Procedure}{241}
+\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{223}
+\contentsline {chapter}{REFERENCES}{227}
+\contentsline {chapter}{APPENDIX}{242}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{243}
+\contentsline {subsection}{Procedure}{244}
