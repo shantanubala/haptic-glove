@@ -1,4 +1,3 @@
-\contentsline {chapter}{TABLE OF CONTENTS}{v}
 \contentsline {chapter}{LIST OF TABLES}{xiv}
 \contentsline {chapter}{LIST OF FIGURES}{xv}
 \contentsline {chapter}{CHAPTER}{1}
@@ -42,7 +41,7 @@
 \contentsline {subsection}{Response on Individual Questions}{34}
 \contentsline {subsection}{Response Ratio}{36}
 \contentsline {subsection}{Rank Average Importance Map for Various Non-verbal Cues}{37}
-\contentsline {chapter}{\chapternumberline {4}Detecting Stereotypic Body Mannerisms}{39}
+\contentsline {chapter}{\chapternumberline {4}DETECTING STEREOTYPIC BODY MANNERISMS}{39}
 \contentsline {section}{\numberline {4.1}Focus of the chapter}{40}
 \contentsline {section}{\numberline {4.2}Background and Related Work}{41}
 \contentsline {subsection}{Foundations for social rehabilitation of behavioral stereotypes}{41}
@@ -67,7 +66,7 @@
 \contentsline {subsection}{Packet Length, and Detection Efficiency}{68}
 \contentsline {subsection}{Generalization Capabilities}{69}
 \contentsline {section}{\numberline {4.8}Conclusion}{71}
-\contentsline {chapter}{\chapternumberline {5}Person-Specific Face Recognition}{72}
+\contentsline {chapter}{\chapternumberline {5}PERSON-SPECIFIC FACE RECOGNITION}{72}
 \contentsline {subsection}{Employing face recognition to facilitate social interactions}{73}
 \contentsline {section}{\numberline {5.1}Face Recognition in Humans}{74}
 \contentsline {section}{\numberline {5.2}Our Approach to Face Recognition}{77}
@@ -95,7 +94,7 @@
 \contentsline {subsection}{Discussion of Results}{102}
 \contentsline {subsection}{Person-specific feature extraction}{103}
 \contentsline {section}{\numberline {5.7}Conclusions and Future Work}{104}
-\contentsline {chapter}{\chapternumberline {6}EXOCENTRIC SENSING}{107}
+\contentsline {chapter}{\chapternumberline {6}SENSING INTERPERSONAL SPACES}{107}
 \contentsline {section}{\numberline {6.1}Conceptual Framework}{108}
 \contentsline {section}{\numberline {6.2}Accurate Face Detection}{110}
 \contentsline {section}{\numberline {6.3}Related Work}{111}
@@ -116,7 +115,7 @@
 \contentsline {section}{\numberline {6.5}Experiments}{124}
 \contentsline {section}{\numberline {6.6}Results}{125}
 \contentsline {section}{\numberline {6.7}Discussion of Results}{126}
-\contentsline {chapter}{\chapternumberline {7}EXOCENTRIC SENSING: ACCURATE TRACKING OF PEOPLE}{128}
+\contentsline {chapter}{\chapternumberline {7}TRACKING PEOPLE IN THE SOCIAL SCENE}{128}
 \contentsline {section}{\numberline {7.1}Challenges in Person Localization from a wearable camera platform}{129}
 \contentsline {subsection}{Background Properties}{129}
 \contentsline {subsection}{Object Properties}{130}
@@ -134,7 +133,7 @@
 \contentsline {subsection}{Datasets}{144}
 \contentsline {subsection}{Evaluation Metrics}{145}
 \contentsline {section}{\numberline {7.6}Results}{147}
-\contentsline {chapter}{\chapternumberline {8}Communicating Proxemics}{151}
+\contentsline {chapter}{\chapternumberline {8}COMMUNICATING PROXEMICS}{151}
 \contentsline {section}{\numberline {8.1}Motivation}{151}
 \contentsline {section}{\numberline {8.2}Related Work}{153}
 \contentsline {section}{\numberline {8.3}Design Requirements}{155}
@@ -168,7 +167,7 @@
 \contentsline {subsection}{Experiment 3: Vibrotactile Rhythm as Cue for Distance}{174}
 \contentsline {subsubsection}{Tactile Rhythm Design}{174}
 \contentsline {subsubsection}{Experiment}{175}
-\contentsline {section}{\numberline {8.10}CASE STUDY: WAIST-WORN VIBROTACTILE DISPLAY FOR PEDAGOGICAL APPLICATION FOR CHOREOGRAPHED DANCE}{178}
+\contentsline {section}{\numberline {8.10}Case Study: Waist-worn Vibrotactile Display for Pedagogical Application for Choreographed Dance}{178}
 \contentsline {subsection}{Related Work in the Use of Vibrotactile Cues for Teaching Dance}{179}
 \contentsline {subsection}{Subjects}{180}
 \contentsline {subsection}{Procedure}{180}
@@ -179,12 +178,12 @@
 \contentsline {subsubsection}{Quantitative Evaluation of the Dance Experiment:}{187}
 \contentsline {subsubsection}{Subjective Evaluation of the Dance Experiment:}{189}
 \contentsline {section}{\numberline {8.11}Proposed Solution}{190}
-\contentsline {chapter}{\chapternumberline {9}Sensing Facial Expressions of Interaction Partners}{193}
+\contentsline {chapter}{\chapternumberline {9}SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{193}
 \contentsline {section}{\numberline {9.1}Dyadic Interaction Assistant}{194}
 \contentsline {section}{\numberline {9.2}Design Considerations}{194}
 \contentsline {section}{\numberline {9.3}Proposed Solution}{195}
-\contentsline {chapter}{\chapternumberline {10}Delivering Facial Expressions through Auxiliary Modalities}{197}
-\contentsline {section}{\numberline {10.1}RELATED WORK}{198}
+\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{197}
+\contentsline {section}{\numberline {10.1}Related Work}{198}
 \contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{199}
 \contentsline {section}{\numberline {10.3}Proposed Solution}{199}
 \contentsline {section}{\numberline {10.4}Haptic Cueing}{201}
@@ -217,7 +216,7 @@
 \contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{213}
 \contentsline {subsubsection}{Time for Recognition:}{215}
 \contentsline {section}{\numberline {10.8}Conclusion}{216}
-\contentsline {chapter}{\chapternumberline {11}Social Disability}{218}
+\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{218}
 \contentsline {section}{\numberline {11.1}Social Intelligence}{218}
 \contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{220}
 \contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{221}
