@@ -1,5 +1,3 @@
-
-
 %Peter W.
 %Requires the memoir class (as of this date v1.6180339e 2009/02/17)
 %I suggest
@@ -615,7 +613,7 @@ As can be seen from Figure \ref{Fig:Figure7}, the questionnaires were biased and
 
 In the Figure \ref{Fig:Figure8}, we have assigned rank 1 to strongly disagree. This is for the sake of visual convenience. Thus, higher the average rank, higher is that group's response from the respondents. Comparing Figure \ref{Fig:Figure8} to Table \ref{Tab:Table5}, it can be seen that the same ordering of priority can be seen through mean and rank average. But the mean tends to show very little variation between responses due to the bias that is present in the questions. On the other hand the rank average provides a good comparison scale.
 
-\chapter{Detecting Stereotypic Body Mannerisms}
+\chapter{DETECTING STEREOTYPIC BODY MANNERISMS}
 STEREOTYPIC behavior refers to any mannerism or utterance that is repetitive and non functional in nature \cite{thompson_stereotyped_1995} \cite{jankovic_stereotypies_1994}. Stereotypy occurs in a large portion of the general population in various forms, although aggressive forms have been associated with sensory and cognitive disabilities in individuals. For example, individuals who are blind have the tendency to develop body rocking, head weaving, head drooping, and eye poking \cite{mcadam_self-monitoring_1993}, while, individuals who are deaf have a propensity to develop various repetitive vocal behaviors \cite{reivich_behavior_1972}\cite{haag_repetitive_1985}. Cognitive disabilities (both acquired, like brain injury and congenital, like autism and mental retardation) are associated with stereotypic behaviors like body rocking, hand flapping, jumping, and marching in place \cite{shabani_reducing_2001}.
 
 Though harmless by itself, Stereotypy can become a hindrance to social interactions and social acceptance \cite{loftin_social_2008}. Reference \cite{felps_modification_1988} introduces a 21 year old congenitally blind student who has an extreme case of body rocking (both while sitting and standing) that has become an obstruction to his career and an independent vocational evaluation states that a reduction in the student's body rocking was absolutely necessary for any form of employment. Stereotypy is a concerning problem in children, for whom peer acceptance is very important for their healthy growth and development of good social skills \cite{yu_loneliness_2005}. Children with stereotypic behaviors become victims of teasing thereby leading to social isolation, bullying and social segregation leading to negative self esteem. Aggravating these problems, social segregation and isolation have long term psychologically effects on the individual rendering an overall poor social skill set. Studies have shown that poor social skills are a leading cause for psychological problems such as depression, loneliness, and social anxiety \cite{segrin_poor_2000}.
@@ -1005,7 +1003,7 @@ We are now ready to answer the last research question stating that the use of ap
 From the assistive technology perspective, we plan to integrate a well planned self-monitoring as a part of the proposed device. We are exploring the broad area of human communication to determine the best cognitive self-correction techniques that could augment the proposed solution. . We have implemented a rudimentary form of real-time body rock counter, as discussed in [3], but we have not yet tested it for its feedback capabilities.
 
 
-\chapter{Person-Specific Face Recognition}
+\chapter{PERSON-SPECIFIC FACE RECOGNITION}
 face recognition has the potential for recognizing
 people at a distance, without their knowledge or cooperation.  For
 decades, banking, retail, commercial, and industrial buildings have
@@ -2256,7 +2254,7 @@ recognition, and that as more is learnt, the knowledge can be put to
 use to develop more robust face recognition algorithms.
 
 
-\chapter{EXOCENTRIC SENSING}
+\chapter{SENSING INTERPERSONAL SPACES}
 \DoubleSpacing
 \setlength{\parindent}{.5in}
 
@@ -2965,7 +2963,7 @@ the belief values to pose angle, we could not confirm quantitatively
 how accurate the pose estimations were. Through visual consort, one
 can verify that the labeling is meaningful.
 
-\chapter{EXOCENTRIC SENSING: ACCURATE TRACKING OF PEOPLE}
+\chapter{TRACKING PEOPLE IN THE SOCIAL SCENE}
 The problem of person localization in general is very broad in its scope and wide varieties of challenges such as variations in articulation, scale, clothing, partial appearances, occlusions, etc make this a complex problem. Narrowing the focus, this paper targets person localization in real world video sequences captured from the wearable camera of the Social Interaction Assistant. Specifically, we focus on the task of localizing a person who is approaching the user to initiate a social interaction or just conversation. In this context, the problem of person localization can be constrained to the cases where the person of interest is facing the user.
 
 \begin{figure}[h]
@@ -3257,7 +3255,7 @@ Figure \ref{Fig:Figure118}, Figure \ref{Fig:Figure119} and Figure \ref{Fig:Figur
 
 The results presented as a comparison between Color PF and SMSPF shows that incorporating a deterministic structured search into the stochastic particle filtering framework improves the person tracking performance in complex scenarios. The SMSPF algorithm strikes a balance between specificity and generality offered by detection and tracking algorithms as discussed in Section 2. It uses specific structure-aware features in the search in order to handle non-homogeneity of the object and the cluttered nature of the background. On the other hand, generality is maintained by using simple, global features in the particle filtering framework so as to handle non-rigidity and deformability of the object. The clear advantage of using the structured search can be observed on the complex Dataset 3 which encompasses most of the challenges generally encountered while using the Social Interaction Assistant.
 
-\chapter{Communicating Proxemics}
+\chapter{COMMUNICATING PROXEMICS}
 An important shortcoming of the early Social Interaction Assistant [5] (and many other assistive devices for individuals who are blind) is that the prototype Assistant provides only audio outputs. This design is not practical for the target user population because individuals who are blind rely on their ears to perceive their environment, and audio outputs may interfere with normal hearing. This chapter describes an alternative delivery modality: a vibrotactile belt that can convey non-verbal communication cues to individuals who are blind or visually impaired. Specifically, we focus on the first non-verbal cue listed in Section I.C: helping users perceive the number of people in their visual field, and the relative direction and distance of each individual with respect to the user. In some social situations, location information is available through audible cues, but this is not always the case. For example, when a group of friends approaches all of them may smile but only some may offer a verbal greeting, or a passing co-worker may nod to you in the hallway without exchanging a verbal greeting. These non-verbal communications are common occurrences, but are not accessible to someone who is blind.
 
 \section{Motivation}
@@ -3505,7 +3503,7 @@ After the experiment, subjects filled out 10-level Likert scales-1 (lowest) to 1
 \label{TIMFigure111}
 \end{figure}
 
-\section{CASE STUDY: WAIST-WORN VIBROTACTILE DISPLAY FOR PEDAGOGICAL APPLICATION FOR CHOREOGRAPHED DANCE}
+\section{Case Study: Waist-worn Vibrotactile Display for Pedagogical Application for Choreographed Dance}
 To evaluate the vibrotactile belt's three important design parameters of usability, functionality and performance, we conducted a case study in which the belt was used for a novel pedagogical application under realistic conditions. A two-fold, quantitative and subjective analysis was conducted to evaluate real-world usability issues. In [1], we demonstrated the general usability of the belt through a pilot study from the user's perspective, but the functional and performance metrics were not evaluated. In this paper, we delve into the details of the belt's evaluation through its use as a research platform for a novel application of teaching choreographed dance. While the usability analysis was done from the user's perspective, the functional and performance analyses were done by an independent researcher who designed and executed the dance study. The researcher was not part of the development team and evaluated the proposed belt as a research platform to impart choreography of simple dance steps to a mixed group of participants with and without dance experience. It is important to note that the researcher who worked with the proposed belt (a) had never used the vibrotactile belt; (b) had limited experience with haptic devices, and had never designed vibrotactile spatio-temporal patterns; and (c) had a novel application design with specific research objectives of determining how effectively choreography can be achieved through wearable vibrotactile devices.
 
 \subsection{Related Work in the Use of Vibrotactile Cues for Teaching Dance}
@@ -3687,7 +3685,7 @@ Fig. 11 shows participants' recognition accuracies on the 12 spatio-temporal pat
 \end{figure}
 
 
-\chapter{Sensing Facial Expressions of Interaction Partners}
+\chapter{SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
 As described in Chapter 2, in the survey conducted towards understanding the non-verbal cue needs for people who are blind and visually impaired, they emphasized on the lack of access to facial expressions and mannerisms of their interaction partners. This is supported by the argument that most part of the non-verbal cues occur through visual facial mannerisms as described in Section 1.2.1 of Chapter 1. The face encodes a lot of information that is both communicative and expressive in nature. Unfortunately, the face is a very complex data generator and the encodings on the face are not very context sensitive and individualistic in nature. Evolving computing technologies have been focused on developing solutions towards understanding the nature of facial mannerisms and gestures, but most of this multi-modal affective interaction research has been focused on the development of sensors and algorithms that understand user's emotional state in a human-machine interaction scenario. These interactions are mostly unilateral in nature and directed primarily towards the machine interpreting the user's emotional state. That is, the machines become the primary consumers of the affective cues. But from the perspective of an assistive technology affect interactions have to be augmentations that enrich human-human interpersonal interaction, where the machines not only interpret communicator's affective state, but also delivers affect information through novel affect actuators to a social interaction recipient.
 
 As mentioned before most affect information is causal in nature and understanding what the expression or mannerism means requires an understanding of context when it is happening and the situation in which the communication is occurring. Our understanding of the cognitive models within the human brain that allows for the processing of complex facial expressions and emotions is very naïve. Computational models developed towards understanding context are very simplistic and performs nominally even under very well controlled laboratory conditions. Contrary to such a setting, assistive technologies provide some respite to the complexities by having the cognitive abilities of the user of the technology to make decisions. That is, while human computer interfaces need to mimic sensing, cognition and delivery, assistive technologies for people who are blind have to look at sensing and delivery alone and piggy back on human cognition. This requires precise sensing of the facial and head movements while delivering as much information back to the user as possible through technologies that do not overload the user with information but provides just the right level of information to allow them to cognitively process this information.
@@ -3711,7 +3709,7 @@ In the past, most researchers and technologists have resorted to auditory cueing
 \label{DAFigure1}
 \end{figure}
 
-\chapter{Delivering Facial Expressions through Auxiliary Modalities}
+\chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
 Over the past few decades, the environments in which humans live and operate have become increasingly information rich. Audio and visual modalities have been occupied by more than one source at the same time. Increasing audio-visual stimulations in the human's surroundings have increased the need for divided attention, which competes with the need for selective and sustained attention to complete a task at hand [1]. While audio and video have evolved as a medium for immersing humans in rich sensory experience, touch [2], taste [3] and smell [4] have only recently being considered for sensory augmentation and substitutions - note the subtlety between augmentation and substitution. When augmenting the already utilized sensory channels, the newer medium is not in demand to reproduce all of the information, but only enrich the already delivered experience. On the other hand, substitutions have to deliver information that was once being provided by a certain sensory channel on a newer medium, while maintaining similar or lesser cognitive load.
 
 Vision is the primary sense organ for most mammals and for a few primates, including humans, trichromatic vision is so highly evolved [5] that a major portion of the neuronal pathway in the brain is dedicated to sensing, perceiving and cognizing visual stimuli. This allows the human vision to process high intensities of data that stimulates the eyes - Koch et. al. estimated that human eyes, with 106 ganglion cells, could transmit up to 10 Mbits/s [6] to the brain. Hence substituting vision with any other sensory channel is a challenging task that requires appropriate design taking into account the high intensity of data generated by visual stimuli.
@@ -3720,7 +3718,7 @@ In this paper, we present a visuo-haptic sensory substitution device that intend
 
 In order to test the effectiveness of the visuo-haptic sensory substitution of the proposed vibrotactile glove, we explore one specific application area of delivering facial expressions via the glove. We targeted an assistive technology to translate facial expressions of social interaction partners into haptic spatio-temporal cues which could then be interpreted by people who are blind. The human face is very dynamic when it comes to generating important non-verbal communicative cues. Subtle movements in the facial features can convey great amounts of information. For example, slight opening of the eyelids conveys confusion or interest, whereas a slight closing of the eye lids conveys anger or doubt. Thus, the human face can be considered to be a very high bandwidth information stream, where careful design considerations are needed if this data has to be encoded optimally and effectively through haptic modalities.
 
-\section{RELATED WORK}
+\section{Related Work}
 A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual Sensory Substitution) [8] that substitutes visual data into a 400 point tactile array worn on the back of the user. A similar effort by Rahman et. al. [9] focused on delivering facial emotions of interaction partners using vibrators installed on a chair such that the user's back is in direct contact with the vibrators. Both of these technologies have the obvious disadvantage that the user is restricted to a seated position with immobile augmentations. Recently we have explored the use of vibrotactile technologies on a belt like form factor for delivering direction and distance information [10]. Unfortunately, the waist (combined with a belt like form factor) did not prove suitable for delivering high intensity data like facial expressions. Cappelletti et. al. [11] developed a vibrotactile glove to deliver color information to the tips of the fingers as vibrations. But the glove required that the users wear the vibrators on the inside which restricts functional use of one's hand. From a sensory augmentation perspective, vibrotactile gloves have been explored for applications ranging from assistive technologies to telesurgery. Uchiyama et. al. [12] have developed a glove that provides directional information to users of a semi autonomous wheelchairs, while Brell et. al. [13] used haptic gloves for providing feedback during telesurgery. These technologies have proved the viability for glove based vibrotactile sensory augmentation. Adding to these findings, the experiments described in this paper addresses the vibrotactile sensory abilities of the dorsal surface of the fingers, especially for sensory substitution.
 
 \section{The Vibrotactile Glove}
@@ -3966,7 +3964,7 @@ Figure 8 shows the average time taken by the subjects per expression when they r
 \section{Conclusion}
 In this paper we demonstrated a novel interface, a vibrotactile glove, used as an assistive device for delivering seven facial expressions to persons who are visually disabled. Results are convincing that it is possible to convey basic facial expressions through haptic interfaces. Work is in progress to make the system more dynamic for delivering all facial movements, thereby allowing the user to make the judgment of what facial expressions someone is displaying. This would allow independent access to all interpersonal communicative cues, and not just the basic expressions. Efforts are underway to recruit more individuals who are blind and visually impaired towards testing the efficacy of the system. \cite{vinciarelli_proceedings_2008}
 
-\chapter{Social Disability}
+\chapter{SOCIAL DISABILITY}
 \section{Social Intelligence}
 Studies in Cognitive Psychology support the hypothesis that social interactions play a vital role in the overall development of intelligence in humans, especially, in the development of Social Intelligence (or Interpersonal Intelligence [10]) and Emotional Intelligence [11]. Social and Emotional intelligence are vital components in an individual understanding the importance of other people and things in their surroundings. Without active social interactions, a large part of the learning component is lost.
 Social Intelligence (SI) can be defined as the competence in initiating and maintaining group interactions and behaviors. First defined by Edward Thorndike, Social Intelligence is "the ability to understand and manage men and women, boys and girls, to act wisely in human relations" [12]. Karl Albrecht [13] argues that Social Intelligence is the basis for five important aspects for an individual to mingle into his/her society, including, 1) Situational awareness, 2) Sense of Presence, 3) Authenticity (or Individuality), 4) Clarity (of action), and 5) Empathy.
@@ -4004,8 +4002,7 @@ National Center for Health Statistics reported in 2007 that the estimated number
 \end{itemize}
 
 
-\section{Social Disability - The hidden barrier to professional growth in the disabled population)
-
+\section{Social Disability: The hidden barrier to professional growth in the disabled population}
 On February 12, 2009, Vice President Joe Biden announced the appointment of a Special Assistant to the President for Disability Policy. By selecting the Associate Director of White House Office of Public Engagement, Kareem Dale, to this post Obama became the first President in the US history to have a special policy advisor overseeing disability issues.
 
 One of the key components of Obama's policy on disability is the effort to increase access to employment for the disabled population. The White House website on Disability states:
@@ -4025,6 +4022,7 @@ The social disconnect is not limited to visual impairment and blindness alone. S
 The Americans with Disabilities Act was signed into law in 1990 by President George H. W. Bush and from then on, pretty much the same verbiage has followed each successive president's agenda on disability employment. As a nation, we have been successful in moving this segment of population into the work force, but still there is a large gap in their professional success. On a wage comparison scale (data extracted from the 2008 American Community Survey questionnaires), the US visually impaired population make on an average 32\% less than general population of the same age. The US physically challenged population makes 42\% less. When one includes education level in these statistics, the results are even more disappointing. People with visual disability, with post graduate education, make 47\% less than the average population with post graduate education and people with physical disability with post graduate degrees make 72\% less than the general population with similar degrees.
 
 \begin{figure}
+\centering
 \includegraphics[width=5in]{WageByAge.jpg}\\
 (a)\\
 \includegraphics[width=5in]{WageByEdu.jpg}\\
