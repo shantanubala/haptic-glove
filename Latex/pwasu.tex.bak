@@ -86,7 +86,10 @@ This is a sample abstract
 \asuacknowledgements
 [Enter your text here]
 
+\begin{KeepFromToc}
 \tableofcontents
+\end{KeepFromToc}
+
 \listoftables   % if you have any tables
 
 \listoffigures  % if you have any figures
