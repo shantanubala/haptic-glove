@@ -86,7 +86,10 @@ This is a sample abstract
 \asuacknowledgements
 [Enter your text here]
 
+\begin{KeepFromToc}
 \tableofcontents
+\end{KeepFromToc}
+
 \listoftables   % if you have any tables
 
 \listoffigures  % if you have any figures
@@ -3412,7 +3415,7 @@ The experiments presented here tested the haptic belt system for its use in conv
 \end{figure}
 
 \subsection{Experiment 1: Localization of Vibrotactile Cues}
-Prior work [15] showed that reasonable localization accuracy-between 80% to 100% accuracy depending upon tactor location-was possible with a belt design similar to what we presented above. Our experiment is similar, but offers a few variations to verify the results obtained in [15].
+Prior work [15] showed that reasonable localization accuracy-between 80\% to 100\% accuracy depending upon tactor location-was possible with a belt design similar to what we presented above. Our experiment is similar, but offers a few variations to verify the results obtained in [15].
 Subjects: 10 subjects (8 males and 2 females), of ages between 24 and 59, participated in this experiment. One of the subjects was blind; the rest were sighted. Subjects had no known deficits related to their tactile sense of the waist area. Further, no subjects had prior experience with haptic belts, but all subjects had some exposure to vibrotactile cues (e.g., vibrations of a cell phone).
 
 \subsubsection{Apparatus:} The haptic belt described in Section III was used for this experiment. Vibratory signals were 600 ms in length, and had a frequency and intensity well within the range of human perception. In contrast to [15], cues are longer-600 ms compared to 200 ms-and we do not use headphones to mask subtle vibration noise, nor do we randomly vary intensity with each cue; the reason for these changes is that we are mostly concerned with how the belt as a complete system accomplishes non-verbal communication, rather than the spatial acuity of the waist. Hence, if a specific intensity of vibration feels different around the waist, and some vibrations can be heard, and if these cues help in tactor localization, then this redundant information should only add to the usability of the system.
@@ -3719,7 +3722,176 @@ In this paper, we present a visuo-haptic sensory substitution device that intend
 In order to test the effectiveness of the visuo-haptic sensory substitution of the proposed vibrotactile glove, we explore one specific application area of delivering facial expressions via the glove. We targeted an assistive technology to translate facial expressions of social interaction partners into haptic spatio-temporal cues which could then be interpreted by people who are blind. The human face is very dynamic when it comes to generating important non-verbal communicative cues. Subtle movements in the facial features can convey great amounts of information. For example, slight opening of the eyelids conveys confusion or interest, whereas a slight closing of the eye lids conveys anger or doubt. Thus, the human face can be considered to be a very high bandwidth information stream, where careful design considerations are needed if this data has to be encoded optimally and effectively through haptic modalities.
 
 \section{Related Work}
-A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual Sensory Substitution) [8] that substitutes visual data into a 400 point tactile array worn on the back of the user. A similar effort by Rahman et. al. [9] focused on delivering facial emotions of interaction partners using vibrators installed on a chair such that the user's back is in direct contact with the vibrators. Both of these technologies have the obvious disadvantage that the user is restricted to a seated position with immobile augmentations. Recently we have explored the use of vibrotactile technologies on a belt like form factor for delivering direction and distance information [10]. Unfortunately, the waist (combined with a belt like form factor) did not prove suitable for delivering high intensity data like facial expressions. Cappelletti et. al. [11] developed a vibrotactile glove to deliver color information to the tips of the fingers as vibrations. But the glove required that the users wear the vibrators on the inside which restricts functional use of one's hand. From a sensory augmentation perspective, vibrotactile gloves have been explored for applications ranging from assistive technologies to telesurgery. Uchiyama et. al. [12] have developed a glove that provides directional information to users of a semi autonomous wheelchairs, while Brell et. al. [13] used haptic gloves for providing feedback during telesurgery. These technologies have proved the viability for glove based vibrotactile sensory augmentation. Adding to these findings, the experiments described in this paper addresses the vibrotactile sensory abilities of the dorsal surface of the fingers, especially for sensory substitution.
+A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual Sensory Substitution) [8] that substitutes visual data into a 400 point tactile array worn on the back of the user. A similar effort by Rahman et. al. [9] focused on delivering facial emotions of interaction partners using vibrators installed on a chair such that the user's back is in direct contact with the vibrators. Both of these technologies have the obvious disadvantage that the user is restricted to a seated position with immobile augmentations. Recently we have explored the use of vibrotactile technologies on a belt like form factor for delivering direction and distance information [10]. Unfortunately, the waist (combined with a belt like form factor) did not prove suitable for delivering high intensity data like facial expressions. Table below presents some of the popular haptic technologies developed for communicating high bandwidth interpersonal interaction data. While these provide opportunity to appreciate the possibility of haptic information delivery, the end goal was not clearly defined towards delineating fine facial movements that are deemed important in typical social interactions.
+
+\begin{landscape}
+\begin{table}
+\caption{Features for Body Rock Detection: Group 1}
+\label{InterpersonalTable1}
+\scriptsize 
+\begin{tabularx}{8.5in}{||X|X|X|X|X|X||XXXX|XXXX||}
+\hline
+\hline
+Device & Actuation &	Major Organ & Non-verbal Cue & Application	& User Experience & \multicolumn{4}{|c|}{Device} & \multicolumn{4}{|c|}{Device}\\
+\hline
+\hline
+
+inTouch \newline [199] & Vibration Pressure Texture &	Hand &	Social Touch &	-Interpersonal communication through remote touch &	No Testing & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{inTouch1.jpg}}}
+& \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{TheBed.jpg}}}\\
+\cline{1-6}
+The Bed \newline [200] & Pressure Texture Temperature &	Body &	Social Touch & Remote interpersonal intimate communication	 Self report & System found to produce feelings of intimacy. & \multicolumn{4}{|c|}{\multirow{2}{*}{}} & \multicolumn{4}{|c|}{\multirow{2}{*}{}} \\
+\hline
+\hline
+
+HandJive \newline [201] & Pressure Proprioception &	Hand & Handshake Touch	& Interpersonal communication through new cueing language & No Data & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HandJive.jpg}}} & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HyperMirror.jpg}}}\\
+
+HyperMirror \newline [202] & Pressure &	Shoulders &	interpersonal distance, relative position, crossing paths &	-Remote crossing of paths. \newline
+-Initiating interaction in strangers across distance. \newline Tap to initiate conversation. &	Eye contact was made across distant users. \newline
+Tap signal aroused attention. \newline
+Crossing paths initiated conversations. & \multicolumn{4}{|c|}{\multirow{2}{*}{}} & \multicolumn{4}{|c|}{\multirow{2}{*}{}}\\
+\hline
+\hline
+\end{tabularx}
+\end{table}
+\end{landscape}
+
+\begin{landscape}
+\begin{table}
+\caption{Features for Body Rock Detection: Group 1}
+\label{InterpersonalTable1}
+\scriptsize
+\begin{tabularx}{8.5in}{||X|X|X|X|X|X||XXXX|XXXX||}
+\hline
+\hline
+Device & Actuation &	Major Organ & Non-verbal Cue & Application	& User Experience & \multicolumn{4}{|c|}{Device} & \multicolumn{4}{|c|}{Device}\\
+\hline
+\hline
+Com Touch \newline [205] & Vibration Pressure &	Hands &	Touch Emotions & -Bidirectional operation. \newline
+-Remote participant squeezes one end and a recipient at the other end feels vibrations. -24 subjects.
+-Subjects came up with their own cueing.
+-In Desert Survival Task, 15 items were sorted based on importance and 5 were ranked.
+-83% of participants used atleast one gesture.
+-67% developed their own gestures
+
+
+\hline
+\hline
+\end{tabularx}
+\end{table}
+\end{landscape}
+
+
+Cappelletti et. al. [11] developed a vibrotactile glove to deliver color information to the tips of the fingers as vibrations. But the glove required that the users wear the vibrators on the inside which restricts functional use of one's hand. From a sensory augmentation perspective, vibrotactile gloves have been explored for applications ranging from assistive technologies to telesurgery. Uchiyama et. al. [12] have developed a glove that provides directional information to users of a semi autonomous wheelchairs, while Brell et. al. [13] used haptic gloves for providing feedback during telesurgery. These technologies have proved the viability for glove based vibrotactile sensory augmentation. Adding to these findings, the experiments described in this paper addresses the vibrotactile sensory abilities of the dorsal surface of the fingers, especially for sensory substitution. The following table shows a list of applications that have called for the use of haptic glove based solutions.
+
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Features for Body Rock Detection: Group 1}
+\label{HapticGloveRelated1}
+\scriptsize %\addtolength{\tabcolsep}{-3pt}
+\begin{tabularx}{8.5in}{|X|X|X|X|X|X|X|X|}
+\hline
+\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	\textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
+\hline
+\hline
+
+[223] & Convey color information to people who are blind. &	3 &	Distal phalanges of index, middle and ring fingers (T). \newline
+- Three phalanges of the index finger. (O)	& - Continuous on all three vibrators (S). \newline
+- 0.5s time gap between vibrators (D). 	& - Encode R, G and B channel to each of the 3 vibrators. \newline
+- Amplitude of vibration proportional to the intensity of the color channel. &	- Convey only colors individually (C). \newline
+- Allow users to explore a down sampled color image using a mouse (I). &	- 5 participants who are blind. \newline
+-2 sighted participants. \newline - COS: 71\% \newline - CTS: 87\% \newline - ITS: 100\% \newline - IOD: 67\% \newline - IOS: 92\% \newline - COD: 87\% \newline - CTD: 90\% \\
+\hline
+
+
+[224] &
+Vibrotactile cueing to improve target acquisition in virtual 2D environment using mouse as input. &	4 &	-2 on the lower part of the palm just above the wrist. \newline 
+- 2 on the back of the lower palm  just above the wrist. &	- 100ms vibratory cues to indicate direction of the target and on-target signals.	\newline - Frequency of the vibration was proportional to the direction and distance from the target location. & - Two vibrators were turned on to indicate arrival on a target.	& - Expt 1 tested vibrators on the front and back of palm. \newline - Expt 2 tested continuous distance cueing with suppressing or increasing frequency as the target is approached. &
+	- The location of the tractors did not have an effect. Front and Back worked the same. \newline
+- Suppressing the frequency as the user approaches the target worked better than enhancing. \\
+\hline
+
+[225] &
+Vibrotactile array for delivering distance to an obstacle from a wheelchair driven by a visually impaired person. &	9 & Array on the front of the palm in a 3x3 matrix.	& - Warning signals \newline - Spatial obstacle location signal. \newline
+- Direction conveyance to the user.	& - Warning signal vibrates all vibrators. \newline - Spatial location of an obstacle is sent in the particular motor with near, medium and far range to obstacle. \newline - Direction cue vibrates the center motor with two pulses and then vibrates motor of the desired direction.	& - No user testing done yet &	- No user testing done yet \\
+\hline
+\end{tabularx}
+\end{table}
+\end{landscape}
+
+
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Features for Body Rock Detection: Group 1}
+\label{HapticGloveRelated2}
+\scriptsize %\addtolength{\tabcolsep}{-3pt}
+\begin{tabularx}{8.5in}{|X|X|X|X|X|X|X|X|}
+\hline
+\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	\textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
+\hline
+\hline
+
+[226] [227] &
+Vibrotactile cues for navigating surgeons hand during surgery. &	4	& 
+ See Figure. \newline \newline  \includegraphics[width=0.9in]{HapticGloveRef226.jpg} &	- Continuous vibrations based on the amount of off target displacement	 & - Optical tracking of visual markers on the surgeons hand is translated to vibrotactile cues to give off-center information. &	- Subjects were required to move a surgical tool to the target location. \newline - Subjects react to varying impulse input as required. & No quantification provided in the paper. \\
+\hline
+
+[228] &
+Field of view in front of individual who is blind is captured with a camera and translated to vibrotactile cues corresponding to a depth map. &	No data &	 No specific information provided. \newline \newline \includegraphics[width=0.9in]{HapticGloveRef228_1.jpg} \newline &
+ 	- Magnitude of vibration is directly proportional to distance to obstacle. \newline
+- Frequency of vibration is inversely proportional to the confidence in depth measurement. &	The image from the camera is used to determine a depth map of obstacles in front of the user and is translated into vibrotactile cues. &	Two obstacle courses were set within the labotatory environment and the participants were required to navigate the course.
+Course 1: \newline \includegraphics[width=0.9in]{HapticGloveRef228_2} \newline 
+Course 2: \newline \includegraphics[width=0.9in]{HapticGloveRef228_3} \newline & - 9 participants, 3 blind and 6 with low vision.
+-  Course 1: 
+Travelled the minimal hitting path 65\% with their existing navigation aid and increased to 75\% with the glove. \newline
+- Course 2:
+Travelled the minimal hitting path 65\% with their existing navigation aid and decreased to 57\% with the glove. \\
+\hline
+
+\end{tabularx}
+\end{table}
+\end{landscape}
+
+\begin{landscape}
+\begin{table}
+\centering
+\caption{Features for Body Rock Detection: Group 1}
+\label{HapticGloveRelated2}
+\scriptsize %\addtolength{\tabcolsep}{-3pt}
+\begin{tabularx}{8.5in}{|X|X|X|X|X|X|X|X|}
+\hline
+\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	\textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
+\hline
+\hline
+
+[229] [230] & 
+Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	No user study. \\
+\hline
+
+[231] &
+Using vibrators to convey slip information in a prehensile glove. &	5 &	Fingertips of the five fingers. &	Motion sensors (optical motion sensor similar to the one used in an optical mouse) mounted outside the glove on the finger tips measure the slip of an object. The slip information measured as optic flow is conveyed to the vibrator as varying frequency. &	
+Slip motion is proportional to the frequency of vibration. & 12 subjects. \newline Users placed the glove on a surface that was laterally pulled from under the glove and the reaction time was measured by asking the participants to press a button with their free hand. Experiment was conducted with bare hands, with a prehensile glove without vibrators and with the slip glove. &	
+\underline{Mean reaction time:} \newline
+Bare hand: 0.214s \newline
+Normal Glove: 1.669s \newline
+Slip Glove: 0.483s \newline
+
+\underline{Percent Failure:} \newline
+Bare hand: 0\% \newline
+Normal Glove: 27.8\% \newline
+Slip Glove: 5.6\% \newline \\
+
+\hline
+
+
+
+
+
+\end{tabularx}
+\end{table}
+\end{landscape}
+
 
 \section{The Vibrotactile Glove}
 
