@@ -3720,7 +3720,93 @@ The dyadic interaction assistant was designed to be a compact device that can be
 \label{DAFigure2}
 \end{figure}
 
+\section{Facial Expression Recognition - State of the art}
+Computer based facial expression recognition is mostly centered around the process of identifying the various facial mannerisms and gestures of individuals through the use of mostly electrooptical cameras. While recent developments relate to their recognition using infrared [REF], thermal[REF] and face electromyogram (EMG) [REF], in this chapter, we restrict to the discussions of EO camera based facial expression recognition as the primary sensor on the dyadic interaction assistant is restricted to the use of an auto-focus Complementary Metal Oxide Semiconductor (CMOS) camera.
+
+Most facial expression recognition algorithms treat the underlying problem as a classification problem and group spatio-temporal facial actions into predetermined bins of specific facial gestures or mannerisms. Popular classifications include the Ekman [REF] grouping of 6 basic facial expression of emotion, including Happy, Sad, Surprise, Fear, Anger and Disgust. These classes are distinguished from the otherwise Neutral expression of the individual's face.
+
+Table XXX below shows a compilation of the state-of-the-art in facial expression recognition algorithms. Note that the table is an extension of the 2009 work that was published by Zaho et. al. [REF].
+
+\begin{landscape}
+\begin{table}
+\scriptsize
+\caption{State-of-the-art facial expression recognition algorithms and their performance. \newline
+\textbf{Exp:} Spontaneous(S) / Posed expression (P);
+\textbf{Per:} 	Person Dependent(P) / Independent (I);
+\textbf{Class:} 	Number of classes;
+\textbf{Sub:} 	Number of subjects;
+\textbf{Type:} 	Data Type: Video (V) / Image(I);
+\textbf{\% Zcc:} 	Percentage Accuracy;
+?: 	missing entry.}
+\begin{tabularx}{8in}{|X|XX|XX|X|X|X|X|X|X|}
+\hline
+\textbf{Ref.} & \multicolumn{2}{|c|}{\textbf{Features}} & \multicolumn{2}{|c|}{\textbf{Classifier}} & \multicolumn{6}{|c|}{\textbf{Performance}} \\
+\cline{6-11}
+ & \multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{} & \textbf{Exp} &	\textbf{Per} &	\textbf{Class} & \textbf{Sub} & \textbf{Type} & \textbf{\% Acc} \\
+\hline
+[157] & \multicolumn{2}{|c|}{AAM}	& \multicolumn{2}{|c|}{SVM}       & S & I &	2     &	21 & ? & 81 \\
+\hline
+[158] & \multicolumn{2}{|c|}{Gabor} & \multicolumn{2}{|c|}{SVM + HMM} &	S &	I &	3 AUs &	17 & V & 98 \\
+\hline
+[159] [160] & \multicolumn{2}{|c|}{Gabor} & \multicolumn{2}{|c|}{AdaBoot SVM} & S P & I & 17 AUs & 119 + 12 & I & 93 + 90.5 \\
+\hline
+[161] & \multicolumn{2}{|c|}{12 motion units} & \multicolumn{2}{|c|}{Tree DBN HMM} & P & D I & 6 & 5 + 53 & V & 66.5 + 73.2 \\
+\hline
+[162] & \multicolumn{2}{|c|}{Shape Models, Gabor} & \multicolumn{2}{|c|}{LDC} &	S &	I &	3 AUs &	21 & I &	76 \\
+\hline
+[163] & \multicolumn{2}{|c|}{24 facial points} & \multicolumn{2}{|c|}{DBN} & P & D & 6 & 30 & V & 77 \\
+\hline
+[164] & \multicolumn{2}{|c|}{Intensity} & \multicolumn{2}{|c|}{NN} & P & ? & 7 & ? & I & 68 \\
+\hline
+[165] & \multicolumn{2}{|c|}{Shape fea, Optic flow} & \multicolumn{2}{|c|}{C4.5 Bayes Net} & P & ? & 8 & 4 & I & 100 \\
+\hline
+[166] & \multicolumn{2}{|c|}{FAPs} &	\multicolumn{2}{|c|}{Neurofuzzy network} & S & I & 3 & ? & I & 78 \\
+\hline
+[167] & \multicolumn{2}{|c|}{Shape fea} &	\multicolumn{2}{|c|}{DBN} & S & ? & 2 & 8 & V & 95.3 \\
+\hline
+[168] & \multicolumn{2}{|c|}{Facial and head gesture} & \multicolumn{2}{|c|}{GP SVM HMM NN} & S &	? &	2 &	8 &	V &	86\\
+\hline
+[169] & \multicolumn{2}{|c|}{Pixel diff of mouth}	& \multicolumn{2}{|c|}{GP SVM HMM NN} &	S &	I &	2 &	24 &	V &	79\\
+\hline
+[170] & \multicolumn{2}{|c|}{Intensity of face} &	\multicolumn{2}{|c|}{Decomposable model} &	P &	I &	6 &	8 + 16 &	V &	 61\\
+\hline
+[171] & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost SVM} &	S &	I &	2 &	26 &	V &	72\\
+\hline
+[172] & \multicolumn{2}{|c|}{AAM} &	\multicolumn{2}{|c|}{SVM} &	S P &	I &	AUs	& 100 &	? &	95\\
+\hline
+[173] & \multicolumn{2}{|c|}{Facial profile} & \multicolumn{2}{|c|}{Rule-based}	& P &	I &	27 AUs & 19 &	V &	 86.3\\
+\hline
+[174] & \multicolumn{2}{|c|}{Frontal profile facial points} & \multicolumn{2}{|c|}{Rule and case based}	& P &	I &	9 &	8 &	I &	83\\
+\hline
+[175] & \multicolumn{2}{|c|}{12 motion units} &	\multicolumn{2}{|c|}{kNN} &	S &	I &	4 &	53 + 28 &	V &	93 + 95\\
+\hline
+[176] & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost DBN} &	P &	I &	14 AUs &	100 + 10 &	I	 & 93 + 93\\
+\hline
+[177] & \multicolumn{2}{|c|}{Motion history} &	\multicolumn{2}{|c|}{SNoW kNN} &	P &	I &	15 AUs &	19 + 100 &	V	& 61 + 68\\
+\hline
+[178] & \multicolumn{2}{|c|}{8 facial points}	& \multicolumn{2}{|c|}{Gentle Boost SVM} &	S P &	I &	2 &	27 + 32 + 65 &	V &	90\\
+\hline
+[177] & \multicolumn{2}{|c|}{20 facial points} &	\multicolumn{2}{|c|}{Gentle SVM} &	S P &	I &	2 &	52 &	V &	94\\
+\hline
+[179] & \multicolumn{2}{|c|}{Shape fea, Intensity} &	\multicolumn{2}{|c|}{NN} &	S &	? &	7 &	14 &	I &	84\\
+\hline
+[180] & \multicolumn{2}{|c|}{3D surface} &	\multicolumn{2}{|c|}{LDA} &	P &	I	& 6 &	60 &	I	& 83\\
+\hline
+[181] & \multicolumn{2}{|c|}{Geometric ratio}	& \multicolumn{2}{|c|}{GMM} &	P &	I &	4 &	47 &	I &	75\\
+\hline
+[182] & \multicolumn{2}{|c|}{Harr} &	\multicolumn{2}{|c|}{AdaBoost} &	P &	I &	11 AUs &	? &	I &	92\\
+\hline
+[159] & \multicolumn{2}{|c|}{Intensity} &	\multicolumn{2}{|c|}{kNN HMM} &	S P &	&	6 &	97 + 21 &	V &	90.7 + 82\\
+\hline
+[183] & \multicolumn{2}{|c|}{Texture with LPP} &	\multicolumn{2}{|c|}{SVDD} &	S &	D &	2 &	2 &	I &	87\\
+\hline
+\end{tabularx}
+\end{table}
+
+\end{landscape}
+
 \section{Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}
+In the
 
 \begin{figure}
 \centering
@@ -3728,6 +3814,7 @@ The dyadic interaction assistant was designed to be a compact device that can be
 \caption{36 Facial fiducial points tracked with FaceAPI software. Both $x$ and $y$ coordinates from all 36 points are used for facial expression recognition.}
 \label{DAFigure3}
 \end{figure}
+
 
 
 \chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
@@ -3841,7 +3928,7 @@ Cappelletti et. al. [11] developed a vibrotactile glove to deliver color informa
 \scriptsize %\addtolength{\tabcolsep}{-3pt}
 \begin{tabularx}{8.5in}{|X|X|X|X|X|X|X|X|}
 \hline
-\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	\textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
+\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	 \textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
 \hline
 \hline
 
@@ -3856,7 +3943,7 @@ Cappelletti et. al. [11] developed a vibrotactile glove to deliver color informa
 
 [224] &
 Vibrotactile cueing to improve target acquisition in virtual 2D environment using mouse as input. &	4 &	-2 on the lower part of the palm just above the wrist. \newline
-- 2 on the back of the lower palm  just above the wrist. &	- 100ms vibratory cues to indicate direction of the target and on-target signals.	\newline - Frequency of the vibration was proportional to the direction and distance from the target location. & - Two vibrators were turned on to indicate arrival on a target.	& - Expt 1 tested vibrators on the front and back of palm. \newline - Expt 2 tested continuous distance cueing with suppressing or increasing frequency as the target is approached. &
+- 2 on the back of the lower palm  just above the wrist. &	- 100ms vibratory cues to indicate direction of the target and on-target signals.	 \newline - Frequency of the vibration was proportional to the direction and distance from the target location. & - Two vibrators were turned on to indicate arrival on a target.	& - Expt 1 tested vibrators on the front and back of palm. \newline - Expt 2 tested continuous distance cueing with suppressing or increasing frequency as the target is approached. &
 	- The location of the tractors did not have an effect. Front and Back worked the same. \newline
 - Suppressing the frequency as the user approaches the target worked better than enhancing. \\
 \hline
@@ -3878,7 +3965,7 @@ Vibrotactile array for delivering distance to an obstacle from a wheelchair driv
 \scriptsize %\addtolength{\tabcolsep}{-3pt}
 \begin{tabularx}{8.5in}{|X|X|X|X|X|X|X|X|}
 \hline
-\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	\textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
+\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	 \textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
 \hline
 \hline
 
@@ -3911,7 +3998,7 @@ Travelled the minimal hitting path 65\% with their existing navigation aid and d
 \scriptsize %\addtolength{\tabcolsep}{-3pt}
 \begin{tabularx}{8.5in}{|X|X|X|X|X|X|X|X|}
 \hline
-\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	\textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
+\textbf{Ref.} & \textbf{Application} & \textbf{No. of \newline vibrators} &	\textbf{Location of vibrators} &	 \textbf{Vibration Pattern} &	 \textbf{Encoding} &	\textbf{Experiments}	& \textbf{User Study} \\
 \hline
 \hline
 
