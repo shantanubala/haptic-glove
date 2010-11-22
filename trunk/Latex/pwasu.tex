@@ -3682,8 +3682,8 @@ Fig. 11 shows participants' recognition accuracies on the 12 spatio-temporal pat
 \section{Proposed Solution}
 \begin{figure}
 \centering
-\includegraphics[width=4in]{Proxemics.jpg}
-\caption{Typical use of the social interaction assistant, a third person perspective on the use case scenario.}
+\includegraphics[width=5.5in]{Proxemics.jpg}
+\caption{(a) Typical use of the social interaction assistant, a third person perspective on the use case scenario, (b) An example of face detection being translated to vibrations on the haptic belt.}
 \label{TIMFigure119}
 \end{figure}
 
@@ -3695,22 +3695,40 @@ As mentioned before most affect information is causal in nature and understandin
 
 Thus, the focus of this chapter is on the precise sensing and proficient delivery of facial mannerisms and gestures of interaction partners to the user of the Social Interaction Assistant who is blind or visually impaired. To this end, the two important aspects of sense and delivery will be handled simultaneously to meet the goal of delivering dynamic facial and head movement information to the user of the social interaction assistant.
 
-\section{Dyadic Interaction Assistant}
-Dyadic interactions represent a large portion of social interactions between individuals; and during dyadic interactions, it is very important to assess the communicator's face, head and body-based gestures and mannerisms. As presented in Figure 2, the face captures the largest portion of the non-verbal cues and the current implementation of the dyadic interaction assistant focuses on the interaction partner's face (and head). The dyadic interaction assistant is to convey important facial and head mannerisms of the interaction partner that might correlate to communicative gestures like head nod, head shake, doubt, anger, frustration, happiness, interest, etc. See Figure 10 for a typical dyadic interaction setting. The device incorporates an automated table top face tracker which acts as the input to the system while allowing any extracted data to be delivered on a wearable haptic display called the Haptic Glove.
 
 \section{Design Considerations}
 The human face is very dynamic when it comes to generating important non-verbal communicative cues. Subtle movements in the facial features can convey great amounts of information. For example, slight opening of the eyelids conveys confusion or interest, whereas a slight closing of the eye lids conveys anger or doubt. Thus, the human face can be considered to be a very high bandwidth information stream, where careful design considerations need to be taken into account if this data has to be encoded optimally and effectively through other modalities.
 
 In the past, most researchers and technologists have resorted to auditory cueing when information has to be delivered to persons with visual disabilities; but there is a strong growing discomfort in the target population when it comes to overloading their hearing. People with visual disabilities have a natural tendency to accommodate for the lack of a primary sensory channel by relying on hearing. For example, with the aid of ambient noise in a room, they can gauge approximately how big a room is. Thus, when designing assistive devices aimed at social aid, we need to carefully consider how to deliver high bandwidth data streams to users relating to the facial movements of interaction partners. Touch or haptic based delivery is a growing area of research which is relatively underutilized, except for Braille. To this end, we explore the use of vibrotactile cueing on the back of the human palm (the human hand has a very large representation in the somatosensory cortex of the brain) to be both versatile and unobtrusive.
 
+\section{Dyadic Interaction Assistant - Proposed Solution}
+Dyadic interactions represent a large portion of social interactions between individuals; and during dyadic interactions, it is very important to assess the communicator's face, head and body-based gestures and mannerisms. As presented in Figure 2, the face captures the largest portion of the non-verbal cues and the current implementation of the dyadic interaction assistant focuses on the interaction partner's face (and head). The dyadic interaction assistant is to convey important facial and head mannerisms of the interaction partner that might correlate to communicative gestures like head nod, head shake, doubt, anger, frustration, happiness, interest, etc. See Figure 10 for a typical dyadic interaction setting. The device incorporates an automated table top face tracker which acts as the input to the system while allowing any extracted data to be delivered on a wearable haptic display called the Haptic Glove.
 
-\section{Proposed Solution}
 \begin{figure}
 \centering
 \includegraphics[width=4in]{DyadicInteraction.JPG}
 \caption{Typical use of the dyadic interaction assistance scenario, a third person perspective on the use case scenario.}
 \label{DAFigure1}
 \end{figure}
+
+The dyadic interaction assistant was designed to be a compact device that can be carried into meetings where an individual who is blind or visually impaired could place it in front of his/her interaction partner. The device, as shown in Figure 11, consists of a micro pan-tilt mechanism that is controlled from a PDA like computing platform. Real-time face detection (as explained in the previous section) tracks the face of the interaction partner and captures only the face image for further processing. We use the FaceAPI®, a commercially available facial feature tracking package to determine the locations of all the facial features including eyelids, eye brows and the mouth. Figure 12 shows a typical output of the FaceAPI software.
+
+\begin{figure}
+\centering
+\includegraphics[width=5in]{FaceAPITracking.JPG}
+\caption{Typical use of the dyadic interaction assistance scenario, a third person perspective on the use case scenario.}
+\label{DAFigure2}
+\end{figure}
+
+\section{Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}
+
+\begin{figure}
+\centering
+\includegraphics[width=3in]{FaceAPIPoints.JPG}
+\caption{36 Facial fiducial points tracked with FaceAPI software. Both $x$ and $y$ coordinates from all 36 points are used for facial expression recognition.}
+\label{DAFigure3}
+\end{figure}
+
 
 \chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
 Over the past few decades, the environments in which humans live and operate have become increasingly information rich. Audio and visual modalities have been occupied by more than one source at the same time. Increasing audio-visual stimulations in the human's surroundings have increased the need for divided attention, which competes with the need for selective and sustained attention to complete a task at hand [1]. While audio and video have evolved as a medium for immersing humans in rich sensory experience, touch [2], taste [3] and smell [4] have only recently being considered for sensory augmentation and substitutions - note the subtlety between augmentation and substitution. When augmenting the already utilized sensory channels, the newer medium is not in demand to reproduce all of the information, but only enrich the already delivered experience. On the other hand, substitutions have to deliver information that was once being provided by a certain sensory channel on a newer medium, while maintaining similar or lesser cognitive load.
@@ -3728,7 +3746,7 @@ A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual
 \begin{table}
 \caption{Features for Body Rock Detection: Group 1}
 \label{InterpersonalTable1}
-\scriptsize 
+\scriptsize
 \begin{tabularx}{8.5in}{||X|X|X|X|X|X||XXXX|XXXX||}
 \hline
 \hline
@@ -3837,7 +3855,7 @@ Cappelletti et. al. [11] developed a vibrotactile glove to deliver color informa
 
 
 [224] &
-Vibrotactile cueing to improve target acquisition in virtual 2D environment using mouse as input. &	4 &	-2 on the lower part of the palm just above the wrist. \newline 
+Vibrotactile cueing to improve target acquisition in virtual 2D environment using mouse as input. &	4 &	-2 on the lower part of the palm just above the wrist. \newline
 - 2 on the back of the lower palm  just above the wrist. &	- 100ms vibratory cues to indicate direction of the target and on-target signals.	\newline - Frequency of the vibration was proportional to the direction and distance from the target location. & - Two vibrators were turned on to indicate arrival on a target.	& - Expt 1 tested vibrators on the front and back of palm. \newline - Expt 2 tested continuous distance cueing with suppressing or increasing frequency as the target is approached. &
 	- The location of the tractors did not have an effect. Front and Back worked the same. \newline
 - Suppressing the frequency as the user approaches the target worked better than enhancing. \\
@@ -3865,7 +3883,7 @@ Vibrotactile array for delivering distance to an obstacle from a wheelchair driv
 \hline
 
 [226] [227] &
-Vibrotactile cues for navigating surgeons hand during surgery. &	4	& 
+Vibrotactile cues for navigating surgeons hand during surgery. &	4	&
  See Figure. \newline \newline  \includegraphics[width=0.9in]{HapticGloveRef226.jpg} &	- Continuous vibrations based on the amount of off target displacement	 & - Optical tracking of visual markers on the surgeons hand is translated to vibrotactile cues to give off-center information. &	- Subjects were required to move a surgical tool to the target location. \newline - Subjects react to varying impulse input as required. & No quantification provided in the paper. \\
 \hline
 
@@ -3873,9 +3891,9 @@ Vibrotactile cues for navigating surgeons hand during surgery. &	4	&
 Field of view in front of individual who is blind is captured with a camera and translated to vibrotactile cues corresponding to a depth map. &	No data &	 No specific information provided. \newline \newline \includegraphics[width=0.9in]{HapticGloveRef228_1.jpg} \newline &
  	- Magnitude of vibration is directly proportional to distance to obstacle. \newline
 - Frequency of vibration is inversely proportional to the confidence in depth measurement. &	The image from the camera is used to determine a depth map of obstacles in front of the user and is translated into vibrotactile cues. &	Two obstacle courses were set within the labotatory environment and the participants were required to navigate the course.
-Course 1: \newline \includegraphics[width=0.9in]{HapticGloveRef228_2} \newline 
+Course 1: \newline \includegraphics[width=0.9in]{HapticGloveRef228_2} \newline
 Course 2: \newline \includegraphics[width=0.9in]{HapticGloveRef228_3} \newline & - 9 participants, 3 blind and 6 with low vision.
--  Course 1: 
+-  Course 1:
 Travelled the minimal hitting path 65\% with their existing navigation aid and increased to 75\% with the glove. \newline
 - Course 2:
 Travelled the minimal hitting path 65\% with their existing navigation aid and decreased to 57\% with the glove. \\
@@ -3897,7 +3915,7 @@ Travelled the minimal hitting path 65\% with their existing navigation aid and d
 \hline
 \hline
 
-[229] [230] & 
+[229] [230] &
 Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	No user study. \\
 \hline
 
