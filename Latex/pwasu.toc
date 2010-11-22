@@ -182,47 +182,49 @@
 \contentsline {section}{\numberline {9.1}Design Considerations}{194}
 \contentsline {section}{\numberline {9.2}Dyadic Interaction Assistant - Proposed Solution}{195}
 \contentsline {section}{\numberline {9.3}Facial Expression Recognition - State of the art}{196}
-\contentsline {section}{\numberline {9.4}Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}{199}
-\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{200}
-\contentsline {section}{\numberline {10.1}Related Work}{201}
-\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{210}
-\contentsline {section}{\numberline {10.3}Proposed Solution}{210}
-\contentsline {section}{\numberline {10.4}Haptic Cueing}{211}
-\contentsline {subsection}{Localization}{211}
-\contentsline {subsection}{Spatio-Temporal Cueing}{212}
-\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{213}
-\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{214}
-\contentsline {section}{\numberline {10.5}Research Hypothesis}{214}
-\contentsline {subsection}{Localization}{214}
-\contentsline {subsubsection}{Hypothesis 1:}{214}
-\contentsline {subsubsection}{Hypothesis 2:}{215}
-\contentsline {subsubsection}{Hypothesis 3:}{215}
-\contentsline {subsection}{Spatio-Temporal Cueing}{215}
-\contentsline {subsubsection}{Hypothesis 4:}{215}
-\contentsline {subsubsection}{Hypothesis 5:}{215}
-\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{216}
-\contentsline {subsection}{Participants}{216}
-\contentsline {subsection}{Procedure}{216}
-\contentsline {subsection}{Analysis}{217}
-\contentsline {subsubsection}{Recognition Accuracies}{218}
-\contentsline {subsubsection}{ANOVA}{218}
-\contentsline {subsubsection}{Tuckey HSD}{218}
-\contentsline {section}{\numberline {10.7}Results}{219}
-\contentsline {subsection}{Localization Experiments}{220}
-\contentsline {subsubsection}{Phalange Level Localization}{220}
-\contentsline {subsubsection}{Finger Level Localization}{221}
-\contentsline {subsubsection}{Phalange Position Localization}{222}
-\contentsline {subsection}{Spatio-Temporal Experiments}{223}
-\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{223}
-\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{224}
-\contentsline {subsubsection}{Time for Recognition:}{226}
-\contentsline {section}{\numberline {10.8}Conclusion}{227}
-\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{229}
-\contentsline {section}{\numberline {11.1}Social Intelligence}{229}
-\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{231}
-\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{232}
-\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{234}
-\contentsline {chapter}{REFERENCES}{238}
-\contentsline {chapter}{APPENDIX}{253}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{254}
-\contentsline {subsection}{Procedure}{255}
+\contentsline {section}{\numberline {9.4}Design Considerations for Dyadic Interaction Assistant}{199}
+\contentsline {section}{\numberline {9.5}Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}{200}
+\contentsline {subsection}{Bayesian Network}{200}
+\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{202}
+\contentsline {section}{\numberline {10.1}Related Work}{203}
+\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{212}
+\contentsline {section}{\numberline {10.3}Proposed Solution}{212}
+\contentsline {section}{\numberline {10.4}Haptic Cueing}{213}
+\contentsline {subsection}{Localization}{213}
+\contentsline {subsection}{Spatio-Temporal Cueing}{214}
+\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{215}
+\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{216}
+\contentsline {section}{\numberline {10.5}Research Hypothesis}{216}
+\contentsline {subsection}{Localization}{216}
+\contentsline {subsubsection}{Hypothesis 1:}{216}
+\contentsline {subsubsection}{Hypothesis 2:}{217}
+\contentsline {subsubsection}{Hypothesis 3:}{217}
+\contentsline {subsection}{Spatio-Temporal Cueing}{217}
+\contentsline {subsubsection}{Hypothesis 4:}{217}
+\contentsline {subsubsection}{Hypothesis 5:}{217}
+\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{218}
+\contentsline {subsection}{Participants}{218}
+\contentsline {subsection}{Procedure}{218}
+\contentsline {subsection}{Analysis}{219}
+\contentsline {subsubsection}{Recognition Accuracies}{220}
+\contentsline {subsubsection}{ANOVA}{220}
+\contentsline {subsubsection}{Tuckey HSD}{220}
+\contentsline {section}{\numberline {10.7}Results}{221}
+\contentsline {subsection}{Localization Experiments}{222}
+\contentsline {subsubsection}{Phalange Level Localization}{222}
+\contentsline {subsubsection}{Finger Level Localization}{223}
+\contentsline {subsubsection}{Phalange Position Localization}{224}
+\contentsline {subsection}{Spatio-Temporal Experiments}{225}
+\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{225}
+\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{226}
+\contentsline {subsubsection}{Time for Recognition:}{228}
+\contentsline {section}{\numberline {10.8}Conclusion}{229}
+\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{231}
+\contentsline {section}{\numberline {11.1}Social Intelligence}{231}
+\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{233}
+\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{234}
+\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{236}
+\contentsline {chapter}{REFERENCES}{240}
+\contentsline {chapter}{APPENDIX}{255}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{256}
+\contentsline {subsection}{Procedure}{257}
