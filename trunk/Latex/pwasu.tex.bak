@@ -3802,11 +3802,22 @@ Table XXX below shows a compilation of the state-of-the-art in facial expression
 \hline
 \end{tabularx}
 \end{table}
-
 \end{landscape}
 
+\section{Design Considerations for Dyadic Interaction Assistant}
+As seen from the Table XXXX, facial expression recognition algorithm is a mature area with various solutions being suggested towards myriad applications ranging from biometrics to human computer interfaces. In contrast, the requirements in the proposed application is focused towards mediating human-human communication and thus imposes important constraints like,
+\begin{itemize}
+\item \emph{Real-time interpretation of the facial expressions and gestures:} People who are blind, or disabled in general, prefer not to rely on technologies that do not respond to their needs immediately and reliably. Survey of early adoption of assistive technologies show that the technology need not accomplish a large range of tasks, but the tasks being performed should be executed reliably and in useful time [REF]. Range of facial expressions range from a few hundredths of a second to couple of seconds at max [REF]. It is essential that the facial expression recognition algorithms be able to respond within this time frame to enable seamless interactions with sighted counterparts.
+\item \emph{Ability for the user to choose varying levels of facial information of their interaction partner:} In our interactions with the user community, it has become evident that each user has his/her own requirement of the details of the facial information that they receive from their interaction counterparts. For example, in a professional setting, individuals preferred to receive information that was delicate and down to detail, while in a personal setting, they preferred that the device does not overwhelm the user with facial interaction information.
+\item \emph{Ability to switch between subject-dependent and subject-independent facial expression recognition:} Social interactions vary between personal interactions with friends and family to professional meetings with strangers that the user may meet only once. An important aspect of social interaction is the ability to relate to an individual's personal mannerisms and gestures. This is especially true in personal interactions and behavioral psychology studies shows the inherent need for individuals to recognize and reenact their interaction partner's gestures (popularly termed as the \emph{Chameleon Effect}). From the sensing perspective, thus it is important that the algorithm be able to adapt to generic facial expression recognition, while also be able to adapt to subtle changes in a single subject's facial movements. That is, the algorithm requires the benefit of switching between subject-dependent and subject-independent facial expression and gesture recognition.
+\end{itemize}
+
+In the following section, we describe a recently proposed framework for facial expression recognition, termed as the Temporal Exampler-based Bayesian Network, which demonstrates the ability to satisfy the needs itemized above. We first describe the framework and provide justification for its suitability to address the identified requirements.
+
 \section{Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}
-In the
+\subsection{Bayesian Network}
+A Bayesian Network is a interdependency graph representing the influence of various events on a desired outcome. A Bayesian Network is the extension of the Bayes Rule to support multiple
+
 \begin{figure}
 \centering
 \includegraphics[width=3in]{FaceAPIPoints.JPG}
@@ -4012,18 +4023,11 @@ Slip motion is proportional to the frequency of vibration. & 12 subjects. \newli
 Bare hand: 0.214s \newline
 Normal Glove: 1.669s \newline
 Slip Glove: 0.483s \newline
-
 \underline{Percent Failure:} \newline
 Bare hand: 0\% \newline
 Normal Glove: 27.8\% \newline
 Slip Glove: 5.6\% \newline \\
-
 \hline
-
-
-
-
-
 \end{tabularx}
 \end{table}
 \end{landscape}

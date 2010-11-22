@@ -3764,9 +3764,9 @@ Table XXX below shows a compilation of the state-of-the-art in facial expression
 \hline
 [167] & \multicolumn{2}{|c|}{Shape fea} &	\multicolumn{2}{|c|}{DBN} & S & ? & 2 & 8 & V & 95.3 \\
 \hline
-[168] & \multicolumn{2}{|c|}{Facial and head gesture} & \multicolumn{2}{|c|}{GP SVM HMM NN} & S &	? &	2 &	8 &	V &	86\\
+[168] & \multicolumn{2}{|c|}{Facial and head gesture} & \multicolumn{2}{|c|}{GP SVM HMM NN} & S &	? &	2 &	8 &	V &	 86\\
 \hline
-[169] & \multicolumn{2}{|c|}{Pixel diff of mouth}	& \multicolumn{2}{|c|}{GP SVM HMM NN} &	S &	I &	2 &	24 &	V &	79\\
+[169] & \multicolumn{2}{|c|}{Pixel diff of mouth}	& \multicolumn{2}{|c|}{GP SVM HMM NN} &	S &	I &	2 &	24 &	V &	 79\\
 \hline
 [170] & \multicolumn{2}{|c|}{Intensity of face} &	\multicolumn{2}{|c|}{Decomposable model} &	P &	I &	6 &	8 + 16 &	V &	 61\\
 \hline
@@ -3776,17 +3776,17 @@ Table XXX below shows a compilation of the state-of-the-art in facial expression
 \hline
 [173] & \multicolumn{2}{|c|}{Facial profile} & \multicolumn{2}{|c|}{Rule-based}	& P &	I &	27 AUs & 19 &	V &	 86.3\\
 \hline
-[174] & \multicolumn{2}{|c|}{Frontal profile facial points} & \multicolumn{2}{|c|}{Rule and case based}	& P &	I &	9 &	8 &	I &	83\\
+[174] & \multicolumn{2}{|c|}{Frontal profile facial points} & \multicolumn{2}{|c|}{Rule and case based}	& P &	I &	 9 &	8 &	I &	83\\
 \hline
 [175] & \multicolumn{2}{|c|}{12 motion units} &	\multicolumn{2}{|c|}{kNN} &	S &	I &	4 &	53 + 28 &	V &	93 + 95\\
 \hline
 [176] & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost DBN} &	P &	I &	14 AUs &	100 + 10 &	I	 & 93 + 93\\
 \hline
-[177] & \multicolumn{2}{|c|}{Motion history} &	\multicolumn{2}{|c|}{SNoW kNN} &	P &	I &	15 AUs &	19 + 100 &	V	& 61 + 68\\
+[177] & \multicolumn{2}{|c|}{Motion history} &	\multicolumn{2}{|c|}{SNoW kNN} &	P &	I &	15 AUs &	19 + 100 &	 V	& 61 + 68\\
 \hline
 [178] & \multicolumn{2}{|c|}{8 facial points}	& \multicolumn{2}{|c|}{Gentle Boost SVM} &	S P &	I &	2 &	27 + 32 + 65 &	V &	90\\
 \hline
-[177] & \multicolumn{2}{|c|}{20 facial points} &	\multicolumn{2}{|c|}{Gentle SVM} &	S P &	I &	2 &	52 &	V &	94\\
+[177] & \multicolumn{2}{|c|}{20 facial points} &	\multicolumn{2}{|c|}{Gentle SVM} &	S P &	I &	2 &	52 &	V &	 94\\
 \hline
 [179] & \multicolumn{2}{|c|}{Shape fea, Intensity} &	\multicolumn{2}{|c|}{NN} &	S &	? &	7 &	14 &	I &	84\\
 \hline
@@ -3809,15 +3809,37 @@ As seen from the Table XXXX, facial expression recognition algorithm is a mature
 \begin{itemize}
 \item \emph{Real-time interpretation of the facial expressions and gestures:} People who are blind, or disabled in general, prefer not to rely on technologies that do not respond to their needs immediately and reliably. Survey of early adoption of assistive technologies show that the technology need not accomplish a large range of tasks, but the tasks being performed should be executed reliably and in useful time [REF]. Range of facial expressions range from a few hundredths of a second to couple of seconds at max [REF]. It is essential that the facial expression recognition algorithms be able to respond within this time frame to enable seamless interactions with sighted counterparts.
 \item \emph{Ability for the user to choose varying levels of facial information of their interaction partner:} In our interactions with the user community, it has become evident that each user has his/her own requirement of the details of the facial information that they receive from their interaction counterparts. For example, in a professional setting, individuals preferred to receive information that was delicate and down to detail, while in a personal setting, they preferred that the device does not overwhelm the user with facial interaction information.
-\item \emph{Ability to switch between subject-dependent and subject-independent facial expression recognition:} Social interactions vary between personal interactions with friends and family to professional meetings with strangers that the user may meet only once. 
+\item \emph{Ability to switch between subject-dependent and subject-independent facial expression recognition:} Social interactions vary between personal interactions with friends and family to professional meetings with strangers that the user may meet only once. An important aspect of social interaction is the ability to relate to an individual's personal mannerisms and gestures. This is especially true in personal interactions and behavioral psychology studies shows the inherent need for individuals to recognize and reenact their interaction partner's gestures (popularly termed as the \emph{Chameleon Effect}). From the sensing perspective, thus it is important that the algorithm be able to adapt to generic facial expression recognition, while also be able to adapt to subtle changes in a single subject's facial movements. That is, the algorithm requires the benefit of switching between subject-dependent and subject-independent facial expression and gesture recognition.
 \end{itemize}
 
+In the following section, we describe a recently proposed framework for facial expression recognition, termed as the Temporal Exampler-based Bayesian Network, which demonstrates the ability to satisfy the needs itemized above. We first describe the framework and provide justification for its suitability to address the identified requirements.
+
 \section{Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}
-In the 
+\subsection{Bayesian Network}
+A Bayesian Network is a interdependency graph representing the influence of various events on a desired outcome. A Bayesian Network is the extension of the Bayes Rule of conditional probabilities to multiple acyclically interdependent variables. For example, consider the problem of estimating the probability of a lawn being wet, under the possibilities that it could have rained, or the sprinklers could have turned on. The probability of wet grass $P(w_g)$ then depends on the probability of raining $P(r)$ and the probability of sprinkler turning on $P(s)$. Thus, the joint probability $P(w_g,s,r)$ can be written as
+
+\begin{equation}
+P(w_g,s,r) = P(w_g/r,s) . P(s). P(r)
+\end{equation}
+
+Further, most sprinklers can be assumed to be dependent on whether it rained or not, there by making the probability $P(s)$ dependent on the rain. Incorporating this into the above equation,
+
+\begin{equation}
+P(w_g,s,r) = P(w_g/r,s).P(s/r).P(r)
+\end{equation}
+
+Graphically, the above equation can be represented as shown below,
+\begin{figure}
+\centering
+\includegraphics[width=3in]{BayesianNW.JPG}
+\caption{Example Bayesian Network.}
+\label{DAFigure3}
+\end{figure}
+
 
 \begin{figure}
 \centering
-\includegraphics[width=3in]{FaceAPIPoints.JPG}
+\includegraphics[width=5in]{FaceAPIPoints.JPG}
 \caption{36 Facial fiducial points tracked with FaceAPI software. Both $x$ and $y$ coordinates from all 36 points are used for facial expression recognition.}
 \label{DAFigure3}
 \end{figure}
@@ -3857,7 +3879,7 @@ The Bed \newline [200] & Pressure Texture Temperature &	Body &	Social Touch & Re
 
 HandJive \newline [201] & Pressure Proprioception &	Hand & Handshake Touch	& Interpersonal communication through new cueing language & No Data & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HandJive.jpg}}} & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HyperMirror.jpg}}}\\
 
-HyperMirror \newline [202] & Pressure &	Shoulders &	interpersonal distance, relative position, crossing paths &	-Remote crossing of paths. \newline
+HyperMirror \newline [202] & Pressure &	Shoulders &	interpersonal distance, relative position, crossing paths &	 -Remote crossing of paths. \newline
 -Initiating interaction in strangers across distance. \newline Tap to initiate conversation. &	Eye contact was made across distant users. \newline
 Tap signal aroused attention. \newline
 Crossing paths initiated conversations. & \multicolumn{4}{|c|}{\multirow{2}{*}{}} & \multicolumn{4}{|c|}{\multirow{2}{*}{}}\\
@@ -3956,7 +3978,7 @@ Vibrotactile cueing to improve target acquisition in virtual 2D environment usin
 \hline
 
 [225] &
-Vibrotactile array for delivering distance to an obstacle from a wheelchair driven by a visually impaired person. &	9 & Array on the front of the palm in a 3x3 matrix.	& - Warning signals \newline - Spatial obstacle location signal. \newline
+Vibrotactile array for delivering distance to an obstacle from a wheelchair driven by a visually impaired person. &	 9 & Array on the front of the palm in a 3x3 matrix.	& - Warning signals \newline - Spatial obstacle location signal. \newline
 - Direction conveyance to the user.	& - Warning signal vibrates all vibrators. \newline - Spatial location of an obstacle is sent in the particular motor with near, medium and far range to obstacle. \newline - Direction cue vibrates the center motor with two pulses and then vibrates motor of the desired direction.	& - No user testing done yet &	- No user testing done yet \\
 \hline
 \end{tabularx}
@@ -4020,18 +4042,11 @@ Slip motion is proportional to the frequency of vibration. & 12 subjects. \newli
 Bare hand: 0.214s \newline
 Normal Glove: 1.669s \newline
 Slip Glove: 0.483s \newline
-
 \underline{Percent Failure:} \newline
 Bare hand: 0\% \newline
 Normal Glove: 27.8\% \newline
 Slip Glove: 5.6\% \newline \\
-
 \hline
-
-
-
-
-
 \end{tabularx}
 \end{table}
 \end{landscape}
