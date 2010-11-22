@@ -9,9 +9,10 @@
 \contentsline {table}{\numberline {6.1}{\ignorespaces Face detection validation results on FERET database.}}{125}
 \contentsline {table}{\numberline {6.2}{\ignorespaces Face detection validation results on the in-house face database.}}{125}
 \contentsline {table}{\numberline {8.1}{\ignorespaces Foot Steps Involved in the Choreographed Dance Movements.}}{182}
-\contentsline {table}{\numberline {10.1}{\ignorespaces Features for Body Rock Detection: Group 1}}{201}
-\contentsline {table}{\numberline {10.2}{\ignorespaces Features for Body Rock Detection: Group 1}}{202}
-\contentsline {table}{\numberline {10.3}{\ignorespaces Features for Body Rock Detection: Group 1}}{203}
-\contentsline {table}{\numberline {10.4}{\ignorespaces Features for Body Rock Detection: Group 1}}{205}
-\contentsline {table}{\numberline {10.5}{\ignorespaces Features for Body Rock Detection: Group 1}}{206}
-\contentsline {table}{\numberline {10.6}{\ignorespaces Features for Body Rock Detection: Group 1}}{207}
+\contentsline {table}{\numberline {9.1}{\ignorespaces State-of-the-art facial expression recognition algorithms and their performance. \newline \textbf {Exp:} Spontaneous(S) / Posed expression (P); \textbf {Per:} Person Dependent(P) / Independent (I); \textbf {Class:} Number of classes; \textbf {Sub:} Number of subjects; \textbf {Type:} Data Type: Video (V) / Image(I); \textbf {\% Zcc:} Percentage Accuracy; ?: missing entry.}}{198}
+\contentsline {table}{\numberline {10.1}{\ignorespaces Features for Body Rock Detection: Group 1}}{203}
+\contentsline {table}{\numberline {10.2}{\ignorespaces Features for Body Rock Detection: Group 1}}{204}
+\contentsline {table}{\numberline {10.3}{\ignorespaces Features for Body Rock Detection: Group 1}}{205}
+\contentsline {table}{\numberline {10.4}{\ignorespaces Features for Body Rock Detection: Group 1}}{207}
+\contentsline {table}{\numberline {10.5}{\ignorespaces Features for Body Rock Detection: Group 1}}{208}
+\contentsline {table}{\numberline {10.6}{\ignorespaces Features for Body Rock Detection: Group 1}}{209}
