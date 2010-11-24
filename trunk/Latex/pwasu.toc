@@ -104,8 +104,8 @@
 \contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{115}
 \contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{116}
 \contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{116}
-\contentsline {subsubsection}{Random Field (RF) Models}{116}
-\contentsline {subsubsection}{Pre-processing}{117}
+\contentsline {subsubsection}{Random Field (RF) Models}{117}
+\contentsline {subsubsection}{Pre-processing}{118}
 \contentsline {subsubsection}{The Neighborhood System}{118}
 \contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{119}
 \contentsline {subsubsection}{Human Face Pose}{120}
@@ -232,4 +232,4 @@
 \contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{261}
 \contentsline {subsection}{Procedure}{262}
 \contentsline {chapter}{APPENDIX}{263}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{263}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{263}
