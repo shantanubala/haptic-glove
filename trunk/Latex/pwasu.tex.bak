@@ -3812,10 +3812,10 @@ As seen from the Table XXXX, facial expression recognition algorithm is a mature
 \item \emph{Ability to switch between subject-dependent and subject-independent facial expression recognition:} Social interactions vary between personal interactions with friends and family to professional meetings with strangers that the user may meet only once. An important aspect of social interaction is the ability to relate to an individual's personal mannerisms and gestures. This is especially true in personal interactions and behavioral psychology studies shows the inherent need for individuals to recognize and reenact their interaction partner's gestures (popularly termed as the \emph{Chameleon Effect}). From the sensing perspective, thus it is important that the algorithm be able to adapt to generic facial expression recognition, while also be able to adapt to subtle changes in a single subject's facial movements. That is, the algorithm requires the benefit of switching between subject-dependent and subject-independent facial expression and gesture recognition.
 \end{itemize}
 
-In the following section, we describe a recently proposed framework for facial expression recognition, termed as the Temporal Exampler-based Bayesian Network, which demonstrates the ability to satisfy the needs itemized above. We first describe the framework and provide justification for its suitability to address the identified requirements.
+In the following section, we describe a recently proposed framework for facial expression recognition, termed as the Temporal Exemplar-based Bayesian Network, which demonstrates the ability to satisfy the needs itemized above. We first describe the framework and provide justification for its suitability to address the identified requirements.
 
-\section{Temporal Exampler-based Bayesian Network for Facial Expression \& Gesture Sensing}
-\subsection{Bayesian Network}
+\section{Temporal Exemplar-based Bayesian Network (TEBN) for Facial Expression \& Gesture Sensing}
+
 A Bayesian Network is a interdependency graph representing the influence of various events on a desired outcome. A Bayesian Network is the extension of the Bayes Rule of conditional probabilities to multiple acyclically interdependent variables. For example, consider the problem of estimating the probability of a lawn being wet, under the possibilities that it could have rained, or the sprinklers could have turned on. The probability of wet grass $P(w_g)$ then depends on the probability of raining $P(r)$ and the probability of sprinkler turning on $P(s)$. Thus, the joint probability $P(w_g,s,r)$ can be written as
 
 \begin{equation}
@@ -3836,14 +3836,68 @@ Graphically, the above equation can be represented as shown below,
 \label{DAFigure3}
 \end{figure}
 
+Typically, the various conditional probabilities associated with the graph are determined through statistical analysis of observations. Most often, the analysis results in inductive models that generalize the training observations to all test cases. In contrast, the Exemplar-based Bayesian Network determines the conditional probabilities transductively on a case-by-case basis of the test set. Thus, the network is dynamic, allowing the conditional densities to transform based on the input test condition. Also, the network accounts for the temporal transmission of decision probabilities from time instance $t$ to $t+1$. This transmission is also modeled into the network through a Markovian process. The details of the implementation follows, as described in [REF]. 
+
+
+\newenvironment{Equations}
+{\noindent\ignorespaces}%
+{\par\noindent\ignorespacesafterend}
+\begin{Equations}
+
+Given any facial expression image sequence $I(t)$ with $M$ number of frames, the goal of TEBN is to provide a posterior conditional probability of the sequence belonging to a possible set of $N$ facial expression labels $Y_i$. $N$ depend on the application under consideration. Thus, the conditional probability can be defined as
+
+\begin{equation}
+P\left(Y_i/\left(I(t), H(t)\right)\right) = \frac{P\left(I(t)/\left(Y_i, H(t)\right)\right) P\left(Y_i/H(t)\right)}{P\left(I(t)/ H(t)\right)}
+\label{EqnDBN1}
+\end{equation}
+
+if we assume that the image sequence $I(t)$ is independent of the past history $H(t)$, given that we know the expression label $Y_i$ and introducing the exemplar layer $L_i(t)$ as all the knowledge from which the labels $Y_i$ will be derived, the likelihood in the equation \ref{EqnDBN1} can be rewritten as,
+
+\begin{equation}
+P\left(I(t)/\left(Y_i, H(t)\right)\right) = P\left(I(t)/L_i(t)\right) P\left(L_i(t)/Y_i \right)
+\end{equation}
+
+\noindent Thus, 
+
+\begin{equation}
+P\left(I(t)/\left(Y_i, H(t)\right)\right) = \frac{P\left(I(t)/L_i(t)\right) P\left(L_i(t)/Y_i \right) P\left(Y_i/H(t)\right)}{P\left(I(t)/ H(t)\right)}
+\end{equation}
+
+Neglecting the scaling factor in the denominator, the network can be defined by three layers, namely, \emph{Observation Layer}, \emph{Exemplar Layer}, and \emph{Prior Knowledge Layer}, as shown in the Figure XXX. The three layers shown in the figure contribute towards the final decision on the nature of the facial expression. Note that this example represents a classification problem where the six basic human expression (Happy, Sad, Surprise, Anger, Fear and Disgust) are considered to be the prime focus. In the later sections, we describe how this framework can be adopted to suit dyadic interaction assistance requirements.
+\end{Equations}
 
 \begin{figure}
 \centering
-\includegraphics[width=5in]{FaceAPIPoints.JPG}
+\includegraphics[width=5in]{TEBN.JPG}
+\caption{Temporal Exemplar-based Bayesian Network for facial expression recognition.}
+\label{DAFigure3}
+\end{figure}
+
+\subsection{The Observation Layer}
+As described earlier, we use the results from the FaceAPI software as the inputs into the facial expression recognition algorithm. As shown in Figure XXX, 36 points returned by the software are used as the input observation vector,$X(t)$ into the TEBN. The length of this observation vector, $N$, is 2x36 = 72, corresponding to $(x,y)$ coordinates of the 36 facial fiducial. Structurally, the 72 data points are arranged as a linear vector $X(t)$ that represents the structural configuration of the facial features at time instant $t$. As time progresses, the vector $X$ evolves into an expression or gesture. $X(t)$ extracted at each frame is used for choosing $K$ examples from each of the $N$ expression classes, 6 in the example described in in Figure XXX. 
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{FaceAPIPoints.JPG}
 \caption{36 Facial fiducial points tracked with FaceAPI software. Both $x$ and $y$ coordinates from all 36 points are used for facial expression recognition.}
 \label{DAFigure3}
 \end{figure}
 
+Given that all training data is available at sequence of images, $I(t)$, we choose to represent each frame of the image just by their FaceAPI tracked points. Thus, in the above equations, $I(t)$ can be conveniently replaced with $X(t)$, the 72 point vector of tracked points. Note that this is done only to reduce the computational load. Later, in the experiments section, we demonstrate the possibility of representing $I(t)$ through other image features. 
+
+\subsection{The Exemplar Layer}
+The Exemplar Layer represents the aggregate knowledge for every test facial expression to be evaluated by the TEBN. As the name suggests, given a test sample of image sequence, $I_t(t)$ , for which we need to estimate the facial expression label, $Y_{i_t}$, the exemplar layer is constructed dynamically to best represent the test data. Thus, the exemplar layer $L_i(t)$ is chosen from the training pool, $E(t)$, by comparing $I_t(t)$ with every candidate image sequence in $E(t)$. For each of the expression labels, $Y_i, i=\{1,\ldots,N\}$, $k$ nearest neighbor points are chosen in $E(t)$ to represent the test data. We chose Euclidean distance between the test observations $X_t(t)$ and all observations $X_{E}(t)$ from the training pool $E(t)$. Once the $k$ nearest neighbors have been identified for the given test sequence, the Bayesian Network is developed by representing the test point $X_t(t)$ as the weighted average of $L_{ij}$ training points chosen from the training pool. The examples $L_{ij}, i=\{1,\ldots,N\} \& j=\{1,\ldots,k\}$ represents $k$ examples taken from $N$ expression classes. Figure XXX shows the steps involved in developing the Exemplar Layer for any given test point $X_t(t)$ and highlights the problem of finding $w_{ij}$ such that 
+
+\begin{equation}
+X_t(t) = \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij} L_{ij}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{ComputingLikelihood.JPG}
+\caption{Deriving the exemplar layer of the TEBN based on every test point $X_t(t)$.}
+\label{DAFigure3}
+\end{figure}
 
 
 \chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
