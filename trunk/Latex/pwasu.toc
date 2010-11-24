@@ -186,46 +186,48 @@
 \contentsline {section}{\numberline {9.5}Temporal Exemplar-based Bayesian Network (TEBN) for Facial Expression \& Gesture Sensing}{200}
 \contentsline {subsection}{The Observation Layer}{202}
 \contentsline {subsection}{The Exemplar Layer}{204}
-\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{206}
-\contentsline {section}{\numberline {10.1}Related Work}{207}
-\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{216}
-\contentsline {section}{\numberline {10.3}Proposed Solution}{216}
-\contentsline {section}{\numberline {10.4}Haptic Cueing}{217}
-\contentsline {subsection}{Localization}{217}
-\contentsline {subsection}{Spatio-Temporal Cueing}{218}
-\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{219}
-\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{220}
-\contentsline {section}{\numberline {10.5}Research Hypothesis}{220}
-\contentsline {subsection}{Localization}{220}
-\contentsline {subsubsection}{Hypothesis 1:}{220}
-\contentsline {subsubsection}{Hypothesis 2:}{221}
-\contentsline {subsubsection}{Hypothesis 3:}{221}
-\contentsline {subsection}{Spatio-Temporal Cueing}{221}
-\contentsline {subsubsection}{Hypothesis 4:}{221}
-\contentsline {subsubsection}{Hypothesis 5:}{221}
-\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{222}
-\contentsline {subsection}{Participants}{222}
-\contentsline {subsection}{Procedure}{222}
-\contentsline {subsection}{Analysis}{223}
-\contentsline {subsubsection}{Recognition Accuracies}{224}
-\contentsline {subsubsection}{ANOVA}{224}
-\contentsline {subsubsection}{Tuckey HSD}{224}
-\contentsline {section}{\numberline {10.7}Results}{225}
-\contentsline {subsection}{Localization Experiments}{226}
-\contentsline {subsubsection}{Phalange Level Localization}{226}
-\contentsline {subsubsection}{Finger Level Localization}{227}
-\contentsline {subsubsection}{Phalange Position Localization}{228}
-\contentsline {subsection}{Spatio-Temporal Experiments}{229}
-\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{229}
-\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{230}
-\contentsline {subsubsection}{Time for Recognition:}{232}
-\contentsline {section}{\numberline {10.8}Conclusion}{233}
-\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{235}
-\contentsline {section}{\numberline {11.1}Social Intelligence}{235}
-\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{237}
-\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{238}
-\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{240}
-\contentsline {chapter}{REFERENCES}{244}
-\contentsline {chapter}{APPENDIX}{259}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{260}
-\contentsline {subsection}{Procedure}{261}
+\contentsline {subsubsection}{Computing $P\left (X(t)/L_{ij}(t)\right )$}{205}
+\contentsline {subsubsection}{Determining $w_{it}(t)$ given test point $X(t)$ and examples $L_{ij}(t)$}{206}
+\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{207}
+\contentsline {section}{\numberline {10.1}Related Work}{208}
+\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{217}
+\contentsline {section}{\numberline {10.3}Proposed Solution}{217}
+\contentsline {section}{\numberline {10.4}Haptic Cueing}{218}
+\contentsline {subsection}{Localization}{218}
+\contentsline {subsection}{Spatio-Temporal Cueing}{219}
+\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{220}
+\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{221}
+\contentsline {section}{\numberline {10.5}Research Hypothesis}{221}
+\contentsline {subsection}{Localization}{221}
+\contentsline {subsubsection}{Hypothesis 1:}{221}
+\contentsline {subsubsection}{Hypothesis 2:}{222}
+\contentsline {subsubsection}{Hypothesis 3:}{222}
+\contentsline {subsection}{Spatio-Temporal Cueing}{222}
+\contentsline {subsubsection}{Hypothesis 4:}{222}
+\contentsline {subsubsection}{Hypothesis 5:}{222}
+\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{223}
+\contentsline {subsection}{Participants}{223}
+\contentsline {subsection}{Procedure}{223}
+\contentsline {subsection}{Analysis}{224}
+\contentsline {subsubsection}{Recognition Accuracies}{225}
+\contentsline {subsubsection}{ANOVA}{225}
+\contentsline {subsubsection}{Tuckey HSD}{225}
+\contentsline {section}{\numberline {10.7}Results}{226}
+\contentsline {subsection}{Localization Experiments}{227}
+\contentsline {subsubsection}{Phalange Level Localization}{227}
+\contentsline {subsubsection}{Finger Level Localization}{228}
+\contentsline {subsubsection}{Phalange Position Localization}{229}
+\contentsline {subsection}{Spatio-Temporal Experiments}{230}
+\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{230}
+\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{231}
+\contentsline {subsubsection}{Time for Recognition:}{233}
+\contentsline {section}{\numberline {10.8}Conclusion}{234}
+\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{236}
+\contentsline {section}{\numberline {11.1}Social Intelligence}{236}
+\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{238}
+\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{239}
+\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{241}
+\contentsline {chapter}{REFERENCES}{245}
+\contentsline {chapter}{APPENDIX}{260}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{261}
+\contentsline {subsection}{Procedure}{262}
