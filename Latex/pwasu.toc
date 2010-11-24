@@ -231,3 +231,5 @@
 \contentsline {chapter}{APPENDIX}{260}
 \contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{261}
 \contentsline {subsection}{Procedure}{262}
+\contentsline {chapter}{APPENDIX}{263}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{263}
