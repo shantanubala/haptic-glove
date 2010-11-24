@@ -26,6 +26,11 @@
 \DoubleSpacing         % memoir's double spacing
 \usepackage{pwasu}     % this package
 
+\DeclareMathSizes{12}{20}{14}{10}
+\usepackage{array}
+
+\usepackage{amsmath}
+
 % Table footnote
 \usepackage{threeparttable}
 
@@ -4499,63 +4504,88 @@ Since no assumptions on the distribution of the response are made, unlike the me
 
 \clearpage
 
-\appendix
+
 \addcontentsline{toc}{chapter}{APPENDIX}
 \chapter{\uppercase{Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}
 \label{AppendixA}
 \clearpage
 
-\begin{Equations}
 
-Entropy Maximization under Linear Constraints Problem:
+\noindent Entropy Maximization under Linear Constraints Problem:
 
  \begin{eqnarray*}
- \mbox{Maximize} & f(x_i) = \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right)\\
- \mbox{Subject to} & g_1(x_i) = \sum\limits_{i=1}^{N} x_i =  1 \\
+ \mbox{Maximize} & f(x_i) = \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right)\\ \nonumber \\
+ \mbox{Subject to} & g_1(x_i) = \sum\limits_{i=1}^{N} x_i =  1 \\ \nonumber \\
  & g_2(x_i) = \sum\limits_{i=1}^{N} x_i l_i = L \\
  \end{eqnarray*}
- 
- Given the objective and the constraints, Lagrange Multipliers is a popular method for combining the objective and constraints into a single optimization strategy with a set of unknowns. If $X=\{x_i\}$ represents the optimization vector, Lagrange Multipliers rely on the fact that at the optimal solution $X^* = \{x_i^*\}$, the gradients of the objective function and the constraint should be proportional. Figure XXX illustrates a problem of minimizing objective $f(x,y)$ under the constraint of $g(x,y) = c$.
- 
+
+\noindent Given the objective and the constraints, Lagrange Multipliers is a popular method for combining the objective and constraints into a single optimization strategy with a set of unknowns. If $X=\{x_i\}$ represents the optimization vector, Lagrange Multipliers rely on the fact that at the optimal solution $X^* = \{x_i^*\}$, the gradients of the objective function and the constraint should be proportional. Figure XXX illustrates a problem of minimizing objective $f(x,y)$ under the constraint of $g(x,y) = c$.
+
  \begin{figure}[htbp]
  \centering
  \includegraphics[width=3in]{Lagrange.jpg}
- \caption{ Find x and y to maximize $f(x,y)$ subject to a constraint (shown in red) $g(x,y) = c$} 
+ \caption{ Find x and y to maximize $f(x,y)$ subject to a constraint $g(x,y) = c$}
  \end{figure}
- 
- The Lagrange Function $\Lambda(X,\mathbf{\alpha}, \mathbf{\beta})$ becomes,
- 
+
+\noindent The Lagrange Function $\Lambda(X,\mathbf{\alpha}, \mathbf{\beta})$ becomes,
+
  \begin{equation}
  \Lambda(X,{\mathbf \alpha}, \mathbf{\beta}) = \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right) + \mathbf{\alpha} \left(\sum\limits_{i=1}^{N} x_i - 1 \right) + \mathbf{\beta} \left(\sum\limits_{i=1}^{N} x_i l_i - L \right)
  \end{equation}
- 
- Finding the various gradients, we have
- 
- \begin{eqnarray}
- \frac{\delta f(x_i)}{\delta x_i} = \ln \left( \frac{1}{x_i} \right) + 1 \\
- \frac{\delta g_i(x_i)}{\delta x_i} = 1 \\
- \frac{\delta g_2(x_i)}{\delta x_i} = x_i 
- \end{eqnarray}
- 
- From the theory of Lagrange Multipliers, we know that the gradient of the objective is equal to the gradients of the constraints at the optimal solution $x_i^*$. Thus,
- 
- \begin{eqnarray}
- \nabla f(x_i^*) = \mathbf{\alpha} \nabla g_1(x_i^*) + \mathbf{\beta} \nabla g_2(x_i^*) \\
- g_1(x_i^*) = 1\\
- g_2(x_i^*) = L
- \end{eqnarray}
- 
- which can be rewritten as,
- 
-  \begin{eqnarray}
- \nabla f(x_i^*) = \mathbf{\alpha} \nabla g_1(x_i^*) + \mathbf{\beta} \nabla g_2(x_i^*) \\
- g_1(x_i^*) = 1\\
- g_2(x_i^*) = L
- \end{eqnarray}
- 
- \end{Equations}
 
+ \noindent Finding the various gradients, we have
+
+ \begin{align}
+ &\frac{\delta f(x_i)}{\delta x_i} = \ln \left( \frac{1}{x_i} \right) + 1 \\ \nonumber \\
+ &\frac{\delta g_i(x_i)}{\delta x_i} = 1 \\ \nonumber \\
+ &\frac{\delta g_2(x_i)}{\delta x_i} = l_i
+ \end{align}
+
+ \noindent From the theory of Lagrange Multipliers, we know that the gradient of the objective is equal to the gradients of the constraints at the optimal solution $x_i^*$. Thus,
+
+ \begin{align}
+&\nabla f(x_i^*) = \mathbf{\alpha} \nabla g_1(x_i^*) + \mathbf{\beta} \nabla g_2(x_i^*) \\ \nonumber \\
+& g_1(x_i^*) = 1\\ \nonumber \\
+& g_2(x_i^*) = L
+ \end{align}
+
+ \noindent which can be rewritten as,
+
+ \begin{align}
+&\ln \left( \frac{1}{x_i^*} + 1\right) = \alpha + \beta l_i , i=\{1,\ldots,N\} \label{Eqn1} \\  \nonumber \\
+&\sum\limits_{i=1}^{N} x_i^* = 1  \label{Eqn2} \\ \nonumber \\
+&\sum\limits_{i=1}^{N} x_i^* l_i = L \label{Eqn3}
+ \end{align}
  
+ \noindent From \ref{Eqn1} we can write
+ 
+ \begin{equation}
+ x_i^* = e^{1-\alpha-\beta l_i} = e^{1-\alpha} e^{-\beta l_i}
+ \label{Eqn4}
+ \end{equation}
+ 
+\noindent Equation \ref{Eqn4} can be rewritten as 
+
+\begin{align}
+& x_i^* =  \frac{e^{1-\alpha} e^{-\beta l_i}}{1} \\ \nonumber \\
+& x_i^* =  \frac{e^{1-\alpha} e^{-\beta l_i}}{\sum\limits_{i=1}^{N} x_i^*} \hspace*{1in} \mbox{from Equation \ref{Eqn2}} \\ \nonumber \\
+& x_i^* =  \frac{e^{1-\alpha} e^{-\beta l_i}}{\sum\limits_{i=1}^{N} e^{1-\alpha} e^{-\beta l_i}} \\ \nonumber \\
+& x_i^* =  \frac{e^{-\beta l_i}}{\sum\limits_{i=1}^{N} e^{-\beta l_i}}
+\end{align}
+ 
+\noindent This eliminates one set of Lagrange Multipliers, $\alpha$. Now from Equation \ref{Eqn3}
+
+\setlength{\extrarowheight}{1in}
+\begin{align}
+&\sum\limits_{i=1}^{N} x_i^* l_i = L \\ \nonumber \\
+&\sum\limits_{i=1}^{N} \left( \frac{e^{-\beta l_i}}{\sum\limits_{j=1}^{N} e^{-\beta l_j}} \right) l_i  = L \\ \nonumber \\
+&\frac{\sum\limits_{i=1}^{N} e^{-\beta l_i} l_i}{\sum\limits_{j=1}^{N} e^{-\beta l_j}} = L \\ \nonumber \\
+&\sum\limits_{i=1}^{N} e^{-\beta l_i} = \sum\limits_{j=1}^{N} e^{-\beta l_j} L\\ \nonumber \\
+&\sum\limits_{i=1}^{N} e^{-\beta l_i} (l_i - L) = 0 \label{Eqn20}
+\end{align}
+
+\noindent From Equation \ref{Eqn20} we identify the Lagrange Multipliers to be the $\beta$s and the solution to the required $x_i$s can then be found through the  
+
 \clearpage
 
 % if Biographical sketch then
