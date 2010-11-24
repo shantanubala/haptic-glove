@@ -3836,7 +3836,7 @@ Graphically, the above equation can be represented as shown below,
 \label{DAFigure3}
 \end{figure}
 
-Typically, the various conditional probabilities associated with the graph are determined through statistical analysis of observations. Most often, the analysis results in inductive models that generalize the training observations to all test cases. In contrast, the Exemplar-based Bayesian Network determines the conditional probabilities transductively on a case-by-case basis of the test set. Thus, the network is dynamic, allowing the conditional densities to transform based on the input test condition. Also, the network accounts for the temporal transmission of decision probabilities from time instance $t$ to $t+1$. This transmission is also modeled into the network through a Markovian process. The details of the implementation follows, as described in [REF]. 
+Typically, the various conditional probabilities associated with the graph are determined through statistical analysis of observations. Most often, the analysis results in inductive models that generalize the training observations to all test cases. In contrast, the Exemplar-based Bayesian Network determines the conditional probabilities transductively on a case-by-case basis of the test set. Thus, the network is dynamic, allowing the conditional densities to transform based on the input test condition. Also, the network accounts for the temporal transmission of decision probabilities from time instance $t$ to $t+1$. This transmission is also modeled into the network through a Markovian process. The details of the implementation follows, as described in [REF].
 
 
 \newenvironment{Equations}
@@ -3857,7 +3857,7 @@ if we assume that the image sequence $I(t)$ is independent of the past history $
 P\left(I(t)/\left(Y_i, H(t)\right)\right) = P\left(I(t)/L_i(t)\right) P\left(L_i(t)/Y_i \right)
 \end{equation}
 
-\noindent Thus, 
+\noindent Thus,
 
 \begin{equation}
 P\left(I(t)/\left(Y_i, H(t)\right)\right) = \frac{P\left(I(t)/L_i(t)\right) P\left(L_i(t)/Y_i \right) P\left(Y_i/H(t)\right)}{P\left(I(t)/ H(t)\right)}
@@ -3874,7 +3874,7 @@ Neglecting the scaling factor in the denominator, the network can be defined by 
 \end{figure}
 
 \subsection{The Observation Layer}
-As described earlier, we use the results from the FaceAPI software as the inputs into the facial expression recognition algorithm. As shown in Figure XXX, 36 points returned by the software are used as the input observation vector,$X(t)$ into the TEBN. The length of this observation vector, $N$, is 2x36 = 72, corresponding to $(x,y)$ coordinates of the 36 facial fiducial. Structurally, the 72 data points are arranged as a linear vector $X(t)$ that represents the structural configuration of the facial features at time instant $t$. As time progresses, the vector $X$ evolves into an expression or gesture. $X(t)$ extracted at each frame is used for choosing $K$ examples from each of the $N$ expression classes, 6 in the example described in in Figure XXX. 
+As described earlier, we use the results from the FaceAPI software as the inputs into the facial expression recognition algorithm. As shown in Figure XXX, 36 points returned by the software are used as the input observation vector,$X(t)$ into the TEBN. The length of this observation vector, $N$, is 2x36 = 72, corresponding to $(x,y)$ coordinates of the 36 facial fiducial. Structurally, the 72 data points are arranged as a linear vector $X(t)$ that represents the structural configuration of the facial features at time instant $t$. As time progresses, the vector $X$ evolves into an expression or gesture. $X(t)$ extracted at each frame is used for choosing $K$ examples from each of the $N$ expression classes, 6 in the example described in in Figure XXX.
 
 \begin{figure}
 \centering
@@ -3883,12 +3883,60 @@ As described earlier, we use the results from the FaceAPI software as the inputs
 \label{DAFigure3}
 \end{figure}
 
-Given that all training data is available at sequence of images, $I(t)$, we choose to represent each frame of the image just by their FaceAPI tracked points. Thus, in the above equations, $I(t)$ can be conveniently replaced with $X(t)$, the 72 point vector of tracked points. Note that this is done only to reduce the computational load. Later, in the experiments section, we demonstrate the possibility of representing $I(t)$ through other image features. 
+Given that all training data is available at sequence of images, $I(t)$, we choose to represent each frame of the image just by their FaceAPI tracked points. Thus, in the above equations, $I(t)$ can be conveniently replaced with $X(t)$, the 72 point vector of tracked points. Note that this is done only to reduce the computational load. Later, in the experiments section, we demonstrate the possibility of representing $I(t)$ through other image features.
+
+Thus, equation XXX can be rewritten in terms of the extracted features $X(t)$ as,
+
+\begin{equation}
+P\left(X(t)/\left(Y_i, H(t)\right)\right) \propto P\left(X(t)/L_i(t)\right) P\left(L_i(t)/Y_i \right) P\left(Y_i/H(t)\right)
+\end{equation}
 
 \subsection{The Exemplar Layer}
-The Exemplar Layer represents the aggregate knowledge for every test facial expression to be evaluated by the TEBN. As the name suggests, given a test sample of image sequence, $I_t(t)$ , for which we need to estimate the facial expression label, $Y_{i_t}$, the exemplar layer is constructed dynamically to best represent the test data. Thus, the exemplar layer $L_i(t)$ is chosen from the training pool, $E(t)$, by comparing $I_t(t)$ with every candidate image sequence in $E(t)$. For each of the expression labels, $Y_i, i=\{1,\ldots,N\}$, $k$ nearest neighbor points are chosen in $E(t)$ to represent the test data. We chose Euclidean distance between the test observations $X_t(t)$ and all observations $X_{E}(t)$ from the training pool $E(t)$.
+The Exemplar Layer represents the aggregate knowledge for every test facial expression to be evaluated by the TEBN. As the name suggests, given a test sample of image sequence, $I_t(t)$ , for which we need to estimate the facial expression label, $Y_{i_t}$, the exemplar layer is constructed dynamically to best represent the test data. Thus, the exemplar layer $L_i(t)$ is chosen from the training pool, $E(t)$, by comparing $I_t(t)$ with every candidate image sequence in $E(t)$. For each of the expression labels, $Y_i, i=\{1,\ldots,N\}$, $k$ nearest neighbor points are chosen in $E(t)$ to represent the test data. We chose Euclidean distance between the test observations $X_t(t)$ and all observations $X_{E}(t)$ from the training pool $E(t)$. Once the $k$ nearest neighbors have been identified for the given test sequence, the Bayesian Network is developed by representing the test point $X_t(t)$ as the weighted average of $L_{ij}$ training points chosen from the training pool. The examples $L_{ij}, i=\{1,\ldots,N\} \& j=\{1,\ldots,k\}$ represents $k$ examples taken from $N$ expression classes. Figure XXX shows the steps involved in developing the Exemplar Layer for any given test point $X_t(t)$ and highlights the problem of finding $w_{ij}$ such that
 
-\chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
+\begin{equation}
+X_t(t) = \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij} L_{ij}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=5.5in]{ComputingLikelihood.JPG}
+\caption{Deriving the exemplar layer of the TEBN based on every test point $X_t(t)$.}
+\label{DAFigure3}
+\end{figure}
+
+\subsubsection{Computing $P\left(X(t)/L_{ij}(t)\right)$}
+If any test point $X(t)$ can be represented as the sum average of a set of chosen example training data, in our case $L_{ij}(t)$ (chosen based on $k$ nearest neighbors of $X(t)$), the likelihood $P\left(X(t)/L_{ij}(t)\right)$ can be computed as
+
+\begin{equation}
+P\left(L_{ij}(t)/X(t)\right) = \frac{\sum\limits_{j=1}^k w_{ij}(t)}{\sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k}w_{ij}(t)} \\
+\end{equation}
+
+and,
+
+\begin{equation}
+P\left(X(t)/L_{ij}(t)\right) = \frac{P\left(L_{ij}(t)/X(t)\right) P(X(t)}{P\left(L_i(t)\right)}
+\end{equation}
+
+where, $P\left(L_i(t)\right)$ can be considered as a proportionality constant and the probability of occurance of any $X(t)$ is considered to be equal. Thus,
+
+\begin{equation}
+P\left(X(t)/L_{ij}(t)\right) \propto P\left(L_{ij}(t)/X(t)\right)
+\end{equation}
+
+\subsubsection{Determining $w_{it}(t)$ given test point $X(t)$ and examples $L_{ij}(t)$}
+ In [REF], the problem of determining $w_{ij}(t)$ is posed as a entropy maximization problem,
+
+ \begin{eqnarray*}
+ \mathrm{Maximize} &  \left( -\sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) \ln\left( w_{ij}(t) \right)   \right)\\
+ \mathrm{Subject to} & \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) =  1 \\
+ & \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) L_{ij}(t) = X(t) \\
+ \end{eqnarray*}
+
+ The above problem is a convex optimization problem with the local maxima being the same as the global maxima. Appendix XXXX shows the solution to be problem using Newton's method.
+
+
+ \chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
 Over the past few decades, the environments in which humans live and operate have become increasingly information rich. Audio and visual modalities have been occupied by more than one source at the same time. Increasing audio-visual stimulations in the human's surroundings have increased the need for divided attention, which competes with the need for selective and sustained attention to complete a task at hand [1]. While audio and video have evolved as a medium for immersing humans in rich sensory experience, touch [2], taste [3] and smell [4] have only recently being considered for sensory augmentation and substitutions - note the subtlety between augmentation and substitution. When augmenting the already utilized sensory channels, the newer medium is not in demand to reproduce all of the information, but only enrich the already delivered experience. On the other hand, substitutions have to deliver information that was once being provided by a certain sensory channel on a newer medium, while maintaining similar or lesser cognitive load.
 
 Vision is the primary sense organ for most mammals and for a few primates, including humans, trichromatic vision is so highly evolved [5] that a major portion of the neuronal pathway in the brain is dedicated to sensing, perceiving and cognizing visual stimuli. This allows the human vision to process high intensities of data that stimulates the eyes - Koch et. al. estimated that human eyes, with 106 ganglion cells, could transmit up to 10 Mbits/s [6] to the brain. Hence substituting vision with any other sensory channel is a challenging task that requires appropriate design taking into account the high intensity of data generated by visual stimuli.
@@ -4449,6 +4497,25 @@ Where, $Q_m$ represents the group $m$ with the cardinality $n_m$.
 
 Since no assumptions on the distribution of the response are made, unlike the mean, the rank average gives a non-parametric method for comparing the groups.
 
+\clearpage
+
+\appendix
+\addcontentsline{toc}{chapter}{APPENDIX}
+\chapter{\uppercase{Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}
+\label{AppendixA}
+\clearpage
+Entropy Maximization under Linear Constraints Problem:
+
+ \begin{eqnarray*}
+ \mathrm{Maximize} &  \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right)\\
+ \mathrm{Subject to} & \sum\limits_{i=1}^{N} x_i =  1 \\
+ & \sum\limits_{i=1}^{N} x_i l_i = L \\
+ \end{eqnarray*}
+ 
+ Given the objective and the constraints, Lagrange Multipliers is a popular method for combining the objective and constraints into a single optimization strategy with a set of unknowns. If $X=\{x_i\}$ represents the optimization vector, Lagrange Multipliers rely on the fact that at the optimal solution $X^*$, the gradients of the objective function and the constraint should be proportional. Figure XXX shows an illustration problem of minimizing objective $f(x,y)$ under the constraint of $g(x,y) = c$.
+ 
+ 
+ 
 \clearpage
 
 % if Biographical sketch then
