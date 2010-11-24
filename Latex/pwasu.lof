@@ -88,17 +88,17 @@
 \contentsline {figure}{\numberline {9.4}{\ignorespaces Temporal Exemplar-based Bayesian Network for facial expression recognition.}}{203}
 \contentsline {figure}{\numberline {9.5}{\ignorespaces 36 Facial fiducial points tracked with FaceAPI software. Both $x$ and $y$ coordinates from all 36 points are used for facial expression recognition.}}{203}
 \contentsline {figure}{\numberline {9.6}{\ignorespaces Deriving the exemplar layer of the TEBN based on every test point $X_t(t)$.}}{205}
-\contentsline {figure}{\numberline {10.1}{\ignorespaces The Vibrotactile Glove.}}{216}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Localization and spatio-temporal cueing software used for the vibrotactile glove.}}{217}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Phalange naming convention and grouping bases on the anatomical distances.}}{218}
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Mapping of Group 1 and Group 2 haptic expression icons to the central three fingers (9 Phalanges) of the vibrotactile glove. In the expression mapping chart, Columns 1 to 3 represent the expression. Column 4 shows the spatial mapping of vibrations. Column 5 shows the temporal mapping of the vibrations.}}{219}
-\contentsline {figure}{\numberline {10.5}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{226}
-\contentsline {figure}{\numberline {10.6}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{227}
-\contentsline {figure}{\numberline {10.7}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{228}
-\contentsline {figure}{\numberline {10.8}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{229}
-\contentsline {figure}{\numberline {10.9}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{230}
-\contentsline {figure}{\numberline {10.10}{\ignorespaces Confusion Matrix across the 12 participants. The rows are the stimulation and the columns are the responses of the participants. Each row adds to 100\% (rounding error of 1\%).}}{232}
-\contentsline {figure}{\numberline {10.11}{\ignorespaces Average recognition rate and response time for the subject who is blind, for over 70 trails.}}{233}
-\contentsline {figure}{\numberline {10.12}{\ignorespaces Average response time for all 12 participants. Four important results are shown above, 1) Avg. correct response time per expression (Cyan), 2) Avg. incorrect response time per expression (Red), 3) Avg. correct response time for Group 1 (Blue), and 4) Avg. correct response time for Group 2 (Magenta).}}{234}
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Depression and Loneliness of students plotted against stress levels in high, medium and low social skilled undergraduate students. (Please see text for the scales used for the measurement.)}}{237}
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Comparison of annual wage of the visually impaired, physically disabled and non-disabled population. (a) Compared by age group. (b) Compared by education level.}}{243}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces The Vibrotactile Glove.}}{217}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Localization and spatio-temporal cueing software used for the vibrotactile glove.}}{218}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Phalange naming convention and grouping bases on the anatomical distances.}}{219}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Mapping of Group 1 and Group 2 haptic expression icons to the central three fingers (9 Phalanges) of the vibrotactile glove. In the expression mapping chart, Columns 1 to 3 represent the expression. Column 4 shows the spatial mapping of vibrations. Column 5 shows the temporal mapping of the vibrations.}}{220}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{227}
+\contentsline {figure}{\numberline {10.6}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{228}
+\contentsline {figure}{\numberline {10.7}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{229}
+\contentsline {figure}{\numberline {10.8}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{230}
+\contentsline {figure}{\numberline {10.9}{\ignorespaces (a) Recognition Accuracies; (b) ANOVA; (c) HSD}}{231}
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Confusion Matrix across the 12 participants. The rows are the stimulation and the columns are the responses of the participants. Each row adds to 100\% (rounding error of 1\%).}}{233}
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Average recognition rate and response time for the subject who is blind, for over 70 trails.}}{234}
+\contentsline {figure}{\numberline {10.12}{\ignorespaces Average response time for all 12 participants. Four important results are shown above, 1) Avg. correct response time per expression (Cyan), 2) Avg. incorrect response time per expression (Red), 3) Avg. correct response time for Group 1 (Blue), and 4) Avg. correct response time for Group 2 (Magenta).}}{235}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Depression and Loneliness of students plotted against stress levels in high, medium and low social skilled undergraduate students. (Please see text for the scales used for the measurement.)}}{238}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Comparison of annual wage of the visually impaired, physically disabled and non-disabled population. (a) Compared by age group. (b) Compared by education level.}}{244}
