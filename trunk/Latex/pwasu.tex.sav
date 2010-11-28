@@ -26,6 +26,11 @@
 \DoubleSpacing         % memoir's double spacing
 \usepackage{pwasu}     % this package
 
+\DeclareMathSizes{12}{20}{14}{10}
+\usepackage{array}
+
+\usepackage{amsmath}
+
 % Table footnote
 \usepackage{threeparttable}
 
@@ -3927,13 +3932,13 @@ P\left(X(t)/L_{ij}(t)\right) \propto P\left(L_{ij}(t)/X(t)\right)
 \subsubsection{Determining $w_{it}(t)$ given test point $X(t)$ and examples $L_{ij}(t)$}
  In [REF], the problem of determining $w_{ij}(t)$ is posed as a entropy maximization problem,
 
- \begin{eqnarray*}
- \mathrm{Maximize} &  \left( -\sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) \ln\left( w_{ij}(t) \right)   \right)\\
- \mathrm{Subject to} & \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) =  1 \\
- & \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) L_{ij}(t) = X(t) \\
- \end{eqnarray*}
+ \begin{eqnarray}
+ \mathrm{Maximize} &  \left( -\sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) \ln\left( w_{ij}(t) \right)   \right) \label{MainOpt}\\
+ \mathrm{Subject to} & \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) =  1 \nonumber \\
+ & \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij}(t) L_{ij}(t) = X(t) \nonumber \\
+ \end{eqnarray}
 
- The above problem is a convex optimization problem with the local maxima being the same as the global maxima. Appendix XXXX shows the solution to be problem using Newton's method.
+ The above problem is a convex optimization problem with the local maxima being the same as the global maxima. Appendix XXXX shows the solution to be problem using Newton's method and the steps shown in subsection \ref{XXX} of Appendix XXX shows the algorithm for determining the weights $w_{ij}$ associated with $L_{ij}$.
 
 
  \chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
@@ -4499,23 +4504,186 @@ Since no assumptions on the distribution of the response are made, unlike the me
 
 \clearpage
 
-\appendix
+
 \addcontentsline{toc}{chapter}{APPENDIX}
 \chapter{\uppercase{Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}
-\label{AppendixA}
+\label{AppendixB}
 \clearpage
-Entropy Maximization under Linear Constraints Problem:
+
+
+\noindent \section{Entropy Maximization under Linear Constraints Problem:}
 
  \begin{eqnarray*}
- \mathrm{Maximize} &  \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right)\\
- \mathrm{Subject to} & \sum\limits_{i=1}^{N} x_i =  1 \\
- & \sum\limits_{i=1}^{N} x_i l_i = L \\
+ \mbox{Maximize} & f(x_i) = \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right)\\ \nonumber \\
+ \mbox{Subject to} & g_1(x_i) = \sum\limits_{i=1}^{N} x_i =  1 \\ \nonumber \\
+ & g_2(x_i) = \sum\limits_{i=1}^{N} x_i l_i = L \\
  \end{eqnarray*}
+
+\noindent Given the objective and the constraints, Lagrange Multipliers is a popular method for combining the objective and constraints into a single optimization strategy with a set of unknowns. If $X=\{x_i\}$ represents the optimization vector, Lagrange Multipliers rely on the fact that at the optimal solution $X^* = \{x_i^*\}$, the gradients of the objective function and the constraint should be proportional. Figure XXX illustrates a problem of minimizing objective $f(x,y)$ under the constraint of $g(x,y) = c$.
+
+ \begin{figure}[htbp]
+ \centering
+ \includegraphics[width=3in]{Lagrange.jpg}
+ \caption{ Find x and y to maximize $f(x,y)$ subject to a constraint $g(x,y) = c$}
+ \end{figure}
+
+\noindent The Lagrange Function $\Lambda(X,\mathbf{\alpha}, \mathbf{\beta})$ becomes,
+
+ \begin{equation}
+ \Lambda(X,{\mathbf \alpha}, \mathbf{\beta}) = \left( -\sum\limits_{i=1}^{N} x_i \ln\left( x_i \right)   \right) + \mathbf{\alpha} \left(\sum\limits_{i=1}^{N} x_i - 1 \right) + \mathbf{\beta} \left(\sum\limits_{i=1}^{N} x_i l_i - L \right)
+ \end{equation}
+
+ \noindent Finding the various gradients, we have
+
+ \begin{align}
+ &\frac{\delta f(x_i)}{\delta x_i} = \ln \left( \frac{1}{x_i} \right) + 1 \\ \nonumber \\
+ &\frac{\delta g_i(x_i)}{\delta x_i} = 1 \\ \nonumber \\
+ &\frac{\delta g_2(x_i)}{\delta x_i} = l_i
+ \end{align}
+
+ \noindent From the theory of Lagrange Multipliers, we know that the gradient of the objective is equal to the gradients of the constraints at the optimal solution $x_i^*$. Thus,
+
+ \begin{align}
+&\nabla f(x_i^*) = \mathbf{\alpha} \nabla g_1(x_i^*) + \mathbf{\beta} \nabla g_2(x_i^*) \\ \nonumber \\
+& g_1(x_i^*) = 1\\ \nonumber \\
+& g_2(x_i^*) = L
+ \end{align}
+
+ \noindent which can be rewritten as,
+
+ \begin{align}
+&\ln \left( \frac{1}{x_i^*} + 1\right) = \alpha + \beta l_i , i=\{1,\ldots,N\} \label{Eqn1} \\  \nonumber \\
+&\sum\limits_{i=1}^{N} x_i^* = 1  \label{Eqn2} \\ \nonumber \\
+&\sum\limits_{i=1}^{N} x_i^* l_i = L \label{Eqn3}
+ \end{align}
+
+ \noindent From \ref{Eqn1} we can write
+
+ \begin{equation}
+ x_i^* = e^{1-\alpha-\beta l_i} = e^{1-\alpha} e^{-\beta l_i}
+ \label{Eqn4}
+ \end{equation}
+
+\noindent Equation \ref{Eqn4} can be rewritten as
+
+\begin{align}
+& x_i^* =  \frac{e^{1-\alpha} e^{-\beta l_i}}{1} \\ \nonumber \\
+& x_i^* =  \frac{e^{1-\alpha} e^{-\beta l_i}}{\sum\limits_{i=1}^{N} x_i^*} \hspace*{1in} \mbox{from Equation \ref{Eqn2}} \\ \nonumber \\
+& x_i^* =  \frac{e^{1-\alpha} e^{-\beta l_i}}{\sum\limits_{i=1}^{N} e^{1-\alpha} e^{-\beta l_i}} \\ \nonumber \\
+& x_i^* =  \frac{e^{-\beta l_i}}{\sum\limits_{i=1}^{N} e^{-\beta l_i}} \label{Eqn15}
+\end{align}
+
+\noindent This eliminates one set of Lagrange Multipliers, $\alpha$. Now from Equation \ref{Eqn3}
+
+\setlength{\extrarowheight}{1in}
+\begin{align}
+&\sum\limits_{i=1}^{N} x_i^* l_i = L \\ \nonumber \\
+&\sum\limits_{i=1}^{N} \left( \frac{e^{-\beta l_i}}{\sum\limits_{j=1}^{N} e^{-\beta l_j}} \right) l_i  = L \\ \nonumber \\
+&\frac{\sum\limits_{i=1}^{N} e^{-\beta l_i} l_i}{\sum\limits_{j=1}^{N} e^{-\beta l_j}} = L \\ \nonumber \\
+&\sum\limits_{i=1}^{N} e^{-\beta l_i} = \sum\limits_{j=1}^{N} e^{-\beta l_j} L\\ \nonumber \\
+&\sum\limits_{i=1}^{N} e^{-\beta l_i} (l_i - L) = 0 \label{Eqn20}
+\end{align}
+
+\noindent From Equation \ref{Eqn20} we identify the Lagrange Multipliers to be the $\beta$s and the solution to the required $x_i$s can then be found through Equation \ref{Eqn15}. 
+
+\noindent The $\beta$s can be found through numerical optimization and in the section below, we show the use of Newton's method for accomplishing the same.
+
+\section{Newton's method}
+Newton's method is a popular numerical optimization technique used to find the roots of an function $f(\mathbf{x}) =0$. 
+
+\noindent From Equation \ref{Eqn20}, we know that the $\beta$s form the root of the equation 
+
+\begin{equation}
+f(\mathbf{\beta}) = \sum\limits_{i=1}^{N} e^{-\mathbf{\beta} l_i} (l_i - L) = 0
+\end{equation}
+
+At each iteration the method approximates $f(\beta)$ by a quadratic function around $\beta$, and then takes a step towards the maximum/minimum of that quadratic function. Typically, the quadratic approximation is obtained from the function itself through its second order Taylor expansion. 
+
+\begin{align*}
+f(\beta + \nabla \beta) = f(\beta) + f^{\prime}(\beta)\triangle\beta + \frac{1}{2}f^{\prime\prime}(\beta) (\triangle\beta)^2 
+\end{align*}
+
+\noindent Newton's method determines the next approximation for the roots, $\beta_{n+1}$, by constructing a tangent to the objective function, $f(\beta)$, at the point $\beta_n$ and determining the tangent's roots, i.e. determining the intersection of the tangent, $f^{\prime}(\beta_{n})$, with the $\beta$ axis.
+
+\noindent Thus, the next iteration for $\beta_n$ could be obtained by determining $\triangle\beta$ by setting the derivative of the objective function to $0$.
+
+\begin{equation}
+f^{\prime}(\beta_n) = 0 
+\end{equation}
+
+\noindent From the Taylor Expansion,
+
+\begin{align*}
+f^{\prime}(\beta_n+\triangle\beta) & = f^{\prime}(\beta_n) + \triangle\beta f^{\prime\prime}(\beta_n)
+\\
+f^{\prime}(\beta_n) + \triangle\beta f^{\prime\prime}(\beta_n) & = 0 \\
+\triangle\beta & = -\frac{f^{\prime}(\beta_n)}{f^{\prime\prime}(\beta_n)} \\
+\end{align*}
+
+\noindent Thus, the next best approximation for the roots can be obtained as,
+
+\begin{align*}
+\beta_{n+1} & = \beta_n + \triangle\beta \\
+\beta_{n+1} & = \beta_n - \frac{f^{\prime}(\beta_n)}{f^{\prime\prime}(\beta_n)}
+\end{align*}
+
+\noindent The iterations are continued until the optimal solution is found within a numerical error bound or until a predetermined number of iterations have been completed.
+
+\subsection{Newton's Method for Estimating Weights $w_{ij}$}
+
+\noindent Equation \ref{Eqn20} has a similar form as the Equation \ref{MainOpt}. The steps below shows the Newton method optimization to determine the $w_{ij}$s.
+
+\begin{itemize}
+\item [\textbf{Initialize}]
+\begin{align*}
+\Phi & = \left( 
+\begin{array}{ccccccc}
+                &&&&&& \\[-2.3in]
+                1 & \ldots & 1 & \ldots & 1 & \ldots & 1 \\ [-1in]
+                L_{11} & \ldots & L_{1k} & \ldots & L_{N1} & \ldots & L_{Nk} \\             
+              \end{array}
+\right) \\
+%\\
+\beta_{N\times k+1} &= [0,\ldots,0]^T \\
+%\\
+x &= [1 \hspace*{0.2in} X(t)]^T \\
+%\\
+\varepsilon &= 10^{-3}
+\end{align*} 
+
+\item [\textbf{Step 1}]
+\begin{align*}
+u_i & = \exp{\beta^T \Phi(:,i)} \\
+\mbox{where,} &  \\
+ u & = [u_1, u_2, \ldots, u_{N\times k}]^T \\
+ \end{align*}
  
- Given the objective and the constraints, Lagrange Multipliers is a popular method for combining the objective and constraints into a single optimization strategy with a set of unknowns. If $X=\{x_i\}$ represents the optimization vector, Lagrange Multipliers rely on the fact that at the optimal solution $X^*$, the gradients of the objective function and the constraint should be proportional. Figure XXX shows an illustration problem of minimizing objective $f(x,y)$ under the constraint of $g(x,y) = c$.
+ \item[\textbf{Step 2}]
+ \begin{align*}
+ v_j & = x_j - \sum\limits_{m=1}^{N\times k} \Phi(j,m) u_m \\
+ v & = [v_1, v_2,\ldots,v_{D+1}] \\
+ & \mbox{where,} \hspace*{0.1in} D \hspace*{0.1in} \mbox{is the dimension of the data}
+ \end{align*}
  
+ \item[\textbf{Step 3}]
+ \begin{align*}
+ g_{ij} & = \sum\limits_{m=1}^{N\times k} \Phi(i,m) \Phi(j,m) u_m \\
+ & \mbox{where,} \hspace*{0.1in} G \hspace*{0.1in} \mbox{is the Jacobian Matrix} \\
+ \end{align*}
  
+ \item[\textbf{Step 4}]
+ \begin{align*}
+ \beta_{New} &= \beta_{Old} + G^{-1} v \\ 
+ \end{align*}
  
+ \item[\textbf{Step 5}] 
+ \begin{align*}
+ \mbox{If } \parallel G^{-1}v \parallel > \epsilon \mbox{ , go back to Step 1.}
+ \end{align*}
+ \end{itemize}
+
+
+
 \clearpage
 
 % if Biographical sketch then
