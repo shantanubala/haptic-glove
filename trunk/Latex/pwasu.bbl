@@ -947,6 +947,82 @@ F.~Crow, ``Summed-area tables for texture mapping,'' in {\em {SIGGRAPH} '84:
   Proceedings of the 11th annual conference on Computer graphics and
   interactive techniques}, pp.~207--212, {ACM}, 1984.
 
+\bibitem{sohlberg_introduction_1989}
+M.~M. Sohlberg and C.~A. Mateer, {\em Introduction to Cognitive Rehabilitation:
+  Theory and Practice}.
+\newblock The Guilford Press, Feb. 1989.
+
+\bibitem{grunwald_human_2008}
+M.~Grunwald, {\em Human Haptic Perception: Basics and Applications}.
+\newblock Birkhäuser Basel, 1~ed., Nov. 2008.
+
+\bibitem{maynes-aminzade_edible_2005}
+D.~Maynes-aminzade, ``Edible bits: Seamless interfaces between people, data and
+  food,'' {\em Proceedings of the 2005 {ACM} Conference on Human Factors in
+  Computing Systems {(CHI'2005)} - Invited Talk}, 2005.
+
+\bibitem{chen_olfactory_2006}
+Y.~Chen, ``Olfactory display: Development and application in virtual reality
+  therapy,'' in {\em International Conference on Artificial Reality and
+  Telexistence}, (Los Alamitos, {CA,} {USA}), pp.~580--584, {IEEE} Computer
+  Society, 2006.
+
+\bibitem{dominy_ecological_2001}
+N.~J. Dominy and P.~W. Lucas, ``Ecological importance of trichromatic vision to
+  primates,'' {\em Nature}, vol.~410, pp.~363--366, Mar. 2001.
+
+\bibitem{koch_how_2006}
+K.~Koch, J.~{McLean}, R.~Segev, M.~A. Freed, M.~J.~B. {II}, V.~Balasubramanian,
+  and P.~Sterling, ``How much the eye tells the brain,'' {\em Current Biology},
+  vol.~16, no.~14, pp.~1428--1434, 2006.
+
+\bibitem{nakamura_somatosensory_1998}
+A.~Nakamura, T.~Yamada, A.~Goto, T.~Kato, K.~Ito, Y.~Abe, T.~Kachi, and
+  R.~Kakigi, ``Somatosensory homunculus as drawn by {MEG},'' {\em
+  {NeuroImage}}, vol.~7, pp.~377--386, May 1998.
+\newblock {PMID:} 9626677.
+
+\bibitem{bach-y-rita_vision_1969}
+P.~B. y~rita, C.~C. Collins, F.~A. Saunders, B.~White, and L.~Scaden, ``Vision
+  substitution by tactile image projection,'' {\em Nature}, vol.~221,
+  pp.~963--964, Mar. 1969.
+
+\bibitem{rehman_vibrotactile_2008}
+S.~Rehman, L.~Liu, and H.~Li, ``Vibrotactile rendering of human emotions on the
+  manifold of facial expressions,'' {\em Journal of Multimedia}, vol.~3, no.~3,
+  pp.~18--25, 2008.
+
+\bibitem{mcdaniel_using_2008}
+T.~{McDaniel}, S.~Krishna, V.~Balasubramanian, D.~Colbry, and S.~Panchanathan,
+  ``Using a haptic belt to convey non-verbal communication cues during social
+  interactions to individuals who are blind,'' in {\em Haptic Audio visual
+  Environments and Games, 2008. {HAVE} 2008. {IEEE} International Workshop on},
+  pp.~13--18, 2008.
+
+\bibitem{brave_intouch:_1997}
+S.~Brave and A.~Dahley, ``{inTouch:} a medium for haptic interpersonal
+  communication,'' in {\em {CHI} '97 extended abstracts on Human factors in
+  computing systems: looking to the future}, (Atlanta, Georgia), pp.~363--364,
+  {ACM}, 1997.
+
+\bibitem{dodge_bed:_1997}
+C.~Dodge, ``The bed: a medium for intimate communication,'' in {\em {CHI} '97
+  extended abstracts on Human factors in computing systems: looking to the
+  future}, (Atlanta, Georgia), pp.~371--372, {ACM}, 1997.
+
+\bibitem{fogg_handjive:_1998}
+B.~J. Fogg, L.~D. Cutler, P.~Arnold, and C.~Eisbach, ``{HandJive:} a device for
+  interpersonal haptic entertainment,'' in {\em Proceedings of the {SIGCHI}
+  conference on Human factors in computing systems}, (Los Angeles, California,
+  United States), pp.~57--64, {ACM} {Press/Addison-Wesley} Publishing Co.,
+  1998.
+
+\bibitem{morikawa_sense_2000}
+O.~Morikawa, J.~Yamashita, and Y.~Fukui, ``The sense of physically crossing
+  paths: creating a soft initiation in {HyperMirror} communication,'' in {\em
+  {CHI} '00 extended abstracts on Human factors in computing systems}, (The
+  Hague, The Netherlands), pp.~183--184, {ACM}, 2000.
+
 \bibitem{vinciarelli_proceedings_2008}
 A.~Vinciarelli, M.~Pantic, H.~Bourlard, and A.~Pentland, ``Social signals,
   their function, and automatic analysis,'' (Chania, Crete, Greece),

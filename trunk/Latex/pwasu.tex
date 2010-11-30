@@ -3267,8 +3267,7 @@ The results presented as a comparison between Color PF and SMSPF shows that inco
 An important shortcoming of the early Social Interaction Assistant [5] (and many other assistive devices for individuals who are blind) is that the prototype Assistant provides only audio outputs. This design is not practical for the target user population because individuals who are blind rely on their ears to perceive their environment, and audio outputs may interfere with normal hearing. This chapter describes an alternative delivery modality: a vibrotactile belt that can convey non-verbal communication cues to individuals who are blind or visually impaired. Specifically, we focus on the first non-verbal cue listed in Section I.C: helping users perceive the number of people in their visual field, and the relative direction and distance of each individual with respect to the user. In some social situations, location information is available through audible cues, but this is not always the case. For example, when a group of friends approaches all of them may smile but only some may offer a verbal greeting, or a passing co-worker may nod to you in the hallway without exchanging a verbal greeting. These non-verbal communications are common occurrences, but are not accessible to someone who is blind.
 
 \section{Motivation}
-
-UDIO and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment [1]. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized [2].
+Audio and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment [1]. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized [2].
 
 Of all the modalities that engage the human somatosensory system, vibrotactile stimulation has become very popular in the recent past due to the sophistication and unobtrusiveness of vibrotactile displays [3], as well as their portability and wearability [2]. But this new modality is far from displacing the primary delivery modalities due to the fact that haptics (touch) is a low bandwidth channel compared to audio or video. Previously, complex vibratory pulses have been designed using combinations of vibration dimensions [4][5], such as vibration frequency, amplitude, duration, rhythm and location, and by using human psychophysical perception (like sensory saltation [6]). There are infinite ways to map meanings to vibration dimensions, but conceptually, there are two extremes: symbolic and literal. On one end of the spectrum, tactons [7], or tactile icons, use a symbolic mapping to arbitrarily assign meaning to vibration dimensions. On the other end, a literal mapping assigns vibrotactile cues to intuitive somatosensory signals that humans are already acquainted with, such as a shoulder tap to obtain one's attention. Encoding schemes may also fall somewhere in between such that the vibrotactile cues may be intuitive, but still require training. Studies on symbolic and literal mappings have shown an extraordinary increase in information delivery bandwidth for vibratory cues, thereby making a case for vibrotactile stimulation as a potential alternative (or at least an augmentation) to audio and video.
 
@@ -3789,7 +3788,7 @@ Table XXX below shows a compilation of the state-of-the-art in facial expression
 \hline
 [177] & \multicolumn{2}{|c|}{Motion history} &	\multicolumn{2}{|c|}{SNoW kNN} &	P &	I &	15 AUs &	19 + 100 &	 V	& 61 + 68\\
 \hline
-[178] & \multicolumn{2}{|c|}{8 facial points}	& \multicolumn{2}{|c|}{Gentle Boost SVM} &	S P &	I &	2 &	27 + 32 + 65 &	V &	90\\
+[178] & \multicolumn{2}{|c|}{8 facial points}	& \multicolumn{2}{|c|}{Gentle Boost SVM} &	S P &	I &	2 &	27 + 32 + 65 &	V &	 90\\
 \hline
 [177] & \multicolumn{2}{|c|}{20 facial points} &	\multicolumn{2}{|c|}{Gentle SVM} &	S P &	I &	2 &	52 &	V &	 94\\
 \hline
@@ -3809,7 +3808,7 @@ Table XXX below shows a compilation of the state-of-the-art in facial expression
 \end{table}
 \end{landscape}
 
-\section{Design Considerations for Dyadic Interaction Assistant}
+\section{Design Considerations for Dyadic Interaction Assistant} \label{DesignConsiderations}
 As seen from the Table XXXX, facial expression recognition algorithm is a mature area with various solutions being suggested towards myriad applications ranging from biometrics to human computer interfaces. In contrast, the requirements in the proposed application is focused towards mediating human-human communication and thus imposes important constraints like,
 \begin{itemize}
 \item \emph{Real-time interpretation of the facial expressions and gestures:} People who are blind, or disabled in general, prefer not to rely on technologies that do not respond to their needs immediately and reliably. Survey of early adoption of assistive technologies show that the technology need not accomplish a large range of tasks, but the tasks being performed should be executed reliably and in useful time [REF]. Range of facial expressions range from a few hundredths of a second to couple of seconds at max [REF]. It is essential that the facial expression recognition algorithms be able to respond within this time frame to enable seamless interactions with sighted counterparts.
@@ -3910,7 +3909,7 @@ X_t(t) = \sum\limits_{i=1}^{N} \sum\limits_{j=1}^{k} w_{ij} L_{ij}
 \label{DAFigure3}
 \end{figure}
 
-\subsubsection{Computing $P\left(X(t)/L_{ij}(t)\right)$}
+\subsubsection{Computing $P\left(X(t)/L_{ij}(t)\right)$: Representing the test data in terms of existing examples}
 If any test point $X(t)$ can be represented as the sum average of a set of chosen example training data, in our case $L_{ij}(t)$ (chosen based on $k$ nearest neighbors of $X(t)$), the likelihood $P\left(X(t)/L_{ij}(t)\right)$ can be computed as
 
 \begin{equation}
@@ -3929,7 +3928,7 @@ where, $P\left(L_i(t)\right)$ can be considered as a proportionality constant an
 P\left(X(t)/L_{ij}(t)\right) \propto P\left(L_{ij}(t)/X(t)\right)
 \end{equation}
 
-\subsubsection{Determining $w_{it}(t)$ given test point $X(t)$ and examples $L_{ij}(t)$}
+\emph{Determining $w_{it}(t)$ given test point $X(t)$ and examples $L_{ij}(t)$:}
  In [REF], the problem of determining $w_{ij}(t)$ is posed as a entropy maximization problem,
 
  \begin{eqnarray}
@@ -3939,45 +3938,93 @@ P\left(X(t)/L_{ij}(t)\right) \propto P\left(L_{ij}(t)/X(t)\right)
  \end{eqnarray}
 
  The above problem is a convex optimization problem with the local maxima being the same as the global maxima. Appendix XXXX shows the solution to be problem using Newton's method and the steps shown in subsection \ref{XXX} of Appendix XXX shows the algorithm for determining the weights $w_{ij}$ associated with $L_{ij}$.
- 
- \subsection{Computing $P(L_i(t) / Y_i)$}
+
+ \subsubsection{Computing $P(L_i(t) / Y_i)$: Determining the prior probability of chosen examples w.r.t the complete training data}
  The Exemplar-based Bayesian model assumes that all the known knowledge of the problem is embedded within the complete training set $E(t)$. Thus, given a subset of the examples, $L_{ij}(t)$ that is extracted from the training set, the likelihood of a given expression label, $Y_i$ can be obtained as the ratio of likelihood of occurrence of the selected training samples over all the training samples in the database. This can be achieved through,
- 
+
  \begin{equation}
- P(L_i(t)/Y_i) = \frac{\sum\limits_{x \in L_i(t)} P(x)}{\sum\limits_{x \in E}P(x)}
+ P(L_i(t)/Y_i) = \frac{\sum\limits_{x \in L_i} P(x)}{\sum\limits_{x \in E}P(x)}
  \end{equation}
- 
+
  \noindent The probability $P(x)$ can be determined through Kernel Probability Density Estimation as
- 
+
  \begin{equation}
  P(x) = \frac{1}{n h^D} %\sum_\limits_{y\in E}\phi_h(x-y)
  \end{equation}
- 
- \noindent Assuming $\phi$ to be a Gaussian Density function, 
- 
+
+ \noindent Assuming $\phi$ to be a Gaussian Density function,
+
  \begin{equation}
  \phi_h(z) = \frac{1}{(2 \pi)^{D/2}} \exp{- \frac{1}{2} z^T z}
  \end{equation}
- 
- \noindent where, $h$ represents the window width and an optimal value for this can be found (See [REF] for more information) as, 
- 
+
+ \noindent where, $h$ represents the window width and an optimal value for this can be found (See [REF] for more information) as,
+
  \begin{equation}
  h_{opt} = \sigma \left\{ \frac{4}{n(2D+1)} \right\}^{\frac{1}{D+4}}
- \end{equation} 
- 
+ \end{equation}
+
  \noindent $\sigma^2$ is the average marginal variance on the $D$ dimensions of the data in the set $E$.
 
+ \subsection{The Prior Knowledge Layer}
+ Facial expressions evolve over time and the rate at which one displays  a certain facial expression varies from one individual to another. Further, some of the facial expressions show commonalities that exhibit temporal correlations. For example, consider the expressions Fear and Surprise as shown in the Figure XXX. The movements on the upper half of the face are very similar in the two expressions, but not alike. The differences in the final expression label depends on the curvature and the opening of the mouth. Thus, a temporal evaluation of any facial expression requires that the frame train be analyzed as an evolving probability confidence over time history $H(t)$.
+
+ \begin{figure} [htbp]
+ \centering
+ \includegraphics[width=1.75in]{Fear.jpg} \hspace*{0.75in}
+ \includegraphics[width=2in]{Surprise.jpg} \\
+ \caption{Comparison of Fear and Surprise facial expressions.}
+ \end{figure}
+
+ \subsubsection{Computation of $P(Y_i/H(t))$: Temporal propagation of expression probabilities}
+ The temporal nature of the TEBN is embedded in the propagation of probabilities across time (video frames). That is, propagation of expression probability from time $t$ to $t+1$, can be represented as a function of the transition probability given the frame history,
+
+ \begin{equation}
+ P(Yi/X(1,\ldots,t)) = \sum\limits_{j=1}^{N} P(Y_i/(Y_j, X(1,\ldots,t-1)) P(Y_j/X(1,\ldots,t-1))
+ \end{equation}
+
+ Considering a Markovian nature of probability propagation, we can rewrite the above equations as,
+
+  \begin{equation}
+  P(Yi/X(1,\ldots,t)) = \sum\limits_{j=1}^{N} P(Y_i/Y_j) P(Y_j/X(1,\ldots,t-1))
+  \end{equation}
+
+  In the above equation, the propagation is centered only on the transition probability $P(Y_i/Y_j)$. It is difficult to determine the transition probabilities before hand as they are dependent on the length of the video stream and also dependent on the duration of the expression in question. Hence, the transitions are determined while the expression evolves in the video frames. To this end,
+
+  \begin{enumerate}
+  \item Define a transition matrix $T$ of size $N$x$N$, to describe transitions between any of the $N$ expressions.
+  \item Initialize $T$ to $1$s.
+  \item At at given time instance, $t$, the transition probability, $P(Y_i/Y_j)$ can be obtained as
+      \begin{equation}
+      P(Y_i/Y_j) = \frac{T_{ji}(t))}{\sum\limits_{k=1}^N T_{jk}(t)}
+      \end{equation}
+  \item On an iterative basis update $T$ matrix based on a frame-by-frame transition from expression $i$ to $j$. That is, increment the entry $T_{ij}$ by 1, if the $t-1$ frame is assessed to be expression $Y_i$, through $P((Y_{X(t)} = Y_i)/X(1,\ldots,t-1))$ and the expression label transitions to $Y_j$ at time frame $t$, through $P((Y_{X(t)} = Y_j)/X(1,\ldots,t-1))$.
+  \end{enumerate}
+
+ \section{Discussion of Design Considerations: TEBN perspectives}
+ Having discussed the TEBN framework, we highlight the importance of using TEBN for addressing the three important design constraints that were highlighted in Section \ref{DesignConsiderations}. Below we highlight the importance of TEBN framework in addressing this design considerations.
+ \begin{itemize}
+\item \emph{Real-time interpretation of the facial expressions and gestures:} The TEBN framework enables real-time performance. See the experiments section to determine the time taken towards each expression assessment.
+\item \emph{Ability for the user to choose varying levels of facial information of their interaction partner:} The number of decision levels that the TEBN can have is controlled by the design of the exemplar layer. In the discussions a single layer (6 expression) TEBN was discussed, but the same can be extended to incorporate more classes of expression bases like the Actions Units (AU), various intensity of AUs or the raw movement data itself. That is, the number of elements representing $N$ in the above discussions can be extended based on the classifications desired by the application, scenario and user choice.
+\item \emph{Ability to switch between subject-dependent and subject-independent facial expression recognition:} Subject dependence and independence can be easily controlled through the determination of the example pool from which the data is being selected for building the TEBN. If the identity of an interaction partner can be established before the expression analysis, it is possible to build $X(t)$, the test vector as a sum of expressions that belong to that specific individual, $L_i^r$, where $i \in \{1,\ldots,N\}$ represents the $N$ expressions and $r \in \{1,\ldots,R\}$ represents the total number of individuals in the database.
+    On the other hand, if the interaction partner's identity cannot be established, all expression examples independent of the subject identity can be used for building the exemplar layer for $X(t)$.
+\end{itemize}
+
+\section{Experiments}
+\subsection{Data}
+All experiments were carried out on the Cohen-Kanade Facial Expression Database [REF] version 1. Version 1 (the original or initial release (Kanade, Cohn, \& Tian, 2000)) includes 486 sequences from 97 posers. Each sequence begins with a neutral expression and proceeds to a peak expression. The peak expression for each sequence is fully FACS (Ekman, Friesen, \& Hager, 2002; Ekman \& Friesen, 1979) coded and given an emotion label.  The emotion label refers to what expression was requested rather than what may actually have been performed. In order to validate the emotion that was displayed, the final expression images of the 486 sequences were displayed to unbiased participants through a web portal. Each emotion image was displayed to the user and requested to label them as belonging to one of 7 classes, \emph{Happy}, \emph{Sad}, \emph{Surprise}, \emph{Fear}, \emph{Disgust}, \emph{Surprise} and \emph{Neutral}. During the screening process, it was noticed that some of the subjects did not display expressions as requested (either displayed neutral expression through the sequence or displayed exaggerated facial mannerism unlikely of requested emotion). Hence all the participants who labeled the expression images were required to label on a scale of 1 to 5, the genuineness of the expression displayed, 1 being least correlation to genuine expression and 5 being most genuine. Based on the user responses, we identified 182 sequences where subjects displayed emotions that were named as being genuine up to a scale level of 4 or 5. These sequences were then used for testing the TEBN.
+
  \chapter{DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
-Over the past few decades, the environments in which humans live and operate have become increasingly information rich. Audio and visual modalities have been occupied by more than one source at the same time. Increasing audio-visual stimulations in the human's surroundings have increased the need for divided attention, which competes with the need for selective and sustained attention to complete a task at hand [1]. While audio and video have evolved as a medium for immersing humans in rich sensory experience, touch [2], taste [3] and smell [4] have only recently being considered for sensory augmentation and substitutions - note the subtlety between augmentation and substitution. When augmenting the already utilized sensory channels, the newer medium is not in demand to reproduce all of the information, but only enrich the already delivered experience. On the other hand, substitutions have to deliver information that was once being provided by a certain sensory channel on a newer medium, while maintaining similar or lesser cognitive load.
+Over the past few decades, the environments in which humans live and operate have become increasingly information rich. Audio and visual modalities have been occupied by more than one source at the same time. Increasing audio-visual stimulations in the human's surroundings have increased the need for divided attention, which competes with the need for selective and sustained attention to complete a task at hand \cite{sohlberg_introduction_1989}. While audio and video have evolved as a medium for immersing humans in rich sensory experience, touch \cite{grunwald_human_2008}, taste \cite{maynes-aminzade_edible_2005} and smell \cite{chen_olfactory_2006} have only recently being considered for sensory augmentation and substitutions - note the subtlety between augmentation and substitution. When augmenting the already utilized sensory channels, the newer medium is not in demand to reproduce all of the information, but only enrich the already delivered experience. On the other hand, substitutions have to deliver information that was once being provided by a certain sensory channel on a newer medium, while maintaining similar or lesser cognitive load.
 
-Vision is the primary sense organ for most mammals and for a few primates, including humans, trichromatic vision is so highly evolved [5] that a major portion of the neuronal pathway in the brain is dedicated to sensing, perceiving and cognizing visual stimuli. This allows the human vision to process high intensities of data that stimulates the eyes - Koch et. al. estimated that human eyes, with 106 ganglion cells, could transmit up to 10 Mbits/s [6] to the brain. Hence substituting vision with any other sensory channel is a challenging task that requires appropriate design taking into account the high intensity of data generated by visual stimuli.
+Vision is the primary sense organ for most mammals and for a few primates, including humans, trichromatic vision is so highly evolved \cite{dominy_ecological_2001} that a major portion of the neuronal pathway in the brain is dedicated to sensing, perceiving and cognizing visual stimuli. This allows the human vision to process high intensities of data that stimulates the eyes - Koch et. al. estimated that human eyes, with 106 ganglion cells, could transmit up to 10 Mbits/s \cite{koch_how_2006} to the brain. Hence substituting vision with any other sensory channel is a challenging task that requires appropriate design taking into account the high intensity of data generated by visual stimuli.
 
-In this paper, we present a visuo-haptic sensory substitution device that intends to replace visual channel with somatosensory vibrotactile stimulations for specific applications. The high intensity visual stimuli are mapped to a matrix of haptic actuators placed in contact with the dorsal surface of the fingers, which allows both spatial and temporal mapping of vibration patterns. The fingers have the largest tactile representation in the brain after the tongue. Together, the fingers have the largest projection on the cortical surface when compared to any other body part [7]. The concentrated neuronal mapping of the fingers allow for a very high sensitivity (both spatial and temporal resolution) making them an ideal candidate for sensory substitution. Further, to allow functional operation of the user's hands, the vibratos are placed on the dorsal surface of the fingers.
+In this paper, we present a visuo-haptic sensory substitution device that intends to replace visual channel with somatosensory vibrotactile stimulations for specific applications. The high intensity visual stimuli are mapped to a matrix of haptic actuators placed in contact with the dorsal surface of the fingers, which allows both spatial and temporal mapping of vibration patterns. The fingers have the largest tactile representation in the brain after the tongue. Together, the fingers have the largest projection on the cortical surface when compared to any other body part \cite{nakamura_somatosensory_1998}. The concentrated neuronal mapping of the fingers allow for a very high sensitivity (both spatial and temporal resolution) making them an ideal candidate for sensory substitution. Further, to allow functional operation of the user's hands, the vibratos are placed on the dorsal surface of the fingers.
 
 In order to test the effectiveness of the visuo-haptic sensory substitution of the proposed vibrotactile glove, we explore one specific application area of delivering facial expressions via the glove. We targeted an assistive technology to translate facial expressions of social interaction partners into haptic spatio-temporal cues which could then be interpreted by people who are blind. The human face is very dynamic when it comes to generating important non-verbal communicative cues. Subtle movements in the facial features can convey great amounts of information. For example, slight opening of the eyelids conveys confusion or interest, whereas a slight closing of the eye lids conveys anger or doubt. Thus, the human face can be considered to be a very high bandwidth information stream, where careful design considerations are needed if this data has to be encoded optimally and effectively through haptic modalities.
 
 \section{Related Work}
-A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual Sensory Substitution) [8] that substitutes visual data into a 400 point tactile array worn on the back of the user. A similar effort by Rahman et. al. [9] focused on delivering facial emotions of interaction partners using vibrators installed on a chair such that the user's back is in direct contact with the vibrators. Both of these technologies have the obvious disadvantage that the user is restricted to a seated position with immobile augmentations. Recently we have explored the use of vibrotactile technologies on a belt like form factor for delivering direction and distance information [10]. Unfortunately, the waist (combined with a belt like form factor) did not prove suitable for delivering high intensity data like facial expressions. Table below presents some of the popular haptic technologies developed for communicating high bandwidth interpersonal interaction data. While these provide opportunity to appreciate the possibility of haptic information delivery, the end goal was not clearly defined towards delineating fine facial movements that are deemed important in typical social interactions.
+A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual Sensory Substitution) \cite{bach-y-rita_vision_1969} that substitutes visual data into a 400 point tactile array worn on the back of the user. A similar effort by Rahman et. al. \cite{rehman_vibrotactile_2008} focused on delivering facial emotions of interaction partners using vibrators installed on a chair such that the user's back is in direct contact with the vibrators. Both of these technologies have the obvious disadvantage that the user is restricted to a seated position with immobile augmentations. Recently we have explored the use of vibrotactile technologies on a belt like form factor for delivering direction and distance information \cite{mcdaniel_using_2008}. Unfortunately, the waist (combined with a belt like form factor) did not prove suitable for delivering high intensity data like facial expressions. Table below presents some of the popular haptic technologies developed for communicating high bandwidth interpersonal interaction data. While these provide opportunity to appreciate the possibility of haptic information delivery, the end goal was not clearly defined towards delineating fine facial movements that are deemed important in typical social interactions.
 
 \begin{landscape}
 \begin{table}
@@ -3991,16 +4038,17 @@ A prominent visuo-haptic sensory substitution system is the TVSS (Tactile-Visual
 \hline
 \hline
 
-inTouch \newline [199] & Vibration Pressure Texture &	Hand &	Social Touch &	-Interpersonal communication through remote touch &	No Testing & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{inTouch1.jpg}}}
+inTouch \newline \cite{brave_intouch:_1997} & Vibration Pressure Texture &	Hand &	Social Touch &	-Interpersonal communication through remote touch &	No Testing & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{inTouch1.jpg}}}
 & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{TheBed.jpg}}}\\
 \cline{1-6}
-The Bed \newline [200] & Pressure Texture Temperature &	Body &	Social Touch & Remote interpersonal intimate communication	 Self report & System found to produce feelings of intimacy. & \multicolumn{4}{|c|}{\multirow{2}{*}{}} & \multicolumn{4}{|c|}{\multirow{2}{*}{}} \\
-\hline
+The Bed \newline \cite{dodge_bed:_1997} & Pressure Texture Temperature &	Body &	Social Touch & Remote interpersonal intimate communication	 Self report & System found to produce feelings of intimacy. & \multicolumn{4}{|c|}{\multirow{2}{*}{}} & \multicolumn{4}{|c|}{\multirow{2}{*}{}} \\
 \hline
 
-HandJive \newline [201] & Pressure Proprioception &	Hand & Handshake Touch	& Interpersonal communication through new cueing language & No Data & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HandJive.jpg}}} & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HyperMirror.jpg}}}\\
+HandJive \newline \cite{fogg_handjive:_1998} & Pressure Proprioception &	Hand & Handshake Touch	& Interpersonal communication through new cueing language & No Data & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HandJive.jpg}}} & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2in]{HyperMirror.jpg}}}\\
 
-HyperMirror \newline [202] & Pressure &	Shoulders &	interpersonal distance, relative position, crossing paths &	 -Remote crossing of paths. \newline
+\cline{1-6}
+
+HyperMirror \newline \cite{morikawa_sense_2000} & Pressure &	Shoulders &	interpersonal distance, relative position, crossing paths &	 -Remote crossing of paths. \newline
 -Initiating interaction in strangers across distance. \newline Tap to initiate conversation. &	Eye contact was made across distant users. \newline
 Tap signal aroused attention. \newline
 Crossing paths initiated conversations. & \multicolumn{4}{|c|}{\multirow{2}{*}{}} & \multicolumn{4}{|c|}{\multirow{2}{*}{}}\\
@@ -4153,7 +4201,7 @@ Travelled the minimal hitting path 65\% with their existing navigation aid and d
 \hline
 
 [229] [230] &
-Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	No user study. \\
+Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	 No user study. \\
 \hline
 
 [231] &
@@ -4610,23 +4658,23 @@ Since no assumptions on the distribution of the response are made, unlike the me
 &\sum\limits_{i=1}^{N} e^{-\beta l_i} (l_i - L) = 0 \label{Eqn20}
 \end{align}
 
-\noindent From Equation \ref{Eqn20} we identify the Lagrange Multipliers to be the $\beta$s and the solution to the required $x_i$s can then be found through Equation \ref{Eqn15}. 
+\noindent From Equation \ref{Eqn20} we identify the Lagrange Multipliers to be the $\beta$s and the solution to the required $x_i$s can then be found through Equation \ref{Eqn15}.
 
 \noindent The $\beta$s can be found through numerical optimization and in the section below, we show the use of Newton's method for accomplishing the same.
 
 \section{Newton's method}
-Newton's method is a popular numerical optimization technique used to find the roots of an function $f(\mathbf{x}) =0$. 
+Newton's method is a popular numerical optimization technique used to find the roots of an function $f(\mathbf{x}) =0$.
 
-\noindent From Equation \ref{Eqn20}, we know that the $\beta$s form the root of the equation 
+\noindent From Equation \ref{Eqn20}, we know that the $\beta$s form the root of the equation
 
 \begin{equation}
 f(\mathbf{\beta}) = \sum\limits_{i=1}^{N} e^{-\mathbf{\beta} l_i} (l_i - L) = 0
 \end{equation}
 
-At each iteration the method approximates $f(\beta)$ by a quadratic function around $\beta$, and then takes a step towards the maximum/minimum of that quadratic function. Typically, the quadratic approximation is obtained from the function itself through its second order Taylor expansion. 
+At each iteration the method approximates $f(\beta)$ by a quadratic function around $\beta$, and then takes a step towards the maximum/minimum of that quadratic function. Typically, the quadratic approximation is obtained from the function itself through its second order Taylor expansion.
 
 \begin{align*}
-f(\beta + \nabla \beta) = f(\beta) + f^{\prime}(\beta)\triangle\beta + \frac{1}{2}f^{\prime\prime}(\beta) (\triangle\beta)^2 
+f(\beta + \nabla \beta) = f(\beta) + f^{\prime}(\beta)\triangle\beta + \frac{1}{2}f^{\prime\prime}(\beta) (\triangle\beta)^2
 \end{align*}
 
 \noindent Newton's method determines the next approximation for the roots, $\beta_{n+1}$, by constructing a tangent to the objective function, $f(\beta)$, at the point $\beta_n$ and determining the tangent's roots, i.e. determining the intersection of the tangent, $f^{\prime}(\beta_{n})$, with the $\beta$ axis.
@@ -4634,7 +4682,7 @@ f(\beta + \nabla \beta) = f(\beta) + f^{\prime}(\beta)\triangle\beta + \frac{1}{
 \noindent Thus, the next iteration for $\beta_n$ could be obtained by determining $\triangle\beta$ by setting the derivative of the objective function to $0$.
 
 \begin{equation}
-f^{\prime}(\beta_n) = 0 
+f^{\prime}(\beta_n) = 0
 \end{equation}
 
 \noindent From the Taylor Expansion,
@@ -4662,11 +4710,11 @@ f^{\prime}(\beta_n) + \triangle\beta f^{\prime\prime}(\beta_n) & = 0 \\
 \begin{itemize}
 \item [\textbf{Initialize}]
 \begin{align*}
-\Phi & = \left( 
+\Phi & = \left(
 \begin{array}{ccccccc}
                 &&&&&& \\[-2.3in]
                 1 & \ldots & 1 & \ldots & 1 & \ldots & 1 \\ [-1in]
-                L_{11} & \ldots & L_{1k} & \ldots & L_{N1} & \ldots & L_{Nk} \\             
+                L_{11} & \ldots & L_{1k} & \ldots & L_{N1} & \ldots & L_{Nk} \\
               \end{array}
 \right) \\
 %\\
@@ -4675,7 +4723,7 @@ f^{\prime}(\beta_n) + \triangle\beta f^{\prime\prime}(\beta_n) & = 0 \\
 x &= [1 \hspace*{0.2in} X(t)]^T \\
 %\\
 \varepsilon &= 10^{-3}
-\end{align*} 
+\end{align*}
 
 \item [\textbf{Step 1}]
 \begin{align*}
@@ -4683,26 +4731,26 @@ u_i & = \exp{\beta^T \Phi(:,i)} \\
 \mbox{where,} &  \\
  u & = [u_1, u_2, \ldots, u_{N\times k}]^T \\
  \end{align*}
- 
+
  \item[\textbf{Step 2}]
  \begin{align*}
  v_j & = x_j - \sum\limits_{m=1}^{N\times k} \Phi(j,m) u_m \\
  v & = [v_1, v_2,\ldots,v_{D+1}] \\
  & \mbox{where,} \hspace*{0.1in} D \hspace*{0.1in} \mbox{is the dimension of the data}
  \end{align*}
- 
+
  \item[\textbf{Step 3}]
  \begin{align*}
  g_{ij} & = \sum\limits_{m=1}^{N\times k} \Phi(i,m) \Phi(j,m) u_m \\
  & \mbox{where,} \hspace*{0.1in} G \hspace*{0.1in} \mbox{is the Jacobian Matrix} \\
  \end{align*}
- 
+
  \item[\textbf{Step 4}]
  \begin{align*}
- \beta_{New} &= \beta_{Old} + G^{-1} v \\ 
+ \beta_{New} &= \beta_{Old} + G^{-1} v \\
  \end{align*}
- 
- \item[\textbf{Step 5}] 
+
+ \item[\textbf{Step 5}]
  \begin{align*}
  \mbox{If } \parallel G^{-1}v \parallel > \epsilon \mbox{ , go back to Step 1.}
  \end{align*}
