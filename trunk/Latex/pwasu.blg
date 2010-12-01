@@ -1,4 +1,8 @@
 This is BibTeX, Version 0.99cThe top-level auxiliary file: pwasu.aux
+White space in argument---line 716 of file pwasu.aux
+ : \citation{Hug
+ :               over a distance}
+I'm skipping whatever remains of this command
 The style file: ieeetr.bst
 Database file #1: PrunedReferences.bib
 I was expecting a `,' or a `}'---line 2499 of file PrunedReferences.bib
@@ -86,5 +90,6 @@ Warning--empty institution in Ozkan2006
 Warning--empty booktitle in ram_people_1998
 Warning--empty booktitle in bilmes_gentle_1998
 Warning--empty booktitle in paget_texture_1997
+Warning--empty publisher in brell_fusion_2008
 Warning--empty booktitle in vinciarelli_proceedings_2008
-(There were 15 error messages)
+(There were 16 error messages)
