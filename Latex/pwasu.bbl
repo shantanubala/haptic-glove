@@ -1023,6 +1023,85 @@ O.~Morikawa, J.~Yamashita, and Y.~Fukui, ``The sense of physically crossing
   {CHI} '00 extended abstracts on Human factors in computing systems}, (The
   Hague, The Netherlands), pp.~183--184, {ACM}, 2000.
 
+\bibitem{chang_comtouch:_2002}
+A.~Chang, S.~{O'Modhrain}, R.~Jacob, E.~Gunther, and H.~Ishii, ``{ComTouch:}
+  design of a vibrotactile communication device,'' in {\em {DIS} '02:
+  Proceedings of the conference on Designing interactive systems}, pp.~320,
+  312, {ACM} Press, 2002.
+
+\bibitem{rovers_him:_2004}
+A.~Rovers and H.~van Essen, ``{HIM:} a framework for haptic instant
+  messaging,'' in {\em {CHI} '04 extended abstracts on Human factors in
+  computing systems}, (Vienna, Austria), pp.~1313--1316, {ACM}, 2004.
+
+\bibitem{dobson_creating_2001}
+K.~Dobson, danah boyd, W.~Ju, J.~Donath, and H.~Ishii, ``Creating visceral
+  personal and social interactions in mediated spaces,'' in {\em {CHI} '01
+  extended abstracts on Human factors in computing systems}, (Seattle,
+  Washington), pp.~151--152, {ACM}, 2001.
+
+\bibitem{alhalabi_experimental_2003}
+M.~O. Alhalabi, S.~Horiguchi, and S.~Kunifuji, ``An experimental study on the
+  effects of network delay in cooperative shared haptic virtual environment,''
+  {\em Computers \& Graphics}, vol.~27, pp.~205--213, Apr. 2003.
+
+\bibitem{bonanni_taptap:_2006}
+L.~Bonanni, C.~Vaucelle, J.~Lieberman, and O.~Zuckerman, ``{TapTap:} a haptic
+  wearable for asynchronous distributed touch therapy,'' in {\em {CHI} '06:
+  {CHI} '06 extended abstracts on Human factors in computing systems},
+  (Montr{\textbackslash}'{e}al, Qu{\textbackslash}'{e}bec, Canada), pp.~585,
+  580, {ACM}, 2006.
+
+\bibitem{werner_united-pulse:_2008}
+J.~Werner, R.~Wettach, and E.~Hornecker, ``United-pulse: feeling your partner's
+  pulse,'' in {\em Proceedings of the 10th international conference on Human
+  computer interaction with mobile devices and services}, (Amsterdam, The
+  Netherlands), pp.~535--538, {ACM}, 2008.
+
+\bibitem{cappelletti_vibrotactile_1998}
+L.~Cappelletti, M.~Feeri, and G.~Nicoletti, ``Vibrotactile colour rendering for
+  the visually impaired within the {VIDET} project,'' in {\em Telemanipulator
+  and Telepresence Technologies V}, vol.~3524, pp.~92-- 96, Nov. 1998.
+
+\bibitem{uchiyama_vibrotactile_2008}
+H.~Uchiyama, M.~A. Covington, and W.~D. Potter, ``Vibrotactile glove guidance
+  for semi-autonomous wheelchair operations,'' in {\em Proceedings of the 46th
+  Annual Southeast Regional Conference on {XX}}, (Auburn, Alabama),
+  pp.~336--339, {ACM}, 2008.
+
+\bibitem{brell_fusion_2008}
+M.~Brell, D.~Roßkamp, and A.~Hein, ``Fusion of vibrotactile signals used in a
+  tactile display in computer aided surgery,'' in {\em Haptics: Perception,
+  Devices and Scenarios}, pp.~383--388, 2008.
+
+\bibitem{oron-gilad_vibrotactile_2007}
+T.~{Oron-Gilad}, J.~Downs, R.~Gilson, and P.~Hancock, ``Vibrotactile guidance
+  cues for target acquisition,'' {\em Systems, Man, and Cybernetics, Part C:
+  Applications and Reviews, {IEEE} Transactions on}, vol.~37, no.~5,
+  pp.~993--1004, 2007.
+
+\bibitem{hein_contact_2007}
+A.~Hein and M.~Brell, ``{conTACT} - a vibrotactile display for computer aided
+  surgery,'' in {\em World Haptics Conference}, vol.~0, (Los Alamitos, {CA,}
+  {USA}), pp.~531--536, {IEEE} Computer Society, 2007.
+
+\bibitem{cha_authoring/editing_2007}
+J.~Cha, Y.~Seo, Y.~Kim, and J.~Ryu, ``An {Authoring/Editing} framework for
+  haptic broadcasting: Passive haptic interactions using {MPEG-4} {BIFS},'' in
+  {\em {EuroHaptics} Conference, 2007 and Symposium on Haptic Interfaces for
+  Virtual Environment and Teleoperator Systems. World Haptics 2007. Second
+  Joint}, pp.~274--279, 2007.
+
+\bibitem{cha_framework_2009}
+J.~Cha, Y.~Ho, Y.~Kim, J.~Ryu, and I.~Oakley, ``A framework for haptic
+  broadcasting,'' {\em {IEEE} {MultiMedia}}, vol.~16, no.~3, pp.~16--27, 2009.
+
+\bibitem{murray_psychophysical_2003}
+A.~M. Murray, R.~L. Klatzky, and P.~K. Khosla, ``Psychophysical
+  characterization and testbed validation of a wearable vibrotactile glove for
+  telemanipulation,'' {\em Presence: Teleoper. Virtual Environ.}, vol.~12,
+  no.~2, pp.~156--182, 2003.
+
 \bibitem{vinciarelli_proceedings_2008}
 A.~Vinciarelli, M.~Pantic, H.~Bourlard, and A.~Pentland, ``Social signals,
   their function, and automatic analysis,'' (Chania, Crete, Greece),
