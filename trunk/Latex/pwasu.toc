@@ -1,5 +1,5 @@
-\contentsline {chapter}{LIST OF TABLES}{xiv}
-\contentsline {chapter}{LIST OF FIGURES}{xv}
+\contentsline {chapter}{LIST OF TABLES}{xv}
+\contentsline {chapter}{LIST OF FIGURES}{xvi}
 \contentsline {chapter}{CHAPTER}{1}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Components of Social Interactions}{2}
@@ -21,6 +21,7 @@
 \contentsline {subsubsection}{Touch}{13}
 \contentsline {subsubsection}{Face}{13}
 \contentsline {subsubsection}{Eye}{15}
+\contentsline {section}{\numberline {1.4}Automatic detection of non-verbal cueing}{15}
 \contentsline {chapter}{\chapternumberline {2}MOTIVATION}{18}
 \contentsline {section}{\numberline {2.1}Assistive Technology}{18}
 \contentsline {section}{\numberline {2.2}Remote Interactions}{20}
@@ -178,66 +179,70 @@
 \contentsline {subsubsection}{Quantitative Evaluation of the Dance Experiment:}{187}
 \contentsline {subsubsection}{Subjective Evaluation of the Dance Experiment:}{189}
 \contentsline {section}{\numberline {8.11}Proposed Solution}{190}
-\contentsline {chapter}{\chapternumberline {9}SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{193}
-\contentsline {section}{\numberline {9.1}Design Considerations}{194}
-\contentsline {section}{\numberline {9.2}Dyadic Interaction Assistant - Proposed Solution}{195}
-\contentsline {section}{\numberline {9.3}Facial Expression Recognition - State of the art}{196}
-\contentsline {section}{\numberline {9.4}Design Considerations for Dyadic Interaction Assistant}{199}
-\contentsline {section}{\numberline {9.5}Temporal Exemplar-based Bayesian Network (TEBN) for Facial Expression \& Gesture Sensing}{200}
-\contentsline {subsection}{The Observation Layer}{202}
-\contentsline {subsection}{The Exemplar Layer}{204}
-\contentsline {subsubsection}{Computing $P\left (X(t)/L_{ij}(t)\right )$: Representing the test data in terms of existing examples}{205}
-\contentsline {subsubsection}{Computing $P(L_i(t) / Y_i)$: Determining the prior probability of chosen examples w.r.t the complete training data}{206}
-\contentsline {subsection}{The Prior Knowledge Layer}{207}
-\contentsline {subsubsection}{Computation of $P(Y_i/H(t))$: Temporal propagation of expression probabilities}{207}
-\contentsline {section}{\numberline {9.6}Discussion of Design Considerations: TEBN perspectives}{209}
-\contentsline {section}{\numberline {9.7}Experiments}{210}
-\contentsline {subsection}{Data}{210}
-\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{211}
-\contentsline {section}{\numberline {10.1}Related Work}{212}
-\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{222}
-\contentsline {section}{\numberline {10.3}Proposed Solution}{222}
-\contentsline {section}{\numberline {10.4}Haptic Cueing}{224}
-\contentsline {subsection}{Localization}{224}
-\contentsline {subsection}{Spatio-Temporal Cueing}{224}
-\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{225}
-\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{225}
-\contentsline {section}{\numberline {10.5}Research Hypothesis}{227}
-\contentsline {subsection}{Localization}{227}
-\contentsline {subsubsection}{Hypothesis 1:}{227}
-\contentsline {subsubsection}{Hypothesis 2:}{227}
-\contentsline {subsubsection}{Hypothesis 3:}{228}
-\contentsline {subsection}{Spatio-Temporal Cueing}{228}
-\contentsline {subsubsection}{Hypothesis 4:}{228}
-\contentsline {subsubsection}{Hypothesis 5:}{228}
-\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{228}
-\contentsline {subsection}{Participants}{229}
-\contentsline {subsection}{Procedure}{229}
-\contentsline {subsection}{Analysis}{230}
-\contentsline {subsubsection}{Recognition Accuracies}{230}
-\contentsline {subsubsection}{ANOVA}{230}
-\contentsline {subsubsection}{Tuckey HSD}{231}
-\contentsline {section}{\numberline {10.7}Results}{231}
-\contentsline {subsection}{Localization Experiments}{232}
-\contentsline {subsubsection}{Phalange Level Localization}{232}
-\contentsline {subsubsection}{Finger Level Localization}{233}
-\contentsline {subsubsection}{Phalange Position Localization}{234}
-\contentsline {subsection}{Spatio-Temporal Experiments}{235}
-\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{235}
-\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{236}
-\contentsline {subsubsection}{Time for Recognition:}{238}
-\contentsline {section}{\numberline {10.8}Conclusion}{239}
-\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{241}
-\contentsline {section}{\numberline {11.1}Social Intelligence}{241}
-\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{243}
-\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{244}
-\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{246}
-\contentsline {chapter}{REFERENCES}{250}
-\contentsline {chapter}{APPENDIX}{268}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{269}
-\contentsline {subsection}{Procedure}{270}
-\contentsline {chapter}{APPENDIX}{271}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{271}
-\contentsline {section}{\numberline {B.1}Entropy Maximization under Linear Constraints Problem:}{272}
-\contentsline {section}{\numberline {B.2}Newton's method}{275}
-\contentsline {subsection}{Newton's Method for Estimating Weights $w_{ij}$}{277}
+\contentsline {section}{\numberline {8.12}Other Applications for the proposed technology}{190}
+\contentsline {subsection}{Navigation and Spatial Orientation}{190}
+\contentsline {subsection}{Interpersonal Social Communication}{193}
+\contentsline {subsection}{Generic Information Communication}{194}
+\contentsline {chapter}{\chapternumberline {9}SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{195}
+\contentsline {section}{\numberline {9.1}Design Considerations}{196}
+\contentsline {section}{\numberline {9.2}Dyadic Interaction Assistant - Proposed Solution}{197}
+\contentsline {section}{\numberline {9.3}Facial Expression Recognition - State of the art}{198}
+\contentsline {section}{\numberline {9.4}Design Considerations for Dyadic Interaction Assistant}{201}
+\contentsline {section}{\numberline {9.5}Temporal Exemplar-based Bayesian Network (TEBN) for Facial Expression \& Gesture Sensing}{202}
+\contentsline {subsection}{The Observation Layer}{204}
+\contentsline {subsection}{The Exemplar Layer}{206}
+\contentsline {subsubsection}{Computing $P\left (X(t)/L_{ij}(t)\right )$: Representing the test data in terms of existing examples}{207}
+\contentsline {subsubsection}{Computing $P(L_i(t) / Y_i)$: Determining the prior probability of chosen examples w.r.t the complete training data}{208}
+\contentsline {subsection}{The Prior Knowledge Layer}{209}
+\contentsline {subsubsection}{Computation of $P(Y_i/H(t))$: Temporal propagation of expression probabilities}{209}
+\contentsline {section}{\numberline {9.6}Discussion of Design Considerations: TEBN perspectives}{211}
+\contentsline {section}{\numberline {9.7}Experiments}{212}
+\contentsline {subsection}{Data}{212}
+\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{213}
+\contentsline {section}{\numberline {10.1}Related Work}{214}
+\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{224}
+\contentsline {section}{\numberline {10.3}Proposed Solution}{224}
+\contentsline {section}{\numberline {10.4}Haptic Cueing}{226}
+\contentsline {subsection}{Localization}{226}
+\contentsline {subsection}{Spatio-Temporal Cueing}{226}
+\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{227}
+\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{227}
+\contentsline {section}{\numberline {10.5}Research Hypothesis}{229}
+\contentsline {subsection}{Localization}{229}
+\contentsline {subsubsection}{Hypothesis 1:}{229}
+\contentsline {subsubsection}{Hypothesis 2:}{229}
+\contentsline {subsubsection}{Hypothesis 3:}{230}
+\contentsline {subsection}{Spatio-Temporal Cueing}{230}
+\contentsline {subsubsection}{Hypothesis 4:}{230}
+\contentsline {subsubsection}{Hypothesis 5:}{230}
+\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{230}
+\contentsline {subsection}{Participants}{231}
+\contentsline {subsection}{Procedure}{231}
+\contentsline {subsection}{Analysis}{232}
+\contentsline {subsubsection}{Recognition Accuracies}{232}
+\contentsline {subsubsection}{ANOVA}{232}
+\contentsline {subsubsection}{Tuckey HSD}{233}
+\contentsline {section}{\numberline {10.7}Results}{233}
+\contentsline {subsection}{Localization Experiments}{234}
+\contentsline {subsubsection}{Phalange Level Localization}{234}
+\contentsline {subsubsection}{Finger Level Localization}{235}
+\contentsline {subsubsection}{Phalange Position Localization}{236}
+\contentsline {subsection}{Spatio-Temporal Experiments}{237}
+\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{237}
+\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{238}
+\contentsline {subsubsection}{Time for Recognition:}{240}
+\contentsline {section}{\numberline {10.8}Conclusion}{241}
+\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{243}
+\contentsline {section}{\numberline {11.1}Social Intelligence}{243}
+\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{245}
+\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{246}
+\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{248}
+\contentsline {chapter}{REFERENCES}{252}
+\contentsline {chapter}{APPENDIX}{275}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{276}
+\contentsline {subsection}{Procedure}{277}
+\contentsline {chapter}{APPENDIX}{278}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{278}
+\contentsline {section}{\numberline {B.1}Entropy Maximization under Linear Constraints Problem:}{279}
+\contentsline {section}{\numberline {B.2}Newton's method}{282}
+\contentsline {subsection}{Newton's Method for Estimating Weights $w_{ij}$}{284}

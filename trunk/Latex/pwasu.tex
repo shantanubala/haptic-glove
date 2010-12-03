@@ -48,6 +48,28 @@
 %\renewcommand{\baselinestretch}{1.5} % Uncomment for 1.5 spacing between lines
 \parindent 0pt          % sets leading space for paragraphs
  %%%%%%%%
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % Controlling figures and tables
+ 
+ % Alter some LaTeX defaults for better treatment of figures:
+% See p.105 of "TeX Unbound" for suggested values.
+% See pp. 199-200 of Lamport's "LaTeX" book for details.
+%   General parameters, for ALL pages:
+\renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+\renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+%   Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}     % 2 may work better
+\setcounter{dbltopnumber}{2}    % for 2-column pages
+\renewcommand{\dbltopfraction}{0.9}	% fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
+%   Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+\renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+    
 
 %%%%%% Landscape Mode %%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{lscape}
@@ -152,7 +174,7 @@ While the spoken language plays an important role in communication, speech accou
 \subsection{Non-verbal communication cues}
 Speech, voice, face and body form the primary channels of communication in any social interaction. Speech forms the primary channel for verbal communication, while prosody (intonation, pace and loudness of one's voice), face, and body (posture, gesture and mannerisms) form the medium for nonverbal communication. In everyday social interactions, people communicate so effortlessly through both verbal and non-verbal cues that they are not cognizant of the complex interplay of their voice, face and body in establishing a smooth communication channel.
 
-\begin{figure}[h]
+\begin{figure}[htbp!]
 \begin{center}
  \includegraphics[width=3in]{NVCEncodings.jpg}
 \end{center}
@@ -250,7 +272,7 @@ Temperature & \cite{kenrick_ambient_1986} \\
 \subsection{The Physical Characteristics of the communicators}
 The physical appearance of a person is very important aspect of non-verbal cueing. People draw impressions of their communication partner as soon as they see them. The human body acts like means for communicating important sociological parameters like status, interest, dominance etc. Researchers have found cultural and global preferences in overall body image and any deviations from the norm affects interactions between people. For example, facial babyishness \cite{berry_attractive_1991} has been found affect judgment of facial attractiveness, honesty, warmth and sincerity. Any deviation from the babyishness has been correlated to immediate reduction in the judgment of these traits. A similar such example is the clothing that people wear. It has been found that first impressions are positive if the interviewer and interviewee are clothed similarly \cite{johnson_clothing_1977}. Table \ref{Tab:Table2} shows the important aspects of a person's physical appearance that affects the interpersonal interaction. Various psychological studies have been conducted towards understanding the model of human perception of character. Very little is known on the reasons for some of the human norms, but it is an active area of research that is being explored rigorously, especially, in the context of group behaviors and personal mannerisms with work environments \cite{helen_h._jennings_sociometry_1959}.
 
-\begin{table}[hpdf]
+\begin{table}[htbp!]
 \begin{center}
 \caption{The physical characteristics of a communicator that can affect interpersonal communications.}
 \label{Tab:Table2}
@@ -313,7 +335,7 @@ The understanding of the human facial expression space was immensely increased b
 \emph{Facial Action Coding System (FACS):}
 FACS defines all possible facial feature movements into Action Units (AU) which represent movement of facial features (like lips, eye brow, chin etc). The AUs are the net effect of facial muscle contraction and relaxation, though they are not directly related to the muscles. Table below shows the different AUs that form the basis of FACS based facial coding with the appropriate number and the associated facial feature movement.
 
-\begin{table}[hpdf]
+\begin{table}[htbp!]
 \begin{center}
 \caption{FACS communicative actions on the human face}
 \label{Tab:Table2}
@@ -366,6 +388,27 @@ Expressing emotions & Along with the facial muscular movements, the eyes play a 
 \end{tabularx}
 \end{center}
 \end{table}
+
+\section{Automatic detection of non-verbal cueing}
+
+\begin{table}[htbp]
+\begin{tabularx}{5.5in}{|X||X|X|X|X|}
+\hline
+\multicolumn{5}{|c|}{Interaction Environment} \\
+\hline
+	& Scene Change Detection &	Background Modeling &	Face and Object Detection	& Environment Analysis \\
+\hline
+\hline
+Proxemics	& &	\cite{adam_aggregated_2006}& \cite{ming-hsuan_yang_detecting_2002} \cite{viola_robust_2001}& \\
+\hline
+Objects in the scene &	\cite{radke_image_2005} & \cite{ozden_background_2005} \cite{ren_statistical_2003} & \cite{ming-hsuan_yang_detecting_2002} & \\
+\hline
+Natural vs manmade environment &	\cite{radke_image_2005} & & & \cite{todorovic_detection_2004}\\
+\hline
+\end{tabularx}
+\end{table}
+
+
 
 
 
@@ -3264,23 +3307,24 @@ Figure \ref{Fig:Figure118}, Figure \ref{Fig:Figure119} and Figure \ref{Fig:Figur
 The results presented as a comparison between Color PF and SMSPF shows that incorporating a deterministic structured search into the stochastic particle filtering framework improves the person tracking performance in complex scenarios. The SMSPF algorithm strikes a balance between specificity and generality offered by detection and tracking algorithms as discussed in Section 2. It uses specific structure-aware features in the search in order to handle non-homogeneity of the object and the cluttered nature of the background. On the other hand, generality is maintained by using simple, global features in the particle filtering framework so as to handle non-rigidity and deformability of the object. The clear advantage of using the structured search can be observed on the complex Dataset 3 which encompasses most of the challenges generally encountered while using the Social Interaction Assistant.
 
 \chapter{COMMUNICATING PROXEMICS}
-An important shortcoming of the early Social Interaction Assistant [5] (and many other assistive devices for individuals who are blind) is that the prototype Assistant provides only audio outputs. This design is not practical for the target user population because individuals who are blind rely on their ears to perceive their environment, and audio outputs may interfere with normal hearing. This chapter describes an alternative delivery modality: a vibrotactile belt that can convey non-verbal communication cues to individuals who are blind or visually impaired. Specifically, we focus on the first non-verbal cue listed in Section I.C: helping users perceive the number of people in their visual field, and the relative direction and distance of each individual with respect to the user. In some social situations, location information is available through audible cues, but this is not always the case. For example, when a group of friends approaches all of them may smile but only some may offer a verbal greeting, or a passing co-worker may nod to you in the hallway without exchanging a verbal greeting. These non-verbal communications are common occurrences, but are not accessible to someone who is blind.
+An important shortcoming of the early Social Interaction Assistant [5] (and many other assistive devices for individuals who are blind) is that the prototype Assistant provides only audio outputs. This design is not practical for the target user population because individuals who are blind rely on their ears to perceive their environment, and audio outputs may interfere with normal hearing. This chapter describes an alternative delivery modality: a vibrotactile belt that can convey non-verbal communication cues to individuals who are blind or visually impaired. Specifically, we focus on the non-verbal cue listed in Section I.C: helping users perceive the number of people in their visual field, and the relative direction and distance of each individual with respect to the user. In some social situations, location information is available through audible cues, but this is not always the case. For example, when a group of friends approaches all of them may smile but only some may offer a verbal greeting, or a passing co-worker may nod to you in the hallway without exchanging a verbal greeting. These non-verbal communications are common occurrences, but are not accessible to someone who is blind.
 
 \section{Motivation}
-Audio and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment [1]. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized [2].
+Audio and video have become the de facto delivery modality when it comes to most commercial human machine interfaces. This is primarily due to the fact that, for humans, audio and visual mediums offer an incredible amount of bandwidth in data delivery. However, the amount of information being delivered to users is ever increasing, and reliance on visual and auditory modalities alone is causing information overload. Further, there are situations where the use of vision and/or hearing may be inappropriate, regardless of whether or not they are available for use. For example, people who are blind or visually impaired do not have access to the visual medium, and their predisposition is to largely rely on audible signals for vital cues from their environment \cite{edwards_pragmatic_2009}. In such cases, delivering additional information either through vision or audio can be of little or no help; in fact, this may cause unnecessary cognitive overload for the user. Hence, there is a growing need for an alternate communication channel, such as the human skin which is largely underutilized \cite{tan_tactual_2005}.
 
-Of all the modalities that engage the human somatosensory system, vibrotactile stimulation has become very popular in the recent past due to the sophistication and unobtrusiveness of vibrotactile displays [3], as well as their portability and wearability [2]. But this new modality is far from displacing the primary delivery modalities due to the fact that haptics (touch) is a low bandwidth channel compared to audio or video. Previously, complex vibratory pulses have been designed using combinations of vibration dimensions [4][5], such as vibration frequency, amplitude, duration, rhythm and location, and by using human psychophysical perception (like sensory saltation [6]). There are infinite ways to map meanings to vibration dimensions, but conceptually, there are two extremes: symbolic and literal. On one end of the spectrum, tactons [7], or tactile icons, use a symbolic mapping to arbitrarily assign meaning to vibration dimensions. On the other end, a literal mapping assigns vibrotactile cues to intuitive somatosensory signals that humans are already acquainted with, such as a shoulder tap to obtain one's attention. Encoding schemes may also fall somewhere in between such that the vibrotactile cues may be intuitive, but still require training. Studies on symbolic and literal mappings have shown an extraordinary increase in information delivery bandwidth for vibratory cues, thereby making a case for vibrotactile stimulation as a potential alternative (or at least an augmentation) to audio and video.
+Of all the modalities that engage the human somatosensory system, vibrotactile stimulation has become very popular in the recent past due to the sophistication and unobtrusiveness of vibrotactile displays \cite{jones_tactile_2008}, as well as their portability and wearability \cite{tan_tactual_2005}. But this new modality is far from displacing the primary delivery modalities due to the fact that haptics (touch) is a low bandwidth channel compared to audio or video. Previously, complex vibratory pulses have been designed using combinations of vibration dimensions \cite{geldard_adventures_1957}\cite{jones_localization_2008}, such as vibration frequency, amplitude, duration, rhythm and location, and by using human psychophysical perception (like sensory saltation \cite{geldard_cutaneous_1972}). There are infinite ways to map meanings to vibration dimensions, but conceptually, there are two extremes: symbolic and literal. On one end of the spectrum, tactons \cite{brewster_tactons:_2004}, or tactile icons, use a symbolic mapping to arbitrarily assign meaning to vibration dimensions. On the other end, a literal mapping assigns vibrotactile cues to intuitive somatosensory signals that humans are already acquainted with, such as a shoulder tap to obtain one's attention. Encoding schemes may also fall somewhere in between such that the vibrotactile cues may be intuitive, but still require training. Studies on symbolic and literal mappings have shown an extraordinary increase in information delivery bandwidth for vibratory cues, thereby making a case for vibrotactile stimulation as a potential alternative (or at least an augmentation) to audio and video.
 
-Vibrotactile displays have been implemented in a variety of form factors including desktop displays, handheld devices, and wearable systems, such as gloves [8], jackets [9], and jewelry [10]. In this paper we focus our discussion to vibrotactile displays worn around the waist, commonly referred to in the literature as haptic or vibrotactile belts. Vibrotactile belts have found a number of applications including, but not limited to, pedestrian navigation [11][12][13] (vibrations guide users from a starting point to their destination); balance control [14] for people with vestibular damage (vibrations convey tilt information); virtual reality [15] (vibrations indicate collisions with virtual objects); spatial orientation aids for pilots [16] and astronauts [17] (vibrations provide spatial orientation towards magnetic north or Earth's gravity vector in zero-gravity environments); psychophysical study of human vibrotactile perception [5][18] (experiments on vibrotactile spatial acuity, spatio-temporal pattern perception, saltation, etc.); and social interaction assistant aids [19] for individuals who are blind or visually impaired (vibrations are used to communicate nonverbal cues). Unlike other form factors, belts tend to be physically discreet and part of almost all everyday clothing. A variety of vibrotactile belt designs and implementations have been proposed in the literature (please refer to Section II for a detailed analysis). However, existing designs have two primary limitations: (1) Limited applicability due to application-specific designs; and (2) Usability and performance requirements tend to be secondary to functionality, thereby forcing readers to question the real-world use of the application itself. This is the natural inclination of a technology-centric, as opposed to human-centric, approach towards interface design. A human-centered design strategy critically accounts for all users of the technology throughout the lifecycle of the design and development of a human machine interface. In this work, we generalize the scope of our users to include both customers: end users of a specific technology; and developers (engineers, scientists, and researchers): those modifying the product for novel applications.
+Vibrotactile displays have been implemented in a variety of form factors including desktop displays, handheld devices, and wearable systems, such as gloves \cite{chang_comtouch:_2002}, jackets \cite{jongeun_cha_hugme:_2008}, and jewelry \cite{werner_united-pulse:_2008}. In this paper we focus our discussion to vibrotactile displays worn around the waist, commonly referred to in the literature as haptic or vibrotactile belts. Vibrotactile belts have found a number of applications including, but not limited to, pedestrian navigation \cite{erp_waypoint_2005}\cite{heuten_tactile_2008} \cite{tsukada_activebelt:_2004} (vibrations guide users from a starting point to their destination); balance control \cite{wall_balance_2003} for people with vestibular damage (vibrations convey tilt information); virtual reality \cite{lindeman_wearable_2005} (vibrations indicate collisions with virtual objects); spatial orientation aids for pilots \cite{rupert_instrumentation_2000} and astronauts \cite{van_erp_multi-purpose_2003} (vibrations provide spatial orientation towards magnetic north or Earth's gravity vector in zero-gravity environments); psychophysical study of human vibrotactile perception \cite{jones_localization_2008} \cite{cholewiak_vibrotactile_2004} (experiments on vibrotactile spatial acuity, spatio-temporal pattern perception, saltation, etc.); and social interaction assistant aids \cite{mcdaniel_using_2008} for individuals who are blind or visually impaired (vibrations are used to communicate nonverbal cues). Unlike other form factors, belts tend to be physically discreet and part of almost all everyday clothing. A variety of vibrotactile belt designs and implementations have been proposed in the literature (please refer to Section II for a detailed analysis). However, existing designs have two primary limitations: (1) Limited applicability due to application-specific designs; and (2) Usability and performance requirements tend to be secondary to functionality, thereby forcing readers to question the real-world use of the application itself. This is the natural inclination of a technology-centric, as opposed to human-centric, approach towards interface design. A human-centered design strategy critically accounts for all users of the technology throughout the lifecycle of the design and development of a human machine interface. In this work, we generalize the scope of our users to include both customers: end users of a specific technology; and developers (engineers, scientists, and researchers): those modifying the product for novel applications.
 
 \section{Related Work}
 Our literature survey revealed over twenty vibrotactile belt designs from academic publications and electronics hobby forums. We've selected a subset for discussion here based on the maturity of their implementation and availability of information regarding implementation details.
-Cholewiak et al. [18] introduced a reconfigurable and scalable haptic belt design for use in human haptic perception experiments, where vibration motors were wired directly to a waveform generator, and attached via Velcro onto an elastic belt. The belt was specifically intended for psychophysical experiments, and its wired implementation limits portability, ease of movement, unobtrusiveness and discreetness. Van Erp et al. [11] presented a wireless, elastic vibrotactile belt for waypoint navigation. The belt consisted of eight vibration motors with adjustable locations. The belt was controlled by a minicomputer placed inside a backpack worn by the user. The paper provides no information regarding the scalability of the belt, i.e., the option of removing or adding vibration motors. Moreover, it is unclear if the amplitude and/or frequency of the vibrations can be adjusted. For studying human haptic perception, Jones and Ray [5] built a wireless haptic belt made of fabric consisting of 8 vibration motors held by Velcro. A back display was also constructed, which consisted of a four-by-four matrix of vibration motors. The locations of the vibration motors were adjustable, but the paper does not mention whether amplitude or timing could be controlled, nor is there any mention of the capability to add or remove vibration motors. Further, the bulkiness of the system, and its excessive cabling, could limit ease of movement, unobtrusiveness and discreetness.
 
-ActiveBelt [13] is a wireless haptic belt for pedestrian navigation, among other applications. The belt consisted of eight fixed vibration modules with elastic between vibration sites and used a large, onboard processing unit. Dimensions of the vibratory signals, such as frequency and timing, could be altered, but the reconfigurability and scalability of ActiveBelt is limited given its fixed vibration motors. Further, although the paper claims universal accessibility in that the belt can adapt to varying waist sizes, this may be only partially true-from our own past experiences, extreme waist sizes (either very small or very large) may not be able to use such an implementation.
-Ferscha et al. [21] presented a wireless vibrotactile belt for spatial awareness. Vibratory dimensions, such as intensity and timing, could be altered in a portable and lightweight design. However, since the belt used eight fixed vibration motors, its reconfigurability and scalability is limited. The Tactile Wayfinder [12], by Heuten et al., is a wireless vibrotactile belt for pedestrian navigation. It has many of the same advantages and disadvantages of Ferscha et al.'s belt design, but with a few differences; one advantage being The Tactile Wayfinder has an available API for application creation.
+Cholewiak et al. \cite{cholewiak_vibrotactile_2004} introduced a reconfigurable and scalable haptic belt design for use in human haptic perception experiments, where vibration motors were wired directly to a waveform generator, and attached via Velcro onto an elastic belt. The belt was specifically intended for psychophysical experiments, and its wired implementation limits portability, ease of movement, unobtrusiveness and discreetness. Van Erp et al. \cite{erp_waypoint_2005} presented a wireless, elastic vibrotactile belt for waypoint navigation. The belt consisted of eight vibration motors with adjustable locations. The belt was controlled by a minicomputer placed inside a backpack worn by the user. The paper provides no information regarding the scalability of the belt, i.e., the option of removing or adding vibration motors. Moreover, it is unclear if the amplitude and/or frequency of the vibrations can be adjusted. For studying human haptic perception, Jones and Ray \cite{jones_localization_2008} built a wireless haptic belt made of fabric consisting of 8 vibration motors held by Velcro. A back display was also constructed, which consisted of a four-by-four matrix of vibration motors. The locations of the vibration motors were adjustable, but the paper does not mention whether amplitude or timing could be controlled, nor is there any mention of the capability to add or remove vibration motors. Further, the bulkiness of the system, and its excessive cabling, could limit ease of movement, unobtrusiveness and discreetness.
 
-Perhaps the most accomplished of the aforementioned belt designs is the TactaBelt by Lindeman et al. [15], which consisted of eight vibration motors connected via Velcro to neoprene. The vibration motors of the belt are reconfigurable and scalable, and their vibratory dimensions are adjustable. Although the TactaBelt is functional and rich in features, there is little to no discussion regarding the usability and performance of the belt-this is also a reoccurring problem with all aforementioned belt designs. The rigidness and durability of this belt is questionable given that vibration motors were attached to the belt via Velcro. Whereas this solution may work in controlled environments, such as a virtual reality setup in a laboratory, it's unlikely to work well in real world conditions and under everyday use.
+ActiveBelt \cite{tsukada_activebelt:_2004} is a wireless haptic belt for pedestrian navigation, among other applications. The belt consisted of eight fixed vibration modules with elastic between vibration sites and used a large, onboard processing unit. Dimensions of the vibratory signals, such as frequency and timing, could be altered, but the reconfigurability and scalability of ActiveBelt is limited given its fixed vibration motors. Further, although the paper claims universal accessibility in that the belt can adapt to varying waist sizes, this may be only partially true-from our own past experiences, extreme waist sizes (either very small or very large) may not be able to use such an implementation.
+Ferscha et al. \cite{ferscha_vibro-tactile_2008} presented a wireless vibrotactile belt for spatial awareness. Vibratory dimensions, such as intensity and timing, could be altered in a portable and lightweight design. However, since the belt used eight fixed vibration motors, its reconfigurability and scalability is limited. The Tactile Wayfinder \cite{heuten_tactile_2008}, by Heuten et al., is a wireless vibrotactile belt for pedestrian navigation. It has many of the same advantages and disadvantages of Ferscha et al.'s belt design, but with a few differences; one advantage being The Tactile Wayfinder has an available API for application creation.
+
+Perhaps the most accomplished of the aforementioned belt designs is the TactaBelt by Lindeman et al. \cite{lindeman_wearable_2005}, which consisted of eight vibration motors connected via Velcro to neoprene. The vibration motors of the belt are reconfigurable and scalable, and their vibratory dimensions are adjustable. Although the TactaBelt is functional and rich in features, there is little to no discussion regarding the usability and performance of the belt-this is also a reoccurring problem with all aforementioned belt designs. The rigidness and durability of this belt is questionable given that vibration motors were attached to the belt via Velcro. Whereas this solution may work in controlled environments, such as a virtual reality setup in a laboratory, it's unlikely to work well in real world conditions and under everyday use.
 
 \begin{table}
 \centering
@@ -3291,12 +3335,12 @@ Perhaps the most accomplished of the aforementioned belt designs is the TactaBel
 
 \section{Design Requirements}
 Identifying the shortcomings of vibrotactile belt designs, reviewing existing design guidelines in the literature, and combining these with our own past experiences, we've compiled a set of design requirements for vibrotactile belts, depicted in Table I.
+
 In the above table, usability is the most important metric that captures the capability of a haptic platform to be used for exploring novel applications; in other words, if there are usability issues in a research platform, it will bias the outcome of any research experiment, thereby distracting the researcher from the true outcomes of an experiment. Following usability, functionality takes the next higher precedence, as it allows a researcher to configure the device to his or her novel application needs. Offering higher functionality allows adaptability of the research platform to various experiments. Finally, performance captures the lenience offered by the platform during experimental use. Mostly, higher performance reduces the researcher's requirement to focus attention on the research platform, and allows him/her to focus on the study itself. We discuss some of the existing work in eliciting such design requirements for vibrotactile belt and add design considerations that we have identified through our experience.
 
-Regarding the usability of a vibrotactile belt, Lindeman et al. [15] described a vibrotactile wearable device with limited cumber as one that is easy to put on or take off, and doesn't hinder movement with excessive wiring and bulky modules. Adding to this description of limited cumber, we include factors such as comfort and unobtrusiveness [20], ergonomics, lightweight and adaptability to fit different waist sizes. A vibrotactile belt should be intuitive so that it is easy to learn to use from both an end-user's perspective, as well as a developer's perspective. The latter will have much more vested interest in reconfiguring the belt for his or her intended application. Lastly, a vibrotactile belt should be discreet in that it is physically discreet and silent. As belts are a common part of everyday attire, keeping the design of vibrotactile belts close to accustomed dressing attire will help gain wider acceptance among users. Vibration motors can be noisy, which when used in public, can be distracting to those around us. Hence, vibrotactile modules should be designed to reduce noise.
+Regarding the usability of a vibrotactile belt, Lindeman et al. \cite{lindeman_wearable_2005} described a vibrotactile wearable device with limited cumber as one that is easy to put on or take off, and doesn't hinder movement with excessive wiring and bulky modules. Adding to this description of limited cumber, we include factors such as comfort and unobtrusiveness \cite{computer_guidelines_2002}, ergonomics, lightweight and adaptability to fit different waist sizes. A vibrotactile belt should be intuitive so that it is easy to learn to use from both an end-user's perspective, as well as a developer's perspective. The latter will have much more vested interest in reconfiguring the belt for his or her intended application. Lastly, a vibrotactile belt should be discreet in that it is physically discreet and silent. As belts are a common part of everyday attire, keeping the design of vibrotactile belts close to accustomed dressing attire will help gain wider acceptance among users. Vibration motors can be noisy, which when used in public, can be distracting to those around us. Hence, vibrotactile modules should be designed to reduce noise.
 
-Lindeman et al. [15] proposed three functionality attributes: expressiveness, scalability and reconfigurability as being important for a vibrotactile display. The first attribute, expressiveness, was met by providing variability of vibration dimensions: intensity, timing and location. However, the paper gives little detail about what exactly defines scalability and reconfigurability of a vibrotactile belt. We extend their work to define scalability as the capability to add/remove tactors to/from a vibrotactile belt without performance degradation; and reconfigurability, which is related to the adaptability of the belt to different applications and uses, is defined as the capability to (1) easily change the placement of tactors on a vibrotactile belt, and (2) easily change the vibrotactile belt's functions through an Application Programming Interface (API). Lastly, portability is an important functionality influenced by its wearability and wireless connectivity.
-Attributes that describe performance design requirements include durability, long wireless communication range, negligible latencies in wireless communication, long battery life and replaceable/rechargeable batteries. Although the importance of these attributes will largely depend on an application's minimum performance requirements, it's recommended that all of the proposed attributes be taken into account when developing a versatile vibrotactile belt.
+Lindeman et al. \cite{lindeman_wearable_2005} proposed three functionality attributes: expressiveness, scalability and reconfigurability as being important for a vibrotactile display. The first attribute, expressiveness, was met by providing variability of vibration dimensions: intensity, timing and location. However, the paper gives little detail about what exactly defines scalability and reconfigurability of a vibrotactile belt. We extend their work to define scalability as the capability to add/remove tactors to/from a vibrotactile belt without performance degradation; and reconfigurability, which is related to the adaptability of the belt to different applications and uses, is defined as the capability to (1) easily change the placement of tactors on a vibrotactile belt, and (2) easily change the vibrotactile belt's functions through an Application Programming Interface (API). Lastly, portability is an important functionality influenced by its wearability and wireless connectivity. Attributes that describe performance design requirements include durability, long wireless communication range, negligible latencies in wireless communication, long battery life and replaceable/rechargeable batteries. Although the importance of these attributes will largely depend on an application's minimum performance requirements, it's recommended that all of the proposed attributes be taken into account when developing a versatile vibrotactile belt.
 
 As mentioned earlier, the versatility and usefulness of existing vibrotactile belt implementations are severely limited due to an application-specific focus. Such a non-structured approach results in replication of work between researchers and developers. Our goal, through this paper, is to establish a repeatable means of approaching the development of vibrotactile belts. While we discuss most of the design issues in the context of developing vibrotactile belts, we are confident that these guidelines can be immediately extended to any wearable vibrotactile display technology.
 
@@ -3419,10 +3463,10 @@ The experiments presented here tested the haptic belt system for its use in conv
 \end{figure}
 
 \subsection{Experiment 1: Localization of Vibrotactile Cues}
-Prior work [15] showed that reasonable localization accuracy-between 80\% to 100\% accuracy depending upon tactor location-was possible with a belt design similar to what we presented above. Our experiment is similar, but offers a few variations to verify the results obtained in [15].
+Prior work \cite{lindeman_wearable_2005} showed that reasonable localization accuracy-between 80\% to 100\% accuracy depending upon tactor location-was possible with a belt design similar to what we presented above. Our experiment is similar, but offers a few variations to verify the results obtained in \cite{lindeman_wearable_2005}.
 Subjects: 10 subjects (8 males and 2 females), of ages between 24 and 59, participated in this experiment. One of the subjects was blind; the rest were sighted. Subjects had no known deficits related to their tactile sense of the waist area. Further, no subjects had prior experience with haptic belts, but all subjects had some exposure to vibrotactile cues (e.g., vibrations of a cell phone).
 
-\subsubsection{Apparatus:} The haptic belt described in Section III was used for this experiment. Vibratory signals were 600 ms in length, and had a frequency and intensity well within the range of human perception. In contrast to [15], cues are longer-600 ms compared to 200 ms-and we do not use headphones to mask subtle vibration noise, nor do we randomly vary intensity with each cue; the reason for these changes is that we are mostly concerned with how the belt as a complete system accomplishes non-verbal communication, rather than the spatial acuity of the waist. Hence, if a specific intensity of vibration feels different around the waist, and some vibrations can be heard, and if these cues help in tactor localization, then this redundant information should only add to the usability of the system.
+\subsubsection{Apparatus:} The haptic belt described in Section III was used for this experiment. Vibratory signals were 600 ms in length, and had a frequency and intensity well within the range of human perception. In contrast to \cite{lindeman_wearable_2005}, cues are longer-600 ms compared to 200 ms-and we do not use headphones to mask subtle vibration noise, nor do we randomly vary intensity with each cue; the reason for these changes is that we are mostly concerned with how the belt as a complete system accomplishes non-verbal communication, rather than the spatial acuity of the waist. Hence, if a specific intensity of vibration feels different around the waist, and some vibrations can be heard, and if these cues help in tactor localization, then this redundant information should only add to the usability of the system.
 
 \subsubsection{Procedure:} Subjects put on the haptic belt over their shirt and around their waist such that the middle tactor (\#4) was centered at their navel, and the endpoint tactors (\#1 and \#7) were at their left and ride sides, respectively. As the belt has LEDs that light up to indicate tactor activation (used for testing the belt), subjects were instructed to not look down at the belt any time during the experiment. Next, subjects were familiarized with tactor numbering: the experimenter activated tactors in order from \#1 to \#7, and spoke aloud the number of the activated tactor. This process was repeated twice for each subject.
 
@@ -3437,11 +3481,11 @@ The training phase involved 35 trials where each tactor was randomly activated 5
 \label{TIMFigure107}
 \end{figure}
 
-\subsubsection{Discussion:} An overall localization accuracy of (92.1 7.0)\% (an improvement over that of [15]) is promising and shows that our prototype haptic belt can be reliably used to indicate the direction of someone in the user's visual field. Moreover, 100\% of misclassifications were off by a single tactor location; hence, even when users made a mistake in localizing an activated tactor, they still had a very good idea of the general direction of someone in their visual field.
+\subsubsection{Discussion:} An overall localization accuracy of (92.1 7.0)\% (an improvement over that of \cite{lindeman_wearable_2005}) is promising and shows that our prototype haptic belt can be reliably used to indicate the direction of someone in the user's visual field. Moreover, 100\% of misclassifications were off by a single tactor location; hence, even when users made a mistake in localizing an activated tactor, they still had a very good idea of the general direction of someone in their visual field.
 
-We hypothesize that the increase in accuracy is largely due to greater cue duration (600 ms as opposed to the 200 ms used in [15]); it is well known that larger cue durations make localization easier [16]. Moreover, redundant information provided by the belt, such as subtle audible cues when tactors are activated, could have helped as well. Subjects found tactors closer to the midline easier to localize, which agrees with the results found in the literature where spatial acuity improves near the sagittal plane [15, 16] given that spatial acuity is better at anatomical reference points-in this case, the navel.
+We hypothesize that the increase in accuracy is largely due to greater cue duration (600 ms as opposed to the 200 ms used in \cite{lindeman_wearable_2005}); it is well known that larger cue durations make localization easier \cite{rupert_instrumentation_2000}. Moreover, redundant information provided by the belt, such as subtle audible cues when tactors are activated, could have helped as well. Subjects found tactors closer to the midline easier to localize, which agrees with the results found in the literature where spatial acuity improves near the sagittal plane \cite{lindeman_wearable_2005} \cite{rupert_instrumentation_2000} given that spatial acuity is better at anatomical reference points-in this case, the navel.
 
-It is hypothesized in [15] that the tactors at the end of the semicircle, which rest at the sides of the torso, act as landmarks and are easier to localize; but in our experiments, we noticed that tactor \#1 could be localized more accurately than tactor \#7, as shown in Figure 4. We are investigating this asymmetric result.
+It is hypothesized in \cite{lindeman_wearable_2005} that the tactors at the end of the semicircle, which rest at the sides of the torso, act as landmarks and are easier to localize; but in our experiments, we noticed that tactor \#1 could be localized more accurately than tactor \#7, as shown in Figure 4. We are investigating this asymmetric result.
 
 \subsection{Experiment 2: Signal Duration as Cue for Distance}
 Experiment 2 included two sub-experiments to examine the use of vibrotactile cues to indicate both direction and distance. Experiment 2A focused on how well subjects could perceive cue duration, regardless of tactor location. Experiment 2B tested how well subjects could perceive both tactor location and cue duration at the same time.
@@ -3514,7 +3558,7 @@ After the experiment, subjects filled out 10-level Likert scales-1 (lowest) to 1
 To evaluate the vibrotactile belt's three important design parameters of usability, functionality and performance, we conducted a case study in which the belt was used for a novel pedagogical application under realistic conditions. A two-fold, quantitative and subjective analysis was conducted to evaluate real-world usability issues. In [1], we demonstrated the general usability of the belt through a pilot study from the user's perspective, but the functional and performance metrics were not evaluated. In this paper, we delve into the details of the belt's evaluation through its use as a research platform for a novel application of teaching choreographed dance. While the usability analysis was done from the user's perspective, the functional and performance analyses were done by an independent researcher who designed and executed the dance study. The researcher was not part of the development team and evaluated the proposed belt as a research platform to impart choreography of simple dance steps to a mixed group of participants with and without dance experience. It is important to note that the researcher who worked with the proposed belt (a) had never used the vibrotactile belt; (b) had limited experience with haptic devices, and had never designed vibrotactile spatio-temporal patterns; and (c) had a novel application design with specific research objectives of determining how effectively choreography can be achieved through wearable vibrotactile devices.
 
 \subsection{Related Work in the Use of Vibrotactile Cues for Teaching Dance}
-In the literature, vibrotactile stimulation to elicit motor movement can be divided into two approaches: feedback-based and instruction-based, both of which are relatively new and unexplored. While feedback based approaches track human body motion and provide feedback whenever there is a deviation from a predefined path [23][24], instruction-based methods assign specific body movements to predesigned vibrotactile patterns, and expect subjects to memorize this mapping. In [25], Drobny et al. developed a wireless sensory system placed in the shoes of ballroom dancers. By measuring the force of taps, the system recognizes any missteps and emphasizes beats acoustically to help partners get back in sync. While this study was centered on a feedback based learning system, this case study uses an instruction-based method for teaching dance (similar to various other pedagogical applications targeting physical activities such as snowboarding [26], bowing [27][28] and swimming [29]), where predefined spatio-temporal vibration patterns require participants to demonstrate specific movements. To the best of the authors' knowledge, the only other work that explores instruction-based vibrotactile cues for teaching dancing is an approach by Nakamura et al. [30] where vibrotactile cues instructed arm movements for traditional Japanese folk dance. Unfortunately, the paper does not describe any of the proposed vibrotactile cues, and no statistical analysis was presented. Note that the cues proposed here are for basic dance movements only; more complex dance movements will require further exploration by dance experts on the possible redesign of vibrotactile stimulators to be placed in strategic locations on the body.
+In the literature, vibrotactile stimulation to elicit motor movement can be divided into two approaches: feedback-based and instruction-based, both of which are relatively new and unexplored. While feedback based approaches track human body motion and provide feedback whenever there is a deviation from a predefined path \cite{lieberman_development_2007} \cite{lindeman_tactapack:_2006}, instruction-based methods assign specific body movements to predesigned vibrotactile patterns, and expect subjects to memorize this mapping. In \cite{drobny_saltate!:_2009}, Drobny et al. developed a wireless sensory system placed in the shoes of ballroom dancers. By measuring the force of taps, the system recognizes any missteps and emphasizes beats acoustically to help partners get back in sync. While this study was centered on a feedback based learning system, this case study uses an instruction-based method for teaching dance (similar to various other pedagogical applications targeting physical activities such as snowboarding \cite{spelmezan_tactile_2009}, bowing \cite{linden_good_2009} \cite{grosshauser_augmented_2009} and swimming \cite{faerster_non-interrupting_2009}), where predefined spatio-temporal vibration patterns require participants to demonstrate specific movements. To the best of the authors' knowledge, the only other work that explores instruction-based vibrotactile cues for teaching dancing is an approach by Nakamura et al. \cite{nakamura_multimodal_2005} where vibrotactile cues instructed arm movements for traditional Japanese folk dance. Unfortunately, the paper does not describe any of the proposed vibrotactile cues, and no statistical analysis was presented. Note that the cues proposed here are for basic dance movements only; more complex dance movements will require further exploration by dance experts on the possible redesign of vibrotactile stimulators to be placed in strategic locations on the body.
 
 \subsection{Subjects}
 11 males and 2 females of ages 21 to 60 (average: 30) participated in the dance study. No subjects had any tactile impairment around their waist. 5 subjects had never danced before, 4 subjects had less than one year of dance experience, and 4 subjects had a least 5 years of dance experience. The dance participants provided data for analyzing the usability of the belt, while the independent researcher offered evaluations for the functionality and performance of the belt. Although we would have preferred several researchers and/or developers to assess the usability of our belt through their own novel applications and user studies, this was not feasible due to time limitations and the need for a specific target application.
@@ -3691,6 +3735,30 @@ Fig. 11 shows participants' recognition accuracies on the 12 spatio-temporal pat
 \label{TIMFigure119}
 \end{figure}
 
+\section{Other Applications for the proposed technology}
+As briefly mention in Section I, haptic belts provide for a wide array of useful application areas. Here, we elaborate on three specific application areas of haptic belts.
+
+\subsection{Navigation and Spatial Orientation}
+The most prevalent application for haptic belts is in the development of navigational [1][2][12] and spatial orientation aids [3][4][14], which have been well explored in academic research and hobby development. Conceptually, a haptic belt designed for navigation will make use of a positioning system, either absolute (e.g., GPS, GLOSNASS or Galileo) or relative (e.g., Inertial Navigational Units), along with a map of the locality to guide the user from their current location to a desired destination as shown in Figure 5. Since the vibrotactile actuators are mounted around the waist of the user, directional information is conveyed through activation of the appropriate motor.
+
+Humans generally work or move about by using geographical references, and without them, it is easy to become disoriented. Haptic belt solutions can be used for these applications, along with absolute positioning sensors, to determine and convey specific reference planes; e.g., a gyro based artificial horizon in the case of pilots [16], and the direction of Earth in the case of astronauts [17].
+
+
+\begin{figure}
+\centering
+\includegraphics[width=4.5in]{HAVE2009.jpg}
+\caption{Application of haptic belt as a navigational aid.}
+\label{TIMFigure119}
+\end{figure}
+
+
+\subsection{Interpersonal Social Communication}
+At the intersection of research areas in social interaction, and that of human machine interfaces, lies the relatively unexplored field of interpersonal social communication technologies [18]. Affective Computing [19] has been exploring various sensor and actuator technology solutions toward better communication of social interpersonal signals with non-verbal communication cues [20].  With the human body having the largest sensory and perceptive surface, haptic displays, like our proposed vibrotactile belt, provide an opportunity toward enabling such communication of social signals. Over the last year, we've been working toward a wearable system capable of communicating interpersonal positions of interaction partners to someone who is visually impaired.  In [6][7], we developed an assistive technology that is capable of determining, and conveying through a haptic belt, the interpersonal distance and orientation of an individual who is standing in front of a user who is blind. Computer vision techniques are used to extract the interpersonal distance and orientation with respect to the user. The relative direction and distance of an interaction partner is conveyed through the location and rhythm, respectively, of a vibration around the user's waist.
+
+\subsection{Generic Information Communication}
+Given proper functionality, specifically expressiveness, haptic belts can be used to convey generic information through tactile icons [21], or tactons. Tactons are abstract, tactile messages, where meaning is mapped to the dimensions of the vibrations. Research has shown users' ability to quickly learn and interpret tactons [22]. For example, [5] demonstrated that anesthesiologists have enhanced situational awareness toward adverse medical events when a haptic belt is used to monitor a patient's physiological data in the operating room.  Similarly, a haptic belt can be used to reduce visual and auditory cognitive load in military personnel [3], especially pilots and dismounted soldiers within a combat zone.  A haptic belt could be used to communicate battlefield situational awareness when combined with military intelligence information and radio technology.  Likewise, situational awareness, spatial orientation and navigational information can be combined to provide real time location information through a haptic belt to emergency responders who have entered a low visibility and hazardous environment where visual and auditory modalities are overloaded with information.
+
+
 
 \chapter{SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}
 As described in Chapter 2, in the survey conducted towards understanding the non-verbal cue needs for people who are blind and visually impaired, they emphasized on the lack of access to facial expressions and mannerisms of their interaction partners. This is supported by the argument that most part of the non-verbal cues occur through visual facial mannerisms as described in Section 1.2.1 of Chapter 1. The face encodes a lot of information that is both communicative and expressive in nature. Unfortunately, the face is a very complex data generator and the encodings on the face are not very context sensitive and individualistic in nature. Evolving computing technologies have been focused on developing solutions towards understanding the nature of facial mannerisms and gestures, but most of this multi-modal affective interaction research has been focused on the development of sensors and algorithms that understand user's emotional state in a human-machine interaction scenario. These interactions are mostly unilateral in nature and directed primarily towards the machine interpreting the user's emotional state. That is, the machines become the primary consumers of the affective cues. But from the perspective of an assistive technology affect interactions have to be augmentations that enrich human-human interpersonal interaction, where the machines not only interpret communicator's affective state, but also delivers affect information through novel affect actuators to a social interaction recipient.
@@ -3748,61 +3816,61 @@ Table XXX below shows a compilation of the state-of-the-art in facial expression
 \cline{6-11}
  & \multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{} & \textbf{Exp} &	\textbf{Per} &	\textbf{Class} & \textbf{Sub} & \textbf{Type} & \textbf{\% Acc} \\
 \hline
-[157] & \multicolumn{2}{|c|}{AAM}	& \multicolumn{2}{|c|}{SVM}       & S & I &	2     &	21 & ? & 81 \\
+\cite{ashraf_painful_2009} & \multicolumn{2}{|c|}{AAM}	& \multicolumn{2}{|c|}{SVM}       & S & I &	2     &	21 & ? & 81 \\
 \hline
-[158] & \multicolumn{2}{|c|}{Gabor} & \multicolumn{2}{|c|}{SVM + HMM} &	S &	I &	3 AUs &	17 & V & 98 \\
+\cite{m.s._bartlett_prototype_2003} & \multicolumn{2}{|c|}{Gabor} & \multicolumn{2}{|c|}{SVM + HMM} &	S &	I &	3 AUs &	17 & V & 98 \\
 \hline
-[159] [160] & \multicolumn{2}{|c|}{Gabor} & \multicolumn{2}{|c|}{AdaBoot SVM} & S P & I & 17 AUs & 119 + 12 & I & 93 + 90.5 \\
+\cite{yeasin_recognition_2006} \cite{bartlett_fully_2006} & \multicolumn{2}{|c|}{Gabor} & \multicolumn{2}{|c|}{AdaBoot SVM} & S P & I & 17 AUs & 119 + 12 & I & 93 + 90.5 \\
 \hline
-[161] & \multicolumn{2}{|c|}{12 motion units} & \multicolumn{2}{|c|}{Tree DBN HMM} & P & D I & 6 & 5 + 53 & V & 66.5 + 73.2 \\
+\cite{cohen_facial_2003} & \multicolumn{2}{|c|}{12 motion units} & \multicolumn{2}{|c|}{Tree DBN HMM} & P & D I & 6 & 5 + 53 & V & 66.5 + 73.2 \\
 \hline
-[162] & \multicolumn{2}{|c|}{Shape Models, Gabor} & \multicolumn{2}{|c|}{LDC} &	S &	I &	3 AUs &	21 & I &	76 \\
+\cite{cohn_automatic_2004} & \multicolumn{2}{|c|}{Shape Models, Gabor} & \multicolumn{2}{|c|}{LDC} &	S &	I &	3 AUs &	21 & I &	76 \\
 \hline
-[163] & \multicolumn{2}{|c|}{24 facial points} & \multicolumn{2}{|c|}{DBN} & P & D & 6 & 30 & V & 77 \\
+\cite{kaliouby_real-time_2004} & \multicolumn{2}{|c|}{24 facial points} & \multicolumn{2}{|c|}{DBN} & P & D & 6 & 30 & V & 77 \\
 \hline
-[164] & \multicolumn{2}{|c|}{Intensity} & \multicolumn{2}{|c|}{NN} & P & ? & 7 & ? & I & 68 \\
+\cite{fasel_latent_2004} & \multicolumn{2}{|c|}{Intensity} & \multicolumn{2}{|c|}{NN} & P & ? & 7 & ? & I & 68 \\
 \hline
-[165] & \multicolumn{2}{|c|}{Shape fea, Optic flow} & \multicolumn{2}{|c|}{C4.5 Bayes Net} & P & ? & 8 & 4 & I & 100 \\
+\cite{gunes_affect_2005} & \multicolumn{2}{|c|}{Shape fea, Optic flow} & \multicolumn{2}{|c|}{C4.5 Bayes Net} & P & ? & 8 & 4 & I & 100 \\
 \hline
-[166] & \multicolumn{2}{|c|}{FAPs} &	\multicolumn{2}{|c|}{Neurofuzzy network} & S & I & 3 & ? & I & 78 \\
+\cite{ioannou_emotion_2005} & \multicolumn{2}{|c|}{FAPs} &	\multicolumn{2}{|c|}{Neurofuzzy network} & S & I & 3 & ? & I & 78 \\
 \hline
-[167] & \multicolumn{2}{|c|}{Shape fea} &	\multicolumn{2}{|c|}{DBN} & S & ? & 2 & 8 & V & 95.3 \\
+\cite{qiang_ji_probabilistic_2006} & \multicolumn{2}{|c|}{Shape fea} &	\multicolumn{2}{|c|}{DBN} & S & ? & 2 & 8 & V & 95.3 \\
 \hline
-[168] & \multicolumn{2}{|c|}{Facial and head gesture} & \multicolumn{2}{|c|}{GP SVM HMM NN} & S &	? &	2 &	8 &	V &	 86\\
+\cite{kapoor_multimodal_2005} & \multicolumn{2}{|c|}{Facial and head gesture} & \multicolumn{2}{|c|}{GP SVM HMM NN} & S &	? &	2 &	8 &	V &	 86\\
 \hline
-[169] & \multicolumn{2}{|c|}{Pixel diff of mouth}	& \multicolumn{2}{|c|}{GP SVM HMM NN} &	S &	I &	2 &	24 &	V &	 79\\
+\cite{kapoor_automatic_2007} & \multicolumn{2}{|c|}{Pixel diff of mouth}	& \multicolumn{2}{|c|}{GP SVM HMM NN} &	S &	I &	2 &	24 &	V &	 79\\
 \hline
-[170] & \multicolumn{2}{|c|}{Intensity of face} &	\multicolumn{2}{|c|}{Decomposable model} &	P &	I &	6 &	8 + 16 &	V &	 61\\
+\cite{lee_facial_2005} & \multicolumn{2}{|c|}{Intensity of face} &	\multicolumn{2}{|c|}{Decomposable model} &	P &	I &	6 &	8 + 16 &	V &	 61\\
 \hline
-[171] & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost SVM} &	S &	I &	2 &	26 &	V &	72\\
+\cite{littlewort_faces_2007} & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost SVM} &	S &	I &	2 &	26 &	V &	72\\
 \hline
-[172] & \multicolumn{2}{|c|}{AAM} &	\multicolumn{2}{|c|}{SVM} &	S P &	I &	AUs	& 100 &	? &	95\\
+\cite{lucey_investigating_2007} & \multicolumn{2}{|c|}{AAM} &	\multicolumn{2}{|c|}{SVM} &	S P &	I &	AUs	& 100 &	? &	95\\
 \hline
-[173] & \multicolumn{2}{|c|}{Facial profile} & \multicolumn{2}{|c|}{Rule-based}	& P &	I &	27 AUs & 19 &	V &	 86.3\\
+\cite{pantic_dynamics_2006} & \multicolumn{2}{|c|}{Facial profile} & \multicolumn{2}{|c|}{Rule-based}	& P &	I &	27 AUs & 19 &	V &	 86.3\\
 \hline
-[174] & \multicolumn{2}{|c|}{Frontal profile facial points} & \multicolumn{2}{|c|}{Rule and case based}	& P &	I &	 9 &	8 &	I &	83\\
+\cite{pantic_case-based_2004} & \multicolumn{2}{|c|}{Frontal profile facial points} & \multicolumn{2}{|c|}{Rule and case based}	& P &	I &	 9 &	8 &	I &	83\\
 \hline
-[175] & \multicolumn{2}{|c|}{12 motion units} &	\multicolumn{2}{|c|}{kNN} &	S &	I &	4 &	53 + 28 &	V &	93 + 95\\
+\cite{sebe_authentic_2004} & \multicolumn{2}{|c|}{12 motion units} &	\multicolumn{2}{|c|}{kNN} &	S &	I &	4 &	53 + 28 &	V &	93 + 95\\
 \hline
-[176] & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost DBN} &	P &	I &	14 AUs &	100 + 10 &	I	 & 93 + 93\\
+\cite{yan_tong_facial_2007} & \multicolumn{2}{|c|}{Gabor} &	\multicolumn{2}{|c|}{AdaBoost DBN} &	P &	I &	14 AUs &	100 + 10 &	I	 & 93 + 93\\
 \hline
-[177] & \multicolumn{2}{|c|}{Motion history} &	\multicolumn{2}{|c|}{SNoW kNN} &	P &	I &	15 AUs &	19 + 100 &	 V	& 61 + 68\\
+\cite{valstar_how_2007} & \multicolumn{2}{|c|}{Motion history} &	\multicolumn{2}{|c|}{SNoW kNN} &	P &	I &	15 AUs &	 19 + 100 &	 V	& 61 + 68\\
 \hline
-[178] & \multicolumn{2}{|c|}{8 facial points}	& \multicolumn{2}{|c|}{Gentle Boost SVM} &	S P &	I &	2 &	27 + 32 + 65 &	V &	 90\\
+\cite{valstar_spontaneous_2006} & \multicolumn{2}{|c|}{8 facial points}	& \multicolumn{2}{|c|}{Gentle Boost SVM} &	S P &	I &	2 &	27 + 32 + 65 &	V &	 90\\
 \hline
-[177] & \multicolumn{2}{|c|}{20 facial points} &	\multicolumn{2}{|c|}{Gentle SVM} &	S P &	I &	2 &	52 &	V &	 94\\
+\cite{valstar_how_2007} & \multicolumn{2}{|c|}{20 facial points} &	\multicolumn{2}{|c|}{Gentle SVM} &	S P &	I &	2 &	52 &	 V &	 94\\
 \hline
-[179] & \multicolumn{2}{|c|}{Shape fea, Intensity} &	\multicolumn{2}{|c|}{NN} &	S &	? &	7 &	14 &	I &	84\\
+\cite{wang_facial_2003} & \multicolumn{2}{|c|}{Shape fea, Intensity} &	\multicolumn{2}{|c|}{NN} &	S &	? &	7 &	14 &	I &	 84\\
 \hline
-[180] & \multicolumn{2}{|c|}{3D surface} &	\multicolumn{2}{|c|}{LDA} &	P &	I	& 6 &	60 &	I	& 83\\
+\cite{jun_wang_3d_2006} & \multicolumn{2}{|c|}{3D surface} &	\multicolumn{2}{|c|}{LDA} &	P &	I	& 6 &	60 &	I	& 83\\
 \hline
-[181] & \multicolumn{2}{|c|}{Geometric ratio}	& \multicolumn{2}{|c|}{GMM} &	P &	I &	4 &	47 &	I &	75\\
+\cite{zhen_wen_capturing_2003} & \multicolumn{2}{|c|}{Geometric ratio}	& \multicolumn{2}{|c|}{GMM} &	P &	I &	4 &	47 &	I &	75\\
 \hline
-[182] & \multicolumn{2}{|c|}{Harr} &	\multicolumn{2}{|c|}{AdaBoost} &	P &	I &	11 AUs &	? &	I &	92\\
+\cite{whitehill_haar_2006} & \multicolumn{2}{|c|}{Harr} &	\multicolumn{2}{|c|}{AdaBoost} &	P &	I &	11 AUs &	? &	I &	 92\\
 \hline
-[159] & \multicolumn{2}{|c|}{Intensity} &	\multicolumn{2}{|c|}{kNN HMM} &	S P &	&	6 &	97 + 21 &	V &	90.7 + 82\\
+\cite{yeasin_recognition_2006} & \multicolumn{2}{|c|}{Intensity} &	\multicolumn{2}{|c|}{kNN HMM} &	S P &	&	6 &	97 + 21 &	 V &	90.7 + 82\\
 \hline
-[183] & \multicolumn{2}{|c|}{Texture with LPP} &	\multicolumn{2}{|c|}{SVDD} &	S &	D &	2 &	2 &	I &	87\\
+\cite{zeng_spontaneous_2006} & \multicolumn{2}{|c|}{Texture with LPP} &	\multicolumn{2}{|c|}{SVDD} &	S &	D &	2 &	2 &	I &	 87\\
 \hline
 \end{tabularx}
 \end{table}
@@ -4101,7 +4169,7 @@ Hug over Distance	\newline 	\cite{Hug over a distance} & Pressure Proprioception
 \textbf{Device} & \textbf{Actuation} &	\textbf{Major Organ} & \textbf{Non-verbal Cue} & \textbf{Application}	& \textbf{User Experience} & \multicolumn{4}{|c|}{\textbf{Device}} \\
 \hline
 \hline
-VinroBod \newline \cite{dobson_creating_2001} & Pressure, Temperature &	Hands & Touch & Convey remote interpersonal cues. &	15 subjects found the device useful and intuitive \vspace*{0.85in} & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2.5in]{VinroBod.JPG}}}
+VinroBod \newline \cite{dobson_creating_2001} & Pressure, Temperature &	Hands & Touch & Convey remote interpersonal cues. &	 15 subjects found the device useful and intuitive \vspace*{0.85in} & \multicolumn{4}{|c|}{\multirow{2}{*}{\includegraphics[width=2.5in]{VinroBod.JPG}}}
 \\
 \hline
 
@@ -4573,7 +4641,7 @@ Hedgpeth emphasizes the point that people skills are the most important tool for
 %\chapter*{REFERENCES\hfill} \addcontentsline{toc}{chapter}{REFERENCES}
 \begin{SingleSpace}
 \bibliographystyle{ieeetr}	
-\bibliography{PrunedReferences}
+\bibliography{References}
 \end{SingleSpace}
 %\clearpage
 
