@@ -34,8 +34,6 @@
 % Table footnote
 \usepackage{threeparttable}
 
-
-
 %%%%%%Added by Craig Picone to meet ASU's margin requirements
 \usepackage{graphicx}    % needed for including graphics e.g. EPS, PS
 \topmargin -0.2in        % read Lamport p.163
@@ -48,10 +46,10 @@
 %\renewcommand{\baselinestretch}{1.5} % Uncomment for 1.5 spacing between lines
 \parindent 0pt          % sets leading space for paragraphs
  %%%%%%%%
- 
+
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  % Controlling figures and tables
- 
+
  % Alter some LaTeX defaults for better treatment of figures:
 % See p.105 of "TeX Unbound" for suggested values.
 % See pp. 199-200 of Lamport's "LaTeX" book for details.
@@ -69,10 +67,7 @@
 \renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
 % N.B.: floatpagefraction MUST be less than topfraction !!
 \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
-    
- 
- 
- 
+
 
 %%%%%% Landscape Mode %%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{lscape}
@@ -177,7 +172,7 @@ While the spoken language plays an important role in communication, speech accou
 \subsection{Non-verbal communication cues}
 Speech, voice, face and body form the primary channels of communication in any social interaction. Speech forms the primary channel for verbal communication, while prosody (intonation, pace and loudness of one's voice), face, and body (posture, gesture and mannerisms) form the medium for nonverbal communication. In everyday social interactions, people communicate so effortlessly through both verbal and non-verbal cues that they are not cognizant of the complex interplay of their voice, face and body in establishing a smooth communication channel.
 
-\begin{figure}[h]
+\begin{figure}[htbp!]
 \begin{center}
  \includegraphics[width=3in]{NVCEncodings.jpg}
 \end{center}
@@ -272,16 +267,10 @@ Temperature & \cite{kenrick_ambient_1986} \\
 \end{center}
 \end{table}
 
-
-
-\begin{landscape}
-
-\end{landscape}
-
 \subsection{The Physical Characteristics of the communicators}
 The physical appearance of a person is very important aspect of non-verbal cueing. People draw impressions of their communication partner as soon as they see them. The human body acts like means for communicating important sociological parameters like status, interest, dominance etc. Researchers have found cultural and global preferences in overall body image and any deviations from the norm affects interactions between people. For example, facial babyishness \cite{berry_attractive_1991} has been found affect judgment of facial attractiveness, honesty, warmth and sincerity. Any deviation from the babyishness has been correlated to immediate reduction in the judgment of these traits. A similar such example is the clothing that people wear. It has been found that first impressions are positive if the interviewer and interviewee are clothed similarly \cite{johnson_clothing_1977}. Table \ref{Tab:Table2} shows the important aspects of a person's physical appearance that affects the interpersonal interaction. Various psychological studies have been conducted towards understanding the model of human perception of character. Very little is known on the reasons for some of the human norms, but it is an active area of research that is being explored rigorously, especially, in the context of group behaviors and personal mannerisms with work environments \cite{helen_h._jennings_sociometry_1959}.
 
-\begin{table}[hpdf]
+\begin{table}[htbp!]
 \begin{center}
 \caption{The physical characteristics of a communicator that can affect interpersonal communications.}
 \label{Tab:Table2}
@@ -344,7 +333,7 @@ The understanding of the human facial expression space was immensely increased b
 \emph{Facial Action Coding System (FACS):}
 FACS defines all possible facial feature movements into Action Units (AU) which represent movement of facial features (like lips, eye brow, chin etc). The AUs are the net effect of facial muscle contraction and relaxation, though they are not directly related to the muscles. Table below shows the different AUs that form the basis of FACS based facial coding with the appropriate number and the associated facial feature movement.
 
-\begin{table}[hpdf]
+\begin{table}[htbp!]
 \begin{center}
 \caption{FACS communicative actions on the human face}
 \label{Tab:Table2}
@@ -398,6 +387,78 @@ Expressing emotions & Along with the facial muscular movements, the eyes play a 
 \end{center}
 \end{table}
 
+\section{Automatic detection of non-verbal cueing}
+
+\begin{table}[htbp]
+\begin{tabularx}{5.5in}{|X||X|X|X|X|}
+\hline
+\multicolumn{5}{|c|}{Interaction Environment} \\
+\hline
+	& Scene Change Detection &	Background Modeling &	Face and Object Detection	& Environment Analysis \\
+\hline
+\hline
+Proxemics	& &	\cite{adam_aggregated_2006}& \cite{ming-hsuan_yang_detecting_2002} \cite{viola_robust_2001}& \\
+\hline
+Objects in the scene &	\cite{radke_image_2005} & \cite{ozden_background_2005} \cite{ren_statistical_2003} & \cite{ming-hsuan_yang_detecting_2002} & \\
+\hline
+Natural vs manmade environment &	\cite{radke_image_2005} & & & \cite{todorovic_detection_2004}\\
+\hline
+\end{tabularx}
+\end{table}
+
+
+\begin{landscape}
+\begin{table}
+\scriptsize
+\begin{tabularx}{8.5in}{|X||X|X|X|X|X|X|X|X|X|}
+\hline
+&Person Recognition &	Clothing Recognition	& Body Part Segmentation &	Facial Feature Segmentation &	Gender Race Recognition &	Facial Motion Analysis	& Body Motion Analysis &	Eye Detection &	Eye Tracking \\
+\hline
+\hline
+\multicolumn{10}{|c|}{Physical Characteristics of the Communicator}\\
+\hline
+\hline
+Race and Body Color & & & \cite{barnard_body_2008} \cite{srinivasan_bottom-up_2007} \cite{balan_detailed_2007} & & \cite{xuelong_li_gait_2008} & & & & \\
+\hline
+Body Shape & \cite{benabdelkader_person_2002} \cite{collins_silhouette-based_2002} & \cite{gallagher_clothing_2008} \cite{wei_zhang_real-time_2008} & \cite{yacoob_detection_2006} \cite{yijun_xiao_topological_2003} \cite{barnard_body_2008} \cite{srinivasan_bottom-up_2007} \cite{balan_detailed_2007} \cite{sano_human_2004} & & & & \cite{xuelong_li_gait_2008} \cite{collins_silhouette-based_2002} & & \\
+\hline
+Body Decoration	& \cite{jung-eun_lee_scars_2008} & & & & & & & & \\
+\hline
+Facial Hair & & & &	\cite{jingyu_yan_factorization-based_2008} & & & & & \\				
+\hline
+Eye Glasses & & & & \cite{jaewon_sung_combining_2007} & & & & \cite{shan_du_robust_2007} & \\
+\hline
+Clothing & & \cite{gallagher_clothing_2008} \cite{wei_zhang_real-time_2008} & & & & & & & \\						
+\hline
+Hair & & & 	\cite{yacoob_detection_2006} \cite{huchuan_lu_gender_2007} & & & & & & \\					
+\hline
+Age & \cite{haibin_ling_study_2007} & & & & & & & & \\							
+\hline
+Gender & \cite{benabdelkader_person_2002}& & & & \cite{xuelong_li_gait_2008} & & \cite{xuelong_li_gender_2007}& & \\	
+\hline
+Identity & \cite{matta_behavioural_2006} \cite{gallagher_clothing_2008} \cite{hahnel_color_2004} \cite{saeed_person_2006} \cite{saeed_person_2007} & & & & & \cite{kawade_vision-based_2002} & & & \\		
+\hline
+\hline
+\multicolumn{10}{|c|}{Behavior of the Communicator}\\
+\hline
+\hline
+Description of facial features	& & & &	\cite{kanaujia_emblem_2006} \cite{kawade_vision-based_2002} & & & & & \\			
+\hline
+Body Mannerisms & & & \cite{gunes_affect_2005} \cite{kulic_combining_2008} \cite{oliver_bayesian_2000} & & \cite{xuelong_li_gait_2008} & & \cite{hwang_automatic_2006} \cite{sangho_park_segmentation_2002} \cite{mitra_gesture_2007} \cite{nunamaker_hmm-based_2005} & & \\	
+\hline
+Eye Gestures & & & & & & & & \cite{shan_du_robust_2007}& \cite{bacivarov_statistical_2008} \cite{meservy_deception_2005} \\
+\hline
+Gaze & & & & & & \cite{funahashi_face_2007} & & \cite{villanueva_novel_2008} \cite{fawky_eye_2007} &  \cite{funahashi_face_2007} \cite{rajashekar_gaffe:_2008} \\
+\hline
+Expressions and Emotions & \cite{saeed_person_2007} & & & \cite{jaewon_sung_combining_2007} \cite{kanaujia_emblem_2006} & & \cite{zhihong_zeng_survey_2009} \cite{jingyu_yan_factorization-based_2008} \cite{jaewon_sung_combining_2007} \cite{rurainsky_mirror-based_2007} \cite{yeasin_recognition_2006-1} & \cite{fukuda_detecting_2008} \cite{meservy_deception_2005} \cite{nunamaker_hmm-based_2005} & \cite{yinggang_xie_facial_2006} & \cite{bacivarov_statistical_2008} \\
+\hline
+Personality & \cite{benabdelkader_person_2002}& & \cite{kulic_combining_2008} & & \cite{xuelong_li_gait_2008} & & 	\cite{mitra_gesture_2007} & & \\
+\hline
+Posture	& \cite{benabdelkader_person_2002} & & \cite{balan_detailed_2007} & \cite{kanaujia_emblem_2006} & &  & \cite{sangho_park_segmentation_2002} \cite{jingyu_yan_factorization-based_2008} & & \\
+\hline
+\end{tabularx}
+\end{table}
+\end{landscape}
 
 
 \chapter{MOTIVATION}
@@ -4289,7 +4350,7 @@ Travelled the minimal hitting path 65\% with their existing navigation aid and d
 \hline
 
 \cite{cha_authoring/editing_2007} \cite{cha_framework_2009} &
-Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	 No user study. \\
+Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	 Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	 No user study. \\
 \hline
 
 \cite{murray_psychophysical_2003} &

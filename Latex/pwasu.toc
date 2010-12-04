@@ -22,227 +22,227 @@
 \contentsline {subsubsection}{Face}{13}
 \contentsline {subsubsection}{Eye}{15}
 \contentsline {section}{\numberline {1.4}Automatic detection of non-verbal cueing}{15}
-\contentsline {chapter}{\chapternumberline {2}MOTIVATION}{18}
-\contentsline {section}{\numberline {2.1}Assistive Technology}{18}
-\contentsline {section}{\numberline {2.2}Remote Interactions}{20}
-\contentsline {section}{\numberline {2.3}Medical Teams}{20}
-\contentsline {subsection}{Evidence for Group Performance and Leadership}{24}
-\contentsline {subsubsection}{Group Dynamics}{24}
-\contentsline {subsubsection}{Leadership}{24}
-\contentsline {subsection}{Human Communication Challenges in Medical Teams}{26}
-\contentsline {subsubsection}{Automated monitoring of group dynamics to determine communication breakdowns}{26}
-\contentsline {subsubsection}{Automatic evaluation of the social affinity between team members}{26}
-\contentsline {subsubsection}{Leadership evaluation and nomination through long term monitoring of individuals}{27}
-\contentsline {chapter}{\chapternumberline {3}ASSISTIVE TECHNOLOGY DESIGN}{28}
-\contentsline {section}{\numberline {3.1}Conceptual Framework}{31}
-\contentsline {subsection}{Design principles for social assistive and rehabilitative devices}{31}
-\contentsline {section}{\numberline {3.2}Requirements Analysis for a Social Assistive Technology for Individuals who are Blind and Visually Impaired}{32}
-\contentsline {section}{\numberline {3.3}Results from the Online Survey}{34}
-\contentsline {subsection}{Average Response}{34}
-\contentsline {subsection}{Response on Individual Questions}{34}
-\contentsline {subsection}{Response Ratio}{36}
-\contentsline {subsection}{Rank Average Importance Map for Various Non-verbal Cues}{37}
-\contentsline {chapter}{\chapternumberline {4}DETECTING STEREOTYPIC BODY MANNERISMS}{39}
-\contentsline {section}{\numberline {4.1}Focus of the chapter}{40}
-\contentsline {section}{\numberline {4.2}Background and Related Work}{41}
-\contentsline {subsection}{Foundations for social rehabilitation of behavioral stereotypes}{41}
-\contentsline {subsubsection}{\emph {Intervention}}{41}
-\contentsline {subsubsection}{\emph {Self Monitoring}}{42}
-\contentsline {subsection}{Need for Assistive or Rehabilitative Technology}{43}
-\contentsline {subsubsection}{Past research into building assistive technology to detect body rocking}{44}
-\contentsline {section}{\numberline {4.3}Methodology}{45}
-\contentsline {subsection}{Motion Sensors - Design choice along the ``Acceptance'' Dimension}{47}
-\contentsline {subsection}{Extracting Body Rock Information from Motion Sensor Data - Design choice along the ``Motivation'' Dimension}{49}
-\contentsline {subsubsection}{Features:}{50}
-\contentsline {subsubsection}{Learning Algorithm:}{54}
-\contentsline {section}{\numberline {4.4}Data Collection}{57}
-\contentsline {subsection}{Controlled Data Collection:}{57}
-\contentsline {subsubsection}{ Routine A: Rocking data}{58}
-\contentsline {subsubsection}{Routine B: Non-rocking data}{58}
-\contentsline {subsubsection}{Routine C: Test data}{58}
-\contentsline {subsection}{Uncontrolled Data Collection:}{58}
-\contentsline {section}{\numberline {4.5}Experiments}{59}
-\contentsline {section}{\numberline {4.6}Results}{60}
-\contentsline {section}{\numberline {4.7}Discussion of Results}{67}
-\contentsline {subsection}{Packet Length, and Detection Efficiency}{68}
-\contentsline {subsection}{Generalization Capabilities}{69}
-\contentsline {section}{\numberline {4.8}Conclusion}{71}
-\contentsline {chapter}{\chapternumberline {5}PERSON-SPECIFIC FACE RECOGNITION}{72}
-\contentsline {subsection}{Employing face recognition to facilitate social interactions}{73}
-\contentsline {section}{\numberline {5.1}Face Recognition in Humans}{74}
-\contentsline {section}{\numberline {5.2}Our Approach to Face Recognition}{77}
-\contentsline {section}{\numberline {5.3}Feature Extractors}{77}
-\contentsline {subsection}{What is a Feature?}{77}
-\contentsline {subsection}{Gabor Features}{78}
-\contentsline {subsubsection}{Use of Gabor Filters in Face Recognition}{78}
-\contentsline {subsubsection}{Gabor Filters}{80}
-\contentsline {subsubsection}{Gaussian Function}{81}
-\contentsline {subsubsection}{Sinusoid}{81}
-\contentsline {section}{\numberline {5.4}The Learning Algorithm}{83}
-\contentsline {subsection}{Genetic Algorithms}{84}
-\contentsline {subsubsection}{Use of Genetic Algorithms in Face Recognition}{85}
-\contentsline {subsubsection}{The Chromosome}{87}
-\contentsline {subsubsection}{Creation of the first generation}{88}
-\contentsline {subsubsection}{Creation of the newer generations}{90}
-\contentsline {subsubsection}{\emph { Crossover}}{91}
-\contentsline {subsubsection}{\emph { Mutation}}{91}
-\contentsline {section}{\numberline {5.5}Methodology}{92}
-\contentsline {subsection}{The FacePix (30) Database}{93}
-\contentsline {subsection}{The Gabor Features}{95}
-\contentsline {subsection}{The Genetic Algorithm}{96}
-\contentsline {subsubsection}{The Fitness Function }{97}
-\contentsline {section}{\numberline {5.6}Results}{101}
-\contentsline {subsection}{Discussion of Results}{102}
-\contentsline {subsection}{Person-specific feature extraction}{103}
-\contentsline {section}{\numberline {5.7}Conclusions and Future Work}{104}
-\contentsline {chapter}{\chapternumberline {6}SENSING INTERPERSONAL SPACES}{107}
-\contentsline {section}{\numberline {6.1}Conceptual Framework}{108}
-\contentsline {section}{\numberline {6.2}Accurate Face Detection}{110}
-\contentsline {section}{\numberline {6.3}Related Work}{111}
-\contentsline {section}{\numberline {6.4}Proposed Framework}{113}
-\contentsline {subsection}{Module $1$: Human Skin Tone Detector with Dynamic Background Modeler}{113}
-\contentsline {subsubsection}{{\em a-priori} Bi-modal Gaussian Mixture Model for Human Skin Classification}{113}
-\contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{115}
-\contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{116}
-\contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{116}
-\contentsline {subsubsection}{Random Field (RF) Models}{117}
-\contentsline {subsubsection}{Pre-processing}{118}
-\contentsline {subsubsection}{The Neighborhood System}{118}
-\contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{119}
-\contentsline {subsubsection}{Human Face Pose}{120}
-\contentsline {subsection}{Combining Evidence}{121}
-\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{122}
-\contentsline {subsection}{Coarse Pose estimation}{123}
-\contentsline {section}{\numberline {6.5}Experiments}{124}
-\contentsline {section}{\numberline {6.6}Results}{125}
-\contentsline {section}{\numberline {6.7}Discussion of Results}{126}
-\contentsline {chapter}{\chapternumberline {7}TRACKING PEOPLE IN THE SOCIAL SCENE}{128}
-\contentsline {section}{\numberline {7.1}Challenges in Person Localization from a wearable camera platform}{129}
-\contentsline {subsection}{Background Properties}{129}
-\contentsline {subsection}{Object Properties}{130}
-\contentsline {subsection}{Object/Camera Motion}{130}
-\contentsline {subsection}{Other Important Factors Affecting Effective Person Tracking}{131}
-\contentsline {section}{\numberline {7.2}Related Computer Vision Work in Person Localization and Tracking}{132}
-\contentsline {subsection}{Detection Algorithms}{132}
-\contentsline {subsection}{Tracking Algorithms}{133}
-\contentsline {section}{\numberline {7.3}Conceptual Framework}{135}
-\contentsline {section}{\numberline {7.4}STRUCTURED MODE SEARCHING PARTICLE FILTER}{136}
-\contentsline {subsection}{Step 1: Particle Filtering Step}{136}
-\contentsline {subsection}{Step 2: Structured Search}{139}
-\contentsline {subsection}{Chamfer Matching in Structured Search}{143}
-\contentsline {section}{\numberline {7.5}Experiments and Datasets}{144}
-\contentsline {subsection}{Datasets}{144}
-\contentsline {subsection}{Evaluation Metrics}{145}
-\contentsline {section}{\numberline {7.6}Results}{147}
-\contentsline {chapter}{\chapternumberline {8}COMMUNICATING PROXEMICS}{151}
-\contentsline {section}{\numberline {8.1}Motivation}{151}
-\contentsline {section}{\numberline {8.2}Related Work}{153}
-\contentsline {section}{\numberline {8.3}Design Requirements}{155}
-\contentsline {section}{\numberline {8.4}Implementation}{157}
-\contentsline {subsection}{Form Factor}{157}
-\contentsline {subsection}{System Architecture}{158}
-\contentsline {section}{\numberline {8.5}Hardware Design}{159}
-\contentsline {subsection}{Control Box}{159}
-\contentsline {subsubsection}{Main Controller}{159}
-\contentsline {subsubsection}{Bus Communication}{159}
-\contentsline {subsubsection}{Power Supply}{160}
-\contentsline {subsubsection}{Wireless Hardware}{160}
-\contentsline {section}{\numberline {8.6}Tactor Modules}{160}
-\contentsline {section}{\numberline {8.7}Software Design}{161}
-\contentsline {subsection}{Firmware}{161}
-\contentsline {subsubsection}{Main Controller Firmware}{161}
-\contentsline {subsubsection}{The Tactor Controller}{163}
-\contentsline {section}{\numberline {8.8}User Interface}{165}
-\contentsline {section}{\numberline {8.9}Experiments}{167}
-\contentsline {subsection}{Experiment 1: Localization of Vibrotactile Cues}{168}
-\contentsline {subsubsection}{Apparatus:}{169}
-\contentsline {subsubsection}{Procedure:}{169}
-\contentsline {subsubsection}{Results:}{170}
-\contentsline {subsubsection}{Discussion:}{170}
-\contentsline {subsection}{Experiment 2: Signal Duration as Cue for Distance}{171}
-\contentsline {subsubsection}{Subjects:}{171}
-\contentsline {subsubsection}{Apparatus:}{171}
-\contentsline {subsubsection}{Procedure:}{172}
-\contentsline {subsubsection}{Results:}{172}
-\contentsline {subsubsection}{Discussion:}{172}
-\contentsline {subsection}{Experiment 3: Vibrotactile Rhythm as Cue for Distance}{174}
-\contentsline {subsubsection}{Tactile Rhythm Design}{174}
-\contentsline {subsubsection}{Experiment}{175}
-\contentsline {section}{\numberline {8.10}Case Study: Waist-worn Vibrotactile Display for Pedagogical Application for Choreographed Dance}{178}
-\contentsline {subsection}{Related Work in the Use of Vibrotactile Cues for Teaching Dance}{179}
-\contentsline {subsection}{Subjects}{180}
-\contentsline {subsection}{Procedure}{180}
-\contentsline {subsection}{Aim}{183}
-\contentsline {subsection}{Results}{185}
-\contentsline {subsubsection}{Usability:}{185}
-\contentsline {subsubsection}{Functionality and Performance:}{186}
-\contentsline {subsubsection}{Quantitative Evaluation of the Dance Experiment:}{187}
-\contentsline {subsubsection}{Subjective Evaluation of the Dance Experiment:}{189}
-\contentsline {section}{\numberline {8.11}Proposed Solution}{190}
-\contentsline {section}{\numberline {8.12}Other Applications for the proposed technology}{190}
-\contentsline {subsection}{Navigation and Spatial Orientation}{190}
-\contentsline {subsection}{Interpersonal Social Communication}{193}
-\contentsline {subsection}{Generic Information Communication}{194}
-\contentsline {chapter}{\chapternumberline {9}SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{195}
-\contentsline {section}{\numberline {9.1}Design Considerations}{196}
-\contentsline {section}{\numberline {9.2}Dyadic Interaction Assistant - Proposed Solution}{197}
-\contentsline {section}{\numberline {9.3}Facial Expression Recognition - State of the art}{198}
-\contentsline {section}{\numberline {9.4}Design Considerations for Dyadic Interaction Assistant}{201}
-\contentsline {section}{\numberline {9.5}Temporal Exemplar-based Bayesian Network (TEBN) for Facial Expression \& Gesture Sensing}{202}
-\contentsline {subsection}{The Observation Layer}{204}
-\contentsline {subsection}{The Exemplar Layer}{206}
-\contentsline {subsubsection}{Computing $P\left (X(t)/L_{ij}(t)\right )$: Representing the test data in terms of existing examples}{207}
-\contentsline {subsubsection}{Computing $P(L_i(t) / Y_i)$: Determining the prior probability of chosen examples w.r.t the complete training data}{208}
-\contentsline {subsection}{The Prior Knowledge Layer}{209}
-\contentsline {subsubsection}{Computation of $P(Y_i/H(t))$: Temporal propagation of expression probabilities}{209}
-\contentsline {section}{\numberline {9.6}Discussion of Design Considerations: TEBN perspectives}{211}
-\contentsline {section}{\numberline {9.7}Experiments}{212}
-\contentsline {subsection}{Data}{212}
-\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{213}
-\contentsline {section}{\numberline {10.1}Related Work}{214}
-\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{224}
-\contentsline {section}{\numberline {10.3}Proposed Solution}{224}
-\contentsline {section}{\numberline {10.4}Haptic Cueing}{226}
-\contentsline {subsection}{Localization}{226}
-\contentsline {subsection}{Spatio-Temporal Cueing}{226}
-\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{227}
-\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{227}
-\contentsline {section}{\numberline {10.5}Research Hypothesis}{229}
-\contentsline {subsection}{Localization}{229}
-\contentsline {subsubsection}{Hypothesis 1:}{229}
-\contentsline {subsubsection}{Hypothesis 2:}{229}
-\contentsline {subsubsection}{Hypothesis 3:}{230}
-\contentsline {subsection}{Spatio-Temporal Cueing}{230}
-\contentsline {subsubsection}{Hypothesis 4:}{230}
-\contentsline {subsubsection}{Hypothesis 5:}{230}
-\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{230}
-\contentsline {subsection}{Participants}{231}
-\contentsline {subsection}{Procedure}{231}
-\contentsline {subsection}{Analysis}{232}
-\contentsline {subsubsection}{Recognition Accuracies}{232}
-\contentsline {subsubsection}{ANOVA}{232}
-\contentsline {subsubsection}{Tuckey HSD}{233}
-\contentsline {section}{\numberline {10.7}Results}{233}
-\contentsline {subsection}{Localization Experiments}{234}
-\contentsline {subsubsection}{Phalange Level Localization}{234}
-\contentsline {subsubsection}{Finger Level Localization}{235}
-\contentsline {subsubsection}{Phalange Position Localization}{236}
-\contentsline {subsection}{Spatio-Temporal Experiments}{237}
-\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{237}
-\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{238}
-\contentsline {subsubsection}{Time for Recognition:}{240}
-\contentsline {section}{\numberline {10.8}Conclusion}{241}
-\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{243}
-\contentsline {section}{\numberline {11.1}Social Intelligence}{243}
-\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{245}
-\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{246}
-\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{248}
-\contentsline {chapter}{REFERENCES}{252}
-\contentsline {chapter}{APPENDIX}{275}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{276}
-\contentsline {subsection}{Procedure}{277}
-\contentsline {chapter}{APPENDIX}{278}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{278}
-\contentsline {section}{\numberline {B.1}Entropy Maximization under Linear Constraints Problem:}{279}
-\contentsline {section}{\numberline {B.2}Newton's method}{282}
-\contentsline {subsection}{Newton's Method for Estimating Weights $w_{ij}$}{284}
+\contentsline {chapter}{\chapternumberline {2}MOTIVATION}{19}
+\contentsline {section}{\numberline {2.1}Assistive Technology}{19}
+\contentsline {section}{\numberline {2.2}Remote Interactions}{21}
+\contentsline {section}{\numberline {2.3}Medical Teams}{21}
+\contentsline {subsection}{Evidence for Group Performance and Leadership}{25}
+\contentsline {subsubsection}{Group Dynamics}{25}
+\contentsline {subsubsection}{Leadership}{25}
+\contentsline {subsection}{Human Communication Challenges in Medical Teams}{27}
+\contentsline {subsubsection}{Automated monitoring of group dynamics to determine communication breakdowns}{27}
+\contentsline {subsubsection}{Automatic evaluation of the social affinity between team members}{27}
+\contentsline {subsubsection}{Leadership evaluation and nomination through long term monitoring of individuals}{28}
+\contentsline {chapter}{\chapternumberline {3}ASSISTIVE TECHNOLOGY DESIGN}{29}
+\contentsline {section}{\numberline {3.1}Conceptual Framework}{32}
+\contentsline {subsection}{Design principles for social assistive and rehabilitative devices}{32}
+\contentsline {section}{\numberline {3.2}Requirements Analysis for a Social Assistive Technology for Individuals who are Blind and Visually Impaired}{33}
+\contentsline {section}{\numberline {3.3}Results from the Online Survey}{35}
+\contentsline {subsection}{Average Response}{35}
+\contentsline {subsection}{Response on Individual Questions}{35}
+\contentsline {subsection}{Response Ratio}{37}
+\contentsline {subsection}{Rank Average Importance Map for Various Non-verbal Cues}{38}
+\contentsline {chapter}{\chapternumberline {4}DETECTING STEREOTYPIC BODY MANNERISMS}{40}
+\contentsline {section}{\numberline {4.1}Focus of the chapter}{41}
+\contentsline {section}{\numberline {4.2}Background and Related Work}{42}
+\contentsline {subsection}{Foundations for social rehabilitation of behavioral stereotypes}{42}
+\contentsline {subsubsection}{\emph {Intervention}}{42}
+\contentsline {subsubsection}{\emph {Self Monitoring}}{43}
+\contentsline {subsection}{Need for Assistive or Rehabilitative Technology}{44}
+\contentsline {subsubsection}{Past research into building assistive technology to detect body rocking}{45}
+\contentsline {section}{\numberline {4.3}Methodology}{46}
+\contentsline {subsection}{Motion Sensors - Design choice along the ``Acceptance'' Dimension}{48}
+\contentsline {subsection}{Extracting Body Rock Information from Motion Sensor Data - Design choice along the ``Motivation'' Dimension}{50}
+\contentsline {subsubsection}{Features:}{51}
+\contentsline {subsubsection}{Learning Algorithm:}{55}
+\contentsline {section}{\numberline {4.4}Data Collection}{58}
+\contentsline {subsection}{Controlled Data Collection:}{58}
+\contentsline {subsubsection}{ Routine A: Rocking data}{59}
+\contentsline {subsubsection}{Routine B: Non-rocking data}{59}
+\contentsline {subsubsection}{Routine C: Test data}{59}
+\contentsline {subsection}{Uncontrolled Data Collection:}{59}
+\contentsline {section}{\numberline {4.5}Experiments}{60}
+\contentsline {section}{\numberline {4.6}Results}{61}
+\contentsline {section}{\numberline {4.7}Discussion of Results}{68}
+\contentsline {subsection}{Packet Length, and Detection Efficiency}{69}
+\contentsline {subsection}{Generalization Capabilities}{70}
+\contentsline {section}{\numberline {4.8}Conclusion}{72}
+\contentsline {chapter}{\chapternumberline {5}PERSON-SPECIFIC FACE RECOGNITION}{73}
+\contentsline {subsection}{Employing face recognition to facilitate social interactions}{74}
+\contentsline {section}{\numberline {5.1}Face Recognition in Humans}{75}
+\contentsline {section}{\numberline {5.2}Our Approach to Face Recognition}{78}
+\contentsline {section}{\numberline {5.3}Feature Extractors}{78}
+\contentsline {subsection}{What is a Feature?}{78}
+\contentsline {subsection}{Gabor Features}{79}
+\contentsline {subsubsection}{Use of Gabor Filters in Face Recognition}{79}
+\contentsline {subsubsection}{Gabor Filters}{81}
+\contentsline {subsubsection}{Gaussian Function}{82}
+\contentsline {subsubsection}{Sinusoid}{82}
+\contentsline {section}{\numberline {5.4}The Learning Algorithm}{84}
+\contentsline {subsection}{Genetic Algorithms}{85}
+\contentsline {subsubsection}{Use of Genetic Algorithms in Face Recognition}{86}
+\contentsline {subsubsection}{The Chromosome}{88}
+\contentsline {subsubsection}{Creation of the first generation}{89}
+\contentsline {subsubsection}{Creation of the newer generations}{91}
+\contentsline {subsubsection}{\emph { Crossover}}{92}
+\contentsline {subsubsection}{\emph { Mutation}}{92}
+\contentsline {section}{\numberline {5.5}Methodology}{93}
+\contentsline {subsection}{The FacePix (30) Database}{94}
+\contentsline {subsection}{The Gabor Features}{96}
+\contentsline {subsection}{The Genetic Algorithm}{97}
+\contentsline {subsubsection}{The Fitness Function }{98}
+\contentsline {section}{\numberline {5.6}Results}{102}
+\contentsline {subsection}{Discussion of Results}{103}
+\contentsline {subsection}{Person-specific feature extraction}{104}
+\contentsline {section}{\numberline {5.7}Conclusions and Future Work}{105}
+\contentsline {chapter}{\chapternumberline {6}SENSING INTERPERSONAL SPACES}{108}
+\contentsline {section}{\numberline {6.1}Conceptual Framework}{109}
+\contentsline {section}{\numberline {6.2}Accurate Face Detection}{111}
+\contentsline {section}{\numberline {6.3}Related Work}{112}
+\contentsline {section}{\numberline {6.4}Proposed Framework}{114}
+\contentsline {subsection}{Module $1$: Human Skin Tone Detector with Dynamic Background Modeler}{114}
+\contentsline {subsubsection}{{\em a-priori} Bi-modal Gaussian Mixture Model for Human Skin Classification}{114}
+\contentsline {subsubsection}{Dynamically Learnt Multi-modal Gaussian Model for Background Pixel Classification}{116}
+\contentsline {subsubsection}{Skin and Background Classification using the learnt Multi-modal Gaussian Models}{117}
+\contentsline {subsection}{Module $2$: Evidence-Aggregating Human Face Silhouette Random Field Modeler}{117}
+\contentsline {subsubsection}{Random Field (RF) Models}{118}
+\contentsline {subsubsection}{Pre-processing}{119}
+\contentsline {subsubsection}{The Neighborhood System}{119}
+\contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{120}
+\contentsline {subsubsection}{Human Face Pose}{121}
+\contentsline {subsection}{Combining Evidence}{122}
+\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{123}
+\contentsline {subsection}{Coarse Pose estimation}{124}
+\contentsline {section}{\numberline {6.5}Experiments}{125}
+\contentsline {section}{\numberline {6.6}Results}{126}
+\contentsline {section}{\numberline {6.7}Discussion of Results}{127}
+\contentsline {chapter}{\chapternumberline {7}TRACKING PEOPLE IN THE SOCIAL SCENE}{129}
+\contentsline {section}{\numberline {7.1}Challenges in Person Localization from a wearable camera platform}{130}
+\contentsline {subsection}{Background Properties}{130}
+\contentsline {subsection}{Object Properties}{131}
+\contentsline {subsection}{Object/Camera Motion}{131}
+\contentsline {subsection}{Other Important Factors Affecting Effective Person Tracking}{132}
+\contentsline {section}{\numberline {7.2}Related Computer Vision Work in Person Localization and Tracking}{133}
+\contentsline {subsection}{Detection Algorithms}{133}
+\contentsline {subsection}{Tracking Algorithms}{134}
+\contentsline {section}{\numberline {7.3}Conceptual Framework}{136}
+\contentsline {section}{\numberline {7.4}STRUCTURED MODE SEARCHING PARTICLE FILTER}{137}
+\contentsline {subsection}{Step 1: Particle Filtering Step}{137}
+\contentsline {subsection}{Step 2: Structured Search}{140}
+\contentsline {subsection}{Chamfer Matching in Structured Search}{144}
+\contentsline {section}{\numberline {7.5}Experiments and Datasets}{145}
+\contentsline {subsection}{Datasets}{145}
+\contentsline {subsection}{Evaluation Metrics}{146}
+\contentsline {section}{\numberline {7.6}Results}{148}
+\contentsline {chapter}{\chapternumberline {8}COMMUNICATING PROXEMICS}{152}
+\contentsline {section}{\numberline {8.1}Motivation}{152}
+\contentsline {section}{\numberline {8.2}Related Work}{154}
+\contentsline {section}{\numberline {8.3}Design Requirements}{156}
+\contentsline {section}{\numberline {8.4}Implementation}{158}
+\contentsline {subsection}{Form Factor}{158}
+\contentsline {subsection}{System Architecture}{159}
+\contentsline {section}{\numberline {8.5}Hardware Design}{160}
+\contentsline {subsection}{Control Box}{160}
+\contentsline {subsubsection}{Main Controller}{160}
+\contentsline {subsubsection}{Bus Communication}{160}
+\contentsline {subsubsection}{Power Supply}{161}
+\contentsline {subsubsection}{Wireless Hardware}{161}
+\contentsline {section}{\numberline {8.6}Tactor Modules}{161}
+\contentsline {section}{\numberline {8.7}Software Design}{162}
+\contentsline {subsection}{Firmware}{162}
+\contentsline {subsubsection}{Main Controller Firmware}{162}
+\contentsline {subsubsection}{The Tactor Controller}{164}
+\contentsline {section}{\numberline {8.8}User Interface}{166}
+\contentsline {section}{\numberline {8.9}Experiments}{168}
+\contentsline {subsection}{Experiment 1: Localization of Vibrotactile Cues}{169}
+\contentsline {subsubsection}{Apparatus:}{170}
+\contentsline {subsubsection}{Procedure:}{170}
+\contentsline {subsubsection}{Results:}{171}
+\contentsline {subsubsection}{Discussion:}{171}
+\contentsline {subsection}{Experiment 2: Signal Duration as Cue for Distance}{172}
+\contentsline {subsubsection}{Subjects:}{172}
+\contentsline {subsubsection}{Apparatus:}{172}
+\contentsline {subsubsection}{Procedure:}{173}
+\contentsline {subsubsection}{Results:}{173}
+\contentsline {subsubsection}{Discussion:}{173}
+\contentsline {subsection}{Experiment 3: Vibrotactile Rhythm as Cue for Distance}{175}
+\contentsline {subsubsection}{Tactile Rhythm Design}{175}
+\contentsline {subsubsection}{Experiment}{176}
+\contentsline {section}{\numberline {8.10}Case Study: Waist-worn Vibrotactile Display for Pedagogical Application for Choreographed Dance}{179}
+\contentsline {subsection}{Related Work in the Use of Vibrotactile Cues for Teaching Dance}{180}
+\contentsline {subsection}{Subjects}{181}
+\contentsline {subsection}{Procedure}{181}
+\contentsline {subsection}{Aim}{184}
+\contentsline {subsection}{Results}{186}
+\contentsline {subsubsection}{Usability:}{186}
+\contentsline {subsubsection}{Functionality and Performance:}{187}
+\contentsline {subsubsection}{Quantitative Evaluation of the Dance Experiment:}{188}
+\contentsline {subsubsection}{Subjective Evaluation of the Dance Experiment:}{190}
+\contentsline {section}{\numberline {8.11}Proposed Solution}{191}
+\contentsline {section}{\numberline {8.12}Other Applications for the proposed technology}{191}
+\contentsline {subsection}{Navigation and Spatial Orientation}{191}
+\contentsline {subsection}{Interpersonal Social Communication}{194}
+\contentsline {subsection}{Generic Information Communication}{195}
+\contentsline {chapter}{\chapternumberline {9}SENSING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{196}
+\contentsline {section}{\numberline {9.1}Design Considerations}{197}
+\contentsline {section}{\numberline {9.2}Dyadic Interaction Assistant - Proposed Solution}{198}
+\contentsline {section}{\numberline {9.3}Facial Expression Recognition - State of the art}{199}
+\contentsline {section}{\numberline {9.4}Design Considerations for Dyadic Interaction Assistant}{202}
+\contentsline {section}{\numberline {9.5}Temporal Exemplar-based Bayesian Network (TEBN) for Facial Expression \& Gesture Sensing}{203}
+\contentsline {subsection}{The Observation Layer}{205}
+\contentsline {subsection}{The Exemplar Layer}{207}
+\contentsline {subsubsection}{Computing $P\left (X(t)/L_{ij}(t)\right )$: Representing the test data in terms of existing examples}{208}
+\contentsline {subsubsection}{Computing $P(L_i(t) / Y_i)$: Determining the prior probability of chosen examples w.r.t the complete training data}{209}
+\contentsline {subsection}{The Prior Knowledge Layer}{210}
+\contentsline {subsubsection}{Computation of $P(Y_i/H(t))$: Temporal propagation of expression probabilities}{210}
+\contentsline {section}{\numberline {9.6}Discussion of Design Considerations: TEBN perspectives}{212}
+\contentsline {section}{\numberline {9.7}Experiments}{213}
+\contentsline {subsection}{Data}{213}
+\contentsline {chapter}{\chapternumberline {10}DELIVERING FACIAL EXPRESSIONS OF INTERACTION PARTNERS}{214}
+\contentsline {section}{\numberline {10.1}Related Work}{215}
+\contentsline {section}{\numberline {10.2}The Vibrotactile Glove}{225}
+\contentsline {section}{\numberline {10.3}Proposed Solution}{225}
+\contentsline {section}{\numberline {10.4}Haptic Cueing}{227}
+\contentsline {subsection}{Localization}{227}
+\contentsline {subsection}{Spatio-Temporal Cueing}{227}
+\contentsline {subsubsection}{Group 1 - The visual emoticon motivated haptic icons:}{228}
+\contentsline {subsubsection}{Group 2 - The auxiliary haptic icons:}{228}
+\contentsline {section}{\numberline {10.5}Research Hypothesis}{230}
+\contentsline {subsection}{Localization}{230}
+\contentsline {subsubsection}{Hypothesis 1:}{230}
+\contentsline {subsubsection}{Hypothesis 2:}{230}
+\contentsline {subsubsection}{Hypothesis 3:}{231}
+\contentsline {subsection}{Spatio-Temporal Cueing}{231}
+\contentsline {subsubsection}{Hypothesis 4:}{231}
+\contentsline {subsubsection}{Hypothesis 5:}{231}
+\contentsline {section}{\numberline {10.6}Experiments and Analysis Methodology}{231}
+\contentsline {subsection}{Participants}{232}
+\contentsline {subsection}{Procedure}{232}
+\contentsline {subsection}{Analysis}{233}
+\contentsline {subsubsection}{Recognition Accuracies}{233}
+\contentsline {subsubsection}{ANOVA}{233}
+\contentsline {subsubsection}{Tuckey HSD}{234}
+\contentsline {section}{\numberline {10.7}Results}{234}
+\contentsline {subsection}{Localization Experiments}{235}
+\contentsline {subsubsection}{Phalange Level Localization}{235}
+\contentsline {subsubsection}{Finger Level Localization}{236}
+\contentsline {subsubsection}{Phalange Position Localization}{237}
+\contentsline {subsection}{Spatio-Temporal Experiments}{238}
+\contentsline {subsubsection}{Individual Spatio-temporal Patterns}{238}
+\contentsline {subsubsection}{Comparison of Spatio-temporal Cueing groups}{239}
+\contentsline {subsubsection}{Time for Recognition:}{241}
+\contentsline {section}{\numberline {10.8}Conclusion}{242}
+\contentsline {chapter}{\chapternumberline {11}SOCIAL DISABILITY}{244}
+\contentsline {section}{\numberline {11.1}Social Intelligence}{244}
+\contentsline {section}{\numberline {11.2}Psychological Breakdown related to Social Skills}{246}
+\contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{247}
+\contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{249}
+\contentsline {chapter}{REFERENCES}{253}
+\contentsline {chapter}{APPENDIX}{281}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{282}
+\contentsline {subsection}{Procedure}{283}
+\contentsline {chapter}{APPENDIX}{284}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{284}
+\contentsline {section}{\numberline {B.1}Entropy Maximization under Linear Constraints Problem:}{285}
+\contentsline {section}{\numberline {B.2}Newton's method}{288}
+\contentsline {subsection}{Newton's Method for Estimating Weights $w_{ij}$}{290}

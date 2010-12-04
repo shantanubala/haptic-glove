@@ -34,8 +34,6 @@
 % Table footnote
 \usepackage{threeparttable}
 
-
-
 %%%%%%Added by Craig Picone to meet ASU's margin requirements
 \usepackage{graphicx}    % needed for including graphics e.g. EPS, PS
 \topmargin -0.2in        % read Lamport p.163
@@ -48,10 +46,10 @@
 %\renewcommand{\baselinestretch}{1.5} % Uncomment for 1.5 spacing between lines
 \parindent 0pt          % sets leading space for paragraphs
  %%%%%%%%
- 
+
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  % Controlling figures and tables
- 
+
  % Alter some LaTeX defaults for better treatment of figures:
 % See p.105 of "TeX Unbound" for suggested values.
 % See pp. 199-200 of Lamport's "LaTeX" book for details.
@@ -69,7 +67,7 @@
 \renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
 % N.B.: floatpagefraction MUST be less than topfraction !!
 \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
-    
+
 
 %%%%%% Landscape Mode %%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{lscape}
@@ -409,7 +407,58 @@ Natural vs manmade environment &	\cite{radke_image_2005} & & & \cite{todorovic_d
 \end{table}
 
 
-
+\begin{landscape}
+\begin{table}
+\scriptsize
+\begin{tabularx}{8.5in}{|X||X|X|X|X|X|X|X|X|X|}
+\hline
+&Person Recognition &	Clothing Recognition	& Body Part Segmentation &	Facial Feature Segmentation &	Gender Race Recognition &	Facial Motion Analysis	& Body Motion Analysis &	Eye Detection &	Eye Tracking \\
+\hline
+\hline
+\multicolumn{10}{|c|}{Physical Characteristics of the Communicator}\\
+\hline
+\hline
+Race and Body Color & & & \cite{barnard_body_2008} \cite{srinivasan_bottom-up_2007} \cite{balan_detailed_2007} & & \cite{xuelong_li_gait_2008} & & & & \\
+\hline
+Body Shape & \cite{benabdelkader_person_2002} \cite{collins_silhouette-based_2002} & \cite{gallagher_clothing_2008} \cite{wei_zhang_real-time_2008} & \cite{yacoob_detection_2006} \cite{yijun_xiao_topological_2003} \cite{barnard_body_2008} \cite{srinivasan_bottom-up_2007} \cite{balan_detailed_2007} \cite{sano_human_2004} & & & & \cite{xuelong_li_gait_2008} \cite{collins_silhouette-based_2002} & & \\
+\hline
+Body Decoration	& \cite{jung-eun_lee_scars_2008} & & & & & & & & \\
+\hline
+Facial Hair & & & &	\cite{jingyu_yan_factorization-based_2008} & & & & & \\				
+\hline
+Eye Glasses & & & & \cite{jaewon_sung_combining_2007} & & & & \cite{shan_du_robust_2007} & \\
+\hline
+Clothing & & \cite{gallagher_clothing_2008} \cite{wei_zhang_real-time_2008} & & & & & & & \\						
+\hline
+Hair & & & 	\cite{yacoob_detection_2006} \cite{huchuan_lu_gender_2007} & & & & & & \\					
+\hline
+Age & \cite{haibin_ling_study_2007} & & & & & & & & \\							
+\hline
+Gender & \cite{benabdelkader_person_2002}& & & & \cite{xuelong_li_gait_2008} & & \cite{xuelong_li_gender_2007}& & \\	
+\hline
+Identity & \cite{matta_behavioural_2006} \cite{gallagher_clothing_2008} \cite{hahnel_color_2004} \cite{saeed_person_2006} \cite{saeed_person_2007} & & & & & \cite{kawade_vision-based_2002} & & & \\		
+\hline
+\hline
+\multicolumn{10}{|c|}{Behavior of the Communicator}\\
+\hline
+\hline
+Description of facial features	& & & &	\cite{kanaujia_emblem_2006} \cite{kawade_vision-based_2002} & & & & & \\			
+\hline
+Body Mannerisms & & & \cite{gunes_affect_2005} \cite{kulic_combining_2008} \cite{oliver_bayesian_2000} & & \cite{xuelong_li_gait_2008} & & \cite{hwang_automatic_2006} \cite{sangho_park_segmentation_2002} \cite{mitra_gesture_2007} \cite{nunamaker_hmm-based_2005} & & \\	
+\hline
+Eye Gestures & & & & & & & & \cite{shan_du_robust_2007}& \cite{bacivarov_statistical_2008} \cite{meservy_deception_2005} \\
+\hline
+Gaze & & & & & & \cite{funahashi_face_2007} & & \cite{villanueva_novel_2008} \cite{fawky_eye_2007} &  \cite{funahashi_face_2007} \cite{rajashekar_gaffe:_2008} \\
+\hline
+Expressions and Emotions & \cite{saeed_person_2007} & & & \cite{jaewon_sung_combining_2007} \cite{kanaujia_emblem_2006} & & \cite{zhihong_zeng_survey_2009} \cite{jingyu_yan_factorization-based_2008} \cite{jaewon_sung_combining_2007} \cite{rurainsky_mirror-based_2007} \cite{yeasin_recognition_2006-1} & \cite{fukuda_detecting_2008} \cite{meservy_deception_2005} \cite{nunamaker_hmm-based_2005} & \cite{yinggang_xie_facial_2006} & \cite{bacivarov_statistical_2008} \\
+\hline
+Personality & \cite{benabdelkader_person_2002}& & \cite{kulic_combining_2008} & & \cite{xuelong_li_gait_2008} & & 	\cite{mitra_gesture_2007} & & \\
+\hline
+Posture	& \cite{benabdelkader_person_2002} & & \cite{balan_detailed_2007} & \cite{kanaujia_emblem_2006} & &  & \cite{sangho_park_segmentation_2002} \cite{jingyu_yan_factorization-based_2008} & & \\
+\hline
+\end{tabularx}
+\end{table}
+\end{landscape}
 
 
 \chapter{MOTIVATION}
@@ -460,49 +509,49 @@ Modern day critical care facilities require multi-disciplinary medical professio
 \centering
 \includegraphics[width=4in]{TeamStepps.jpg}
 \caption{\textbf{TeamSTEPPS:} Team Strategies and Tools to Enhance Performance and Patient Safety}
-\label{fig_cp}
+\label{Fig:TeamSTEPPS}
 \end{figure}
 
-The importance of studying a group of physicians entering a medical situation as a single operating unit began to appear in the focus of behavioral scientists with the publication of the Institute of Medicine (IoM) report titled \emph{To Err is Human: Building a Safer Health System} in Dec 1999. One of the four core messages from the report identified that patient life is lost not because of the failure of an individual, but due to the failure of the group as a whole. Since this report, Agency for Healthcare Research and Quality (AHRQ) and Department of Defense (DoD) have focused on the team failure from an Evidence-Based Medicine perspective and released Team Strategies and Tools to Enhance Performance and Patient Safety (TeamSTEPPS) [13] as the standard for team training in health care. The core of TeamSTEPPS focuses on the need to have (a) leadership, (b) mutual support, (c) communication, and (d) situation monitoring (or a shared mental model) among the team members.
+The importance of studying a group of physicians entering a medical situation as a single operating unit began to appear in the focus of behavioral scientists with the publication of the Institute of Medicine (IoM) report titled \emph{To Err is Human: Building a Safer Health System} in Dec 1999. One of the four core messages from the report identified that patient life is lost not because of the failure of an individual, but due to the failure of the group as a whole. Since this report, Agency for Healthcare Research and Quality (AHRQ) and Department of Defense (DoD) have focused on the team failure from an Evidence-Based Medicine perspective and released Team Strategies and Tools to Enhance Performance and Patient Safety (TeamSTEPPS) \cite{patel_translational_2008} as the standard for team training in health care. The core of TeamSTEPPS focuses on the need to have (a) leadership, (b) mutual support, (c) communication, and (d) situation monitoring (or a shared mental model) among the team members.
 
-As seen from Figure 1, the skills component TeamSTEPPS focuses on the individual physician and the team's ability to work together as a system. Leadership, Communication, Situation Monitoring and Mutual Support were all derived from earlier DoD and AHRQ lead studies in medical team management and are based on the underlying principles of: Team Leadership [8], Mutual Performance Monitoring [9], Backup Behavior [10], Adaptability [11], Team/Collective Orientation [12], Shared Mental Model [13] [11], Mutual Trust [14] and Closed loop Communication [10]. For a detailed analysis of each of these principles, please see King et. al. [4]. Most of these principles are in turn derivatives of the social skill set of the individuals who make up the medical team that is responsible for the patient safety. It have been shown that in cases of medical errors, leading to loss of life, communication breakdown between one or more team members resulted in an avalanche of problems eventually resulting in death.
+As seen from Figure \ref{Fig:TeamSTEPPS}, the skills component TeamSTEPPS focuses on the individual physician and the team's ability to work together as a system. Leadership, Communication, Situation Monitoring and Mutual Support were all derived from earlier DoD and AHRQ lead studies in medical team management and are based on the underlying principles of: Team Leadership \cite{salas_developing_2004}, Mutual Performance Monitoring \cite{wilson_trauma_2007}, Backup Behavior \cite{guzzo_measuring_1995}, Adaptability \cite{guzzo_defining_1995}, Team/Collective Orientation \cite{driskell_collective_1992}, Shared Mental Model \cite{patel_translational_2008} \cite{guzzo_defining_1995}, Mutual Trust \cite{bandon_time_2001} and Closed loop Communication \cite{guzzo_measuring_1995}. For a detailed analysis of each of these principles, please see King et. al. \cite{king_teamstepps_????}. Most of these principles are in turn derivatives of the social skill set of the individuals who make up the medical team that is responsible for the patient safety. It have been shown that in cases of medical errors, leading to loss of life, communication breakdown between one or more team members resulted in an avalanche of problems eventually resulting in death.
 
 The four team performance qualities identified above depends intricately on each medical personnel's communication abilities.  Behavioral psychologists have been studying the impact of socio-emotional states, especially stress induced socio-emotional states, on the performance of professionals and conclude that the direct artifact of stress include deprecated decision making, failure in leadership and breakdown of mutual support. Assessing the socio-emotional and communication skills of the professionals within the critical care unit will provide an unfettered advantage towards determining metrics of team performance under stress. To this end, in this paper we propose an initial set of three parameters that need to be studied towards advancing patient safety in critical care environments. Note that these research questions are still under investigation and their efficacy can only be hypothesized based on preliminary socio-behavioral studies conducted in related areas, under laboratory conditions.
 
 \subsection{Evidence for Group Performance and Leadership}
 \subsubsection{Group Dynamics}
-As the term implies GD focuses on studying the various components of group communication, including inter-agent communication [19], productivity of a given group [20], level of understanding of each other's potentials and limitations, job satisfaction and combined creativity of a team [21]  to name a few. In the recent years, the interest in understanding group dynamics in work environments has tremendously increased in interdisciplinary teams involving computer scientists and socio-behavioral psychologists in the area of Computer Supported Collaborative Work (CSCW) [22]. In the context of medical teams, group dynamics focuses on the ability of the physicians/specialists to intercommunicate their needs. During emergency situations, group dynamics facilitates the emerging Shared Mental Model [23].
+As the term implies GD focuses on studying the various components of group communication, including inter-agent communication \cite{pentland_automatic_2006}, productivity of a given group \cite{kim_sensor-based_2009}, level of understanding of each other's potentials and limitations, job satisfaction and combined creativity of a team \cite{mann_relationship_2004} to name a few. In the recent years, the interest in understanding group dynamics in work environments has tremendously increased in interdisciplinary teams involving computer scientists and socio-behavioral psychologists in the area of Computer Supported Collaborative Work (CSCW) \cite{gardin_computer-supported_1994}. In the context of medical teams, group dynamics focuses on the ability of the physicians/specialists to intercommunicate their needs. During emergency situations, group dynamics facilitates the emerging Shared Mental Model \cite{chapman_decision_2003}.
 
-In the classical model for group dynamics, Bruce Tuckman [24], defines four stages in the formation of an efficient group. Forming, Storming, Norming and Performing describe the typical process that the groups go through before delivering at their best. The stages of Storming and Norming are deeply connected to the individual group member's abilities to communicate, coordinate and emphasize with their fellow group members. The socio-emotional interactions between the group members dictate how quickly or slowly a group will progress from the formative first stage to performing fourth stage [25]. If every individual group member can be assessed on their socio-emotional interactions - in general with everyone and in specific with professional teams - it is possible to determine what teams will work better together and progress through the four stages quickly towards efficient group performance.
+In the classical model for group dynamics, Bruce Tuckman \cite{tuckman_developmental_1965}, defines four stages in the formation of an efficient group. Forming, Storming, Norming and Performing describe the typical process that the groups go through before delivering at their best. The stages of Storming and Norming are deeply connected to the individual group member's abilities to communicate, coordinate and emphasize with their fellow group members. The socio-emotional interactions between the group members dictate how quickly or slowly a group will progress from the formative first stage to performing fourth stage \cite{hess_group_2007}. If every individual group member can be assessed on their socio-emotional interactions - in general with everyone and in specific with professional teams - it is possible to determine what teams will work better together and progress through the four stages quickly towards efficient group performance.
 
 \subsubsection{Leadership}
-Theories of leadership have proposed evidence-based models for explaining qualities exemplified in successful leaders. From bureaucratic leaders to political leaders, the models described to explain the qualities of leaders vary dramatically. There is no single accepted definition of what a leader should represent, as the problem of identifying a leader is highly contextual in nature. Recently, the functional model of leadership has been developed to describe team leaders as having self regulation which translates to learning, performance and adaptability. These models allow studying of dynamic teams that are formed in very short durations (like medical response teams) and allow monitoring of each individual and their contribution to the group activity [26]. Kozlowski et. al. have described a dynamic multi-goal model for team leadership as shown in Figure 3. Accordingly, they describe effective leaders as those who can not only assess simultaneously their own goals while keeping track of team goals while approaching a dynamically evolving situation.
+Theories of leadership have proposed evidence-based models for explaining qualities exemplified in successful leaders. From bureaucratic leaders to political leaders, the models described to explain the qualities of leaders vary dramatically. There is no single accepted definition of what a leader should represent, as the problem of identifying a leader is highly contextual in nature. Recently, the functional model of leadership has been developed to describe team leaders as having self regulation which translates to learning, performance and adaptability. These models allow studying of dynamic teams that are formed in very short durations (like medical response teams) and allow monitoring of each individual and their contribution to the group activity \cite{ferris_dynamic_1996}. Kozlowski et. al. have described a dynamic multi-goal model for team leadership as shown in Figure 3. Accordingly, they describe effective leaders as those who can not only assess simultaneously their own goals while keeping track of team goals while approaching a dynamically evolving situation.
 
 \begin{figure}
 \centering
 \includegraphics[width=5in]{Leadership.jpg}
 \caption{Multi goal model of self regulation for effective team regulation.}
-\label{fig_cp}
+\label{Fig:Leadership}
 \end{figure}
 
 
-While Figure 3 shows the behavioral choice of the leader to be a vital component of self regulation and team regulation, very little work has been focused on studying the effect of leader affect on team dynamics. Recently Sy et. al. [27] have demonstrated how important it is for the leader to control and regulate his/her affect cues within dynamical formed teams. The mood of the leader percolates through the team and can have net positive or negative effect on the team outlook and performance. The dynamic nature of team formation is further complicated in medical teams as the responsibility shifts very quickly from one specialist to another as they operate on the patient [28]. Socio-emotional role play of leaders in such dynamic teams is vital to the execution of the current task and smooth development of the shared mental model.
+While Figure \ref{Fig:Leadership} shows the behavioral choice of the leader to be a vital component of self regulation and team regulation, very little work has been focused on studying the effect of leader affect on team dynamics. Recently Sy et. al. \cite{sy_contagious_2005} have demonstrated how important it is for the leader to control and regulate his/her affect cues within dynamical formed teams. The mood of the leader percolates through the team and can have net positive or negative effect on the team outlook and performance. The dynamic nature of team formation is further complicated in medical teams as the responsibility shifts very quickly from one specialist to another as they operate on the patient \cite{cooper_s_leadership_1999}. Socio-emotional role play of leaders in such dynamic teams is vital to the execution of the current task and smooth development of the shared mental model.
 
 \vspace{-0.1in}
 \subsection{Human Communication Challenges in Medical Teams}
 \subsubsection{Automated monitoring of group dynamics to determine communication breakdowns}
 \vspace{-0.13in}
-Current team performance analysis systems are mostly based on retrospective video stream analysis collected during simulations of hospital emergency codes. The analyses are mostly based on expert's opinion of what happened during critical incidents of the simulation [6] [3]. Unfortunately, expert's time is very valuable and post-simulation analysis may not get sufficient attention due to increased hospital load. For long, researchers have questioned how communication between medical team members vary over the period of the emergency code execution [2], but very little is understood on the basics of the communication patterns during emergency, mostly due to the lack of automated annotation system that does not require expensive specialist time. Automated team performance analysis systems that focus on detecting specific instances of communication breakdown occurring during code simulation could greatly enhance our understanding of team work and how it can be enhanced through training.
+Current team performance analysis systems are mostly based on retrospective video stream analysis collected during simulations of hospital emergency codes. The analyses are mostly based on expert's opinion of what happened during critical incidents of the simulation \cite{karlgren_design_2008} \cite{carbine_video_2000}. Unfortunately, expert's time is very valuable and post-simulation analysis may not get sufficient attention due to increased hospital load. For long, researchers have questioned how communication between medical team members vary over the period of the emergency code execution \cite{bergs_communication_2005}, but very little is understood on the basics of the communication patterns during emergency, mostly due to the lack of automated annotation system that does not require expensive specialist time. Automated team performance analysis systems that focus on detecting specific instances of communication breakdown occurring during code simulation could greatly enhance our understanding of team work and how it can be enhanced through training.
 
 \vspace{-0.1in}
 \subsubsection{Automatic evaluation of the social affinity between team members}
 \vspace{-0.13in}
-Sociograms (social affinity maps) have been used historically to determine the interpersonal match between members of a team or an organization. Sociograms are obtained through the process of sociometry [15], which quantitatively measures the relationships of individuals who exist within a social space. As mentioned earlier, in medical teams, the social space happens to be the emergency room where the team assembles with very little or no time to assess who are the members of the team. Sociometry is achieved through a set of evaluations that can assess the social interactions between individuals. The measurements could happen within the environment where the individuals interact (the medical team) or outside (casual interactions). Technologies developed to assess sociometric affinity between professionals could in turn provide quantitative evaluations of the social interactions between individuals. Sociograms developed at a hospital level could offer effective tools for quick team formations. Teams formed out of specialists, technicians and nurses who are closer to one another on the sociogram could offer a team with relatively less emotional stress. Socially closer individuals will also exhibit better communication, thereby increasing team performance.
+Sociograms (social affinity maps) have been used historically to determine the interpersonal match between members of a team or an organization. Sociograms are obtained through the process of sociometry \cite{moreno_sociometry_1983}, which quantitatively measures the relationships of individuals who exist within a social space. As mentioned earlier, in medical teams, the social space happens to be the emergency room where the team assembles with very little or no time to assess who are the members of the team. Sociometry is achieved through a set of evaluations that can assess the social interactions between individuals. The measurements could happen within the environment where the individuals interact (the medical team) or outside (casual interactions). Technologies developed to assess sociometric affinity between professionals could in turn provide quantitative evaluations of the social interactions between individuals. Sociograms developed at a hospital level could offer effective tools for quick team formations. Teams formed out of specialists, technicians and nurses who are closer to one another on the sociogram could offer a team with relatively less emotional stress. Socially closer individuals will also exhibit better communication, thereby increasing team performance.
 
 \vspace{-0.1in}
 \subsubsection{Leadership evaluation and nomination through long term monitoring of individuals}
 \vspace{-0.13in}
-Theories of leadership have proposed evidence-based models for explaining qualities exemplified in successful leaders. Recently, the functional model of leadership [7] has been developed to describe team leaders as having self regulation which translates to learning, performance and adaptability. These models allow studying of dynamic teams that are formed in very short durations (like medical response teams) and allow monitoring of each individual and their contribution to the group activity.Reference [7] also describes a dynamic multi-goal model for team leadership which models effective leaders as those who can not only assess their own goals but also keep track of team goals, while approaching a dynamically evolving situation. Technologies developed towards understanding and modeling human interactions and communications can provide the tools needed to measure leadership qualities through long term monitoring.
+Theories of leadership have proposed evidence-based models for explaining qualities exemplified in successful leaders. Recently, the functional model of leadership \cite{kozlowski_dynamic_1996} has been developed to describe team leaders as having self regulation which translates to learning, performance and adaptability. These models allow studying of dynamic teams that are formed in very short durations (like medical response teams) and allow monitoring of each individual and their contribution to the group activity.Reference \cite{kozlowski_dynamic_1996} also describes a dynamic multi-goal model for team leadership which models effective leaders as those who can not only assess their own goals but also keep track of team goals, while approaching a dynamically evolving situation. Technologies developed towards understanding and modeling human interactions and communications can provide the tools needed to measure leadership qualities through long term monitoring.
 
 
 
@@ -4301,7 +4350,7 @@ Travelled the minimal hitting path 65\% with their existing navigation aid and d
 \hline
 
 \cite{cha_authoring/editing_2007} \cite{cha_framework_2009} &
-Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	 No user study. \\
+Framework for delivering haptic data along with audio video data from an entertainment perspective. Specifically, adding a haptic layer to the MPEG 4 audio video coding. & 76 & 	Vibrotactors are added all over the glove both on top and bottom of the hand. No specific configuration pattern is discussed in the paper. &	 Custom designed vibration patterns that take into account all the vibrators on the glove. &	Manually encoded by entertainment specialists based on the movie and the scene. & No user study. &	 No user study. \\
 \hline
 
 \cite{murray_psychophysical_2003} &
