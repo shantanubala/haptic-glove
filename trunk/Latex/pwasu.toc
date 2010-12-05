@@ -110,9 +110,9 @@
 \contentsline {subsubsection}{The Neighborhood System}{119}
 \contentsline {subsubsection}{Local Conditional Probability Density (LCPD)}{120}
 \contentsline {subsubsection}{Human Face Pose}{121}
-\contentsline {subsection}{Combining Evidence}{122}
-\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{123}
-\contentsline {subsection}{Coarse Pose estimation}{124}
+\contentsline {subsection}{Combining Evidence}{123}
+\contentsline {subsubsection}{Dempster-Shafer Theory of Evidence (DST)}{124}
+\contentsline {subsection}{Coarse Pose estimation}{125}
 \contentsline {section}{\numberline {6.5}Experiments}{125}
 \contentsline {section}{\numberline {6.6}Results}{126}
 \contentsline {section}{\numberline {6.7}Discussion of Results}{127}
@@ -238,11 +238,11 @@
 \contentsline {section}{\numberline {11.3}Visual Impairment - A hindrance to Social Interactions}{247}
 \contentsline {section}{\numberline {11.4}Social Disability: The hidden barrier to professional growth in the disabled population}{249}
 \contentsline {chapter}{REFERENCES}{253}
-\contentsline {chapter}{APPENDIX}{281}
-\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{282}
-\contentsline {subsection}{Procedure}{283}
-\contentsline {chapter}{APPENDIX}{284}
-\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{284}
-\contentsline {section}{\numberline {B.1}Entropy Maximization under Linear Constraints Problem:}{285}
-\contentsline {section}{\numberline {B.2}Newton's method}{288}
-\contentsline {subsection}{Newton's Method for Estimating Weights $w_{ij}$}{290}
+\contentsline {chapter}{APPENDIX}{283}
+\contentsline {appendix}{\chapternumberline {A}\uppercase {Algorithm for Estimating Rank Average of Groups}}{284}
+\contentsline {subsection}{Procedure}{285}
+\contentsline {chapter}{APPENDIX}{286}
+\contentsline {appendix}{\chapternumberline {B}\uppercase {Convex Optimization using Newton's Method - Entropy Maximization under Linear Constraints}}{286}
+\contentsline {section}{\numberline {B.1}Entropy Maximization under Linear Constraints Problem:}{287}
+\contentsline {section}{\numberline {B.2}Newton's method}{290}
+\contentsline {subsection}{Newton's Method for Estimating Weights $w_{ij}$}{292}
