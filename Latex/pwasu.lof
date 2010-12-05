@@ -58,7 +58,7 @@
 \contentsline {figure}{\numberline {7.14}{\ignorespaces Structured Search Matching Technique}}{143}
 \contentsline {figure}{\numberline {7.15}{\ignorespaces Incorporating Chamfer Matching into Structured Search}}{144}
 \contentsline {figure}{\numberline {7.16}{\ignorespaces SMSPF Results}}{146}
-\contentsline {figure}{\numberline {7.17}{\ignorespaces AO (Dotted Line: Color PF; Solid Line: SMSPF)}}{149}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces AO (Dotted Line: Color PF; Solid Line: SMSPF)}}{148}
 \contentsline {figure}{\numberline {7.18}{\ignorespaces DC(Dotted Line: Color PF; Solid Line: SMSPF)}}{149}
 \contentsline {figure}{\numberline {7.19}{\ignorespaces Evaluation Measure for DataSet 1}}{150}
 \contentsline {figure}{\numberline {7.20}{\ignorespaces Evaluation Measure for DataSet 2}}{150}
@@ -104,4 +104,4 @@
 \contentsline {figure}{\numberline {10.12}{\ignorespaces Average response time for all 12 participants. Four important results are shown above, 1) Avg. correct response time per expression (Cyan), 2) Avg. incorrect response time per expression (Red), 3) Avg. correct response time for Group 1 (Blue), and 4) Avg. correct response time for Group 2 (Magenta).}}{243}
 \contentsline {figure}{\numberline {11.1}{\ignorespaces Depression and Loneliness of students plotted against stress levels in high, medium and low social skilled undergraduate students. (Please see text for the scales used for the measurement.)}}{246}
 \contentsline {figure}{\numberline {11.2}{\ignorespaces Comparison of annual wage of the visually impaired, physically disabled and non-disabled population. (a) Compared by age group. (b) Compared by education level.}}{252}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Find x and y to maximize $f(x,y)$ subject to a constraint $g(x,y) = c$}}{285}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Find x and y to maximize $f(x,y)$ subject to a constraint $g(x,y) = c$}}{287}

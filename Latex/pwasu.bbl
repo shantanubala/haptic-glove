@@ -1303,6 +1303,12 @@ F.~Crow, ``Summed-area tables for texture mapping,'' in {\em {SIGGRAPH} '84:
   Proceedings of the 11th annual conference on Computer graphics and
   interactive techniques}, pp.~207--212, {ACM}, 1984.
 
+\bibitem{manohar_performance_2006}
+V.~Manohar, P.~Soundararajan, D.~Goldgof, R.~Kasturi, and J.~Garofolo,
+  ``Performance evaluation of object detection and tracking in video,'' {\em
+  {IN} {PROCEEDINGS} {OF} {THE} {SEVENTH} {ASIAN} {CONFERENCE} {ON} {COMPUTER}
+  {VISION}}, vol.~2, pp.~151---161, 2006.
+
 \bibitem{edwards_pragmatic_2009}
 N.~Edwards, J.~Rosenthal, D.~Molbery, J.~Lindsey, K.~Blair, T.~{McDaniel},
   S.~Krishna, and S.~Panchanathan, ``A pragmatic approach to the design and
@@ -1380,7 +1386,8 @@ A.~H. Rupert, ``An instrumentation solution for reducing spatial disorientation
 
 \bibitem{van_erp_multi-purpose_2003}
 J.~van Erp and H.~A. van Veen, ``A multi-purpose tactile vest for astronauts in
-  the international space station,'' pp.~405--408, 2003.
+  the international space station,'' pp.~405--408, In Proceedings of
+  Eurohaptics 2003, 2003.
 
 \bibitem{cholewiak_vibrotactile_2004}
 R.~Cholewiak, C.~Brill, and A.~Schwab, ``Vibrotactile localization on the
@@ -1396,11 +1403,17 @@ T.~{McDaniel}, S.~Krishna, V.~Balasubramanian, D.~Colbry, and S.~Panchanathan,
 
 \bibitem{ferscha_vibro-tactile_2008}
 A.~Ferscha, B.~Emsenhuber, A.~Riener, C.~Holzman, M.~Hechinger, D.~Hochreiter,
-  M.~Franz, D.~Zeider, M.~D.~S. Rocha, and C.~Klein, ``Vibro-tactile space
-  awareness,'' 2008.
+  M.~Franz, D.~Zeider, M.~D.~S. Rocha, and C.~Klein, ``Video paper:
+  Vibro-tactile space awareness,'' Adjunct Proceedings of the 10th
+  International Conference on Ubiquitous Computing, 2008.
 
 \bibitem{computer_guidelines_2002}
 I.~H. Computer, ``Guidelines for the use of {Vibro-Tactile} displays,'' 2002.
+
+\bibitem{4685310}
+J.~Ryu and S.~Choi, ``posvibeditor: Graphical authoring tool of vibrotactile
+  patterns,'' in {\em Haptic Audio visual Environments and Games, 2008. HAVE
+  2008. IEEE International Workshop on}, pp.~120 --125, 2008.
 
 \bibitem{lieberman_development_2007}
 J.~Lieberman and C.~Breazeal, ``Development of a wearable vibrotactile feedback
@@ -1443,6 +1456,28 @@ A.~Nakamura, S.~Tabata, T.~Ueda, S.~Kiyofuji, and Y.~Kuno, ``Multimodal
   presentation method for a dance training system,'' in {\em {CHI} '05 extended
   abstracts on Human factors in computing systems - {CHI} '05}, (Portland,
   {OR,} {USA}), p.~1685, 2005.
+
+\bibitem{Veen:2000:TIP:645443.652679}
+H.~A. H. C.~v. Veen and J.~B. F.~v. Erp, ``Tactile information presentation in
+  the cockpit,'' in {\em Proceedings of the First International Workshop on
+  Haptic Human-Computer Interaction}, (London, UK), pp.~174--181,
+  Springer-Verlag, 2001.
+
+\bibitem{1397903}
+N.~Kock and J.~Nosek, ``Expanding the boundaries of e-collaboration,'' {\em
+  Professional Communication, IEEE Transactions on}, vol.~48, no.~1, pp.~1 --
+  9, 2005.
+
+\bibitem{picard_affective}
+R.~W. Picard, {\em Affective Computing}.
+\newblock MIT Press, 2000.
+
+\bibitem{mcdaniel_using_2009}
+T.~L. {McDaniel}, S.~Krishna, D.~Colbry, and S.~Panchanathan, ``Using tactile
+  rhythm to convey interpersonal distances to individuals who are blind,'' in
+  {\em Proceedings of the 27th international conference extended abstracts on
+  Human factors in computing systems}, (Boston, {MA,} {USA}), pp.~4669--4674,
+  {ACM}, 2009.
 
 \bibitem{ashraf_painful_2009}
 A.~B. Ashraf, S.~Lucey, J.~F. Cohn, T.~Chen, Z.~Ambadar, K.~M. Prkachin, and
@@ -1715,5 +1750,69 @@ A.~M. Murray, R.~L. Klatzky, and P.~K. Khosla, ``Psychophysical
 A.~Vinciarelli, M.~Pantic, H.~Bourlard, and A.~Pentland, ``Social signals,
   their function, and automatic analysis,'' (Chania, Crete, Greece),
   pp.~61--68, {ACM}, 2008.
+
+\bibitem{gardner_frames_1993}
+H.~E. Gardner, {\em Frames Of Mind: The Theory Of Multiple Intelligences}.
+\newblock Basic Books, 10th~ed., Apr. 1993.
+
+\bibitem{bradberry_emotional_2009}
+T.~Bradberry and J.~Greaves, {\em Emotional Intelligence 2.0}.
+\newblock {TalentSmart}, {Har/Onl} en~ed., June 2009.
+
+\bibitem{thorndike_intelligence_1920}
+E.~L. Thorndike, ``Intelligence and its uses,'' {\em Harper's Magazine},
+  vol.~140, p.~227–235, 1920.
+
+\bibitem{albrecht_social_2005}
+K.~Albrecht, {\em Social Intelligence: The New Science of Success}.
+\newblock Pfeiffer, Nov. 2005.
+
+\bibitem{matthews_science_2007}
+G.~Matthews, M.~Zeidner, and R.~D. Roberts, {\em Science of Emotional
+  Intelligence: Knowns and Unknowns}.
+\newblock Oxford University Press, {USA}, 1~ed., Aug. 2007.
+
+\bibitem{goleman_working_2000}
+D.~Goleman, {\em Working with Emotional Intelligence}.
+\newblock Bantam, Jan. 2000.
+
+\bibitem{petrides_location_2007}
+K.~V. Petrides, R.~Pita, and F.~Kokkinaki, ``The location of trait emotional
+  intelligence in personality factor space,'' {\em British Journal of
+  Psychology}, vol.~98, pp.~273--289, May 2007.
+
+\bibitem{humphrey_vision_1974}
+N.~K. Humphrey, ``Vision in a monkey without striate cortex: a case study,''
+  {\em Perception}, vol.~3, pp.~241--255, 1974.
+
+\bibitem{brothers_social_1990}
+L.~Brothers, ``The social brain: A project for integrating primate behavior and
+  neurophysiology in a new domain.,'' {\em Concepts in Neuroscience}, vol.~1,
+  pp.~51, 27.
+
+\bibitem{beck_inventory_1961}
+A.~Beck, C.~Ward, M.~Mendelson, J.~Mock, and J.~Erbaugh, ``An inventory for
+  measuring depression,'' {\em Archives of General Psychiatry}, vol.~4,
+  pp.~571, 561, June 1961.
+
+\bibitem{russell_ucla_1996}
+D.~W. Russell, ``{UCLA} loneliness scale {(Version} 3): reliability, validity,
+  and factor structure,'' {\em Journal of Personality Assessment}, vol.~66,
+  pp.~20--40, Feb. 1996.
+\newblock {PMID:} 8576833.
+
+\bibitem{riggio_social_1989}
+R.~E. Riggio, {\em Social Skills Inventory}.
+\newblock Palo Alto, {CA}: Consulting Psychologists Press, 1989.
+
+\bibitem{riggio_social_1991}
+R.~E. Riggio and J.~Zimmermann, ``Social skills and interpersonal competence:
+  Influences on social support and social seeking,'' in {\em Advances in
+  Personal Relationships} (W.~H. Jones and D.~Perlman, eds.), pp.~133--155,
+  London: Jessica Kingsley, 1991.
+
+\bibitem{magnusson_analysis_1991}
+D.~Magnusson, ``An analysis of situational dimensions,'' {\em Perceptual and
+  Motor Skills}, vol.~32, pp.~851--867, 1991.
 
 \end{thebibliography}
