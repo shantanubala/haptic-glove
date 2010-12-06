@@ -1,5 +1,5 @@
 This is BibTeX, Version 0.99cThe top-level auxiliary file: pwasu.aux
-White space in argument---line 936 of file pwasu.aux
+White space in argument---line 939 of file pwasu.aux
  : \citation{Hug
  :               over a distance}
 I'm skipping whatever remains of this command
@@ -649,6 +649,8 @@ Warning--empty publisher in altmann_analysis_2007
 Warning--empty booktitle in zancanaro_automatic_2006
 Warning--empty year in rosenfeld_clothing_1977
 Warning--empty publisher in robles-de-la-torre_principles_2008
+Warning--empty year in king_teamstepps_????
+Warning--empty publisher in karlgren_design_2008
 Warning--empty booktitle in adam_aggregated_2006
 Warning--empty booktitle in ozden_background_2005
 Warning--empty booktitle in todorovic_detection_2004
@@ -669,8 +671,6 @@ Warning--empty booktitle in hwang_automatic_2006
 Warning--empty booktitle in nunamaker_hmm-based_2005
 Warning--empty booktitle in fawky_eye_2007
 Warning--empty booktitle in fukuda_detecting_2008
-Warning--empty year in king_teamstepps_????
-Warning--empty publisher in karlgren_design_2008
 Warning--empty booktitle in ur_rehman_manifold_2007
 Warning--empty booktitle in kim_meeting_2008
 Warning--empty booktitle in bao_activity_2004

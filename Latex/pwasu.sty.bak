@@ -100,18 +100,6 @@
   \makeoddfoot{toc}{}{\thepage}{}
   \makeevenhead{toc}{Chapter}{}{Page}
   \makeoddhead{toc}{Chapter}{}{Page}
-  \setlength{\linespace}{\baselineskip} %% the current equivalent of \onelineskip
-  \setlength{\headheight}{\lineskip}
-  \setlength{\headsep}{\linespace}
-  \addtolength{\headsep}{-\topskip}
-  \setlength{\uppermargin}{1in}
-  \addtolength{\uppermargin}{\headheight}
-  \addtolength{\uppermargin}{\headsep}
-  \setlength{\lowermargin}{1in}
-  \setlength{\footskip}{\onelineskip}
-  \setlength{\textheight}{\paperheight}
-  \addtolength{\textheight}{-\uppermargin}
-  \addtolength{\textheight}{-\lowermargin}
 
 \makepagestyle{lof}
   \makeevenfoot{lof}{}{\thepage}{}
@@ -261,7 +249,7 @@
 %
 % Change this part for your own title
 
-\settitle{Socio-Interpersonal Communications \\ Second Line \\ Third Line}
+\settitle{Mediated Social Interpersonal Communication \\ Multimedia Enrichment of Social Situational Awareness \\ Social Interaction Assistance for Indivisuals who are Visually Impaired}
 
 % Change this part for you name
 \setauthor{Sreekar Krishna}
