@@ -1,5 +1,5 @@
 This is BibTeX, Version 0.99cThe top-level auxiliary file: pwasu.aux
-White space in argument---line 940 of file pwasu.aux
+White space in argument---line 952 of file pwasu.aux
  : \citation{Hug
  :               over a distance}
 I'm skipping whatever remains of this command
@@ -299,6 +299,14 @@ Repeated entry---line 5616 of file References.bib
  : @article{jindal-snape_generalization_2004
  :                                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 5642 of file References.bib
+ : @article{mcgaha_interactions_2001
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5655 of file References.bib
+ : @book{kekelis_development_1992
+ :                               ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 5732 of file References.bib
  : @article{jindal-snape_generalization_2004
  :                                          ,
@@ -306,6 +314,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 5741 of file References.bib
  : @inproceedings{krishna_systematic_2008
  :                                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5764 of file References.bib
+ : @inproceedings{shinohara_observing_2007
+ :                                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5780 of file References.bib
  : @book{knapp_nonverbal_1996
@@ -714,4 +726,4 @@ Warning--empty booktitle in whitehill_haar_2006
 Warning--empty publisher in brell_fusion_2008
 Warning--empty booktitle in vinciarelli_proceedings_2008
 Warning--empty year in brothers_social_1990
-(There were 159 error messages)
+(There were 162 error messages)
