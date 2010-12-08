@@ -1,5 +1,5 @@
 This is BibTeX, Version 0.99cThe top-level auxiliary file: pwasu.aux
-White space in argument---line 952 of file pwasu.aux
+White space in argument---line 957 of file pwasu.aux
  : \citation{Hug
  :               over a distance}
 I'm skipping whatever remains of this command
@@ -621,39 +621,43 @@ Repeated entry---line 8380 of file References.bib
 I'm skipping whatever remains of this entry
 Warning--string name "march" is undefined
 --line 8399 of file References.bib
-Repeated entry---line 8418 of file References.bib
+Repeated entry---line 8515 of file References.bib
  : @inproceedings{chang_comtouch:_2002
  :                                    ,
 I'm skipping whatever remains of this entry
 Warning--string name "oct." is undefined
---line 8484 of file References.bib
-Repeated entry---line 8493 of file References.bib
+--line 8581 of file References.bib
+Repeated entry---line 8590 of file References.bib
  : @inproceedings{jones_localization_2008
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8530 of file References.bib
+Repeated entry---line 8627 of file References.bib
  : @incollection{tsukada_activebelt:_2004
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8811 of file References.bib
+Repeated entry---line 8908 of file References.bib
  : @book{knapp_nonverbal_1996
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9260 of file References.bib
+Repeated entry---line 9357 of file References.bib
  : @incollection{karlgren_design_2008
  :                                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9274 of file References.bib
+Repeated entry---line 9371 of file References.bib
  : @article{carbine_video_2000
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9290 of file References.bib
+Repeated entry---line 9387 of file References.bib
  : @article{bergs_communication_2005
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9321 of file References.bib
+Repeated entry---line 9418 of file References.bib
  : @book{moreno_sociometry_1983
  :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9671 of file References.bib
+ : @inproceedings{kim_meeting_2008
+ :                                ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "krishna_wearable_2005"
 Warning--I didn't find a database entry for "hjelmýs_face_2001"
@@ -726,4 +730,4 @@ Warning--empty booktitle in whitehill_haar_2006
 Warning--empty publisher in brell_fusion_2008
 Warning--empty booktitle in vinciarelli_proceedings_2008
 Warning--empty year in brothers_social_1990
-(There were 162 error messages)
+(There were 163 error messages)
