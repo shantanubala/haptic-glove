@@ -31,10 +31,10 @@
 \contentsline {section}{\numberline {2.3}Social Signal Attrition in Medical Teams}{26}
 \contentsline {subsection}{\numberline {2.3.1}Importance factors affecting team performance}{28}
 \contentsline {subsubsection}{\numberline {2.3.1.1}Group Dynamics}{28}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Leadership}{28}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Leadership}{29}
 \contentsline {subsection}{\numberline {2.3.2}Emerging science of medical team social assessment}{30}
 \contentsline {subsubsection}{\numberline {2.3.2.1}The Mayo Clinic Multidisciplinary Simulation Center:}{30}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Challenges in Social Situational Assessment and Training}{31}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Challenges in Social Situational Assessment and Training}{32}
 \contentsline {section}{\numberline {2.4}Automatic detection of non-verbal cueing}{33}
 \contentsline {chapter}{\chapternumberline {3}ASSISTIVE TECHNOLOGY DESIGN}{35}
 \contentsline {section}{\numberline {3.1}Conceptual Framework}{38}
