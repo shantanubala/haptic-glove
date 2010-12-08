@@ -377,6 +377,34 @@ K.~Shinohara and J.~Tenenberg, ``Observing sara: a case study of a blind
   international {ACM} {SIGACCESS} conference on Computers and accessibility},
   (Tempe, Arizona, {USA}), pp.~171--178, {ACM}, 2007.
 
+\bibitem{1397903}
+N.~Kock and J.~Nosek, ``Expanding the boundaries of e-collaboration,'' {\em
+  Professional Communication, IEEE Transactions on}, vol.~48, no.~1, pp.~1 --
+  9, 2005.
+
+\bibitem{Daft:1986:OIR:8430.8433}
+R.~L. Daft and R.~H. Lengel, ``Organizational information requirements, media
+  richness and structural design,'' {\em Manage. Sci.}, vol.~32, pp.~554--571,
+  May 1986.
+
+\bibitem{derosa_trust_2004}
+D.~M. {DeRosa}, D.~A. Hantula, N.~Kock, and J.~{D'Arcy}, ``Trust and leadership
+  in virtual teamwork: A media naturalness perspective,'' {\em Human Resource
+  Management}, vol.~43, no.~2-3, pp.~219--232, 2004.
+
+\bibitem{robert_paradox_2005}
+L.~Robert and A.~Dennis, ``Paradox of richness: a cognitive model of media
+  choice,'' {\em Professional Communication, {IEEE} Transactions on}, vol.~48,
+  no.~1, pp.~10--21, 2005.
+
+\bibitem{tuckman_developmental_1965}
+B.~W. Tuckman, ``Developmental sequence in small groups,'' {\em Psychological
+  Bulletin}, vol.~63, pp.~384--399, 1965.
+
+\bibitem{hess_group_2007}
+U.~Hess and P.~Philippot, {\em Group Dynamics and Emotional Expression}.
+\newblock Cambridge University Press, 1~ed., Jan. 2007.
+
 \bibitem{patel_translational_2008}
 V.~L. Patel, J.~Zhang, N.~A. Yoskowitz, R.~Green, and O.~R. Sayan,
   ``Translational cognition for decision support in critical care environments:
@@ -445,14 +473,6 @@ G.~B. Chapman and F.~A. Sonnenberg, {\em Decision Making in Health Care:
   Theory, Psychology, and Applications}.
 \newblock Cambridge University Press, 1~ed., Sept. 2003.
 
-\bibitem{tuckman_developmental_1965}
-B.~W. Tuckman, ``Developmental sequence in small groups,'' {\em Psychological
-  Bulletin}, vol.~63, pp.~384--399, 1965.
-
-\bibitem{hess_group_2007}
-U.~Hess and P.~Philippot, {\em Group Dynamics and Emotional Expression}.
-\newblock Cambridge University Press, 1~ed., Jan. 2007.
-
 \bibitem{ferris_dynamic_1996}
 S.~W.~J. Kozlowski, S.~M. Gully, P.~P. {McHugh}, E.~Salas, and J.~A.
   {Cannon-Bowers}, ``A dynamic theory of leadership and team effectiveness:
@@ -470,6 +490,11 @@ T.~Sy, S.~Côté, and R.~Saavedra, ``The contagious leader: impact of the
 \bibitem{cooper_s_leadership_1999}
 C.~S.[1] and W.~A., ``Leadership of resuscitation teams: {'Lighthouse}
   leadership','' {\em Resuscitation}, vol.~42, pp.~27--45, Sept. 1999.
+
+\bibitem{seethala_approaches_2010}
+R.~R. Seethala, E.~C. Esposito, and B.~S. Abella, ``Approaches to improving
+  cardiac arrest resuscitation performance,'' {\em Current Opinion in Critical
+  Care}, vol.~16, no.~3, pp.~196--202, 2010.
 
 \bibitem{karlgren_design_2008}
 K.~Karlgren, A.~Dahlström, and S.~Ponzer, ``Design of an annotation tool to
@@ -1485,11 +1510,6 @@ H.~A. H. C.~v. Veen and J.~B. F.~v. Erp, ``Tactile information presentation in
   the cockpit,'' in {\em Proceedings of the First International Workshop on
   Haptic Human-Computer Interaction}, (London, UK), pp.~174--181,
   Springer-Verlag, 2001.
-
-\bibitem{1397903}
-N.~Kock and J.~Nosek, ``Expanding the boundaries of e-collaboration,'' {\em
-  Professional Communication, IEEE Transactions on}, vol.~48, no.~1, pp.~1 --
-  9, 2005.
 
 \bibitem{picard_affective}
 R.~W. Picard, {\em Affective Computing}.
